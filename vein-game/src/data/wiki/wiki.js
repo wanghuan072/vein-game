@@ -8,7 +8,7 @@ export const wiki = [
     "publishDate": "2025-11-19",
     "addressBar": "/controls",
     "seo": {
-        "title": "VEIN Game Controls | Default Keybindings, Movement, Combat - veingame.org",
+        "title": "VEIN Game Controls | Default Keybindings, Movement, Combat - veingame.net",
         "description": "Complete reference for all default keybindings in VEIN Game, including Movement, Combat, Vehicles, and Inventory Quick Moves. Easily find and customize your controls.",
         "keywords": "VEIN controls, VEIN keybindings, default keys, movement controls, combat controls, vehicle controls, customize controls, VEIN quick move"
     },
@@ -88,7 +88,7 @@ export const wiki = [
   "publishDate": "2025-11-19",
   "addressBar": "/skills",
   "seo": {
-      "title": "VEIN Game Skills Guide | All Perks, Levels, and Skill Trees - veingame.org",
+      "title": "VEIN Game Skills Guide | All Perks, Levels, and Skill Trees - veingame.net",
       "description": "Detailed guide to every skill in VEIN Game (Agility, Crafting, Medical, Weapon Handling, etc.). Find full perk lists, level requirements, and skill effects.",
       "keywords": "VEIN skills, VEIN perks, skill tree, agility perks, crafting perks, weapon handling skill, level requirements, VEIN character build"
   },
@@ -292,7 +292,7 @@ export const wiki = [
   "publishDate": "2025-11-19",
   "addressBar": "/mechanics",
   "seo": {
-      "title": "VEIN Game Mechanics | Crafting, Vehicle Interaction, and World Systems Guide - veingame.org",
+      "title": "VEIN Game Mechanics | Crafting, Vehicle Interaction, and World Systems Guide - veingame.net",
       "description": "Learn the inner workings of VEIN Game. Detailed explanations of Crafting, Building, Cooking, Item Stats, Vehicle Use, and comprehensive World Systems like Electricity and Time.",
       "keywords": "VEIN mechanics, crafting mechanics, building mechanics, vehicle interaction, item stats, VEIN world systems, electricity mechanics, VEIN health system, time cycle"
   },
@@ -414,7 +414,7 @@ export const wiki = [
   "publishDate": "2025-11-19",
   "addressBar": "/cooking-recipes",
   "seo": {
-      "title": "VEIN Cooking Recipes | Brewing, Slicing, Ingredients, and Utensils - veingame.org",
+      "title": "VEIN Cooking Recipes | Brewing, Slicing, Ingredients, and Utensils - veingame.net",
       "description": "Full list of all cooking and slicing recipes in VEIN Game. Learn how to brew Broths, Coffee, and Tea, and find all required ingredients and cooking tools.",
       "keywords": "VEIN cooking recipes, VEIN brewing, cooking guide, slicing recipes, cooking ingredients, broth recipe, coffee recipe, cooking utensils"
   },
@@ -575,7 +575,7 @@ export const wiki = [
   "publishDate": "2025-11-19",
   "addressBar": "/building",
   "seo": {
-      "title": "VEIN Building Guide | Fortifications, Utility Cabinet, Crafting Stations - veingame.org",
+      "title": "VEIN Building Guide | Fortifications, Utility Cabinet, Crafting Stations - veingame.net",
       "description": "Master construction in VEIN Game. Learn about the Utility Cabinet base system, tier requirements (Wood, Scrap, Limestone), essential workbenches, and base utilities.",
       "keywords": "VEIN building, VEIN construction, utility cabinet, fortification tiers, crafting stations, workbenches, building utilities, base defense"
   },
@@ -711,7 +711,7 @@ export const wiki = [
   "publishDate": "2025-11-19",
   "addressBar": "/vehicles",
   "seo": {
-      "title": "VEIN Game Vehicles List | Cars, Trucks, Motorcycles, and Vehicle Materials Guide - veingame.org",
+      "title": "VEIN Game Vehicles List | Cars, Trucks, Motorcycles, and Vehicle Materials Guide - veingame.net",
       "description": "Full database of all motorized and human-powered vehicles in VEIN. Find vehicle models, required gasoline, and how to use them for transport and storage.",
       "keywords": "VEIN vehicles, vehicle list, cars, trucks, motorcycles, gasoline, vehicle materials, transport, vehicle types, school bus"
   },
@@ -788,7 +788,7 @@ export const wiki = [
   "publishDate": "2025-11-19",
   "addressBar": "/items",
   "seo": {
-      "title": "VEIN Items | Armor, Clothing, Consumables, Medical Items, Tools, Ammo, and Crafting Materials - veingame.org",
+      "title": "VEIN Items | Armor, Clothing, Consumables, Medical Items, Tools, Ammo, and Crafting Materials - veingame.net",
       "description": "The complete VEIN Items Database. Find all Armor, Clothing, Consumables, Medical Items, Tools, Ammo, and Crafting Materials. Get stats, crafting recipes, and where to find each item.",
       "keywords": "VEIN items database, VEIN armor, VEIN ammo, VEIN crafting, VEIN consumables, VEIN materials, VEIN ammo, item stats"
   },

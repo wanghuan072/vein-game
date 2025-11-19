@@ -28,7 +28,7 @@ const router = createRouter({
       component: HomeView,
       meta: {
         seo: {
-          title: 'VEIN Survival Game | Wiki, Guides, Items, Map - veingame.org',
+          title: 'VEIN Survival Game | Wiki, Guides, Items, Map - veingame.net',
           description: 'The ultimate resource for VEIN Survival Game. Find all Guides, Wiki, Items/Weapons databases, HD Maps, and winning strategies to conquer every challenge.',
           keywords: 'VEIN survival game, VEIN wiki, VEIN guides, VEIN weapons,VEIN database, VEIN maps, VEIN Armor '
         }
@@ -40,7 +40,7 @@ const router = createRouter({
       component: GuidesView,
       meta: {
         seo: {
-          title: 'VEIN game Guides | Tips and Strategies - veingame.org',
+          title: 'VEIN game Guides | Tips and Strategies - veingame.net',
           description: 'The VEIN Guides library for Survival Game players. Find full beginner walkthroughs, expert tips, and advanced strategies to master every area and mechanic.',
           keywords: 'VEIN guides, VEIN walkthrough, VEIN strategies, VEIN tips,  VEIN resources, VEIN survival tips, VEIN gameplay'
         }
@@ -57,7 +57,7 @@ const router = createRouter({
       component: WikiView,
       meta: {
         seo: {
-          title: 'VEIN Game Wiki | Mechanics and Game Database - veingame.org',
+          title: 'VEIN Game Wiki | Mechanics and Game Database - veingame.net',
           description: 'The VEIN Game Wiki is here. Explore detailed information on Controls, Skills, Crafting/Cooking Recipes, Game Mechanics, Building, Vehicles, and Update History.',
           keywords: 'VEIN wiki, VEIN game mechanics, VEIN skills, VEIN crafting recipes, VEIN cooking, VEIN building, VEIN vehicles, VEIN controls'
         }
@@ -74,7 +74,7 @@ const router = createRouter({
       component: ItemsView,
       meta: {
         seo: {
-          title: 'VEIN game Items| Weapons, Armor, Stats - veingame.org',
+          title: 'VEIN game Items| Weapons, Armor, Stats - veingame.net',
           description: 'The ultimate VEIN Items Database. Search all Weapons, Armor, Consumables, Tools, and Materials. Get full stats, crafting recipes, and every item in the game.',
           keywords: 'VEIN items database, VEIN weapons, VEIN armor, VEIN crafting, VEIN consumables, VEIN materials, VEIN ammo, item stats'
         }
@@ -86,7 +86,7 @@ const router = createRouter({
       component: ItemsWeaponsView,
       meta: {
         seo: {
-          title: 'VEIN Game Weapons - Complete Weapons List - veingame.org',
+          title: 'VEIN Game Weapons - Complete Weapons List - veingame.net',
           description: 'The complete VEIN Weapons Database. Find all melee and ranged weapons, including their full stats, damage values, unique attributes, and acquisition',
           keywords: 'VEIN game weapons, melee weapons, ranged weapons, weapons database, VEIN survival game'
         }
@@ -98,7 +98,7 @@ const router = createRouter({
       component: ItemsArmorView,
       meta: {
         seo: {
-          title: 'VEIN Game Armor - Complete Armor List - veingame.org',
+          title: 'VEIN Game Armor - Complete Armor List - veingame.net',
           description: 'The complete VEIN Armor Database. Explore all protective gear, including helmets, chestplates, and leg armor. Get stats, crafting recipes, and where to find each piece.',
           keywords: 'VEIN game armor, protective gear, armor database, VEIN survival game'
         }
@@ -110,7 +110,7 @@ const router = createRouter({
       component: ItemsClothingView,
       meta: {
         seo: {
-          title: 'VEIN Game Clothing - Complete Clothing List - veingame.org',
+          title: 'VEIN Game Clothing - Complete Clothing List - veingame.net',
           description: 'The complete VEIN Clothing Database. Find all protective and customizable outfits, including hats, jackets, and pants. Get stats, crafting recipes, and where to find each piece.',
           keywords: 'VEIN game clothing, outfits, tactical apparel, clothing database, VEIN survival game'
         }
@@ -122,7 +122,7 @@ const router = createRouter({
       component: ItemsConsumablesView,
       meta: {
         seo: {
-          title: 'VEIN Game Consumables - Complete Consumables List - veingame.org',
+          title: 'VEIN Game Consumables - Complete Consumables List - veingame.net',
           description: 'The complete VEIN Consumables Database. Find all food, water, and temporary buffs. Get stats, crafting recipes, and where to find each item.',
           keywords: 'VEIN game consumables, food, water, survival items, consumables database, VEIN survival game'
         }
@@ -134,7 +134,7 @@ const router = createRouter({
       component: ItemsSpecialView,
       meta: {
         seo: {
-          title: 'VEIN Game Special Items - Complete Special Items List - veingame.org',
+          title: 'VEIN Game Special Items - Complete Special Items List - veingame.net',
           description: 'The complete VEIN Special Items Database. Find all rare and unique items, including limited drops and event rewards. Get stats, crafting recipes, and where to find each item.',
           keywords: 'VEIN game special items, rare items, unique items, special items database, VEIN survival game'
         }
@@ -146,7 +146,7 @@ const router = createRouter({
       component: ItemsMaterialsView,
       meta: {
         seo: {
-          title: 'VEIN Game Materials - Complete Materials List - veingame.org',
+          title: 'VEIN Game Materials - Complete Materials List - veingame.net',
           description: 'The complete VEIN Materials Database. Find all crafting materials and resources, including wood, metal, and cloth. Get stats, crafting recipes, and where to find each item.',
           keywords: 'VEIN game materials, crafting materials, resources, materials database, VEIN survival game'
         }
@@ -158,7 +158,7 @@ const router = createRouter({
       component: ItemsAmmoView,
       meta: {
         seo: {
-          title: 'VEIN Game Ammo - Complete Ammo List - veingame.org',
+          title: 'VEIN Game Ammo - Complete Ammo List - veingame.net',
           description: 'The complete VEIN Ammo Database. Find all ammunition types for ranged weapons, including bullets, shells, and grenades. Get stats, crafting recipes, and where to find each item.',
           keywords: 'VEIN game ammo, ammunition, ammo database, VEIN survival game'
         }
@@ -170,7 +170,7 @@ const router = createRouter({
       component: ItemsMedicalView,
       meta: {
         seo: {
-          title: 'VEIN Game Medical Items - Complete Medical Items List - veingame.org',
+          title: 'VEIN Game Medical Items - Complete Medical Items List - veingame.net',
           description: 'The complete VEIN Medical Items Database. Find all medkits, bandages, and pharmaceuticals to heal injuries and illnesses. Get stats, crafting recipes, and where to find each item.',
           keywords: 'VEIN game medical items, medkits, first aid, medical supplies, medical items database, VEIN survival game'
         }
@@ -182,7 +182,7 @@ const router = createRouter({
       component: ItemsToolsView,
       meta: {
         seo: {
-          title: 'VEIN Game Tools - Complete Tools List - veingame.org  ',
+          title: 'VEIN Game Tools - Complete Tools List - veingame.net  ',
           description: 'The complete VEIN Tools Database. Find all crafting, repairing, and interacting tools. Get stats, crafting recipes, and where to find each item.',
           keywords: 'VEIN game tools, utility tools, crafting tools, tools database, VEIN survival game'
         }
@@ -194,7 +194,7 @@ const router = createRouter({
       component: ItemsMiscView,
       meta: {
         seo: {
-          title: 'VEIN Game Misc Items - Complete Misc Items List - veingame.org',
+          title: 'VEIN Game Misc Items - Complete Misc Items List - veingame.net',
           description: 'The complete VEIN Misc Items Database. Find all miscellaneous items, including quest items, trade goods, and collectibles. Get stats, crafting recipes, and where to find each item.',
           keywords: 'VEIN game misc items, miscellaneous items, collectibles, misc items database, VEIN survival game'
         }
@@ -211,7 +211,7 @@ const router = createRouter({
       component: MapView,
       meta: {
         seo: {
-          title: 'VEIN game Map | All Resource Locations Spawns - veingame.org',
+          title: 'VEIN game Map | All Resource Locations Spawns - veingame.net',
           description: 'the high-resolution, interactive VEIN Map. Locate every resource node, key landmark, item spawn point, and across all zones to maximize your survival chances.',
           keywords: 'VEIN game map, Champlain Valley, interactive map, locations, points of interest, VEIN survival game'
         }
@@ -223,7 +223,7 @@ const router = createRouter({
       component: MapDetailView,
       meta: {
         seo: {
-          title: 'VEIN Game Map Details | Hidden Loot, Secrets - veingame.org',
+          title: 'VEIN Game Map Details | Hidden Loot, Secrets - veingame.net',
           description: 'detailed map in VEIN. Locate every hidden cave, rare resource spawn, secret chest, and crucial Points of Interest to maximize your exploration and survival.',
           keywords: 'VEIN interactive map, VEIN game map, world map, locations, points of interest, navigation, VEIN survival game'
         }

@@ -1,8 +1,8 @@
 // SEO配置文件
 export const seoConfig = {
   // 域名配置
-  domain: 'veingame.org',
-  fullDomain: 'https://veingame.org',
+  domain: 'veingame.net',
+  fullDomain: 'https://veingame.net',
   protocol: 'https://',
 
   // 社交媒体配置
@@ -19,7 +19,7 @@ export const seoConfig = {
     description: 'The ultimate community resource for VEIN survival game. Find guides, wiki, items, maps, and strategies to survive in VEIN game.',
     keywords: 'VEIN game, VEIN survival game, guides, wiki, items, maps, community, strategies',
     author: 'VEIN Game Community',
-    image: 'https://veingame.org/images/logo.webp',
+    image: 'https://veingame.net/images/logo.webp',
     type: 'website'
   },
 

@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename)
 
 // SEO配置
 const seoConfig = {
-  fullDomain: 'https://veingame.org'
+  fullDomain: 'https://veingame.net'
 }
 
 // 基础路由配置
