@@ -19,10 +19,10 @@
       </div>
 
       <!-- Items Table -->
-      <div v-if="!loading && !error && categoryItems.length > 0" class="table-section">
+      <div v-if="!loading && !error && basicToolsItems.length > 0" class="table-section">
         <div class="section-header">
-          <h2 class="section-title">Tools</h2>
-          <span class="section-count">{{ categoryItems.length }} items</span>
+          <h2 class="section-title">Basic Tools</h2>
+          <span class="section-count">{{ basicToolsItems.length }} items</span>
         </div>
         <div class="table-container">
           <table class="items-table">
@@ -36,7 +36,7 @@
             </thead>
             <tbody>
               <tr
-                v-for="item in categoryItems"
+                v-for="item in basicToolsItems"
                 :key="item.id"
                 @click="onItemClick(item)"
                 :class="['table-row', { 'disabled': item.showDetail === false }]"
@@ -77,7 +77,7 @@ const router = useRouter()
 const { data: itemsData, loading, error, loadData } = useItemsData('tools')
 
 const TYPE_KEYS = {
-  tools: 'Tools',
+  basicTools: 'basic-tools',
 }
 
 const normalizeType = (value) => String(value || '').trim().toLowerCase()
@@ -87,7 +87,7 @@ const filterByType = (targetType) =>
     (itemsData.value || []).filter((item) => normalizeType(item.type) === normalizeType(targetType))
   )
 
-const categoryItems = filterByType(TYPE_KEYS.tools)
+const basicToolsItems = filterByType(TYPE_KEYS.basicTools)
 
 onMounted(() => {
   loadData('tools')
@@ -111,9 +111,7 @@ const onItemClick = (item) => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
-  padding-bottom: 12px;
-  border-bottom: 2px solid rgba(255, 54, 54, 0.2);
+  margin-bottom: 10px;
 }
 
 .section-title {
@@ -275,9 +273,6 @@ const onItemClick = (item) => {
   .section-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
   }
 
   .section-title {

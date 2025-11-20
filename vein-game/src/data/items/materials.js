@@ -1,1 +1,138 @@
-export default []
+export default [
+    {
+        id: 1,
+        title: 'Cloth Rope',
+        description: 'Cloth Rope is a craftable item that can be crafted in a Standard Workbench. Weighs 0.05kg',
+        imageUrl: '/images/item/materials/materials-01.webp',
+        imageAlt: 'Cloth Rope',
+        publishDate: '2025-11-20',
+        type: 'crafting-materials',
+        addressBar: '/',
+        showDetail: false,
+        seo: {
+            title: '',
+            description: '',
+            keywords: '',
+        },
+        detailsHtml: ` `
+    },
+    {
+        id: 2,
+        title: 'Metal Brackets',
+        description: 'Metal Brackets are a craftable item that can be crafted in a Standard Workbench. Weighs 0.05kg',
+        imageUrl: '/images/item/materials/materials-02.webp',
+        imageAlt: 'Metal Brackets',
+        publishDate: '2025-11-20',
+        type: 'crafting-materials',
+        addressBar: '/',
+        showDetail: false,
+        seo: {
+            title: '',
+            description: '',
+            keywords: '',
+        },
+        detailsHtml: ` `
+    },
+    {
+        id: 3,
+        title: 'Nails',
+        description: 'A box of nails. You need this for some crafting.',
+        imageUrl: '/images/item/materials/materials-03.webp',
+        imageAlt: 'Nails',
+        publishDate: '2025-11-20',
+        type: 'crafting-materials',
+        addressBar: '/',
+        showDetail: false,
+        seo: {
+            title: '',
+            description: '',
+            keywords: '',
+        },
+        detailsHtml: ` `
+    },
+    {
+        id: 4,
+        title: 'Reinforced Wooden Plank',
+        description: 'A reinforced wooden plank.',
+        imageUrl: '/images/item/materials/materials-04.webp',
+        imageAlt: 'Reinforced Wooden Plank',
+        publishDate: '2025-11-20',
+        type: 'crafting-materials',
+        addressBar: '/',
+        showDetail: false,
+        seo: {
+            title: '',
+            description: '',
+            keywords: '',
+        },
+        detailsHtml: ` `
+    },
+    {
+        id: 5,
+        title: 'Reinforced Wooden Rod',
+        description: 'A heavy wooden rod.',
+        imageUrl: '/images/item/materials/materials-05.webp',
+        imageAlt: 'Reinforced Wooden Rod',
+        publishDate: '2025-11-20',
+        type: 'crafting-materials',
+        addressBar: '/',
+        showDetail: false,
+        seo: {
+            title: '',
+            description: '',
+            keywords: '',
+        },
+        detailsHtml: ` `
+    },
+    {
+        id: 6,
+        title: 'Screws',
+        description: 'A box of screws.',
+        imageUrl: '/images/item/materials/materials-06.webp',
+        imageAlt: 'Screws',
+        publishDate: '2025-11-20',
+        type: 'crafting-materials',
+        addressBar: '/',
+        showDetail: false,
+        seo: {
+            title: '',
+            description: '',
+            keywords: '',
+        },
+        detailsHtml: ` `
+    },
+    {
+        id: 7,
+        title: 'Wooden Plank',
+        description: 'A wooden plank.',
+        imageUrl: '/images/item/materials/materials-07.webp',
+        imageAlt: 'Wooden Plank',
+        publishDate: '2025-11-20',
+        type: 'crafting-materials',
+        addressBar: '/',
+        showDetail: false,
+        seo: {
+            title: '',
+            description: '',
+            keywords: '',
+        },
+        detailsHtml: ` `
+    },
+    {
+        id: 8,
+        title: 'Wooden Rod',
+        description: 'A heavy wooden rod.',
+        imageUrl: '/images/item/materials/materials-08.webp',
+        imageAlt: 'Wooden Rod',
+        publishDate: '2025-11-20',
+        type: 'crafting-materials',
+        addressBar: '/',
+        showDetail: false,
+        seo: {
+            title: '',
+            description: '',
+            keywords: '',
+        },
+        detailsHtml: ` `
+    },
+]

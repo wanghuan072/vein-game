@@ -19,10 +19,10 @@
       </div>
 
       <!-- Items Table -->
-      <div v-if="!loading && !error && categoryItems.length > 0" class="table-section">
+      <div v-if="!loading && !error && roundsItems.length > 0" class="table-section">
         <div class="section-header">
-          <h2 class="section-title">Ammo</h2>
-          <span class="section-count">{{ categoryItems.length }} items</span>
+          <h2 class="section-title">Rounds</h2>
+          <span class="section-count">{{ roundsItems.length }} items</span>
         </div>
         <div class="table-container">
           <table class="items-table">
@@ -36,7 +36,7 @@
             </thead>
             <tbody>
               <tr
-                v-for="item in categoryItems"
+                v-for="item in roundsItems"
                 :key="item.id"
                 @click="onItemClick(item)"
                 :class="['table-row', { 'disabled': item.showDetail === false }]"
@@ -77,7 +77,7 @@ const router = useRouter()
 const { data: itemsData, loading, error, loadData } = useItemsData('ammo')
 
 const TYPE_KEYS = {
-  ammo: 'Ammo',
+  rounds: 'rounds',
 }
 
 const normalizeType = (value) => String(value || '').trim().toLowerCase()
@@ -87,7 +87,7 @@ const filterByType = (targetType) =>
     (itemsData.value || []).filter((item) => normalizeType(item.type) === normalizeType(targetType))
   )
 
-const categoryItems = filterByType(TYPE_KEYS.ammo)
+const roundsItems = filterByType(TYPE_KEYS.rounds)
 
 onMounted(() => {
   loadData('ammo')
@@ -111,9 +111,7 @@ const onItemClick = (item) => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
-  padding-bottom: 12px;
-  border-bottom: 2px solid rgba(255, 54, 54, 0.2);
+  margin-bottom: 10px;
 }
 
 .section-title {
@@ -231,17 +229,11 @@ const onItemClick = (item) => {
 }
 
 .table-row {
-  cursor: pointer;
   transition: background 0.2s ease;
 }
 
 .table-row:hover {
   background: rgba(255, 54, 54, 0.05);
-}
-
-.table-row.disabled {
-  cursor: default;
-  opacity: 0.5;
 }
 
 .table-row.disabled:hover {
@@ -276,9 +268,6 @@ const onItemClick = (item) => {
   .section-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
   }
 
   .section-title {

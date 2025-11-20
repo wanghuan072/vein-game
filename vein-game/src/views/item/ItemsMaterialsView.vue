@@ -19,10 +19,10 @@
       </div>
 
       <!-- Items Table -->
-      <div v-if="!loading && !error && categoryItems.length > 0" class="table-section">
+      <div v-if="!loading && !error && craftingMaterialsItems.length > 0" class="table-section">
         <div class="section-header">
-          <h2 class="section-title">Materials</h2>
-          <span class="section-count">{{ categoryItems.length }} items</span>
+          <h2 class="section-title">Crafting Materials</h2>
+          <span class="section-count">{{ craftingMaterialsItems.length }} items</span>
         </div>
         <div class="table-container">
           <table class="items-table">
@@ -36,7 +36,7 @@
             </thead>
             <tbody>
               <tr
-                v-for="item in categoryItems"
+                v-for="item in craftingMaterialsItems"
                 :key="item.id"
                 @click="onItemClick(item)"
                 :class="['table-row', { 'disabled': item.showDetail === false }]"
@@ -77,7 +77,7 @@ const router = useRouter()
 const { data: itemsData, loading, error, loadData } = useItemsData('materials')
 
 const TYPE_KEYS = {
-  materials: 'Materials',
+  craftingMaterials: 'crafting-materials',
 }
 
 const normalizeType = (value) => String(value || '').trim().toLowerCase()
@@ -87,7 +87,7 @@ const filterByType = (targetType) =>
     (itemsData.value || []).filter((item) => normalizeType(item.type) === normalizeType(targetType))
   )
 
-const categoryItems = filterByType(TYPE_KEYS.materials)
+const craftingMaterialsItems = filterByType(TYPE_KEYS.craftingMaterials)
 
 onMounted(() => {
   loadData('materials')

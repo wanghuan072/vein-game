@@ -1,33 +1,155 @@
 export default [
   {
     id: 1,
-    title: 'Combat Knife',
-    description: 'A reliable melee weapon for close-quarters combat. Lightweight and effective against zombies and bandits.',
-    imageUrl: '/images/items/weapons/weapons-01.webp',
-    imageAlt: 'Combat Knife',
-    publishDate: '2025-11-18',
-    type: 'Melee Weapons',
-    addressBar: '/combat-knife',
+    title: '.38 Special',
+    description: 'A box of .38 Special rounds.',
+    imageUrl: '/images/item/ammo/ammo-01.webp',
+    imageAlt: '.38 Special',
+    publishDate: '2025-11-20',
+    type: 'rounds',
+    addressBar: '/',
     showDetail: false,
     seo: {
-      title: 'Combat Knife - VEIN Game',
-      description: 'Combat Knife weapon information for VEIN game. Learn about stats, usage, and where to find this melee weapon.',
-      keywords: 'VEIN game, Combat Knife, Melee Weapons, VEIN survival game',
+      title: '',
+      description: '',
+      keywords: '',
     },
-    detailsHtml: `
-      <h2>Combat Knife</h2>
-      <p>A reliable melee weapon for close-quarters combat in VEIN game. The Combat Knife is lightweight and effective against zombies and bandits.</p>
-      
-      <h3>Weapon Stats</h3>
-      <ul>
-        <li><strong>Type:</strong> Melee Weapon</li>
-        <li><strong>Damage:</strong> Moderate</li>
-        <li><strong>Durability:</strong> High</li>
-        <li><strong>Weight:</strong> Light</li>
-      </ul>
-      
-      <h3>Usage Tips</h3>
-      <p>Use the Combat Knife for silent kills and close-range combat. It's perfect for stealth approaches and conserving ammunition in VEIN survival game.</p>
-    `
+    detailsHtml: ` `
+  },
+  {
+    id: 2,
+    title: '.45 ACP',
+    description: 'A box of .45 ACP rounds.',
+    imageUrl: '/images/item/ammo/ammo-02.webp',
+    imageAlt: '.45 ACP',
+    publishDate: '2025-11-20',
+    type: 'rounds',
+    addressBar: '/',
+    showDetail: false,
+    seo: {
+      title: '',
+      description: '',
+      keywords: '',
+    },
+    detailsHtml: ` `
+  },
+  {
+    id: 3,
+    title: '.50 BMG',
+    description: 'A box of .50 BMG rounds.',
+    imageUrl: '/images/item/ammo/ammo-03.webp',
+    imageAlt: '.50 BMG',
+    publishDate: '2025-11-20',
+    type: 'rounds',
+    addressBar: '/',
+    showDetail: false,
+    seo: {
+      title: '',
+      description: '',
+      keywords: '',
+    },
+    detailsHtml: ` `
+  },
+  {
+    id: 4,
+    title: '.357 Magnum',
+    description: 'A box of .357 Magnum rounds.',
+    imageUrl: '/images/item/ammo/ammo-04.webp',
+    imageAlt: '.357 Magnum',
+    publishDate: '2025-11-20',
+    type: 'rounds',
+    addressBar: '/',
+    showDetail: false,
+    seo: {
+      title: '',
+      description: '',
+      keywords: '',
+    },
+    detailsHtml: ` `
+  },
+  {
+    id: 5,
+    title: '5.56mm',
+    description: 'A box of 5.56mm rounds.',
+    imageUrl: '/images/item/ammo/ammo-05.webp',
+    imageAlt: '5.56mm',
+    publishDate: '2025-11-20',
+    type: 'rounds',
+    addressBar: '/',
+    showDetail: false,
+    seo: {
+      title: '',
+      description: '',
+      keywords: '',
+    },
+    detailsHtml: ` `
+  },
+  {
+    id: 6,
+    title: '5.7x28mm',
+    description: 'A box of 5.7x28mm rounds.',
+    imageUrl: '/images/item/ammo/ammo-06.webp',
+    imageAlt: '5.7x28mm',
+    publishDate: '2025-11-20',
+    type: 'rounds',
+    addressBar: '/',
+    showDetail: false,
+    seo: {
+      title: '',
+      description: '',
+      keywords: '',
+    },
+    detailsHtml: ` `
+  },
+  {
+    id: 7,
+    title: '7.62mm',
+    description: 'A box of 7.62mm rounds.',
+    imageUrl: '/images/item/ammo/ammo-07.webp',
+    imageAlt: '7.62mm',
+    publishDate: '2025-11-20',
+    type: 'rounds',
+    addressBar: '/',
+    showDetail: false,
+    seo: {
+      title: '',
+      description: '',
+      keywords: '',
+    },
+    detailsHtml: ` `
+  },
+  {
+    id: 8,
+    title: '9mm',
+    description: 'Abox of 9mm rounds.',
+    imageUrl: '/images/item/ammo/ammo-08.webp',
+    imageAlt: '9mm',
+    publishDate: '2025-11-20',
+    type: 'rounds',
+    addressBar: '/',
+    showDetail: false,
+    seo: {
+      title: '',
+      description: '',
+      keywords: '',
+    },
+    detailsHtml: ` `
+  },
+  {
+    id: 9,
+    title: '12 Gauge',
+    description: 'a box of 12 gauge rounds.',
+    imageUrl: '/images/item/ammo/ammo-09.webp',
+    imageAlt: '12 Gauge',
+    publishDate: '2025-11-20',
+    type: 'rounds',
+    addressBar: '/',
+    showDetail: false,
+    seo: {
+      title: '',
+      description: '',
+      keywords: '',
+    },
+    detailsHtml: ` `
   },
 ]
