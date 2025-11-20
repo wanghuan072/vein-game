@@ -43,7 +43,12 @@ export const seoConfig = {
     itemsMisc: 0.7,
     itemsDetail: 0.6,
     map: 0.8,
-    mapDetail: 0.7
+    mapDetail: 0.7,
+    privacyPolicy: 0.5,
+    termsOfService: 0.5,
+    copyright: 0.5,
+    aboutUs: 0.6,
+    contactUs: 0.6
   },
 
   // 更新频率设置
@@ -66,7 +71,12 @@ export const seoConfig = {
     itemsMisc: 'weekly',
     itemsDetail: 'monthly',
     map: 'monthly',
-    mapDetail: 'monthly'
+    mapDetail: 'monthly',
+    privacyPolicy: 'yearly',
+    termsOfService: 'yearly',
+    copyright: 'yearly',
+    aboutUs: 'monthly',
+    contactUs: 'monthly'
   }
 }
 

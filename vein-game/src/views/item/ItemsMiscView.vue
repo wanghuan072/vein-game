@@ -28,6 +28,7 @@
           <table class="items-table">
             <thead>
               <tr>
+                <th class="preview-col">Preview</th>
                 <th class="name-col">Name</th>
                 <th class="desc-col">Description</th>
                 <th class="type-col">Type</th>
@@ -40,17 +41,17 @@
                 @click="onItemClick(item)"
                 :class="['table-row', { 'disabled': item.showDetail === false }]"
               >
+                <td class="preview-cell">
+                  <img
+                    v-if="item.imageUrl"
+                    :src="item.imageUrl"
+                    :alt="item.imageAlt || item.title"
+                    class="preview-thumb"
+                    loading="lazy"
+                  />
+                </td>
                 <td class="name-cell">
-                  <div class="name-content">
-                    <div class="name-primary">{{ item.title }}</div>
-                    <img
-                      v-if="item.imageUrl"
-                      :src="item.imageUrl"
-                      :alt="item.imageAlt || item.title"
-                      class="name-thumb"
-                      loading="lazy"
-                    />
-                  </div>
+                  <div class="name-primary">{{ item.title }}</div>
                 </td>
                 <td class="desc-cell">{{ item.description || 'No description available.' }}</td>
                 <td class="type-cell">
@@ -146,7 +147,7 @@ const onItemClick = (item) => {
 }
 
 .items-table td {
-  padding: 14px 16px;
+  padding: 5px;
   color: rgba(255, 210, 210, 0.75);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
@@ -165,26 +166,23 @@ const onItemClick = (item) => {
   min-width: 160px;
 }
 
-.name-cell {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+.preview-col {
+  width: 90px;
+  min-width: 90px;
+  text-align: center;
 }
 
-.name-content {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.preview-cell {
+  text-align: center;
 }
 
-.name-thumb {
-  width: 48px;
-  height: 48px;
+.preview-thumb {
+  width: 55px;
+  height: 55px;
   object-fit: cover;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.05);
-  flex-shrink: 0;
 }
 
 .name-primary {
@@ -295,8 +293,8 @@ const onItemClick = (item) => {
   }
 
   .name-col {
-    width: 180px;
-    min-width: 180px;
+    width: 220px;
+    min-width: 220px;
   }
 
   .desc-col {
@@ -314,7 +312,12 @@ const onItemClick = (item) => {
     overflow-wrap: break-word;
   }
 
-  .name-thumb {
+  .preview-col {
+    width: 70px;
+    min-width: 70px;
+  }
+
+  .preview-thumb {
     width: 36px;
     height: 36px;
     border-radius: 6px;

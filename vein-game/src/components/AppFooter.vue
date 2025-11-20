@@ -8,48 +8,43 @@
             <span class="logo-text">VEIN Game</span>
           </div>
           <p class="footer-text">
-            Unofficial VEIN survival hub. We archive gameplay notes, hardware targets, and patch beats so survivors can track Early Access progress.
+            Comprehensive VEIN game resources including guides, wiki, items database, and interactive maps to help you survive and thrive.
           </p>
-          <ul class="footer-brief">
-            <li>Release · 24 Oct 2025 (EA)</li>
-            <li>Developer · Ramjet Studios</li>
-            <li>Genre · Survival</li>
-          </ul>
         </div>
         <div class="link-column">
           <h2>Navigate</h2>
           <ul>
-            <li><a href="#what-is">Overview</a></li>
-            <li><a href="#guides">Guides</a></li>
-            <li><a href="#info">Game Info</a></li>
-            <li><a href="#reviews">Reviews</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/vein-guides">Guides</a></li>
+            <li><a href="/vein-wiki">Wiki</a></li>
+            <li><a href="/vein-items">Items</a></li>
+            <li><a href="/vein-maps">Maps</a></li>
           </ul>
         </div>
         <div class="link-column">
-          <h2>Official Links</h2>
+          <h2>Legal</h2>
           <ul>
             <li>
-              <a href="https://vein.gg/" target="_blank" rel="noreferrer">Official Site</a>
+              <a href="/privacy-policy" rel="noreferrer">Privacy Policy</a>
             </li>
             <li>
-              <a href="https://store.steampowered.com/app/1857950/VEIN/" target="_blank" rel="noreferrer">
-                Steam Store
-              </a>
+              <a href="/terms-of-service" rel="noreferrer">Terms of Service</a>
             </li>
             <li>
-              <a href="https://vein.wiki.gg/" target="_blank" rel="noreferrer">Official Wiki</a>
+              <a href="/copyright" rel="noreferrer">Copyright</a>
             </li>
             <li>
-              <a href="https://discord.gg/MMxGTZRgHM" target="_blank" rel="noreferrer">Discord</a>
+              <a href="/about-us" rel="noreferrer">About Us</a>
             </li>
-            <li><a href="#info">System Requirements</a></li>
+            <li>
+              <a href="/contact-us" rel="noreferrer">Contact Us</a>
+            </li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© {{ new Date().getFullYear() }} VEIN Fan Hub · Informational only · Not affiliated with Ramjet Studios.</p>
-        <p>Descriptions reference publicly available developer materials and community feedback.</p>
+        <p>© {{ new Date().getFullYear() }}© 2025 veingame.net. All rights reserved.</p>
+        <p>veingame.net is not affiliated with, endorsed by, or connected to the original or its publishers. This is an independent fan site created for informational purposes only. All trademarks and copyrights belong to their respective owners.</p>
       </div>
     </div>
   </footer>
@@ -57,15 +52,15 @@
 
 <style scoped>
 .site-footer {
-  padding: 60px 0 32px;
+  padding: 30px 0 20px 0;
   background: rgba(2, 4, 6, 0.9);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .footer-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-logo {
@@ -94,21 +89,15 @@
   margin-bottom: 16px;
 }
 
-.footer-brief {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 0.9rem;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+.footer-brand{
+  width: 30%;
 }
 
-.link-column h4 {
+.link-column h2 {
   color: #ffdede;
-  font-size: 0.95rem;
-  margin-bottom: 12px;
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+  font-weight: 600;
 }
 
 .link-column ul {
@@ -131,9 +120,9 @@
 }
 
 .footer-bottom {
-  margin-top: 32px;
+  margin-top: 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding-top: 18px;
+  padding-top: 20px;
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.85rem;
   display: flex;
@@ -146,11 +135,11 @@
 @media (max-width: 1024px) {
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+    gap: 40px;
   }
 
-  .footer-brand {
-    grid-column: 1 / -1;
+  .link-column h2 {
+    font-size: 1.2rem;
   }
 }
 
@@ -165,10 +154,6 @@
     gap: 20px;
   }
 
-  .footer-brand {
-    grid-column: 1;
-  }
-
   .footer-logo {
     font-size: 20px;
     margin-bottom: 10px;
@@ -179,14 +164,11 @@
     margin-bottom: 10px;
   }
 
-  .footer-brief {
-    font-size: 12px;
-    gap: 10px;
-  }
-
-  .link-column h4 {
-    font-size: 14px;
-    margin-bottom: 10px;
+  .link-column h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .link-column ul {
@@ -212,7 +194,6 @@
   }
 
   .footer-text,
-  .footer-brief li,
   .link-column a {
     word-wrap: break-word;
     overflow-wrap: break-word;

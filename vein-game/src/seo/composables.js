@@ -226,7 +226,12 @@ const routeToSeoKey = {
   'items-misc': 'itemsMisc',
   'items-detail': 'itemsDetail',
   'map': 'map',
-  'map-detail': 'mapDetail'
+  'map-detail': 'mapDetail',
+  'privacy-policy': 'privacyPolicy',
+  'terms-of-service': 'termsOfService',
+  'copyright': 'copyright',
+  'about-us': 'aboutUs',
+  'contact-us': 'contactUs'
 }
 
 

@@ -26,8 +26,13 @@ const baseRoutes = [
   { path: '/vein-items/medical', name: 'items-medical', priority: 0.7, changefreq: 'weekly' },
   { path: '/vein-items/tools', name: 'items-tools', priority: 0.7, changefreq: 'weekly' },
   { path: '/vein-items/misc', name: 'items-misc', priority: 0.7, changefreq: 'weekly' },
-  { path: '/vein-map', name: 'map', priority: 0.8, changefreq: 'monthly' },
-  { path: '/vein-map-detail', name: 'map-detail', priority: 0.7, changefreq: 'monthly' }
+  { path: '/vein-map', name: 'map', priority: 0.7, changefreq: 'monthly' },
+  { path: '/vein-map-detail', name: 'map-detail', priority: 0.7, changefreq: 'monthly' },
+  { path: '/privacy-policy', name: 'privacy-policy', priority: 0.3, changefreq: 'yearly' },
+  { path: '/terms-of-service', name: 'terms-of-service', priority: 0.3, changefreq: 'yearly' },
+  { path: '/copyright', name: 'copyright', priority: 0.3, changefreq: 'yearly' },
+  { path: '/about-us', name: 'about-us', priority: 0.3, changefreq: 'yearly' },
+  { path: '/contact-us', name: 'contact-us', priority: 0.3, changefreq: 'yearly' }
 ]
 
 // 动态加载数据

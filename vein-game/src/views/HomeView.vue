@@ -23,7 +23,7 @@
                 >
                   <span>View on Steam</span>
                 </a>
-                <a href="#what-is" class="btn-hero btn-secondary">Explore Features</a>
+                <a href="/vein-guides" class="btn-hero btn-secondary">Explore Guides</a>
               </div>
               <div class="hero-stats">
                 <div class="stat">
@@ -167,9 +167,25 @@
               class="guide-card"
               @click="goToGuide(guide.addressBar)"
             >
-              <span class="guide-badge" v-if="guide.category">{{ getCategoryName(guide.category) }}</span>
-              <h3>{{ guide.title }}</h3>
-              <p>{{ guide.description }}</p>
+              <div class="guide-image-container" v-if="guide.imageUrl">
+                <img 
+                  :src="guide.imageUrl" 
+                  :alt="guide.imageAlt || guide.title" 
+                  class="guide-image"
+                  loading="lazy"
+                />
+              </div>
+              <div class="guide-card-content">
+                <h3 class="guide-title">{{ guide.title }}</h3>
+                <p class="guide-description">{{ guide.description }}</p>
+                <div class="guide-tags" v-if="guide.tags && guide.tags.length > 0">
+                  <span v-for="tag in guide.tags" :key="tag" class="tag">{{ tag }}</span>
+                </div>
+                <div class="guide-footer">
+                  <span class="update-date">{{ formatDate(guide.publishDate) }}</span>
+                  <span class="view-link">VIEW GUIDE →</span>
+                </div>
+              </div>
             </article>
           </div>
           <div class="guides-actions" v-if="homeGuides.length > 0">
@@ -370,44 +386,35 @@
           <div class="reviews-grid">
             <article class="review-card">
               <div class="reviewer">
-                <span class="avatar">B</span>
+                <span class="avatar">X</span>
                 <div>
-                  <h4>boko</h4>
+                  <h4>XxBoyEatsGirlxX</h4>
                   <p>★★★★★</p>
                 </div>
               </div>
               <p>
-                "VEIN game's Storm system and hideout building are dangerously addictive. 50+ hours
-                later I'm still finding new approaches in this survival game—just give us more co-op
-                contracts!"
+                "This review is counted in the overall review score because this user purchased the game directly on Steam or got a free license of a free game
+Recommended
+71.4 hrs on record (55.2 hrs at review time)
+Early Access Review
+Posted: 15 November
+I am a 7 Days to Die fanatic. Absolutely love that game but have watched as the game missed the mark with updates, patches and DLC.
+Vein is THE BEST zombie survival game I have played. Period.
+A cross of seven days and proj Z in first person. The jaw dropping amount of content these 2 developers have put into this game is astounding. And their road map and constant updates lets me know these devs love their baby!
+I'm not sure I need to play any other game than this one.
+Vein is a beautiful well crafted world that is only going to get better!"
               </p>
             </article>
             <article class="review-card">
               <div class="reviewer">
-                <span class="avatar">E</span>
+                <span class="avatar">C</span>
                 <div>
-                  <h4>Edythe</h4>
-                  <p>★★★★☆</p>
+                  <h4>Cole</h4>
+                  <p>★★★★★</p>
                 </div>
               </div>
               <p>
-                "VEIN survival game demo already includes the full loop. Loot pacing and
-                construction feel spot-on. I'm hoping for official controller support and console
-                plans."
-              </p>
-            </article>
-            <article class="review-card">
-              <div class="reviewer">
-                <span class="avatar">S</span>
-                <div>
-                  <h4>StealthMaster</h4>
-                  <p>★★★★☆</p>
-                </div>
-              </div>
-              <p>
-                "VEIN game's AI flanks, baits, and punishes sloppy stealth. Tactical co-op is tense
-                in the best way in this survival game—make core co-op official and it's an instant
-                classic."
+                "Ill start of by saying that this is going to be the next great zombie survival game. The realism is incredible. What you expect to happen in real life, happens in the game so it makes survival feel real. The fact you can search and demolish just about anything is a huge bright spot. I can already picture the multiplayer servers where a clan has control of the prison (like in the walking dead) while having parts of their team exploring and negotiating with other settlements that maybe control and entire town (yes its possible)"
               </p>
             </article>
             <article class="review-card">
@@ -425,15 +432,26 @@
             </article>
             <article class="review-card">
               <div class="reviewer">
-                <span class="avatar">Q</span>
+                <span class="avatar">R</span>
                 <div>
-                  <h4>QuietRidge</h4>
-                  <p>★★★★☆</p>
+                  <h4>Refgain</h4>
+                  <p>★★★★★</p>
                 </div>
               </div>
               <p>
-                "In VEIN survival game, fortification and maintenance actually matter. Keeping a
-                base running with friends is as stressful as any raid in this survival game."
+                "Great game. These devs kicks ass compared to sucky EA or any other multi million company!!!!"
+              </p>
+            </article>
+            <article class="review-card">
+              <div class="reviewer">
+                <span class="avatar">R</span>
+                <div>
+                  <h4>reznov</h4>
+                  <p>★★★★★</p>
+                </div>
+              </div>
+              <p>
+                "absolute banger of a game. It's rusty, a bit buggy on the edges but it's new and being worked on; Even then, I love it, been playing for a while and I'm excited to keep doing so and see how the game grows. Keep it up, people."
               </p>
             </article>
             <article class="review-card">
@@ -441,12 +459,11 @@
                 <span class="avatar">A</span>
                 <div>
                   <h4>Archive</h4>
-                  <p>★★★★☆</p>
+                  <p>★★★★★</p>
                 </div>
               </div>
               <p>
-                "VEIN survival game demo already hints at vehicle maintenance and persistent NPCs.
-                Once multiplayer lands, this game is going to explode."
+                "Excellent game. The POIs are very good. The ability to continually expand is excellent. However, killing animals does not yield enough. If the animal was infected or diseased, understandable. Looking forward to the next update."
               </p>
             </article>
           </div>
@@ -607,6 +624,16 @@ const getCategoryName = (category) => {
     'advanced': 'ADVANCED'
   }
   return categoryMap[category] || 'GUIDE'
+}
+
+const formatDate = (dateString) => {
+  if (!dateString) return ''
+  const date = new Date(dateString)
+  return `Updated ${date.toLocaleDateString('en-US', { 
+    month: 'short', 
+    day: 'numeric', 
+    year: 'numeric' 
+  })}`
 }
 </script>
 
@@ -874,62 +901,151 @@ section {
 
 .guides-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .guide-card {
-  padding: 20px;
+  background: rgba(30, 0, 0, 0.6);
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(50, 0, 0, 0.4);
+  border: 1px solid rgba(255, 54, 54, 0.2);
+  padding: 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
   position: relative;
   overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+}
+
+.guide-image-container {
+  width: 100%;
+  overflow: hidden;
+  font-size: 0;
+  background-color: rgba(26, 0, 0, 0.8);
+  position: relative;
+}
+
+.guide-image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.guide-card:hover .guide-image {
+  transform: scale(1.05);
+}
+
+.guide-card-content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .guide-card::before {
   content: '';
   position: absolute;
-  z-index: -1;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(255, 54, 54, 0.15), transparent);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .guide-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(255, 54, 54, 0.3);
+  border-color: rgba(255, 54, 54, 0.4);
+  box-shadow: 0 15px 35px rgba(255, 54, 54, 0.2);
 }
 
 .guide-card:hover::before {
   opacity: 1;
 }
 
-.guide-card h3 {
-  margin: 12px 0;
-  color: #ffe1e1;
+.guide-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffd8d8;
+  margin-bottom: 5px;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.guide-card p {
-  color: rgba(255, 210, 210, 0.72);
+.guide-description {
+  color: rgba(255, 210, 210, 0.78);
+  line-height: 1.4;
+  margin-bottom: 10px;
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.guide-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.tag {
+  background: transparent;
+  border: 1px solid rgba(255, 54, 54, 0.3);
+  color: rgba(255, 210, 210, 0.7);
+  padding: 4px 10px;
+  border-radius: 16px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.guide-card:hover .tag {
+  border-color: rgba(255, 54, 54, 0.6);
+  color: var(--accent);
+}
+
+.guide-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 54, 54, 0.1);
+}
+
+.update-date {
+  color: rgba(255, 210, 210, 0.6);
+  font-size: 0.85rem;
+}
+
+.view-link {
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.guide-card:hover .view-link {
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255, 54, 54, 0.6);
 }
 
 .guides-actions {
   margin-top: 32px;
   text-align: center;
-}
-
-.guide-badge {
-  display: inline-flex;
-  padding: 4px 12px;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  letter-spacing: 0.15em;
-  background: rgba(255, 54, 54, 0.18);
-  color: var(--accent);
 }
 
 .info-layout {
@@ -1113,6 +1229,7 @@ section {
 
   .guides-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 
   .what-is-content {
@@ -1179,11 +1296,38 @@ section {
     overflow-wrap: break-word;
   }
 
-  .guide-card h3 {
+  .guide-card {
+    padding: 0;
+  }
+
+  .guide-card-content {
+    padding: 10px;
+  }
+
+  .guide-title {
     font-size: 16px;
-    margin-bottom: 10px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+  }
+
+  .guide-description {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .tag {
+    font-size: 12px;
+    padding: 3px 8px;
+  }
+
+  .update-date {
+    font-size: 12px;
+  }
+
+  .view-link {
+    font-size: 12px;
+  }
+
+  .guide-footer {
+    padding-top: 5px;
   }
 
   .info-card h3 {

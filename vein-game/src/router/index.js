@@ -18,6 +18,11 @@ import ItemsMiscView from '../views/item/ItemsMiscView.vue'
 import ItemsDetailView from '../views/item/ItemsDetailView.vue'
 import MapView from '../views/MapView.vue'
 import MapDetailView from '../views/MapDetailView.vue'
+import PrivacyPolicyView from '../views/legal/PrivacyPolicyView.vue'
+import TermsOfServiceView from '../views/legal/TermsOfServiceView.vue'
+import CopyrightView from '../views/legal/CopyrightView.vue'
+import AboutUsView from '../views/legal/AboutUsView.vue'
+import ContactUsView from '../views/legal/ContactUsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -226,6 +231,66 @@ const router = createRouter({
           title: 'VEIN Game Map Details | Hidden Loot, Secrets - veingame.net',
           description: 'detailed map in VEIN. Locate every hidden cave, rare resource spawn, secret chest, and crucial Points of Interest to maximize your exploration and survival.',
           keywords: 'VEIN interactive map, VEIN game map, world map, locations, points of interest, navigation, VEIN survival game'
+        }
+      }
+    },
+    {
+      path: '/privacy-policy',
+      name: 'privacy-policy',
+      component: PrivacyPolicyView,
+      meta: {
+        seo: {
+          title: 'Privacy Policy - VEIN Fan Hub - veingame.net',
+          description: 'Privacy Policy for VEIN Fan Hub. Learn how we collect, use, and protect your personal information when you visit our website.',
+          keywords: 'privacy policy, VEIN game, data protection, privacy'
+        }
+      }
+    },
+    {
+      path: '/terms-of-service',
+      name: 'terms-of-service',
+      component: TermsOfServiceView,
+      meta: {
+        seo: {
+          title: 'Terms of Service - VEIN Fan Hub - veingame.net',
+          description: 'Terms of Service for VEIN Fan Hub. Read our terms and conditions for using our website and services.',
+          keywords: 'terms of service, VEIN game, terms and conditions, user agreement'
+        }
+      }
+    },
+    {
+      path: '/copyright',
+      name: 'copyright',
+      component: CopyrightView,
+      meta: {
+        seo: {
+          title: 'Copyright - VEIN Fan Hub - veingame.net',
+          description: 'Copyright information for VEIN Fan Hub. Learn about our copyright policies and intellectual property rights.',
+          keywords: 'copyright, VEIN game, intellectual property, DMCA, fair use'
+        }
+      }
+    },
+    {
+      path: '/about-us',
+      name: 'about-us',
+      component: AboutUsView,
+      meta: {
+        seo: {
+          title: 'About Us - VEIN Fan Hub - veingame.net',
+          description: 'Learn about VEIN Fan Hub, an unofficial community resource for VEIN survival game. Discover our mission, what we offer, and how we help players.',
+          keywords: 'about VEIN Fan Hub, VEIN game community, VEIN resources, VEIN fan site'
+        }
+      }
+    },
+    {
+      path: '/contact-us',
+      name: 'contact-us',
+      component: ContactUsView,
+      meta: {
+        seo: {
+          title: 'Contact Us - VEIN Fan Hub - veingame.net',
+          description: 'Contact VEIN Fan Hub. Get in touch with us for questions, suggestions, feedback, or inquiries about our website and services.',
+          keywords: 'contact VEIN Fan Hub, VEIN game support, VEIN community contact'
         }
       }
     },

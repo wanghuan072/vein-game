@@ -28,8 +28,8 @@
           <table class="weapons-table">
             <thead>
               <tr>
-                <th class="name-col">Name</th>
                 <th class="preview-col">Preview</th>
+                <th class="name-col">Name</th>
                 <th class="desc-col">Description</th>
                 <th class="type-col">Type</th>
               </tr>
@@ -41,9 +41,6 @@
                 @click="onItemClick(item)"
                 :class="['table-row', { 'disabled': item.showDetail === false }]"
               >
-                <td class="name-cell">
-                  <div class="name-primary">{{ item.title }}</div>
-                </td>
                 <td class="preview-cell">
                   <img
                     v-if="item.imageUrl"
@@ -52,6 +49,9 @@
                     class="preview-thumb"
                     loading="lazy"
                   />
+                </td>
+                <td class="name-cell">
+                  <div class="name-primary">{{ item.title }}</div>
                 </td>
                 <td class="desc-cell">{{ item.description || 'No description available.' }}</td>
                 <td class="type-cell">
@@ -74,8 +74,8 @@
           <table class="weapons-table">
             <thead>
               <tr>
-                <th class="name-col">Name</th>
                 <th class="preview-col">Preview</th>
+                <th class="name-col">Name</th>
                 <th class="desc-col">Description</th>
                 <th class="type-col">Type</th>
               </tr>
@@ -87,9 +87,6 @@
                 @click="onItemClick(item)"
                 :class="['table-row', { 'disabled': item.showDetail === false }]"
               >
-                <td class="name-cell">
-                  <div class="name-primary">{{ item.title }}</div>
-                </td>
                 <td class="preview-cell">
                   <img
                     v-if="item.imageUrl"
@@ -98,6 +95,9 @@
                     class="preview-thumb"
                     loading="lazy"
                   />
+                </td>
+                <td class="name-cell">
+                  <div class="name-primary">{{ item.title }}</div>
                 </td>
                 <td class="desc-cell">{{ item.description || 'No description available.' }}</td>
                 <td class="type-cell">
@@ -127,7 +127,7 @@ const { data: itemsData, loading, error, loadData } = useItemsData('weapons')
 
 const TYPE_KEYS = {
   bladed: 'bladed',
-  ranged: 'Ranged Weapons',
+  ranged: 'blunt',
 }
 
 const normalizeType = (value) => String(value || '').trim().toLowerCase()
@@ -214,7 +214,7 @@ const onItemClick = (item) => {
 }
 
 .weapons-table td {
-  padding: 14px 16px;
+  padding: 5px;
   color: rgba(255, 210, 210, 0.75);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
@@ -233,12 +233,6 @@ const onItemClick = (item) => {
   min-width: 160px;
 }
 
-.name-cell {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
 .preview-col {
   width: 90px;
   min-width: 90px;
@@ -250,8 +244,8 @@ const onItemClick = (item) => {
 }
 
 .preview-thumb {
-  width: 48px;
-  height: 48px;
+  width: 55px;
+  height: 55px;
   object-fit: cover;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.1);

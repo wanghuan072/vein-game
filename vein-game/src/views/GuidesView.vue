@@ -34,17 +34,24 @@
               class="guide-card"
               @click="goToGuide(guide.addressBar)"
             >
-              <div class="guide-card-header">
-                <span class="category-tag" v-if="guide.category">{{ getCategoryName(guide.category) }}</span>
+              <div class="guide-image-container" v-if="guide.imageUrl">
+                <img 
+                  :src="guide.imageUrl" 
+                  :alt="guide.imageAlt || guide.title" 
+                  class="guide-image"
+                  loading="lazy"
+                />
               </div>
-              <h3 class="guide-title">{{ guide.title }}</h3>
-              <p class="guide-description">{{ guide.description }}</p>
-              <div class="guide-tags" v-if="guide.tags && guide.tags.length > 0">
-                <span v-for="tag in guide.tags" :key="tag" class="tag">{{ tag }}</span>
-              </div>
-              <div class="guide-footer">
-                <span class="update-date">{{ formatDate(guide.publishDate) }}</span>
-                <span class="view-link">VIEW GUIDE →</span>
+              <div class="guide-card-content">
+                <h3 class="guide-title">{{ guide.title }}</h3>
+                <p class="guide-description">{{ guide.description }}</p>
+                <div class="guide-tags" v-if="guide.tags && guide.tags.length > 0">
+                  <span v-for="tag in guide.tags" :key="tag" class="tag">{{ tag }}</span>
+                </div>
+                <div class="guide-footer">
+                  <span class="update-date">{{ formatDate(guide.publishDate) }}</span>
+                  <span class="view-link">VIEW GUIDE →</span>
+                </div>
               </div>
             </div>
           </div>
@@ -128,13 +135,41 @@ const getCategoryName = (category) => {
   background: rgba(30, 0, 0, 0.6);
   border-radius: 16px;
   border: 1px solid rgba(255, 54, 54, 0.2);
-  padding: 20px;
+  padding: 0;
   transition: all 0.3s ease;
   cursor: pointer;
   backdrop-filter: blur(10px);
   position: relative;
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+}
+
+.guide-image-container {
+  width: 100%;
+  overflow: hidden;
+  font-size: 0;
+  background-color: rgba(26, 0, 0, 0.8);
+  position: relative;
+}
+
+.guide-image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.guide-card:hover .guide-image {
+  transform: scale(1.05);
+}
+
+.guide-card-content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .guide-card::before {
@@ -176,25 +211,37 @@ const getCategoryName = (category) => {
 }
 
 .guide-title {
-  font-size: 1.4rem;
+  font-size: 18px;
   font-weight: 700;
   color: #ffd8d8;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
   line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .guide-description {
   color: rgba(255, 210, 210, 0.78);
-  line-height: 1.6;
-  margin-bottom: 16px;
-  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .guide-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 16px;
+  gap: 5px;
+  margin-bottom: 10px;
 }
 
 .tag {
@@ -203,7 +250,7 @@ const getCategoryName = (category) => {
   color: rgba(255, 210, 210, 0.7);
   padding: 4px 10px;
   border-radius: 16px;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 500;
   transition: all 0.3s ease;
 }
@@ -217,7 +264,7 @@ const getCategoryName = (category) => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 16px;
+  padding-top: 10px;
   border-top: 1px solid rgba(255, 54, 54, 0.1);
 }
 
@@ -265,21 +312,16 @@ const getCategoryName = (category) => {
   }
 
   .guide-card {
-    padding: 10px;
+    padding: 0;
   }
 
   .guide-title {
     font-size: 16px;
-    margin-bottom: 10px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
   }
 
   .guide-description {
     font-size: 12px;
-    margin-bottom: 10px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    margin-bottom: 5px;
   }
 
   .category-tag {
@@ -301,7 +343,7 @@ const getCategoryName = (category) => {
   }
 
   .guide-footer {
-    padding-top: 10px;
+    padding-top: 5px;
   }
 
   .loading-state,

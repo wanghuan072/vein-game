@@ -21,10 +21,6 @@
           <div class="guide-detail-text">
             <h1 class="guide-title">{{ guide.title }}</h1>
 
-            <div class="guide-category" v-if="guide.category">
-              <span class="category-badge">{{ getCategoryName(guide.category) }}</span>
-            </div>
-
             <div class="guide-detail-meta">
               <div class="meta-item">
                 <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -58,12 +54,6 @@
               <div class="info-box-header">
                 <h3 class="info-box-title">{{ guide?.title }}</h3>
               </div>
-
-              <!-- Guide Category -->
-              <div class="guide-category-info" v-if="guide?.category">
-                <div class="category-badge">{{ getCategoryName(guide.category) }}</div>
-              </div>
-
               <!-- Guide Meta Info -->
               <div class="guide-meta">
                 <div class="meta-item">
@@ -321,9 +311,7 @@ const getCategoryName = (category) => {
 .content-layout {
   display: grid;
   grid-template-columns: 1fr 300px;
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
+  gap: 30px;
 }
 
 /* Left Content */
@@ -538,12 +526,6 @@ const getCategoryName = (category) => {
 
   .meta-text {
     font-size: 12px;
-  }
-
-  .category-badge {
-    font-size: 12px;
-    padding: 4px 12px;
-    margin-bottom: 10px;
   }
 
   .tag {
