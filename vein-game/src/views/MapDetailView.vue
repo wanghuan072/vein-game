@@ -31,6 +31,7 @@
     <!-- Map Content -->
     <section class="map-content">
       <div class="container">
+        <h2 class="section-title">Interactive Map</h2>
         <div class="map-container">
           <div class="map-iframe-wrapper">
             <iframe
@@ -167,7 +168,15 @@ onMounted(async () => {
 }
 
 .map-content {
-  padding: 40px 0 80px;
+  padding: 0 0 60px 0;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 30px 0;
+  text-align: center;
 }
 
 .map-container {
@@ -289,7 +298,14 @@ onMounted(async () => {
   }
 
   .map-content {
-    padding: 30px 0 60px;
+    padding: 0 0 20px 0;
+  }
+
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .map-iframe-wrapper {

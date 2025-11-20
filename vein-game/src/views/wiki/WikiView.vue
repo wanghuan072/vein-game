@@ -25,6 +25,9 @@
           <p>Error loading wiki: {{ error }}</p>
         </div>
         
+        <!-- Section Title -->
+        <h2 class="section-title" v-if="!loading && !error">All Articles</h2>
+        
         <!-- Articles Grid -->
         <div class="articles-grid" v-if="!loading && !error">
           <div
@@ -36,7 +39,7 @@
             <div class="card-image-container">
               <img :src="item.imageUrl" :alt="item.imageAlt" class="card-image">
             </div>
-            <h2 class="card-title">{{ item.title }}</h2>
+            <h3 class="card-title">{{ item.title }}</h3>
           </div>
         </div>
       </div>
@@ -75,7 +78,15 @@ const goToWiki = (addressBar) => {
 }
 
 .articles-section {
-  padding: 60px 0;
+  padding: 0 0 40px 0;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 30px 0;
+  text-align: center;
 }
 
 .articles-grid {
@@ -151,7 +162,14 @@ const goToWiki = (addressBar) => {
 /* 移动端 - 768px */
 @media (max-width: 768px) {
   .articles-section {
-    padding: 20px 0;
+    padding: 0 0 20px 0;
+  }
+
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .articles-grid {

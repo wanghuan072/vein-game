@@ -8,6 +8,8 @@
         </p>
       </div>
 
+      <h2 class="section-title">All Categories</h2>
+
       <div class="category-grid">
         <router-link
           v-for="card in categoryCards"
@@ -148,11 +150,19 @@ const categoryCards = computed(() => [
   min-height: 100vh;
 }
 
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
 .category-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 24px;
-  padding: 60px 0;
+  padding: 0 0 60px 0;
 }
 
 .category-card {
@@ -241,10 +251,17 @@ const categoryCards = computed(() => [
 
 /* 移动端 - 768px */
 @media (max-width: 768px) {
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
   .category-grid {
     grid-template-columns: 1fr;
     gap: 20px;
-    padding: 20px 0;
+    padding: 0 0 20px 0;
   }
 
   .category-card {

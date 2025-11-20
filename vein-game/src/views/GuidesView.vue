@@ -27,6 +27,7 @@
         
         <!-- All Guides -->
         <div class="category-section" v-if="!loading && !error">
+          <h2 class="section-title">All Guides</h2>
           <div class="guides-grid">
             <div 
               v-for="guide in allGuides" 
@@ -112,9 +113,17 @@ const getCategoryName = (category) => {
 }
 
 .guide-categories {
-  padding: 40px 0;
+  padding: 0 0 40px 0;
   position: relative;
   z-index: 1;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 30px 0;
+  text-align: center;
 }
 
 .category-section {
@@ -303,7 +312,14 @@ const getCategoryName = (category) => {
 /* 移动端 - 768px */
 @media (max-width: 768px) {
   .guide-categories {
-    padding: 20px 0;
+    padding: 0 0 20px 0;
+  }
+
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .guides-grid {

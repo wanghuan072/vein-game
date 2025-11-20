@@ -34,7 +34,7 @@ export const guides = [
 
 <h2><strong>New Players Must-Know: Detailed Explanation of 6 Key Custom Settings</strong></h2>
 
-<h3 style="font-size: 1.17em; font-weight: bold;"><strong>1. One Life: Proceed with Caution for New Players, a Must for Hardcore Gamers</strong></h3>
+<h3><strong>1. One Life: Proceed with Caution for New Players, a Must for Hardcore Gamers</strong></h3>
 
 <p>This feature is disabled by default even in the highest difficulty preset, which is a real shame! When enabled, it means "once you die, the current world is permanently lost and you cannot respawn to continue playing".</p>
 
@@ -42,37 +42,37 @@ export const guides = [
 
 <p>❌ <strong>New Player Advice:</strong> Keep it disabled for now! New players are unfamiliar with the map and zombie behaviors in the early stages, and frequent deaths will greatly dampen motivation. Try enabling it after mastering basic survival logic.</p>
 
-<h3 style="font-size: 1.17em; font-weight: bold;"><strong>2. Iron Man: A Tool to Prevent "Save Scumming"</strong></h3>
+<h3><strong>2. Iron Man: A Tool to Prevent "Save Scumming"</strong></h3>
 
 <p>If you're worried about ruining the gaming experience by succumbing to the urge to "save scum with multiple lives", be sure to enable this feature! When activated, it locks the save mechanism. Used in conjunction with the "One Life" mode, it maximizes the authentic survival essence of VEIN.</p>
 
 <p>✅ <strong>General Advice:</strong> Whether you're a new player or a veteran, it's recommended to enable this if you want to seriously experience the survival gameplay. If you just want to "wander around and collect materials", you can disable it for flexible saving.</p>
 
-<h3 style="font-size: 1.17em; font-weight: bold;"><strong>3. Building Damage: Forces You to Strengthen Defense</strong></h3>
+<h3><strong>3. Building Damage: Forces You to Strengthen Defense</strong></h3>
 
 <p>This setting is directly related to your "base security"! When enabled, zombies will actively attack your structures. Low-level fortifications (such as wooden fences) are easily destroyed, and it also forces you to "not leave valuable crates on open streets"—after all, zombies may smash the crates and steal supplies.</p>
 
 <p>✅ <strong>Must-Enable Reason:</strong> Even new players are advised to enable this! You may need to spend more time upgrading to level 2 fortifications (such as stone walls) in the early stages, but it helps you develop the habit of "valuing base defense" in advance, avoiding the tragedy of your base being overrun by zombies in one wave later on.</p>
 
-<h3 style="font-size: 1.17em; font-weight: bold;"><strong>4. Building Upkeep: Key to Controlling Excessive Supplies</strong></h3>
+<h3><strong>4. Building Upkeep: Key to Controlling Excessive Supplies</strong></h3>
 
 <p>When enabled, your base will "consume materials regularly" (such as wood and metal) to maintain structural stability. This means you can't "hoard a batch of supplies and laze around"; you must continuously scavenge for resources.</p>
 
 <p>✅ <strong>Core Advice:</strong> Must enable in Survival Mode! Even in VEIN's highest difficulty preset, loot drops are actually quite generous. Enabling upkeep prevents "excessive supplies from eliminating survival pressure" and makes scavenging and resource management more meaningful. If you're a "casual builder", you can disable it to focus on base construction.</p>
 
-<h3 style="font-size: 1.17em; font-weight: bold;"><strong>5. Loot/Item/Furniture Respawn: Definitely Disable in Survival Mode</strong></h3>
+<h3><strong>5. Loot/Item/Furniture Respawn: Definitely Disable in Survival Mode</strong></h3>
 
 <p>This setting determines whether "already scavenged areas will respawn materials". It's more suitable for multiplayer co-op (where consumption is high and continuous supply is needed) or "casual explorers" (who collect all items slowly), but it should definitely be disabled in Survival Mode!</p>
 
 <p>❌ <strong>Disable Reason:</strong> The core of survival is "resource planning". With respawn disabled, you need to carefully remember which areas have key supplies to avoid unnecessary backtracking, and it also enhances the sense of accomplishment when "finding rare materials".</p>
 
-<h3 style="font-size: 1.17em; font-weight: bold;"><strong>6. Headshots Only: New Players Absolutely Should Not Enable!</strong></h3>
+<h3><strong>6. Headshots Only: New Players Absolutely Should Not Enable!</strong></h3>
 
 <p>When enabled, zombies can only be killed by headshots—attacks to other body parts only cause knockback, which significantly increases the difficulty! New players have poor aim in the early stages and can easily be trapped when facing groups of zombies.</p>
 
 <p>✅ <strong>Advanced Advice:</strong> Enable this to challenge higher difficulty only after mastering basic skills such as "flanking and positioning" and being able to stably land headshots. New players must keep it disabled and first gain combat experience by attacking the body.</p>
 
-<h3 style="font-size: 1.17em; font-weight: bold;"><strong>7. Climbing Zombies: A Choice Balancing Realism and Difficulty</strong></h3>
+<h3><strong>7. Climbing Zombies: A Choice Balancing Realism and Difficulty</strong></h3>
 
 <p>This setting is a bit of a "double-edged sword": when enabled, zombies can climb low fences, forcing you to build "two-stage fences" (doubling the cost); when disabled, zombies will take a long detour even for low walls, which is quite unrealistic.</p>
 
@@ -128,16 +128,16 @@ export const guides = [
 
 <h2><strong>Day 1 Essential Skills: Prioritize These First</strong></h2>
 
-<h3 style="font-size: 1.17em; font-weight: bold;"><strong>1. Lockpicking (Must-Have for Early Looting)</strong></h3>
+<h3><strong>1. Lockpicking (Must-Have for Early Looting)</strong></h3>
 <p><strong>Occupation Synergy:</strong> Choose the Thief occupation—this gives a 15-point bonus to Lockpicking, letting you hit 25 (max regular skill) + 15 (occupation) = 40 points immediately. You’ll also get a starting lockpick, so you can start looting right away.</p>
 <p><strong>Why It’s Non-Negotiable:</strong> Lockpicking is the most valuable early skill. Without it, containers and doors with a difficulty level of 25 or higher will be inaccessible for hours (if not days) because Lockpicking levels up extremely slowly. With the Thief bonus, you can break into high-value locations on Day 1—think weapon caches, tool sheds, and supply crates that hold the gear you need to survive the first night.</p>
 <p><strong>Pro Tip:</strong> Only skip Lockpicking if you’re intentionally looking for a harder challenge. Even hardcore players often pick it because the early loot advantage is too big to pass up.</p>
 
-<h3 style="font-size: 1.17em; font-weight: bold;"><strong>2. Stealth (Game-Changer for High Difficulty)</strong></h3>
+<h3><strong>2. Stealth (Game-Changer for High Difficulty)</strong></h3>
 <p><strong>Key Advantage:</strong> Stealth levels up incredibly slowly, but its early passive bonus is worth it—even a single point unlocks a 50% reduction in zombie detection radius. This means you can sneak past hordes to reach loot spots, avoid unnecessary fights, and escape danger when you’re low on health or ammo.</p>
 <p><strong>Day 1 Strategy:</strong> Invest 10-15 points here (save the rest for other skills). You don’t need max points early—focus on getting that 50% detection bonus first. As you play, you’ll level it up gradually by sneaking past zombies or taking stealthy kills (use a melee weapon to avoid noise).</p>
 
-<h3 style="font-size: 1.17em; font-weight: bold;"><strong>3. Electricity (Critical for Base &amp; Vehicles)</strong></h3>
+<h3><strong>3. Electricity (Critical for Base &amp; Vehicles)</strong></h3>
 <p><strong>Upgrade Trait:</strong> Easy to level up early, hard to progress later. This makes it perfect for Day 1 investment—you can hit level 15-20 quickly through simple actions.</p>
 <p><strong>Day 1 Value:</strong> Early on, Electricity lets you hotwire vehicles (a huge mobility boost—no more running from hordes!) and craft basic electrical tools. Long-term, it’s required for advanced base builds like generators, security lights, and automated defenses. Invest 10-15 points here on Day 1 to unlock hotwiring and basic crafting.</p>
 
@@ -255,7 +255,7 @@ export const guides = [
 
 <p>We’ve sorted the most common traits by their danger level, focusing on how quickly they’ll derail your survival. Avoid the "high-risk" ones if you’re new—they’ll turn your early hours into a frustration fest.</p>
 
-<h3 style="font-size: 1.17em; font-weight: bold;"><strong>1. Anosmia (Loss of Smell) – High Risk, Deceptive "Harmlessness"</strong></h3>
+<h3><strong>1. Anosmia (Loss of Smell) – High Risk, Deceptive "Harmlessness"</strong></h3>
 
 <p>At first glance, this trait feels like a throwaway: "So I can’t smell zombies or rot—big deal?" The real danger hits when you start scavenging consumables. In VEIN, bottle labels lie. A jar marked "peanut butter" might be spoiled sludge; a canteen labeled "clean water" could be contaminated with bacteria. With Anosmia, you lose the ability to sniff out these fakes—you’ll have to either gamble on every untested item or waste precious time finding a lab kit to test them.</p>
 
@@ -263,7 +263,7 @@ export const guides = [
 
 <p><strong>Who Should Pick It:</strong> Only hardcore players who memorize item spawn locations (and know which containers hold guaranteed-safe supplies) or have a Doctor occupation with extra antidotes.</p>
 
-<h3 style="font-size: 1.17em; font-weight: bold;"><strong>2. Diabetes – Extreme Risk, Literal Death Sentence</strong></h3>
+<h3><strong>2. Diabetes – Extreme Risk, Literal Death Sentence</strong></h3>
 
 <p>This trait is the definition of a "ticking time bomb." While every other survivor just needs food, water, and sleep, you need one more thing: insulin. Here’s the kicker: Insulin can’t be crafted, can’t be replicated, and every supply in the world is slowly expiring. On Day 1, you’ll spawn with a small stock, but once it runs out, your health will plummet—first fatigue, then organ failure, then death.</p>
 
@@ -271,7 +271,7 @@ export const guides = [
 
 <p><strong>Who Should Pick It:</strong> Only players doing a "hardcore challenge run" (e.g., permadeath + no respawns) who want to test their scavenging speed. New players: never pick this.</p>
 
-<h3 style="font-size: 1.17em; font-weight: bold;"><strong>3. Dietary Restrictions (Lactose Intolerance, Nut Allergy, Vegan) – Medium Risk, Food Hunt Nightmare</strong></h3>
+<h3><strong>3. Dietary Restrictions (Lactose Intolerance, Nut Allergy, Vegan) – Medium Risk, Food Hunt Nightmare</strong></h3>
 
 <p>These traits all follow the same logic: slash your available food sources. If you’ve mastered VEIN’s cooking system and think "finding food is too easy," these are for you. Lactose Intolerance means you can’t eat dairy (common in canned cheese, milk, and even some stews); Nut Allergy forces you to avoid high-calorie nuts (a staple early snack); Vegan cuts out all meat, fish, and animal products (which make up 60% of early lootable food).</p>
 
@@ -279,7 +279,7 @@ export const guides = [
 
 <p><strong>Who Should Pick It:</strong> Intermediate players who already know where to find trait-specific food (e.g., farms for Vegans, convenience stores for nut-free snacks). New players should skip—focus on staying fed first.</p>
 
-<h3 style="font-size: 1.17em; font-weight: bold;"><strong>4. Myopia (Nearsightedness) – High Risk, Vision as a Resource</strong></h3>
+<h3><strong>4. Myopia (Nearsightedness) – High Risk, Vision as a Resource</strong></h3>
 
 <p>The pitch is simple: "You need glasses to see clearly." It sounds manageable—until a zombie swats your glasses off mid-fight and smashes them underfoot. Without a spare pair (which you’ll have to scavenge from houses or pharmacies), your vision blurs so badly you can’t see more than 1 meter ahead. You won’t tell zombies apart from trash cans, you’ll miss loot crates, and you’ll get lost even with a GPS.</p>
 
@@ -400,6 +400,139 @@ export const guides = [
 <p><strong>Day 1 Priority Cheat Sheet:</strong> Vehicle &amp; Backpack → Tools &amp; Medical Supplies → Melee Weapon → Ammo (collect only) → Food/Water (minimal). Up Next on <a href="https://www.veingame.org" rel="noopener noreferrer" target="_blank">veingame.org</a>: VEIN New Player Guide Part 6—"Day 1 Shelter Selection &amp; Basic Fortification". Learn how to choose a zombie-proof base and secure it before nightfall!</p>
 
 <p sty
+
+    `,
+  },
+
+  {
+    id: 6,
+    title: "VEIN Prison Armory Location Guide: How to Find Clinton Correctional Facility Armory",
+    description: "Unlock high-tier weapons and ammo in VEIN by locating the Clinton Correctional Facility Armory. This guide provides a step-by-step route, starting from the safest southwest entrance, to navigate the prison's secured areas and unlock its valuable treasures.",
+    tags: ["VEIN","prison armory","Clinton Correctional Facility","loot guide","weapon location"],
+    publishDate: "2025-11-20",
+    imageUrl: "/images/guide/guide06.webp",
+    imageAlt: "VEIN gameplay scene featuring a player exploring the Clinton Correctional Facility in search of the armory.",
+    isHome: true,
+    seo: {
+      title: "VEIN Prison Armory Guide: Find Clinton Correctional Facility - Loot!",
+      description: "Discover the exact location of the VEIN prison armory in Clinton Correctional Facility. Our guide provides a step-by-step walkthrough to find high-tier weapons and ammo.",
+      keywords: "VEIN, prison, armory, Clinton Correctional Facility, location guide, weapon guide, loot, survival, zombie, game",
+    },
+    addressBar: "/vein-prison-armory-location-guide",
+    detailsHtml: `
+    <p>
+For players seeking high-tier weapons and ammo in VEIN, the Clinton Correctional Facility Armory is a must-visit loot spot. Tucked away in the prison’s depths, this armory houses rare firearms, plenty of ammunition, and tactical gear— but reaching it requires navigating the prison’s secured areas and overcoming locked barriers. This guide details the exact VEIN prison location and a step-by-step route to the armory, plus tips to unlock its treasures.
+</p>
+
+<h2>
+<strong>1. VEIN Prison Location: Where Is Clinton Correctional Facility?</strong>
+</h2>
+
+<p>
+The key to finding the armory is first locating the prison itself. Clinton Correctional Facility is situated in the northeastern corner (top-right section) of the VEIN world map. Look for a large, walled compound labeled “Clinton Correctional Facility” on your in-game map— it’s hard to miss due to its sprawling size and distinctive prison architecture. We recommend marking the location on your GPS before setting out to avoid getting lost, especially if you’re traveling through zombie-infested rural areas.
+</p>
+
+<p>
+<img src="/images/guide/guide06-01.webp" alt="prison laction" width="50%" style="width: 50%;">
+</p>
+
+<h2>
+<strong>2. Step-by-Step Route to VEIN Prison Armory</strong>
+</h2>
+
+<p>
+The prison has multiple entrances, but the southwest entrance is the safest and most direct path to the armory. Attempting other entrances (like the north gate) will force you through dense zombie hordes or heavily fortified areas. Follow these steps precisely to reach the armory efficiently:
+</p>
+
+<p>
+<img src="/images/guide/guide06-02.webp" alt="vein prison armory(1)" width="50%" style="width: 50%;">
+</p>
+
+<h3>
+<strong>Step 1: Access the Prison via the Southwest Entrance</strong>
+</h3>
+
+<p>
+Drive or travel on foot to the southwest perimeter of Clinton Correctional Facility. You’ll notice a closed main gate— don’t try to break it down (it’s too durable). Instead, look for a small guard shed (security hut) just outside the gate. Enter the guard shed and locate the red control button— pressing it will open the main prison gate. If the shed is locked (common on higher difficulties), use a lockpick or your Lockpicking skill to gain entry.
+</p>
+
+<p>
+<img src="/images/guide/guide06-03.webp" alt="vein prison Button 1" width="50%">
+</p>
+
+<h3>
+<strong>Step 2: Navigate Past the Metal Detector</strong>
+</h3>
+
+<p>
+Once the main gate is open, drive your vehicle inside (vehicles provide cover from wandering zombies). Immediately after entering, scan the left side of the compound for a small side gate behind a low metal fence. Park your vehicle nearby (you’ll want it for hauling loot later) and go through this side gate. Inside, you’ll pass through a metal detector— don’t worry about triggering it (it only alerts guards, who are no longer present) — just keep moving forward.
+</p>
+
+<h3>
+<strong>Step 3: Locate the Cell Block Area</strong>
+</h3>
+
+<p>
+After the metal detector, you’ll enter a long, dimly lit corridor. Follow this corridor straight until you reach a T-junction. At the junction, turn left— this will lead you into the prison’s main cell block. The cell block is usually patrolled by 2-3 zombies, so clear them out with a silent melee weapon to avoid attracting more hordes.
+</p>
+
+<h3>
+<strong>Step 4: Find the Monster Trophy Room (Armory Entrance)</strong>
+</h3>
+
+<p>
+Continue through the cell block, passing the guard office on your right (you can loot it for minor supplies like bandages or a flashlight). Keep moving straight until you emerge into a large open area filled with tables— this is the prison’s common room. Now, look to your right: you’ll see a heavy metal door with a high-security lock. This door leads to the Monster Trophy Room— the armory is inside this room.
+</p>
+
+<p>
+<img src="/images/guide/guide06-04.webp" alt="vein prison armory 2" width="50%" style="width: 50%;">
+</p>
+
+<h2>
+<strong>3. How to Unlock the Armory Door</strong>
+</h2>
+
+<p>
+The armory door is heavily secured, and you’ll need one of two things to open it— no workarounds exist, so come prepared:
+</p>
+
+<p>
+<img src="/images/guide/guide06-05.webp" alt="vein prison armory 1" width="50%" style="width: 50%;">
+</p>
+
+<ol>
+<li>
+<strong>Hydraulic Cutter:</strong> This is the most reliable method. Hydraulic cutters can be found in construction sites, industrial warehouses, or loot crates in military checkpoints. Simply equip the cutter, interact with the door, and it will open in 5 seconds.
+</li>
+
+<li>
+<strong>Lockpicking Skill (Level 75+):</strong> If you don’t have a hydraulic cutter, you’ll need a maxed-out Lockpicking skill (Level 75 or higher). Even with high skill, there’s a 20% chance the lockpick breaks, so bring 2-3 spare lockpicks just in case.
+</li>
+</ol>
+
+<h2>
+<strong>4. Armory Loot &amp; Survival Tips</strong>
+</h2>
+
+<p>
+Inside the armory, you’ll find these high-value items (loot varies slightly by difficulty, but these are guaranteed):
+</p>
+
+<ol>
+<li><strong>Rare weapons:</strong> Assault rifles, shotguns, and a sniper rifle (with 1-2 magazines each)</li>
+<li><strong>Ammunition:</strong> Bulk 5.56mm, 12ga, and .308 rounds</li>
+<li><strong>Tactical gear:</strong> Bulletproof vests, combat helmets, and night-vision goggles</li>
+<li><strong>Tool:</strong> A spare hydraulic cutter (for future locked areas)</li>
+</ol>
+
+<p>
+<strong>Survival Warning:</strong> Looting the armory may trigger a zombie horde (10-15 zombies) to spawn at the main gate. After looting, grab your vehicle and exit quickly via the southwest entrance— don’t linger to loot extra items!
+</p>
+
+<p>
+<strong>Pro Tip:</strong> Visit the armory after Day 7 (when you have better gear) to handle the zombie horde easily. Pair a Thief occupation (Lockpicking bonus) with a Hydraulic Cutter for a foolproof run. For more VEIN loot guides, check out our VEIN Wiki at 
+<a href="http://veingame.org" rel="noopener noreferrer" target="_blank">veingame.org</a>!
+</p>
 
     `,
   }

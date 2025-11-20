@@ -25,6 +25,7 @@
 
     <section class="region-overview">
       <div class="container">
+        <h2 class="section-title">Map Overview</h2>
         <div class="region-grid">
           <div class="region-card">
             <h3>Region Snapshot</h3>
@@ -426,7 +427,15 @@ const poiGroups = [
 }
 
 .region-overview {
-  padding: 60px 0;
+  padding: 0 0 60px 0;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 30px 0;
+  text-align: center;
 }
 
 .region-grid {
@@ -774,7 +783,14 @@ const poiGroups = [
   }
 
   .region-overview {
-    padding: 40px 0;
+    padding: 0 0 20px 0;
+  }
+
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .region-grid {
