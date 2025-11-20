@@ -49,6 +49,7 @@
                     class="preview-thumb"
                     loading="lazy"
                   />
+                  <span v-else>—</span>
                 </td>
                 <td class="name-cell">
                   <div class="name-primary">{{ item.title }}</div>
@@ -75,11 +76,18 @@ import { useItemsData } from '../../composables/useItemsData'
 const router = useRouter()
 const { data: itemsData, loading, error, loadData } = useItemsData('materials')
 
-const CATEGORY_TYPE = 'Materials'
+const TYPE_KEYS = {
+  materials: 'Materials',
+}
+
 const normalizeType = (value) => String(value || '').trim().toLowerCase()
-const categoryItems = computed(() =>
-  (itemsData.value || []).filter((item) => normalizeType(item.type) === normalizeType(CATEGORY_TYPE))
-)
+
+const filterByType = (targetType) =>
+  computed(() =>
+    (itemsData.value || []).filter((item) => normalizeType(item.type) === normalizeType(targetType))
+  )
+
+const categoryItems = filterByType(TYPE_KEYS.materials)
 
 onMounted(() => {
   loadData('materials')
@@ -122,6 +130,11 @@ const onItemClick = (item) => {
   background: rgba(255, 54, 54, 0.1);
   border-radius: 999px;
   border: 1px solid rgba(255, 54, 54, 0.2);
+}
+
+.table-section {
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(255, 54, 54, 0.2);
 }
 
 .table-container {
@@ -174,6 +187,13 @@ const onItemClick = (item) => {
 
 .preview-cell {
   text-align: center;
+}
+
+.preview-cell span{
+  min-height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .preview-thumb {

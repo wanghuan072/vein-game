@@ -4,7 +4,8 @@
       <div class="page-header">
         <h1 class="page-title">Armor</h1>
         <p class="page-subtitle">
-          Protective armor sets that help VEIN survivors withstand raids, firefights, and seasonal hazards.
+          Protective armor sets that help VEIN survivors withstand raids, firefights, and seasonal
+          hazards.
         </p>
       </div>
 
@@ -19,10 +20,10 @@
       </div>
 
       <!-- Items Table -->
-      <div v-if="!loading && !error && categoryItems.length > 0" class="table-section">
+      <div v-if="!loading && !error && helmetItems.length > 0" class="table-section">
         <div class="section-header">
-          <h2 class="section-title">Armor</h2>
-          <span class="section-count">{{ categoryItems.length }} items</span>
+          <h2 class="section-title">Helmet</h2>
+          <span class="section-count">{{ helmetItems.length }} items</span>
         </div>
         <div class="table-container">
           <table class="items-table">
@@ -36,10 +37,10 @@
             </thead>
             <tbody>
               <tr
-                v-for="item in categoryItems"
+                v-for="item in helmetItems"
                 :key="item.id"
                 @click="onItemClick(item)"
-                :class="['table-row', { 'disabled': item.showDetail === false }]"
+                :class="['table-row', { disabled: item.showDetail === false }]"
               >
                 <td class="preview-cell">
                   <img
@@ -49,6 +50,7 @@
                     class="preview-thumb"
                     loading="lazy"
                   />
+                  <span v-else>—</span>
                 </td>
                 <td class="name-cell">
                   <div class="name-primary">{{ item.title }}</div>
@@ -63,6 +65,102 @@
           </table>
         </div>
       </div>
+
+      <!-- Lower Armor Table -->
+      <div v-if="!loading && !error && lowerArmorItems.length > 0" class="table-section">
+        <div class="section-header">
+          <h2 class="section-title">Lower Armor</h2>
+          <span class="section-count">{{ lowerArmorItems.length }} items</span>
+        </div>
+        <div class="table-container">
+          <table class="items-table">
+            <thead>
+              <tr>
+                <th class="preview-col">Preview</th>
+                <th class="name-col">Name</th>
+                <th class="desc-col">Description</th>
+                <th class="type-col">Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                v-for="item in lowerArmorItems"
+                :key="item.id"
+                @click="onItemClick(item)"
+                :class="['table-row', { disabled: item.showDetail === false }]"
+              >
+                <td class="preview-cell">
+                  <img
+                    v-if="item.imageUrl"
+                    :src="item.imageUrl"
+                    :alt="item.imageAlt || item.title"
+                    class="preview-thumb"
+                    loading="lazy"
+                  />
+                  <span v-else>—</span>
+                </td>
+                <td class="name-cell">
+                  <div class="name-primary">{{ item.title }}</div>
+                </td>
+                <td class="desc-cell">{{ item.description || 'No description available.' }}</td>
+                <td class="type-cell">
+                  <span class="type-pill" v-if="item.type">{{ item.type }}</span>
+                  <span v-else>—</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Upper Armor Table -->
+      <div v-if="!loading && !error && upperArmorItems.length > 0" class="table-section">
+        <div class="section-header">
+          <h2 class="section-title">Upper Armor</h2>
+          <span class="section-count">{{ upperArmorItems.length }} items</span>
+        </div>
+        <div class="table-container">
+          <table class="items-table">
+            <thead>
+              <tr>
+                <th class="preview-col">Preview</th>
+                <th class="name-col">Name</th>
+                <th class="desc-col">Description</th>
+                <th class="type-col">Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                v-for="item in upperArmorItems"
+                :key="item.id"
+                @click="onItemClick(item)"
+                :class="['table-row', { disabled: item.showDetail === false }]"
+              >
+                <td class="preview-cell">
+                  <img
+                    v-if="item.imageUrl"
+                    :src="item.imageUrl"
+                    :alt="item.imageAlt || item.title"
+                    class="preview-thumb"
+                    loading="lazy"
+                  />
+                  <span v-else>—</span>
+                </td>
+                <td class="name-cell">
+                  <div class="name-primary">{{ item.title }}</div>
+                </td>
+                <td class="desc-cell">{{ item.description || 'No description available.' }}</td>
+                <td class="type-cell">
+                  <span class="type-pill" v-if="item.type">{{ item.type }}</span>
+                  <span v-else>—</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
     </div>
   </div>
 </template>
@@ -75,11 +173,25 @@ import { useItemsData } from '../../composables/useItemsData'
 const router = useRouter()
 const { data: itemsData, loading, error, loadData } = useItemsData('armor')
 
-const CATEGORY_TYPE = 'Armor'
-const normalizeType = (value) => String(value || '').trim().toLowerCase()
-const categoryItems = computed(() =>
-  (itemsData.value || []).filter((item) => normalizeType(item.type) === normalizeType(CATEGORY_TYPE))
-)
+const TYPE_KEYS = {
+  helmet: 'helmet',
+  lowerArmor: 'lower-armor',
+  upperArmor: 'upper-armor',
+}
+
+const normalizeType = (value) =>
+  String(value || '')
+    .trim()
+    .toLowerCase()
+
+const filterByType = (targetType) =>
+  computed(() =>
+    (itemsData.value || []).filter((item) => normalizeType(item.type) === normalizeType(targetType))
+  )
+
+const helmetItems = filterByType(TYPE_KEYS.helmet)
+const lowerArmorItems = filterByType(TYPE_KEYS.lowerArmor)
+const upperArmorItems = filterByType(TYPE_KEYS.upperArmor)
 
 onMounted(() => {
   loadData('armor')
@@ -103,9 +215,7 @@ const onItemClick = (item) => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
-  padding-bottom: 12px;
-  border-bottom: 2px solid rgba(255, 54, 54, 0.2);
+  margin-bottom: 10px;
 }
 
 .section-title {
@@ -122,6 +232,11 @@ const onItemClick = (item) => {
   background: rgba(255, 54, 54, 0.1);
   border-radius: 999px;
   border: 1px solid rgba(255, 54, 54, 0.2);
+}
+
+.table-section {
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(255, 54, 54, 0.2);
 }
 
 .table-container {
@@ -176,6 +291,13 @@ const onItemClick = (item) => {
   text-align: center;
 }
 
+.preview-cell span{
+  min-height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .preview-thumb {
   width: 55px;
   height: 55px;
@@ -219,11 +341,6 @@ const onItemClick = (item) => {
   background: rgba(255, 54, 54, 0.05);
 }
 
-.table-row.disabled {
-  cursor: default;
-  opacity: 0.5;
-}
-
 .table-row.disabled:hover {
   background: transparent;
 }
@@ -257,8 +374,6 @@ const onItemClick = (item) => {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
   }
 
   .section-title {

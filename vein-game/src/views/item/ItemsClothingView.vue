@@ -18,11 +18,11 @@
         <p>Error loading clothing: {{ error }}</p>
       </div>
 
-      <!-- Items Table -->
-      <div v-if="!loading && !error && categoryItems.length > 0" class="table-section">
+      <!-- Backpack Table -->
+      <div v-if="!loading && !error && backpackItems.length > 0" class="table-section">
         <div class="section-header">
           <h2 class="section-title">Clothing</h2>
-          <span class="section-count">{{ categoryItems.length }} items</span>
+          <span class="section-count">{{ backpackItems.length }} items</span>
         </div>
         <div class="table-container">
           <table class="items-table">
@@ -36,7 +36,7 @@
             </thead>
             <tbody>
               <tr
-                v-for="item in categoryItems"
+                v-for="item in backpackItems"
                 :key="item.id"
                 @click="onItemClick(item)"
                 :class="['table-row', { 'disabled': item.showDetail === false }]"
@@ -49,6 +49,7 @@
                     class="preview-thumb"
                     loading="lazy"
                   />
+                  <span v-else>—</span>
                 </td>
                 <td class="name-cell">
                   <div class="name-primary">{{ item.title }}</div>
@@ -75,11 +76,18 @@ import { useItemsData } from '../../composables/useItemsData'
 const router = useRouter()
 const { data: itemsData, loading, error, loadData } = useItemsData('clothing')
 
-const CATEGORY_TYPE = 'Clothing'
+const TYPE_KEYS = {
+  backpack: 'backpack',
+}
+
 const normalizeType = (value) => String(value || '').trim().toLowerCase()
-const categoryItems = computed(() =>
-  (itemsData.value || []).filter((item) => normalizeType(item.type) === normalizeType(CATEGORY_TYPE))
-)
+
+const filterByType = (targetType) =>
+  computed(() =>
+    (itemsData.value || []).filter((item) => normalizeType(item.type) === normalizeType(targetType))
+  )
+
+const backpackItems = filterByType(TYPE_KEYS.backpack)
 
 onMounted(() => {
   loadData('clothing')
@@ -103,8 +111,11 @@ const onItemClick = (item) => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
-  padding-bottom: 12px;
+  margin-bottom: 10px; 
+}
+
+.table-section {
+  padding-bottom: 20px;
   border-bottom: 2px solid rgba(255, 54, 54, 0.2);
 }
 
@@ -122,6 +133,11 @@ const onItemClick = (item) => {
   background: rgba(255, 54, 54, 0.1);
   border-radius: 999px;
   border: 1px solid rgba(255, 54, 54, 0.2);
+}
+
+.table-section {
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(255, 54, 54, 0.2);
 }
 
 .table-container {
@@ -166,8 +182,21 @@ const onItemClick = (item) => {
   min-width: 160px;
 }
 
+.preview-col {
+  width: 90px;
+  min-width: 90px;
+  text-align: center;
+}
+
 .preview-cell {
   text-align: center;
+}
+
+.preview-cell span{
+  min-height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .preview-thumb {
@@ -213,9 +242,9 @@ const onItemClick = (item) => {
   background: rgba(255, 54, 54, 0.05);
 }
 
+
 .table-row.disabled {
   cursor: default;
-  opacity: 0.5;
 }
 
 .table-row.disabled:hover {
@@ -244,15 +273,13 @@ const onItemClick = (item) => {
   }
 
   .table-section {
-    margin-bottom: 20px;
+    padding-bottom: 10px;
   }
 
   .section-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
   }
 
   .section-title {

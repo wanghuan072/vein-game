@@ -18,11 +18,11 @@
         <p>Error loading consumables: {{ error }}</p>
       </div>
 
-      <!-- Items Table -->
-      <div v-if="!loading && !error && categoryItems.length > 0" class="table-section">
+      <!-- Alcohol & Drugs Table -->
+      <div v-if="!loading && !error && alcoholDrugsItems.length > 0" class="table-section">
         <div class="section-header">
-          <h2 class="section-title">Consumables</h2>
-          <span class="section-count">{{ categoryItems.length }} items</span>
+          <h2 class="section-title">Alcohol & Drugs</h2>
+          <span class="section-count">{{ alcoholDrugsItems.length }} items</span>
         </div>
         <div class="table-container">
           <table class="items-table">
@@ -36,7 +36,7 @@
             </thead>
             <tbody>
               <tr
-                v-for="item in categoryItems"
+                v-for="item in alcoholDrugsItems"
                 :key="item.id"
                 @click="onItemClick(item)"
                 :class="['table-row', { 'disabled': item.showDetail === false }]"
@@ -49,6 +49,7 @@
                     class="preview-thumb"
                     loading="lazy"
                   />
+                  <span v-else>—</span>
                 </td>
                 <td class="name-cell">
                   <div class="name-primary">{{ item.title }}</div>
@@ -75,11 +76,18 @@ import { useItemsData } from '../../composables/useItemsData'
 const router = useRouter()
 const { data: itemsData, loading, error, loadData } = useItemsData('consumables')
 
-const CATEGORY_TYPE = 'Consumables'
+const TYPE_KEYS = {
+  alcoholDrugs: 'alcohol-drugs',
+}
+
 const normalizeType = (value) => String(value || '').trim().toLowerCase()
-const categoryItems = computed(() =>
-  (itemsData.value || []).filter((item) => normalizeType(item.type) === normalizeType(CATEGORY_TYPE))
-)
+
+const filterByType = (targetType) =>
+  computed(() =>
+    (itemsData.value || []).filter((item) => normalizeType(item.type) === normalizeType(targetType))
+  )
+
+const alcoholDrugsItems = filterByType(TYPE_KEYS.alcoholDrugs)
 
 onMounted(() => {
   loadData('consumables')
@@ -103,9 +111,7 @@ const onItemClick = (item) => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
-  padding-bottom: 12px;
-  border-bottom: 2px solid rgba(255, 54, 54, 0.2);
+  margin-bottom: 10px;
 }
 
 .section-title {
@@ -122,6 +128,11 @@ const onItemClick = (item) => {
   background: rgba(255, 54, 54, 0.1);
   border-radius: 999px;
   border: 1px solid rgba(255, 54, 54, 0.2);
+}
+
+.table-section {
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(255, 54, 54, 0.2);
 }
 
 .table-container {
@@ -176,6 +187,13 @@ const onItemClick = (item) => {
   text-align: center;
 }
 
+.preview-cell span{
+  min-height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .preview-thumb {
   width: 55px;
   height: 55px;
@@ -219,11 +237,6 @@ const onItemClick = (item) => {
   background: rgba(255, 54, 54, 0.05);
 }
 
-.table-row.disabled {
-  cursor: default;
-  opacity: 0.5;
-}
-
 .table-row.disabled:hover {
   background: transparent;
 }
@@ -256,9 +269,7 @@ const onItemClick = (item) => {
   .section-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
     margin-bottom: 10px;
-    padding-bottom: 10px;
   }
 
   .section-title {

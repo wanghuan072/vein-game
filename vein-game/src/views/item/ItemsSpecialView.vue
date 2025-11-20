@@ -19,10 +19,10 @@
       </div>
 
       <!-- Items Table -->
-      <div v-if="!loading && !error && categoryItems.length > 0" class="table-section">
+      <div v-if="!loading && !error && keysItems.length > 0" class="table-section">
         <div class="section-header">
-          <h2 class="section-title">Special Items</h2>
-          <span class="section-count">{{ categoryItems.length }} items</span>
+          <h2 class="section-title">Keys Items</h2>
+          <span class="section-count">{{ keysItems.length }} items</span>
         </div>
         <div class="table-container">
           <table class="items-table">
@@ -36,7 +36,7 @@
             </thead>
             <tbody>
               <tr
-                v-for="item in categoryItems"
+                v-for="item in keysItems"
                 :key="item.id"
                 @click="onItemClick(item)"
                 :class="['table-row', { 'disabled': item.showDetail === false }]"
@@ -49,6 +49,7 @@
                     class="preview-thumb"
                     loading="lazy"
                   />
+                  <span v-else>—</span>
                 </td>
                 <td class="name-cell">
                   <div class="name-primary">{{ item.title }}</div>
@@ -75,11 +76,18 @@ import { useItemsData } from '../../composables/useItemsData'
 const router = useRouter()
 const { data: itemsData, loading, error, loadData } = useItemsData('special')
 
-const CATEGORY_TYPE = 'Special'
+const TYPE_KEYS = {
+  keys: 'keys',
+}
+
 const normalizeType = (value) => String(value || '').trim().toLowerCase()
-const categoryItems = computed(() =>
-  (itemsData.value || []).filter((item) => normalizeType(item.type) === normalizeType(CATEGORY_TYPE))
-)
+
+const filterByType = (targetType) =>
+  computed(() =>
+    (itemsData.value || []).filter((item) => normalizeType(item.type) === normalizeType(targetType))
+  )
+
+const keysItems = filterByType(TYPE_KEYS.keys)
 
 onMounted(() => {
   loadData('special')
@@ -103,9 +111,7 @@ const onItemClick = (item) => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
-  padding-bottom: 12px;
-  border-bottom: 2px solid rgba(255, 54, 54, 0.2);
+  margin-bottom: 10px;
 }
 
 .section-title {
@@ -122,6 +128,16 @@ const onItemClick = (item) => {
   background: rgba(255, 54, 54, 0.1);
   border-radius: 999px;
   border: 1px solid rgba(255, 54, 54, 0.2);
+}
+
+.table-section {
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(255, 54, 54, 0.2);
+}
+
+.table-section {
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(255, 54, 54, 0.2);
 }
 
 .table-container {
@@ -174,6 +190,13 @@ const onItemClick = (item) => {
 
 .preview-cell {
   text-align: center;
+}
+
+.preview-cell span{
+  min-height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .preview-thumb {
