@@ -433,7 +433,7 @@ The key to finding the armory is first locating the prison itself. Clinton Corre
 </p>
 
 <p>
-<img src="/images/guide/guide06-01.webp" alt="prison laction" width="50%" style="width: 50%;">
+<img src="/images/guide/guide06-05.webp" alt="prison laction" width="50%" style="width: 50%;">
 </p>
 
 <h2>
@@ -445,7 +445,7 @@ The prison has multiple entrances, but the southwest entrance is the safest and 
 </p>
 
 <p>
-<img src="/images/guide/guide06-02.webp" alt="vein prison armory(1)" width="50%" style="width: 50%;">
+<img src="/images/guide/guide06-04.webp" alt="vein prison armory(1)" width="50%" style="width: 50%;">
 </p>
 
 <h3>
@@ -485,7 +485,7 @@ Continue through the cell block, passing the guard office on your right (you can
 </p>
 
 <p>
-<img src="/images/guide/guide06-04.webp" alt="vein prison armory 2" width="50%" style="width: 50%;">
+<img src="/images/guide/guide06-02.webp" alt="vein prison armory 2" width="50%" style="width: 50%;">
 </p>
 
 <h2>
@@ -497,7 +497,7 @@ The armory door is heavily secured, and you’ll need one of two things to open 
 </p>
 
 <p>
-<img src="/images/guide/guide06-05.webp" alt="vein prison armory 1" width="50%" style="width: 50%;">
+<img src="/images/guide/guide06-01.webp" alt="vein prison armory 1" width="50%" style="width: 50%;">
 </p>
 
 <ol>
