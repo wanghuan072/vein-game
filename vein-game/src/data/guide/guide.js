@@ -18,8 +18,11 @@ export const guides = [
     detailsHtml: `
     <p>VEIN (commonly referred to as Vein), a multiplayer open-world zombie survival sandbox game developed by Ramjet Studios, has gained a large following with its high degree of freedom and hardcore survival experience. Many new players are overwhelmed by the numerous settings when creating a new world—Which settings affect survival difficulty? How to adjust them to suit new players? This VEIN new player guide (exclusively released on <a href="https://www.veingame.org" rel="noopener noreferrer" target="_blank">veingame.org</a>, your dedicated VEIN Wiki and strategy guide site) focuses on core setting tips for Day 1, helping you avoid fatal mistakes and lay a solid foundation for survival!</p>
 
-<p>Whether you're starting solo or co-op, the settings when creating a new game directly determine your subsequent survival experience. The system offers two options: "Preset Settings" and "Custom Settings". If new players are unsure about the adjustments initially, they can use presets as a starting point. If you find any inappropriate settings during gameplay, you can modify them through the admin menu—no need to panic!
-<img src="/images/guide/guide01-01.webp" alt="VEIN Setting 1" width="50%" style="width: 50%;"></p>
+<p>Whether you're starting solo or co-op, the settings when creating a new game directly determine your subsequent survival experience. The system offers two options: "Preset Settings" and "Custom Settings". If new players are unsure about the adjustments initially, they can use presets as a starting point. If you find any inappropriate settings during gameplay, you can modify them through the admin menu—no need to panic!</p>
+
+<p>
+<img src="/images/guide/guide01-01.webp" alt="VEIN Setting 1" width="50%" style="width: 50%;">
+</p>
 
 <h2><strong>First, Understand: What Do Preset Settings Actually Adjust?</strong></h2>
 
