@@ -25,25 +25,25 @@
           <h2>Legal</h2>
           <ul>
             <li>
-              <a href="/privacy-policy" rel="noreferrer">Privacy Policy</a>
+              <a href="/privacy-policy" rel="nofollow">Privacy Policy</a>
             </li>
             <li>
-              <a href="/terms-of-service" rel="noreferrer">Terms of Service</a>
+              <a href="/terms-of-service" rel="nofollow">Terms of Service</a>
             </li>
             <li>
-              <a href="/copyright" rel="noreferrer">Copyright</a>
+              <a href="/copyright" rel="nofollow">Copyright</a>
             </li>
             <li>
-              <a href="/about-us" rel="noreferrer">About Us</a>
+              <a href="/about-us" rel="nofollow">About Us</a>
             </li>
             <li>
-              <a href="/contact-us" rel="noreferrer">Contact Us</a>
+              <a href="/contact-us" rel="nofollow">Contact Us</a>
             </li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© {{ new Date().getFullYear() }}© 2025 veingame.net. All rights reserved.</p>
+        <p>© 2025 veingame.net. All rights reserved.</p>
         <p>veingame.net is not affiliated with, endorsed by, or connected to the original or its publishers. This is an independent fan site created for informational purposes only. All trademarks and copyrights belong to their respective owners.</p>
       </div>
     </div>
