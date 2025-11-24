@@ -2,7 +2,7 @@ export const guides = [
   {
     id: 1,
     title: "VEIN New Player Guide Part 1: Day 1 Must-Know! Ultimate World Settings Guide",
-    description: "Overwhelmed by VEIN's world settings? This new player guide, exclusively on veingame.org, unveils essential Day 1 setting tips for the hardcore zombie survival sandbox game. Master the 'Preset' & 'Custom' options, avoid fatal errors, and build a strong foundation! Perfect for solo or co-op beginners.",
+    description: "Overwhelmed by VEIN's world settings? This new player guide, exclusively on veingame.net, unveils essential Day 1 setting tips for the hardcore zombie survival sandbox game. Master the 'Preset' & 'Custom' options, avoid fatal errors, and build a strong foundation! Perfect for solo or co-op beginners.",
     tags: ["vein", "new player guide", "zombie survival", "world settings", "veingame.net"],
     publishDate: "2025-11-20",
     // category: 'getting-started',
@@ -11,12 +11,12 @@ export const guides = [
     isHome: true,
     seo: {
       title: "VEIN New Player Guide - Day 1 Settings: Ultimate Survival Tips!",
-      description: "Dominate VEIN's zombie apocalypse! This new player guide reveals crucial Day 1 world settings. Master survival, explore presets, and conquer with confidence! Exclusively on veingame.org.",
-      keywords: "vein, new player, guide, zombie, survival, world settings, vein wiki, ramjet studios, sandbox game, veingame.org",
+      description: "Dominate VEIN's zombie apocalypse! This new player guide reveals crucial Day 1 world settings. Master survival, explore presets, and conquer with confidence! Exclusively on veingame.net.",
+      keywords: "vein, new player, guide, zombie, survival, world settings, vein wiki, ramjet studios, sandbox game, veingame.net",
     },
     addressBar: "/ultimate-world-settings-guide",
     detailsHtml: `
-    <p>VEIN (commonly referred to as Vein), a multiplayer open-world zombie survival sandbox game developed by Ramjet Studios, has gained a large following with its high degree of freedom and hardcore survival experience. Many new players are overwhelmed by the numerous settings when creating a new world—Which settings affect survival difficulty? How to adjust them to suit new players? This VEIN new player guide (exclusively released on <a href="https://www.veingame.org" rel="noopener noreferrer" target="_blank">veingame.org</a>, your dedicated VEIN Wiki and strategy guide site) focuses on core setting tips for Day 1, helping you avoid fatal mistakes and lay a solid foundation for survival!</p>
+    <p>VEIN (commonly referred to as Vein), a multiplayer open-world zombie survival sandbox game developed by Ramjet Studios, has gained a large following with its high degree of freedom and hardcore survival experience. Many new players are overwhelmed by the numerous settings when creating a new world—Which settings affect survival difficulty? How to adjust them to suit new players? This VEIN new player guide (exclusively released on <a href="https://www.veingame.net" rel="noopener noreferrer" target="_blank">veingame.net</a>, your dedicated VEIN Wiki and strategy guide site) focuses on core setting tips for Day 1, helping you avoid fatal mistakes and lay a solid foundation for survival!</p>
 
 <p>Whether you're starting solo or co-op, the settings when creating a new game directly determine your subsequent survival experience. The system offers two options: "Preset Settings" and "Custom Settings". If new players are unsure about the adjustments initially, they can use presets as a starting point. If you find any inappropriate settings during gameplay, you can modify them through the admin menu—no need to panic!</p>
 
@@ -87,7 +87,7 @@ export const guides = [
 
 <h2><strong>Final Summary: New Player-Friendly Setting Combination</strong></h2>
 
-<p>To help everyone experience the fun of survival without being discouraged, <a href="https://www.veingame.org" rel="noopener noreferrer" target="_blank">veingame.org</a> has compiled a "new player-friendly setting combination"—you can directly follow this setup:</p>
+<p>To help everyone experience the fun of survival without being discouraged, <a href="https://www.veingame.net" rel="noopener noreferrer" target="_blank">veingame.net</a> has compiled a "new player-friendly setting combination"—you can directly follow this setup:</p>
 
 <ol>
 <li><strong>Must Enable:</strong> Iron Man, Building Damage, Building Upkeep;</li>
@@ -95,7 +95,7 @@ export const guides = [
 <li><strong>Optional:</strong> Climbing Zombies (Recommended to Enable).</li>
 </ol>
 
-<p><strong>Tip:</strong> You can adjust the above settings according to your skill level. For example, if you find the difficulty too low, you can gradually enable "Headshots Only"; if you frequently die due to base destruction, you can temporarily disable "Building Upkeep" for a transition. <a href="https://www.veingame.org" rel="noopener noreferrer" target="_blank">veingame.org</a> will also update VEIN New Player Guide Part 2—"Day 1 Scavenging Route + Core Material List" soon. Follow us for the latest strategies!</p>
+<p><strong>Tip:</strong> You can adjust the above settings according to your skill level. For example, if you find the difficulty too low, you can gradually enable "Headshots Only"; if you frequently die due to base destruction, you can temporarily disable "Building Upkeep" for a transition. <a href="https://www.veingame.net" rel="noopener noreferrer" target="_blank">veingame.net</a> will also update VEIN New Player Guide Part 2—"Day 1 Scavenging Route + Core Material List" soon. Follow us for the latest strategies!</p>
 
     `,
   },
@@ -116,7 +116,7 @@ export const guides = [
     },
     addressBar: "/day-1-Skill-Selection-Ultimate-Guide",
     detailsHtml: `
-    <p>After sorting out the world settings in the first part of the VEIN new player guide (exclusively on <a href="https://www.veingame.org" rel="noopener noreferrer" target="_blank">veingame.org</a>, your go-to VEIN Wiki and strategy hub), the next crucial step for Day 1 survival is character creation and skill selection. Many new players get stuck here—Should I prioritize appearance or skills? Does occupation matter? Which skills can directly boost my early survival rate? This guide will cut through the clutter, focusing on the most valuable skills for Day 1 and practical matching strategies to help you start strong!</p>
+    <p>After sorting out the world settings in the first part of the VEIN new player guide (exclusively on <a href="https://www.veingame.net" rel="noopener noreferrer" target="_blank">veingame.net</a>, your go-to VEIN Wiki and strategy hub), the next crucial step for Day 1 survival is character creation and skill selection. Many new players get stuck here—Should I prioritize appearance or skills? Does occupation matter? Which skills can directly boost my early survival rate? This guide will cut through the clutter, focusing on the most valuable skills for Day 1 and practical matching strategies to help you start strong!</p>
 <p>First, let’s clarify the basics of VEIN’s skill system: You can customize your character’s appearance freely, but skill and occupation choices require careful consideration. Your occupation determines your starting equipment, but honestly, this is barely worth focusing on—you’ll always get basic weapons early on, and loot will keep dropping as you scavenge. The real game-changer is skills.</p>
 <p><img src="/images/guide/guide02-01.webp" alt="Vein skills" width="50%" style="width: 50%;"></p>
 
@@ -153,7 +153,7 @@ export const guides = [
 </ol>
 
 <h2><strong>Day 1 Skill Build: New Player-Proof Combo（vein best starting skills）</strong></h2>
-<p>Based on the above analysis, <a href="https://www.veingame.org" rel="noopener noreferrer" target="_blank">veingame.org</a> recommends this foolproof build for Day 1—balances looting, survival, and future progression:</p>
+<p>Based on the above analysis, <a href="https://www.veingame.net" rel="noopener noreferrer" target="_blank">veingame.net</a> recommends this foolproof build for Day 1—balances looting, survival, and future progression:</p>
 <ol>
   <li><strong>Occupation:</strong> Thief (grants 15 Lockpicking bonus + starting lockpick)</li>
   <li><strong>Regular Skill 1:</strong> Lockpicking (25 points) → Total: 40 points (unlocks all early/mid difficulty locks)</li>
@@ -169,7 +169,7 @@ export const guides = [
   <li><strong>Wasting Points on Combat Skills:</strong> Melee and Ranged skills level up quickly through fighting. You don’t need to invest initial points—you’ll level them naturally as you defend yourself.</li>
 </ol>
 
-<p><strong>Tip:</strong> Skill choices aren’t permanent—you can respec later (though it costs rare materials). Focus on Day 1 survival first, then adjust for long-term goals (like base building or PvP) once you’re settled. Next up on <a href="https://www.veingame.org" rel="noopener noreferrer" target="_blank">veingame.org</a>: VEIN New Player Guide Part 3—"Day 1 Scavenging Route: Top 5 Loot Spots to Avoid Hordes". Stay tuned!</p>
+<p><strong>Tip:</strong> Skill choices aren’t permanent—you can respec later (though it costs rare materials). Focus on Day 1 survival first, then adjust for long-term goals (like base building or PvP) once you’re settled. Next up on <a href="https://www.veingame.net" rel="noopener noreferrer" target="_blank">veingame.net</a>: VEIN New Player Guide Part 3—"Day 1 Scavenging Route: Top 5 Loot Spots to Avoid Hordes". Stay tuned!</p>
     `,
   },
 
@@ -185,7 +185,7 @@ export const guides = [
     seo: {
       title: "VEIN New Player Guide: Day 1 Occupation - Ultimate Selection Tips!",
       description: "Maximize your survival chances in VEIN! This guide reveals the best Day 1 occupations, crucial for insane difficulty and rare loot settings. Dominate the zombie apocalypse!",
-      keywords: "vein game, new player guide, vein occupation, day 1 survival, zombie survival, insane difficulty, rare loot, starting gear, vein wiki, veingame.org",
+      keywords: "vein game, new player guide, vein occupation, day 1 survival, zombie survival, insane difficulty, rare loot, starting gear, vein wiki, veingame.net",
     },
     addressBar: "/day-1-occupation-selection-guide",
     detailsHtml: `<div>
@@ -221,7 +221,7 @@ export const guides = [
       <li><strong>What makes occupation selection critical on Insane difficulty?</strong><br>The higher zombie aggression and scarce loot make starting equipment much more important for early survival.</li>
       <li><strong>How do rare loot settings affect occupation choice?</strong><br>They make starting tools and equipment from occupations invaluable, potentially saving you hours of searching.</li>
       <li><strong>What should I consider when choosing an occupation for a challenge run?</strong><br>Since you are restricting skill bonuses and gear, your occupation's starting perks become your primary advantage and safety net.</li>
-      <li><strong>Where can I find more information about the different occupations in VEIN?</strong><br>Visit veingame.org, your trusted VEIN Wiki and strategy center, for in-depth guides and information.</li>
+      <li><strong>Where can I find more information about the different occupations in VEIN?</strong><br>Visit veingame.net, your trusted VEIN Wiki and strategy center, for in-depth guides and information.</li>
     </ol>
   
     <p>Ultimately, the best occupation is the one that best suits your playstyle and the challenges you're prepared to face. Don't be afraid to experiment, learn from your mistakes, and forge your own path in the zombie-infested world of VEIN! Good luck, survivor!</p>
@@ -231,7 +231,7 @@ export const guides = [
   {
     id: 4,
     title: "VEIN New Player Guide Part 4: Traits Selection guide",
-    description: "Understand the pros and cons of trait selection in VEIN on Day 1. This guide analyzes high-risk traits, offers recommendations for all player types, and helps you avoid critical mistakes for survival. Visit veingame.org for more.",
+    description: "Understand the pros and cons of trait selection in VEIN on Day 1. This guide analyzes high-risk traits, offers recommendations for all player types, and helps you avoid critical mistakes for survival. Visit veingame.net for more.",
     tags: ["after", "locking", "your", "occupation", "(part"],
     publishDate: "2025-11-20",
     imageUrl: "/images/guide/guide04.webp",
@@ -239,12 +239,12 @@ export const guides = [
     isHome: true,
     seo: {
       title: "VEIN New Player Guide P4: Traits Selection Guide |Risks & Rewards",
-      description: "Understand the pros and cons of trait selection in VEIN on Day 1. This guide analyzes high-risk traits, offers recommendations for all player types, and helps you avoid critical mistakes for survival. Visit veingame.org for more.",
+      description: "Understand the pros and cons of trait selection in VEIN on Day 1. This guide analyzes high-risk traits, offers recommendations for all player types, and helps you avoid critical mistakes for survival. Visit veingame.net for more.",
       keywords: "VEIN New Player Guide, VEIN Traits, Trait Risks, Anosmia, Diabetes, Myopia, Dietary Restrictions, Vein Wiki, Zombie Survival Game",
     },
     addressBar: "/traits-selection-guide",
     detailsHtml: `
-    <p>After locking in your occupation (Part 3) in the VEIN new player guide series (exclusively on <a href="https://www.veingame.org" rel="noopener noreferrer" target="_blank">veingame.org</a>, your ultimate VEIN Wiki and strategy hub), you’ll reach a deeper layer of character customization: Traits. Unlike skills or occupations that boost your survival ability, traits are double-edged swords—they add personality to your character but also pile on extra hardships. You can skip them entirely for a smooth start, or check every box to test if you can last a week. Some traits seem harmless at first, but their hidden mechanics will bite you later; others scream "trouble" the second you select them. Let’s break down the most impactful traits and how they’ll shape your survival journey.</p>
+    <p>After locking in your occupation (Part 3) in the VEIN new player guide series (exclusively on <a href="https://www.veingame.net" rel="noopener noreferrer" target="_blank">veingame.net</a>, your ultimate VEIN Wiki and strategy hub), you’ll reach a deeper layer of character customization: Traits. Unlike skills or occupations that boost your survival ability, traits are double-edged swords—they add personality to your character but also pile on extra hardships. You can skip them entirely for a smooth start, or check every box to test if you can last a week. Some traits seem harmless at first, but their hidden mechanics will bite you later; others scream "trouble" the second you select them. Let’s break down the most impactful traits and how they’ll shape your survival journey.</p>
 
 <p>
     <img src="/images/guide/guide04-01.webp" alt="Vein Traits 1" width="50%">
@@ -293,7 +293,7 @@ export const guides = [
 <h2><strong>Traits Selection Cheat Sheet for Every Player Type</strong></h2>
 
 <p>
-    <a href="https://www.veingame.org" rel="noopener noreferrer" target="_blank">veingame.org</a>’s tailored recommendations take the guesswork out of traits—pick based on your experience and goals:
+    <a href="https://www.veingame.net" rel="noopener noreferrer" target="_blank">veingame.net</a>’s tailored recommendations take the guesswork out of traits—pick based on your experience and goals:
 </p>
 
 <ol>
@@ -318,7 +318,7 @@ export const guides = [
 
 <p><strong>Pro Tip:</strong> If you accidentally pick a bad trait, use the admin menu (single-player only) to reset it—no shame in fixing a survival mistake. On multiplayer, ask the host for a trait reset (most hosts will agree for new players).</p>
 
-<p>Up Next on <a href="https://www.veingame.org" rel="noopener noreferrer" target="_blank">veingame.org</a>: VEIN New Player Guide Part 5—"Day 1 Base Building 101: Safe Locations & Essential Fortifications". We’ll teach you how to turn a random house into a zombie-proof shelter before nightfall. Stay tuned!</p>
+<p>Up Next on <a href="https://www.veingame.net" rel="noopener noreferrer" target="_blank">veingame.net</a>: VEIN New Player Guide Part 5—"Day 1 Base Building 101: Safe Locations & Essential Fortifications". We’ll teach you how to turn a random house into a zombie-proof shelter before nightfall. Stay tuned!</p>
 
     `,
   },
@@ -339,7 +339,7 @@ export const guides = [
     },
     addressBar: "/day-1-priorities-guide",
     detailsHtml: `
-    <p>In the VEIN new player guide series (exclusively on <a href="https://www.veingame.org" rel="noopener noreferrer" target="_blank">veingame.org</a>, your trusted VEIN Wiki and strategy center), after confirming your occupation and traits (Parts 3-4), Day 1 becomes a race against time. There are countless useful items around, but your inventory space is limited—deciding what to take immediately, leave for later, or discard is critical. While you can find a random spot to spend the first night, securing a safe shelter before dawn should be your top goal. This guide breaks down Day 1 priorities to help you survive efficiently: from core gear to resource collection, every choice aligns with early survival needs.</p>
+    <p>In the VEIN new player guide series (exclusively on <a href="https://www.veingame.net" rel="noopener noreferrer" target="_blank">veingame.net</a>, your trusted VEIN Wiki and strategy center), after confirming your occupation and traits (Parts 3-4), Day 1 becomes a race against time. There are countless useful items around, but your inventory space is limited—deciding what to take immediately, leave for later, or discard is critical. While you can find a random spot to spend the first night, securing a safe shelter before dawn should be your top goal. This guide breaks down Day 1 priorities to help you survive efficiently: from core gear to resource collection, every choice aligns with early survival needs.</p>
 
 <p>
     <img src="/images/guide/guide05-01.webp" alt="VEIN TRIORITY 1" width="50%" style="width: 50%;">
@@ -400,7 +400,7 @@ export const guides = [
 
 <p>On normal difficulty, food and water aren’t urgent. Drink from sinks and eat food found in fridges as you loot—every house has basic supplies. Carry only one water bottle and a small amount of high-nutrition canned food (even cat food works) to save space. Reserve inventory for higher-priority items like tools and medical supplies.</p>
 
-<p><strong>Day 1 Priority Cheat Sheet:</strong> Vehicle &amp; Backpack → Tools &amp; Medical Supplies → Melee Weapon → Ammo (collect only) → Food/Water (minimal). Up Next on <a href="https://www.veingame.org" rel="noopener noreferrer" target="_blank">veingame.org</a>: VEIN New Player Guide Part 6—"Day 1 Shelter Selection &amp; Basic Fortification". Learn how to choose a zombie-proof base and secure it before nightfall!</p>
+<p><strong>Day 1 Priority Cheat Sheet:</strong> Vehicle &amp; Backpack → Tools &amp; Medical Supplies → Melee Weapon → Ammo (collect only) → Food/Water (minimal). Up Next on <a href="https://www.veingame.net" rel="noopener noreferrer" target="_blank">veingame.net</a>: VEIN New Player Guide Part 6—"Day 1 Shelter Selection &amp; Basic Fortification". Learn how to choose a zombie-proof base and secure it before nightfall!</p>
 
 <p sty
 
@@ -534,7 +534,7 @@ Inside the armory, you’ll find these high-value items (loot varies slightly by
 
 <p>
 <strong>Pro Tip:</strong> Visit the armory after Day 7 (when you have better gear) to handle the zombie horde easily. Pair a Thief occupation (Lockpicking bonus) with a Hydraulic Cutter for a foolproof run. For more VEIN loot guides, check out our VEIN Wiki at 
-<a href="http://veingame.org" rel="noopener noreferrer" target="_blank">veingame.org</a>!
+<a href="http://veingame.net" rel="noopener noreferrer" target="_blank">veingame.net</a>!
 </p>
 
     `,
