@@ -1,4 +1,5 @@
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 // Items 数据配置映射
 const ITEMS_DATA_CONFIG = {
@@ -14,35 +15,27 @@ const ITEMS_DATA_CONFIG = {
   misc: { routePath: '/items/misc' },
 }
 
-// 数据文件映射
-const categoryPathMap = {
-  weapons: () => import('../data/items/weapons.js'),
-  armor: () => import('../data/items/armor.js'),
-  clothing: () => import('../data/items/clothing.js'),
-  consumables: () => import('../data/items/consumables.js'),
-  special: () => import('../data/items/special.js'),
-  materials: () => import('../data/items/materials.js'),
-  ammo: () => import('../data/items/ammo.js'),
-  medical: () => import('../data/items/medical.js'),
-  tools: () => import('../data/items/tools.js'),
-  misc: () => import('../data/items/misc.js'),
-}
-
 /**
  * 加载指定类别的 items 数据
  */
-const loadItemsData = async (category) => {
+const loadItemsData = async (category, lang = 'en') => {
   try {
-    const loader = categoryPathMap[category]
-    if (!loader) {
-      throw new Error(`Unknown items category: ${category}`)
-    }
-    
-    const module = await loader()
+    const module = await import(`../data/items/${category}/${lang}.js`)
     const data = module.default || module.items || []
     return Array.isArray(data) ? data : []
   } catch (error) {
-    console.error(`Failed to load items data for category: ${category}`, error)
+    console.error(`Failed to load items data for category: ${category} (lang: ${lang})`, error)
+    // 如果加载失败，尝试回退到英文
+    if (lang !== 'en') {
+      try {
+        const fallbackModule = await import(`../data/items/${category}/en.js`)
+        const data = fallbackModule.default || fallbackModule.items || []
+        return Array.isArray(data) ? data : []
+      } catch (fallbackError) {
+        console.error(`Failed to load fallback items data for category: ${category}`, fallbackError)
+        return []
+      }
+    }
     return []
   }
 }
@@ -51,20 +44,37 @@ const loadItemsData = async (category) => {
  * Items 数据 composable
  */
 export function useItemsData(initialCategory) {
+  const { locale } = useI18n()
   const data = ref([])
   const loading = ref(false)
   const error = ref(null)
   const categoryRef = ref(initialCategory || '')
 
-  const loadData = async (category = categoryRef.value) => {
+  const loadData = async (category = categoryRef.value, lang = null) => {
     categoryRef.value = category
     loading.value = true
     error.value = null
     try {
-      data.value = await loadItemsData(category)
+      // 优先使用传入的 lang 参数，如果没有则使用 locale.value，最后回退到 'en'
+      const currentLang = lang !== null && lang !== undefined ? lang : (locale.value || 'en')
+      
+      // 调试日志（仅在开发环境）
+      if (import.meta.env.DEV) {
+        console.log(`[useItemsData] Loading data for category: ${category}, lang: ${currentLang}, locale.value: ${locale.value}, passed lang: ${lang}`)
+      }
+      
+      data.value = await loadItemsData(category, currentLang)
+      
+      // 调试日志：显示加载的数据数量
+      if (import.meta.env.DEV) {
+        console.log(`[useItemsData] Loaded ${data.value.length} items for category: ${category}, lang: ${currentLang}`)
+      }
     } catch (e) {
       error.value = e.message || 'Failed to load items data'
       data.value = []
+      if (import.meta.env.DEV) {
+        console.error(`[useItemsData] Error loading data for category: ${category}`, e)
+      }
     } finally {
       loading.value = false
     }

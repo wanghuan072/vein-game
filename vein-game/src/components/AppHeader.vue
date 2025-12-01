@@ -2,10 +2,10 @@
   <header class="site-header">
     <div class="container">
       <div class="header-content">
-        <a href="/" class="logo" @click="closeMenu">
+        <router-link :to="getLocalizedPath('/')" class="logo" @click="closeMenu">
           <img class="logo-image" src="/images/logo.webp" alt="VEIN Logo">
           <span class="logo-text">VEIN Game</span>
-        </a>
+        </router-link>
         <button class="menu-toggle" @click="toggleMenu" aria-label="Toggle menu">
           <span class="hamburger-line" :class="{ active: isMenuOpen }"></span>
           <span class="hamburger-line" :class="{ active: isMenuOpen }"></span>
@@ -19,11 +19,11 @@
               v-model="searchInput"
               @keyup.enter="handleSearch"
               @input="handleSearchInput"
-              placeholder="Search guides, wiki, items..."
+              :placeholder="$t('common.search.placeholder')"
               class="search-input"
-              aria-label="Search"
+              :aria-label="$t('common.search.ariaLabel')"
             />
-            <button @click="handleSearch" class="search-button" aria-label="Search">
+            <button @click="handleSearch" class="search-button" :aria-label="$t('common.search.ariaLabel')">
               <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <circle cx="11" cy="11" r="8" />
                 <path d="m21 21-4.35-4.35" />
@@ -43,27 +43,113 @@
           </div>
         </div>
         <nav class="nav-links" :class="{ open: isMenuOpen }">
-          <router-link to="/" @click="closeMenu">Home</router-link>
-          <router-link to="/vein-guides" @click="closeMenu">Guides</router-link>
-          <router-link to="/vein-wiki" @click="closeMenu">Wiki</router-link>
-          <router-link to="/vein-items" @click="closeMenu">Items</router-link>
-          <router-link to="/vein-map" @click="closeMenu">Map</router-link>
+          <router-link :to="getLocalizedPath('/')" @click="closeMenu">{{ $t('common.nav.home') }}</router-link>
+          <router-link :to="getLocalizedPath('/vein-guides')" @click="closeMenu">{{ $t('common.nav.guides') }}</router-link>
+          <router-link :to="getLocalizedPath('/vein-wiki')" @click="closeMenu">{{ $t('common.nav.wiki') }}</router-link>
+          <router-link :to="getLocalizedPath('/vein-items')" @click="closeMenu">{{ $t('common.nav.items') }}</router-link>
+          <router-link :to="getLocalizedPath('/vein-map')" @click="closeMenu">{{ $t('common.nav.map') }}</router-link>
         </nav>
+        <div class="language-switcher" ref="langSwitcherRef">
+          <button 
+            class="lang-button" 
+            @click="toggleLangDropdown"
+            :aria-label="$t('common.languageSwitcher.label')"
+            :aria-expanded="isLangDropdownOpen"
+          >
+            <span class="lang-current">{{ currentLocale.toUpperCase() }}</span>
+            <svg 
+              class="lang-arrow" 
+              :class="{ open: isLangDropdownOpen }"
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              stroke-width="2"
+            >
+              <polyline points="6,9 12,15 18,9" />
+            </svg>
+          </button>
+          <div 
+            v-if="isLangDropdownOpen" 
+            class="lang-dropdown"
+          >
+            <button
+              class="lang-option"
+              :class="{ active: currentLocale === 'en' }"
+              @click="selectLanguage('en')"
+            >
+              <span class="lang-code">EN</span>
+            </button>
+            <button
+              class="lang-option"
+              :class="{ active: currentLocale === 'de' }"
+              @click="selectLanguage('de')"
+            >
+              <span class="lang-code">DE</span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </header>
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
-import { useRouter } from 'vue-router'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { useRouter, useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useSearch } from '../composables/useSearch'
+import { useLocalizedPath } from '../composables/useLocalizedPath'
 
 const router = useRouter()
+const route = useRoute()
+const { locale } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
 const isMenuOpen = ref(false)
 const searchInput = ref('')
 const showSuggestions = ref(false)
+const isLangDropdownOpen = ref(false)
+const langSwitcherRef = ref(null)
 const { search, searchResults } = useSearch()
+
+// 当前语言
+const currentLocale = computed(() => locale.value || 'en')
+
+// 切换语言下拉菜单
+const toggleLangDropdown = () => {
+  isLangDropdownOpen.value = !isLangDropdownOpen.value
+  if (isLangDropdownOpen.value) {
+    showSuggestions.value = false
+  }
+}
+
+// 选择语言
+const selectLanguage = (newLocale) => {
+  if (newLocale === currentLocale.value) {
+    isLangDropdownOpen.value = false
+    return
+  }
+  
+  // 获取当前路径（去除语言前缀）
+  let currentPath = route.path
+  const pathSegments = currentPath.split('/').filter(Boolean)
+  
+  // 如果当前路径有语言前缀，移除它
+  if (pathSegments.length > 0 && ['en', 'de'].includes(pathSegments[0])) {
+    pathSegments.shift()
+    currentPath = '/' + pathSegments.join('/')
+  }
+  
+  // 如果新语言是英文，直接跳转（无前缀）
+  if (newLocale === 'en') {
+    router.push(currentPath || '/')
+  } else {
+    // 其他语言添加前缀
+    router.push(`/${newLocale}${currentPath || '/'}`)
+  }
+  
+  isLangDropdownOpen.value = false
+  closeMenu()
+}
 
 // 搜索建议
 const suggestions = ref([])
@@ -96,7 +182,7 @@ const handleSearchInput = async () => {
 const handleSearch = () => {
   const query = searchInput.value.trim()
   if (query) {
-    router.push({ path: '/search', query: { q: query } })
+    router.push({ path: getLocalizedPath('/search'), query: { q: query } })
     showSuggestions.value = false
     closeMenu()
   }
@@ -106,16 +192,16 @@ const handleSearch = () => {
 const selectSuggestion = (suggestion) => {
   if (suggestion.type === 'Guide') {
     const path = suggestion.addressBar.startsWith('/') ? suggestion.addressBar : `/${suggestion.addressBar}`
-    router.push(`/vein-guides${path}`)
+    router.push(getLocalizedPath(`/vein-guides${path}`))
   } else if (suggestion.type === 'Wiki') {
     const path = suggestion.addressBar.startsWith('/') ? suggestion.addressBar : `/${suggestion.addressBar}`
-    router.push(`/vein-wiki${path}`)
+    router.push(getLocalizedPath(`/vein-wiki${path}`))
   } else if (suggestion.type === 'Item') {
     const path = suggestion.addressBar.startsWith('/') ? suggestion.addressBar.slice(1) : suggestion.addressBar
     if (path && path !== '/') {
-      router.push(`/vein-items/${suggestion.category}/${path}`)
+      router.push(getLocalizedPath(`/vein-items/${suggestion.category}/${path}`))
     } else {
-      router.push(`/vein-items/${suggestion.category}`)
+      router.push(getLocalizedPath(`/vein-items/${suggestion.category}`))
     }
   }
   showSuggestions.value = false
@@ -123,10 +209,13 @@ const selectSuggestion = (suggestion) => {
   closeMenu()
 }
 
-// 点击外部关闭建议
+// 点击外部关闭建议和语言下拉
 const handleClickOutside = (event) => {
   if (!event.target.closest('.search-container')) {
     showSuggestions.value = false
+  }
+  if (!event.target.closest('.language-switcher')) {
+    isLangDropdownOpen.value = false
   }
 }
 
@@ -142,11 +231,13 @@ const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
   if (isMenuOpen.value) {
     showSuggestions.value = false
+    isLangDropdownOpen.value = false
   }
 }
 
 const closeMenu = () => {
   isMenuOpen.value = false
+  isLangDropdownOpen.value = false
 }
 </script>
 
@@ -486,6 +577,122 @@ const closeMenu = () => {
 
   .suggestion-title {
     font-size: 0.85rem;
+  }
+}
+
+/* Language Switcher */
+.language-switcher {
+  position: relative;
+  margin-left: 16px;
+}
+
+.lang-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: rgba(30, 0, 0, 0.6);
+  border: 1px solid rgba(255, 54, 54, 0.3);
+  border-radius: 8px;
+  color: rgba(255, 230, 230, 0.9);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 70px;
+}
+
+.lang-button:hover {
+  background: rgba(30, 0, 0, 0.8);
+  border-color: rgba(255, 54, 54, 0.5);
+  color: #fff;
+  box-shadow: 0 0 12px rgba(255, 54, 54, 0.2);
+}
+
+.lang-current {
+  font-weight: 600;
+}
+
+.lang-arrow {
+  width: 14px;
+  height: 14px;
+  color: rgba(255, 230, 230, 0.7);
+  transition: transform 0.3s ease;
+}
+
+.lang-arrow.open {
+  transform: rotate(180deg);
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 160px;
+  background: rgba(18, 0, 0, 0.98);
+  border: 1px solid rgba(255, 54, 54, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px 16px;
+  background: transparent;
+  border: none;
+  color: rgba(255, 230, 230, 0.8);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.lang-option:last-child {
+  border-bottom: none;
+}
+
+.lang-option:hover {
+  background: rgba(255, 54, 54, 0.1);
+  color: rgba(255, 230, 230, 0.95);
+}
+
+.lang-option.active {
+  background: rgba(255, 54, 54, 0.15);
+  color: var(--accent);
+}
+
+.lang-option.active .lang-code {
+  font-weight: 700;
+}
+
+.lang-code {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .language-switcher {
+    order: 3;
+    width: 100%;
+    margin: 16px 0 0 0;
+  }
+  
+  .lang-button {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .lang-dropdown {
+    right: auto;
+    left: 0;
+    width: 100%;
   }
 }
 </style>

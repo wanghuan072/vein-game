@@ -6,13 +6,10 @@
         <div class="container">
           <div class="hero-content">
             <div class="hero-text">
-              <p class="badge">VEIN Game · Post-Apocalyptic Survival Sandbox</p>
-              <h1 class="hero-title">VEIN · Survive Beyond the Collapse</h1>
+              <p class="badge">{{ $t('homePage.hero.badge') }}</p>
+              <h1 class="hero-title">{{ $t('homePage.hero.title') }}</h1>
               <p class="hero-subtitle">
-                VEIN game is a post-apocalyptic survival multiplayer sandbox game. Gather supplies,
-                explore abandoned buildings, combat bandits, defend your home, and rebuild
-                society—whether alone or with friends. As seasons change, VEIN game world evolves
-                with persistent, long-scale random events.
+                {{ $t('homePage.hero.subtitle') }}
               </p>
               <div class="hero-actions">
                 <a
@@ -21,22 +18,22 @@
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <span>View on Steam</span>
+                  <span>{{ $t('homePage.hero.button1') }}</span>
                 </a>
-                <a href="/vein-guides" class="btn-hero btn-secondary">Explore Guides</a>
+                <a href="/vein-guides" class="btn-hero btn-secondary">{{ $t('homePage.hero.button2') }}</a>
               </div>
               <div class="hero-stats">
                 <div class="stat">
-                  <p class="label">Release Date</p>
-                  <p class="value">24 Oct 2025 · Early Access</p>
+                  <p class="label">{{ $t('homePage.hero.stats.releaseDate') }}</p>
+                  <p class="value">{{ $t('homePage.hero.stats.releaseDateValue') }}</p>
                 </div>
                 <div class="stat">
-                  <p class="label">Genre</p>
-                  <p class="value">Survival</p>
+                  <p class="label">{{ $t('homePage.hero.stats.genre') }}</p>
+                  <p class="value">{{ $t('homePage.hero.stats.genreValue') }}</p>
                 </div>
                 <div class="stat">
-                  <p class="label">Platform</p>
-                  <p class="value">PC Steam</p>
+                  <p class="label">{{ $t('homePage.hero.stats.platform') }}</p>
+                  <p class="value">{{ $t('homePage.hero.stats.platformValue') }}</p>
                 </div>
               </div>
             </div>
@@ -44,7 +41,7 @@
               <div class="video-player">
                 <div class="video-thumbnail" v-if="!isVideoPlaying">
                   <div class="video-mask">
-                    <span>VEIN WORLD BRIEFING</span>
+                    <span>{{ $t('homePage.hero.video.title') }}</span>
                   </div>
                   <div class="play-button" @click="playVideo">▶</div>
                 </div>
@@ -59,13 +56,12 @@
                 </div>
                 <div class="video-info">
                   <div class="video-header">
-                    <span>Ramjet Studios</span>
+                    <span>{{ $t('homePage.hero.video.developer') }}</span>
                     <span class="dot"></span>
-                    <span>Developer Briefing</span>
+                    <span>{{ $t('homePage.hero.video.briefing') }}</span>
                   </div>
                   <p>
-                    Captured from an in-development build of VEIN survival game, highlighting
-                    scavenging loops, hideout upgrades, and the looming Storm events.
+                    {{ $t('homePage.hero.video.description') }}
                   </p>
                 </div>
               </div>
@@ -77,31 +73,21 @@
       <!-- What is Section -->
       <section class="what-is">
         <div class="container">
-          <h2 class="section-title">What is VEIN?</h2>
+          <h2 class="section-title">{{ $t('homePage.whatIs.title') }}</h2>
           <p class="section-subtitle">
-            A post-apocalyptic survival multiplayer sandbox game where you gather supplies, explore
-            abandoned buildings, combat bandits, and rebuild society with friends.
+            {{ $t('homePage.whatIs.subtitle') }}
           </p>
           <div class="what-is-content">
             <div class="what-is-image">
               <img src="/images/what-01.webp" alt="VEIN Game" />
             </div>
             <div class="what-is-text">
-              <h3>Scavenging and Exploration</h3>
+              <h3>{{ $t('homePage.whatIs.scavenging.title') }}</h3>
               <p>
-                In VEIN game, gathering supplies is essential for survival. Explore abandoned
-                buildings to find the resources you need to stay alive. VEIN survival game
-                challenges you to scavenge effectively while navigating dangerous environments where
-                hostile zombies and bandits pose constant threats. Every building you enter could
-                contain valuable supplies or deadly encounters in this survival game. Learn the <router-link to="/vein-guides/vein-best-loot-locations" class="inline-link">best loot locations</router-link> to maximize your scavenging efficiency.
+                {{ $t('homePage.whatIs.scavenging.content1') }} <router-link to="/vein-guides/vein-best-loot-locations" class="inline-link">{{ $t('homePage.whatIs.scavenging.link1') }}</router-link> {{ $t('homePage.whatIs.scavenging.content2') }}
               </p>
               <p>
-                VEIN game demo provides a condensed experience, limiting you to a small region of
-                the world. Your maximum skill level is capped at 50 instead of 100 in the demo, but
-                there are no other restrictions. The demo receives regular feature updates and bug
-                fixes alongside the main game, giving players a true taste of VEIN survival game
-                experience. Whether you're new to VEIN game or a seasoned survivor, the demo offers
-                a perfect introduction to the core mechanics of this survival game. Master the <router-link to="/vein-wiki/controls" class="inline-link">game controls</router-link> to navigate the world effectively.
+                {{ $t('homePage.whatIs.scavenging.content3') }} <router-link to="/vein-wiki/controls" class="inline-link">{{ $t('homePage.whatIs.scavenging.link2') }}</router-link> {{ $t('homePage.whatIs.scavenging.content4') }}
               </p>
             </div>
           </div>
@@ -110,20 +96,12 @@
               <img src="/images/what-02.webp" alt="VEIN Game" />
             </div>
             <div class="what-is-text">
-              <h3>Dynamic Environment</h3>
+              <h3>{{ $t('homePage.whatIs.dynamic.title') }}</h3>
               <p>
-                VEIN game world is constantly changing. As time passes and seasons change, VEIN
-                survival game world transforms with them. Persistent, long-scale random events
-                affect gameplay, ensuring that no two play sessions are exactly the same. These
-                dynamic systems mean that the challenges you face and the opportunities available to
-                you will vary based on the current state of the world in this survival game. Understanding the <router-link to="/vein-wiki/mechanics" class="inline-link">core game mechanics</router-link> is essential for adapting to these changes.
+                {{ $t('homePage.whatIs.dynamic.content1') }} <router-link to="/vein-wiki/mechanics" class="inline-link">{{ $t('homePage.whatIs.dynamic.link1') }}</router-link> {{ $t('homePage.whatIs.dynamic.content2') }}
               </p>
               <p>
-                The changing seasons and random events in VEIN game create a living, breathing world
-                where adaptation is key to survival. Players must learn to work with these dynamic
-                systems, planning their strategies around the current conditions and being ready to
-                adjust when unexpected events occur in this VEIN survival game. The dynamic nature
-                of VEIN game ensures that every session offers new challenges and opportunities.
+                {{ $t('homePage.whatIs.dynamic.content3') }}
               </p>
             </div>
           </div>
@@ -132,20 +110,12 @@
               <img src="/images/what-03.webp" alt="VEIN Game" />
             </div>
             <div class="what-is-text">
-              <h3>Defending and Rebuilding</h3>
+              <h3>{{ $t('homePage.whatIs.defending.title') }}</h3>
               <p>
-                In VEIN game, survival means more than just staying alive—it means defending your
-                home and rebuilding society. VEIN survival game challenges you to fortify your
-                hideout against threats from zombies and bandits, creating a safe haven in the
-                post-apocalyptic world. Whether playing solo or with friends, building and defending
-                your base is a core part of VEIN game experience. Discover the <router-link to="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">best base locations</router-link> and master the <router-link to="/vein-wiki/building" class="inline-link">building system</router-link> to create your fortress.
+                {{ $t('homePage.whatIs.defending.content1') }} <router-link to="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">{{ $t('homePage.whatIs.defending.link1') }}</router-link> {{ $t('homePage.whatIs.defending.content2') }} <router-link to="/vein-wiki/building" class="inline-link">{{ $t('homePage.whatIs.defending.link2') }}</router-link> {{ $t('homePage.whatIs.defending.content3') }}
               </p>
               <p>
-                Beyond defense, VEIN game offers opportunities to rebuild society. Assist friendly
-                NPCs, work with other survivors to establish safe zones, trade resources, and create
-                a network of support in the wasteland. The multiplayer sandbox nature of this VEIN
-                survival game means that cooperation and community building are essential for
-                long-term survival and progress in VEIN game. Develop your <router-link to="/vein-wiki/skills" class="inline-link">skills and perks</router-link> to become a more effective survivor.
+                {{ $t('homePage.whatIs.defending.content4') }} <router-link to="/vein-wiki/skills" class="inline-link">{{ $t('homePage.whatIs.defending.link3') }}</router-link> {{ $t('homePage.whatIs.defending.content5') }}
               </p>
             </div>
           </div>
@@ -155,10 +125,9 @@
       <!-- Guides Section -->
       <section class="guides-section">
         <div class="container">
-          <h2 class="section-title">VEIN Survival Guides</h2>
+          <h2 class="section-title">{{ $t('homePage.guides.title') }}</h2>
           <p class="section-subtitle">
-            Essential guides covering scavenging strategies, base defense, and cooperative play to
-            help you survive and thrive in VEIN game.
+            {{ $t('homePage.guides.subtitle') }}
           </p>
           <div class="guides-grid">
             <article
@@ -183,13 +152,13 @@
                 </div>
                 <div class="guide-footer">
                   <span class="update-date">{{ formatDate(guide.publishDate) }}</span>
-                  <span class="view-link">VIEW GUIDE →</span>
+                  <span class="view-link">{{ $t('homePage.guides.viewLink') }}</span>
                 </div>
               </div>
             </article>
           </div>
           <div class="guides-actions" v-if="homeGuides.length > 0">
-            <router-link to="/vein-guides" class="btn-hero btn-secondary">View All Guides</router-link>
+            <router-link to="/vein-guides" class="btn-hero btn-secondary">{{ $t('homePage.guides.viewAll') }}</router-link>
           </div>
         </div>
       </section>
@@ -197,60 +166,60 @@
       <!-- Game Information -->
       <section class="game-info">
         <div class="container">
-          <h2 class="section-title">VEIN Game Information</h2>
+          <h2 class="section-title">{{ $t('homePage.gameInfo.title') }}</h2>
           <p class="section-subtitle">
-            Key facts about VEIN game, demo scope, and system requirements.
+            {{ $t('homePage.gameInfo.subtitle') }}
           </p>
           <div class="info-layout">
             <div class="info-card">
-              <h3>VEIN Game Product Snapshot</h3>
+              <h3>{{ $t('homePage.gameInfo.snapshot.title') }}</h3>
               <ul>
                 <li>
-                  <span>Title</span>
-                  <span>VEIN</span>
+                  <span>{{ $t('homePage.gameInfo.snapshot.fields.title') }}</span>
+                  <span>{{ $t('homePage.gameInfo.snapshot.fields.titleValue') }}</span>
                 </li>
                 <li>
-                  <span>Developer / Publisher</span>
-                  <span>Ramjet Studios</span>
+                  <span>{{ $t('homePage.gameInfo.snapshot.fields.developer') }}</span>
+                  <span>{{ $t('homePage.gameInfo.snapshot.fields.developerValue') }}</span>
                 </li>
                 <li>
-                  <span>Release</span>
-                  <span>24 Oct 2025 · Early Access</span>
+                  <span>{{ $t('homePage.gameInfo.snapshot.fields.release') }}</span>
+                  <span>{{ $t('homePage.gameInfo.snapshot.fields.releaseValue') }}</span>
                 </li>
                 <li>
-                  <span>Platform</span>
-                  <span>PC Steam</span>
+                  <span>{{ $t('homePage.gameInfo.snapshot.fields.platform') }}</span>
+                  <span>{{ $t('homePage.gameInfo.snapshot.fields.platformValue') }}</span>
                 </li>
                 <li>
-                  <span>Modes</span>
-                  <span>Solo · Co-op</span>
+                  <span>{{ $t('homePage.gameInfo.snapshot.fields.modes') }}</span>
+                  <span>{{ $t('homePage.gameInfo.snapshot.fields.modesValue') }}</span>
                 </li>
                 <li>
-                  <span>Content Advisory</span>
-                  <span>Violence · Gore · Drug & Alcohol Use</span>
+                  <span>{{ $t('homePage.gameInfo.snapshot.fields.contentAdvisory') }}</span>
+                  <span>{{ $t('homePage.gameInfo.snapshot.fields.contentAdvisoryValue') }}</span>
                 </li>
               </ul>
             </div>
             <div class="info-card">
-              <h3>VEIN Survival Game System Requirements</h3>
+              <h3>{{ $t('homePage.gameInfo.requirements.title') }}</h3>
               <div class="requirements">
                 <div>
-                  <p class="req-label">Minimum</p>
+                  <p class="req-label">{{ $t('homePage.gameInfo.requirements.minimum') }}</p>
                   <ul>
-                    <li>OS: Windows 10</li>
-                    <li>Memory: 8 GB RAM</li>
-                    <li>DirectX: Version 12</li>
-                    <li>Storage: 40 GB available space</li>
+                    <li>{{ $t('homePage.gameInfo.requirements.minimumItems.os') }}</li>
+                    <li>{{ $t('homePage.gameInfo.requirements.minimumItems.memory') }}</li>
+                    <li>{{ $t('homePage.gameInfo.requirements.minimumItems.directx') }}</li>
+                    <li>{{ $t('homePage.gameInfo.requirements.minimumItems.storage') }}</li>
                   </ul>
                 </div>
                 <div>
-                  <p class="req-label">Recommended</p>
+                  <p class="req-label">{{ $t('homePage.gameInfo.requirements.recommended') }}</p>
                   <ul>
-                    <li>OS: Windows 10</li>
-                    <li>Memory: 16 GB RAM</li>
-                    <li>DirectX: Version 12</li>
-                    <li>Network: Broadband Internet connection</li>
-                    <li>Storage: 80 GB available space</li>
+                    <li>{{ $t('homePage.gameInfo.requirements.recommendedItems.os') }}</li>
+                    <li>{{ $t('homePage.gameInfo.requirements.recommendedItems.memory') }}</li>
+                    <li>{{ $t('homePage.gameInfo.requirements.recommendedItems.directx') }}</li>
+                    <li>{{ $t('homePage.gameInfo.requirements.recommendedItems.network') }}</li>
+                    <li>{{ $t('homePage.gameInfo.requirements.recommendedItems.storage') }}</li>
                   </ul>
                 </div>
               </div>
@@ -260,23 +229,23 @@
             <table>
               <thead>
                 <tr>
-                  <th>Language</th>
-                  <th>Interface</th>
-                  <th>Audio</th>
-                  <th>Subtitles</th>
+                  <th>{{ $t('homePage.gameInfo.language.table.language') }}</th>
+                  <th>{{ $t('homePage.gameInfo.language.table.interface') }}</th>
+                  <th>{{ $t('homePage.gameInfo.language.table.audio') }}</th>
+                  <th>{{ $t('homePage.gameInfo.language.table.subtitles') }}</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>English</td>
+                  <td>{{ $t('homePage.gameInfo.language.table.english') }}</td>
                   <td>✓</td>
                   <td></td>
                   <td>✓</td>
                 </tr>
                 <tr>
-                  <td>Additional Languages</td>
+                  <td>{{ $t('homePage.gameInfo.language.table.additional') }}</td>
                   <td colspan="3">
-                    Planned for VEIN survival game based on wishlist milestones during Early Access
+                    {{ $t('homePage.gameInfo.language.table.additionalValue') }}
                   </td>
                 </tr>
               </tbody>
@@ -288,90 +257,79 @@
       <!-- Planned Features -->
       <section class="planned-section">
         <div class="container">
-          <h2 class="section-title">VEIN Planned Features</h2>
+          <h2 class="section-title">{{ $t('homePage.planned.title') }}</h2>
           <p class="section-subtitle">
-            Headline features actively being developed for VEIN game throughout Early Access.
+            {{ $t('homePage.planned.subtitle') }}
           </p>
           <div class="planned-grid">
             <article class="planned-card">
-              <h3>Full Multiplayer</h3>
+              <h3>{{ $t('homePage.planned.features.multiplayer.title') }}</h3>
               <p>
-                Experience the world of VEIN with friends, with enemies, alone, or a combination of
-                all three.
+                {{ $t('homePage.planned.features.multiplayer.description') }}
               </p>
             </article>
             <article class="planned-card">
-              <h3>Dynamic Environment</h3>
+              <h3>{{ $t('homePage.planned.features.environment.title') }}</h3>
               <p>
-                As time passes and seasons change, the world of VEIN does too. Persistent,
-                large-scale random events affect gameplay.
+                {{ $t('homePage.planned.features.environment.description') }}
               </p>
             </article>
             <article class="planned-card">
-              <h3>Intelligent AI</h3>
+              <h3>{{ $t('homePage.planned.features.ai.title') }}</h3>
               <p>
-                AI can see, hear, feel, and smell you. Terrifying zombie variants make survival that
-                much more difficult.
+                {{ $t('homePage.planned.features.ai.description') }}
               </p>
             </article>
             <article class="planned-card">
-              <h3>Robust Inventory</h3>
+              <h3>{{ $t('homePage.planned.features.inventory.title') }}</h3>
               <p>
-                The post-apocalyptic world has useful supplies and valuable tools. Every item has a
-                use.
+                {{ $t('homePage.planned.features.inventory.description') }}
               </p>
             </article>
             <article class="planned-card">
-              <h3>Wide World</h3>
-              <p>Prepare for the freezing upstate New York winter.</p>
+              <h3>{{ $t('homePage.planned.features.world.title') }}</h3>
+              <p>{{ $t('homePage.planned.features.world.description') }}</p>
             </article>
             <article class="planned-card">
-              <h3>Usable Everything</h3>
+              <h3>{{ $t('homePage.planned.features.usable.title') }}</h3>
               <p>
-                Open mailboxes, adjust faucets, and knock on doors. Throw a can of beans at a zombie
-                if you like.
+                {{ $t('homePage.planned.features.usable.description') }}
               </p>
             </article>
             <article class="planned-card">
-              <h3>Fortification</h3>
+              <h3>{{ $t('homePage.planned.features.fortification.title') }}</h3>
               <p>
-                Build over the destroyed world and establish safehouses. Defend yourself from
-                raiders and invasions. Maintain your base by yourself or with friends.
+                {{ $t('homePage.planned.features.fortification.description') }}
               </p>
             </article>
             <article class="planned-card">
-              <h3>Long-Term Survivalism</h3>
+              <h3>{{ $t('homePage.planned.features.survivalism.title') }}</h3>
               <p>
-                Hunt, fish, and trap. Till land and grow your own food. Chop your own wood. Once
-                canned goods run out, you're on your own.
+                {{ $t('homePage.planned.features.survivalism.description') }}
               </p>
             </article>
             <article class="planned-card">
-              <h3>Cast of Characters</h3>
+              <h3>{{ $t('homePage.planned.features.characters.title') }}</h3>
               <p>
-                Meet unique, dynamic, changing characters and accept rewarding jobs. There's work to
-                be done in the post-apocalypse.
+                {{ $t('homePage.planned.features.characters.description') }}
               </p>
             </article>
             <article class="planned-card">
-              <h3>Trade &amp; Barter</h3>
+              <h3>{{ $t('homePage.planned.features.trade.title') }}</h3>
               <p>
-                More risk, more reward. Discover rare loot and trade with survivors for food,
-                weapons, and medicine.
+                {{ $t('homePage.planned.features.trade.description') }}
               </p>
             </article>
             <article class="planned-card">
-              <h3>Vehicles and Maintenance</h3>
+              <h3>{{ $t('homePage.planned.features.vehicles.title') }}</h3>
               <p>
-                Get around the world of VEIN with cars and trucks. Refuel, maintain, and upgrade
-                your vehicle.
+                {{ $t('homePage.planned.features.vehicles.description') }}
               </p>
             </article>
             <article class="planned-card">
-              <h3>The Grid</h3>
+              <h3>{{ $t('homePage.planned.features.grid.title') }}</h3>
               <p>
-                Fully simulated electrical, plumbing, and natural gas systems. Surprise friends by
-                shutting off their power.
+                {{ $t('homePage.planned.features.grid.description') }}
               </p>
             </article>
           </div>
@@ -381,8 +339,8 @@
       <!-- Reviews -->
       <section class="reviews-section">
         <div class="container">
-          <h2 class="section-title">VEIN Player Reviews</h2>
-          <p class="section-subtitle">What Early Access survivors are saying about VEIN game.</p>
+          <h2 class="section-title">{{ $t('homePage.reviews.title') }}</h2>
+          <p class="section-subtitle">{{ $t('homePage.reviews.subtitle') }}</p>
           <div class="reviews-grid">
             <article class="review-card">
               <div class="reviewer">
@@ -473,78 +431,54 @@ Vein is a beautiful well crafted world that is only going to get better!"
       <!-- FAQ -->
       <section class="faq-section">
         <div class="container">
-          <h2 class="section-title">VEIN Frequently Asked Questions</h2>
+          <h2 class="section-title">{{ $t('homePage.faq.title') }}</h2>
           <div class="faq-grid">
             <article class="faq-item">
-              <h3>What is VEIN game?</h3>
+              <h3>{{ $t('homePage.faq.items.whatIs.question') }}</h3>
               <p>
-                VEIN is a post-apocalyptic survival multiplayer sandbox game developed by Ramjet Studios. Set in a zombie-infested world, players must scavenge for supplies, build bases, defend against threats, and work together to rebuild society. VEIN emphasizes long-term survival with persistent progression, dynamic world events, and a high degree of freedom in how you approach survival challenges.
-              </p>
-              <p>
-                The game combines elements of survival, base building, crafting, and cooperative multiplayer gameplay. Whether playing solo or with friends, VEIN offers a hardcore survival experience where every decision matters and the world continues to evolve around you.
+                {{ $t('homePage.faq.items.whatIs.answer') }}
               </p>
             </article>
             <article class="faq-item">
-              <h3>What platforms is VEIN available on?</h3>
+              <h3>{{ $t('homePage.faq.items.platforms.question') }}</h3>
               <p>
-                VEIN is currently available on PC via Steam. The game launched in Early Access on October 24, 2025. There are no official announcements regarding console releases at this time, but the developers are focused on delivering the best possible PC experience during Early Access.
-              </p>
-              <p>
-                The game requires Windows 10 or later, with minimum 8 GB RAM and 40 GB storage space. For optimal performance, 16 GB RAM and 80 GB storage are recommended. A broadband internet connection is required for multiplayer gameplay.
+                {{ $t('homePage.faq.items.platforms.answer') }}
               </p>
             </article>
             <article class="faq-item">
-              <h3>How is VEIN different from other survival games?</h3>
+              <h3>{{ $t('homePage.faq.items.different.question') }}</h3>
               <p>
-                VEIN stands out through its emphasis on persistent progression, dynamic world systems, and deep survival mechanics. Unlike games with seasonal wipes, your progress in VEIN carries forward. The world features persistent events, changing seasons, and evolving challenges that create a living, breathing post-apocalyptic environment.
-              </p>
-              <p>
-                The game offers extensive base building, vehicle mechanics, and a comprehensive crafting system. Learn more about the <router-link to="/vein-wiki/mechanics" class="inline-link">core game mechanics</router-link> that make VEIN unique in the survival genre.
+                {{ $t('homePage.faq.items.different.answer1') }} <router-link to="/vein-wiki/mechanics" class="inline-link">{{ $t('homePage.faq.items.different.link') }}</router-link> {{ $t('homePage.faq.items.different.answer2') }}
               </p>
             </article>
             <article class="faq-item">
-              <h3>Does VEIN support multiplayer?</h3>
+              <h3>{{ $t('homePage.faq.items.multiplayer.question') }}</h3>
               <p>
-                Yes, VEIN fully supports multiplayer co-op gameplay. You can play with friends in both the demo and Early Access versions. The game features shared progression, synchronized world events, and cooperative base building. Whether you're scavenging together, defending a base, or exploring the world, multiplayer adds a social dimension to the survival experience.
-              </p>
-              <p>
-                The demo provides the same multiplayer experience as the full game, allowing you and your friends to experience VEIN together before committing to Early Access. Check out our <router-link to="/vein-guides" class="inline-link">guides section</router-link> for tips on getting started with co-op play.
+                {{ $t('homePage.faq.items.multiplayer.answer1') }} <router-link to="/vein-guides" class="inline-link">{{ $t('homePage.faq.items.multiplayer.link') }}</router-link>{{ $t('homePage.faq.items.multiplayer.answer2') }}
               </p>
             </article>
             <article class="faq-item">
-              <h3>What languages does VEIN support?</h3>
+              <h3>{{ $t('homePage.faq.items.languages.question') }}</h3>
               <p>
-                At launch, VEIN supports English for both interface and subtitles. The developers have plans to add additional languages based on community demand and wishlist milestones during Early Access. Adding VEIN to your Steam wishlist helps signal demand for your preferred language.
-              </p>
-              <p>
-                Language support will expand as the community grows, with priority given to languages with the highest wishlist numbers. The developers are committed to making VEIN accessible to players worldwide.
+                {{ $t('homePage.faq.items.languages.answer') }}
               </p>
             </article>
             <article class="faq-item">
-              <h3>Is there a demo available?</h3>
+              <h3>{{ $t('homePage.faq.items.demo.question') }}</h3>
               <p>
-                Yes, VEIN offers a free demo on Steam. The demo provides a condensed experience of the full game, limiting players to a small region of the world and capping skill progression at level 50 (instead of 100 in the full game). Despite these limitations, the demo receives regular feature updates and bug fixes alongside the main game.
-              </p>
-              <p>
-                The demo is perfect for players who want to try VEIN before purchasing Early Access. It includes full co-op support and gives you a true taste of the core survival gameplay mechanics.
+                {{ $t('homePage.faq.items.demo.answer') }}
               </p>
             </article>
             <article class="faq-item">
-              <h3>What content should I be aware of?</h3>
+              <h3>{{ $t('homePage.faq.items.content.question') }}</h3>
               <p>
-                VEIN is rated for mature audiences and contains depictions of violence, gore, and drug & alcohol use. These themes are integral to the post-apocalyptic setting and survival narrative. Players should be aware of the mature content before playing.
-              </p>
-              <p>
-                The game is designed for players 18 and older. Please play responsibly and consider your comfort level with these themes. The mature content is part of creating an authentic survival horror experience.
+                {{ $t('homePage.faq.items.content.answer') }}
               </p>
             </article>
             <article class="faq-item">
-              <h3>How often is VEIN updated?</h3>
+              <h3>{{ $t('homePage.faq.items.updates.question') }}</h3>
               <p>
-                As an Early Access title, VEIN receives regular updates from Ramjet Studios. The developers are actively working on planned features including full multiplayer enhancements, dynamic environment systems, intelligent AI improvements, and expanded world content.
-              </p>
-              <p>
-                Updates include new features, bug fixes, and community-requested improvements. The development roadmap focuses on delivering the headline features promised during Early Access, with player feedback playing a crucial role in shaping the game's evolution.
+                {{ $t('homePage.faq.items.updates.answer') }}
               </p>
             </article>
           </div>
@@ -595,11 +529,15 @@ Vein is a beautiful well crafted world that is only going to get better!"
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
 import { useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useGuideData } from '../composables/useGuideData'
+import { useLocalizedPath } from '../composables/useLocalizedPath'
 
 const router = useRouter()
+const { locale } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
 const { guides, loadHomeGuidesOnly } = useGuideData()
 
 const isVideoPlaying = ref(false)
@@ -617,6 +555,11 @@ onMounted(() => {
   loadHomeGuidesOnly()
 })
 
+// 监听语言变化，重新加载数据
+watch(() => locale.value, () => {
+  loadHomeGuidesOnly()
+})
+
 // 首页显示的指南（isHome: true）
 const homeGuides = computed(() => {
   return guides.value || []
@@ -625,7 +568,7 @@ const homeGuides = computed(() => {
 const goToGuide = (addressBar) => {
   if (!addressBar) return
   const path = addressBar.startsWith('/') ? addressBar : `/${addressBar}`
-  router.push(`/vein-guides${path}`)
+  router.push(getLocalizedPath(`/vein-guides${path}`))
 }
 
 const getCategoryName = (category) => {

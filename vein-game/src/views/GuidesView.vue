@@ -4,9 +4,9 @@
     <section class="page-header">
       <div class="container">
         <div class="page-header-content">
-          <h1 class="page-title">Guides</h1>
+          <h1 class="page-title">{{ $t('guidesPage.header.title') }}</h1>
           <p class="page-subtitle">
-            Comprehensive guides to help you survive and thrive in VEIN game. Learn essential strategies, tips, and techniques for mastering VEIN survival game.
+            {{ $t('guidesPage.header.subtitle') }}
           </p>
         </div>
       </div>
@@ -17,17 +17,17 @@
       <div class="container">
         <!-- Loading State -->
         <div v-if="loading" class="loading-state">
-          <p>Loading guides...</p>
+          <p>{{ $t('guidesPage.loading') }}</p>
         </div>
         
         <!-- Error State -->
         <div v-if="error" class="error-state">
-          <p>Error loading guides: {{ error }}</p>
+          <p>{{ $t('guidesPage.error') }} {{ error }}</p>
         </div>
         
         <!-- All Guides -->
         <div class="category-section" v-if="!loading && !error">
-          <h2 class="section-title">All Guides</h2>
+          <h2 class="section-title">{{ $t('guidesPage.allGuides') }}</h2>
           <div class="guides-grid">
             <div 
               v-for="guide in allGuides" 
@@ -51,7 +51,7 @@
                 </div>
                 <div class="guide-footer">
                   <span class="update-date">{{ formatDate(guide.publishDate) }}</span>
-                  <span class="view-link">VIEW GUIDE →</span>
+                  <span class="view-link">{{ $t('guidesPage.viewLink') }}</span>
                 </div>
               </div>
             </div>
@@ -63,51 +63,51 @@
     <!-- Why Choose Us Section -->
     <section class="why-choose-us-section">
       <div class="container">
-        <h2 class="section-title">Why Choose Our VEIN Guides?</h2>
+        <h2 class="section-title">{{ $t('guidesPage.whyChoose.title') }}</h2>
         <p class="section-subtitle">
-          We provide the most comprehensive and up-to-date guides to help you master VEIN survival game.
+          {{ $t('guidesPage.whyChoose.subtitle') }}
         </p>
         <div class="features-grid">
           <div class="feature-card">
             <div class="feature-icon">📚</div>
-            <h3>Comprehensive Coverage</h3>
+            <h3>{{ $t('guidesPage.whyChoose.features.comprehensive.title') }}</h3>
             <p>
-              Our guides cover everything from Day 1 survival basics to advanced strategies for base building, looting, and character progression. Whether you're a complete beginner or an experienced player, we have guides tailored to your needs. Start with our <router-link to="/vein-guides/ultimate-world-settings-guide" class="inline-link">new player guide series</router-link> to master the fundamentals.
+              {{ $t('guidesPage.whyChoose.features.comprehensive.content') }} <router-link to="/vein-guides/ultimate-world-settings-guide" class="inline-link">{{ $t('guidesPage.whyChoose.features.comprehensive.link') }}</router-link> {{ $t('guidesPage.whyChoose.features.comprehensive.content2') }}
             </p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🎯</div>
-            <h3>Expert Strategies</h3>
+            <h3>{{ $t('guidesPage.whyChoose.features.expert.title') }}</h3>
             <p>
-              Each guide is crafted by experienced VEIN players who understand the game's mechanics deeply. We provide actionable tips, priority lists, and proven strategies that actually work in-game.
+              {{ $t('guidesPage.whyChoose.features.expert.content') }}
             </p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🔄</div>
-            <h3>Regularly Updated</h3>
+            <h3>{{ $t('guidesPage.whyChoose.features.updated.title') }}</h3>
             <p>
-              As VEIN evolves through Early Access, we continuously update our guides to reflect the latest game changes, new features, and community discoveries. Stay ahead with current information.
+              {{ $t('guidesPage.whyChoose.features.updated.content') }}
             </p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">📍</div>
-            <h3>Detailed Location Guides</h3>
+            <h3>{{ $t('guidesPage.whyChoose.features.locations.title') }}</h3>
             <p>
-              Our location guides include step-by-step routes, exact coordinates, and detailed loot information. Find the <router-link to="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">best base locations</router-link> and <router-link to="/vein-guides/vein-best-loot-locations" class="inline-link">optimal loot spots</router-link> with our comprehensive maps and directions.
+              {{ $t('guidesPage.whyChoose.features.locations.content') }} <router-link to="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">{{ $t('guidesPage.whyChoose.features.locations.link1') }}</router-link> {{ $t('guidesPage.whyChoose.features.locations.content2') }} <router-link to="/vein-guides/vein-best-loot-locations" class="inline-link">{{ $t('guidesPage.whyChoose.features.locations.link2') }}</router-link> {{ $t('guidesPage.whyChoose.features.locations.content2') }}
             </p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">⚙️</div>
-            <h3>Settings & Configuration</h3>
+            <h3>{{ $t('guidesPage.whyChoose.features.settings.title') }}</h3>
             <p>
-              Learn how to optimize your world settings for your playstyle. Our <router-link to="/vein-guides/ultimate-world-settings-guide" class="inline-link">world settings guide</router-link> explains every setting option, helping you create the perfect survival experience whether you prefer hardcore or casual gameplay.
+              {{ $t('guidesPage.whyChoose.features.settings.content') }} <router-link to="/vein-guides/ultimate-world-settings-guide" class="inline-link">{{ $t('guidesPage.whyChoose.features.settings.link') }}</router-link> {{ $t('guidesPage.whyChoose.features.settings.content2') }}
             </p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">👥</div>
-            <h3>Community-Driven</h3>
+            <h3>{{ $t('guidesPage.whyChoose.features.community.title') }}</h3>
             <p>
-              Our guides are built on community feedback and player experiences. We incorporate tips from the VEIN community to ensure our guides reflect real-world survival strategies that work.
+              {{ $t('guidesPage.whyChoose.features.community.content') }}
             </p>
           </div>
         </div>
@@ -117,60 +117,60 @@
     <!-- FAQ Section -->
     <section class="faq-section">
       <div class="container">
-        <h2 class="section-title">Frequently Asked Questions About VEIN Guides</h2>
+        <h2 class="section-title">{{ $t('guidesPage.faq.title') }}</h2>
         <div class="faq-grid">
           <article class="faq-item">
-            <h3>What topics do your guides cover?</h3>
+            <h3>{{ $t('guidesPage.faq.items.topics.question') }}</h3>
             <p>
-              Our guides cover a wide range of topics essential for VEIN survival. We have comprehensive guides on world settings and configuration, character creation (skills, occupations, traits), Day 1 survival priorities, best loot locations, optimal base locations, and specific location walkthroughs like the prison armory.
+              {{ $t('guidesPage.faq.items.topics.answer1') }}
             </p>
             <p>
-              Each guide is designed to help you progress from beginner to advanced player, with detailed explanations and step-by-step instructions.
-            </p>
-          </article>
-          <article class="faq-item">
-            <h3>Are the guides suitable for beginners?</h3>
-            <p>
-              Absolutely! We have a complete <router-link to="/vein-guides/ultimate-world-settings-guide" class="inline-link">new player guide series</router-link> that starts from the very beginning. Our guides explain world settings, help you choose the right skills and occupation, and provide Day 1 priority lists to get you started on the right foot.
-            </p>
-            <p>
-              Even if you've never played a survival game before, our guides will help you understand VEIN's mechanics and survive your first days in the apocalypse.
+              {{ $t('guidesPage.faq.items.topics.answer2') }}
             </p>
           </article>
           <article class="faq-item">
-            <h3>How often are the guides updated?</h3>
+            <h3>{{ $t('guidesPage.faq.items.beginners.question') }}</h3>
             <p>
-              We update our guides regularly to reflect game changes, new features, and community discoveries. As VEIN is in Early Access and receives frequent updates, we make sure our guides stay current with the latest version of the game.
+              {{ $t('guidesPage.faq.items.beginners.answer1') }} <router-link to="/vein-guides/ultimate-world-settings-guide" class="inline-link">{{ $t('guidesPage.faq.items.beginners.link') }}</router-link> {{ $t('guidesPage.faq.items.beginners.answer2') }}
             </p>
             <p>
-              Each guide includes a publish date, and we update guides when significant game changes occur that affect the strategies or information provided.
-            </p>
-          </article>
-          <article class="faq-item">
-            <h3>Do you have guides for specific locations?</h3>
-            <p>
-              Yes! We have detailed location guides for important areas in VEIN. Our guides include step-by-step routes, exact locations, required items or skills, and what loot you can expect to find. For example, we have a comprehensive <router-link to="/vein-guides/how-to-find-clinton-correctional-facility-armory" class="inline-link">guide for finding the Clinton Correctional Facility Armory</router-link>.
-            </p>
-            <p>
-              Location guides help you navigate dangerous areas safely and efficiently, maximizing your loot while minimizing risk.
+              {{ $t('guidesPage.faq.items.beginners.answer3') }}
             </p>
           </article>
           <article class="faq-item">
-            <h3>Can I use these guides for multiplayer co-op?</h3>
+            <h3>{{ $t('guidesPage.faq.items.updated.question') }}</h3>
             <p>
-              Most of our guides are applicable to both solo and co-op gameplay. However, some strategies may need adjustment for multiplayer. For example, base building guides work for both, but you might want to coordinate with teammates on skill selection to cover different roles.
+              {{ $t('guidesPage.faq.items.updated.answer1') }}
             </p>
             <p>
-              Our guides provide tips that work in both solo and multiplayer scenarios, helping you succeed regardless of your preferred playstyle.
+              {{ $t('guidesPage.faq.items.updated.answer2') }}
             </p>
           </article>
           <article class="faq-item">
-            <h3>Do the guides include spoilers?</h3>
+            <h3>{{ $t('guidesPage.faq.items.locations.question') }}</h3>
             <p>
-              Our guides focus on gameplay mechanics, strategies, and locations rather than story elements. We provide information about game systems, optimal strategies, and where to find resources, but we avoid spoiling narrative content or story surprises.
+              {{ $t('guidesPage.faq.items.locations.answer1') }} <router-link to="/vein-guides/how-to-find-clinton-correctional-facility-armory" class="inline-link">{{ $t('guidesPage.faq.items.locations.link') }}</router-link>{{ $t('guidesPage.faq.items.locations.answer2') }}
             </p>
             <p>
-              If you're concerned about spoilers, you can focus on our mechanics and settings guides, which don't reveal story content.
+              {{ $t('guidesPage.faq.items.locations.answer3') }}
+            </p>
+          </article>
+          <article class="faq-item">
+            <h3>{{ $t('guidesPage.faq.items.multiplayer.question') }}</h3>
+            <p>
+              {{ $t('guidesPage.faq.items.multiplayer.answer1') }}
+            </p>
+            <p>
+              {{ $t('guidesPage.faq.items.multiplayer.answer2') }}
+            </p>
+          </article>
+          <article class="faq-item">
+            <h3>{{ $t('guidesPage.faq.items.spoilers.question') }}</h3>
+            <p>
+              {{ $t('guidesPage.faq.items.spoilers.answer1') }}
+            </p>
+            <p>
+              {{ $t('guidesPage.faq.items.spoilers.answer2') }}
             </p>
           </article>
         </div>
@@ -180,15 +180,24 @@
 </template>
 
 <script setup>
-import { computed, onMounted } from 'vue'
+import { computed, onMounted, watch } from 'vue'
 import { useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useGuideData } from '../composables/useGuideData'
+import { useLocalizedPath } from '../composables/useLocalizedPath'
 
 const router = useRouter()
+const { locale } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
 const { guides, loading, error, loadData } = useGuideData()
 
 // 初始化加载数据
 onMounted(() => {
+  loadData()
+})
+
+// 监听语言变化，重新加载数据
+watch(() => locale.value, () => {
   loadData()
 })
 
@@ -200,7 +209,7 @@ const allGuides = computed(() => {
 const goToGuide = (addressBar) => {
   if (!addressBar) return
   const path = addressBar.startsWith('/') ? addressBar : `/${addressBar}`
-  router.push(`/vein-guides${path}`)
+  router.push(getLocalizedPath(`/vein-guides${path}`))
 }
 
 const formatDate = (dateString) => {

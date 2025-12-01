@@ -166,17 +166,29 @@
 </template>
 
 <script setup>
-import { onMounted, computed } from 'vue'
+import { onMounted, computed, watch, nextTick } from 'vue'
 import { useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useItemsData } from '../../composables/useItemsData'
+import { useLocalizedPath } from '../../composables/useLocalizedPath'
 
 const router = useRouter()
+const { locale } = useI18n()
+const { getLocalizedPath, getCurrentLocale } = useLocalizedPath()
 const { data: itemsData, loading, error, loadData } = useItemsData('armor')
 
-const TYPE_KEYS = {
-  helmet: 'helmet',
-  lowerArmor: 'lower-armor',
-  upperArmor: 'upper-armor',
+// Type 映射表：根据语言返回对应的 type 值
+const TYPE_MAP = {
+  en: {
+    helmet: 'helmet',
+    lowerArmor: 'lower-armor',
+    upperArmor: 'upper-armor',
+  },
+  de: {
+    helmet: 'helm',                    // 对应 "Helm"
+    lowerArmor: 'untere-rüstung',      // 对应 "untere-Rüstung"
+    upperArmor: 'obere-rüstung',       // 对应 "obere-Rüstung"
+  }
 }
 
 const normalizeType = (value) =>
@@ -184,24 +196,72 @@ const normalizeType = (value) =>
     .trim()
     .toLowerCase()
 
-const filterByType = (targetType) =>
-  computed(() =>
-    (itemsData.value || []).filter((item) => normalizeType(item.type) === normalizeType(targetType))
-  )
+// 根据当前语言获取 type 值
+const getTypeByLang = (typeKey) => {
+  const currentLang = locale.value || 'en'
+  const typeMap = TYPE_MAP[currentLang] || TYPE_MAP.en
+  return typeMap[typeKey] || typeMap.helmet
+}
 
-const helmetItems = filterByType(TYPE_KEYS.helmet)
-const lowerArmorItems = filterByType(TYPE_KEYS.lowerArmor)
-const upperArmorItems = filterByType(TYPE_KEYS.upperArmor)
+// 过滤函数：根据 type 值过滤 items
+const filterByType = (targetType) => {
+  const normalizedTarget = normalizeType(targetType)
+  return (itemsData.value || []).filter((item) => {
+    const normalizedItemType = normalizeType(item.type)
+    return normalizedItemType === normalizedTarget
+  })
+}
 
-onMounted(() => {
-  loadData('armor')
+// 使用 computed 来响应语言变化
+const helmetItems = computed(() => {
+  const targetType = getTypeByLang('helmet')
+  const filtered = filterByType(targetType)
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsArmorView] helmetItems - targetType: ${targetType}, count: ${filtered.length}, total items: ${itemsData.value.length}`)
+  }
+  return filtered
 })
+const lowerArmorItems = computed(() => {
+  const targetType = getTypeByLang('lowerArmor')
+  const filtered = filterByType(targetType)
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsArmorView] lowerArmorItems - targetType: ${targetType}, count: ${filtered.length}`)
+  }
+  return filtered
+})
+const upperArmorItems = computed(() => {
+  const targetType = getTypeByLang('upperArmor')
+  const filtered = filterByType(targetType)
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsArmorView] upperArmorItems - targetType: ${targetType}, count: ${filtered.length}`)
+  }
+  return filtered
+})
+
+onMounted(async () => {
+  // 等待路由守卫设置语言
+  await nextTick()
+  // 直接从路由路径中提取语言，更可靠
+  const currentLang = getCurrentLocale()
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsArmorView] onMounted - locale.value: ${locale.value}, getCurrentLocale(): ${currentLang}`)
+  }
+  await loadData('armor', currentLang)
+})
+
+// 监听语言变化，重新加载数据
+watch(() => locale.value, async (newLocale) => {
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsArmorView] Language changed to: ${newLocale}`)
+  }
+  await loadData('armor', newLocale)
+}, { immediate: false })
 
 const onItemClick = (item) => {
   if (item && item.showDetail === false) return
   const id = (item.addressBar || '').replace('/', '')
   if (!id) return
-  router.push(`/vein-items/armor/${id}`)
+  router.push(getLocalizedPath(`/vein-items/armor/${id}`))
 }
 </script>
 

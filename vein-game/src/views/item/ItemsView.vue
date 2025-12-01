@@ -2,13 +2,13 @@
   <div class="items-view">
     <div class="container">
       <div class="page-header">
-        <h1 class="page-title">Items</h1>
+        <h1 class="page-title">{{ $t('itemsPage.header.title') }}</h1>
         <p class="page-subtitle">
-          Complete item database for VEIN game. Browse all weapons, tools, resources, and items available in VEIN survival game.
+          {{ $t('itemsPage.header.subtitle') }}
         </p>
       </div>
 
-      <h2 class="section-title">All Categories</h2>
+      <h2 class="section-title">{{ $t('itemsPage.allCategories') }}</h2>
 
       <div class="category-grid">
         <router-link
@@ -25,7 +25,7 @@
             <p class="card-desc">{{ card.description }}</p>
           </div>
           <div class="card-bottom">
-            <span class="explore">Explore Category</span>
+            <span class="explore">{{ $t('itemsPage.exploreCategory') }}</span>
             <span class="arrow">›</span>
           </div>
         </router-link>
@@ -44,35 +44,35 @@
             <div class="feature-icon">🗡️</div>
             <h3>Complete Weapon Database</h3>
             <p>
-              Browse our extensive <router-link to="/vein-items/weapons" class="inline-link">weapons collection</router-link> with detailed stats including damage, DPS, weight, and special uses. Find the perfect weapon for your playstyle, whether you prefer melee combat or ranged weapons.
+              Browse our extensive <router-link :to="getLocalizedPath('/vein-items/weapons')" class="inline-link">weapons collection</router-link> with detailed stats including damage, DPS, weight, and special uses. Find the perfect weapon for your playstyle, whether you prefer melee combat or ranged weapons.
             </p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🛡️</div>
             <h3>Armor & Protection Guide</h3>
             <p>
-              Discover all protective gear in our <router-link to="/vein-items/armor" class="inline-link">armor database</router-link>. Learn about helmets, body armor, and protective clothing that can mean the difference between life and death in VEIN's dangerous world.
+              Discover all protective gear in our <router-link :to="getLocalizedPath('/vein-items/armor')" class="inline-link">armor database</router-link>. Learn about helmets, body armor, and protective clothing that can mean the difference between life and death in VEIN's dangerous world.
             </p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🔧</div>
             <h3>Tools & Crafting Materials</h3>
             <p>
-              Master crafting and construction with our complete <router-link to="/vein-items/tools" class="inline-link">tools database</router-link> and <router-link to="/vein-items/materials" class="inline-link">materials guide</router-link>. Find every tool you need for building, repairing, and dismantling, plus all crafting components.
+              Master crafting and construction with our complete <router-link :to="getLocalizedPath('/vein-items/tools')" class="inline-link">tools database</router-link> and <router-link :to="getLocalizedPath('/vein-items/materials')" class="inline-link">materials guide</router-link>. Find every tool you need for building, repairing, and dismantling, plus all crafting components.
             </p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">💊</div>
             <h3>Medical & Survival Items</h3>
             <p>
-              Keep your character alive with our <router-link to="/vein-items/medical" class="inline-link">medical items database</router-link>. Find medkits, bandages, antibiotics, and other essential supplies for treating injuries and illnesses in the post-apocalyptic world.
+              Keep your character alive with our <router-link :to="getLocalizedPath('/vein-items/medical')" class="inline-link">medical items database</router-link>. Find medkits, bandages, antibiotics, and other essential supplies for treating injuries and illnesses in the post-apocalyptic world.
             </p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🍖</div>
             <h3>Consumables & Resources</h3>
             <p>
-              Never go hungry with our <router-link to="/vein-items/consumables" class="inline-link">consumables database</router-link>. Find all food, drinks, and temporary buffs. Plus, locate ammunition for your weapons in our <router-link to="/vein-items/ammo" class="inline-link">ammo guide</router-link>.
+              Never go hungry with our <router-link :to="getLocalizedPath('/vein-items/consumables')" class="inline-link">consumables database</router-link>. Find all food, drinks, and temporary buffs. Plus, locate ammunition for your weapons in our <router-link :to="getLocalizedPath('/vein-items/ammo')" class="inline-link">ammo guide</router-link>.
             </p>
           </div>
           <div class="feature-card">
@@ -112,7 +112,7 @@
           <article class="faq-item">
             <h3>Do you have information about weapon stats?</h3>
             <p>
-              Yes! Our <router-link to="/vein-items/weapons" class="inline-link">weapons database</router-link> includes comprehensive stats for every weapon. You'll find damage values, DPS (damage per second), swing time, weight, special uses (like cutting or can opening), and dismantle information.
+              Yes! Our <router-link :to="getLocalizedPath('/vein-items/weapons')" class="inline-link">weapons database</router-link> includes comprehensive stats for every weapon. You'll find damage values, DPS (damage per second), swing time, weight, special uses (like cutting or can opening), and dismantle information.
             </p>
             <p>
               This data helps you choose the best weapon for different situations, whether you need high damage, fast attack speed, or specific utility functions.
@@ -124,13 +124,13 @@
               Many items in our database include crafting information. We list required materials, tools needed, crafting time, and where items can be crafted (Standard Workbench, Advanced Workbench, etc.). Check individual item pages for complete crafting details.
             </p>
             <p>
-              For cooking recipes specifically, visit our <router-link to="/vein-wiki/cooking-recipes" class="inline-link">cooking recipes guide</router-link> in the Wiki section.
+              For cooking recipes specifically, visit our <router-link :to="getLocalizedPath('/vein-wiki/cooking-recipes')" class="inline-link">cooking recipes guide</router-link> in the Wiki section.
             </p>
           </article>
           <article class="faq-item">
             <h3>How do I know where to find specific items?</h3>
             <p>
-              While our items database focuses on item properties and stats, our <router-link to="/vein-guides/vein-best-loot-locations" class="inline-link">best loot locations guide</router-link> provides detailed information about where to find specific items in the game world.
+              While our items database focuses on item properties and stats, our <router-link :to="getLocalizedPath('/vein-guides/vein-best-loot-locations')" class="inline-link">best loot locations guide</router-link> provides detailed information about where to find specific items in the game world.
             </p>
             <p>
               Combine both resources: use the items database to understand what you need, then check the loot guide to know where to find it.
@@ -152,8 +152,13 @@
 </template>
 
 <script setup>
-import { onMounted, computed } from 'vue'
+import { onMounted, computed, watch, nextTick } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useItemsData } from '../../composables/useItemsData'
+import { useLocalizedPath } from '../../composables/useLocalizedPath'
+
+const { locale } = useI18n()
+const { getLocalizedPath, getCurrentLocale } = useLocalizedPath()
 
 // 加载所有分类的数据
 const { data: weapons, loadData: loadWeapons } = useItemsData('weapons')
@@ -167,24 +172,44 @@ const { data: medical, loadData: loadMedical } = useItemsData('medical')
 const { data: tools, loadData: loadTools } = useItemsData('tools')
 const { data: misc, loadData: loadMisc } = useItemsData('misc')
 
-onMounted(async () => {
+const loadAllItems = async (lang = null) => {
+  const currentLang = lang || locale.value || 'en'
   try {
     await Promise.all([
-      loadWeapons('weapons'),
-      loadArmor('armor'),
-      loadClothing('clothing'),
-      loadConsumables('consumables'),
-      loadSpecial('special'),
-      loadMaterials('materials'),
-      loadAmmo('ammo'),
-      loadMedical('medical'),
-      loadTools('tools'),
-      loadMisc('misc')
+      loadWeapons('weapons', currentLang),
+      loadArmor('armor', currentLang),
+      loadClothing('clothing', currentLang),
+      loadConsumables('consumables', currentLang),
+      loadSpecial('special', currentLang),
+      loadMaterials('materials', currentLang),
+      loadAmmo('ammo', currentLang),
+      loadMedical('medical', currentLang),
+      loadTools('tools', currentLang),
+      loadMisc('misc', currentLang)
     ])
   } catch (error) {
     console.error('Error loading items data:', error)
   }
+}
+
+onMounted(async () => {
+  // 等待路由守卫设置语言
+  await nextTick()
+  // 直接从路由路径中提取语言，更可靠
+  const currentLang = getCurrentLocale()
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsView] onMounted - locale.value: ${locale.value}, getCurrentLocale(): ${currentLang}`)
+  }
+  await loadAllItems(currentLang)
 })
+
+// 监听语言变化，重新加载数据
+watch(() => locale.value, async (newLocale) => {
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsView] Language changed to: ${newLocale}`)
+  }
+  await loadAllItems(newLocale)
+}, { immediate: false })
 
 // 计算每个分类的 item 数量
 const weaponsCount = computed(() => (weapons.value || []).length)
@@ -202,61 +227,61 @@ const categoryCards = computed(() => [
   {
     title: 'Weapons',
     description: 'All weapons available in VEIN game, including melee and ranged weapons.',
-    to: '/vein-items/weapons',
+    to: getLocalizedPath('/vein-items/weapons'),
     count: `${weaponsCount.value} items`,
   },
   {
     title: 'Armor',
     description: 'Protective gear that keeps survivors alive when raids turn deadly.',
-    to: '/vein-items/armor',
+    to: getLocalizedPath('/vein-items/armor'),
     count: `${armorCount.value} items`,
   },
   {
     title: 'Clothing',
     description: 'Outfits and tactical apparel that provide comfort and concealment.',
-    to: '/vein-items/clothing',
+    to: getLocalizedPath('/vein-items/clothing'),
     count: `${clothingCount.value} items`,
   },
   {
     title: 'Consumables',
     description: 'Food, drinks, and temporary buffs that keep you moving.',
-    to: '/vein-items/consumables',
+    to: getLocalizedPath('/vein-items/consumables'),
     count: `${consumablesCount.value} items`,
   },
   {
     title: 'Special',
     description: 'Unique items, limited drops, and rare rewards from events.',
-    to: '/vein-items/special',
+    to: getLocalizedPath('/vein-items/special'),
     count: `${specialCount.value} items`,
   },
   {
     title: 'Materials',
     description: 'Crafting components used to build, upgrade, and repair equipment.',
-    to: '/vein-items/materials',
+    to: getLocalizedPath('/vein-items/materials'),
     count: `${materialsCount.value} items`,
   },
   {
     title: 'Ammo',
     description: 'Ammunition types for every weapon platform in VEIN game.',
-    to: '/vein-items/ammo',
+    to: getLocalizedPath('/vein-items/ammo'),
     count: `${ammoCount.value} items`,
   },
   {
     title: 'Medical',
     description: 'Medkits, bandages, and pharmaceuticals to keep squads alive.',
-    to: '/vein-items/medical',
+    to: getLocalizedPath('/vein-items/medical'),
     count: `${medicalCount.value} items`,
   },
   {
     title: 'Tools',
     description: 'Utility tools for construction, exploration, and survival tasks.',
-    to: '/vein-items/tools',
+    to: getLocalizedPath('/vein-items/tools'),
     count: `${toolsCount.value} items`,
   },
   {
     title: 'Misc',
     description: 'Everything else: quest items, trade goods, and collectibles.',
-    to: '/vein-items/misc',
+    to: getLocalizedPath('/vein-items/misc'),
     count: `${miscCount.value} items`,
   },
 ])

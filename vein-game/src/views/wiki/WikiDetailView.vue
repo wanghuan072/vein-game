@@ -4,12 +4,12 @@
     <section class="wiki-detail-header" v-if="wiki">
       <div class="container">
         <div class="breadcrumb">
-          <router-link to="/vein-wiki" class="breadcrumb-link">
+          <router-link :to="getLocalizedPath('/vein-wiki')" class="breadcrumb-link">
             <svg class="breadcrumb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
               <polyline points="9,22 9,12 15,12 15,22" />
             </svg>
-            Wiki
+            {{ $t('wikiDetailPage.breadcrumb.wiki') }}
           </router-link>
           <svg class="breadcrumb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <polyline points="9,18 15,12 9,6" />
@@ -65,12 +65,12 @@
 
             <!-- Other Wiki Entries -->
             <div class="wiki-navigation" v-if="otherWikis && otherWikis.length > 0">
-              <h4 class="nav-title">Other Wiki Entries</h4>
+              <h4 class="nav-title">{{ $t('wikiDetailPage.navigation.title') }}</h4>
               <div class="nav-grid">
                 <router-link
                   v-for="item in otherWikis"
                   :key="item.id"
-                  :to="`/vein-wiki${item.addressBar}`"
+                  :to="getLocalizedPath(`/vein-wiki${item.addressBar}`)"
                   class="nav-card"
                 >
                   <div class="nav-card-title">{{ item.title }}</div>
@@ -89,9 +89,9 @@
     <section class="wiki-content" v-else>
       <div class="container">
         <div class="not-found">
-          <h2>Wiki Entry Not Found</h2>
-          <p>The wiki entry you're looking for doesn't exist.</p>
-          <router-link to="/vein-wiki" class="btn-hero btn-secondary">Back to Wiki</router-link>
+          <h2>{{ $t('wikiDetailPage.notFound.title') }}</h2>
+          <p>{{ $t('wikiDetailPage.notFound.description') }}</p>
+          <router-link :to="getLocalizedPath('/vein-wiki')" class="btn-hero btn-secondary">{{ $t('wikiDetailPage.notFound.back') }}</router-link>
         </div>
       </div>
     </section>
@@ -99,16 +99,21 @@
 </template>
 
 <script setup>
-import { ref, onMounted, computed, watch } from 'vue'
+import { ref, onMounted, computed, watch, nextTick } from 'vue'
 import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useWikiData } from '../../composables/useWikiData'
+import { useLocalizedPath } from '../../composables/useLocalizedPath'
 
 const route = useRoute()
+const { locale } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
 const { wiki: wikiData, loadData, findWikiByAddressBar, getOtherWikis } = useWikiData()
 const wiki = ref(null)
 
 // 初始化加载数据并查找 wiki
 const initWiki = async () => {
+  await nextTick() // 等待路由守卫设置语言
   await loadData()
   const wikiId = route.params.id
   wiki.value = findWikiByAddressBar(`/${wikiId}`)
@@ -118,11 +123,29 @@ onMounted(async () => {
   await initWiki()
 })
 
-// 监听路由变化，更新当前 wiki
+// 监听路由完整路径变化（包括语言前缀变化）
+watch(() => route.fullPath, async (newPath, oldPath) => {
+  if (newPath !== oldPath && oldPath) {
+    await nextTick() // 等待路由守卫设置语言
+    await initWiki()
+  }
+}, { immediate: false })
+
+// 监听路由参数变化，更新当前 wiki
 watch(() => route.params.id, async () => {
+  await nextTick() // 等待路由守卫设置语言
+  await loadData()
   const wikiId = route.params.id
   wiki.value = findWikiByAddressBar(`/${wikiId}`)
 })
+
+// 监听语言变化，重新加载数据
+watch(() => locale.value, async (newLocale, oldLocale) => {
+  // 只有当语言真正变化时才重新加载
+  if (newLocale !== oldLocale && oldLocale !== undefined) {
+    await initWiki()
+  }
+}, { immediate: false })
 
 const otherWikis = computed(() => {
   if (!wiki.value) return []

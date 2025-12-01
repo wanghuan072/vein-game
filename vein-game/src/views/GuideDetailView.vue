@@ -4,12 +4,12 @@
     <section class="guide-detail-header" v-if="guide">
       <div class="container">
         <div class="breadcrumb">
-          <router-link to="/vein-guides" class="breadcrumb-link">
+          <router-link :to="getLocalizedPath('/vein-guides')" class="breadcrumb-link">
             <svg class="breadcrumb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
               <polyline points="9,22 9,12 15,12 15,22" />
             </svg>
-            Guides
+            {{ $t('guideDetailPage.breadcrumb.guides') }}
           </router-link>
           <svg class="breadcrumb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <polyline points="9,18 15,12 9,6" />
@@ -73,14 +73,14 @@
 
             <!-- Guide navigation -->
             <div class="guide-navigation" v-if="previousGuide || nextGuide">
-              <h4 class="nav-title">Guide Navigation</h4>
+              <h4 class="nav-title">{{ $t('guideDetailPage.navigation.title') }}</h4>
               <div class="nav-grid">
                 <router-link
                   v-if="previousGuide"
-                  :to="`/vein-guides${previousGuide.addressBar}`"
+                  :to="getLocalizedPath(`/vein-guides${previousGuide.addressBar}`)"
                   class="nav-card nav-card-prev"
                 >
-                  <div class="nav-card-direction">← Previous Guide</div>
+                  <div class="nav-card-direction">{{ $t('guideDetailPage.navigation.previous') }}</div>
                   <div class="nav-card-title">{{ previousGuide.title }}</div>
                   <div class="nav-card-meta">
                     <span v-if="previousGuide.category">{{ getCategoryName(previousGuide.category) }}</span>
@@ -89,10 +89,10 @@
                 </router-link>
                 <router-link
                   v-if="nextGuide"
-                  :to="`/vein-guides${nextGuide.addressBar}`"
+                  :to="getLocalizedPath(`/vein-guides${nextGuide.addressBar}`)"
                   class="nav-card nav-card-next"
                 >
-                  <div class="nav-card-direction">Next Guide →</div>
+                  <div class="nav-card-direction">{{ $t('guideDetailPage.navigation.next') }}</div>
                   <div class="nav-card-title">{{ nextGuide.title }}</div>
                   <div class="nav-card-meta">
                     <span v-if="nextGuide.category">{{ getCategoryName(nextGuide.category) }}</span>
@@ -112,7 +112,7 @@
         <div class="not-found">
           <h2>Guide Not Found</h2>
           <p>The guide you're looking for doesn't exist.</p>
-          <router-link to="/vein-guides" class="btn-hero btn-secondary">Back to Guides</router-link>
+          <router-link :to="getLocalizedPath('/vein-guides')" class="btn-hero btn-secondary">Back to Guides</router-link>
         </div>
       </div>
     </section>
@@ -122,14 +122,19 @@
 <script setup>
 import { ref, onMounted, computed, watch, nextTick } from 'vue'
 import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useGuideData } from '../composables/useGuideData'
+import { useLocalizedPath } from '../composables/useLocalizedPath'
 
 const route = useRoute()
+const { locale } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
 const { guides, loadData, findGuideByAddressBar } = useGuideData()
 const guide = ref(null)
 
 // 初始化加载数据并查找 guide
 const initGuide = async () => {
+  await nextTick() // 等待路由守卫设置语言
   await loadData()
   const guideId = route.params.id
   guide.value = findGuideByAddressBar(`/${guideId}`)
@@ -139,11 +144,29 @@ onMounted(async () => {
   await initGuide()
 })
 
-// 监听路由变化，更新当前 guide
+// 监听路由完整路径变化（包括语言前缀变化）
+watch(() => route.fullPath, async (newPath, oldPath) => {
+  if (newPath !== oldPath && oldPath) {
+    await nextTick() // 等待路由守卫设置语言
+    await initGuide()
+  }
+}, { immediate: false })
+
+// 监听路由参数变化，更新当前 guide
 watch(() => route.params.id, async () => {
+  await nextTick() // 等待路由守卫设置语言
+  await loadData()
   const guideId = route.params.id
   guide.value = findGuideByAddressBar(`/${guideId}`)
 })
+
+// 监听语言变化，重新加载数据
+watch(() => locale.value, async (newLocale, oldLocale) => {
+  // 只有当语言真正变化时才重新加载
+  if (newLocale !== oldLocale && oldLocale !== undefined) {
+    await initGuide()
+  }
+}, { immediate: false })
 
 const currentGuideIndex = computed(() => {
   if (!guide.value) return -1

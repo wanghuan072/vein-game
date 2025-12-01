@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import i18n from '../i18n'
 import HomeView from '../views/HomeView.vue'
 import GuidesView from '../views/GuidesView.vue'
 import GuideDetailView from '../views/GuideDetailView.vue'
@@ -25,32 +26,28 @@ import AboutUsView from '../views/legal/AboutUsView.vue'
 import ContactUsView from '../views/legal/ContactUsView.vue'
 import SearchView from '../views/SearchView.vue'
 
-const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: HomeView,
-      meta: {
-        seo: {
-          title: 'VEIN Survival Game | Wiki, Guides, Items, Map - veingame.net',
-          description: 'The ultimate resource for VEIN Survival Game. Find all Guides, Wiki, Items/Weapons databases, HD Maps, and winning strategies to conquer every challenge.',
-          keywords: 'VEIN survival game, VEIN wiki, VEIN guides, VEIN weapons,VEIN database, VEIN maps, VEIN Armor '
-        }
-      }
-    },
+// 支持的语言列表（英文是默认，不需要前缀）
+const supportedLocales = ['en', 'de']
+
+// 生成路由路径（英文无前缀，其他语言有前缀）
+const createRoutePath = (path, locale = 'en') => {
+  if (locale === 'en') {
+    return path
+  }
+  return `/${locale}${path}`
+}
+
+// 基础路由配置
+const baseRoutes = [
+  {
+    path: '/',
+    name: 'home',
+    component: HomeView
+  },
     {
       path: '/vein-guides',
       name: 'guides',
-      component: GuidesView,
-      meta: {
-        seo: {
-          title: 'VEIN game Guides | Tips and Strategies - veingame.net',
-          description: 'The VEIN Guides library for Survival Game players. Find full beginner walkthroughs, expert tips, and advanced strategies to master every area and mechanic.',
-          keywords: 'VEIN guides, VEIN walkthrough, VEIN strategies, VEIN tips,  VEIN resources, VEIN survival tips, VEIN gameplay'
-        }
-      }
+      component: GuidesView
     },
     {
       path: '/vein-guides/:id',
@@ -60,14 +57,7 @@ const router = createRouter({
     {
       path: '/vein-wiki',
       name: 'wiki',
-      component: WikiView,
-      meta: {
-        seo: {
-          title: 'VEIN Game Wiki | Mechanics and Game Database - veingame.net',
-          description: 'The VEIN Game Wiki is here. Explore detailed information on Controls, Skills, Crafting/Cooking Recipes, Game Mechanics, Building, Vehicles, and Update History.',
-          keywords: 'VEIN wiki, VEIN game mechanics, VEIN skills, VEIN crafting recipes, VEIN cooking, VEIN building, VEIN vehicles, VEIN controls'
-        }
-      }
+      component: WikiView
     },
     {
       path: '/vein-wiki/:id',
@@ -214,26 +204,12 @@ const router = createRouter({
     {
       path: '/vein-map',
       name: 'map',
-      component: MapView,
-      meta: {
-        seo: {
-          title: 'VEIN game Map | All Resource Locations Spawns - veingame.net',
-          description: 'the high-resolution, interactive VEIN Map. Locate every resource node, key landmark, item spawn point, and across all zones to maximize your survival chances.',
-          keywords: 'VEIN game map, Champlain Valley, interactive map, locations, points of interest, VEIN survival game'
-        }
-      }
+      component: MapView
     },
     {
       path: '/vein-map-detail',
       name: 'map-detail',
-      component: MapDetailView,
-      meta: {
-        seo: {
-          title: 'VEIN Game Map Details | Hidden Loot, Secrets - veingame.net',
-          description: 'detailed map in VEIN. Locate every hidden cave, rare resource spawn, secret chest, and crucial Points of Interest to maximize your exploration and survival.',
-          keywords: 'VEIN interactive map, VEIN game map, world map, locations, points of interest, navigation, VEIN survival game'
-        }
-      }
+      component: MapDetailView
     },
     {
       path: '/privacy-policy',
@@ -307,10 +283,70 @@ const router = createRouter({
         }
       }
     },
-  ],
+]
+
+// 生成所有语言的路由
+const routes = []
+baseRoutes.forEach(route => {
+  // 英文路由（无前缀）
+  routes.push({
+    ...route,
+    path: route.path,
+    meta: {
+      ...route.meta,
+      locale: 'en'
+    }
+  })
+  
+  // 其他语言路由（有前缀）
+  supportedLocales.filter(locale => locale !== 'en').forEach(locale => {
+    // 为每个语言创建独立的路由，使用唯一的名称
+    const localizedRoute = {
+      ...route,
+      path: createRoutePath(route.path, locale),
+      name: route.name ? `${route.name}-${locale}` : undefined,
+      meta: {
+        ...route.meta,
+        locale: locale
+      }
+    }
+    routes.push(localizedRoute)
+  })
+})
+
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes,
   scrollBehavior() {
     return { top: 0 }
   },
+})
+
+// 路由守卫：从 URL 中提取语言并设置 i18n
+router.beforeEach((to, from, next) => {
+  // 从路径中提取语言
+  const pathSegments = to.path.split('/').filter(Boolean)
+  const firstSegment = pathSegments[0]
+  
+  let locale = 'en' // 默认英文
+  
+  // 检查第一个路径段是否是支持的语言
+  if (supportedLocales.includes(firstSegment)) {
+    locale = firstSegment
+  }
+  
+  // 强制设置 i18n 语言（确保在组件加载前设置）
+  // 无论当前语言是什么，都强制设置为从 URL 中提取的语言
+  const previousLocale = i18n.global.locale.value
+  i18n.global.locale.value = locale
+  
+  // 调试日志（生产环境可以移除）
+  if (import.meta.env.DEV) {
+    console.log(`[Router] Setting locale to: ${locale} for path: ${to.path} (previous: ${previousLocale})`)
+    console.log(`[Router] i18n.global.locale.value after setting: ${i18n.global.locale.value}`)
+  }
+  
+  next()
 })
 
 export default router

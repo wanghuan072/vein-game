@@ -4,12 +4,12 @@
     <section class="page-header">
       <div class="container">
         <div class="page-header-content">
-          <h1 class="page-title">Search Results</h1>
+          <h1 class="page-title">{{ $t('searchPage.header.title') }}</h1>
           <p class="page-subtitle" v-if="searchQuery">
-            Search results for: <strong>"{{ searchQuery }}"</strong>
+            {{ $t('searchPage.header.subtitle1') }} <strong>"{{ searchQuery }}"</strong>
           </p>
           <p class="page-subtitle" v-else>
-            Enter a search term to find guides, wiki articles, and items.
+            {{ $t('searchPage.header.subtitle2') }}
           </p>
         </div>
       </div>
@@ -20,26 +20,26 @@
       <div class="container">
         <!-- Loading State -->
         <div v-if="isSearching" class="loading-state">
-          <p>Searching...</p>
+          <p>{{ $t('searchPage.searching') }}</p>
         </div>
 
         <!-- No Results -->
         <div v-else-if="!searchQuery || totalResults === 0" class="no-results">
           <div class="no-results-icon">🔍</div>
-          <h2>No Results Found</h2>
+          <h2>{{ $t('searchPage.noResults.title') }}</h2>
           <p v-if="searchQuery">
-            We couldn't find any results for "{{ searchQuery }}". Try different keywords or browse our <router-link to="/vein-guides" class="inline-link">guides</router-link>, <router-link to="/vein-wiki" class="inline-link">wiki</router-link>, or <router-link to="/vein-items" class="inline-link">items</router-link>.
+            {{ $t('searchPage.noResults.content1') }} "{{ searchQuery }}"{{ $t('searchPage.noResults.content2') }} <router-link to="/vein-guides" class="inline-link">{{ $t('searchPage.noResults.link1') }}</router-link>, <router-link to="/vein-wiki" class="inline-link">{{ $t('searchPage.noResults.link2') }}</router-link>, {{ $t('searchPage.noResults.content3') }} <router-link to="/vein-items" class="inline-link">{{ $t('searchPage.noResults.link3') }}</router-link>.
           </p>
           <p v-else>
-            Enter a search term in the header search box to find guides, wiki articles, and items.
+            {{ $t('searchPage.noResults.content4') }}
           </p>
         </div>
 
         <!-- Results Summary -->
         <div v-else class="results-summary">
           <p class="results-count">
-            Found <strong>{{ totalResults }}</strong> result{{ totalResults !== 1 ? 's' : '' }}
-            <span v-if="searchQuery">for "{{ searchQuery }}"</span>
+            {{ $t('searchPage.results.found') }} <strong>{{ totalResults }}</strong> {{ totalResults !== 1 ? $t('searchPage.results.results') : $t('searchPage.results.result') }}
+            <span v-if="searchQuery"> {{ $t('searchPage.results.for') }} "{{ searchQuery }}"</span>
           </p>
         </div>
 
@@ -47,7 +47,7 @@
         <div v-if="searchResults.guides.length > 0" class="results-category">
           <h2 class="category-title">
             <span class="category-icon">📚</span>
-            Guides ({{ searchResults.guides.length }})
+            {{ $t('searchPage.results.guides') }} ({{ searchResults.guides.length }})
           </h2>
           <div class="guides-grid">
             <div
@@ -83,7 +83,7 @@
         <div v-if="searchResults.wiki.length > 0" class="results-category">
           <h2 class="category-title">
             <span class="category-icon">📖</span>
-            Wiki ({{ searchResults.wiki.length }})
+            {{ $t('searchPage.results.wiki') }} ({{ searchResults.wiki.length }})
           </h2>
           <div class="articles-grid">
             <div
@@ -104,7 +104,7 @@
         <div v-if="searchResults.items.length > 0" class="results-category">
           <h2 class="category-title">
             <span class="category-icon">🎒</span>
-            Items ({{ searchResults.items.length }})
+            {{ $t('searchPage.results.items') }} ({{ searchResults.items.length }})
           </h2>
           <div class="table-section">
             <div class="table-container">
@@ -160,10 +160,14 @@
 <script setup>
 import { onMounted, watch, computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useSearch } from '../composables/useSearch'
+import { useLocalizedPath } from '../composables/useLocalizedPath'
 
 const route = useRoute()
 const router = useRouter()
+const { locale } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
 const { searchResults, isSearching, totalResults, search, clearSearch } = useSearch()
 
 // 从路由参数获取搜索关键词
@@ -190,22 +194,29 @@ watch(() => route.query.q, () => {
   performSearch()
 })
 
+// 监听语言变化，重新搜索
+watch(() => locale.value, () => {
+  if (searchQuery.value) {
+    performSearch()
+  }
+})
+
 const goToGuide = (addressBar) => {
   if (!addressBar) return
   const path = addressBar.startsWith('/') ? addressBar : `/${addressBar}`
-  router.push(`/vein-guides${path}`)
+  router.push(getLocalizedPath(`/vein-guides${path}`))
 }
 
 const goToWiki = (addressBar) => {
   if (!addressBar) return
   const path = addressBar.startsWith('/') ? addressBar : `/${addressBar}`
-  router.push(`/vein-wiki${path}`)
+  router.push(getLocalizedPath(`/vein-wiki${path}`))
 }
 
 const goToItem = (category, addressBar) => {
   if (!addressBar || addressBar === '/') return
   const path = addressBar.startsWith('/') ? addressBar.slice(1) : addressBar
-  router.push(`/vein-items/${category}/${path}`)
+  router.push(getLocalizedPath(`/vein-items/${category}/${path}`))
 }
 
 const formatDate = (dateString) => {

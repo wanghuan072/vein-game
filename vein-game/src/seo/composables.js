@@ -1,45 +1,34 @@
 import { ref, computed, watch } from 'vue'
 import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
+import i18n from '../i18n'
 import { seoConfig } from './config.js'
-
-// 数据加载映射表 - 用于 SEO 中的数据加载
-const dataLoaders = {
-  guide: () => import('../data/guide/guide.js'),
-  wiki: () => import('../data/wiki/wiki.js'),
-  items: {
-    weapons: () => import('../data/items/weapons.js'),
-    armor: () => import('../data/items/armor.js'),
-    clothing: () => import('../data/items/clothing.js'),
-    consumables: () => import('../data/items/consumables.js'),
-    special: () => import('../data/items/special.js'),
-    materials: () => import('../data/items/materials.js'),
-    ammo: () => import('../data/items/ammo.js'),
-    medical: () => import('../data/items/medical.js'),
-    tools: () => import('../data/items/tools.js'),
-    misc: () => import('../data/items/misc.js')
-  }
-}
 
 /**
  * 加载数据模块（用于 SEO）
  */
-const loadDataForSEO = async (dataType, category = null) => {
+const loadDataForSEO = async (dataType, category = null, lang = 'en') => {
   try {
     if (dataType === 'items' && category) {
-      const loader = dataLoaders.items[category]
-      if (!loader) {
-        throw new Error(`Unknown items category: ${category}`)
-      }
-      return await loader()
+      const module = await import(`../data/items/${category}/${lang}.js`).catch(() => 
+        import(`../data/items/${category}/en.js`)
+      )
+      return module
+    } else if (dataType === 'guide') {
+      const module = await import(`../data/guide/${lang}.js`).catch(() => 
+        import(`../data/guide/en.js`)
+      )
+      return module
+    } else if (dataType === 'wiki') {
+      const module = await import(`../data/wiki/${lang}.js`).catch(() => 
+        import(`../data/wiki/en.js`)
+      )
+      return module
     } else {
-      const loader = dataLoaders[dataType]
-      if (!loader) {
-        throw new Error(`Unknown data type: ${dataType}`)
-      }
-      return await loader()
+      throw new Error(`Unknown data type: ${dataType}`)
     }
   } catch (error) {
-    console.warn(`Failed to load data for SEO: ${dataType}${category ? `/${category}` : ''}`, error)
+    console.warn(`Failed to load data for SEO: ${dataType}${category ? `/${category}` : ''} (lang: ${lang})`, error)
     return null
   }
 }
@@ -227,6 +216,7 @@ const routeToSeoKey = {
   'items-detail': 'itemsDetail',
   'map': 'map',
   'map-detail': 'mapDetail',
+  'search': 'search',
   'privacy-policy': 'privacyPolicy',
   'terms-of-service': 'termsOfService',
   'copyright': 'copyright',
@@ -246,6 +236,7 @@ const dynamicRouteNames = new Set([
 export function useAutoSEO() {
   const { setSEO, generateStructuredData, addStructuredData } = useSEO()
   const route = useRoute()
+  const { locale } = useI18n()
   
   // 处理SEO的函数
   const handleSEO = async () => {
@@ -257,13 +248,43 @@ export function useAutoSEO() {
     }
     let hasSeoData = false
 
+    // 先从 i18n 获取静态页面的 TDK
+    if (seoKey && !dynamicRouteNames.has(routeName)) {
+      try {
+        // 直接访问 i18n 的 messages，避免警告
+        const messages = i18n.global.messages.value || i18n.global.messages
+        const currentLocale = locale.value || 'en'
+        const localeMessages = messages[currentLocale]
+        
+        if (localeMessages && localeMessages.tdk && localeMessages.tdk[seoKey]) {
+          const tdk = localeMessages.tdk[seoKey]
+          if (tdk && typeof tdk === 'object' && tdk.title) {
+            finalSEOData = {
+              ...finalSEOData,
+              title: tdk.title,
+              description: tdk.description || finalSEOData.description,
+              keywords: tdk.keywords || finalSEOData.keywords
+            }
+            hasSeoData = true
+          }
+        } else {
+          console.warn(`TDK not found for route: ${routeName} (tdk.${seoKey}) in locale: ${currentLocale}`)
+        }
+      } catch (error) {
+        // 如果 i18n 中没有对应的 TDK，输出警告
+        console.warn(`Failed to get TDK for route: ${routeName}:`, error)
+      }
+    }
+
     if (dynamicRouteNames.has(routeName)) {
       try {
         let item = null
         
+        const currentLang = locale.value || 'en'
+        
         if (routeName === 'guide-detail') {
           // 加载 guide 数据
-          const module = await loadDataForSEO('guide')
+          const module = await loadDataForSEO('guide', null, currentLang)
           if (module?.default || module?.guides) {
             const guides = module.default || module.guides || []
             const searchId = route.params.id || ''
@@ -277,7 +298,7 @@ export function useAutoSEO() {
           }
         } else if (routeName === 'wiki-detail') {
           // 加载 wiki 数据
-          const module = await loadDataForSEO('wiki')
+          const module = await loadDataForSEO('wiki', null, currentLang)
           if (module?.default || module?.wiki) {
             const wikis = module.default || module.wiki || []
             const searchId = route.params.id || ''
@@ -292,7 +313,7 @@ export function useAutoSEO() {
         } else if (routeName === 'items-detail') {
           // 加载 items 数据
           const category = route.params.category || 'weapons'
-          const module = await loadDataForSEO('items', category)
+          const module = await loadDataForSEO('items', category, currentLang)
           if (module?.default) {
             const items = module.default || []
             const searchId = route.params.id || ''
@@ -331,24 +352,9 @@ export function useAutoSEO() {
       } catch (error) {
         console.warn('Failed to load dynamic SEO data:', error)
       }
-    } else {
-      // 静态页面从路由 meta 中读取 SEO
-      const routeMeta = route.meta
-      if (routeMeta && routeMeta.seo) {
-        finalSEOData = {
-          ...finalSEOData,
-          title: routeMeta.seo.title || finalSEOData.title,
-          description: routeMeta.seo.description || finalSEOData.description,
-          keywords: routeMeta.seo.keywords || finalSEOData.keywords
-        }
-        hasSeoData = true
-      }
     }
 
-    if (!hasSeoData) {
-      return
-    }
-    
+    // 即使没有从 i18n 获取到数据，也要设置 SEO（使用默认值或已获取的数据）
     setSEO(finalSEOData)
     
     // 添加结构化数据

@@ -1,25 +1,11 @@
 import { ref, computed } from 'vue'
-import { guides } from '../data/guide/guide.js'
-import { wiki } from '../data/wiki/wiki.js'
-
-// 动态导入所有物品数据
-const itemsDataLoaders = {
-  weapons: () => import('../data/items/weapons.js'),
-  armor: () => import('../data/items/armor.js'),
-  clothing: () => import('../data/items/clothing.js'),
-  consumables: () => import('../data/items/consumables.js'),
-  special: () => import('../data/items/special.js'),
-  materials: () => import('../data/items/materials.js'),
-  ammo: () => import('../data/items/ammo.js'),
-  medical: () => import('../data/items/medical.js'),
-  tools: () => import('../data/items/tools.js'),
-  misc: () => import('../data/items/misc.js')
-}
+import { useI18n } from 'vue-i18n'
 
 /**
  * 搜索功能 composable
  */
 export function useSearch() {
+  const { locale } = useI18n()
   const searchQuery = ref('')
   const searchResults = ref({
     guides: [],
@@ -28,18 +14,35 @@ export function useSearch() {
   })
   const isSearching = ref(false)
   const allItems = ref([])
+  const cachedLang = ref(null)
 
   // 加载所有物品数据
-  const loadAllItems = async () => {
-    if (allItems.value.length > 0) return allItems.value
+  const loadAllItems = async (lang = null) => {
+    const currentLang = lang || locale.value || 'en'
+    
+    // 如果语言变化，清除缓存
+    if (cachedLang.value && cachedLang.value !== currentLang) {
+      allItems.value = []
+      cachedLang.value = null
+    }
+    
+    // 如果已有缓存且语言相同，直接返回
+    if (allItems.value.length > 0 && cachedLang.value === currentLang) {
+      return allItems.value
+    }
 
     try {
-      const itemsPromises = Object.values(itemsDataLoaders).map(loader => loader())
+      const categories = ['weapons', 'armor', 'clothing', 'consumables', 'special', 'materials', 'ammo', 'medical', 'tools', 'misc']
+      const itemsPromises = categories.map(category => 
+        import(`../data/items/${category}/${currentLang}.js`).catch(() => 
+          import(`../data/items/${category}/en.js`)
+        )
+      )
       const itemsModules = await Promise.all(itemsPromises)
       
       const items = []
       itemsModules.forEach((module, index) => {
-        const category = Object.keys(itemsDataLoaders)[index]
+        const category = categories[index]
         const categoryItems = module.default || []
         categoryItems.forEach(item => {
           items.push({
@@ -51,6 +54,7 @@ export function useSearch() {
       })
       
       allItems.value = items
+      cachedLang.value = currentLang
       return items
     } catch (error) {
       console.error('Failed to load items for search:', error)
@@ -61,7 +65,7 @@ export function useSearch() {
   /**
    * 搜索函数
    */
-  const search = async (query) => {
+  const search = async (query, lang = null) => {
     if (!query || query.trim().length === 0) {
       searchResults.value = { guides: [], wiki: [], items: [] }
       return
@@ -69,42 +73,60 @@ export function useSearch() {
 
     isSearching.value = true
     const searchTerm = query.toLowerCase().trim()
+    const currentLang = lang || locale.value || 'en'
 
-    // 搜索指南
-    const guidesResults = (guides || []).filter(guide => {
-      const title = (guide.title || '').toLowerCase()
-      const description = (guide.description || '').toLowerCase()
-      const tags = (guide.tags || []).join(' ').toLowerCase()
-      return title.includes(searchTerm) || 
-             description.includes(searchTerm) || 
-             tags.includes(searchTerm)
-    }).map(guide => ({ ...guide, type: 'guide' }))
+    try {
+      // 加载指南数据
+      const guidesModule = await import(`../data/guide/${currentLang}.js`).catch(() => 
+        import(`../data/guide/en.js`)
+      )
+      const guides = guidesModule.guides || guidesModule.default || []
 
-    // 搜索Wiki
-    const wikiResults = (wiki || []).filter(w => {
-      const title = (w.title || '').toLowerCase()
-      const description = (w.description || '').toLowerCase()
-      return title.includes(searchTerm) || description.includes(searchTerm)
-    }).map(w => ({ ...w, type: 'wiki' }))
+      // 搜索指南
+      const guidesResults = (guides || []).filter(guide => {
+        const title = (guide.title || '').toLowerCase()
+        const description = (guide.description || '').toLowerCase()
+        const tags = (guide.tags || []).join(' ').toLowerCase()
+        return title.includes(searchTerm) || 
+               description.includes(searchTerm) || 
+               tags.includes(searchTerm)
+      }).map(guide => ({ ...guide, type: 'guide' }))
 
-    // 搜索物品
-    const items = await loadAllItems()
-    const itemsResults = items.filter(item => {
-      const title = (item.title || '').toLowerCase()
-      const description = (item.description || '').toLowerCase()
-      const type = (item.type || '').toLowerCase()
-      return title.includes(searchTerm) || 
-             description.includes(searchTerm) || 
-             type.includes(searchTerm)
-    }).map(item => ({ ...item, type: 'item' }))
+      // 加载Wiki数据
+      const wikiModule = await import(`../data/wiki/${currentLang}.js`).catch(() => 
+        import(`../data/wiki/en.js`)
+      )
+      const wiki = wikiModule.wiki || wikiModule.default || []
 
-    searchResults.value = {
-      guides: guidesResults,
-      wiki: wikiResults,
-      items: itemsResults
+      // 搜索Wiki
+      const wikiResults = (wiki || []).filter(w => {
+        const title = (w.title || '').toLowerCase()
+        const description = (w.description || '').toLowerCase()
+        return title.includes(searchTerm) || description.includes(searchTerm)
+      }).map(w => ({ ...w, type: 'wiki' }))
+
+      // 搜索物品
+      const items = await loadAllItems(currentLang)
+      const itemsResults = items.filter(item => {
+        const title = (item.title || '').toLowerCase()
+        const description = (item.description || '').toLowerCase()
+        const type = (item.type || '').toLowerCase()
+        return title.includes(searchTerm) || 
+               description.includes(searchTerm) || 
+               type.includes(searchTerm)
+      }).map(item => ({ ...item, type: 'item' }))
+
+      searchResults.value = {
+        guides: guidesResults,
+        wiki: wikiResults,
+        items: itemsResults
+      }
+    } catch (error) {
+      console.error('Search error:', error)
+      searchResults.value = { guides: [], wiki: [], items: [] }
+    } finally {
+      isSearching.value = false
     }
-
-    isSearching.value = false
   }
 
   /**

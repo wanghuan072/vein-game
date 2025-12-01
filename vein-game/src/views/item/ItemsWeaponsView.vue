@@ -260,43 +260,119 @@
 </template>
 
 <script setup>
-import { onMounted, computed } from 'vue'
+import { onMounted, computed, watch, nextTick } from 'vue'
 import { useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useItemsData } from '../../composables/useItemsData'
+import { useLocalizedPath } from '../../composables/useLocalizedPath'
 
 const router = useRouter()
+const { locale } = useI18n()
+const { getLocalizedPath, getCurrentLocale } = useLocalizedPath()
 const { data: itemsData, loading, error, loadData } = useItemsData('weapons')
 
-const TYPE_KEYS = {
-  bladed: 'bladed',
-  ranged: 'blunt',
-  firearms: 'firearms',
-  firearmsAttachments: 'firearms-attachments',
-  explosive: 'explosive',
+// Type 映射表：根据语言返回对应的 type 值
+const TYPE_MAP = {
+  en: {
+    bladed: 'bladed',
+    ranged: 'blunt',
+    firearms: 'firearms',
+    firearmsAttachments: 'firearms-attachments',
+    explosive: 'explosive',
+  },
+  de: {
+    bladed: 'klingenwaffen',        // 对应 "Klingenwaffen"
+    ranged: 'stumpf',                // 对应 "Stumpf"
+    firearms: 'schusswaffen',        // 对应 "Schusswaffen"
+    firearmsAttachments: 'schusswaffen-aufsätze', // 对应 "Schusswaffen-Aufsätze"
+    explosive: 'sprengwaffen',       // 对应 "Sprengwaffen"
+  }
 }
 
 const normalizeType = (value) => String(value || '').trim().toLowerCase()
 
-const filterByType = (targetType) =>
-  computed(() =>
-    (itemsData.value || []).filter((item) => normalizeType(item.type) === normalizeType(targetType))
-  )
+// 根据当前语言获取 type 值
+const getTypeByLang = (typeKey) => {
+  const currentLang = locale.value || 'en'
+  const typeMap = TYPE_MAP[currentLang] || TYPE_MAP.en
+  return typeMap[typeKey] || typeMap.bladed
+}
 
-const bladedItems = filterByType(TYPE_KEYS.bladed)
-const rangedItems = filterByType(TYPE_KEYS.ranged)
-const firearmsItems = filterByType(TYPE_KEYS.firearms)
-const firearmsAttachmentsItems = filterByType(TYPE_KEYS.firearmsAttachments)
-const explosiveItems = filterByType(TYPE_KEYS.explosive)
+// 过滤函数：根据 type 值过滤 items
+const filterByType = (targetType) => {
+  const normalizedTarget = normalizeType(targetType)
+  return (itemsData.value || []).filter((item) => {
+    const normalizedItemType = normalizeType(item.type)
+    return normalizedItemType === normalizedTarget
+  })
+}
 
-onMounted(() => {
-  loadData('weapons')
+// 使用 computed 来响应语言变化
+const bladedItems = computed(() => {
+  const targetType = getTypeByLang('bladed')
+  const filtered = filterByType(targetType)
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsWeaponsView] bladedItems - targetType: ${targetType}, count: ${filtered.length}, total items: ${itemsData.value.length}`)
+  }
+  return filtered
 })
+const rangedItems = computed(() => {
+  const targetType = getTypeByLang('ranged')
+  const filtered = filterByType(targetType)
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsWeaponsView] rangedItems - targetType: ${targetType}, count: ${filtered.length}`)
+  }
+  return filtered
+})
+const firearmsItems = computed(() => {
+  const targetType = getTypeByLang('firearms')
+  const filtered = filterByType(targetType)
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsWeaponsView] firearmsItems - targetType: ${targetType}, count: ${filtered.length}`)
+  }
+  return filtered
+})
+const firearmsAttachmentsItems = computed(() => {
+  const targetType = getTypeByLang('firearmsAttachments')
+  const filtered = filterByType(targetType)
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsWeaponsView] firearmsAttachmentsItems - targetType: ${targetType}, count: ${filtered.length}`)
+  }
+  return filtered
+})
+const explosiveItems = computed(() => {
+  const targetType = getTypeByLang('explosive')
+  const filtered = filterByType(targetType)
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsWeaponsView] explosiveItems - targetType: ${targetType}, count: ${filtered.length}`)
+  }
+  return filtered
+})
+
+onMounted(async () => {
+  // 等待路由守卫设置语言
+  await nextTick()
+  // 直接从路由路径中提取语言，更可靠
+  const currentLang = getCurrentLocale()
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsWeaponsView] onMounted - locale.value: ${locale.value}, getCurrentLocale(): ${currentLang}`)
+  }
+  await loadData('weapons', currentLang)
+})
+
+// 监听语言变化，重新加载数据
+watch(() => locale.value, async (newLocale) => {
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsWeaponsView] Language changed to: ${newLocale}`)
+  }
+  await loadData('weapons', newLocale)
+}, { immediate: false })
 
 const onItemClick = (item) => {
   if (item && item.showDetail === false) return
   const id = (item.addressBar || '').replace('/', '')
   if (!id) return
-  router.push(`/vein-items/weapons/${id}`)
+  router.push(getLocalizedPath(`/vein-items/weapons/${id}`))
 }
 </script>
 

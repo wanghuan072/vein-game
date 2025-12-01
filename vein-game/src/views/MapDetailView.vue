@@ -9,19 +9,19 @@
               <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
               <polyline points="9,22 9,12 15,12 15,22" />
             </svg>
-            Map
+            {{ $t('mapDetailPage.breadcrumb.map') }}
           </router-link>
           <svg class="breadcrumb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <polyline points="9,18 15,12 9,6" />
           </svg>
-          <span class="breadcrumb-current">Interactive Map</span>
+          <span class="breadcrumb-current">{{ $t('mapDetailPage.breadcrumb.interactive') }}</span>
         </div>
 
         <div class="map-detail-content">
           <div class="map-detail-text">
-            <h1 class="map-title">Interactive Map</h1>
+            <h1 class="map-title">{{ $t('mapDetailPage.header.title') }}</h1>
             <p class="map-description">
-              Explore the full interactive map of VEIN game world. Navigate locations, discover points of interest, and plan your survival routes.
+              {{ $t('mapDetailPage.header.description') }}
             </p>
           </div>
         </div>
@@ -31,13 +31,13 @@
     <!-- Map Content -->
     <section class="map-content">
       <div class="container">
-        <h2 class="section-title">Interactive Map</h2>
+        <h2 class="section-title">{{ $t('mapDetailPage.content.title') }}</h2>
         <div class="map-container">
           <div class="map-iframe-wrapper">
             <iframe
               src="https://vein-germany.de/map"
               class="map-iframe"
-              title="VEIN Interactive Map"
+              :title="$t('mapDetailPage.header.title')"
               frameborder="0"
               allowfullscreen
               loading="lazy"
@@ -46,22 +46,22 @@
           
           <div class="map-info">
             <div class="info-card">
-              <h3>Map Features</h3>
+              <h3>{{ $t('mapDetailPage.content.features.title') }}</h3>
               <ul>
-                <li><strong>Zoom:</strong> Use mouse wheel or pinch to zoom in/out</li>
-                <li><strong>Pan:</strong> Click and drag to move around the map</li>
-                <li><strong>Tooltips:</strong> Hover or tap locations to view details</li>
-                <li><strong>Full Images:</strong> Click or tap locations to view full images</li>
+                <li><strong>{{ $t('mapDetailPage.content.features.zoom') }}</strong> {{ $t('mapDetailPage.content.features.zoomValue') }}</li>
+                <li><strong>{{ $t('mapDetailPage.content.features.pan') }}</strong> {{ $t('mapDetailPage.content.features.panValue') }}</li>
+                <li><strong>{{ $t('mapDetailPage.content.features.tooltips') }}</strong> {{ $t('mapDetailPage.content.features.tooltipsValue') }}</li>
+                <li><strong>{{ $t('mapDetailPage.content.features.images') }}</strong> {{ $t('mapDetailPage.content.features.imagesValue') }}</li>
               </ul>
             </div>
             
             <div class="info-card">
-              <h3>Navigation Tips</h3>
+              <h3>{{ $t('mapDetailPage.content.navigation.title') }}</h3>
               <ul>
-                <li>Use the zoom controls (🔍+ / 🔍−) to adjust map scale</li>
-                <li>Click the home icon (⌂) to return to default view</li>
-                <li>Switch between Map and Satellite views for different perspectives</li>
-                <li>All discovered locations are permanently marked on the map</li>
+                <li>{{ $t('mapDetailPage.content.navigation.tip1') }}</li>
+                <li>{{ $t('mapDetailPage.content.navigation.tip2') }}</li>
+                <li>{{ $t('mapDetailPage.content.navigation.tip3') }}</li>
+                <li>{{ $t('mapDetailPage.content.navigation.tip4') }}</li>
               </ul>
             </div>
           </div>
@@ -72,18 +72,24 @@
 </template>
 
 <script setup>
-import { onMounted, nextTick } from 'vue'
+import { onMounted, nextTick, watch } from 'vue'
 import { useSEO } from '../seo/composables.js'
+import { useI18n } from 'vue-i18n'
 import { seoConfig } from '../seo/config.js'
 
 const { setSEO } = useSEO()
+const { t, te, locale } = useI18n()
 
 // 更新SEO
 const updateSEO = () => {
+  let tdk = null
+  if (te('tdk.mapDetail')) {
+    tdk = t('tdk.mapDetail', {}, { returnObjects: true })
+  }
   setSEO({
-    title: 'VEIN Interactive Map - Full World Map Explorer',
-    description: 'Explore the complete interactive map of VEIN game world. Navigate locations, discover points of interest, and plan your survival routes in Champlain Valley.',
-    keywords: 'VEIN interactive map, VEIN game map, world map, locations, points of interest, navigation, VEIN survival game',
+    title: tdk?.title || 'VEIN Interactive Map - Full World Map Explorer',
+    description: tdk?.description || 'Explore the complete interactive map of VEIN game world.',
+    keywords: tdk?.keywords || 'VEIN interactive map, VEIN game map',
     author: seoConfig.defaults.author,
     image: seoConfig.defaults.image,
     type: 'website'
@@ -92,6 +98,11 @@ const updateSEO = () => {
 
 onMounted(async () => {
   await nextTick()
+  updateSEO()
+})
+
+// 监听语言变化，更新 SEO
+watch(() => locale.value, () => {
   updateSEO()
 })
 </script>

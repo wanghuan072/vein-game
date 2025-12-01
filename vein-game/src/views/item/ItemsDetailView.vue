@@ -4,17 +4,17 @@
     <section class="detail-header-section" v-if="item">
       <div class="container">
         <div class="breadcrumb">
-          <router-link to="/vein-items" class="breadcrumb-link">
+          <router-link :to="getLocalizedPath('/vein-items')" class="breadcrumb-link">
             <svg class="breadcrumb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
               <polyline points="9,22 9,12 15,12 15,22" />
             </svg>
-            Items
+            {{ $t('itemsDetailPage.breadcrumb.items') }}
           </router-link>
           <svg class="breadcrumb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <polyline points="9,18 15,12 9,6" />
           </svg>
-          <router-link :to="`/vein-items/${category}`" class="breadcrumb-link">{{ categoryTitle }}</router-link>
+          <router-link :to="getLocalizedPath(`/vein-items/${category}`)" class="breadcrumb-link">{{ categoryTitle }}</router-link>
           <svg class="breadcrumb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <polyline points="9,18 15,12 9,6" />
           </svg>
@@ -60,12 +60,12 @@
             </div>
 
             <div class="nav-box" v-if="otherItems.length > 0">
-              <h4 class="nav-title">Other {{ categoryTitle }}</h4>
+              <h4 class="nav-title">{{ $t('itemsDetailPage.navigation.other') }} {{ categoryTitle }}</h4>
               <div class="nav-links">
                 <router-link
                   v-for="it in otherItems"
                   :key="it.id"
-                  :to="`/vein-items/${category}/${(it.addressBar || '').replace('/', '')}`"
+                  :to="getLocalizedPath(`/vein-items/${category}/${(it.addressBar || '').replace('/', '')}`)"
                   class="nav-link"
                 >
                   {{ it.title }}
@@ -81,9 +81,9 @@
     <section class="items-content" v-else>
       <div class="container">
         <div class="not-found">
-          <h2>Item Not Found</h2>
-          <p>The item you're looking for doesn't exist.</p>
-          <router-link :to="`/vein-items/${category}`" class="btn-hero btn-secondary">Back to {{ categoryTitle }}</router-link>
+          <h2>{{ $t('itemsDetailPage.notFound.title') }}</h2>
+          <p>{{ $t('itemsDetailPage.notFound.description') }}</p>
+          <router-link :to="getLocalizedPath(`/vein-items/${category}`)" class="btn-hero btn-secondary">{{ $t('itemsDetailPage.notFound.back') }} {{ categoryTitle }}</router-link>
         </div>
       </div>
     </section>
@@ -91,11 +91,15 @@
 </template>
 
 <script setup>
-import { onMounted, ref, computed, watch } from 'vue'
+import { onMounted, ref, computed, watch, nextTick } from 'vue'
 import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useItemsData } from '../../composables/useItemsData'
+import { useLocalizedPath } from '../../composables/useLocalizedPath'
 
 const route = useRoute()
+const { locale } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
 const category = String(route.params.category || '')
 const id = String(route.params.id || '')
 const { data, loadData, findByAddress, getOtherItems } = useItemsData(category)
@@ -120,19 +124,42 @@ const otherItems = computed(() => {
 const loadItemData = async () => {
   const currentCategory = String(route.params.category || category)
   const currentId = String(route.params.id || id)
-  await loadData(currentCategory)
+  // 确保使用当前语言加载数据
+  const currentLang = locale.value || 'en'
+  await loadData(currentCategory, currentLang)
   item.value = findByAddress(currentCategory, currentId)
 }
 
 onMounted(async () => {
+  // 等待下一个 tick，确保路由守卫已经设置了语言
+  await nextTick()
   await loadItemData()
 })
+
+// 监听路由完整路径变化（包括语言前缀变化）
+watch(() => route.fullPath, async (newPath, oldPath) => {
+  // 如果路径发生变化，重新加载数据
+  if (newPath !== oldPath && oldPath) {
+    await nextTick() // 等待路由守卫设置语言
+    await loadItemData()
+  }
+}, { immediate: false })
 
 // 监听路由参数变化
 watch(() => [route.params.category, route.params.id], async ([newCategory, newId]) => {
   if (newCategory && newId) {
-    await loadData(String(newCategory))
+    await nextTick() // 等待路由守卫设置语言
+    const currentLang = locale.value || 'en'
+    await loadData(String(newCategory), currentLang)
     item.value = findByAddress(String(newCategory), String(newId))
+  }
+}, { immediate: false })
+
+// 监听语言变化，重新加载数据
+watch(() => locale.value, async (newLocale, oldLocale) => {
+  // 只有当语言真正变化时才重新加载
+  if (newLocale !== oldLocale && oldLocale !== undefined) {
+    await loadItemData()
   }
 }, { immediate: false })
 </script>

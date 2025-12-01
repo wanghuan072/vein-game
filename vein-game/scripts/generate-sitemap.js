@@ -10,6 +10,17 @@ const seoConfig = {
   fullDomain: 'https://veingame.net'
 }
 
+// 支持的语言列表
+const supportedLocales = ['en', 'de']
+
+// 生成本地化路径
+function createLocalizedPath(path, locale = 'en') {
+  if (locale === 'en') {
+    return path
+  }
+  return `/${locale}${path}`
+}
+
 // 基础路由配置
 const baseRoutes = [
   { path: '/', name: 'home', priority: 1.0, changefreq: 'weekly' },
@@ -35,8 +46,8 @@ const baseRoutes = [
   { path: '/contact-us', name: 'contact-us', priority: 0.3, changefreq: 'yearly' }
 ]
 
-// 动态加载数据
-async function loadData() {
+// 动态加载数据（支持多语言）
+async function loadData(locale = 'en') {
   const data = {
     guides: [],
     wiki: [],
@@ -56,19 +67,19 @@ async function loadData() {
 
   // 加载 guides 数据
   try {
-    const guideModule = await import('../src/data/guide/guide.js')
+    const guideModule = await import(`../src/data/guide/${locale}.js`)
     data.guides = guideModule.guides || guideModule.default || []
   } catch (error) {
-    console.warn('Failed to load guides:', error.message)
+    console.warn(`Failed to load guides (${locale}):`, error.message)
     data.guides = []
   }
 
   // 加载 wiki 数据
   try {
-    const wikiModule = await import('../src/data/wiki/wiki.js')
+    const wikiModule = await import(`../src/data/wiki/${locale}.js`)
     data.wiki = wikiModule.wiki || wikiModule.default || []
   } catch (error) {
-    console.warn('Failed to load wiki:', error.message)
+    console.warn(`Failed to load wiki (${locale}):`, error.message)
     data.wiki = []
   }
 
@@ -77,10 +88,10 @@ async function loadData() {
   
   for (const category of itemCategories) {
     try {
-      const itemModule = await import(`../src/data/items/${category}.js`)
-      data.items[category] = itemModule.default || []
+      const itemModule = await import(`../src/data/items/${category}/${locale}.js`)
+      data.items[category] = itemModule.default || itemModule.items || []
     } catch (error) {
-      console.warn(`Failed to load items/${category}:`, error.message)
+      console.warn(`Failed to load items/${category} (${locale}):`, error.message)
       data.items[category] = []
     }
   }
@@ -99,46 +110,61 @@ function generateUrlXml(path, lastmod, priority, changefreq) {
   </url>`
 }
 
-// 生成站点地图
-async function generateSitemap(data) {
+// 生成站点地图（支持多语言）
+async function generateSitemap() {
   const lastmod = new Date().toISOString().split('T')[0]
+
+  // 加载所有语言的数据
+  const allData = {}
+  for (const locale of supportedLocales) {
+    allData[locale] = await loadData(locale)
+  }
 
   let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`
 
-  // 生成基础路由
+  // 生成基础路由（为每种语言生成）
   baseRoutes.forEach(route => {
-    sitemapXml += `\n${generateUrlXml(route.path, lastmod, route.priority, route.changefreq)}`
+    supportedLocales.forEach(locale => {
+      const localizedPath = createLocalizedPath(route.path, locale)
+      sitemapXml += `\n${generateUrlXml(localizedPath, lastmod, route.priority, route.changefreq)}`
+    })
   })
 
-  // 为 guides 生成URL
-  const guides = data.guides || []
-  guides.forEach(guide => {
-    if (!guide || !guide.addressBar) return
-    const guidePath = `/vein-guides${guide.addressBar}`
-    sitemapXml += `\n${generateUrlXml(guidePath, guide.publishDate || lastmod, 0.8, 'monthly')}`
+  // 为 guides 生成URL（为每种语言生成）
+  supportedLocales.forEach(locale => {
+    const guides = allData[locale].guides || []
+    guides.forEach(guide => {
+      if (!guide || !guide.addressBar) return
+      const guidePath = createLocalizedPath(`/vein-guides${guide.addressBar}`, locale)
+      sitemapXml += `\n${generateUrlXml(guidePath, guide.publishDate || lastmod, 0.8, 'monthly')}`
+    })
   })
 
-  // 为 wiki 生成URL
-  const wikis = data.wiki || []
-  wikis.forEach(wiki => {
-    if (!wiki || !wiki.addressBar) return
-    const wikiPath = `/vein-wiki${wiki.addressBar}`
-    sitemapXml += `\n${generateUrlXml(wikiPath, wiki.publishDate || lastmod, 0.7, 'monthly')}`
+  // 为 wiki 生成URL（为每种语言生成）
+  supportedLocales.forEach(locale => {
+    const wikis = allData[locale].wiki || []
+    wikis.forEach(wiki => {
+      if (!wiki || !wiki.addressBar) return
+      const wikiPath = createLocalizedPath(`/vein-wiki${wiki.addressBar}`, locale)
+      sitemapXml += `\n${generateUrlXml(wikiPath, wiki.publishDate || lastmod, 0.7, 'monthly')}`
+    })
   })
 
-  // 为 items 生成URL
+  // 为 items 生成URL（为每种语言生成）
   const itemCategories = ['weapons', 'armor', 'clothing', 'consumables', 'special', 'materials', 'ammo', 'medical', 'tools', 'misc']
   
-  for (const category of itemCategories) {
-    const items = data.items[category] || []
-    items
-      .filter(item => item && item.showDetail !== false && item.addressBar)
-      .forEach(item => {
-        const itemPath = `/vein-items/${category}${item.addressBar}`
-        sitemapXml += `\n${generateUrlXml(itemPath, item.publishDate || lastmod, 0.6, 'monthly')}`
-      })
-  }
+  supportedLocales.forEach(locale => {
+    for (const category of itemCategories) {
+      const items = allData[locale].items[category] || []
+      items
+        .filter(item => item && item.showDetail !== false && item.addressBar)
+        .forEach(item => {
+          const itemPath = createLocalizedPath(`/vein-items/${category}${item.addressBar}`, locale)
+          sitemapXml += `\n${generateUrlXml(itemPath, item.publishDate || lastmod, 0.6, 'monthly')}`
+        })
+    }
+  })
 
   sitemapXml += `\n</urlset>`
   return sitemapXml
@@ -147,11 +173,10 @@ async function generateSitemap(data) {
 // 生成并保存站点地图
 async function main() {
   try {
-    console.log('📦 Loading data...')
-    const data = await loadData()
+    console.log('📦 Loading data for all locales...')
     
-    console.log('🗺️  Generating sitemap...')
-    const sitemapContent = await generateSitemap(data)
+    console.log('🗺️  Generating multilingual sitemap...')
+    const sitemapContent = await generateSitemap()
     
     const publicPath = path.join(__dirname, '../public/sitemap.xml')
     const distPath = path.join(__dirname, '../dist/sitemap.xml')
@@ -174,19 +199,15 @@ async function main() {
     const urlCount = (sitemapContent.match(/<url>/g) || []).length
     console.log(`✅ Total URLs in sitemap: ${urlCount}`)
     
-    // 统计各类别的URL数量
-    const stats = {
-      base: baseRoutes.length,
-      guides: (data.guides || []).length,
-      wiki: (data.wiki || []).length,
-      items: Object.values(data.items).reduce((sum, items) => sum + (items || []).length, 0)
-    }
+    // 统计各语言的URL数量
+    const enUrls = sitemapContent.match(/<loc>https:\/\/veingame\.net\/[^<]*<\/loc>/g) || []
+    const enUrlCount = enUrls.filter(url => !url.includes('/de/')).length
+    const deUrlCount = enUrls.filter(url => url.includes('/de/')).length
     
-    console.log('\n📊 URLs by category:')
-    console.log(`   Base routes: ${stats.base}`)
-    console.log(`   Guides: ${stats.guides}`)
-    console.log(`   Wiki: ${stats.wiki}`)
-    console.log(`   Items: ${stats.items}`)
+    console.log('\n📊 URLs by language:')
+    console.log(`   English (en): ${enUrlCount}`)
+    console.log(`   German (de): ${deUrlCount}`)
+    console.log(`   Total: ${urlCount}`)
     
     // 验证生成的站点地图
     const validation = sitemapContent.includes('<?xml') && 

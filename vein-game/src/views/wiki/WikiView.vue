@@ -4,9 +4,9 @@
     <section class="page-header">
       <div class="container">
         <div class="page-header-content">
-          <h1 class="page-title">Wiki</h1>
+          <h1 class="page-title">{{ $t('wikiPage.header.title') }}</h1>
           <p class="page-subtitle">
-            Complete knowledge base for VEIN game. Explore detailed information about gameplay mechanics, features, and everything you need to know about VEIN survival game.
+            {{ $t('wikiPage.header.subtitle') }}
           </p>
         </div>
       </div>
@@ -17,16 +17,16 @@
       <div class="container">
         <!-- Loading State -->
         <div v-if="loading" class="loading-state">
-          <p>Loading wiki...</p>
+          <p>{{ $t('wikiPage.loading') }}</p>
         </div>
         
         <!-- Error State -->
         <div v-if="error" class="error-state">
-          <p>Error loading wiki: {{ error }}</p>
+          <p>{{ $t('wikiPage.error') }} {{ error }}</p>
         </div>
         
         <!-- Section Title -->
-        <h2 class="section-title" v-if="!loading && !error">All Articles</h2>
+        <h2 class="section-title" v-if="!loading && !error">{{ $t('wikiPage.allArticles') }}</h2>
         
         <!-- Articles Grid -->
         <div class="articles-grid" v-if="!loading && !error">
@@ -48,51 +48,51 @@
     <!-- Why Choose Us Section -->
     <section class="why-choose-us-section">
       <div class="container">
-        <h2 class="section-title">Why Choose Our VEIN Wiki?</h2>
+        <h2 class="section-title">{{ $t('wikiPage.whyChoose.title') }}</h2>
         <p class="section-subtitle">
-          Your complete reference guide for mastering every aspect of VEIN survival game.
+          {{ $t('wikiPage.whyChoose.subtitle') }}
         </p>
         <div class="features-grid">
           <div class="feature-card">
             <div class="feature-icon">📖</div>
-            <h3>Complete Knowledge Base</h3>
+            <h3>{{ $t('wikiPage.whyChoose.features.knowledge.title') }}</h3>
             <p>
-              Our Wiki covers all core systems in VEIN, from basic controls and keybindings to advanced mechanics like crafting, building, and vehicle systems. Every article is meticulously researched and regularly updated to ensure accuracy.
+              {{ $t('wikiPage.whyChoose.features.knowledge.content') }} <router-link to="/vein-wiki/mechanics" class="inline-link">{{ $t('wikiPage.whyChoose.features.knowledge.link') }}</router-link> {{ $t('wikiPage.whyChoose.features.knowledge.content2') }}
             </p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🎮</div>
-            <h3>Game Mechanics Explained</h3>
+            <h3>{{ $t('wikiPage.whyChoose.features.mechanics.title') }}</h3>
             <p>
-              Understand how VEIN's systems work with our detailed <router-link to="/vein-wiki/mechanics" class="inline-link">mechanics guide</router-link>. Learn about crafting, building, item interactions, health systems, and world systems that affect your survival.
+              {{ $t('wikiPage.whyChoose.features.mechanics.content') }} <router-link to="/vein-wiki/mechanics" class="inline-link">{{ $t('wikiPage.whyChoose.features.mechanics.link') }}</router-link> {{ $t('wikiPage.whyChoose.features.mechanics.content2') }}
             </p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">⚔️</div>
-            <h3>Skills & Perks Database</h3>
+            <h3>{{ $t('wikiPage.whyChoose.features.skills.title') }}</h3>
             <p>
-              Master character progression with our comprehensive <router-link to="/vein-wiki/skills" class="inline-link">skills and perks guide</router-link>. Find every skill, understand their effects, and discover powerful perks that unlock at different levels.
+              {{ $t('wikiPage.whyChoose.features.skills.content') }} <router-link to="/vein-wiki/skills" class="inline-link">{{ $t('wikiPage.whyChoose.features.skills.link') }}</router-link> {{ $t('wikiPage.whyChoose.features.skills.content2') }}
             </p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🏗️</div>
-            <h3>Building & Crafting Guides</h3>
+            <h3>{{ $t('wikiPage.whyChoose.features.building.title') }}</h3>
             <p>
-              Learn to construct fortifications, workbenches, and utilities with our <router-link to="/vein-wiki/building" class="inline-link">building system guide</router-link>. Master the construction menu, understand fortification tiers, and build the perfect base.
+              {{ $t('wikiPage.whyChoose.features.building.content') }} <router-link to="/vein-wiki/building" class="inline-link">{{ $t('wikiPage.whyChoose.features.building.link') }}</router-link> {{ $t('wikiPage.whyChoose.features.building.content2') }}
             </p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🚗</div>
-            <h3>Vehicle & Transport Info</h3>
+            <h3>{{ $t('wikiPage.whyChoose.features.vehicles.title') }}</h3>
             <p>
-              Get detailed information about all vehicles in VEIN, from passenger cars to heavy-duty trucks. Our <router-link to="/vein-wiki/vehicles" class="inline-link">vehicles guide</router-link> covers every vehicle type, required materials, and how to use them effectively.
+              {{ $t('wikiPage.whyChoose.features.vehicles.content') }} <router-link to="/vein-wiki/vehicles" class="inline-link">{{ $t('wikiPage.whyChoose.features.vehicles.link') }}</router-link> {{ $t('wikiPage.whyChoose.features.vehicles.content2') }}
             </p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🍳</div>
-            <h3>Cooking & Recipes</h3>
+            <h3>{{ $t('wikiPage.whyChoose.features.recipes.title') }}</h3>
             <p>
-              Never go hungry with our complete cooking recipes database. Learn all brewing and slicing recipes, required ingredients, and cooking utensils needed to prepare meals that restore health and stamina.
+              {{ $t('wikiPage.whyChoose.features.recipes.content') }}
             </p>
           </div>
         </div>
@@ -102,60 +102,60 @@
     <!-- FAQ Section -->
     <section class="faq-section">
       <div class="container">
-        <h2 class="section-title">Frequently Asked Questions About VEIN Wiki</h2>
+        <h2 class="section-title">{{ $t('wikiPage.faq.title') }}</h2>
         <div class="faq-grid">
           <article class="faq-item">
-            <h3>What information does the Wiki contain?</h3>
+            <h3>{{ $t('wikiPage.faq.items.information.question') }}</h3>
             <p>
-              Our Wiki is a comprehensive knowledge base covering all aspects of VEIN game. It includes detailed information about controls and keybindings, all skills and their associated perks, core game mechanics, cooking recipes, the building system, vehicles, and a complete items database.
+              {{ $t('wikiPage.faq.items.information.answer1') }}
             </p>
             <p>
-              Each article provides in-depth explanations, tables, lists, and step-by-step instructions to help you understand and master every system in VEIN.
-            </p>
-          </article>
-          <article class="faq-item">
-            <h3>How do I use the controls guide?</h3>
-            <p>
-              Our <router-link to="/vein-wiki/controls" class="inline-link">controls and keybindings guide</router-link> lists all default keybindings for movement, combat, vehicles, and miscellaneous actions. You can use this reference to learn the controls or customize them in the game's settings menu.
-            </p>
-            <p>
-              The guide is organized by category (Movement, Combat, Vehicles, etc.) making it easy to find the specific control you're looking for.
+              {{ $t('wikiPage.faq.items.information.answer2') }}
             </p>
           </article>
           <article class="faq-item">
-            <h3>Are the skill perks accurate?</h3>
+            <h3>{{ $t('wikiPage.faq.items.controls.question') }}</h3>
             <p>
-              Yes, our <router-link to="/vein-wiki/skills" class="inline-link">skills and perks guide</router-link> is regularly updated to reflect the current game version. We list every skill, explain their function, and provide complete perk lists with level requirements and effects.
+              {{ $t('wikiPage.faq.items.controls.answer1') }} <router-link to="/vein-wiki/controls" class="inline-link">{{ $t('wikiPage.faq.items.controls.link') }}</router-link> {{ $t('wikiPage.faq.items.controls.answer2') }}
             </p>
             <p>
-              Each perk entry includes the level at which it unlocks (typically 25 or 50) and a detailed description of its benefits, helping you plan your character build effectively.
-            </p>
-          </article>
-          <article class="faq-item">
-            <h3>Does the Wiki include crafting recipes?</h3>
-            <p>
-              Yes! Our Wiki includes comprehensive cooking recipes for brewing and slicing. The <router-link to="/vein-wiki/cooking-recipes" class="inline-link">cooking recipes guide</router-link> lists all ingredients, required utensils, and the products you can create.
-            </p>
-            <p>
-              Whether you need to brew coffee, make broth, or slice vegetables, our recipe database has everything you need to keep your character fed and healthy.
+              {{ $t('wikiPage.faq.items.controls.answer3') }}
             </p>
           </article>
           <article class="faq-item">
-            <h3>How detailed is the building guide?</h3>
+            <h3>{{ $t('wikiPage.faq.items.skills.question') }}</h3>
             <p>
-              Our building guide is extremely detailed, covering the entire construction system. It explains the Utility Cabinet system, fortification tiers (Wood, Fortified Wood, Limestone Brick), all workbenches, storage options, utilities for farming and electricity, and defensive structures.
+              {{ $t('wikiPage.faq.items.skills.answer1') }} <router-link to="/vein-wiki/skills" class="inline-link">{{ $t('wikiPage.faq.items.skills.link') }}</router-link> {{ $t('wikiPage.faq.items.skills.answer2') }}
             </p>
             <p>
-              The guide includes skill requirements, material costs, and strategic advice for building an effective base that can withstand zombie hordes.
+              {{ $t('wikiPage.faq.items.skills.answer3') }}
             </p>
           </article>
           <article class="faq-item">
-            <h3>Is the Wiki updated with game patches?</h3>
+            <h3>{{ $t('wikiPage.faq.items.recipes.question') }}</h3>
             <p>
-              We strive to keep the Wiki current with game updates. As VEIN is in Early Access and receives regular patches, we update our articles when significant changes occur to mechanics, skills, recipes, or other systems.
+              {{ $t('wikiPage.faq.items.recipes.answer1') }} <router-link to="/vein-wiki/cooking-recipes" class="inline-link">{{ $t('wikiPage.faq.items.recipes.link') }}</router-link> {{ $t('wikiPage.faq.items.recipes.answer2') }}
             </p>
             <p>
-              If you notice outdated information, please let us know so we can update the relevant articles promptly.
+              {{ $t('wikiPage.faq.items.recipes.answer3') }}
+            </p>
+          </article>
+          <article class="faq-item">
+            <h3>{{ $t('wikiPage.faq.items.building.question') }}</h3>
+            <p>
+              {{ $t('wikiPage.faq.items.building.answer1') }}
+            </p>
+            <p>
+              {{ $t('wikiPage.faq.items.building.answer2') }}
+            </p>
+          </article>
+          <article class="faq-item">
+            <h3>{{ $t('wikiPage.faq.items.updated.question') }}</h3>
+            <p>
+              {{ $t('wikiPage.faq.items.updated.answer1') }}
+            </p>
+            <p>
+              {{ $t('wikiPage.faq.items.updated.answer2') }}
             </p>
           </article>
         </div>
@@ -165,15 +165,24 @@
 </template>
 
 <script setup>
-import { computed, onMounted } from 'vue'
+import { computed, onMounted, watch } from 'vue'
 import { useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useWikiData } from '../../composables/useWikiData'
+import { useLocalizedPath } from '../../composables/useLocalizedPath'
 
 const router = useRouter()
+const { locale } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
 const { wiki, loading, error, loadData } = useWikiData()
 
 // 初始化加载数据
 onMounted(() => {
+  loadData()
+})
+
+// 监听语言变化，重新加载数据
+watch(() => locale.value, () => {
   loadData()
 })
 
@@ -185,7 +194,7 @@ const allWikis = computed(() => {
 const goToWiki = (addressBar) => {
   if (!addressBar) return
   const path = addressBar.startsWith('/') ? addressBar : `/${addressBar}`
-  router.push(`/vein-wiki${path}`)
+  router.push(getLocalizedPath(`/vein-wiki${path}`))
 }
 </script>
 

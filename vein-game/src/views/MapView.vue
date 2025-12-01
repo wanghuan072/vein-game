@@ -3,12 +3,10 @@
     <section class="page-hero">
       <div class="container">
         <div class="page-hero-content">
-          <p class="eyebrow">VEIN · Champlain Valley</p>
-          <h1 class="hero-title">Champlain Valley Tactical Map</h1>
+          <p class="eyebrow">{{ $t('mapPage.hero.eyebrow') }}</p>
+          <h1 class="hero-title">{{ $t('mapPage.hero.title') }}</h1>
           <p class="hero-description">
-            VEIN takes place inside Champlain Valley, spanning northern New York, western Vermont, and the southern edge of Quebec.
-            The v0.022 playable slice sits 30–40 miles south of the Canadian border and features four primary towns:
-            Dannemora, Lyon Mountain, Redford, and Saranac.
+            {{ $t('mapPage.hero.description') }}
           </p>
           <div class="hero-actions">
             <router-link to="/vein-map-detail" class="btn-interactive-map">
@@ -16,7 +14,7 @@
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                 <circle cx="12" cy="10" r="3"></circle>
               </svg>
-              View Interactive Map
+              {{ $t('mapPage.hero.button') }}
             </router-link>
           </div>
         </div>
@@ -25,24 +23,33 @@
 
     <section class="region-overview">
       <div class="container">
-        <h2 class="section-title">Map Overview</h2>
+        <h2 class="section-title">{{ $t('mapPage.overview.title') }}</h2>
         <div class="region-grid">
           <div class="region-card">
-            <h3>Region Snapshot</h3>
+            <h3>{{ $t('mapPage.overview.snapshot.title') }}</h3>
             <ul>
-              <li><strong>Setting:</strong> Champlain Valley, Northeastern United States</li>
-              <li><strong>Biome:</strong> Lakes, forests, mining towns, and industrial corridors</li>
-              <li><strong>Key Settlements:</strong> Dannemora · Lyon Mountain · Redford · Saranac</li>
-              <li><strong>Version:</strong> v0.022 · Early Access</li>
+              <li><strong>{{ $t('mapPage.overview.snapshot.setting') }}</strong> {{ $t('mapPage.overview.snapshot.settingValue') }}</li>
+              <li><strong>{{ $t('mapPage.overview.snapshot.biome') }}</strong> {{ $t('mapPage.overview.snapshot.biomeValue') }}</li>
+              <li><strong>{{ $t('mapPage.overview.snapshot.settlements') }}</strong> {{ $t('mapPage.overview.snapshot.settlementsValue') }}</li>
+              <li><strong>{{ $t('mapPage.overview.snapshot.version') }}</strong> {{ $t('mapPage.overview.snapshot.versionValue') }}</li>
             </ul>
           </div>
           <div class="region-card">
-            <h3>Viewing the Map</h3>
-            <div class="method" v-for="option in viewingOptions" :key="option.title">
-              <h4>{{ option.title }}</h4>
-              <p>{{ option.description }}</p>
+            <h3>{{ $t('mapPage.overview.viewing.title') }}</h3>
+            <div class="method">
+              <h4>{{ $t('mapPage.overview.viewing.utility.title') }}</h4>
+              <p>{{ $t('mapPage.overview.viewing.utility.description') }}</p>
               <ul>
-                <li v-for="detail in option.details" :key="detail">{{ detail }}</li>
+                <li>{{ $t('mapPage.overview.viewing.utility.detail1') }}</li>
+                <li>{{ $t('mapPage.overview.viewing.utility.detail2') }}</li>
+              </ul>
+            </div>
+            <div class="method">
+              <h4>{{ $t('mapPage.overview.viewing.inventory.title') }}</h4>
+              <p>{{ $t('mapPage.overview.viewing.inventory.description') }}</p>
+              <ul>
+                <li>{{ $t('mapPage.overview.viewing.inventory.detail1') }}</li>
+                <li>{{ $t('mapPage.overview.viewing.inventory.detail2') }}</li>
               </ul>
             </div>
           </div>
@@ -53,15 +60,44 @@
     <section class="town-section">
       <div class="container">
         <div class="section-header">
-          <h2>Primary Towns</h2>
-          <p>These anchor towns shape most early-game routes and faction quest lines.</p>
+          <h2>{{ $t('mapPage.towns.title') }}</h2>
+          <p>{{ $t('mapPage.towns.subtitle') }}</p>
         </div>
         <div class="town-grid">
-          <div class="town-card" v-for="town in towns" :key="town.name">
-            <h3>{{ town.name }}</h3>
-            <p>{{ town.description }}</p>
+          <div class="town-card">
+            <h3>{{ $t('mapPage.towns.dannemora.name') }}</h3>
+            <p>{{ $t('mapPage.towns.dannemora.description') }}</p>
             <ul>
-              <li v-for="detail in town.highlights" :key="detail">{{ detail }}</li>
+              <li>{{ $t('mapPage.towns.dannemora.highlight1') }}</li>
+              <li>{{ $t('mapPage.towns.dannemora.highlight2') }}</li>
+              <li>{{ $t('mapPage.towns.dannemora.highlight3') }}</li>
+            </ul>
+          </div>
+          <div class="town-card">
+            <h3>{{ $t('mapPage.towns.lyonMountain.name') }}</h3>
+            <p>{{ $t('mapPage.towns.lyonMountain.description') }}</p>
+            <ul>
+              <li>{{ $t('mapPage.towns.lyonMountain.highlight1') }}</li>
+              <li>{{ $t('mapPage.towns.lyonMountain.highlight2') }}</li>
+              <li>{{ $t('mapPage.towns.lyonMountain.highlight3') }}</li>
+            </ul>
+          </div>
+          <div class="town-card">
+            <h3>{{ $t('mapPage.towns.redford.name') }}</h3>
+            <p>{{ $t('mapPage.towns.redford.description') }}</p>
+            <ul>
+              <li>{{ $t('mapPage.towns.redford.highlight1') }}</li>
+              <li>{{ $t('mapPage.towns.redford.highlight2') }}</li>
+              <li>{{ $t('mapPage.towns.redford.highlight3') }}</li>
+            </ul>
+          </div>
+          <div class="town-card">
+            <h3>{{ $t('mapPage.towns.saranac.name') }}</h3>
+            <p>{{ $t('mapPage.towns.saranac.description') }}</p>
+            <ul>
+              <li>{{ $t('mapPage.towns.saranac.highlight1') }}</li>
+              <li>{{ $t('mapPage.towns.saranac.highlight2') }}</li>
+              <li>{{ $t('mapPage.towns.saranac.highlight3') }}</li>
             </ul>
           </div>
         </div>
@@ -71,36 +107,369 @@
     <section class="poi-section">
       <div class="container">
         <div class="section-header">
-          <h2>Points of Interest</h2>
+          <h2>{{ $t('mapPage.poi.title') }}</h2>
           <p>
-            Champlain Valley currently contains 154 Points of Interest (POIs). Once you discover a POI, it is permanently marked on every map you open.
-            Below are the confirmed categories in v0.022.
+            {{ $t('mapPage.poi.description') }}
           </p>
         </div>
 
-        <div class="poi-group" v-for="group in poiGroups" :key="group.title">
+        <!-- Settlements & Housing -->
+        <div class="poi-group">
           <div class="poi-group-header">
-            <h3>{{ group.title }}</h3>
-            <p>{{ group.description }}</p>
+            <h3>{{ $t('mapPage.poi.groups.settlements.title') }}</h3>
+            <p>{{ $t('mapPage.poi.groups.settlements.description') }}</p>
           </div>
           <div class="poi-layout">
             <div class="poi-category-list">
-              <div 
-                v-for="category in group.categories" 
-                :key="category.title"
-                class="poi-category-item"
-              >
-                <h4 class="category-title">{{ category.title }}</h4>
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.settlements.categories.towns.title') }}</h4>
                 <div class="poi-items">
-                  <span 
-                    v-for="(item, index) in category.items" 
-                    :key="index"
-                    class="poi-item"
-                  >
-                    <span v-if="item.endsWith('*')" class="star">{{ item.replace('*', '') }}</span>
-                    <span v-else>{{ item }}</span>
-                    <span v-if="index < category.items.length - 1" class="item-separator"> · </span>
-                  </span>
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.settlements.categories.towns.item1') }}</span><span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.settlements.categories.towns.item2') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.settlements.categories.towns.item3') }}</span><span class="item-separator"> · </span></span>
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.settlements.categories.towns.item4') }}</span><span class="item-separator"> · </span></span>
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.settlements.categories.towns.item5') }}</span><span class="item-separator"> · </span></span>
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.settlements.categories.towns.item6') }}</span><span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.settlements.categories.towns.item7') }}</span>
+                </div>
+              </div>
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.settlements.categories.assistedLiving.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.settlements.categories.assistedLiving.item1') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.settlements.categories.assistedLiving.item2') }}</span>
+                </div>
+              </div>
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.settlements.categories.mobileHomes.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.settlements.categories.mobileHomes.item1') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.settlements.categories.mobileHomes.item2') }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Businesses & Services -->
+        <div class="poi-group">
+          <div class="poi-group-header">
+            <h3>{{ $t('mapPage.poi.groups.businesses.title') }}</h3>
+            <p>{{ $t('mapPage.poi.groups.businesses.description') }}</p>
+          </div>
+          <div class="poi-layout">
+            <div class="poi-category-list">
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.businesses.categories.automotive.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.automotive.item1') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.automotive.item2') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.automotive.item3') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.automotive.item4') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.automotive.item5') }}</span>
+                </div>
+              </div>
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.businesses.categories.construction.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.construction.item1') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.construction.item2') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.construction.item3') }}</span>
+                </div>
+              </div>
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.businesses.categories.dining.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.dining.item1') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.dining.item2') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.dining.item3') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.dining.item4') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.dining.item5') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.dining.item6') }}</span>
+                </div>
+              </div>
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.businesses.categories.farming.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.farming.item1') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.farming.item2') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.farming.item3') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.farming.item4') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.farming.item5') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.farming.item6') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.farming.item7') }}</span>
+                </div>
+              </div>
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.businesses.categories.lodging.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.lodging.item1') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.lodging.item2') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.lodging.item3') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.lodging.item4') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.lodging.item5') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.lodging.item6') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.lodging.item7') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.lodging.item8') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.lodging.item9') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.lodging.item10') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.lodging.item11') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.lodging.item12') }}</span>
+                </div>
+              </div>
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.businesses.categories.logging.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.logging.item1') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.logging.item2') }}</span>
+                </div>
+              </div>
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.businesses.categories.markets.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.markets.item1') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.markets.item2') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.markets.item3') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.markets.item4') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.markets.item5') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.markets.item6') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.markets.item7') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.markets.item8') }}</span>
+                </div>
+              </div>
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.businesses.categories.medical.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.medical.item1') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.medical.item2') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.medical.item3') }}</span>
+                </div>
+              </div>
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.businesses.categories.religious.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.religious.item1') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.religious.item2') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.religious.item3') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.religious.item4') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.religious.item5') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.religious.item6') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.religious.item7') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.religious.item8') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.religious.item9') }}</span>
+                </div>
+              </div>
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.businesses.categories.otherBusinesses.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.otherBusinesses.item1') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.otherBusinesses.item2') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.otherBusinesses.item3') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.otherBusinesses.item4') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.otherBusinesses.item5') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.otherBusinesses.item6') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.otherBusinesses.item7') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.otherBusinesses.item8') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.otherBusinesses.item9') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.otherBusinesses.item10') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.otherBusinesses.item11') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.otherBusinesses.item12') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.otherBusinesses.item13') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.otherBusinesses.item14') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.businesses.categories.otherBusinesses.item15') }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Public Utilities & Services -->
+        <div class="poi-group">
+          <div class="poi-group-header">
+            <h3>{{ $t('mapPage.poi.groups.utilities.title') }}</h3>
+            <p>{{ $t('mapPage.poi.groups.utilities.description') }}</p>
+          </div>
+          <div class="poi-layout">
+            <div class="poi-category-list">
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.utilities.categories.utilitiesCivic.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.utilitiesCivic.item1') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.utilitiesCivic.item2') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.utilitiesCivic.item3') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.utilitiesCivic.item4') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.utilitiesCivic.item5') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.utilitiesCivic.item6') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.utilitiesCivic.item7') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.utilitiesCivic.item8') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.utilitiesCivic.item9') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.utilitiesCivic.item10') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.utilitiesCivic.item11') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.utilitiesCivic.item12') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.utilitiesCivic.item13') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.utilitiesCivic.item14') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.utilitiesCivic.item15') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.utilitiesCivic.item16') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.utilitiesCivic.item17') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.utilitiesCivic.item18') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.utilitiesCivic.item19') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.utilitiesCivic.item20') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.utilitiesCivic.item21') }}</span>
+                </div>
+              </div>
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.utilities.categories.lookouts.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.lookouts.item1') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.lookouts.item2') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.lookouts.item3') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.lookouts.item4') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.lookouts.item5') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.lookouts.item6') }}</span>
+                </div>
+              </div>
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.utilities.categories.parks.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.parks.item1') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.parks.item2') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.parks.item3') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.parks.item4') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.parks.item5') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.parks.item6') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.parks.item7') }}</span>
+                </div>
+              </div>
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.utilities.categories.powerStations.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.powerStations.item1') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.powerStations.item2') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.powerStations.item3') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.powerStations.item4') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.powerStations.item5') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.powerStations.item6') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.powerStations.item7') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.powerStations.item8') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.powerStations.item9') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.powerStations.item10') }}</span>
+                </div>
+              </div>
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.utilities.categories.quarantine.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.quarantine.item1') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.quarantine.item2') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.quarantine.item3') }}</span>
+                </div>
+              </div>
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.utilities.categories.schools.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.schools.item1') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.schools.item2') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.schools.item3') }}</span>
+                </div>
+              </div>
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.utilities.categories.eventLocations.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.eventLocations.item1') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.utilities.categories.eventLocations.item2') }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Landforms & Natural Features -->
+        <div class="poi-group">
+          <div class="poi-group-header">
+            <h3>{{ $t('mapPage.poi.groups.landforms.title') }}</h3>
+            <p>{{ $t('mapPage.poi.groups.landforms.description') }}</p>
+          </div>
+          <div class="poi-layout">
+            <div class="poi-category-list">
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.landforms.categories.mountains.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.landforms.categories.mountains.item1') }}</span><span class="item-separator"> · </span></span>
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.landforms.categories.mountains.item2') }}</span><span class="item-separator"> · </span></span>
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.landforms.categories.mountains.item3') }}</span><span class="item-separator"> · </span></span>
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.landforms.categories.mountains.item4') }}</span><span class="item-separator"> · </span></span>
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.landforms.categories.mountains.item5') }}</span></span>
+                </div>
+              </div>
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.landforms.categories.hills.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.landforms.categories.hills.item1') }}</span><span class="item-separator"> · </span></span>
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.landforms.categories.hills.item2') }}</span><span class="item-separator"> · </span></span>
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.landforms.categories.hills.item3') }}</span><span class="item-separator"> · </span></span>
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.landforms.categories.hills.item4') }}</span><span class="item-separator"> · </span></span>
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.landforms.categories.hills.item5') }}</span><span class="item-separator"> · </span></span>
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.landforms.categories.hills.item6') }}</span><span class="item-separator"> · </span></span>
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.landforms.categories.hills.item7') }}</span></span>
+                </div>
+              </div>
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.landforms.categories.caves.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.caves.item1') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.caves.item2') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.caves.item3') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.caves.item4') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.caves.item5') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.caves.item6') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.caves.item7') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.caves.item8') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.caves.item9') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.caves.item10') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.caves.item11') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.caves.item12') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.caves.item13') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.caves.item14') }}</span>
+                </div>
+              </div>
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.landforms.categories.forests.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.landforms.categories.forests.item1') }}</span><span class="item-separator"> · </span></span>
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.landforms.categories.forests.item2') }}</span></span>
+                </div>
+              </div>
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.landforms.categories.islands.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.landforms.categories.islands.item1') }}</span><span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.islands.item2') }}</span>
+                </div>
+              </div>
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.landforms.categories.lakes.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.landforms.categories.lakes.item1') }}</span><span class="item-separator"> · </span></span>
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.landforms.categories.lakes.item2') }}</span><span class="item-separator"> · </span></span>
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.landforms.categories.lakes.item3') }}</span><span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.lakes.item4') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.landforms.categories.lakes.item5') }}</span><span class="item-separator"> · </span></span>
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.landforms.categories.lakes.item6') }}</span><span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.lakes.item7') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.lakes.item8') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.lakes.item9') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.landforms.categories.lakes.item10') }}</span></span>
+                </div>
+              </div>
+              <div class="poi-category-item">
+                <h4 class="category-title">{{ $t('mapPage.poi.groups.landforms.categories.rivers.title') }}</h4>
+                <div class="poi-items">
+                  <span class="poi-item"><span class="star">{{ $t('mapPage.poi.groups.landforms.categories.rivers.item1') }}</span><span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.rivers.item2') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.rivers.item3') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.rivers.item4') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.rivers.item5') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.rivers.item6') }}<span class="item-separator"> · </span></span>
+                  <span class="poi-item">{{ $t('mapPage.poi.groups.landforms.categories.rivers.item7') }}</span>
                 </div>
               </div>
             </div>
@@ -112,243 +481,17 @@
 </template>
 
 <script setup>
-const viewingOptions = [
-  {
-    title: "Utility Slot Map / GPS / Cell Phone",
-    description:
-      "Press 'M' when a Map, GPS, or Cell Phone is equipped in a Utility Slot. GPS and phones need charged batteries and display your live position.",
-    details: ['Physical Map: lightweight, no power required', 'GPS / Cell Phone: live tracking + orientation'],
-  },
-  {
-    title: 'Inventory Interaction',
-    description: "Right-click a Map while it is in your inventory (or on the ground) and select “Open Map.”",
-    details: ['Works hands-free', 'No live tracking, but perfect for planning'],
-  },
-]
+import { watch } from 'vue'
+import { useI18n } from 'vue-i18n'
 
-const towns = [
-  {
-    name: 'Dannemora',
-    description: 'Prison town with scrapyards, municipal offices, and dense quest coverage.',
-    highlights: ['Clinton Correctional complex', 'Court center & fire department', 'Rail and wastewater infrastructure'],
-  },
-  {
-    name: 'Lyon Mountain',
-    description: 'Mining settlement on higher ground; rich with lookouts and quarantine activity.',
-    highlights: ['Lyon Mountain Lookout', 'Quarantine Center', 'Power Substation D-LM-01'],
-  },
-  {
-    name: 'Redford',
-    description: 'Lakeside community with resorts, cabins, and river crossings.',
-    highlights: ['Boat launches • cabins • campgrounds', 'Fire department and post office', 'River-based fast travel routes'],
-  },
-  {
-    name: 'Saranac',
-    description: 'Historic town packed with cemeteries, churches, and administrative buildings.',
-    highlights: ['Courthouse + Town Hall', 'Multiple cemeteries', 'Historic bridge and cultural sites'],
-  },
-]
+const { locale } = useI18n()
 
-const poiGroups = [
-  {
-    title: 'Settlements & Housing',
-    description: 'Residential hubs that support faction quests, trading, and survivor respawns.',
-    categories: [
-      { title: 'Towns', items: ['Dannemora*', 'Elsinore', 'Lyon Mountain*', 'Redford*', 'Russia*', 'Saranac*', 'Standish'] },
-      { title: 'Assisted Living', items: ['Ganong Centennial House', 'Pinegrove Assisted Living'] },
-      { title: 'Mobile Home Communities', items: ['Northstar Estates', 'Summer Haven Mobile Homes'] },
-    ],
-  },
-  {
-    title: 'Businesses & Services',
-    description: 'Commercial clusters ranging from auto shops to farm co-ops and resorts.',
-    categories: [
-      {
-        title: 'Automotive',
-        items: ["David's Auto Parts", "John's Small Engine Repair", 'Mud Pond Motors', "Rustin'Pieces Scrapyard", 'Tony Gunque Used Cars'],
-      },
-      {
-        title: 'Construction',
-        items: ["Isaac & Sons Construction Yard", "Isaac & Sons Main Office", "Rick's Construction"],
-      },
-      {
-        title: 'Dining',
-        items: [
-          "American Legion Post #0607",
-          "Bridge Hills Bar N' Grill",
-          'Countryside Fresh Foods Pantry',
-          'Duck Bill Bakery',
-          "Santino's Pizza & Red Hots",
-          'Standish Ice Cream Stand',
-        ],
-      },
-      {
-        title: 'Farming',
-        items: [
-          'Abandoned Farmstead',
-          'Blake Farm',
-          'Blake Farm Storage',
-          'Calico Farm',
-          'Champlain Farm',
-          'Chazy Lake Dairy Farm',
-          'Clark Hill Acres',
-        ],
-      },
-      {
-        title: 'Lodging',
-        items: [
-          'Aleksander Ridge Cabins',
-          'Badger Heights Resort',
-          'Chazy Highlands Cabins',
-          'Corners Brook Campgrounds',
-          'Dark Woods Cabin',
-          'Dead Ends Motel',
-          "Hunter's Lab",
-          'Iron Ore Resort',
-          'Isolated Cabin',
-          'Parsons Knob Campgrounds',
-          'Pond-side Cabin',
-          'Sunset Resort',
-        ],
-      },
-      { title: 'Logging', items: ['Barber Logging Camp', 'Walt & Sons Logging'] },
-      {
-        title: 'Markets',
-        items: ['Anvil Gas', 'Good Times Local Depot', 'Green Valley Market', 'High Noon Plaza', 'Maple Mart #152', 'Maple Mart #192', 'Rural Dollar', "Sammy's - Dannemora"],
-      },
-      { title: 'Medical', items: ["Bran's Pharmacy", 'Medical Supply Depot', 'Valley Veterinary Clinic'] },
-      {
-        title: 'Religious',
-        items: [
-          'Abandoned Grave Site',
-          'Elisnore Cemetery',
-          'Saranac Haven Cemetery',
-          'Saranac Sunrise Methodist Church',
-          "St. Abelard's Church",
-          "St. John's Holy Church",
-          "St. John's Memorial",
-          "St. Peter's Cemetery",
-          "St. Peter's House of Prayer",
-        ],
-      },
-      {
-        title: 'Other Businesses',
-        items: [
-          '93.4 Broadcast Station',
-          "Agatha's Plant Shop",
-          'Backwoods Self Storage',
-          'Birch Hill Go-Kart Raceway',
-          'Flooded Quarry',
-          "Frank's Hardware Emporium",
-          'Hank Heckler Law Office',
-          'KHW Trust Dannemora Branch',
-          'Kleennow Warehouse',
-          "Kline's Archery & Bait",
-          'Lakeside Gun Shop & Range',
-          "Marty's Bait & Tackle",
-          'Mill No. 3',
-          'Purrfect Paws Pet Grooming',
-          'Taylor Realty Main Office',
-        ],
-      },
-    ],
-  },
-  {
-    title: 'Public Utilities & Services',
-    description: 'Critical sites for quests, firefighting, and world events.',
-    categories: [
-      {
-        title: 'Utilities & Civic',
-        items: [
-          'Clinton Correctional Storage',
-          'Clinton Correctional Facility',
-          'Dannemora Community & Court Center',
-          'Dannemora Fire Dept.',
-          'Dannemora Town Garage',
-          'Dannemora Wastewater Plant',
-          'Elisnore Waste Transfer Station',
-          'General Services Office',
-          'Lyon Mtn. Baseball Field',
-          'Lyon Mtn. Fire Department',
-          'Lyon Mtn. Museum',
-          'Lyon Mtn. Post Office',
-          'NYS Department of Transportation',
-          'Redford Fire Department',
-          'Redford Post Office',
-          'Saranac Courthouse',
-          'Saranac Fire Department',
-          'Saranac Hollow Historic Bridge',
-          'Saranac Town Garage',
-          'Saranac Town Hall',
-          'Wastewater Plant A7',
-        ],
-      },
-      {
-        title: 'Lookouts',
-        items: ['Chazy Lake Lookout', 'Dannemora Lookout', 'Johnson Mtn. Lookout', 'Lyon Mountain Lookout', 'Northeastern Lookout', 'Seine Mountain Lookout'],
-      },
-      {
-        title: 'Parks & Recreation',
-        items: ['Bowen Hill Park', 'Chazy Lake Beach', 'Chazy Lake Boat Launch', 'Fauve Park', 'Lyon Mountain Peak', 'Philips Park', 'Prosperity Park'],
-      },
-      {
-        title: 'Power Stations',
-        items: [
-          'Ambient Energy Powerhouse',
-          'Bowen Hill Hydroelectric Dam',
-          'Dannemora Power Substation D-DM-01',
-          'Lyon Mountain Power Substation D-LM-01',
-          'Power Line Service Shed 2-4R',
-          'Power Line Service Shed 2-5E',
-          'Power Line Service Shed 3-9LM',
-          'Saranac Power Substation D-RF-01',
-          'Saranac Power Substation D-S-02',
-          'Saranac Power Substation M-SRF-06',
-        ],
-      },
-      { title: 'Quarantine & Dumps', items: ['Lyon Mtn. Quarantine Center', 'Mass Dump Site A1', 'Outpost Alpha'] },
-      { title: 'Schools', items: ['Dannemora High School', 'Saranac Central School', 'Saranac School Bus Garage'] },
-      { title: 'Event Locations', items: ['Noreastern Rail Wreckage', 'Uh-60 Grey Eagle Crash Site'] },
-    ],
-  },
-  {
-    title: 'Landforms & Natural Features',
-    description: 'Mountains, caves, lakes, rivers, and swamps that shape traversal.',
-    categories: [
-      { title: 'Mountains', items: ['Averill Mountain*', 'Dannemora Mountain*', 'Johnson Mountain*', 'Lyon Mountain*', 'Seine Mountain*'] },
-      {
-        title: 'Hills',
-        items: ['Birch Hill*', 'Brushy Knob*', 'Chazy Highlands*', 'Clark Hill*', 'Hardhack Ridge*', 'Haystack Knob*', 'Parsons Knob*'],
-      },
-      {
-        title: 'Caves & Mines',
-        items: [
-          'Abandoned Cave',
-          'Averill Mines North & South',
-          'Belmont Mine',
-          'Cold Brook Cavern',
-          "Devil's Grotto",
-          'Dismal Swamp Cave',
-          'Green Canyon Mine',
-          'Haystack Cave',
-          'Kings Hollow Mines East & West',
-          "Rook's Cavern",
-          'Saranac Cave',
-          'Smithkill Mine',
-          'The Apex',
-          'Unnamed Mines North & South',
-        ],
-      },
-      { title: 'Forests', items: ['Cadyville State Forest*', 'Dannemora State Forest*'] },
-      { title: 'Islands', items: ['Moffitt Island*', 'Werrenrath Island'] },
-      {
-        title: 'Lakes & Ponds',
-        items: ['Chazy Lake*', 'Upper Chateaugay Lake*', 'Barnes Pond*', 'Bucks Pond', 'Church Pond*', 'Dow Pond*', 'Iron Pond', 'Mud Pond', 'Sunset Pont', 'Wolf Pond*'],
-      },
-      { title: 'Rivers & Swamps', items: ['Saranac River*', 'Duck Bill Swamp', 'Dump Site A2', 'Dump Site 2B', 'Dump Site 2C', 'Fairbanks Swamp', 'Highlands Swamp'] },
-    ],
-  },
-]
+// 监听语言变化，强制组件更新
+// 虽然 $t() 是响应式的，但某些情况下需要强制触发更新
+watch(() => locale.value, () => {
+  // 语言变化时，Vue 会自动重新渲染使用 $t() 的内容
+  // 这里只是确保响应式系统检测到变化
+})
 </script>
 
 <style scoped>

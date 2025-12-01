@@ -69,35 +69,79 @@
 </template>
 
 <script setup>
-import { onMounted, computed } from 'vue'
+import { onMounted, computed, watch, nextTick } from 'vue'
 import { useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useItemsData } from '../../composables/useItemsData'
+import { useLocalizedPath } from '../../composables/useLocalizedPath'
 
 const router = useRouter()
+const { locale } = useI18n()
+const { getLocalizedPath, getCurrentLocale } = useLocalizedPath()
 const { data: itemsData, loading, error, loadData } = useItemsData('misc')
 
-const TYPE_KEYS = {
-  camping: 'camping',
+// Type 映射表：根据语言返回对应的 type 值
+const TYPE_MAP = {
+  en: {
+    camping: 'camping',
+  },
+  de: {
+    camping: 'camping',  // 对应 "Camping" (相同)
+  }
 }
 
 const normalizeType = (value) => String(value || '').trim().toLowerCase()
 
-const filterByType = (targetType) =>
-  computed(() =>
-    (itemsData.value || []).filter((item) => normalizeType(item.type) === normalizeType(targetType))
-  )
+// 根据当前语言获取 type 值
+const getTypeByLang = (typeKey) => {
+  const currentLang = locale.value || 'en'
+  const typeMap = TYPE_MAP[currentLang] || TYPE_MAP.en
+  return typeMap[typeKey] || typeMap.camping
+}
 
-const campingItems = filterByType(TYPE_KEYS.camping)
+// 过滤函数：根据 type 值过滤 items
+const filterByType = (targetType) => {
+  const normalizedTarget = normalizeType(targetType)
+  return (itemsData.value || []).filter((item) => {
+    const normalizedItemType = normalizeType(item.type)
+    return normalizedItemType === normalizedTarget
+  })
+}
 
-onMounted(() => {
-  loadData('misc')
+// 使用 computed 来响应语言变化
+const campingItems = computed(() => {
+  const targetType = getTypeByLang('camping')
+  const filtered = filterByType(targetType)
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsMiscView] campingItems - targetType: ${targetType}, count: ${filtered.length}, total items: ${itemsData.value.length}`)
+  }
+  return filtered
 })
+
+onMounted(async () => {
+  // 等待路由守卫设置语言
+  await nextTick()
+  // 直接从路由路径中提取语言，更可靠
+  const currentLang = getCurrentLocale()
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsMiscView] onMounted - locale.value: ${locale.value}, getCurrentLocale(): ${currentLang}`)
+  }
+  await loadData('misc', currentLang)
+})
+
+// 监听语言变化，重新加载数据
+watch(() => locale.value, async (newLocale) => {
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsMiscView] Language changed to: ${newLocale}`)
+  }
+  await loadData('misc', newLocale)
+}, { immediate: false })
 
 const onItemClick = (item) => {
   if (item && item.showDetail === false) return
   const id = (item.addressBar || '').replace('/', '')
   if (!id) return
-  router.push(`/vein-items/misc/${id}`)
+  router.push(getLocalizedPath(`/vein-items/misc/${id}`))
 }
 </script>
 
