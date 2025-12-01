@@ -206,13 +206,13 @@ const onItemClick = (item) => {
 }
 
 .name-primary {
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: 600;
   color: #fff;
 }
 
 .desc-cell {
-  font-size: 0.9rem;
+  font-size: 14px;
   line-height: 1.6;
 }
 

@@ -93,7 +93,7 @@
                 buildings to find the resources you need to stay alive. VEIN survival game
                 challenges you to scavenge effectively while navigating dangerous environments where
                 hostile zombies and bandits pose constant threats. Every building you enter could
-                contain valuable supplies or deadly encounters in this survival game.
+                contain valuable supplies or deadly encounters in this survival game. Learn the <router-link to="/vein-guides/vein-best-loot-locations" class="inline-link">best loot locations</router-link> to maximize your scavenging efficiency.
               </p>
               <p>
                 VEIN game demo provides a condensed experience, limiting you to a small region of
@@ -101,7 +101,7 @@
                 there are no other restrictions. The demo receives regular feature updates and bug
                 fixes alongside the main game, giving players a true taste of VEIN survival game
                 experience. Whether you're new to VEIN game or a seasoned survivor, the demo offers
-                a perfect introduction to the core mechanics of this survival game.
+                a perfect introduction to the core mechanics of this survival game. Master the <router-link to="/vein-wiki/controls" class="inline-link">game controls</router-link> to navigate the world effectively.
               </p>
             </div>
           </div>
@@ -116,7 +116,7 @@
                 survival game world transforms with them. Persistent, long-scale random events
                 affect gameplay, ensuring that no two play sessions are exactly the same. These
                 dynamic systems mean that the challenges you face and the opportunities available to
-                you will vary based on the current state of the world in this survival game.
+                you will vary based on the current state of the world in this survival game. Understanding the <router-link to="/vein-wiki/mechanics" class="inline-link">core game mechanics</router-link> is essential for adapting to these changes.
               </p>
               <p>
                 The changing seasons and random events in VEIN game create a living, breathing world
@@ -138,14 +138,14 @@
                 home and rebuilding society. VEIN survival game challenges you to fortify your
                 hideout against threats from zombies and bandits, creating a safe haven in the
                 post-apocalyptic world. Whether playing solo or with friends, building and defending
-                your base is a core part of VEIN game experience.
+                your base is a core part of VEIN game experience. Discover the <router-link to="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">best base locations</router-link> and master the <router-link to="/vein-wiki/building" class="inline-link">building system</router-link> to create your fortress.
               </p>
               <p>
                 Beyond defense, VEIN game offers opportunities to rebuild society. Assist friendly
                 NPCs, work with other survivors to establish safe zones, trade resources, and create
                 a network of support in the wasteland. The multiplayer sandbox nature of this VEIN
                 survival game means that cooperation and community building are essential for
-                long-term survival and progress in VEIN game.
+                long-term survival and progress in VEIN game. Develop your <router-link to="/vein-wiki/skills" class="inline-link">skills and perks</router-link> to become a more effective survivor.
               </p>
             </div>
           </div>
@@ -476,64 +476,75 @@ Vein is a beautiful well crafted world that is only going to get better!"
           <h2 class="section-title">VEIN Frequently Asked Questions</h2>
           <div class="faq-grid">
             <article class="faq-item">
-              <h3>How is VEIN different from other extraction shooters?</h3>
+              <h3>What is VEIN game?</h3>
               <p>
-                VEIN game is a post-apocalyptic survival multiplayer sandbox game that focuses on
-                long-term survival and rebuilding society. Unlike many extraction shooters that
-                feature seasonal wipes, VEIN survival game emphasizes persistent progression where
-                your hideout, resources, and progress carry forward. VEIN game combines scavenging
-                and combat with base building and community rebuilding, creating a unique experience
-                in the genre.
+                VEIN is a post-apocalyptic survival multiplayer sandbox game developed by Ramjet Studios. Set in a zombie-infested world, players must scavenge for supplies, build bases, defend against threats, and work together to rebuild society. VEIN emphasizes long-term survival with persistent progression, dynamic world events, and a high degree of freedom in how you approach survival challenges.
               </p>
               <p>
-                The dynamic environment and persistent world events in VEIN game mean that VEIN
-                survival game world continues to evolve, creating ongoing challenges and
-                opportunities that set it apart from more linear extraction experiences. VEIN game
-                offers a truly persistent survival experience.
+                The game combines elements of survival, base building, crafting, and cooperative multiplayer gameplay. Whether playing solo or with friends, VEIN offers a hardcore survival experience where every decision matters and the world continues to evolve around you.
               </p>
             </article>
             <article class="faq-item">
-              <h3>Does the demo support co-op?</h3>
+              <h3>What platforms is VEIN available on?</h3>
               <p>
-                Yes. The demo mirrors the Early Access feature set: full co-op support, shared
-                progression, and synchronized updates. As a multiplayer sandbox survival game, VEIN
-                game allows you to play with friends from the start, whether in the demo or full
-                release. VEIN survival game's cooperative features let you work together to gather
-                supplies, explore abandoned buildings, and defend your home.
+                VEIN is currently available on PC via Steam. The game launched in Early Access on October 24, 2025. There are no official announcements regarding console releases at this time, but the developers are focused on delivering the best possible PC experience during Early Access.
               </p>
               <p>
-                The demo provides the same multiplayer experience as the full game, giving you and
-                your friends a chance to experience VEIN survival game together before Early Access
-                launches. Try VEIN game with friends to see how cooperative play enhances the
-                survival experience.
+                The game requires Windows 10 or later, with minimum 8 GB RAM and 40 GB storage space. For optimal performance, 16 GB RAM and 80 GB storage are recommended. A broadband internet connection is required for multiplayer gameplay.
               </p>
             </article>
             <article class="faq-item">
-              <h3>What languages are supported?</h3>
+              <h3>How is VEIN different from other survival games?</h3>
               <p>
-                English UI + subtitles at launch. Additional languages will roll out once specific
-                wishlist goals are met. VEIN survival game will expand language support based on
-                community demand and wishlist milestones during Early Access. VEIN game aims to
-                support multiple languages as the community grows.
+                VEIN stands out through its emphasis on persistent progression, dynamic world systems, and deep survival mechanics. Unlike games with seasonal wipes, your progress in VEIN carries forward. The world features persistent events, changing seasons, and evolving challenges that create a living, breathing post-apocalyptic environment.
               </p>
               <p>
-                If you want to see your language supported in VEIN game, adding VEIN to your Steam
-                wishlist helps signal demand to the developers. Your support helps VEIN survival
-                game reach more players worldwide.
+                The game offers extensive base building, vehicle mechanics, and a comprehensive crafting system. Learn more about the <router-link to="/vein-wiki/mechanics" class="inline-link">core game mechanics</router-link> that make VEIN unique in the survival genre.
               </p>
             </article>
             <article class="faq-item">
-              <h3>Which mature themes should I expect?</h3>
+              <h3>Does VEIN support multiplayer?</h3>
               <p>
-                VEIN game contains depictions of violence, gore, and drug & alcohol use. VEIN
-                survival game is set in a post-apocalyptic world where these themes are part of the
-                setting. Please play responsibly and be aware of the mature content in this VEIN
-                survival game.
+                Yes, VEIN fully supports multiplayer co-op gameplay. You can play with friends in both the demo and Early Access versions. The game features shared progression, synchronized world events, and cooperative base building. Whether you're scavenging together, defending a base, or exploring the world, multiplayer adds a social dimension to the survival experience.
               </p>
               <p>
-                VEIN game is rated for mature audiences due to these themes. Players should consider
-                their comfort level with violence, gore, and substance use before playing VEIN
-                survival game.
+                The demo provides the same multiplayer experience as the full game, allowing you and your friends to experience VEIN together before committing to Early Access. Check out our <router-link to="/vein-guides" class="inline-link">guides section</router-link> for tips on getting started with co-op play.
+              </p>
+            </article>
+            <article class="faq-item">
+              <h3>What languages does VEIN support?</h3>
+              <p>
+                At launch, VEIN supports English for both interface and subtitles. The developers have plans to add additional languages based on community demand and wishlist milestones during Early Access. Adding VEIN to your Steam wishlist helps signal demand for your preferred language.
+              </p>
+              <p>
+                Language support will expand as the community grows, with priority given to languages with the highest wishlist numbers. The developers are committed to making VEIN accessible to players worldwide.
+              </p>
+            </article>
+            <article class="faq-item">
+              <h3>Is there a demo available?</h3>
+              <p>
+                Yes, VEIN offers a free demo on Steam. The demo provides a condensed experience of the full game, limiting players to a small region of the world and capping skill progression at level 50 (instead of 100 in the full game). Despite these limitations, the demo receives regular feature updates and bug fixes alongside the main game.
+              </p>
+              <p>
+                The demo is perfect for players who want to try VEIN before purchasing Early Access. It includes full co-op support and gives you a true taste of the core survival gameplay mechanics.
+              </p>
+            </article>
+            <article class="faq-item">
+              <h3>What content should I be aware of?</h3>
+              <p>
+                VEIN is rated for mature audiences and contains depictions of violence, gore, and drug & alcohol use. These themes are integral to the post-apocalyptic setting and survival narrative. Players should be aware of the mature content before playing.
+              </p>
+              <p>
+                The game is designed for players 18 and older. Please play responsibly and consider your comfort level with these themes. The mature content is part of creating an authentic survival horror experience.
+              </p>
+            </article>
+            <article class="faq-item">
+              <h3>How often is VEIN updated?</h3>
+              <p>
+                As an Early Access title, VEIN receives regular updates from Ramjet Studios. The developers are actively working on planned features including full multiplayer enhancements, dynamic environment systems, intelligent AI improvements, and expanded world content.
+              </p>
+              <p>
+                Updates include new features, bug fixes, and community-requested improvements. The development roadmap focuses on delivering the headline features promised during Early Access, with player feedback playing a crucial role in shaping the game's evolution.
               </p>
             </article>
           </div>
@@ -897,6 +908,21 @@ section {
 .what-is-text p {
   color: rgba(255, 210, 210, 0.78);
   margin-bottom: 15px;
+}
+
+.inline-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 54, 54, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.inline-link:hover {
+  color: #fff;
+  border-bottom-color: var(--accent);
+  text-shadow: 0 0 8px rgba(255, 54, 54, 0.5);
 }
 
 .guides-grid {
@@ -1375,6 +1401,11 @@ section {
     margin-bottom: 0;
     word-wrap: break-word;
     overflow-wrap: break-word;
+  }
+
+  .inline-link {
+    font-size: 12px;
+    border-bottom-width: 1px;
   }
 
   .guides-grid {
