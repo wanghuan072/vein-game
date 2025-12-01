@@ -241,7 +241,21 @@ export function useAutoSEO() {
   // 处理SEO的函数
   const handleSEO = async () => {
     const routeName = route.name
-    const seoKey = routeToSeoKey[routeName]
+    // 从路由名称中提取基础名称（移除语言后缀，如 'home-en' -> 'home', 'items-weapons-de' -> 'items-weapons'）
+    let baseRouteName = routeName
+    if (typeof routeName === 'string') {
+      // 检查是否是带语言后缀的路由名称（以 '-en' 或 '-de' 结尾）
+      const supportedLocales = ['en', 'de']
+      for (const loc of supportedLocales) {
+        if (routeName.endsWith(`-${loc}`)) {
+          baseRouteName = routeName.slice(0, -(loc.length + 1)) // 移除 '-en' 或 '-de'
+          break
+        }
+      }
+    }
+    // 如果提取后的名称不在映射中，使用原始名称
+    const actualRouteName = routeToSeoKey[baseRouteName] ? baseRouteName : routeName
+    const seoKey = routeToSeoKey[actualRouteName]
 
     let finalSEOData = {
       ...seoConfig.defaults
@@ -249,7 +263,7 @@ export function useAutoSEO() {
     let hasSeoData = false
 
     // 先从 i18n 获取静态页面的 TDK
-    if (seoKey && !dynamicRouteNames.has(routeName)) {
+    if (seoKey && !dynamicRouteNames.has(actualRouteName)) {
       try {
         // 直接访问 i18n 的 messages，避免警告
         const messages = i18n.global.messages.value || i18n.global.messages
@@ -268,21 +282,25 @@ export function useAutoSEO() {
             hasSeoData = true
           }
         } else {
-          console.warn(`TDK not found for route: ${routeName} (tdk.${seoKey}) in locale: ${currentLocale}`)
+          if (import.meta.env.DEV) {
+            console.warn(`TDK not found for route: ${routeName} (base: ${actualRouteName}, seoKey: ${seoKey}) in locale: ${currentLocale}`)
+          }
         }
       } catch (error) {
         // 如果 i18n 中没有对应的 TDK，输出警告
-        console.warn(`Failed to get TDK for route: ${routeName}:`, error)
+        if (import.meta.env.DEV) {
+          console.warn(`Failed to get TDK for route: ${routeName}:`, error)
+        }
       }
     }
 
-    if (dynamicRouteNames.has(routeName)) {
+    if (dynamicRouteNames.has(actualRouteName)) {
       try {
         let item = null
         
         const currentLang = locale.value || 'en'
         
-        if (routeName === 'guide-detail') {
+        if (actualRouteName === 'guide-detail') {
           // 加载 guide 数据
           const module = await loadDataForSEO('guide', null, currentLang)
           if (module?.default || module?.guides) {
@@ -296,7 +314,7 @@ export function useAutoSEO() {
               return cleanAddressBar === cleanSearchId
             })
           }
-        } else if (routeName === 'wiki-detail') {
+        } else if (actualRouteName === 'wiki-detail') {
           // 加载 wiki 数据
           const module = await loadDataForSEO('wiki', null, currentLang)
           if (module?.default || module?.wiki) {
@@ -310,7 +328,7 @@ export function useAutoSEO() {
               return cleanAddressBar === cleanSearchId
             })
           }
-        } else if (routeName === 'items-detail') {
+        } else if (actualRouteName === 'items-detail') {
           // 加载 items 数据
           const category = route.params.category || 'weapons'
           const module = await loadDataForSEO('items', category, currentLang)
