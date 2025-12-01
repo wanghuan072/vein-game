@@ -197,8 +197,8 @@ const onItemClick = (item) => {
 }
 
 .preview-thumb {
-  width: 55px;
-  height: 55px;
+  width: 75px;
+  height: 75px;
   object-fit: cover;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.1);

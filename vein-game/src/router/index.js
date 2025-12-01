@@ -23,6 +23,7 @@ import TermsOfServiceView from '../views/legal/TermsOfServiceView.vue'
 import CopyrightView from '../views/legal/CopyrightView.vue'
 import AboutUsView from '../views/legal/AboutUsView.vue'
 import ContactUsView from '../views/legal/ContactUsView.vue'
+import SearchView from '../views/SearchView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -291,6 +292,18 @@ const router = createRouter({
           title: 'Contact Us - VEIN Fan Hub - veingame.net',
           description: 'Contact VEIN Fan Hub. Get in touch with us for questions, suggestions, feedback, or inquiries about our website and services.',
           keywords: 'contact VEIN Fan Hub, VEIN game support, VEIN community contact'
+        }
+      }
+    },
+    {
+      path: '/search',
+      name: 'search',
+      component: SearchView,
+      meta: {
+        seo: {
+          title: 'Search - VEIN Game - veingame.net',
+          description: 'Search for guides, wiki articles, and items in VEIN survival game.',
+          keywords: 'VEIN search, VEIN guides search, VEIN wiki search, VEIN items search'
         }
       }
     },
