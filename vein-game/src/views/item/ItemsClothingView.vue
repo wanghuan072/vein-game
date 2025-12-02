@@ -21,7 +21,7 @@
       <!-- Backpack Table -->
       <div v-if="!loading && !error && backpackItems.length > 0" class="table-section">
         <div class="section-header">
-          <h2 class="section-title">Clothing</h2>
+          <h2 class="section-title">Backpack</h2>
           <span class="section-count">{{ backpackItems.length }} items</span>
         </div>
         <div class="table-container">
@@ -64,6 +64,55 @@
           </table>
         </div>
       </div>
+
+      <!-- Face Section -->
+      <div v-if="!loading && !error && faceItems.length > 0" class="table-section">
+        <div class="section-header">
+          <h2 class="section-title">Face</h2>
+          <span class="section-count">{{ faceItems.length }} items</span>
+        </div>
+        <div class="table-container">
+          <table class="items-table">
+            <thead>
+              <tr>
+                <th class="preview-col">Preview</th>
+                <th class="name-col">Name</th>
+                <th class="desc-col">Description</th>
+                <th class="type-col">Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                v-for="item in faceItems"
+                :key="item.id"
+                @click="onItemClick(item)"
+                :class="['table-row', { 'disabled': item.showDetail === false }]"
+              >
+                <td class="preview-cell">
+                  <img
+                    v-if="item.imageUrl"
+                    :src="item.imageUrl"
+                    :alt="item.imageAlt || item.title"
+                    class="preview-thumb"
+                    loading="lazy"
+                  />
+                  <span v-else>—</span>
+                </td>
+                <td class="name-cell">
+                  <div class="name-primary">{{ item.title }}</div>
+                </td>
+                <td class="desc-cell">{{ item.description || 'No description available.' }}</td>
+                <td class="type-cell">
+                  <span class="type-pill" v-if="item.type">{{ item.type }}</span>
+                  <span v-else>—</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
     </div>
   </div>
 </template>
@@ -84,9 +133,11 @@ const { data: itemsData, loading, error, loadData } = useItemsData('clothing')
 const TYPE_MAP = {
   en: {
     backpack: 'backpack',
+    face: 'face',
   },
   de: {
     backpack: 'rucksack',  // 对应 "Rucksack"
+    face: 'gesicht',  // 对应 "Gesicht"
   }
 }
 
@@ -118,6 +169,15 @@ const backpackItems = computed(() => {
   return filtered
 })
 
+const faceItems = computed(() => {
+  const targetType = getTypeByLang('face')
+  const filtered = filterByType(targetType)
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsClothingView] faceItems - targetType: ${targetType}, count: ${filtered.length}, total items: ${itemsData.value.length}`)
+  }
+  return filtered
+})
+
 onMounted(async () => {
   // 等待路由守卫设置语言
   await nextTick()
@@ -130,7 +190,7 @@ onMounted(async () => {
 })
 
 // 监听语言变化，重新加载数据
-watch(() => locale.value, async (newLocale) => {
+watch(() => locale.value, async (newLocale) => {  
   if (import.meta.env.DEV) {
     console.log(`[ItemsClothingView] Language changed to: ${newLocale}`)
   }
