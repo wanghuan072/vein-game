@@ -14,7 +14,7 @@ export const wiki = [
         },
         "detailsHtml": `
         <h2>Default Keybindings</h2>
-        <p>These are editable under the Bindings submenu of the Option menu.</p>
+        <p>These are editable under the Bindings submenu of the Option menu. After mastering the controls, learn about <a href="/vein-wiki/skills" class="inline-link">skills and perks</a> to optimize your character build.</p>
 
         <h3>Movement</h3>
         <ul>
@@ -94,7 +94,7 @@ export const wiki = [
         },
         "detailsHtml": `
       <h2>Skills and Perks Overview</h2>
-      <p>This section details all core skills in VEIN Game, the function of the skill, and the associated perks available at various levels (LVL).</p>
+      <p>This section details all core skills in VEIN Game, the function of the skill, and the associated perks available at various levels (LVL). Make sure you know the <a href="/vein-wiki/controls" class="inline-link">controls</a> before diving into skill strategies. For practical skill selection tips, see our <a href="/vein-guides/day-1-Skill-Selection-Ultimate-Guide" class="inline-link">skill selection guide</a>.</p>
 
       <h3>Agility</h3>
       <p>Your stamina and aerobic fitness.</p>
@@ -298,7 +298,7 @@ export const wiki = [
         },
         "detailsHtml": `
       <h2>Core Game Mechanics</h2>
-      <p>This section provides a detailed breakdown of all fundamental systems and interactive mechanics within VEIN Game, from item use to world systems.</p>
+      <p>This section provides a detailed breakdown of all fundamental systems and interactive mechanics within VEIN Game, from item use to world systems. For detailed building mechanics, see the <a href="/vein-wiki/building" class="inline-link">building system</a>. Learn about vehicle mechanics in our <a href="/vein-wiki/vehicles" class="inline-link">vehicles guide</a>.</p>
 
       <h3>Crafting & Survival</h3>
       <ul>
@@ -420,7 +420,7 @@ export const wiki = [
         },
         "detailsHtml": `
       <h2>Cooking Recipes Guide</h2>
-      <p>A comprehensive list of all crafting recipes related to food preparation, including brewing and slicing techniques.</p>
+      <p>A comprehensive list of all crafting recipes related to food preparation, including brewing and slicing techniques. For more on crafting mechanics, see the <a href="/vein-wiki/mechanics" class="inline-link">mechanics wiki</a>. Find all cooking ingredients in our <a href="/vein-items" class="inline-link">items database</a>.</p>
 
       <h3>Brewing Recipes</h3>
       <p>Just one of these utensils is enough to craft the Brewing recipes: <strong>Pot, Pan, Oven Dish, Kettle.</strong></p>
@@ -581,7 +581,7 @@ export const wiki = [
         },
         "detailsHtml": `
       <h2>Construction & Building System</h2>
-      <p>Building is done with the Construction Menu, accessed in-game with <strong>B</strong>, which is broken down into eight categories.</p>
+      <p>Building is done with the Construction Menu, accessed in-game with <strong>B</strong>, which is broken down into eight categories. For help choosing where to build, check our <a href="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">best base location guide</a>. Understand building mechanics in detail with the <a href="/vein-wiki/mechanics" class="inline-link">mechanics wiki</a>.</p>
       <p>Blueprints are listed under their respective tab and will show any stat requirements, materials and tools needed to construct it.</p>
       <p>You must have the materials and tools in your inventory to be able to build the item.</p>
 
@@ -717,7 +717,7 @@ export const wiki = [
         },
         "detailsHtml": `
       <h2>Vehicles and Transport</h2>
-      <p>The vehicles in VEIN are tools that can be used for transport, storage or even more. Motorized vehicles need gasoline and functional vehicle materials to work properly.</p>
+      <p>The vehicles in VEIN are tools that can be used for transport, storage or even more. Motorized vehicles need gasoline and functional vehicle materials to work properly. Learn vehicle controls in the <a href="/vein-wiki/controls" class="inline-link">controls guide</a>. Vehicles are a top priority—learn more in our <a href="/vein-guides/day-1-priorities-guide" class="inline-link">Day 1 priorities</a> guide.</p>
 
       <h3>Motorized Vehicles</h3>
       
@@ -794,7 +794,7 @@ export const wiki = [
         },
         "detailsHtml": `
       <h2>All Items</h2>
-      <p>This page provides an index to the complete searchable database of all items available in VEIN Game, categorized by their primary use and function.</p>
+      <p>This page provides an index to the complete searchable database of all items available in VEIN Game, categorized by their primary use and function. Browse all items by category in our <a href="/vein-items" class="inline-link">items database</a>. Many items are used for building—learn more in the <a href="/vein-wiki/building" class="inline-link">building guide</a>.</p>
 
       <h3>Survival and Equipment</h3>
       <ul>

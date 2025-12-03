@@ -15,82 +15,82 @@ export const guides = [
     },
     addressBar: "/fish-it-anniversary-events-2025-prediction-guide",
     detailsHtml: `
-    <p style="margin: 1em 0px;">The biggest celebration in Roblox fishing history is on the horizon! Based on patterns from similar games like <em>Fisch</em>, the upcoming <strong>Fish It Anniversary Events</strong> are predicted to be a massive, limited-time spectacle.</p>
+    <p>The biggest celebration in Roblox fishing history is on the horizon! Based on patterns from similar games like <em>Fisch</em>, the upcoming <strong>Fish It Anniversary Events</strong> are predicted to be a massive, limited-time spectacle.</p>
 
-<p style="margin: 1em 0px;">If you are looking to catch exclusive fish, unlock rare mutations, or level up faster than ever before, mark your calendars. Here is our complete prediction guide for the 2025 anniversary celebration.</p>
+<p>If you are looking to catch exclusive fish, unlock rare mutations, or level up faster than ever before, mark your calendars. Here is our complete prediction guide for the 2025 anniversary celebration.</p>
 
-<p style="margin: 1em 0px;">
+<p>
     <img src="/images/guide/guide09-01.webp" alt="Fish It Anniversary Events" width="50%" style="width: 50%;">
 </p>
 
-<h2 style="font-size: 1.5em; font-weight: bold;"><strong>📅 Event Schedule Prediction</strong></h2>
+<h2><strong>📅 Event Schedule Prediction</strong></h2>
 
-<p style="margin: 1em 0px;">Based on current data, the main festivities are expected to run for a tight 24-hour window:</p>
+<p>Based on current data, the main festivities are expected to run for a tight 24-hour window:</p>
 
-<p style="margin: 1em 0px;">Start: Sunday, Dec 07, 2025 at 9:00 AM</p>
-<p style="margin: 1em 0px;">End: Monday, Dec 08, 2025 at 9:00 AM</p>
+<p>Start: Sunday, Dec 07, 2025 at 9:00 AM</p>
+<p>End: Monday, Dec 08, 2025 at 9:00 AM</p>
 
-<h2 style="font-size: 1.5em; font-weight: bold;"><strong>🎂 What Will the Fish It Anniversary Events Include?</strong></h2>
+<h2><strong>🎂 What Will the Fish It Anniversary Events Include?</strong></h2>
 
-<p style="margin: 1em 0px;">If the developers follow the successful formula of past fishing game anniversaries, players are in for a treat. Here is what we predict will be included in the <strong>Fish It Anniversary Events</strong>:</p>
+<p>If the developers follow the successful formula of past fishing game anniversaries, players are in for a treat. Here is what we predict will be included in the <strong>Fish It Anniversary Events</strong>:</p>
 
 <img src="/images/guide/guide09-02.webp" alt="Fish It Anniversary Events" width="50%" style="width: 50%;">
 
 <ol>
-    <li data-list="bullet">
-        <span contenteditable="false"></span>
+    <li>
+        
         <strong>Birthday Megalodon Hunts:</strong> A special version of the legendary boss, likely dropping exclusive anniversary loot.
     </li>
-    <li data-list="bullet">
-        <span contenteditable="false"></span>
+    <li>
+        
         <strong>Exclusive Anniversary Fish:</strong> New, limited-time fish species that can only be caught during this 24-hour period.
     </li>
-    <li data-list="bullet">
-        <span contenteditable="false"></span>
+    <li>
+        
         <strong>New "Birthday" Mutation:</strong> A unique visual effect for fish caught during the event, increasing their value significantly.
     </li>
-    <li data-list="bullet">
-        <span contenteditable="false"></span>
+    <li>
+        
         <strong>The Cake Item:</strong> A consumable or collectible item that may provide temporary buffs.
     </li>
-    <li data-list="bullet">
-        <span contenteditable="false"></span>
+    <li>
+        
         <strong>Exclusive Emoji Titles:</strong> Show off your achievements with special titles rewarded for discovering every exclusive anniversary fish.
     </li>
 </ol>
 
-<h2 style="font-size: 1.5em; font-weight: bold;"><strong>🍀 The Admin Event: 8x Luck &amp; Mutation</strong></h2>
+<h2><strong>🍀 The Admin Event: 8x Luck &amp; Mutation</strong></h2>
 
-<p style="margin: 1em 0px;">The most anticipated feature of the <strong>Fish It Anniversary Events</strong> is the global server buff. We predict a massive <strong>24-hour period of 8x Luck</strong>.</p>
+<p>The most anticipated feature of the <strong>Fish It Anniversary Events</strong> is the global server buff. We predict a massive <strong>24-hour period of 8x Luck</strong>.</p>
 
-<p style="margin: 1em 0px;">This makes it the absolute best time for:</p>
+<p>This makes it the absolute best time for:</p>
 
 <ol>
-    <li data-list="bullet">
-        <span contenteditable="false"></span>
+    <li>
+        
         <strong>New Players:</strong> To level up instantly and catch up to veterans.
     </li>
-    <li data-list="bullet">
-        <span contenteditable="false"></span>
+    <li>
+        
         <strong>Pro Players:</strong> To finally catch that elusive <strong>Secret Fish</strong> or obtain the legendary <strong>Ghostfinn Rod</strong>.
     </li>
 </ol>
 
-<h2 style="font-size: 1.5em; font-weight: bold;"><strong>How to Prepare?</strong></h2>
+<h2><strong>How to Prepare?</strong></h2>
 
-<p style="margin: 1em 0px;">To maximize your gains during the <strong>Fish It Anniversary Events</strong>, make sure you have stocked up on:</p>
+<p>To maximize your gains during the <strong>Fish It Anniversary Events</strong>, make sure you have stocked up on:</p>
 
 <ol>
-    <li data-list="bullet">
-        <span contenteditable="false"></span>
+    <li>
+        
         <strong>Bait:</strong> Use <strong>Floral Bait</strong> or <strong>Singularity Bait</strong> during the 8x Luck window for maximum efficiency.
     </li>
-    <li data-list="bullet">
-        <span contenteditable="false"></span>
+    <li>
+        
         <strong>Enchant Stones:</strong> Try to get the <strong>"Prismatic"</strong> or <strong>"Leprechaun"</strong> enchant on your rod beforehand to stack with the event luck.
     </li>
-    <li data-list="bullet">
-        <span contenteditable="false"></span>
+    <li>
+        
         <strong>Time:</strong> Clear your schedule for December 7th!
     </li>
 </ol>
@@ -116,73 +116,73 @@ export const guides = [
     },
     addressBar: "/vein-game-best-backpack",
     detailsHtml: `
-    <p style="margin: 1em 0px;">Inventory management is one of the most critical aspects of survival in <strong>Vein</strong>. Being able to carry more supplies, weapons, and resources directly impacts your longevity. Currently, the <strong>Hiking Backpack</strong> is widely considered the <strong>best backpack in the Vein game</strong>, offering significantly more capacity than the standard School Backpack.</p>
+    <p>Inventory management is one of the most critical aspects of survival in <strong>Vein</strong>. Being able to carry more supplies, weapons, and resources directly impacts your longevity. Currently, the <strong>Hiking Backpack</strong> is widely considered the <strong>best backpack in the Vein game</strong>, offering significantly more capacity than the standard School Backpack.</p>
 
-<p style="margin: 1em 0px;">This guide will outline exactly where to find the Hiking Backpack, what other valuable loot is nearby, and strategic tips for the surrounding area.</p>
+<p>This guide will outline exactly where to find the Hiking Backpack, what other valuable loot is nearby, and strategic tips for the surrounding area. Once you have a bigger backpack, maximize your efficiency with our <a href="/vein-guides/vein-best-loot-locations" class="inline-link">best loot locations guide</a>.</p>
 
-<p style="margin: 1em 0px;">
+<p>
     <img src="/images/guide/guide10-01.webp" alt="Cold Brook Cavern" width="50%" style="width: 50%;">
 </p>
 
-<h2 style="font-size: 1.5em; font-weight: bold;"><strong>The Hiking Backpack: Stats and Benefits</strong></h2>
+<h2><strong>The Hiking Backpack: Stats and Benefits</strong></h2>
 
-<p style="margin: 1em 0px;">Before heading out, it is important to understand why this item is essential.</p>
+<p>Before heading out, it is important to understand why this item is essential.</p>
 
 <ol>
-    <li data-list="bullet"><span contenteditable="false"></span><strong>Item Name:</strong> Hiking Backpack</li>
-    <li data-list="bullet"><span contenteditable="false"></span><strong>Capacity:</strong> Increases max carry weight by approximately <strong>45.4 kg</strong>.</li>
-    <li data-list="bullet"><span contenteditable="false"></span><strong>Comparison:</strong> This provides roughly double the carrying capacity of the standard School Backpack (which offers around 22 kg).</li>
+    <li><strong>Item Name:</strong> Hiking Backpack</li>
+    <li><strong>Capacity:</strong> Increases max carry weight by approximately <strong>45.4 kg</strong>.</li>
+    <li><strong>Comparison:</strong> This provides roughly double the carrying capacity of the standard School Backpack (which offers around 22 kg).</li>
 </ol>
 
-<p style="margin: 1em 0px;">
+<p>
     <img src="/images/guide/guide10-02.webp" alt="Hiking Backpack" width="50%" style="width: 50%;">
 </p>
 
-<h2 style="font-size: 1.5em; font-weight: bold;"><strong>Location Guide: Cold Brook Cavern</strong></h2>
+<h2><strong>Location Guide: Cold Brook Cavern</strong></h2>
 
-<p style="margin: 1em 0px;">To find the Hiking Backpack, you need to travel to the central area of the map.</p>
+<p>To find the Hiking Backpack, you need to travel to the central area of the map.</p>
 
 <ol>
-    <li data-list="ordered"><span contenteditable="false"></span><strong>Find the Lake:</strong> Locate the large lake situated centrally between the major towns (Sanac and Redford).</li>
-    <li data-list="ordered"><span contenteditable="false"></span><strong>Locate the Cave Entrance:</strong> On the hillside bordering the lake, look for a dirt path leading off the main road. This path leads to a large rock formation containing the entrance to <strong>Cold Brook Cavern</strong>.</li>
-    <li data-list="ordered"><span contenteditable="false"></span><strong>Retrieve the Backpack:</strong> Enter the cave. Inside, you will typically find a small campsite setup. The <strong>Hiking Backpack</strong> is usually spawned sitting on top of a rock next to a sleeping bag.</li>
+    <li data-list="ordered"><strong>Find the Lake:</strong> Locate the large lake situated centrally between the major towns (Sanac and Redford).</li>
+    <li data-list="ordered"><strong>Locate the Cave Entrance:</strong> On the hillside bordering the lake, look for a dirt path leading off the main road. This path leads to a large rock formation containing the entrance to <strong>Cold Brook Cavern</strong>.</li>
+    <li data-list="ordered"><strong>Retrieve the Backpack:</strong> Enter the cave. Inside, you will typically find a small campsite setup. The <strong>Hiking Backpack</strong> is usually spawned sitting on top of a rock next to a sleeping bag.</li>
 </ol>
 
-<p style="margin: 1em 0px;">
-    <img src="/images/guide/guide10-03.webp" alt="Cold Brook Cavern 2" width="50%" style="width: 50%;">
+<p>
+    <a href="/vein-map-detail" class="inline-link"><img src="/images/guide/guide10-03.webp" alt="Cold Brook Cavern 2" width="50%" style="width: 50%;"></a>
 </p>
 
-<h3 style="font-size: 1.17em; font-weight: bold;"><strong>Bonus Loot in the Cave</strong></h3>
+<h3><strong>Bonus Loot in the Cave</strong></h3>
 
-<p style="margin: 1em 0px;">Do not leave immediately after grabbing the bag. The cave is a hotspot for other high-tier survival items:</p>
-
-<ol>
-    <li data-list="bullet"><span contenteditable="false"></span><strong>Pickaxe:</strong> Essential for mining.</li>
-    <li data-list="bullet"><span contenteditable="false"></span><strong>Lantern &amp; Heater:</strong> Critical for light and warmth during cold nights.</li>
-    <li data-list="bullet"><span contenteditable="false"></span><strong>Mining Resources:</strong> If you have the pickaxe, this cave contains mineable rocks. You can harvest <strong>Limestone</strong> and <strong>Hematite (Iron)</strong> here. <em>Note: Some nodes may be underwater within the cave.</em></li>
-</ol>
-
-<h2 style="font-size: 1.5em; font-weight: bold;"><strong>Strategic Tips for the Area</strong></h2>
-
-<p style="margin: 1em 0px;">Since you are traveling to the center of the map to get the backpack, consider utilizing the surrounding resources to boost your survival chances.</p>
-
-<h3 style="font-size: 1.17em; font-weight: bold;"><strong>1. Fishing for Food</strong></h3>
-
-<p style="margin: 1em 0px;">The lake directly outside Cold Brook Cavern is an excellent source of food. If you have a fishing rod and bait, you can catch <strong>Largemouth Bass</strong> here. This is a safe and renewable food source that pairs well with the camping gear found inside the cave.</p>
-
-<h3 style="font-size: 1.17em; font-weight: bold;"><strong>2. A Strong Base Location: American Legion Post</strong></h3>
-
-<p style="margin: 1em 0px;">Just down the road from the cave is a building marked <strong>"American Legion Post #0607"</strong> (often resembling a bar or veterans' hall). This is a prime location to set up a permanent base for several reasons:</p>
+<p>Do not leave immediately after grabbing the bag. The cave is a hotspot for other high-tier survival items:</p>
 
 <ol>
-    <li data-list="bullet"><span contenteditable="false"></span><strong>Central Location:</strong> It is located roughly in the middle of the map, making travel to other towns manageable.</li>
-    <li data-list="bullet"><span contenteditable="false"></span><strong>Fortification:</strong> The property features a parking lot that is already enclosed by a high chain-link fence. You only need to construct a gate to have a fully secure perimeter for your vehicles.</li>
-    <li data-list="bullet"><span contenteditable="false"></span><strong>Amenities:</strong> The interior often spawns with industrial kitchen equipment (stoves, deep fryers), vending machines, and plenty of storage space.</li>
+    <li><strong>Pickaxe:</strong> Essential for mining.</li>
+    <li><strong>Lantern &amp; Heater:</strong> Critical for light and warmth during cold nights.</li>
+    <li><strong>Mining Resources:</strong> If you have the pickaxe, this cave contains mineable rocks. You can harvest <strong>Limestone</strong> and <strong>Hematite (Iron)</strong> here. <em>Note: Some nodes may be underwater within the cave.</em></li>
 </ol>
 
-<h2 style="font-size: 1.5em; font-weight: bold;"><strong>Summary</strong></h2>
+<h2><strong>Strategic Tips for the Area</strong></h2>
 
-<p style="margin: 1em 0px;">To secure the best start in Vein, prioritize acquiring a vehicle and driving to <strong>Cold Brook Cavern</strong>. Grab the <strong>Hiking Backpack</strong> to maximize your inventory slots, mine some iron while you are there, and consider fortifying the nearby Legion Post for a long-term survival stronghold.</p>
+<p>Since you are traveling to the center of the map to get the backpack, consider utilizing the surrounding resources to boost your survival chances.</p>
+
+<h3><strong>1. Fishing for Food</strong></h3>
+
+<p>The lake directly outside Cold Brook Cavern is an excellent source of food. If you have a fishing rod and bait, you can catch <strong>Largemouth Bass</strong> here. This is a safe and renewable food source that pairs well with the camping gear found inside the cave.</p>
+
+<h3><strong>2. A Strong Base Location: American Legion Post</strong></h3>
+
+<p>Just down the road from the cave is a building marked <strong>"American Legion Post #0607"</strong> (often resembling a bar or veterans' hall). This is a prime location to set up a permanent base for several reasons:</p>
+
+<ol>
+    <li><strong>Central Location:</strong> It is located roughly in the middle of the map, making travel to other towns manageable.</li>
+    <li><strong>Fortification:</strong> The property features a parking lot that is already enclosed by a high chain-link fence. You only need to construct a gate to have a fully secure perimeter for your vehicles.</li>
+    <li><strong>Amenities:</strong> The interior often spawns with industrial kitchen equipment (stoves, deep fryers), vending machines, and plenty of storage space.</li>
+</ol>
+
+      <h2><strong>Summary</strong></h2>
+      
+      <p>To secure the best start in Vein, prioritize acquiring a vehicle and driving to <strong>Cold Brook Cavern</strong>. Grab the <strong>Hiking Backpack</strong> to maximize your inventory slots, mine some iron while you are there, and consider fortifying the nearby Legion Post for a long-term survival stronghold. After gathering supplies, secure them in a safe location with our <a href="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">best base location guide</a>. This backpack is essential for completing your <a href="/vein-guides/day-1-priorities-guide" class="inline-link">Day 1 priorities</a>.</p>
 
     `,
   },
@@ -203,7 +203,7 @@ export const guides = [
     },
     addressBar: "/vein-best-loot-locations",
     detailsHtml: `
-    <p>In the hardcore survival simulation game <em>VEIN</em>, your lifespan is directly tied to your inventory. Whether you need to repair a vehicle, build a base, or simply survive the next wave of the undead, knowing where to find resources is critical. This guide dives deep into the <strong>VEIN best loot locations</strong>, highlighting the key areas that will take you from barely surviving to thriving.</p>
+    <p>In the hardcore survival simulation game <em>VEIN</em>, your lifespan is directly tied to your inventory. Whether you need to repair a vehicle, build a base, or simply survive the next wave of the undead, knowing where to find resources is critical. This guide dives deep into the <strong>VEIN best loot locations</strong>, highlighting the key areas that will take you from barely surviving to thriving. To maximize your loot capacity, make sure you have the <a href="/vein-guides/vein-game-best-backpack" class="inline-link">best backpack</a>. After gathering materials, you'll need somewhere safe to store them—check our <a href="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">best base location guide</a>.</p>
 
 <p><img src="/images/guide/guide07-01.webp" alt="vein best loot locations " width="50%" style="width: 50%;"></p>
 
@@ -211,18 +211,18 @@ export const guides = [
 
 <p>Without a doubt, the Hardware Store is the premier destination for loot, especially for players looking to establish a long-term base or maintain vehicles. It is a treasure trove of tools and construction materials.</p>
 
-<h3 style="font-size: 1.17em; font-weight: bold;"><strong>What you should look for here:</strong></h3>
+<h3><strong>What you should look for here:</strong></h3>
 
 <ol>
-<li><span contenteditable="false"></span><strong>End-Game Tools:</strong> This is the primary value of this location. Keep your eyes peeled on the shelves for the <strong>Industrial Welder</strong>, <strong>Circular Saw</strong>, and <strong>Industrial Driver</strong>. These are essential for repairing vehicle chassis, performing advanced modifications, or dismantling large objects found in the world.</li>
+<li><strong>End-Game Tools:</strong> This is the primary value of this location. Keep your eyes peeled on the shelves for the <strong>Industrial Welder</strong>, <strong>Circular Saw</strong>, and <strong>Industrial Driver</strong>. These are essential for repairing vehicle chassis, performing advanced modifications, or dismantling large objects found in the world.</li>
 
-<li><span contenteditable="false"></span><strong>Melee Weapons:</strong> The hardware store is a reliable spawn point for the <strong>Machete</strong>. Compared to the standard Fire Axe, the Machete offers a faster swing speed and high DPS, allowing you to clear zombies quickly without draining your stamina too fast. It is also a prime spot to find a <strong>Sledgehammer</strong> for heavy demolition.</li>
+<li><strong>Melee Weapons:</strong> The hardware store is a reliable spawn point for the <strong>Machete</strong>. Compared to the standard Fire Axe, the Machete offers a faster swing speed and high DPS, allowing you to clear zombies quickly without draining your stamina too fast. It is also a prime spot to find a <strong>Sledgehammer</strong> for heavy demolition.</li>
 
-<li><span contenteditable="false"></span><strong>Construction Consumables:</strong> Do not ignore the small boxes. You will need a massive amount of <strong>Nails</strong>, <strong>Screws</strong>, <strong>Heavy Bolts</strong>, and <strong>Springs</strong> to fortify your shelter.</li>
+<li><strong>Construction Consumables:</strong> Do not ignore the small boxes. You will need a massive amount of <strong>Nails</strong>, <strong>Screws</strong>, <strong>Heavy Bolts</strong>, and <strong>Springs</strong> to fortify your shelter.</li>
 
-<li><span contenteditable="false"></span><strong>Adhesives:</strong> You can often find industrial-sized <strong>Glue Bottles</strong> (look for the large jugs, often 70+ oz) which are vital for crafting and repairs.</li>
+<li><strong>Adhesives:</strong> You can often find industrial-sized <strong>Glue Bottles</strong> (look for the large jugs, often 70+ oz) which are vital for crafting and repairs.</li>
 
-<li><span contenteditable="false"></span><strong>Water Storage:</strong> Look for red <strong>Muck Tubs</strong> or blue plastic barrels. While you cannot fit these in your backpack, they can be physically carried to your base to serve as rain catchers or high-capacity water reservoirs.</li>
+<li><strong>Water Storage:</strong> Look for red <strong>Muck Tubs</strong> or blue plastic barrels. While you cannot fit these in your backpack, they can be physically carried to your base to serve as rain catchers or high-capacity water reservoirs.</li>
 </ol>
 
 <p><strong>Looting Strategy:</strong> The items in the hardware store are heavy. It is highly recommended to clear the surrounding zombies and then park your vehicle directly at the front door to quickly transfer heavy tools and furniture.</p>
@@ -234,11 +234,11 @@ export const guides = [
 <p>Usually found in the outdoor aisles or specific sections of the hardware store, these areas contain the supplies necessary for sustainable living.</p>
 
 <ol>
-<li><span contenteditable="false"></span><strong>Seeds:</strong> Check the racks carefully for packets of Pumpkin, Tomato, Corn, and other crop seeds.</li>
+<li><strong>Seeds:</strong> Check the racks carefully for packets of Pumpkin, Tomato, Corn, and other crop seeds.</li>
 
-<li><span contenteditable="false"></span><strong>Soil:</strong> High-quality soil bags (look for the <strong>Weaver Solutions</strong> brand) are essential for efficient crop growth.</li>
+<li><strong>Soil:</strong> High-quality soil bags (look for the <strong>Weaver Solutions</strong> brand) are essential for efficient crop growth.</li>
 
-<li><span contenteditable="false"></span><strong>Large Planter Boxes:</strong> The game features large wooden planter boxes. Using the game’s heavy lifting mechanic (grabbing with both hands), you can drag these boxes into your van and take them back to base, allowing you to start a farm indoors or on a safe rooftop.</li>
+<li><strong>Large Planter Boxes:</strong> The game features large wooden planter boxes. Using the game’s heavy lifting mechanic (grabbing with both hands), you can drag these boxes into your van and take them back to base, allowing you to start a farm indoors or on a safe rooftop.</li>
 </ol>
 
 <h2><strong>3. Fire Stations</strong></h2>
@@ -246,9 +246,9 @@ export const guides = [
 <p>When discussing <strong>VEIN best loot locations</strong>, the Fire Station is a must-visit location in the early game.</p>
 
 <ol>
-<li><span contenteditable="false"></span><strong>Fire Axe:</strong> This is the best all-around tool for the early game. It serves as a powerful weapon against enemies and is required for chopping down trees and breaking down doors.</li>
+<li><strong>Fire Axe:</strong> This is the best all-around tool for the early game. It serves as a powerful weapon against enemies and is required for chopping down trees and breaking down doors.</li>
 
-<li><span contenteditable="false"></span><strong>Protective Gear:</strong> Firefighter coats and pants offer excellent bite and scratch protection, significantly increasing your chances of survival in close-quarters combat.</li>
+<li><strong>Protective Gear:</strong> Firefighter coats and pants offer excellent bite and scratch protection, significantly increasing your chances of survival in close-quarters combat.</li>
 </ol>
 
 <h2><strong>4. Residential Houses and Kitchens</strong></h2>
@@ -256,11 +256,11 @@ export const guides = [
 <p>Do not underestimate standard houses. While they may lack industrial tools, they are the primary source for basic survival needs.</p>
 
 <ol>
-<li><span contenteditable="false"></span><strong>Food and Water:</strong> Fridges (Mini Fridges or full-sized units) are the best places to find canned goods, soda, and fresh food. If you find a functioning Mini Fridge, you can physically carry it to your vehicle to use as extra storage.</li>
+<li><strong>Food and Water:</strong> Fridges (Mini Fridges or full-sized units) are the best places to find canned goods, soda, and fresh food. If you find a functioning Mini Fridge, you can physically carry it to your vehicle to use as extra storage.</li>
 
-<li><span contenteditable="false"></span><strong>Medical Supplies:</strong> Always check the bathroom mirror cabinets. This is where bandages, disinfectants, and painkillers spawn.</li>
+<li><strong>Medical Supplies:</strong> Always check the bathroom mirror cabinets. This is where bandages, disinfectants, and painkillers spawn.</li>
 
-<li><span contenteditable="false"></span><strong>Household Items:</strong> Sewing kits, lighters, and batteries are often found scattered on bedroom dressers or living room tables.</li>
+<li><strong>Household Items:</strong> Sewing kits, lighters, and batteries are often found scattered on bedroom dressers or living room tables.</li>
 </ol>
 
 <h2><strong>5. Vehicle and Heavy Lifting Mechanics Tips</strong></h2>
@@ -268,14 +268,14 @@ export const guides = [
 <p>In <em>VEIN</em>, your best "backpack" is your car. When visiting these <strong>VEIN best loot locations</strong>, keep the following tips in mind:</p>
 
 <ol>
-<li><span contenteditable="false"></span><strong>Moving Large Objects:</strong> Many high-value items (like generators, planter boxes, and large tool chests) cannot fit in your character's inventory. You must use the interaction key to grab the object and utilize the physics engine to manually drag it into the trunk of your van or pickup truck.</li>
+<li><strong>Moving Large Objects:</strong> Many high-value items (like generators, planter boxes, and large tool chests) cannot fit in your character's inventory. You must use the interaction key to grab the object and utilize the physics engine to manually drag it into the trunk of your van or pickup truck.</li>
 
-<li><span contenteditable="false"></span><strong>Vehicle Maintenance:</strong> The industrial tools you loot (Welders, Jacks, etc.) are not just for show. You need them to strip parts from wrecked cars or repair your own vehicle. Without finding an industrial cutting tool, your ability to maintain a vehicle will be severely limited.</li>
+<li><strong>Vehicle Maintenance:</strong> The industrial tools you loot (Welders, Jacks, etc.) are not just for show. You need them to strip parts from wrecked cars or repair your own vehicle. Without finding an industrial cutting tool, your ability to maintain a vehicle will be severely limited.</li>
 </ol>
 
 <h2><strong>Summary</strong></h2>
 
-<p>To survive in <em>VEIN</em>, planning your route is key. Your priority should be securing a vehicle with high cargo capacity (like a van), and then heading straight for <strong>Frank's Hardware Emporium</strong>. Once you secure an Industrial Welder and a Machete, you turn from prey into hunter. Remember, being greedy is good—but only if you have enough trunk space to haul it all home.</p>
+<p>To survive in <em>VEIN</em>, planning your route is key. Your priority should be securing a vehicle with high cargo capacity (like a van), and then heading straight for <strong>Frank's Hardware Emporium</strong>. Once you secure an Industrial Welder and a Machete, you turn from prey into hunter. Remember, being greedy is good—but only if you have enough trunk space to haul it all home. For detailed information on all items you can find, visit our <a href="/vein-items" class="inline-link">items database</a>. To learn how to build a secure base with your gathered materials, see the <a href="/vein-wiki/building" class="inline-link">building system wiki</a>.</p>
 
     `,
   },
@@ -296,7 +296,7 @@ export const guides = [
     },
     addressBar: "/vein-best-base-location-survival-guide",
     detailsHtml: `
-    <p>In the hardcore survival game <em>VEIN</em>, your base is more than just a place to sleep. It is your fortress against the zombie horde, a warehouse for precious loot, a farm for sustenance, and a garage for vehicle maintenance. Choosing the wrong spot can lead to resource starvation or a swift death. This guide analyzes several potential candidates for the <strong>VEIN best base location</strong> to help you make the smartest decision.</p>
+    <p>In the hardcore survival game <em>VEIN</em>, your base is more than just a place to sleep. It is your fortress against the zombie horde, a warehouse for precious loot, a farm for sustenance, and a garage for vehicle maintenance. Choosing the wrong spot can lead to resource starvation or a swift death. This guide analyzes several potential candidates for the <strong>VEIN best base location</strong> to help you make the smartest decision. To efficiently gather materials for your base, visit the <a href="/vein-guides/vein-best-loot-locations" class="inline-link">best loot locations</a>. Learn how to construct and fortify your base with our <a href="/vein-wiki/building" class="inline-link">building system guide</a>.</p>
 
 <p>
     <img src="/images/guide/guide08-01.webp" alt="vein best loot locations " width="50%" style="width: 50%;">
@@ -308,37 +308,37 @@ export const guides = [
 
 <ol>
     <li>
-        <span contenteditable="false"></span>
+        
         <strong>Geographical Advantage:</strong> The island's isolation provides a natural defensive barrier. Surrounded by the waters of Chazy Lake, zombie approach routes are limited, allowing you to focus your defenses on the bridge or main entry points.
     </li>
 
     <li>
-        <span contenteditable="false"></span>
+        
         <strong>Existing Facilities:</strong> The two-story residential home (The Stone House) on the island feels custom-made for the apocalypse.
     </li>
 
     <li>
-        <span contenteditable="false"></span>
+        
         <strong>Ready-Made Greenhouse &amp; Fields:</strong> Outside the house, you will find multiple planter boxes and a glass greenhouse, often pre-planted with corn and carrots. This saves you the immense wood and time cost of crafting planters, allowing for immediate agricultural production.
     </li>
 
     <li>
-        <span contenteditable="false"></span>
+        
         <strong>Spacious Interior:</strong> The layout is open, featuring a large living room, dining area, and multiple bedrooms. While furnished, owning a <strong>Fire Axe</strong> or <strong>Sledgehammer</strong> allows you to easily dismantle furniture for wood, nails, and cloth, clearing space for rows of <strong>Reinforced Wood Shelves</strong> and workbenches.
     </li>
 
     <li>
-        <span contenteditable="false"></span>
+        
         <strong>Second-Floor Defense:</strong> The second floor offers a balcony with excellent sightlines. By destroying the stairs or barricading the stairwell, the entire upper level can become a secure panic room.
     </li>
 
     <li>
-        <span contenteditable="false"></span>
+        
         <strong>Resource Access:</strong> The island's dock is a prime spot for fishing, providing a steady food source. Additionally, there is a separate tool shed and an RV on the property, which may yield extra tools and supplies.
     </li>
 
     <li>
-        <span contenteditable="false"></span>
+        
         <strong>Challenges:</strong> You need to find a key or possess a <strong>Lockpick</strong> to enter the main house without smashing windows (which creates noise). Also, if the bridge becomes blocked, vehicle access can be tricky.
     </li>
 </ol>
@@ -353,17 +353,17 @@ export const guides = [
 
 <ol>
     <li>
-        <span contenteditable="false"></span>
+        
         <strong>Loot Haven:</strong> Living directly at the source means infinite access to high-tier tools like the <strong>Industrial Welder</strong> and <strong>Circular Saw</strong>. The shelves themselves serve as ready-made storage.
     </li>
 
     <li>
-        <span contenteditable="false"></span>
+        
         <strong>Defensive Potential:</strong> Commercial buildings like this often have fewer entrances and sturdy walls. You can utilize the massive number of shelves inside to construct maze-like fortifications.
     </li>
 
     <li>
-        <span contenteditable="false"></span>
+        
         <strong>Drawbacks:</strong> Being in the center of town means high zombie density. You will spend a lot of ammo and effort clearing the perimeter, and its open nature invites constant harassment.
     </li>
 </ol>
@@ -374,22 +374,22 @@ export const guides = [
 
 <ol>
     <li>
-        <span contenteditable="false"></span>
+        
         <strong>Garage Advantage:</strong> Massive garage doors allow you to drive vehicles directly inside for repairs and unloading. This is critical during bad weather or when a horde is approaching.
     </li>
 
     <li>
-        <span contenteditable="false"></span>
+        
         <strong>Sturdy Structure:</strong> The brick and masonry construction offers high durability.
     </li>
 
     <li>
-        <span contenteditable="false"></span>
+        
         <strong>Existing Gear:</strong> Even as a base, you are likely to find extra firefighter gear and axes in the lockers.
     </li>
 
     <li>
-        <span contenteditable="false"></span>
+        
         <strong>Drawbacks:</strong> Like the Hardware Store, it is located in a town area. The living space may not be as cozy or suitable for farming as the island stone house.
     </li>
 </ol>
@@ -400,50 +400,50 @@ export const guides = [
 
 <ol>
     <li>
-        <span contenteditable="false"></span>
+        
         <strong>Flexibility:</strong> Your home is on wheels. You can travel to any of the <strong>VEIN best loot locations</strong> on the map at a moment's notice.
     </li>
 
     <li>
-        <span contenteditable="false"></span>
+        
         <strong>Storage Capacity:</strong> Utilizing the game's unique physics and carrying mechanics, you can place generators and even small fridges on the roof or inside the cargo area. This van has immense hauling potential.
     </li>
 
     <li>
-        <span contenteditable="false"></span>
+        
         <strong>Limitations:</strong> Vehicles require constant maintenance (fuel, engine parts, tires) and you cannot farm on a large scale. You also live with the constant risk of a breakdown or getting boxed in.
     </li>
 </ol>
 
-<h3 style="font-size: 1.17em; font-weight: bold;"><strong>5. Base Building &amp; Management Tips</strong></h3>
+<h3><strong>5. Base Building &amp; Management Tips</strong></h3>
 
 <p>Regardless of which <strong>VEIN best base location</strong> you choose, these survival rules apply:</p>
 
 <ol>
     <li>
-        <span contenteditable="false"></span>
+        
         <strong>Space Planning:</strong> Do not let fancy furniture waste valuable space. Use the <strong>Dismantle</strong> option to clear useless couches and tables to make room for <strong>Large Crates</strong> and shelving. Organized inventory management is key to late-game survival.
     </li>
 
     <li>
-        <span contenteditable="false"></span>
+        
         <strong>Power Systems:</strong> Scavenge and transport <strong>Gas Generators</strong>. You can chain them to power your base, lighting up rooms and keeping fridges running. Remember to hoard enough <strong>Jerry Cans</strong> to keep the lights on.
     </li>
 
     <li>
-        <span contenteditable="false"></span>
+        
         <strong>Water Collection:</strong> Place <strong>Muck Tubs</strong> or blue plastic barrels outside to collect rain, solving both your drinking and irrigation needs.
     </li>
 
     <li>
-        <span contenteditable="false"></span>
+        
         <strong>Fortification:</strong> Use <strong>Wood Planks</strong> and <strong>Nails</strong> to board up first-floor windows, or construct <strong>Fence Gates</strong> at key choke points.
     </li>
 </ol>
 
 <h2><strong>Summary</strong></h2>
 
-<p>In <em>VEIN</em>, there is no absolutely perfect spot, only the choice that best fits your playstyle. If you prefer a quiet life of farming and fishing, <strong>Werrenrath Island</strong> is undoubtedly the <strong>VEIN best base location</strong>. If you crave combat and industrial production, a commercial building in town might suit you better. Grab your axe, start your van, and go build your own apocalypse fortress.</p>
+<p>In <em>VEIN</em>, there is no absolutely perfect spot, only the choice that best fits your playstyle. If you prefer a quiet life of farming and fishing, <strong>Werrenrath Island</strong> is undoubtedly the <strong>VEIN best base location</strong>. If you crave combat and industrial production, a commercial building in town might suit you better. Grab your axe, start your van, and go build your own apocalypse fortress. If you're just starting out, make sure to check our <a href="/vein-guides/day-1-priorities-guide" class="inline-link">Day 1 priorities guide</a> to understand what resources you need. Understanding base mechanics is crucial—learn more in the <a href="/vein-wiki/mechanics" class="inline-link">mechanics wiki</a>.</p>
 
     `,
   },
@@ -467,7 +467,7 @@ export const guides = [
     detailsHtml: `
     <p>VEIN (commonly referred to as Vein), a multiplayer open-world zombie survival sandbox game developed by Ramjet Studios, has gained a large following with its high degree of freedom and hardcore survival experience. Many new players are overwhelmed by the numerous settings when creating a new world—Which settings affect survival difficulty? How to adjust them to suit new players? This VEIN new player guide (exclusively released on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>, your dedicated VEIN Wiki and strategy guide site) focuses on core setting tips for Day 1, helping you avoid fatal mistakes and lay a solid foundation for survival!</p>
 
-<p>Whether you're starting solo or co-op, the settings when creating a new game directly determine your subsequent survival experience. The system offers two options: "Preset Settings" and "Custom Settings". If new players are unsure about the adjustments initially, they can use presets as a starting point. If you find any inappropriate settings during gameplay, you can modify them through the admin menu—no need to panic!</p>
+<p>Whether you're starting solo or co-op, the settings when creating a new game directly determine your subsequent survival experience. The system offers two options: "Preset Settings" and "Custom Settings". If new players are unsure about the adjustments initially, they can use presets as a starting point. If you find any inappropriate settings during gameplay, you can modify them through the admin menu—no need to panic! For more information on <a href="/vein-wiki/controls" class="inline-link">controls and keybindings</a>, check out our comprehensive guide.</p>
 
 <p>
 <img src="/images/guide/guide01-01.webp" alt="VEIN Setting 1" width="50%" style="width: 50%;">
@@ -544,7 +544,7 @@ export const guides = [
 <li><strong>Optional:</strong> Climbing Zombies (Recommended to Enable).</li>
 </ol>
 
-<p><strong>Tip:</strong> You can adjust the above settings according to your skill level. For example, if you find the difficulty too low, you can gradually enable "Headshots Only"; if you frequently die due to base destruction, you can temporarily disable "Building Upkeep" for a transition. <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a> will also update VEIN New Player Guide Part 2—"Day 1 Scavenging Route + Core Material List" soon. Follow us for the latest strategies!</p>
+<p><strong>Tip:</strong> You can adjust the above settings according to your skill level. For example, if you find the difficulty too low, you can gradually enable "Headshots Only"; if you frequently die due to base destruction, you can temporarily disable "Building Upkeep" for a transition. Once you've configured your world settings, the next crucial step is <a href="/vein-guides/day-1-Skill-Selection-Ultimate-Guide" class="inline-link">skill selection</a>. For a deeper understanding of how these settings affect gameplay, explore our <a href="/vein-wiki/mechanics" class="inline-link">game mechanics</a> guide. <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a> will also update VEIN New Player Guide Part 2—"Day 1 Scavenging Route + Core Material List" soon. Follow us for the latest strategies!</p>
 
     `,
   },
@@ -565,7 +565,7 @@ export const guides = [
     },
     addressBar: "/day-1-Skill-Selection-Ultimate-Guide",
     detailsHtml: `
-    <p>After sorting out the world settings in the first part of the VEIN new player guide (exclusively on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>, your go-to VEIN Wiki and strategy hub), the next crucial step for Day 1 survival is character creation and skill selection. Many new players get stuck here—Should I prioritize appearance or skills? Does occupation matter? Which skills can directly boost my early survival rate? This guide will cut through the clutter, focusing on the most valuable skills for Day 1 and practical matching strategies to help you start strong!</p>
+    <p>After sorting out the <a href="/vein-guides/ultimate-world-settings-guide" class="inline-link">world settings</a> in the first part of the VEIN new player guide (exclusively on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>, your go-to VEIN Wiki and strategy hub), the next crucial step for Day 1 survival is character creation and skill selection. Many new players get stuck here—Should I prioritize appearance or skills? Does occupation matter? Which skills can directly boost my early survival rate? This guide will cut through the clutter, focusing on the most valuable skills for Day 1 and practical matching strategies to help you start strong!</p>
 <p>First, let’s clarify the basics of VEIN’s skill system: You can customize your character’s appearance freely, but skill and occupation choices require careful consideration. Your occupation determines your starting equipment, but honestly, this is barely worth focusing on—you’ll always get basic weapons early on, and loot will keep dropping as you scavenge. The real game-changer is skills.</p>
 <p><img src="/images/guide/guide02-01.webp" alt="Vein skills" width="50%" style="width: 50%;"></p>
 
@@ -618,7 +618,7 @@ export const guides = [
   <li><strong>Wasting Points on Combat Skills:</strong> Melee and Ranged skills level up quickly through fighting. You don’t need to invest initial points—you’ll level them naturally as you defend yourself.</li>
 </ol>
 
-<p><strong>Tip:</strong> Skill choices aren’t permanent—you can respec later (though it costs rare materials). Focus on Day 1 survival first, then adjust for long-term goals (like base building or PvP) once you’re settled. Next up on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>: VEIN New Player Guide Part 3—"Day 1 Scavenging Route: Top 5 Loot Spots to Avoid Hordes". Stay tuned!</p>
+<p><strong>Tip:</strong> Skill choices aren't permanent—you can respec later (though it costs rare materials). Focus on Day 1 survival first, then adjust for long-term goals (like base building or PvP) once you're settled. After selecting your skills, the next step is choosing your <a href="/vein-guides/day-1-occupation-selection-guide" class="inline-link">occupation</a>. For a complete reference on all available skills and their perks, check our <a href="/vein-wiki/skills" class="inline-link">skills and perks wiki</a>. Next up on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>: VEIN New Player Guide Part 3—"Day 1 Scavenging Route: Top 5 Loot Spots to Avoid Hordes". Stay tuned!</p>
     `,
   },
 
@@ -639,7 +639,7 @@ export const guides = [
     addressBar: "/day-1-occupation-selection-guide",
     detailsHtml: `<div>
     <h2>VEIN New Player Guide Part 3: Day 1 Occupation Selection Guide</h2>
-    <p>So, you've braved the world settings and figured out your initial skill allocation in VEIN (thanks to our previous guides, of course!). Now comes the next big hurdle: picking your Day 1 occupation. Does it even matter? Some veterans dismiss it, while others swear by specific roles for early survival. Let's dissect the truth and uncover which occupations truly shine and how to choose the perfect one for *your* zombie-slaying adventure!</p>
+    <p>So, you've braved the <a href="/vein-guides/ultimate-world-settings-guide" class="inline-link">world settings</a> and figured out your <a href="/vein-guides/day-1-Skill-Selection-Ultimate-Guide" class="inline-link">initial skill allocation</a> in VEIN (thanks to our previous guides, of course!). Now comes the next big hurdle: picking your Day 1 occupation. Does it even matter? Some veterans dismiss it, while others swear by specific roles for early survival. Let's dissect the truth and uncover which occupations truly shine and how to choose the perfect one for *your* zombie-slaying adventure!</p>
   
     <h3>The Truth About Occupations (Especially on Normal Difficulty)</h3>
     <p>Let's be blunt: For the average player tackling VEIN on normal or even easy difficulty, your Day 1 occupation isn't a life-or-death decision. Why? Because you'll steadily level all your skills as you play, regardless of your starting point. Plus, the initial equipment offered by each occupation is deliberately basic. You're highly likely to stumble upon the same gear in the first couple of houses you loot. However, don't dismiss occupations entirely! Their true worth lies in those often-overlooked fourth skill bonuses and the unique starting tools and consumables they provide.</p>
@@ -673,7 +673,7 @@ export const guides = [
       <li><strong>Where can I find more information about the different occupations in VEIN?</strong><br>Visit veingame.net, your trusted VEIN Wiki and strategy center, for in-depth guides and information.</li>
     </ol>
   
-    <p>Ultimately, the best occupation is the one that best suits your playstyle and the challenges you're prepared to face. Don't be afraid to experiment, learn from your mistakes, and forge your own path in the zombie-infested world of VEIN! Good luck, survivor!</p>
+    <p>Ultimately, the best occupation is the one that best suits your playstyle and the challenges you're prepared to face. Don't be afraid to experiment, learn from your mistakes, and forge your own path in the zombie-infested world of VEIN! After selecting your occupation, make sure to read our <a href="/vein-guides/traits-selection-guide" class="inline-link">traits selection guide</a> to complete your character customization. For detailed information on how skills interact with occupations, check the <a href="/vein-wiki/skills" class="inline-link">skills wiki</a>. Good luck, survivor!</p>
   </div>`,
   },
 
@@ -693,7 +693,7 @@ export const guides = [
     },
     addressBar: "/traits-selection-guide",
     detailsHtml: `
-    <p>After locking in your occupation (Part 3) in the VEIN new player guide series (exclusively on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>, your ultimate VEIN Wiki and strategy hub), you’ll reach a deeper layer of character customization: Traits. Unlike skills or occupations that boost your survival ability, traits are double-edged swords—they add personality to your character but also pile on extra hardships. You can skip them entirely for a smooth start, or check every box to test if you can last a week. Some traits seem harmless at first, but their hidden mechanics will bite you later; others scream "trouble" the second you select them. Let’s break down the most impactful traits and how they’ll shape your survival journey.</p>
+    <p>After locking in your <a href="/vein-guides/day-1-occupation-selection-guide" class="inline-link">occupation</a> (Part 3) in the VEIN new player guide series (exclusively on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>, your ultimate VEIN Wiki and strategy hub), you'll reach a deeper layer of character customization: Traits. Unlike skills or occupations that boost your survival ability, traits are double-edged swords—they add personality to your character but also pile on extra hardships. You can skip them entirely for a smooth start, or check every box to test if you can last a week. Some traits seem harmless at first, but their hidden mechanics will bite you later; others scream "trouble" the second you select them. Let's break down the most impactful traits and how they'll shape your survival journey.</p>
 
 <p>
     <img src="/images/guide/guide04-01.webp" alt="Vein Traits 1" width="50%">
@@ -767,7 +767,7 @@ export const guides = [
 
 <p><strong>Pro Tip:</strong> If you accidentally pick a bad trait, use the admin menu (single-player only) to reset it—no shame in fixing a survival mistake. On multiplayer, ask the host for a trait reset (most hosts will agree for new players).</p>
 
-<p>Up Next on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>: VEIN New Player Guide Part 5—"Day 1 Base Building 101: Safe Locations & Essential Fortifications". We’ll teach you how to turn a random house into a zombie-proof shelter before nightfall. Stay tuned!</p>
+<p>Once you've configured your character, it's time to learn about your <a href="/vein-guides/day-1-priorities-guide" class="inline-link">Day 1 priorities</a>. This guide will help you secure vital resources and understand what to focus on during your first day. Up Next on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>: VEIN New Player Guide Part 5—"Day 1 Base Building 101: Safe Locations & Essential Fortifications". We'll teach you how to turn a random house into a zombie-proof shelter before nightfall. Stay tuned!</p>
 
     `,
   },
@@ -788,7 +788,7 @@ export const guides = [
     },
     addressBar: "/day-1-priorities-guide",
     detailsHtml: `
-    <p>In the VEIN new player guide series (exclusively on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>, your trusted VEIN Wiki and strategy center), after confirming your occupation and traits (Parts 3-4), Day 1 becomes a race against time. There are countless useful items around, but your inventory space is limited—deciding what to take immediately, leave for later, or discard is critical. While you can find a random spot to spend the first night, securing a safe shelter before dawn should be your top goal. This guide breaks down Day 1 priorities to help you survive efficiently: from core gear to resource collection, every choice aligns with early survival needs.</p>
+    <p>In the VEIN new player guide series (exclusively on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>, your trusted VEIN Wiki and strategy center), after confirming your <a href="/vein-guides/day-1-occupation-selection-guide" class="inline-link">occupation</a> and <a href="/vein-guides/traits-selection-guide" class="inline-link">traits</a> (Parts 3-4), Day 1 becomes a race against time. There are countless useful items around, but your inventory space is limited—deciding what to take immediately, leave for later, or discard is critical. While you can find a random spot to spend the first night, securing a safe shelter before dawn should be your top goal. This guide breaks down Day 1 priorities to help you survive efficiently: from core gear to resource collection, every choice aligns with early survival needs. Make sure you know the <a href="/vein-wiki/controls" class="inline-link">controls</a> to efficiently navigate and interact with the world.</p>
 
 <p>
     <img src="/images/guide/guide05-01.webp" alt="VEIN TRIORITY 1" width="50%" style="width: 50%;">
@@ -849,7 +849,7 @@ export const guides = [
 
 <p>On normal difficulty, food and water aren’t urgent. Drink from sinks and eat food found in fridges as you loot—every house has basic supplies. Carry only one water bottle and a small amount of high-nutrition canned food (even cat food works) to save space. Reserve inventory for higher-priority items like tools and medical supplies.</p>
 
-<p><strong>Day 1 Priority Cheat Sheet:</strong> Vehicle &amp; Backpack → Tools &amp; Medical Supplies → Melee Weapon → Ammo (collect only) → Food/Water (minimal). Up Next on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>: VEIN New Player Guide Part 6—"Day 1 Shelter Selection &amp; Basic Fortification". Learn how to choose a zombie-proof base and secure it before nightfall!</p>
+<p><strong>Day 1 Priority Cheat Sheet:</strong> Vehicle &amp; <a href="/vein-guides/vein-game-best-backpack" class="inline-link">Backpack</a> → Tools &amp; Medical Supplies → Melee Weapon → Ammo (collect only) → Food/Water (minimal). To find the best places to gather these resources, check our <a href="/vein-guides/vein-best-loot-locations" class="inline-link">best loot locations guide</a>. Once you have your supplies, you'll need a safe place to store them—learn about the <a href="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">best base locations</a>. Up Next on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>: VEIN New Player Guide Part 6—"Day 1 Shelter Selection &amp; Basic Fortification". Learn how to choose a zombie-proof base and secure it before nightfall!</p>
 
 <p sty
 
@@ -873,7 +873,7 @@ export const guides = [
     addressBar: "/how-to-find-clinton-correctional-facility-armory",
     detailsHtml: `
     <p>
-For players seeking high-tier weapons and ammo in VEIN, the Clinton Correctional Facility Armory is a must-visit loot spot. Tucked away in the prison’s depths, this armory houses rare firearms, plenty of ammunition, and tactical gear— but reaching it requires navigating the prison’s secured areas and overcoming locked barriers. This guide details the exact VEIN prison location and a step-by-step route to the armory, plus tips to unlock its treasures.
+For players seeking high-tier weapons and ammo in VEIN, the Clinton Correctional Facility Armory is a must-visit loot spot. Tucked away in the prison's depths, this armory houses rare firearms, plenty of ammunition, and tactical gear— but reaching it requires navigating the prison's secured areas and overcoming locked barriers. This guide details the exact VEIN prison location and a step-by-step route to the armory, plus tips to unlock its treasures. For other high-value loot locations, see our <a href="/vein-guides/vein-best-loot-locations" class="inline-link">best loot locations guide</a>. Browse all available weapons in our <a href="/vein-items/weapons" class="inline-link">weapons database</a>.
 </p>
 
 <h2>

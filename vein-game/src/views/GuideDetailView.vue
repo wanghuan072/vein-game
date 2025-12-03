@@ -45,7 +45,7 @@
         <div class="content-layout">
           <!-- Left Content -->
           <div class="left-content">
-            <div class="detail-article" v-html="guide.detailsHtml"></div>
+            <div class="detail-article" ref="contentRef" v-html="guide.detailsHtml"></div>
           </div>
 
           <!-- Right Sidebar -->
@@ -125,12 +125,17 @@ import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useGuideData } from '../composables/useGuideData'
 import { useLocalizedPath } from '../composables/useLocalizedPath'
+import { useInternalLinks } from '../composables/useInternalLinks'
 
 const route = useRoute()
 const { locale } = useI18n()
 const { getLocalizedPath } = useLocalizedPath()
 const { guides, loadData, findGuideByAddressBar } = useGuideData()
 const guide = ref(null)
+const contentRef = ref(null)
+
+// Handle internal links in HTML content
+useInternalLinks(contentRef)
 
 // 初始化加载数据并查找 guide
 const initGuide = async () => {

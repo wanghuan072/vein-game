@@ -41,7 +41,7 @@
         <div class="content-layout">
           <!-- Left Content -->
           <div class="left-content">
-            <div class="detail-article" v-html="wiki.detailsHtml"></div>
+            <div class="detail-article" ref="contentRef" v-html="wiki.detailsHtml"></div>
           </div>
 
           <!-- Right Sidebar -->
@@ -104,12 +104,17 @@ import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useWikiData } from '../../composables/useWikiData'
 import { useLocalizedPath } from '../../composables/useLocalizedPath'
+import { useInternalLinks } from '../../composables/useInternalLinks'
 
 const route = useRoute()
 const { locale } = useI18n()
 const { getLocalizedPath } = useLocalizedPath()
 const { wiki: wikiData, loadData, findWikiByAddressBar, getOtherWikis } = useWikiData()
 const wiki = ref(null)
+const contentRef = ref(null)
+
+// Handle internal links in HTML content
+useInternalLinks(contentRef)
 
 // 初始化加载数据并查找 wiki
 const initWiki = async () => {
