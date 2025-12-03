@@ -1,9 +1,197 @@
 export const guides = [
   {
+    id: 9,
+    title: "Fish It Anniversary Events 2025 Prediction Guide: What to Expect?",
+    description: "Get ready for the ultimate fishing frenzy! Our prediction guide unveils what to expect from the Fish It Anniversary Events 2025. Exclusive fish, rare mutations, and 8x luck await! Don't miss this 24-hour fishing bonanza!",
+    tags: ["Fish It", "Anniversary Event", "Roblox Fishing", "Limited-Time Event", "Fishing Game"],
+    publishDate: "2025-12-02",
+    imageUrl: "/images/guide/guide09.webp",
+    imageAlt: "Fish It Anniversary event celebration with exclusive fish and birthday cake item.",
+    isHome: true,
+    seo: {
+      title: "Fish It Anniversary Events 2025: Prediction & Exclusive Guide",
+      description: "Uncover our complete prediction guide for the Fish It Anniversary Events 2025! Prepare for exclusive fish, mutations, and 8x luck in this limited-time Roblox event.",
+      keywords: "Fish It, anniversary events, Roblox, fishing game, birthday megalodon, exclusive fish, mutation, 8x luck, Ghostfinn Rod",
+    },
+    addressBar: "/fish-it-anniversary-events-2025-prediction-guide",
+    detailsHtml: `
+    <p style="margin: 1em 0px;">The biggest celebration in Roblox fishing history is on the horizon! Based on patterns from similar games like <em>Fisch</em>, the upcoming <strong>Fish It Anniversary Events</strong> are predicted to be a massive, limited-time spectacle.</p>
+
+<p style="margin: 1em 0px;">If you are looking to catch exclusive fish, unlock rare mutations, or level up faster than ever before, mark your calendars. Here is our complete prediction guide for the 2025 anniversary celebration.</p>
+
+<p style="margin: 1em 0px;">
+    <img src="/images/guide/guide09-01.webp" alt="Fish It Anniversary Events" width="50%" style="width: 50%;">
+</p>
+
+<h2 style="font-size: 1.5em; font-weight: bold;"><strong>📅 Event Schedule Prediction</strong></h2>
+
+<p style="margin: 1em 0px;">Based on current data, the main festivities are expected to run for a tight 24-hour window:</p>
+
+<p style="margin: 1em 0px;">Start: Sunday, Dec 07, 2025 at 9:00 AM</p>
+<p style="margin: 1em 0px;">End: Monday, Dec 08, 2025 at 9:00 AM</p>
+
+<h2 style="font-size: 1.5em; font-weight: bold;"><strong>🎂 What Will the Fish It Anniversary Events Include?</strong></h2>
+
+<p style="margin: 1em 0px;">If the developers follow the successful formula of past fishing game anniversaries, players are in for a treat. Here is what we predict will be included in the <strong>Fish It Anniversary Events</strong>:</p>
+
+<img src="/images/guide/guide09-02.webp" alt="Fish It Anniversary Events" width="50%" style="width: 50%;">
+
+<ol>
+    <li data-list="bullet">
+        <span contenteditable="false"></span>
+        <strong>Birthday Megalodon Hunts:</strong> A special version of the legendary boss, likely dropping exclusive anniversary loot.
+    </li>
+    <li data-list="bullet">
+        <span contenteditable="false"></span>
+        <strong>Exclusive Anniversary Fish:</strong> New, limited-time fish species that can only be caught during this 24-hour period.
+    </li>
+    <li data-list="bullet">
+        <span contenteditable="false"></span>
+        <strong>New "Birthday" Mutation:</strong> A unique visual effect for fish caught during the event, increasing their value significantly.
+    </li>
+    <li data-list="bullet">
+        <span contenteditable="false"></span>
+        <strong>The Cake Item:</strong> A consumable or collectible item that may provide temporary buffs.
+    </li>
+    <li data-list="bullet">
+        <span contenteditable="false"></span>
+        <strong>Exclusive Emoji Titles:</strong> Show off your achievements with special titles rewarded for discovering every exclusive anniversary fish.
+    </li>
+</ol>
+
+<h2 style="font-size: 1.5em; font-weight: bold;"><strong>🍀 The Admin Event: 8x Luck &amp; Mutation</strong></h2>
+
+<p style="margin: 1em 0px;">The most anticipated feature of the <strong>Fish It Anniversary Events</strong> is the global server buff. We predict a massive <strong>24-hour period of 8x Luck</strong>.</p>
+
+<p style="margin: 1em 0px;">This makes it the absolute best time for:</p>
+
+<ol>
+    <li data-list="bullet">
+        <span contenteditable="false"></span>
+        <strong>New Players:</strong> To level up instantly and catch up to veterans.
+    </li>
+    <li data-list="bullet">
+        <span contenteditable="false"></span>
+        <strong>Pro Players:</strong> To finally catch that elusive <strong>Secret Fish</strong> or obtain the legendary <strong>Ghostfinn Rod</strong>.
+    </li>
+</ol>
+
+<h2 style="font-size: 1.5em; font-weight: bold;"><strong>How to Prepare?</strong></h2>
+
+<p style="margin: 1em 0px;">To maximize your gains during the <strong>Fish It Anniversary Events</strong>, make sure you have stocked up on:</p>
+
+<ol>
+    <li data-list="bullet">
+        <span contenteditable="false"></span>
+        <strong>Bait:</strong> Use <strong>Floral Bait</strong> or <strong>Singularity Bait</strong> during the 8x Luck window for maximum efficiency.
+    </li>
+    <li data-list="bullet">
+        <span contenteditable="false"></span>
+        <strong>Enchant Stones:</strong> Try to get the <strong>"Prismatic"</strong> or <strong>"Leprechaun"</strong> enchant on your rod beforehand to stack with the event luck.
+    </li>
+    <li data-list="bullet">
+        <span contenteditable="false"></span>
+        <strong>Time:</strong> Clear your schedule for December 7th!
+    </li>
+</ol>
+
+<p style="text-align: center;"><strong>Stay tuned to our site for live updates as we get closer to the Fish It Anniversary Events 2025!</strong></p>
+
+    `,
+  },
+
+  {
+    id: 10,
+    title: "Vein Game Guide: How to Find the Best Backpack and Essential Survival Loot",
+    description: "Struggling with inventory in Vein? This guide pinpoints the best backpack, the Hiking Backpack (+45.4 kg carry weight!), and other crucial loot like a Pickaxe, Lantern, and Heater. Travel to Cold Brook Cavern and gear up for survival!",
+    tags: ["Vein","Game Guide","Backpack","Survival","Loot"],
+    publishDate: "2025-12-02",
+    imageUrl: "/images/guide/guide10.webp",
+    imageAlt: "Vein game screenshot showing the Hiking Backpack location near Cold Brook Cavern.",
+    isHome: true,
+    seo: {
+      title: "Vein Game Guide: Best Backpack Location (Hiking Backpack) & Loot Tips",
+      description: "Find the Hiking Backpack in Vein (doubles your carry weight!) with this guide. Locate Cold Brook Cavern, grab essential loot, and dominate survival. Includes strategic tips!",
+      keywords: "vein, game, guide, backpack, hiking backpack, survival, loot, cold brook cavern, inventory management, pickaxe, lantern, heater",
+    },
+    addressBar: "/vein-game-best-backpack",
+    detailsHtml: `
+    <p style="margin: 1em 0px;">Inventory management is one of the most critical aspects of survival in <strong>Vein</strong>. Being able to carry more supplies, weapons, and resources directly impacts your longevity. Currently, the <strong>Hiking Backpack</strong> is widely considered the <strong>best backpack in the Vein game</strong>, offering significantly more capacity than the standard School Backpack.</p>
+
+<p style="margin: 1em 0px;">This guide will outline exactly where to find the Hiking Backpack, what other valuable loot is nearby, and strategic tips for the surrounding area.</p>
+
+<p style="margin: 1em 0px;">
+    <img src="/images/guide/guide10-01.webp" alt="Cold Brook Cavern" width="50%" style="width: 50%;">
+</p>
+
+<h2 style="font-size: 1.5em; font-weight: bold;"><strong>The Hiking Backpack: Stats and Benefits</strong></h2>
+
+<p style="margin: 1em 0px;">Before heading out, it is important to understand why this item is essential.</p>
+
+<ol>
+    <li data-list="bullet"><span contenteditable="false"></span><strong>Item Name:</strong> Hiking Backpack</li>
+    <li data-list="bullet"><span contenteditable="false"></span><strong>Capacity:</strong> Increases max carry weight by approximately <strong>45.4 kg</strong>.</li>
+    <li data-list="bullet"><span contenteditable="false"></span><strong>Comparison:</strong> This provides roughly double the carrying capacity of the standard School Backpack (which offers around 22 kg).</li>
+</ol>
+
+<p style="margin: 1em 0px;">
+    <img src="/images/guide/guide10-02.webp" alt="Hiking Backpack" width="50%" style="width: 50%;">
+</p>
+
+<h2 style="font-size: 1.5em; font-weight: bold;"><strong>Location Guide: Cold Brook Cavern</strong></h2>
+
+<p style="margin: 1em 0px;">To find the Hiking Backpack, you need to travel to the central area of the map.</p>
+
+<ol>
+    <li data-list="ordered"><span contenteditable="false"></span><strong>Find the Lake:</strong> Locate the large lake situated centrally between the major towns (Sanac and Redford).</li>
+    <li data-list="ordered"><span contenteditable="false"></span><strong>Locate the Cave Entrance:</strong> On the hillside bordering the lake, look for a dirt path leading off the main road. This path leads to a large rock formation containing the entrance to <strong>Cold Brook Cavern</strong>.</li>
+    <li data-list="ordered"><span contenteditable="false"></span><strong>Retrieve the Backpack:</strong> Enter the cave. Inside, you will typically find a small campsite setup. The <strong>Hiking Backpack</strong> is usually spawned sitting on top of a rock next to a sleeping bag.</li>
+</ol>
+
+<p style="margin: 1em 0px;">
+    <img src="/images/guide/guide10-03.webp" alt="Cold Brook Cavern 2" width="50%" style="width: 50%;">
+</p>
+
+<h3 style="font-size: 1.17em; font-weight: bold;"><strong>Bonus Loot in the Cave</strong></h3>
+
+<p style="margin: 1em 0px;">Do not leave immediately after grabbing the bag. The cave is a hotspot for other high-tier survival items:</p>
+
+<ol>
+    <li data-list="bullet"><span contenteditable="false"></span><strong>Pickaxe:</strong> Essential for mining.</li>
+    <li data-list="bullet"><span contenteditable="false"></span><strong>Lantern &amp; Heater:</strong> Critical for light and warmth during cold nights.</li>
+    <li data-list="bullet"><span contenteditable="false"></span><strong>Mining Resources:</strong> If you have the pickaxe, this cave contains mineable rocks. You can harvest <strong>Limestone</strong> and <strong>Hematite (Iron)</strong> here. <em>Note: Some nodes may be underwater within the cave.</em></li>
+</ol>
+
+<h2 style="font-size: 1.5em; font-weight: bold;"><strong>Strategic Tips for the Area</strong></h2>
+
+<p style="margin: 1em 0px;">Since you are traveling to the center of the map to get the backpack, consider utilizing the surrounding resources to boost your survival chances.</p>
+
+<h3 style="font-size: 1.17em; font-weight: bold;"><strong>1. Fishing for Food</strong></h3>
+
+<p style="margin: 1em 0px;">The lake directly outside Cold Brook Cavern is an excellent source of food. If you have a fishing rod and bait, you can catch <strong>Largemouth Bass</strong> here. This is a safe and renewable food source that pairs well with the camping gear found inside the cave.</p>
+
+<h3 style="font-size: 1.17em; font-weight: bold;"><strong>2. A Strong Base Location: American Legion Post</strong></h3>
+
+<p style="margin: 1em 0px;">Just down the road from the cave is a building marked <strong>"American Legion Post #0607"</strong> (often resembling a bar or veterans' hall). This is a prime location to set up a permanent base for several reasons:</p>
+
+<ol>
+    <li data-list="bullet"><span contenteditable="false"></span><strong>Central Location:</strong> It is located roughly in the middle of the map, making travel to other towns manageable.</li>
+    <li data-list="bullet"><span contenteditable="false"></span><strong>Fortification:</strong> The property features a parking lot that is already enclosed by a high chain-link fence. You only need to construct a gate to have a fully secure perimeter for your vehicles.</li>
+    <li data-list="bullet"><span contenteditable="false"></span><strong>Amenities:</strong> The interior often spawns with industrial kitchen equipment (stoves, deep fryers), vending machines, and plenty of storage space.</li>
+</ol>
+
+<h2 style="font-size: 1.5em; font-weight: bold;"><strong>Summary</strong></h2>
+
+<p style="margin: 1em 0px;">To secure the best start in Vein, prioritize acquiring a vehicle and driving to <strong>Cold Brook Cavern</strong>. Grab the <strong>Hiking Backpack</strong> to maximize your inventory slots, mine some iron while you are there, and consider fortifying the nearby Legion Post for a long-term survival stronghold.</p>
+
+    `,
+  },
+
+  {
     id: 7,
     title: "VEIN Best Loot Locations: The Ultimate Survival Scavenging Guide",
     description: "Surviving VEIN's undead onslaught demands smart scavenging. This guide reveals the best loot locations, transforming you from a struggling survivor to a resource-rich powerhouse. Discover prime spots like Frank's Hardware Emporium for essential tools and base-building materials. Dominate the apocalypse!",
-    tags: ["VEIN","loot locations","survival guide","scavenging","resources"],
+    tags: ["VEIN", "loot locations", "survival guide", "scavenging", "resources"],
     publishDate: "2025-11-28",
     imageUrl: "/images/guide/guide07.webp",
     imageAlt: "A player character in VEIN looting supplies in a hardware store, highlighting the best loot locations for survival.",
@@ -96,7 +284,7 @@ export const guides = [
     id: 8,
     title: "VEIN Best Base Location: The Ultimate Survival Base Selection Guide",
     description: "In VEIN, your base is critical for survival. This guide analyzes Werrenrath Island's Stone House near Dannemora as a prime location, offering natural defenses, ready-made facilities like greenhouses, and a spacious interior for crafting and resource storage. Secure your future against zombie hordes!",
-    tags: ["VEIN","best base","survival base","zombie survival","base location"],
+    tags: ["VEIN", "best base", "survival base", "zombie survival", "base location"],
     publishDate: "2025-11-28",
     imageUrl: "/images/guide/guide08.webp",
     imageAlt: "VEIN gameplay showing Werrenrath Island's Stone House, a potential best base location.",
@@ -442,7 +630,7 @@ export const guides = [
     publishDate: "2025-11-20",
     imageUrl: "/images/guide/guide03.webp",
     imageAlt: "A zombie horde approaching a survivor in the VEIN game, highlighting the importance of new player occupation selection.",
-    isHome: true,
+    isHome: false,
     seo: {
       title: "VEIN New Player Guide: Day 1 Occupation - Ultimate Selection Tips!",
       description: "Maximize your survival chances in VEIN! This guide reveals the best Day 1 occupations, crucial for insane difficulty and rare loot settings. Dominate the zombie apocalypse!",
@@ -497,7 +685,7 @@ export const guides = [
     publishDate: "2025-11-20",
     imageUrl: "/images/guide/guide04.webp",
     imageAlt: "Professional screenshot of Revolutionary VEIN New Player Guide Part 4: Traits Selection",
-    isHome: true,
+    isHome: false,
     seo: {
       title: "VEIN New Player Guide P4: Traits Selection Guide |Risks & Rewards",
       description: "Understand the pros and cons of trait selection in VEIN on Day 1. This guide analyzes high-risk traits, offers recommendations for all player types, and helps you avoid critical mistakes for survival. Visit veingame.net for more.",
@@ -672,7 +860,7 @@ export const guides = [
     id: 6,
     title: "VEIN Prison Armory Location Guide: How to Find Clinton Correctional Facility Armory",
     description: "Unlock high-tier weapons and ammo in VEIN by locating the Clinton Correctional Facility Armory. This guide provides a step-by-step route, starting from the safest southwest entrance, to navigate the prison's secured areas and unlock its valuable treasures.",
-    tags: ["VEIN","prison armory","Clinton Correctional Facility","loot guide","weapon location"],
+    tags: ["VEIN", "prison armory", "Clinton Correctional Facility", "loot guide", "weapon location"],
     publishDate: "2025-11-20",
     imageUrl: "/images/guide/guide06.webp",
     imageAlt: "VEIN gameplay scene featuring a player exploring the Clinton Correctional Facility in search of the armory.",
@@ -799,9 +987,13 @@ Inside the armory, you’ll find these high-value items (loot varies slightly by
 </p>
 
     `,
-  }
+  },
 
   
+
+
+
+
 
 
 

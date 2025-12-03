@@ -1,5 +1,193 @@
 export const guides = [
     {
+        "id": 9,
+        "title": "Fish It Jubiläums-Events 2025 Vorhersage-Guide: Was erwartet dich?",
+        "description": "Mach dich bereit für das ultimative Angelchaos! Unser Vorhersage-Guide enthüllt, was dich bei den Fish It Jubiläums-Events 2025 erwartet. Exklusive Fische, seltene Mutationen und 8x Glück stehen bevor! Verpasse nicht dieses 24-Stunden-Angelbonanza!",
+        "tags": ["Fish It", "Jubiläums-Event", "Roblox Angeln", "Limitiertes Event", "Angelspiel"],
+        "publishDate": "2025-12-02",
+        "imageUrl": "/images/guide/guide09.webp",
+        "imageAlt": "Fish It Jubiläums-Event mit exklusiven Fischen und Geburtstagskuchen-Item.",
+        "isHome": true,
+        "seo": {
+            "title": "Fish It Jubiläums-Events 2025: Vorhersagen & Exklusiver Guide",
+            "description": "Entdecke unseren vollständigen Vorhersage-Guide zu den Fish It Jubiläums-Events 2025! Bereite dich auf exklusive Fische, Mutationen und 8x Glück in diesem limitierten Roblox-Event vor.",
+            "keywords": "Fish It, Jubiläums-Events, Roblox, Angelspiel, Birthday Megalodon, exklusive Fische, Mutation, 8x Glück, Ghostfinn Rute"
+        },
+        "addressBar": "/fish-it-anniversary-events-2025-prediction-guide",
+        "detailsHtml": `
+          <p style="margin: 1em 0px;">Die größte Feier in der Geschichte der Roblox-Angelszene steht bevor! Basierend auf Mustern ähnlicher Spiele wie <em>Fisch</em> werden die kommenden <strong>Fish It Jubiläums-Events</strong> voraussichtlich ein riesiges, zeitlich begrenztes Spektakel.</p>
+      
+      <p style="margin: 1em 0px;">Wenn du exklusive Fische fangen, seltene Mutationen freischalten oder schneller leveln möchtest als je zuvor, markiere dir das Datum. Hier ist unser vollständiger Vorhersage-Guide für die Jubiläumsfeier 2025.</p>
+      
+      <p style="margin: 1em 0px;">
+          <img src="/images/guide/guide09-01.webp" alt="Fish It Anniversary Events" width="50%" style="width: 50%;">
+      </p>
+      
+      <h2 style="font-size: 1.5em; font-weight: bold;"><strong>📅 Vorhersage des Eventplans</strong></h2>
+      
+      <p style="margin: 1em 0px;">Basierend auf aktuellen Daten wird erwartet, dass die Hauptfeierlichkeiten in einem knappen 24-Stunden-Fenster stattfinden:</p>
+      
+      <p style="margin: 1em 0px;">Start: Sonntag, 07. Dez. 2025 um 09:00 Uhr</p>
+      <p style="margin: 1em 0px;">Ende: Montag, 08. Dez. 2025 um 09:00 Uhr</p>
+      
+      <h2 style="font-size: 1.5em; font-weight: bold;"><strong>🎂 Was wird das Fish It Jubiläums-Event beinhalten?</strong></h2>
+      
+      <p style="margin: 1em 0px;">Wenn die Entwickler dem Erfolgsrezept früherer Angelspiel-Jubiläen folgen, erwartet die Spieler eine Menge. Hier ist unsere Vorhersage, was die <strong>Fish It Jubiläums-Events</strong> enthalten werden:</p>
+      
+    <img src="/images/guide/guide09-02.webp" alt="Fish It Anniversary Events" width="50%" style="width: 50%;">
+
+      <ol>
+          <li data-list="bullet">
+              <span contenteditable="false"></span>
+              <strong>Birthday-Megalodon-Jagden:</strong> Eine spezielle Version des legendären Bosses, der vermutlich exklusiven Jubiläumsloot fallen lässt.
+          </li>
+          <li data-list="bullet">
+              <span contenteditable="false"></span>
+              <strong>Exklusive Jubiläumsfische:</strong> Neue, nur während dieser 24 Stunden fangbare Fischarten.
+          </li>
+          <li data-list="bullet">
+              <span contenteditable="false"></span>
+              <strong>Neue „Birthday“-Mutation:</strong> Ein einzigartiger visueller Effekt für Fische, die während des Events gefangen werden und deren Wert deutlich erhöht.
+          </li>
+          <li data-list="bullet">
+              <span contenteditable="false"></span>
+              <strong>Das Kuchen-Item:</strong> Ein verbrauchbarer oder sammelbarer Gegenstand, der möglicherweise temporäre Buffs gewährt.
+          </li>
+          <li data-list="bullet">
+              <span contenteditable="false"></span>
+              <strong>Exklusive Emoji-Titel:</strong> Zeige deine Errungenschaften mit speziellen Titeln für das Entdecken aller exklusiven Jubiläumsfische.
+          </li>
+      </ol>
+      
+      <h2 style="font-size: 1.5em; font-weight: bold;"><strong>🍀 Das Admin-Event: 8x Glück & Mutation</strong></h2>
+      
+      <p style="margin: 1em 0px;">Das am meisten erwartete Feature der <strong>Fish It Jubiläums-Events</strong> ist der globale Server-Buff. Wir prognostizieren eine massive <strong>24-Stunden-Periode mit 8x Glück</strong>.</p>
+      
+      <p style="margin: 1em 0px;">Dies macht es zur besten Zeit für:</p>
+      
+      <ol>
+          <li data-list="bullet">
+              <span contenteditable="false"></span>
+              <strong>Neue Spieler:</strong> Um sofort Level aufzusteigen und zu Veteranen aufzuschließen.
+          </li>
+          <li data-list="bullet">
+              <span contenteditable="false"></span>
+              <strong>Profi-Spieler:</strong> Um endlich den schwer fassbaren <strong>Secret Fish</strong> zu fangen oder die legendäre <strong>Ghostfinn-Rute</strong> zu bekommen.
+          </li>
+      </ol>
+      
+      <h2 style="font-size: 1.5em; font-weight: bold;"><strong>Wie bereitest du dich vor?</strong></h2>
+      
+      <p style="margin: 1em 0px;">Um das Maximum aus den <strong>Fish It Jubiläums-Events</strong> herauszuholen, solltest du Folgendes vorbereiten:</p>
+      
+      <ol>
+          <li data-list="bullet">
+              <span contenteditable="false"></span>
+              <strong>Köder:</strong> Verwende <strong>Floral Bait</strong> oder <strong>Singularity Bait</strong> während der 8x-Glücksperiode für maximale Effizienz.
+          </li>
+          <li data-list="bullet">
+              <span contenteditable="false"></span>
+              <strong>Verzauberungssteine:</strong> Versuche, die Verzauberung <strong>„Prismatic“</strong> oder <strong>„Leprechaun“</strong> bereits vor dem Event auf deine Angelrute zu bekommen.
+          </li>
+          <li data-list="bullet">
+              <span contenteditable="false"></span>
+              <strong>Zeit:</strong> Halte dir den 7. Dezember frei!
+          </li>
+      </ol>
+      
+      <p style="text-align: center;"><strong>Bleib auf unserer Seite dran für Live-Updates, während wir uns den Fish It Jubiläums-Events 2025 nähern!</strong></p>
+      
+          `
+    },
+
+    {
+        "id": 10,
+        "title": "Vein-Spielguide: Wie man den besten Rucksack und wichtiges Überlebensloot findet",
+        "description": "Probleme mit dem Inventar in Vein? Dieser Guide zeigt dir den besten Rucksack – den Hiking Backpack (+45,4 kg Traggewicht!) – und weiteres wichtiges Loot wie Spitzhacke, Laterne und Heizung. Reise zur Cold Brook Cavern und rüste dich fürs Überleben aus!",
+        "tags": ["Vein", "Spielguide", "Rucksack", "Überleben", "Loot"],
+        "publishDate": "2025-12-02",
+        "imageUrl": "/images/guide/guide10.webp",
+        "imageAlt": "Vein-Screenshot mit dem Fundort des Hiking Backpacks nahe der Cold Brook Cavern.",
+        "isHome": true,
+        "seo": {
+            "title": "Vein-Spielguide: Bester Rucksack-Fundort (Hiking Backpack) & Loot-Tipps",
+            "description": "Finde den Hiking Backpack in Vein (verdoppelt dein Traggewicht!) mit diesem Guide. Finde die Cold Brook Cavern, sammle essenzielles Loot und dominiere das Überleben. Inklusive Strategietipps!",
+            "keywords": "vein, spiel, guide, rucksack, hiking backpack, überleben, loot, cold brook cavern, inventar, pickaxe, laterne, heater"
+        },
+        "addressBar": "/vein-game-best-backpack",
+        "detailsHtml": `
+          <p style="margin: 1em 0px;">Inventarmanagement ist einer der wichtigsten Aspekte des Überlebens in <strong>Vein</strong>. Mehr Vorräte, Waffen und Ressourcen tragen zu können, wirkt sich direkt auf deine Überlebensfähigkeit aus. Aktuell gilt der <strong>Hiking Backpack</strong> weithin als der <strong>beste Rucksack im Vein-Spiel</strong>, da er erheblich mehr Kapazität bietet als der Standard-Schulrucksack.</p>
+      
+      <p style="margin: 1em 0px;">Dieser Guide zeigt dir genau, wo du den Hiking Backpack findest, welches wertvolle Loot sich in der Nähe befindet und liefert strategische Tipps zum umliegenden Gebiet.</p>
+      
+      <p style="margin: 1em 0px;">
+          <img src="/images/guide/guide10-01.webp" alt="Cold Brook Cavern" width="50%" style="width: 50%;">
+      </p>
+      
+      <h2 style="font-size: 1.5em; font-weight: bold;"><strong>Der Hiking Backpack: Werte und Vorteile</strong></h2>
+      
+      <p style="margin: 1em 0px;">Bevor du losziehst, ist es wichtig zu verstehen, warum dieses Item unverzichtbar ist.</p>
+      
+      <ol>
+          <li data-list="bullet"><span contenteditable="false"></span><strong>Item-Name:</strong> Hiking Backpack</li>
+          <li data-list="bullet"><span contenteditable="false"></span><strong>Kapazität:</strong> Erhöht das maximale Traggewicht um ca. <strong>45,4 kg</strong>.</li>
+          <li data-list="bullet"><span contenteditable="false"></span><strong>Vergleich:</strong> Dies entspricht etwa der doppelten Kapazität des Standard-Schulrucksacks (ca. 22 kg).</li>
+      </ol>
+      
+      <p style="margin: 1em 0px;">
+          <img src="/images/guide/guide10-02.webp" alt="Hiking Backpack" width="50%" style="width: 50%;">
+      </p>
+      
+      <h2 style="font-size: 1.5em; font-weight: bold;"><strong>Fundort-Guide: Cold Brook Cavern</strong></h2>
+      
+      <p style="margin: 1em 0px;">Um den Hiking Backpack zu finden, musst du zur zentralen Zone der Karte reisen.</p>
+      
+      <ol>
+          <li data-list="ordered"><span contenteditable="false"></span><strong>Finde den See:</strong> Suche den großen See in der Mitte zwischen den Städten Sanac und Redford.</li>
+          <li data-list="ordered"><span contenteditable="false"></span><strong>Finde den Höhleneingang:</strong> Am Hang neben dem See verläuft ein Dirt-Pfad vom Hauptweg weg. Dieser führt zu einer großen Felsformation, welche den Eingang der <strong>Cold Brook Cavern</strong> enthält.</li>
+          <li data-list="ordered"><span contenteditable="false"></span><strong>Nimm den Rucksack:</strong> In der Höhle findest du meist ein kleines Lager. Der <strong>Hiking Backpack</strong> spawnt üblicherweise auf einem Felsen neben einem Schlafsack.</li>
+      </ol>
+      
+      <p style="margin: 1em 0px;">
+          <img src="/images/guide/guide10-03.webp" alt="Cold Brook Cavern 2" width="50%" style="width: 50%;">
+      </p>
+      
+      <h3 style="font-size: 1.17em; font-weight: bold;"><strong>Bonus-Loot in der Höhle</strong></h3>
+      
+      <p style="margin: 1em 0px;">Verlasse die Höhle nicht sofort. Sie ist ein Hotspot für hochwertiges Überlebens-Loot:</p>
+      
+      <ol>
+          <li data-list="bullet"><span contenteditable="false"></span><strong>Pickaxe:</strong> Essenziell fürs Minen.</li>
+          <li data-list="bullet"><span contenteditable="false"></span><strong>Laterne & Heizung:</strong> Wichtig für Licht und Wärme in kalten Nächten.</li>
+          <li data-list="bullet"><span contenteditable="false"></span><strong>Abbaubare Ressourcen:</strong> Wenn du die Spitzhacke hast, findest du hier abbaubare Felsen mit <strong>Kalkstein</strong> und <strong>Hämatit (Eisen)</strong>. <em>Hinweis: Einige Knotenpunkte befinden sich unter Wasser.</em></li>
+      </ol>
+      
+      <h2 style="font-size: 1.5em; font-weight: bold;"><strong>Strategische Tipps für das Gebiet</strong></h2>
+      
+      <p style="margin: 1em 0px;">Da du sowieso in die Kartenmitte reist, solltest du die dortigen Ressourcen bestmöglich nutzen.</p>
+      
+      <h3 style="font-size: 1.17em; font-weight: bold;"><strong>1. Angeln für Nahrung</strong></h3>
+      
+      <p style="margin: 1em 0px;">Der See direkt außerhalb der Cold Brook Cavern ist eine hervorragende Nahrungsquelle. Mit Angel und Köder kannst du hier <strong>Largemouth Bass</strong> fangen – sicher und erneuerbar.</p>
+      
+      <h3 style="font-size: 1.17em; font-weight: bold;"><strong>2. Ein starkes Basislager: American Legion Post</strong></h3>
+      
+      <p style="margin: 1em 0px;">Etwas die Straße hinunter befindet sich ein Gebäude namens <strong>„American Legion Post #0607“</strong>. Ein idealer Ort, um eine Basis einzurichten:</p>
+      
+      <ol>
+          <li data-list="bullet"><span contenteditable="false"></span><strong>Zentrale Lage:</strong> In der Mitte der Karte – ideal für Reisen in alle Richtungen.</li>
+          <li data-list="bullet"><span contenteditable="false"></span><strong>Leichte Befestigung:</strong> Der Parkplatz ist bereits durch einen hohen Zaun umschlossen. Du musst nur ein Tor bauen, um ein sicheres Fahrzeugdepot zu haben.</li>
+          <li data-list="bullet"><span contenteditable="false"></span><strong>Ausstattung:</strong> Innen findest du oft Industrieküche, Automaten und viel Stauraum.</li>
+      </ol>
+      
+      <h2 style="font-size: 1.5em; font-weight: bold;"><strong>Zusammenfassung</strong></h2>
+      
+      <p style="margin: 1em 0px;">Um den besten Start in Vein zu sichern, solltest du so früh wie möglich ein Fahrzeug organisieren und zur <strong>Cold Brook Cavern</strong> fahren. Hole den <strong>Hiking Backpack</strong>, mine etwas Eisen und richte dir eine langfristige Überlebensbasis im nahegelegenen Legion Post Gebäude ein.</p>
+      
+          `
+    },
+
+    {
         "id": 7,
         "title": "Die besten Loot-Orte in VEIN: Der ultimative Guide zum Überleben und Plündern",
         "description": "Das Überleben in VEINs Untoten-Ansturm erfordert kluges Plündern. Dieser Guide enthüllt die besten Loot-Orte, die Sie von einem kämpfenden Überlebenden zu einem ressourcenreichen Kraftpaket machen. Entdecken Sie Top-Spots wie Frank's Hardware Emporium für wichtige Werkzeuge und Materialien zum Basisbau. Dominieren Sie die Apokalypse!",
@@ -468,7 +656,7 @@ export const guides = [
         "publishDate": "2025-11-20",
         "imageUrl": "/images/guide/guide03.webp",
         "imageAlt": "Eine Zombiehorde nähert sich einem Überlebenden im VEIN-Spiel, was die Bedeutung der Berufswahl für neue Spieler hervorhebt.",
-        "isHome": true,
+        "isHome": false,
         "seo": {
             "title": "VEIN New Player Guide: Day 1 Beruf - Ultimative Auswahl-Tipps!",
             "description": "Maximieren Sie Ihre Überlebenschancen in VEIN! Dieser Guide enthüllt die besten Day 1 Berufe, die für den Schwierigkeitsgrad 'Wahnsinnig' und seltene Loot-Einstellungen entscheidend sind. Dominieren Sie die Zombie-Apokalypse!",
@@ -528,7 +716,7 @@ export const guides = [
         "publishDate": "2025-11-20",
         "imageUrl": "/images/guide/guide04.webp",
         "imageAlt": "Professioneller Screenshot des Revolutionären VEIN New Player Guide Teil 4: Trait-Auswahl",
-        "isHome": true,
+        "isHome": false,
         "seo": {
             "title": "VEIN New Player Guide P4: Trait-Auswahl Guide | Risiken & Belohnungen",
             "description": "Verstehen Sie die Vor- und Nachteile der Trait-Auswahl in VEIN an Tag 1. Dieser Guide analysiert Traits mit hohem Risiko, gibt Empfehlungen für alle Spielertypen und hilft Ihnen, kritische Fehler für das Überleben zu vermeiden. Besuchen Sie veingame.net für mehr.",
