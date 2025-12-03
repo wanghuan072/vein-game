@@ -1,6 +1,6 @@
 export const guides = [
   {
-    id: 10,
+    id: 9,
     title: "Vein Game Guide: How to Find the Best Backpack and Essential Survival Loot",
     description: "Struggling with inventory in Vein? This guide pinpoints the best backpack, the Hiking Backpack (+45.4 kg carry weight!), and other crucial loot like a Pickaxe, Lantern, and Heater. Travel to Cold Brook Cavern and gear up for survival!",
     tags: ["Vein","Game Guide","Backpack","Survival","Loot"],
@@ -82,99 +82,6 @@ export const guides = [
       <h2><strong>Summary</strong></h2>
       
       <p>To secure the best start in Vein, prioritize acquiring a vehicle and driving to <strong>Cold Brook Cavern</strong>. Grab the <strong>Hiking Backpack</strong> to maximize your inventory slots, mine some iron while you are there, and consider fortifying the nearby Legion Post for a long-term survival stronghold. After gathering supplies, secure them in a safe location with our <a href="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">best base location guide</a>. This backpack is essential for completing your <a href="/vein-guides/day-1-priorities-guide" class="inline-link">Day 1 priorities</a>.</p>
-
-    `,
-  },
-
-  {
-    id: 7,
-    title: "VEIN Best Loot Locations: The Ultimate Survival Scavenging Guide",
-    description: "Surviving VEIN's undead onslaught demands smart scavenging. This guide reveals the best loot locations, transforming you from a struggling survivor to a resource-rich powerhouse. Discover prime spots like Frank's Hardware Emporium for essential tools and base-building materials. Dominate the apocalypse!",
-    tags: ["VEIN", "loot locations", "survival guide", "scavenging", "resources"],
-    publishDate: "2025-11-28",
-    imageUrl: "/images/guide/guide07.webp",
-    imageAlt: "A player character in VEIN looting supplies in a hardware store, highlighting the best loot locations for survival.",
-    isHome: true,
-    seo: {
-      title: "VEIN Best Loot Guide: Dominate Survival Scavenging!",
-      description: "Master VEIN's survival with our ultimate looting guide! Find the best loot locations like Frank's Hardware Emporium for tools, weapons, and base-building materials.",
-      keywords: "VEIN, best loot, loot locations, survival guide, scavenging, Frank's Hardware Emporium, resources, tools, weapons, base building",
-    },
-    addressBar: "/vein-best-loot-locations",
-    detailsHtml: `
-    <p>In the hardcore survival simulation game <em>VEIN</em>, your lifespan is directly tied to your inventory. Whether you need to repair a vehicle, build a base, or simply survive the next wave of the undead, knowing where to find resources is critical. This guide dives deep into the <strong>VEIN best loot locations</strong>, highlighting the key areas that will take you from barely surviving to thriving. To maximize your loot capacity, make sure you have the <a href="/vein-guides/vein-game-best-backpack" class="inline-link">best backpack</a>. After gathering materials, you'll need somewhere safe to store them—check our <a href="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">best base location guide</a>.</p>
-
-<p><img src="/images/guide/guide07-01.webp" alt="vein best loot locations " width="50%" style="width: 50%;"></p>
-
-<h2><strong>1. Frank's Hardware Emporium</strong></h2>
-
-<p>Without a doubt, the Hardware Store is the premier destination for loot, especially for players looking to establish a long-term base or maintain vehicles. It is a treasure trove of tools and construction materials.</p>
-
-<h3><strong>What you should look for here:</strong></h3>
-
-<ol>
-<li><strong>End-Game Tools:</strong> This is the primary value of this location. Keep your eyes peeled on the shelves for the <strong>Industrial Welder</strong>, <strong>Circular Saw</strong>, and <strong>Industrial Driver</strong>. These are essential for repairing vehicle chassis, performing advanced modifications, or dismantling large objects found in the world.</li>
-
-<li><strong>Melee Weapons:</strong> The hardware store is a reliable spawn point for the <strong>Machete</strong>. Compared to the standard Fire Axe, the Machete offers a faster swing speed and high DPS, allowing you to clear zombies quickly without draining your stamina too fast. It is also a prime spot to find a <strong>Sledgehammer</strong> for heavy demolition.</li>
-
-<li><strong>Construction Consumables:</strong> Do not ignore the small boxes. You will need a massive amount of <strong>Nails</strong>, <strong>Screws</strong>, <strong>Heavy Bolts</strong>, and <strong>Springs</strong> to fortify your shelter.</li>
-
-<li><strong>Adhesives:</strong> You can often find industrial-sized <strong>Glue Bottles</strong> (look for the large jugs, often 70+ oz) which are vital for crafting and repairs.</li>
-
-<li><strong>Water Storage:</strong> Look for red <strong>Muck Tubs</strong> or blue plastic barrels. While you cannot fit these in your backpack, they can be physically carried to your base to serve as rain catchers or high-capacity water reservoirs.</li>
-</ol>
-
-<p><strong>Looting Strategy:</strong> The items in the hardware store are heavy. It is highly recommended to clear the surrounding zombies and then park your vehicle directly at the front door to quickly transfer heavy tools and furniture.</p>
-
-<p><img src="/images/guide/guide07-02.webp" alt="vein best loot locations 2" width="50%" style="width: 50%;"></p>
-
-<h2><strong>2. Gardening and Farming Sections</strong></h2>
-
-<p>Usually found in the outdoor aisles or specific sections of the hardware store, these areas contain the supplies necessary for sustainable living.</p>
-
-<ol>
-<li><strong>Seeds:</strong> Check the racks carefully for packets of Pumpkin, Tomato, Corn, and other crop seeds.</li>
-
-<li><strong>Soil:</strong> High-quality soil bags (look for the <strong>Weaver Solutions</strong> brand) are essential for efficient crop growth.</li>
-
-<li><strong>Large Planter Boxes:</strong> The game features large wooden planter boxes. Using the game’s heavy lifting mechanic (grabbing with both hands), you can drag these boxes into your van and take them back to base, allowing you to start a farm indoors or on a safe rooftop.</li>
-</ol>
-
-<h2><strong>3. Fire Stations</strong></h2>
-
-<p>When discussing <strong>VEIN best loot locations</strong>, the Fire Station is a must-visit location in the early game.</p>
-
-<ol>
-<li><strong>Fire Axe:</strong> This is the best all-around tool for the early game. It serves as a powerful weapon against enemies and is required for chopping down trees and breaking down doors.</li>
-
-<li><strong>Protective Gear:</strong> Firefighter coats and pants offer excellent bite and scratch protection, significantly increasing your chances of survival in close-quarters combat.</li>
-</ol>
-
-<h2><strong>4. Residential Houses and Kitchens</strong></h2>
-
-<p>Do not underestimate standard houses. While they may lack industrial tools, they are the primary source for basic survival needs.</p>
-
-<ol>
-<li><strong>Food and Water:</strong> Fridges (Mini Fridges or full-sized units) are the best places to find canned goods, soda, and fresh food. If you find a functioning Mini Fridge, you can physically carry it to your vehicle to use as extra storage.</li>
-
-<li><strong>Medical Supplies:</strong> Always check the bathroom mirror cabinets. This is where bandages, disinfectants, and painkillers spawn.</li>
-
-<li><strong>Household Items:</strong> Sewing kits, lighters, and batteries are often found scattered on bedroom dressers or living room tables.</li>
-</ol>
-
-<h2><strong>5. Vehicle and Heavy Lifting Mechanics Tips</strong></h2>
-
-<p>In <em>VEIN</em>, your best "backpack" is your car. When visiting these <strong>VEIN best loot locations</strong>, keep the following tips in mind:</p>
-
-<ol>
-<li><strong>Moving Large Objects:</strong> Many high-value items (like generators, planter boxes, and large tool chests) cannot fit in your character's inventory. You must use the interaction key to grab the object and utilize the physics engine to manually drag it into the trunk of your van or pickup truck.</li>
-
-<li><strong>Vehicle Maintenance:</strong> The industrial tools you loot (Welders, Jacks, etc.) are not just for show. You need them to strip parts from wrecked cars or repair your own vehicle. Without finding an industrial cutting tool, your ability to maintain a vehicle will be severely limited.</li>
-</ol>
-
-<h2><strong>Summary</strong></h2>
-
-<p>To survive in <em>VEIN</em>, planning your route is key. Your priority should be securing a vehicle with high cargo capacity (like a van), and then heading straight for <strong>Frank's Hardware Emporium</strong>. Once you secure an Industrial Welder and a Machete, you turn from prey into hunter. Remember, being greedy is good—but only if you have enough trunk space to haul it all home. For detailed information on all items you can find, visit our <a href="/vein-items" class="inline-link">items database</a>. To learn how to build a secure base with your gathered materials, see the <a href="/vein-wiki/building" class="inline-link">building system wiki</a>.</p>
 
     `,
   },
@@ -343,6 +250,99 @@ export const guides = [
 <h2><strong>Summary</strong></h2>
 
 <p>In <em>VEIN</em>, there is no absolutely perfect spot, only the choice that best fits your playstyle. If you prefer a quiet life of farming and fishing, <strong>Werrenrath Island</strong> is undoubtedly the <strong>VEIN best base location</strong>. If you crave combat and industrial production, a commercial building in town might suit you better. Grab your axe, start your van, and go build your own apocalypse fortress. If you're just starting out, make sure to check our <a href="/vein-guides/day-1-priorities-guide" class="inline-link">Day 1 priorities guide</a> to understand what resources you need. Understanding base mechanics is crucial—learn more in the <a href="/vein-wiki/mechanics" class="inline-link">mechanics wiki</a>.</p>
+
+    `,
+  },
+
+  {
+    id: 7,
+    title: "VEIN Best Loot Locations: The Ultimate Survival Scavenging Guide",
+    description: "Surviving VEIN's undead onslaught demands smart scavenging. This guide reveals the best loot locations, transforming you from a struggling survivor to a resource-rich powerhouse. Discover prime spots like Frank's Hardware Emporium for essential tools and base-building materials. Dominate the apocalypse!",
+    tags: ["VEIN", "loot locations", "survival guide", "scavenging", "resources"],
+    publishDate: "2025-11-28",
+    imageUrl: "/images/guide/guide07.webp",
+    imageAlt: "A player character in VEIN looting supplies in a hardware store, highlighting the best loot locations for survival.",
+    isHome: true,
+    seo: {
+      title: "VEIN Best Loot Guide: Dominate Survival Scavenging!",
+      description: "Master VEIN's survival with our ultimate looting guide! Find the best loot locations like Frank's Hardware Emporium for tools, weapons, and base-building materials.",
+      keywords: "VEIN, best loot, loot locations, survival guide, scavenging, Frank's Hardware Emporium, resources, tools, weapons, base building",
+    },
+    addressBar: "/vein-best-loot-locations",
+    detailsHtml: `
+    <p>In the hardcore survival simulation game <em>VEIN</em>, your lifespan is directly tied to your inventory. Whether you need to repair a vehicle, build a base, or simply survive the next wave of the undead, knowing where to find resources is critical. This guide dives deep into the <strong>VEIN best loot locations</strong>, highlighting the key areas that will take you from barely surviving to thriving. To maximize your loot capacity, make sure you have the <a href="/vein-guides/vein-game-best-backpack" class="inline-link">best backpack</a>. After gathering materials, you'll need somewhere safe to store them—check our <a href="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">best base location guide</a>.</p>
+
+<p><img src="/images/guide/guide07-01.webp" alt="vein best loot locations " width="50%" style="width: 50%;"></p>
+
+<h2><strong>1. Frank's Hardware Emporium</strong></h2>
+
+<p>Without a doubt, the Hardware Store is the premier destination for loot, especially for players looking to establish a long-term base or maintain vehicles. It is a treasure trove of tools and construction materials.</p>
+
+<h3><strong>What you should look for here:</strong></h3>
+
+<ol>
+<li><strong>End-Game Tools:</strong> This is the primary value of this location. Keep your eyes peeled on the shelves for the <strong>Industrial Welder</strong>, <strong>Circular Saw</strong>, and <strong>Industrial Driver</strong>. These are essential for repairing vehicle chassis, performing advanced modifications, or dismantling large objects found in the world.</li>
+
+<li><strong>Melee Weapons:</strong> The hardware store is a reliable spawn point for the <strong>Machete</strong>. Compared to the standard Fire Axe, the Machete offers a faster swing speed and high DPS, allowing you to clear zombies quickly without draining your stamina too fast. It is also a prime spot to find a <strong>Sledgehammer</strong> for heavy demolition.</li>
+
+<li><strong>Construction Consumables:</strong> Do not ignore the small boxes. You will need a massive amount of <strong>Nails</strong>, <strong>Screws</strong>, <strong>Heavy Bolts</strong>, and <strong>Springs</strong> to fortify your shelter.</li>
+
+<li><strong>Adhesives:</strong> You can often find industrial-sized <strong>Glue Bottles</strong> (look for the large jugs, often 70+ oz) which are vital for crafting and repairs.</li>
+
+<li><strong>Water Storage:</strong> Look for red <strong>Muck Tubs</strong> or blue plastic barrels. While you cannot fit these in your backpack, they can be physically carried to your base to serve as rain catchers or high-capacity water reservoirs.</li>
+</ol>
+
+<p><strong>Looting Strategy:</strong> The items in the hardware store are heavy. It is highly recommended to clear the surrounding zombies and then park your vehicle directly at the front door to quickly transfer heavy tools and furniture.</p>
+
+<p><img src="/images/guide/guide07-02.webp" alt="vein best loot locations 2" width="50%" style="width: 50%;"></p>
+
+<h2><strong>2. Gardening and Farming Sections</strong></h2>
+
+<p>Usually found in the outdoor aisles or specific sections of the hardware store, these areas contain the supplies necessary for sustainable living.</p>
+
+<ol>
+<li><strong>Seeds:</strong> Check the racks carefully for packets of Pumpkin, Tomato, Corn, and other crop seeds.</li>
+
+<li><strong>Soil:</strong> High-quality soil bags (look for the <strong>Weaver Solutions</strong> brand) are essential for efficient crop growth.</li>
+
+<li><strong>Large Planter Boxes:</strong> The game features large wooden planter boxes. Using the game’s heavy lifting mechanic (grabbing with both hands), you can drag these boxes into your van and take them back to base, allowing you to start a farm indoors or on a safe rooftop.</li>
+</ol>
+
+<h2><strong>3. Fire Stations</strong></h2>
+
+<p>When discussing <strong>VEIN best loot locations</strong>, the Fire Station is a must-visit location in the early game.</p>
+
+<ol>
+<li><strong>Fire Axe:</strong> This is the best all-around tool for the early game. It serves as a powerful weapon against enemies and is required for chopping down trees and breaking down doors.</li>
+
+<li><strong>Protective Gear:</strong> Firefighter coats and pants offer excellent bite and scratch protection, significantly increasing your chances of survival in close-quarters combat.</li>
+</ol>
+
+<h2><strong>4. Residential Houses and Kitchens</strong></h2>
+
+<p>Do not underestimate standard houses. While they may lack industrial tools, they are the primary source for basic survival needs.</p>
+
+<ol>
+<li><strong>Food and Water:</strong> Fridges (Mini Fridges or full-sized units) are the best places to find canned goods, soda, and fresh food. If you find a functioning Mini Fridge, you can physically carry it to your vehicle to use as extra storage.</li>
+
+<li><strong>Medical Supplies:</strong> Always check the bathroom mirror cabinets. This is where bandages, disinfectants, and painkillers spawn.</li>
+
+<li><strong>Household Items:</strong> Sewing kits, lighters, and batteries are often found scattered on bedroom dressers or living room tables.</li>
+</ol>
+
+<h2><strong>5. Vehicle and Heavy Lifting Mechanics Tips</strong></h2>
+
+<p>In <em>VEIN</em>, your best "backpack" is your car. When visiting these <strong>VEIN best loot locations</strong>, keep the following tips in mind:</p>
+
+<ol>
+<li><strong>Moving Large Objects:</strong> Many high-value items (like generators, planter boxes, and large tool chests) cannot fit in your character's inventory. You must use the interaction key to grab the object and utilize the physics engine to manually drag it into the trunk of your van or pickup truck.</li>
+
+<li><strong>Vehicle Maintenance:</strong> The industrial tools you loot (Welders, Jacks, etc.) are not just for show. You need them to strip parts from wrecked cars or repair your own vehicle. Without finding an industrial cutting tool, your ability to maintain a vehicle will be severely limited.</li>
+</ol>
+
+<h2><strong>Summary</strong></h2>
+
+<p>To survive in <em>VEIN</em>, planning your route is key. Your priority should be securing a vehicle with high cargo capacity (like a van), and then heading straight for <strong>Frank's Hardware Emporium</strong>. Once you secure an Industrial Welder and a Machete, you turn from prey into hunter. Remember, being greedy is good—but only if you have enough trunk space to haul it all home. For detailed information on all items you can find, visit our <a href="/vein-items" class="inline-link">items database</a>. To learn how to build a secure base with your gathered materials, see the <a href="/vein-wiki/building" class="inline-link">building system wiki</a>.</p>
 
     `,
   },
@@ -584,7 +584,7 @@ export const guides = [
     publishDate: "2025-11-20",
     imageUrl: "/images/guide/guide04.webp",
     imageAlt: "Professional screenshot of Revolutionary VEIN New Player Guide Part 4: Traits Selection",
-    isHome: false,
+    isHome: true,
     seo: {
       title: "VEIN New Player Guide P4: Traits Selection Guide |Risks & Rewards",
       description: "Understand the pros and cons of trait selection in VEIN on Day 1. This guide analyzes high-risk traits, offers recommendations for all player types, and helps you avoid critical mistakes for survival. Visit veingame.net for more.",

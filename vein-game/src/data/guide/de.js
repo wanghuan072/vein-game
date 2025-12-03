@@ -1,6 +1,6 @@
 export const guides = [
     {
-        "id": 10,
+        "id": 9,
         "title": "Vein-Spielguide: Wie man den besten Rucksack und wichtiges Überlebensloot findet",
         "description": "Probleme mit dem Inventar in Vein? Dieser Guide zeigt dir den besten Rucksack – den Hiking Backpack (+45,4 kg Traggewicht!) – und weiteres wichtiges Loot wie Spitzhacke, Laterne und Heizung. Reise zur Cold Brook Cavern und rüste dich fürs Überleben aus!",
         "tags": ["Vein", "Spielguide", "Rucksack", "Überleben", "Loot"],
@@ -86,104 +86,6 @@ export const guides = [
           `
     },
 
-    {
-        "id": 7,
-        "title": "Die besten Loot-Orte in VEIN: Der ultimative Guide zum Überleben und Plündern",
-        "description": "Das Überleben in VEINs Untoten-Ansturm erfordert kluges Plündern. Dieser Guide enthüllt die besten Loot-Orte, die Sie von einem kämpfenden Überlebenden zu einem ressourcenreichen Kraftpaket machen. Entdecken Sie Top-Spots wie Frank's Hardware Emporium für wichtige Werkzeuge und Materialien zum Basisbau. Dominieren Sie die Apokalypse!",
-        "tags": [
-            "VEIN",
-            "loot orte",
-            "überlebensguide",
-            "plündern",
-            "ressourcen"
-        ],
-        "publishDate": "2025-11-28",
-        "imageUrl": "/images/guide/guide07.webp",
-        "imageAlt": "Ein Spielercharakter in VEIN plündert Vorräte in einem Baumarkt, wobei die besten Loot-Orte für das Überleben hervorgehoben werden.",
-        "isHome": true,
-        "seo": {
-            "title": "VEIN Bester Loot Guide: Dominieren Sie das Plündern beim Überleben!",
-            "description": "Meistern Sie das Überleben in VEIN mit unserem ultimativen Looting-Guide! Finden Sie die besten Loot-Orte wie Frank's Hardware Emporium für Werkzeuge, Waffen und Materialien zum Basisbau.",
-            "keywords": "VEIN, bester Loot, Loot-Orte, Überlebensguide, Plündern, Frank's Hardware Emporium, Ressourcen, Werkzeuge, Waffen, Basisbau"
-        },
-        "addressBar": "/vein-best-loot-locations",
-        "detailsHtml": `
-          <p>In der Hardcore-Überlebenssimulation <em>VEIN</em> ist Ihre Lebensdauer direkt an Ihr Inventar gebunden. Egal, ob Sie ein Fahrzeug reparieren, eine Basis bauen oder einfach die nächste Welle der Untoten überleben müssen, zu wissen, wo man Ressourcen findet, ist entscheidend. Dieser Guide taucht tief in die <strong>besten Loot-Orte von VEIN</strong> ein und hebt die Schlüsselbereiche hervor, die Ihnen helfen, vom knappen Überleben zum Aufblühen zu gelangen.</p>
-      
-          <p><img src="/images/guide/guide07-01.webp" alt="vein best loot locations " width="50%" style="width: 50%;"></p>
-      
-          <h2><strong>1. Frank's Hardware Emporium (Baumarkt)</strong></h2>
-      
-          <p>Ohne Zweifel ist der Baumarkt das wichtigste Ziel für Loot, besonders für Spieler, die eine langfristige Basis errichten oder Fahrzeuge warten wollen. Es ist eine Fundgrube für Werkzeuge und Baumaterialien.</p>
-      
-          <h3 style="font-size: 1.17em; font-weight: bold;"><strong>Wonach Sie hier suchen sollten:</strong></h3>
-      
-          <ol>
-          <li><span contenteditable="false"></span><strong>End-Game-Werkzeuge:</strong> Dies ist der Hauptwert dieses Ortes. Halten Sie auf den Regalen Ausschau nach dem <strong>Industrie-Schweißgerät</strong> (Industrial Welder), der <strong>Kreissäge</strong> (Circular Saw) und dem <strong>Industrie-Schrauber</strong> (Industrial Driver). Diese sind unerlässlich für die Reparatur von Fahrzeugchassis, die Durchführung fortgeschrittener Modifikationen oder das Zerlegen großer Objekte in der Welt.</li>
-      
-          <li><span contenteditable="false"></span><strong>Nahkampfwaffen:</strong> Der Baumarkt ist ein zuverlässiger Spawnpunkt für die <strong>Machete</strong>. Im Vergleich zur Standard-Feueraxt bietet die Machete eine schnellere Schwunggeschwindigkeit und hohen DPS, sodass Sie Zombies schnell beseitigen können, ohne Ihre Ausdauer zu schnell zu erschöpfen. Es ist auch ein guter Ort, um einen <strong>Vorschlaghammer</strong> (Sledgehammer) für schwere Abrissarbeiten zu finden.</li>
-      
-          <li><span contenteditable="false"></span><strong>Verbrauchsmaterialien für den Bau:</strong> Ignorieren Sie die kleinen Kisten nicht. Sie benötigen eine riesige Menge an <strong>Nägeln</strong> (Nails), <strong>Schrauben</strong> (Screws), <strong>Schweren Bolzen</strong> (Heavy Bolts) und <strong>Federn</strong> (Springs), um Ihren Unterschlupf zu befestigen.</li>
-      
-          <li><span contenteditable="false"></span><strong>Klebstoffe:</strong> Sie können oft industriegroße <strong>Kleberflaschen</strong> (Glue Bottles) finden (achten Sie auf die großen Kanister, oft 70+ oz), die für die Herstellung und Reparaturen unerlässlich sind.</li>
-      
-          <li><span contenteditable="false"></span><strong>Wasserspeicher:</strong> Suchen Sie nach roten <strong>Mörtelwannen</strong> (Muck Tubs) oder blauen Plastikfässern. Obwohl Sie diese nicht in Ihren Rucksack stecken können, können sie physisch zu Ihrer Basis getragen werden, um als Regenauffänger oder Wasserreservoirs mit hoher Kapazität zu dienen.</li>
-          </ol>
-      
-          <p><strong>Plünder-Strategie:</strong> Die Gegenstände im Baumarkt sind schwer. Es wird dringend empfohlen, die umliegenden Zombies zu beseitigen und dann Ihr Fahrzeug direkt vor der Eingangstür zu parken, um schwere Werkzeuge und Möbel schnell umzuladen.</p>
-      
-          <p><img src="/images/guide/guide07-02.webp" alt="vein best loot locations 2" width="50%" style="width: 50%;"></p>
-      
-          <h2><strong>2. Garten- und Landwirtschaftsabteilungen</strong></h2>
-      
-          <p>Diese Bereiche, die sich normalerweise in den Außengängen oder bestimmten Abschnitten des Baumarkts befinden, enthalten die notwendigen Vorräte für ein nachhaltiges Leben.</p>
-      
-          <ol>
-          <li><span contenteditable="false"></span><strong>Samen:</strong> Überprüfen Sie die Regale sorgfältig auf Päckchen mit Kürbis-, Tomaten-, Mais- und anderen Erntesamen.</li>
-      
-          <li><span contenteditable="false"></span><strong>Erde:</strong> Hochwertige Erdsäcke (achten Sie auf die Marke <strong>Weaver Solutions</strong>) sind für ein effizientes Pflanzenwachstum unerlässlich.</li>
-      
-          <li><span contenteditable="false"></span><strong>Große Pflanzkästen:</strong> Das Spiel verfügt über große hölzerne Pflanzkästen. Mithilfe der Mechanik für schweres Heben (mit beiden Händen greifen) können Sie diese Kästen in Ihren Van ziehen und zur Basis mitnehmen, wodurch Sie drinnen oder auf einem sicheren Dachboden mit einer Farm beginnen können.</li>
-          </ol>
-      
-          <h2><strong>3. Feuerwachen</strong></h2>
-      
-          <p>Wenn es um die <strong>besten Loot-Orte von VEIN</strong> geht, ist die Feuerwache in der frühen Spielphase ein Muss.</p>
-      
-          <ol>
-          <li><span contenteditable="false"></span><strong>Feueraxt (Fire Axe):</strong> Dies ist das beste Allzweckwerkzeug für die frühe Spielphase. Sie dient als mächtige Waffe gegen Feinde und wird benötigt, um Bäume zu fällen und Türen aufzubrechen.</li>
-      
-          <li><span contenteditable="false"></span><strong>Schutzausrüstung:</strong> Feuerwehrjacken und -hosen bieten hervorragenden Schutz vor Bissen und Kratzern, was Ihre Überlebenschancen im Nahkampf erheblich erhöht.</li>
-          </ol>
-      
-          <h2><strong>4. Wohnhäuser und Küchen</strong></h2>
-      
-          <p>Unterschätzen Sie normale Häuser nicht. Obwohl ihnen industrielle Werkzeuge fehlen, sind sie die Hauptquelle für grundlegende Überlebensbedürfnisse.</p>
-      
-          <ol>
-          <li><span contenteditable="false"></span><strong>Nahrung und Wasser:</strong> Kühlschränke (Mini-Kühlschränke oder große Einheiten) sind die besten Orte, um Konserven, Limonade und frische Lebensmittel zu finden. Wenn Sie einen funktionierenden Mini-Kühlschrank finden, können Sie ihn physisch zu Ihrem Fahrzeug tragen, um ihn als zusätzlichen Lagerraum zu nutzen.</li>
-      
-          <li><span contenteditable="false"></span><strong>Medizinische Vorräte:</strong> Überprüfen Sie immer die Spiegelschränke im Bad. Hier spawnen Bandagen, Desinfektionsmittel und Schmerzmittel.</li>
-      
-          <li><span contenteditable="false"></span><strong>Haushaltsgegenstände:</strong> Nähzeug, Feuerzeuge und Batterien sind oft auf Kommoden in Schlafzimmern oder Tischen im Wohnzimmer verstreut zu finden.</li>
-          </ol>
-      
-          <h2><strong>5. Tipps zu Fahrzeug und Schwerlast-Mechanik</strong></h2>
-      
-          <p>In <em>VEIN</em> ist Ihr bestes "Rucksack" Ihr Auto. Beachten Sie beim Besuch dieser <strong>besten Loot-Orte von VEIN</strong> die folgenden Tipps:</p>
-      
-          <ol>
-          <li><span contenteditable="false"></span><strong>Bewegen großer Objekte:</strong> Viele hochwertige Gegenstände (wie Generatoren, Pflanzkästen und große Werkzeugkisten) passen nicht in das Inventar Ihres Charakters. Sie müssen die Interaktionstaste verwenden, um das Objekt zu greifen und die Physik-Engine nutzen, um es manuell in den Kofferraum Ihres Vans oder Pickup-Trucks zu ziehen.</li>
-      
-          <li><span contenteditable="false"></span><strong>Fahrzeugwartung:</strong> Die geplünderten Industriewerkzeuge (Schweißgeräte, Wagenheber usw.) sind nicht nur zur Dekoration da. Sie benötigen sie, um Teile von Wracks zu entfernen oder Ihr eigenes Fahrzeug zu reparieren. Ohne ein industrielles Schneidwerkzeug zu finden, wird Ihre Fähigkeit, ein Fahrzeug zu warten, stark eingeschränkt sein.</li>
-          </ol>
-      
-          <h2><strong>Zusammenfassung</strong></h2>
-      
-          <p>Um in <em>VEIN</em> zu überleben, ist die Planung Ihrer Route entscheidend. Ihre Priorität sollte darin liegen, ein Fahrzeug mit hoher Ladekapazität (wie einen Van) zu sichern und dann direkt zu <strong>Frank's Hardware Emporium</strong> zu fahren. Sobald Sie ein Industrie-Schweißgerät und eine Machete gesichert haben, werden Sie von Gejagten zu Jägern. Denken Sie daran, gierig zu sein ist gut – aber nur, wenn Sie genügend Laderaum haben, um alles nach Hause zu transportieren.</p>
-      
-          `
-    },
     {
         "id": 8,
         "title": "VEIN Bester Basis-Standort: Der ultimative Guide zur Auswahl der Überlebensbasis",
@@ -357,6 +259,106 @@ export const guides = [
       
           `
     },
+
+    {
+        "id": 7,
+        "title": "Die besten Loot-Orte in VEIN: Der ultimative Guide zum Überleben und Plündern",
+        "description": "Das Überleben in VEINs Untoten-Ansturm erfordert kluges Plündern. Dieser Guide enthüllt die besten Loot-Orte, die Sie von einem kämpfenden Überlebenden zu einem ressourcenreichen Kraftpaket machen. Entdecken Sie Top-Spots wie Frank's Hardware Emporium für wichtige Werkzeuge und Materialien zum Basisbau. Dominieren Sie die Apokalypse!",
+        "tags": [
+            "VEIN",
+            "loot orte",
+            "überlebensguide",
+            "plündern",
+            "ressourcen"
+        ],
+        "publishDate": "2025-11-28",
+        "imageUrl": "/images/guide/guide07.webp",
+        "imageAlt": "Ein Spielercharakter in VEIN plündert Vorräte in einem Baumarkt, wobei die besten Loot-Orte für das Überleben hervorgehoben werden.",
+        "isHome": true,
+        "seo": {
+            "title": "VEIN Bester Loot Guide: Dominieren Sie das Plündern beim Überleben!",
+            "description": "Meistern Sie das Überleben in VEIN mit unserem ultimativen Looting-Guide! Finden Sie die besten Loot-Orte wie Frank's Hardware Emporium für Werkzeuge, Waffen und Materialien zum Basisbau.",
+            "keywords": "VEIN, bester Loot, Loot-Orte, Überlebensguide, Plündern, Frank's Hardware Emporium, Ressourcen, Werkzeuge, Waffen, Basisbau"
+        },
+        "addressBar": "/vein-best-loot-locations",
+        "detailsHtml": `
+          <p>In der Hardcore-Überlebenssimulation <em>VEIN</em> ist Ihre Lebensdauer direkt an Ihr Inventar gebunden. Egal, ob Sie ein Fahrzeug reparieren, eine Basis bauen oder einfach die nächste Welle der Untoten überleben müssen, zu wissen, wo man Ressourcen findet, ist entscheidend. Dieser Guide taucht tief in die <strong>besten Loot-Orte von VEIN</strong> ein und hebt die Schlüsselbereiche hervor, die Ihnen helfen, vom knappen Überleben zum Aufblühen zu gelangen.</p>
+      
+          <p><img src="/images/guide/guide07-01.webp" alt="vein best loot locations " width="50%" style="width: 50%;"></p>
+      
+          <h2><strong>1. Frank's Hardware Emporium (Baumarkt)</strong></h2>
+      
+          <p>Ohne Zweifel ist der Baumarkt das wichtigste Ziel für Loot, besonders für Spieler, die eine langfristige Basis errichten oder Fahrzeuge warten wollen. Es ist eine Fundgrube für Werkzeuge und Baumaterialien.</p>
+      
+          <h3 style="font-size: 1.17em; font-weight: bold;"><strong>Wonach Sie hier suchen sollten:</strong></h3>
+      
+          <ol>
+          <li><span contenteditable="false"></span><strong>End-Game-Werkzeuge:</strong> Dies ist der Hauptwert dieses Ortes. Halten Sie auf den Regalen Ausschau nach dem <strong>Industrie-Schweißgerät</strong> (Industrial Welder), der <strong>Kreissäge</strong> (Circular Saw) und dem <strong>Industrie-Schrauber</strong> (Industrial Driver). Diese sind unerlässlich für die Reparatur von Fahrzeugchassis, die Durchführung fortgeschrittener Modifikationen oder das Zerlegen großer Objekte in der Welt.</li>
+      
+          <li><span contenteditable="false"></span><strong>Nahkampfwaffen:</strong> Der Baumarkt ist ein zuverlässiger Spawnpunkt für die <strong>Machete</strong>. Im Vergleich zur Standard-Feueraxt bietet die Machete eine schnellere Schwunggeschwindigkeit und hohen DPS, sodass Sie Zombies schnell beseitigen können, ohne Ihre Ausdauer zu schnell zu erschöpfen. Es ist auch ein guter Ort, um einen <strong>Vorschlaghammer</strong> (Sledgehammer) für schwere Abrissarbeiten zu finden.</li>
+      
+          <li><span contenteditable="false"></span><strong>Verbrauchsmaterialien für den Bau:</strong> Ignorieren Sie die kleinen Kisten nicht. Sie benötigen eine riesige Menge an <strong>Nägeln</strong> (Nails), <strong>Schrauben</strong> (Screws), <strong>Schweren Bolzen</strong> (Heavy Bolts) und <strong>Federn</strong> (Springs), um Ihren Unterschlupf zu befestigen.</li>
+      
+          <li><span contenteditable="false"></span><strong>Klebstoffe:</strong> Sie können oft industriegroße <strong>Kleberflaschen</strong> (Glue Bottles) finden (achten Sie auf die großen Kanister, oft 70+ oz), die für die Herstellung und Reparaturen unerlässlich sind.</li>
+      
+          <li><span contenteditable="false"></span><strong>Wasserspeicher:</strong> Suchen Sie nach roten <strong>Mörtelwannen</strong> (Muck Tubs) oder blauen Plastikfässern. Obwohl Sie diese nicht in Ihren Rucksack stecken können, können sie physisch zu Ihrer Basis getragen werden, um als Regenauffänger oder Wasserreservoirs mit hoher Kapazität zu dienen.</li>
+          </ol>
+      
+          <p><strong>Plünder-Strategie:</strong> Die Gegenstände im Baumarkt sind schwer. Es wird dringend empfohlen, die umliegenden Zombies zu beseitigen und dann Ihr Fahrzeug direkt vor der Eingangstür zu parken, um schwere Werkzeuge und Möbel schnell umzuladen.</p>
+      
+          <p><img src="/images/guide/guide07-02.webp" alt="vein best loot locations 2" width="50%" style="width: 50%;"></p>
+      
+          <h2><strong>2. Garten- und Landwirtschaftsabteilungen</strong></h2>
+      
+          <p>Diese Bereiche, die sich normalerweise in den Außengängen oder bestimmten Abschnitten des Baumarkts befinden, enthalten die notwendigen Vorräte für ein nachhaltiges Leben.</p>
+      
+          <ol>
+          <li><span contenteditable="false"></span><strong>Samen:</strong> Überprüfen Sie die Regale sorgfältig auf Päckchen mit Kürbis-, Tomaten-, Mais- und anderen Erntesamen.</li>
+      
+          <li><span contenteditable="false"></span><strong>Erde:</strong> Hochwertige Erdsäcke (achten Sie auf die Marke <strong>Weaver Solutions</strong>) sind für ein effizientes Pflanzenwachstum unerlässlich.</li>
+      
+          <li><span contenteditable="false"></span><strong>Große Pflanzkästen:</strong> Das Spiel verfügt über große hölzerne Pflanzkästen. Mithilfe der Mechanik für schweres Heben (mit beiden Händen greifen) können Sie diese Kästen in Ihren Van ziehen und zur Basis mitnehmen, wodurch Sie drinnen oder auf einem sicheren Dachboden mit einer Farm beginnen können.</li>
+          </ol>
+      
+          <h2><strong>3. Feuerwachen</strong></h2>
+      
+          <p>Wenn es um die <strong>besten Loot-Orte von VEIN</strong> geht, ist die Feuerwache in der frühen Spielphase ein Muss.</p>
+      
+          <ol>
+          <li><span contenteditable="false"></span><strong>Feueraxt (Fire Axe):</strong> Dies ist das beste Allzweckwerkzeug für die frühe Spielphase. Sie dient als mächtige Waffe gegen Feinde und wird benötigt, um Bäume zu fällen und Türen aufzubrechen.</li>
+      
+          <li><span contenteditable="false"></span><strong>Schutzausrüstung:</strong> Feuerwehrjacken und -hosen bieten hervorragenden Schutz vor Bissen und Kratzern, was Ihre Überlebenschancen im Nahkampf erheblich erhöht.</li>
+          </ol>
+      
+          <h2><strong>4. Wohnhäuser und Küchen</strong></h2>
+      
+          <p>Unterschätzen Sie normale Häuser nicht. Obwohl ihnen industrielle Werkzeuge fehlen, sind sie die Hauptquelle für grundlegende Überlebensbedürfnisse.</p>
+      
+          <ol>
+          <li><span contenteditable="false"></span><strong>Nahrung und Wasser:</strong> Kühlschränke (Mini-Kühlschränke oder große Einheiten) sind die besten Orte, um Konserven, Limonade und frische Lebensmittel zu finden. Wenn Sie einen funktionierenden Mini-Kühlschrank finden, können Sie ihn physisch zu Ihrem Fahrzeug tragen, um ihn als zusätzlichen Lagerraum zu nutzen.</li>
+      
+          <li><span contenteditable="false"></span><strong>Medizinische Vorräte:</strong> Überprüfen Sie immer die Spiegelschränke im Bad. Hier spawnen Bandagen, Desinfektionsmittel und Schmerzmittel.</li>
+      
+          <li><span contenteditable="false"></span><strong>Haushaltsgegenstände:</strong> Nähzeug, Feuerzeuge und Batterien sind oft auf Kommoden in Schlafzimmern oder Tischen im Wohnzimmer verstreut zu finden.</li>
+          </ol>
+      
+          <h2><strong>5. Tipps zu Fahrzeug und Schwerlast-Mechanik</strong></h2>
+      
+          <p>In <em>VEIN</em> ist Ihr bestes "Rucksack" Ihr Auto. Beachten Sie beim Besuch dieser <strong>besten Loot-Orte von VEIN</strong> die folgenden Tipps:</p>
+      
+          <ol>
+          <li><span contenteditable="false"></span><strong>Bewegen großer Objekte:</strong> Viele hochwertige Gegenstände (wie Generatoren, Pflanzkästen und große Werkzeugkisten) passen nicht in das Inventar Ihres Charakters. Sie müssen die Interaktionstaste verwenden, um das Objekt zu greifen und die Physik-Engine nutzen, um es manuell in den Kofferraum Ihres Vans oder Pickup-Trucks zu ziehen.</li>
+      
+          <li><span contenteditable="false"></span><strong>Fahrzeugwartung:</strong> Die geplünderten Industriewerkzeuge (Schweißgeräte, Wagenheber usw.) sind nicht nur zur Dekoration da. Sie benötigen sie, um Teile von Wracks zu entfernen oder Ihr eigenes Fahrzeug zu reparieren. Ohne ein industrielles Schneidwerkzeug zu finden, wird Ihre Fähigkeit, ein Fahrzeug zu warten, stark eingeschränkt sein.</li>
+          </ol>
+      
+          <h2><strong>Zusammenfassung</strong></h2>
+      
+          <p>Um in <em>VEIN</em> zu überleben, ist die Planung Ihrer Route entscheidend. Ihre Priorität sollte darin liegen, ein Fahrzeug mit hoher Ladekapazität (wie einen Van) zu sichern und dann direkt zu <strong>Frank's Hardware Emporium</strong> zu fahren. Sobald Sie ein Industrie-Schweißgerät und eine Machete gesichert haben, werden Sie von Gejagten zu Jägern. Denken Sie daran, gierig zu sein ist gut – aber nur, wenn Sie genügend Laderaum haben, um alles nach Hause zu transportieren.</p>
+      
+          `
+    },
+
     {
         "id": 1,
         "title": "VEIN New Player Guide Teil 1: Tag 1 Must-Know! Der ultimative Guide zu den Welt-Einstellungen",
@@ -615,7 +617,7 @@ export const guides = [
         "publishDate": "2025-11-20",
         "imageUrl": "/images/guide/guide04.webp",
         "imageAlt": "Professioneller Screenshot des Revolutionären VEIN New Player Guide Teil 4: Trait-Auswahl",
-        "isHome": false,
+        "isHome": true,
         "seo": {
             "title": "VEIN New Player Guide P4: Trait-Auswahl Guide | Risiken & Belohnungen",
             "description": "Verstehen Sie die Vor- und Nachteile der Trait-Auswahl in VEIN an Tag 1. Dieser Guide analysiert Traits mit hohem Risiko, gibt Empfehlungen für alle Spielertypen und hilft Ihnen, kritische Fehler für das Überleben zu vermeiden. Besuchen Sie veingame.net für mehr.",
