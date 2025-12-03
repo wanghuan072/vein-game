@@ -16,7 +16,7 @@
                   href="https://store.steampowered.com/app/1857950/VEIN/"
                   class="btn-hero btn-steam"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noreferrer nofollow"
                 >
                   <span>{{ $t('homePage.hero.button1') }}</span>
                 </a>
