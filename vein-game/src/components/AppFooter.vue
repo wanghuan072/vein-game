@@ -10,6 +10,18 @@
           <p class="footer-text">
             Comprehensive VEIN game resources including guides, wiki, items database, and interactive maps to help you survive and thrive.
           </p>
+          <div class="social-links">
+            <a href="https://x.com/0tZ3wS5T6e13110/status/1996416343588114806" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on X">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="social-icon">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61584615331727" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="social-icon">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+              </svg>
+            </a>
+          </div>
         </div>
         <div class="link-column">
           <h2>Navigate</h2>
@@ -89,6 +101,46 @@
   margin-bottom: 16px;
 }
 
+.social-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.social-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: rgba(255, 54, 54, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 54, 54, 0.3);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+  transform: scale(1.1);
+}
+
 .footer-brand{
   width: 30%;
 }
@@ -162,6 +214,21 @@
   .footer-text {
     font-size: 12px;
     margin-bottom: 10px;
+  }
+
+  .social-links {
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  .social-link {
+    width: 36px;
+    height: 36px;
+  }
+
+  .social-icon {
+    width: 18px;
+    height: 18px;
   }
 
   .link-column h2 {
