@@ -131,7 +131,7 @@ export default {
         badge: 'VEIN Game · Post-Apocalyptic Survival Sandbox',
         title: 'VEIN · Survive Beyond the Collapse',
         subtitle: 'VEIN game is a post-apocalyptic survival multiplayer sandbox game. Gather supplies, explore abandoned buildings, combat bandits, defend your home, and rebuild society—whether alone or with friends. As seasons change, VEIN game world evolves with persistent, long-scale random events.',
-        button1: 'View on Steam',
+        button1: 'View Map',
         button2: 'Explore Guides',
         stats: {
           releaseDate: 'Release Date',

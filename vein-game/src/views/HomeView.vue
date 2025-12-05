@@ -12,14 +12,12 @@
                 {{ $t('homePage.hero.subtitle') }}
               </p>
               <div class="hero-actions">
-                <a
-                  href="https://store.steampowered.com/app/1857950/VEIN/"
+                <router-link
+                  to="/vein-map"
                   class="btn-hero btn-steam"
-                  target="_blank"
-                  rel="noreferrer nofollow"
                 >
                   <span>{{ $t('homePage.hero.button1') }}</span>
-                </a>
+                </router-link>
                 <a href="/vein-guides" class="btn-hero btn-secondary">{{ $t('homePage.hero.button2') }}</a>
               </div>
               <div class="hero-stats">
@@ -508,7 +506,7 @@ Vein is a beautiful well crafted world that is only going to get better!"
                 href="https://store.steampowered.com/app/1857950/VEIN/"
                 class="btn-hero btn-steam"
                 target="_blank"
-                rel="noreferrer"
+                rel="noreferrer nofollow"
               >
                 Get Early Access
               </a>
@@ -516,7 +514,7 @@ Vein is a beautiful well crafted world that is only going to get better!"
                 href="https://vein.gg/"
                 class="btn-hero btn-secondary"
                 target="_blank"
-                rel="noreferrer"
+                rel="noreferrer nofollow"
               >
                 Follow Official Site
               </a>

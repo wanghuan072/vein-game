@@ -11,12 +11,12 @@
             Comprehensive VEIN game resources including guides, wiki, items database, and interactive maps to help you survive and thrive.
           </p>
           <div class="social-links">
-            <a href="https://x.com/0tZ3wS5T6e13110/status/1996416343588114806" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on X">
+            <a href="https://x.com/0tZ3wS5T6e13110/status/1996416343588114806" target="_blank" rel="noopener noreferrer nofollow" class="social-link" aria-label="Follow us on X">
               <svg viewBox="0 0 24 24" fill="currentColor" class="social-icon">
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
               </svg>
             </a>
-            <a href="https://www.facebook.com/profile.php?id=61584615331727" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on Facebook">
+            <a href="https://www.facebook.com/profile.php?id=61584615331727" target="_blank" rel="noopener noreferrer nofollow" class="social-link" aria-label="Follow us on Facebook">
               <svg viewBox="0 0 24 24" fill="currentColor" class="social-icon">
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
               </svg>

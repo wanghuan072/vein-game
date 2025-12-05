@@ -131,7 +131,7 @@ export default {
       "badge": "VEIN Game · Postapokalyptische Survival-Sandbox",
       "title": "VEIN · Überleben Sie den Kollaps",
       "subtitle": "VEIN Game ist ein postapokalyptisches Multiplayer-Survival-Sandbox-Spiel. Sammeln Sie Vorräte, erkunden Sie verlassene Gebäude, bekämpfen Sie Banditen, verteidigen Sie Ihr Zuhause und bauen Sie die Gesellschaft wieder auf – ob allein oder mit Freunden. Im Wandel der Jahreszeiten entwickelt sich die VEIN-Spielwelt mit persistenten, langfristigen zufälligen Ereignissen weiter.",
-      "button1": "Auf Steam ansehen",
+      "button1": "Karte ansehen",
       "button2": "Guides erkunden",
       "stats": {
         "releaseDate": "Veröffentlichungsdatum",
