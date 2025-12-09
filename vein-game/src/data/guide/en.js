@@ -1,4 +1,153 @@
 export const guides = [
+    {
+        id: 11,
+        title: "VEIN Game Rook Cavern Guide: The Ultimate Mining Spot",
+        description: "Navigate the dark depths of VEIN's Rook Cavern! This guide unveils the location, essential gear, and vital resources like Hematite and Graphite for crafting Steel, paving your way through mid-to-late game survival. Prepare for zombies and darkness!",
+        tags: ["VEIN Game","Rook Cavern","Mining Guide","Hematite","Graphite"],
+        publishDate: "2025-12-09",
+        imageUrl: "/images/guide/guide11.webp",
+        imageAlt: "VEIN Game Rook Cavern",
+        isHome: true,
+        seo: {
+          title: "VEIN Game Rook Cavern Guide: Location, Hematite, and Graphite Mining",
+          description: "Looking for the Rook Cavern in VEIN? Our complete guide covers the map location, essential gear, and how to mine Hematite and Graphite safely in the dark.",
+          keywords: "vein game rook cavern, mining, guide, hematite, graphite, steel, survival, zombies, location, gear, resources",
+        },
+        addressBar: "/vein-game-rook-cavern-guide",
+        detailsHtml: `
+        <p>
+        If you are advancing through the technology tree in <strong>VEIN</strong>, you will eventually hit a wall. You need better metals, specifically Steel. To get Steel, you need <strong>Hematite</strong> and <strong>Graphite</strong>.
+    </p>
+    <p>
+        These resources aren't found in typical houses or gas stations. You need to go underground.
+    </p>
+    <p>
+        This guide will show you everything you need to know about the <strong>VEIN game Rook Cavern</strong>—the most critical mining location for mid-to-late game survival.
+    </p>
+    <h2>
+        <strong>Where is the Rook Cavern Located?</strong>
+    </h2>
+    <p>
+        Finding the Rook Cavern can be tricky if you don't know where to look. While the game map can be vast, the Rook Cavern is typically located in the <strong>mountainous regions</strong> of the map (often towards the Southeastern section, depending on the current map version).
+    </p>
+    <p>
+        <img src="/images/guide/guide11-01.webp" alt="vein game Rook Cavern Location" width="50%" style="width: 50%;">
+    </p>
+    <h3 style="font-size: 1.17em; font-weight: bold;">
+        <strong>Visual Landmarks:</strong>
+    </h3>
+    <ol>
+        <li>
+            
+            Look for a distinct <strong>Mine Entrance</strong> reinforced with wooden beams.
+        </li>
+        <li>
+            
+            The surrounding area is usually rocky and elevated.
+        </li>
+        <li>
+            
+            <em>Tip: Check our <a href="/vein-map" rel="noopener noreferrer" target="_blank">Interactive Map</a> to see the exact pin location.</em>
+        </li>
+    </ol>
+    <p>
+        <img src="/images/guide/guide11-02.webp" alt="vein game rook cavern entrance" width="50%" style="width: 50%;">
+    </p>
+    <h2>
+        <strong>Essential Gear: Don't Enter Blindly</strong>
+    </h2>
+    <p>
+        The Rook Cavern is pitch black and dangerous. Do not attempt to enter this area fresh off a spawn. Before you head to the <strong>VEIN game Rook Cavern</strong>, make sure you have the following loadout:
+    </p>
+    <ol>
+        <li>
+            
+            <strong>Light Source (Crucial): Headlamp:</strong> The best option as it keeps your hands free for weapons or pickaxes.
+        </li>
+        <li>
+            
+            <strong>Flashlight:</strong> Good, but you have to drop it to fight or mine.
+        </li>
+        <li>
+            
+            <strong>Spare Batteries:</strong> Bring at least 2-3 stacks. Getting stuck in the dark here is a death sentence.
+        </li>
+        <li>
+            
+            <strong>Mining Tools: Pickaxe:</strong> Essential for harvesting ore nodes!
+        </li>
+        <li>
+            
+            <strong>Improved Pickaxe:</strong> Can be used in mining and is strong enough to break weak cave walls (Recommended).
+        </li>
+        <li>
+            
+            <strong>Weaponry:</strong> A shotgun or a high-durability melee weapon. The caves are tight, and zombies can corner you easily.
+        </li>
+        <li>
+            
+            <strong>Medical Supplies:</strong> Bandages and disinfectants.
+        </li>
+    </ol>
+    <h2>
+        <strong>Resources: What Can You Find in Rook Cavern?</strong>
+    </h2>
+    <p>
+        Why is every player searching for vein game rook cavern? Because of the loot. This is a treasure trove for crafters.
+    </p>
+    <p>
+        <img src="/images/guide/guide11-03.webp" alt="Hematite vein" width="50%" style="width: 50%;">
+    </p>
+    <ol>
+        <li>
+            
+            <strong>Hematite (Iron Ore):</strong> The reddish/black rocks. This is essential for smelting Iron Ingots and eventually creating Steel.
+        </li>
+        <li>
+            
+            <strong>Graphite:</strong> Used for advanced crafting components.
+        </li>
+        <li>
+            
+            <strong>Coal:</strong> Useful for fueling your furnaces back at base.
+        </li>
+        <li>
+            
+            <strong>Limestone:</strong> Often found as a byproduct.
+        </li>
+    </ol>
+    <p>
+        <strong>Pro Tip:</strong>
+        <span> Inventory management is key. Ore is heavy. Bring a vehicle and park it near the entrance so you can offload your backpack and go back in for more.</span>
+    </p>
+    <h2>
+        <strong>Dangers and Enemies</strong>
+    </h2>
+    <p>
+        The Rook Cavern isn't just an ore mine; it's a dungeon.
+    </p>
+    <ol>
+        <li>
+            
+            <strong>Zombie Spawns:</strong> Zombies do spawn inside the cave. In the narrow tunnels, it is very difficult to dodge attacks.
+        </li>
+        <li>
+            
+            <strong>Getting Lost:</strong> The cavern system has multiple branches. It is easy to lose your sense of direction. We recommend sticking to the right wall (or left) so you can find your way back out.
+        </li>
+    </ol>
+    <h2>
+        <strong>Summary</strong>
+    </h2>
+    <p>
+        Mastering the <strong>VEIN game Rook Cavern</strong> is a milestone in your survival journey. Once you secure a steady supply of Hematite and Graphite, you can upgrade your base defenses and weapons significantly.
+    </p>
+    <p>
+        <em>Need help crafting with these ores? Check out our <a href="/vein-items" rel="noopener noreferrer" target="_blank">Crafting Recipes</a> page!</em>
+    </p>
+    
+        `
+      },
   {
     id: 9,
     title: "Vein Game Guide: How to Find the Best Backpack and Essential Survival Loot",
@@ -42,9 +191,9 @@ export const guides = [
 <p>To find the Hiking Backpack, you need to travel to the central area of the map.</p>
 
 <ol>
-    <li data-list="ordered"><strong>Find the Lake:</strong> Locate the large lake situated centrally between the major towns (Sanac and Redford).</li>
-    <li data-list="ordered"><strong>Locate the Cave Entrance:</strong> On the hillside bordering the lake, look for a dirt path leading off the main road. This path leads to a large rock formation containing the entrance to <strong>Cold Brook Cavern</strong>.</li>
-    <li data-list="ordered"><strong>Retrieve the Backpack:</strong> Enter the cave. Inside, you will typically find a small campsite setup. The <strong>Hiking Backpack</strong> is usually spawned sitting on top of a rock next to a sleeping bag.</li>
+    <li><strong>Find the Lake:</strong> Locate the large lake situated centrally between the major towns (Sanac and Redford).</li>
+    <li><strong>Locate the Cave Entrance:</strong> On the hillside bordering the lake, look for a dirt path leading off the main road. This path leads to a large rock formation containing the entrance to <strong>Cold Brook Cavern</strong>.</li>
+    <li><strong>Retrieve the Backpack:</strong> Enter the cave. Inside, you will typically find a small campsite setup. The <strong>Hiking Backpack</strong> is usually spawned sitting on top of a rock next to a sleeping bag.</li>
 </ol>
 
 <p>
@@ -763,7 +912,7 @@ export const guides = [
     publishDate: "2025-11-20",
     imageUrl: "/images/guide/guide06.webp",
     imageAlt: "VEIN gameplay scene featuring a player exploring the Clinton Correctional Facility in search of the armory.",
-    isHome: true,
+    isHome: false,
     seo: {
       title: "VEIN Prison Armory Guide: Find Clinton Correctional Facility - Loot!",
       description: "Discover the exact location of the VEIN prison armory in Clinton Correctional Facility. Our guide provides a step-by-step walkthrough to find high-tier weapons and ammo.",
@@ -887,6 +1036,8 @@ Inside the armory, you’ll find these high-value items (loot varies slightly by
 
     `,
   },
+
+  
 
   
 

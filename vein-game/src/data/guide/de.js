@@ -1,5 +1,139 @@
 export const guides = [
     {
+        id: 11,
+        title: "VEIN Spiel Rook Cavern Guide: Der ultimative Bergbaustandort",
+        description: "Navigiere durch die dunklen Tiefen der Rook Cavern in VEIN! Dieser Guide enthüllt den Standort, wichtige Ausrüstungen und lebenswichtige Ressourcen wie Hämatit und Graphit, um Stahl zu schmieden und deinen Weg durch das Überleben im mittleren bis späten Spiel zu ebnen. Bereite dich auf Zombies und Dunkelheit vor!",
+        tags: ["VEIN Spiel", "Rook Cavern", "Bergbau-Guide", "Hämatit", "Graphit"],
+        publishDate: "2025-12-09",
+        imageUrl: "/images/guide/guide11.webp",
+        imageAlt: "VEIN Spiel Rook Cavern",
+        isHome: true,
+        seo: {
+          title: "VEIN Spiel Rook Cavern Guide: Standort, Hämatit und Graphit Bergbau",
+          description: "Bist du auf der Suche nach der Rook Cavern in VEIN? Unser vollständiger Guide deckt den Kartenstandort, essentielle Ausrüstungen und wie du Hämatit und Graphit sicher im Dunkeln abbauen kannst, ab.",
+          keywords: "vein spiel rook cavern, bergbau, guide, hämatit, graphit, stahl, überleben, zombies, standort, ausrüstung, ressourcen"
+        },
+        addressBar: "/vein-game-rook-cavern-guide",
+        detailsHtml: `
+        <p>
+        Wenn du im <strong>VEIN</strong>-Spiel den Technologiebereich weiter durchgehst, wirst du irgendwann auf eine Wand stoßen. Du benötigst bessere Metalle, speziell Stahl. Um Stahl zu bekommen, benötigst du <strong>Hämatit</strong> und <strong>Graphit</strong>.
+    </p>
+    <p>
+        Diese Ressourcen sind nicht in typischen Häusern oder Tankstellen zu finden. Du musst unter die Erde gehen.
+    </p>
+    <p>
+        Dieser Guide zeigt dir alles, was du über die <strong>VEIN Spiel Rook Cavern</strong> wissen musst – den wichtigsten Bergbauort für das Überleben im mittleren bis späten Spiel.
+    </p>
+    <h2>
+        <strong>Wo befindet sich die Rook Cavern?</strong>
+    </h2>
+    <p>
+        Die Rook Cavern zu finden, kann schwierig sein, wenn du nicht weißt, wo du suchen musst. Obwohl die Karte des Spiels weitläufig ist, befindet sich die Rook Cavern normalerweise in den <strong>bergigen Regionen</strong> der Karte (oft im Südosten, je nach aktueller Kartenversion).
+    </p>
+    <p>
+        <img src="/images/guide/guide11-01.webp" alt="vein game Rook Cavern Standort" width="50%" style="width: 50%;">
+    </p>
+    <h3 style="font-size: 1.17em; font-weight: bold;">
+        <strong>Visuelle Wahrzeichen:</strong>
+    </h3>
+    <ol>
+        <li>
+            Suche nach einem markanten <strong>Mineingang</strong>, der mit Holzbohlen verstärkt ist.
+        </li>
+        <li>
+            Das umliegende Gebiet ist in der Regel felsig und erhöht.
+        </li>
+        <li>
+            <em>Tipp: Überprüfe unsere <a href="/vein-map" rel="noopener noreferrer" target="_blank">Interaktive Karte</a>, um den genauen Pin-Standort zu sehen.</em>
+        </li>
+    </ol>
+    <p>
+        <img src="/images/guide/guide11-02.webp" alt="vein game Rook Cavern Eingang" width="50%" style="width: 50%;">
+    </p>
+    <h2>
+        <strong>Essentielle Ausrüstung: Gehe nicht blind hinein</strong>
+    </h2>
+    <p>
+        Die Rook Cavern ist stockdunkel und gefährlich. Versuche nicht, diesen Bereich direkt nach dem Spawnen zu betreten. Stelle sicher, dass du die folgende Ausrüstung hast, bevor du in die <strong>VEIN Spiel Rook Cavern</strong> gehst:
+    </p>
+    <ol>
+        <li>
+            <strong>Lichtquelle (Wichtig): Stirnlampe:</strong> Die beste Option, da sie die Hände für Waffen oder Spitzhacken frei hält.
+        </li>
+        <li>
+            <strong>Taschenlampe:</strong> Gut, aber du musst sie ablegen, um zu kämpfen oder zu schürfen.
+        </li>
+        <li>
+            <strong>Ersatzbatterien:</strong> Bring mindestens 2-3 Stapel mit. In der Dunkelheit stecken zu bleiben, ist ein Todesurteil.
+        </li>
+        <li>
+            <strong>Bergbauwerkzeuge: Spitzhacke:</strong> Unverzichtbar, um Erzvorkommen abzubauen!
+        </li>
+        <li>
+            <strong>Verbesserte Spitzhacke:</strong> Kann beim Bergbau verwendet werden und ist stark genug, um schwache Höhlenwände zu durchbrechen (Empfohlen).
+        </li>
+        <li>
+            <strong>Waffen:</strong> Eine Schrotflinte oder eine hochhaltbare Nahkampfwaffe. Die Höhlen sind eng, und Zombies können dich leicht in die Ecke treiben.
+        </li>
+        <li>
+            <strong>Medizinische Vorräte:</strong> Verbände und Desinfektionsmittel.
+        </li>
+    </ol>
+    <h2>
+        <strong>Ressourcen: Was kannst du in der Rook Cavern finden?</strong>
+    </h2>
+    <p>
+        Warum suchen alle Spieler nach der Rook Cavern in VEIN? Wegen der Beute. Dies ist ein wahres Schatzlager für Handwerker.
+    </p>
+    <p>
+        <img src="/images/guide/guide11-03.webp" alt="Hämatit Vorkommen" width="50%" style="width: 50%;">
+    </p>
+    <ol>
+        <li>
+            <strong>Hämatit (Eisen Erz):</strong> Die rötlich/schwarzen Felsen. Dies ist entscheidend für das Schmelzen von Eisenbarren und schließlich die Herstellung von Stahl.
+        </li>
+        <li>
+            <strong>Graphit:</strong> Wird für fortgeschrittene Handwerkskomponenten verwendet.
+        </li>
+        <li>
+            <strong>Kohle:</strong> Nützlich, um deine Schmelzöfen in der Basis zu betreiben.
+        </li>
+        <li>
+            <strong>Kalkstein:</strong> Wird oft als Nebenprodukt gefunden.
+        </li>
+    </ol>
+    <p>
+        <strong style="background-color: rgb(240, 240, 240);">Pro Tipp:</strong>
+        <span style="background-color: rgb(240, 240, 240);"> Inventarmanagement ist entscheidend. Erz ist schwer. Bring ein Fahrzeug und parke es nahe dem Eingang, damit du deinen Rucksack entladen und zurückkehren kannst, um mehr zu holen.</span>
+    </p>
+    <h2>
+        <strong>Gefahren und Feinde</strong>
+    </h2>
+    <p>
+        Die Rook Cavern ist nicht nur ein Erzbergwerk; es ist ein Dungeon.
+    </p>
+    <ol>
+        <li>
+            <strong>Zombie-Spawns:</strong> Zombies erscheinen in der Höhle. In den engen Gängen ist es sehr schwierig, Angriffen auszuweichen.
+        </li>
+        <li>
+            <strong>Verlieren der Orientierung:</strong> Das Höhlensystem hat mehrere Zweige. Es ist leicht, die Orientierung zu verlieren. Wir empfehlen, immer an der rechten Wand (oder linken) zu bleiben, damit du den Weg zurück findest.
+        </li>
+    </ol>
+    <h2>
+        <strong>Zusammenfassung</strong>
+    </h2>
+    <p>
+        Die Beherrschung der <strong>VEIN Spiel Rook Cavern</strong> ist ein Meilenstein auf deiner Überlebensreise. Sobald du eine stabile Versorgung mit Hämatit und Graphit sicherstellen kannst, kannst du deine Basisverteidigungen und Waffen erheblich aufrüsten.
+    </p>
+    <p>
+        <em>Hast du Hilfe beim Handwerk mit diesen Erzen nötig? Schau dir unsere <a href="/vein-items" rel="noopener noreferrer" target="_blank">Handwerksrezepte</a> Seite an!</em>
+    </p>
+        `
+    },
+    
+
+    {
         "id": 9,
         "title": "Vein-Spielguide: Wie man den besten Rucksack und wichtiges Überlebensloot findet",
         "description": "Probleme mit dem Inventar in Vein? Dieser Guide zeigt dir den besten Rucksack – den Hiking Backpack (+45,4 kg Traggewicht!) – und weiteres wichtiges Loot wie Spitzhacke, Laterne und Heizung. Reise zur Cold Brook Cavern und rüste dich fürs Überleben aus!",
@@ -804,7 +938,7 @@ export const guides = [
         "publishDate": "2025-11-20",
         "imageUrl": "/images/guide/guide06.webp",
         "imageAlt": "VEIN-Gameplay-Szene, in der ein Spieler die Clinton Correctional Facility auf der Suche nach der Waffenkammer erkundet.",
-        "isHome": true,
+        "isHome": false,
         "seo": {
             "title": "VEIN Gefängnis-Waffenkammer Guide: Clinton Correctional Facility finden - Loot!",
             "description": "Entdecken Sie den genauen Standort der VEIN Gefängnis-Waffenkammer in der Clinton Correctional Facility. Unser Guide bietet eine Schritt-für-Schritt-Anleitung, um hochstufige Waffen und Munition zu finden.",
