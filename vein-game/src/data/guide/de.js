@@ -195,6 +195,8 @@ export const guides = [
           <li data-list="bullet"><span contenteditable="false"></span><strong>Abbaubare Ressourcen:</strong> Wenn du die Spitzhacke hast, findest du hier abbaubare Felsen mit <strong>Kalkstein</strong> und <strong>Hämatit (Eisen)</strong>. <em>Hinweis: Einige Knotenpunkte befinden sich unter Wasser.</em></li>
       </ol>
       
+      <p style="margin: 1em 0px;">Wenn du ins Midgame-Stahl-Crafting einsteigen willst, nutze den <a href="/vein-guides/vein-game-rook-cavern-guide" class="inline-link">Rook-Cavern-Bergbau-Guide</a>, um Hämatit und Graphit in großen Mengen zu farmen.</p>
+      
       <h2 style="font-size: 1.5em; font-weight: bold;"><strong>Strategische Tipps für das Gebiet</strong></h2>
       
       <p style="margin: 1em 0px;">Da du sowieso in die Kartenmitte reist, solltest du die dortigen Ressourcen bestmöglich nutzen.</p>
@@ -242,7 +244,7 @@ export const guides = [
         },
         "addressBar": "/vein-best-base-location-survival-guide",
         "detailsHtml": `
-          <p>Im Hardcore-Survival-Spiel <em>VEIN</em> ist Ihre Basis mehr als nur ein Schlafplatz. Sie ist Ihre Festung gegen die Zombiehorde, ein Lager für wertvollen Loot, eine Farm zur Ernährung und eine Garage zur Fahrzeugwartung. Die Wahl des falschen Ortes kann zu Ressourcenmangel oder einem schnellen Tod führen. Dieser Guide analysiert mehrere potenzielle Kandidaten für den <strong>besten Basis-Standort in VEIN</strong>, um Ihnen bei der klügsten Entscheidung zu helfen.</p>
+          <p>Im Hardcore-Survival-Spiel <em>VEIN</em> ist Ihre Basis mehr als nur ein Schlafplatz. Sie ist Ihre Festung gegen die Zombiehorde, ein Lager für wertvollen Loot, eine Farm zur Ernährung und eine Garage zur Fahrzeugwartung. Die Wahl des falschen Ortes kann zu Ressourcenmangel oder einem schnellen Tod führen. Dieser Guide analysiert mehrere potenzielle Kandidaten für den <strong>besten Basis-Standort in VEIN</strong>, um Ihnen bei der klügsten Entscheidung zu helfen. Wenn Ihr Layout Stahl-Upgrades benötigt, planen Sie Erzläufe mit dem <a href="/vein-guides/vein-game-rook-cavern-guide" class="inline-link">Rook-Cavern-Bergbau-Guide</a>.</p>
       
           <p>
           <img src="/images/guide/guide08-01.webp" alt="vein best loot locations " width="50%" style="width: 50%;">
@@ -416,7 +418,7 @@ export const guides = [
         },
         "addressBar": "/vein-best-loot-locations",
         "detailsHtml": `
-          <p>In der Hardcore-Überlebenssimulation <em>VEIN</em> ist Ihre Lebensdauer direkt an Ihr Inventar gebunden. Egal, ob Sie ein Fahrzeug reparieren, eine Basis bauen oder einfach die nächste Welle der Untoten überleben müssen, zu wissen, wo man Ressourcen findet, ist entscheidend. Dieser Guide taucht tief in die <strong>besten Loot-Orte von VEIN</strong> ein und hebt die Schlüsselbereiche hervor, die Ihnen helfen, vom knappen Überleben zum Aufblühen zu gelangen.</p>
+          <p>In der Hardcore-Überlebenssimulation <em>VEIN</em> ist Ihre Lebensdauer direkt an Ihr Inventar gebunden. Egal, ob Sie ein Fahrzeug reparieren, eine Basis bauen oder einfach die nächste Welle der Untoten überleben müssen, zu wissen, wo man Ressourcen findet, ist entscheidend. Dieser Guide taucht tief in die <strong>besten Loot-Orte von VEIN</strong> ein und hebt die Schlüsselbereiche hervor, die Ihnen helfen, vom knappen Überleben zum Aufblühen zu gelangen. Für späte Metalle wie Hämatit und Graphit planen Sie einen Run mit dem <a href="/vein-guides/vein-game-rook-cavern-guide" class="inline-link">Rook-Cavern-Bergbau-Guide</a>.</p>
       
           <p><img src="/images/guide/guide07-01.webp" alt="vein best loot locations " width="50%" style="width: 50%;"></p>
       

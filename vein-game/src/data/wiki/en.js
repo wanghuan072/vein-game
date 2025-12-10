@@ -298,7 +298,7 @@ export const wiki = [
         },
         "detailsHtml": `
       <h2>Core Game Mechanics</h2>
-      <p>This section provides a detailed breakdown of all fundamental systems and interactive mechanics within VEIN Game, from item use to world systems. For detailed building mechanics, see the <a href="/vein-wiki/building" class="inline-link">building system</a>. Learn about vehicle mechanics in our <a href="/vein-wiki/vehicles" class="inline-link">vehicles guide</a>.</p>
+      <p>This section provides a detailed breakdown of all fundamental systems and interactive mechanics within VEIN Game, from item use to world systems. For detailed building mechanics, see the <a href="/vein-wiki/building" class="inline-link">building system</a>. Learn about vehicle mechanics in our <a href="/vein-wiki/vehicles" class="inline-link">vehicles guide</a>. When you need mid-to-late game metals for Steel, plan ore runs using the <a href="/vein-guides/vein-game-rook-cavern-guide" class="inline-link">Rook Cavern mining guide</a>.</p>
 
       <h3>Crafting & Survival</h3>
       <ul>
@@ -794,7 +794,7 @@ export const wiki = [
         },
         "detailsHtml": `
       <h2>All Items</h2>
-      <p>This page provides an index to the complete searchable database of all items available in VEIN Game, categorized by their primary use and function. Browse all items by category in our <a href="/vein-items" class="inline-link">items database</a>. Many items are used for building—learn more in the <a href="/vein-wiki/building" class="inline-link">building guide</a>.</p>
+      <p>This page provides an index to the complete searchable database of all items available in VEIN Game, categorized by their primary use and function. Browse all items by category in our <a href="/vein-items" class="inline-link">items database</a>. Many items are used for building—learn more in the <a href="/vein-wiki/building" class="inline-link">building guide</a>. For raw ores like Hematite and Graphite, start with the <a href="/vein-guides/vein-game-rook-cavern-guide" class="inline-link">Rook Cavern mining guide</a>.</p>
 
       <h3>Survival and Equipment</h3>
       <ul>

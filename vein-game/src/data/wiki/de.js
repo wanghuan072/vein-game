@@ -296,7 +296,7 @@ export const wiki = [
         },
         "detailsHtml": `
             <h2>Kern-Spielmechaniken</h2>
-            <p>Dieser Abschnitt bietet eine detaillierte Aufschlüsselung aller grundlegenden Systeme und interaktiven Mechaniken innerhalb des VEIN Game, von der Gegenstandsverwendung bis zu den Weltsystemen.</p>
+            <p>Dieser Abschnitt bietet eine detaillierte Aufschlüsselung aller grundlegenden Systeme und interaktiven Mechaniken innerhalb des VEIN Game, von der Gegenstandsverwendung bis zu den Weltsystemen. Wenn du Metalle für Stahl im Mid- bis Lategame brauchst, plane Erzläufe mit dem <a href="/vein-guides/vein-game-rook-cavern-guide" class="inline-link">Rook-Cavern-Bergbau-Guide</a>.</p>
       
             <h3>Herstellung & Überleben</h3>
             <ul>
@@ -788,7 +788,7 @@ export const wiki = [
         },
         "detailsHtml": `
             <h2>Alle Gegenstände</h2>
-            <p>Diese Seite bietet einen Index zur vollständigen durchsuchbaren Datenbank aller im VEIN Game verfügbaren Gegenstände, kategorisiert nach ihrem Hauptzweck und ihrer Funktion.</p>
+            <p>Diese Seite bietet einen Index zur vollständigen durchsuchbaren Datenbank aller im VEIN Game verfügbaren Gegenstände, kategorisiert nach ihrem Hauptzweck und ihrer Funktion. Für rohe Erze wie Hämatit und Graphit beginne mit dem <a href="/vein-guides/vein-game-rook-cavern-guide" class="inline-link">Rook-Cavern-Bergbau-Guide</a>.</p>
       
             <h3>Überleben und Ausrüstung</h3>
             <ul>

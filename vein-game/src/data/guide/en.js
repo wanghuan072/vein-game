@@ -1,5 +1,5 @@
 export const guides = [
-    {
+  {
         id: 11,
         title: "VEIN Game Rook Cavern Guide: The Ultimate Mining Spot",
         description: "Navigate the dark depths of VEIN's Rook Cavern! This guide unveils the location, essential gear, and vital resources like Hematite and Graphite for crafting Steel, paving your way through mid-to-late game survival. Prepare for zombies and darkness!",
@@ -7,14 +7,14 @@ export const guides = [
         publishDate: "2025-12-09",
         imageUrl: "/images/guide/guide11.webp",
         imageAlt: "VEIN Game Rook Cavern",
-        isHome: true,
-        seo: {
+    isHome: true,
+    seo: {
           title: "VEIN Game Rook Cavern Guide: Location, Hematite, and Graphite Mining",
           description: "Looking for the Rook Cavern in VEIN? Our complete guide covers the map location, essential gear, and how to mine Hematite and Graphite safely in the dark.",
           keywords: "vein game rook cavern, mining, guide, hematite, graphite, steel, survival, zombies, location, gear, resources",
         },
         addressBar: "/vein-game-rook-cavern-guide",
-        detailsHtml: `
+    detailsHtml: `
         <p>
         If you are advancing through the technology tree in <strong>VEIN</strong>, you will eventually hit a wall. You need better metals, specifically Steel. To get Steel, you need <strong>Hematite</strong> and <strong>Graphite</strong>.
     </p>
@@ -75,20 +75,20 @@ export const guides = [
         <li>
             
             <strong>Mining Tools: Pickaxe:</strong> Essential for harvesting ore nodes!
-        </li>
+    </li>
         <li>
             
             <strong>Improved Pickaxe:</strong> Can be used in mining and is strong enough to break weak cave walls (Recommended).
-        </li>
+    </li>
         <li>
             
             <strong>Weaponry:</strong> A shotgun or a high-durability melee weapon. The caves are tight, and zombies can corner you easily.
-        </li>
+    </li>
         <li>
             
             <strong>Medical Supplies:</strong> Bandages and disinfectants.
-        </li>
-    </ol>
+    </li>
+</ol>
     <h2>
         <strong>Resources: What Can You Find in Rook Cavern?</strong>
     </h2>
@@ -114,8 +114,8 @@ export const guides = [
         <li>
             
             <strong>Limestone:</strong> Often found as a byproduct.
-        </li>
-    </ol>
+    </li>
+</ol>
     <p>
         <strong>Pro Tip:</strong>
         <span> Inventory management is key. Ore is heavy. Bring a vehicle and park it near the entrance so you can offload your backpack and go back in for more.</span>
@@ -134,8 +134,8 @@ export const guides = [
         <li>
             
             <strong>Getting Lost:</strong> The cavern system has multiple branches. It is easy to lose your sense of direction. We recommend sticking to the right wall (or left) so you can find your way back out.
-        </li>
-    </ol>
+    </li>
+</ol>
     <h2>
         <strong>Summary</strong>
     </h2>
@@ -209,6 +209,7 @@ export const guides = [
     <li><strong>Lantern &amp; Heater:</strong> Critical for light and warmth during cold nights.</li>
     <li><strong>Mining Resources:</strong> If you have the pickaxe, this cave contains mineable rocks. You can harvest <strong>Limestone</strong> and <strong>Hematite (Iron)</strong> here. <em>Note: Some nodes may be underwater within the cave.</em></li>
 </ol>
+<p>When you are ready to push into mid-game steel crafting, head to the <a href="/vein-guides/vein-game-rook-cavern-guide" class="inline-link">Rook Cavern mining guide</a> to farm Hematite and Graphite in bulk.</p>
 
 <h2><strong>Strategic Tips for the Area</strong></h2>
 
@@ -228,8 +229,8 @@ export const guides = [
     <li><strong>Amenities:</strong> The interior often spawns with industrial kitchen equipment (stoves, deep fryers), vending machines, and plenty of storage space.</li>
 </ol>
 
-      <h2><strong>Summary</strong></h2>
-      
+<h2><strong>Summary</strong></h2>
+
       <p>To secure the best start in Vein, prioritize acquiring a vehicle and driving to <strong>Cold Brook Cavern</strong>. Grab the <strong>Hiking Backpack</strong> to maximize your inventory slots, mine some iron while you are there, and consider fortifying the nearby Legion Post for a long-term survival stronghold. After gathering supplies, secure them in a safe location with our <a href="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">best base location guide</a>. This backpack is essential for completing your <a href="/vein-guides/day-1-priorities-guide" class="inline-link">Day 1 priorities</a>.</p>
 
     `,
@@ -251,7 +252,7 @@ export const guides = [
     },
     addressBar: "/vein-best-base-location-survival-guide",
     detailsHtml: `
-    <p>In the hardcore survival game <em>VEIN</em>, your base is more than just a place to sleep. It is your fortress against the zombie horde, a warehouse for precious loot, a farm for sustenance, and a garage for vehicle maintenance. Choosing the wrong spot can lead to resource starvation or a swift death. This guide analyzes several potential candidates for the <strong>VEIN best base location</strong> to help you make the smartest decision. To efficiently gather materials for your base, visit the <a href="/vein-guides/vein-best-loot-locations" class="inline-link">best loot locations</a>. Learn how to construct and fortify your base with our <a href="/vein-wiki/building" class="inline-link">building system guide</a>.</p>
+    <p>In the hardcore survival game <em>VEIN</em>, your base is more than just a place to sleep. It is your fortress against the zombie horde, a warehouse for precious loot, a farm for sustenance, and a garage for vehicle maintenance. Choosing the wrong spot can lead to resource starvation or a swift death. This guide analyzes several potential candidates for the <strong>VEIN best base location</strong> to help you make the smartest decision. To efficiently gather materials for your base, visit the <a href="/vein-guides/vein-best-loot-locations" class="inline-link">best loot locations</a>. Learn how to construct and fortify your base with our <a href="/vein-wiki/building" class="inline-link">building system guide</a>. When your layout calls for Steel upgrades, plan ore runs with the <a href="/vein-guides/vein-game-rook-cavern-guide" class="inline-link">Rook Cavern mining guide</a>.</p>
 
 <p>
     <img src="/images/guide/guide08-01.webp" alt="vein best loot locations " width="50%" style="width: 50%;">
@@ -419,7 +420,7 @@ export const guides = [
     },
     addressBar: "/vein-best-loot-locations",
     detailsHtml: `
-    <p>In the hardcore survival simulation game <em>VEIN</em>, your lifespan is directly tied to your inventory. Whether you need to repair a vehicle, build a base, or simply survive the next wave of the undead, knowing where to find resources is critical. This guide dives deep into the <strong>VEIN best loot locations</strong>, highlighting the key areas that will take you from barely surviving to thriving. To maximize your loot capacity, make sure you have the <a href="/vein-guides/vein-game-best-backpack" class="inline-link">best backpack</a>. After gathering materials, you'll need somewhere safe to store them—check our <a href="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">best base location guide</a>.</p>
+    <p>In the hardcore survival simulation game <em>VEIN</em>, your lifespan is directly tied to your inventory. Whether you need to repair a vehicle, build a base, or simply survive the next wave of the undead, knowing where to find resources is critical. This guide dives deep into the <strong>VEIN best loot locations</strong>, highlighting the key areas that will take you from barely surviving to thriving. To maximize your loot capacity, make sure you have the <a href="/vein-guides/vein-game-best-backpack" class="inline-link">best backpack</a>. After gathering materials, you'll need somewhere safe to store them—check our <a href="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">best base location guide</a>. For late-game metals like Hematite and Graphite, route a trip to the <a href="/vein-guides/vein-game-rook-cavern-guide" class="inline-link">Rook Cavern mining guide</a>.</p>
 
 <p><img src="/images/guide/guide07-01.webp" alt="vein best loot locations " width="50%" style="width: 50%;"></p>
 
