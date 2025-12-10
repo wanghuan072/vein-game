@@ -34,15 +34,16 @@
         <h2 class="section-title">{{ $t('mapDetailPage.content.title') }}</h2>
         <div class="map-container">
           <div class="map-iframe-wrapper">
-            <iframe
-              src="https://vein-germany.de/map"
-              class="map-iframe"
-              :title="$t('mapDetailPage.header.title')"
-              frameborder="0"
-              allowfullscreen
-              loading="lazy"
-            ></iframe>
+            <iframe src="https://point-atlas.io/map/vein_waylander_68" class="map-iframe" :title="$t('mapDetailPage.header.title')" frameborder="0" allowfullscreen loading="lazy"></iframe>
           </div>
+
+
+          <!-- <InteractiveMapCanvas
+            :markers="markers"
+            image-src="/images/map.webp"
+            :initial-center="{ x: 0.62, y: 0.53 }"
+            :initial-scale="1.6"
+          /> -->
           
           <div class="map-info">
             <div class="info-card">
@@ -76,9 +77,41 @@ import { onMounted, nextTick, watch } from 'vue'
 import { useSEO } from '../seo/composables.js'
 import { useI18n } from 'vue-i18n'
 import { seoConfig } from '../seo/config.js'
+// import InteractiveMapCanvas from '../components/InteractiveMapCanvas.vue'
 
 const { setSEO } = useSEO()
 const { t, te, locale } = useI18n()
+
+// const markers = [
+//   {
+//     id: 'rook-cavern',
+//     title: 'Rook Cavern',
+//     description: '111',
+//     x: 0.64,
+//     y: 0.56
+//   },
+//   {
+//     id: 'cold-brook',
+//     title: 'Cold Brook Cavern',
+//     description: '靠近湖泊的背包与矿点位置。',
+//     x: 0.48,
+//     y: 0.58
+//   },
+//   {
+//     id: 'legion-post',
+//     title: 'Legion Post #0607',
+//     description: '中心位置，可作为中期基地的候选点。',
+//     x: 0.50,
+//     y: 0.55
+//   },
+//   {
+//     id: 'werrenrath-island',
+//     title: 'Werrenrath Island',
+//     description: '岛屿据点，天然防御高，适合安全基地。',
+//     x: 0.36,
+//     y: 0.32
+//   }
+// ]
 
 // 更新SEO
 const updateSEO = () => {
