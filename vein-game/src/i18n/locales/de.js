@@ -423,21 +423,22 @@ export default {
   },
   "wikiPage": {
     "header": {
-      "title": "Wiki",
-      "subtitle": "Vollständige Wissensdatenbank für VEIN Game. Entdecken Sie detaillierte Informationen über Gameplay-Mechaniken, Features und alles, was Sie über das VEIN Survival Game wissen müssen."
+      "title": "VEIN Game Wiki",
+      "subtitle": "Vollständige VEIN Game Wiki Wissensdatenbank. Entdecken Sie detaillierte Informationen über Gameplay-Mechaniken, Features und alles, was Sie für das VEIN Survival Game wissen müssen."
     },
+    "sectionNote": "Unser VEIN Game Wiki bündelt Mechaniken, Items, Fahrzeuge, Skills und Kochwissen, damit du schnell zwischen VEIN Game Wiki Artikeln springen und jedes VEIN Game System schneller meistern kannst.",
     "loading": "Wiki wird geladen...",
     "error": "Fehler beim Laden des Wikis:",
-    "allArticles": "Alle Artikel",
+    "allArticles": "Alle VEIN Game Artikel",
     "whyChoose": {
-      "title": "Warum unserem VEIN Wiki vertrauen?",
-      "subtitle": "Ihre ultimative Wissensdatenbank zur Meisterung von VEINs komplexer Welt und Mechanik.",
+      "title": "Warum unserem VEIN Game Wiki vertrauen?",
+      "subtitle": "Deine ultimative VEIN Game Wiki Wissensbasis, um die komplexe Welt und Mechaniken zu meistern.",
       "features": {
         "knowledge": {
           "title": "Vollständige Wissensdatenbank",
-          "content": "Unser Wiki bietet eine erschöpfende Datenbank aller Spielelemente, von grundlegenden",
+          "content": "Unser VEIN Game Wiki bietet eine erschöpfende Datenbank aller VEIN Game Spielelemente, von grundlegenden",
           "link": "Mechanik-Guides",
-          "content2": "bis hin zu fortgeschrittenen Systemen. Jedes Detail, das Sie zum Verständnis von VEIN benötigen, ist hier zu finden."
+          "content2": "bis hin zu fortgeschrittenen Systemen. Jedes Detail, das du zum Verständnis von VEIN benötigst, ist hier zu finden."
         },
         "skills": {
           "title": "Skills- & Perks-Datenbank",
@@ -453,13 +454,13 @@ export default {
         },
         "vehicles": {
           "title": "Fahrzeug- & Transport-Info",
-          "content": "Bewegen Sie sich effizient durch die postapokalyptische Welt. Unser",
+          "content": "Bewege dich effizient durch die postapokalyptische VEIN Game Welt. Unser",
           "link": "Fahrzeug-Guide",
           "content2": "deckt alle Transportmittel, Wartung und deren Nutzung für Looting und Flucht ab."
         },
         "recipes": {
           "title": "Kochen & Rezepte",
-          "content": "Mit unserer kompletten Datenbank für Kochrezepte müssen Sie nie hungern. Erlernen Sie alle Brau- und Schneide-Rezepte, benötigte Zutaten und Kochutensilien, um Mahlzeiten zuzubereiten, die Gesundheit und Ausdauer wiederherstellen."
+          "content": "Mit unserer kompletten VEIN Game Kochrezepte-Datenbank musst du nie hungern. Erlerne alle Brau- und Schneide-Rezepte, benötigte Zutaten und Kochutensilien, um Mahlzeiten zuzubereiten, die Gesundheit und Ausdauer wiederherstellen."
         },
         "mechanics": {
           "title": "Spielmechaniken erklärt",
@@ -470,12 +471,12 @@ export default {
       }
     },
     "faq": {
-      "title": "Häufig gestellte Fragen zum VEIN Wiki",
+      "title": "Häufig gestellte Fragen zum VEIN Game Wiki",
       "items": {
         "information": {
           "question": "Welche Informationen enthält das Wiki?",
           "answer1": "Unser Wiki ist eine umfassende Wissensdatenbank, die alle Aspekte des VEIN Game abdeckt. Es enthält detaillierte Informationen zur Steuerung und Tastenbelegung, allen Skills und ihren zugehörigen Perks, Kernspielmechaniken, Kochrezepten, dem Bausystem, Fahrzeugen und einer vollständigen Item-Datenbank.",
-          "answer2": "Jeder Artikel bietet detaillierte Erklärungen, Tabellen, Listen und Schritt-für-Schritt-Anweisungen, um Ihnen zu helfen, jedes System in VEIN zu verstehen und zu meistern."
+          "answer2": "Jeder Artikel bietet detaillierte Erklärungen, Tabellen, Listen und Schritt-für-Schritt-Anweisungen, um dir zu helfen, jedes System im VEIN Game zu verstehen und zu meistern."
         },
         "controls": {
           "question": "Wie verwende ich den Steuerung-Guide?",

@@ -423,19 +423,20 @@ export default {
     },
     wikiPage: {
       header: {
-        title: 'Wiki',
-        subtitle: 'Complete knowledge base for VEIN game. Explore detailed information about gameplay mechanics, features, and everything you need to know about VEIN survival game.'
+        title: 'VEIN Game Wiki',
+        subtitle: 'Complete VEIN Game Wiki hub and knowledge base. Explore detailed information about gameplay mechanics, features, and everything you need to know to thrive in the VEIN survival game.'
       },
+      sectionNote: 'Our VEIN Game Wiki brings together mechanics, items, vehicles, skills, and cooking knowledge so you can quickly jump between VEIN Game Wiki articles and master every VEIN Game system faster.',
       loading: 'Loading wiki...',
       error: 'Error loading wiki:',
-      allArticles: 'All Articles',
+      allArticles: 'All VEIN Game Articles',
       whyChoose: {
-        title: 'Why Trust Our VEIN Wiki?',
-        subtitle: 'Your ultimate knowledge base for mastering VEIN\'s complex world and mechanics.',
+        title: 'Why Trust Our VEIN Game Wiki?',
+        subtitle: 'Your ultimate VEIN Game Wiki knowledge base for mastering the complex world and mechanics.',
         features: {
           knowledge: {
             title: 'Complete Knowledge Base',
-            content: 'Our Wiki offers an exhaustive database of all game elements, from basic',
+            content: 'Our VEIN Game Wiki offers an exhaustive database of all VEIN Game elements, from basic',
             link: 'mechanics guide',
             content2: 'to advanced systems. Every detail you need to understand VEIN is here.'
           },
@@ -453,13 +454,13 @@ export default {
           },
           vehicles: {
             title: 'Vehicle & Transport Info',
-            content: 'Get around the post-apocalyptic world efficiently. Our',
+            content: 'Get around the post-apocalyptic VEIN Game world efficiently. Our',
             link: 'vehicles guide',
             content2: 'covers all types of transport, maintenance, and how to use them for looting and escape.'
           },
           recipes: {
             title: 'Cooking & Recipes',
-            content: 'Never go hungry with our complete cooking recipes database. Learn all brewing and slicing recipes, required ingredients, and cooking utensils needed to prepare meals that restore health and stamina.'
+            content: 'Never go hungry with our complete VEIN Game cooking recipes database. Learn all brewing and slicing recipes, required ingredients, and cooking utensils needed to prepare meals that restore health and stamina.'
           },
           mechanics: {
             title: 'Game Mechanics Explained',
@@ -470,12 +471,12 @@ export default {
         }
       },
       faq: {
-        title: 'Frequently Asked Questions About VEIN Wiki',
+        title: 'Frequently Asked Questions About VEIN Game Wiki',
         items: {
           information: {
             question: 'What information does the Wiki contain?',
-            answer1: 'Our Wiki is a comprehensive knowledge base covering all aspects of VEIN game. It includes detailed information about controls and keybindings, all skills and their associated perks, core game mechanics, cooking recipes, the building system, vehicles, and a complete items database.',
-            answer2: 'Each article provides in-depth explanations, tables, lists, and step-by-step instructions to help you understand and master every system in VEIN.'
+            answer1: 'Our Wiki is a comprehensive knowledge base covering all aspects of VEIN Game. It includes detailed information about controls and keybindings, all skills and their associated perks, core game mechanics, cooking recipes, the building system, vehicles, and a complete items database.',
+            answer2: 'Each article provides in-depth explanations, tables, lists, and step-by-step instructions to help you understand and master every system in VEIN Game.'
           },
           controls: {
             question: 'How do I use the controls guide?',

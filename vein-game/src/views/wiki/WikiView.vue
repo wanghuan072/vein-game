@@ -27,6 +27,9 @@
         
         <!-- Section Title -->
         <h2 class="section-title" v-if="!loading && !error">{{ $t('wikiPage.allArticles') }}</h2>
+        <p class="section-note" v-if="!loading && !error">
+          {{ $t('wikiPage.sectionNote') }}
+        </p>
         
         <!-- Articles Grid -->
         <div class="articles-grid" v-if="!loading && !error">
@@ -213,6 +216,14 @@ const goToWiki = (addressBar) => {
   color: var(--text);
   margin: 0 0 30px 0;
   text-align: center;
+}
+
+.section-note {
+  text-align: center;
+  color: rgba(255, 210, 210, 0.82);
+  margin: -10px auto 26px;
+  max-width: 860px;
+  line-height: 1.7;
 }
 
 .articles-grid {
