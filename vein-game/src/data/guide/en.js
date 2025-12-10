@@ -31,7 +31,7 @@ export const guides = [
         Finding the Rook Cavern can be tricky if you don't know where to look. While the game map can be vast, the Rook Cavern is typically located in the <strong>mountainous regions</strong> of the map (often towards the Southeastern section, depending on the current map version).
     </p>
     <p>
-        <img src="/images/guide/guide11-01.webp" alt="vein game Rook Cavern Location" width="50%" style="width: 50%;">
+        <img src="/images/guide/guide11-03.webp" alt="vein game Rook Cavern Location" width="50%" style="width: 50%;">
     </p>
     <h3 style="font-size: 1.17em; font-weight: bold;">
         <strong>Visual Landmarks:</strong>
@@ -96,7 +96,7 @@ export const guides = [
         Why is every player searching for vein game rook cavern? Because of the loot. This is a treasure trove for crafters.
     </p>
     <p>
-        <img src="/images/guide/guide11-03.webp" alt="Hematite vein" width="50%" style="width: 50%;">
+        <img src="/images/guide/guide11-01.webp" alt="Hematite vein" width="50%" style="width: 50%;">
     </p>
     <ol>
         <li>

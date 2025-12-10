@@ -31,7 +31,7 @@ export const guides = [
         Die Rook Cavern zu finden, kann schwierig sein, wenn du nicht weißt, wo du suchen musst. Obwohl die Karte des Spiels weitläufig ist, befindet sich die Rook Cavern normalerweise in den <strong>bergigen Regionen</strong> der Karte (oft im Südosten, je nach aktueller Kartenversion).
     </p>
     <p>
-        <img src="/images/guide/guide11-01.webp" alt="vein game Rook Cavern Standort" width="50%" style="width: 50%;">
+        <img src="/images/guide/guide11-03.webp" alt="vein game Rook Cavern Standort" width="50%" style="width: 50%;">
     </p>
     <h3 style="font-size: 1.17em; font-weight: bold;">
         <strong>Visuelle Wahrzeichen:</strong>
@@ -86,7 +86,7 @@ export const guides = [
         Warum suchen alle Spieler nach der Rook Cavern in VEIN? Wegen der Beute. Dies ist ein wahres Schatzlager für Handwerker.
     </p>
     <p>
-        <img src="/images/guide/guide11-03.webp" alt="Hämatit Vorkommen" width="50%" style="width: 50%;">
+        <img src="/images/guide/guide11-01.webp" alt="Hämatit Vorkommen" width="50%" style="width: 50%;">
     </p>
     <ol>
         <li>
