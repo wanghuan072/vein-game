@@ -54,7 +54,7 @@
                 <td class="name-cell">
                   <div class="name-primary">{{ item.title }}</div>
                 </td>
-                <td class="desc-cell">{{ item.description || 'No description available.' }}</td>
+                <td class="desc-cell" v-html="item.description || 'No description available.'"></td>
                 <td class="type-cell">
                   <span class="type-pill" v-if="item.type">{{ item.type }}</span>
                   <span v-else>—</span>
@@ -101,7 +101,7 @@
                 <td class="name-cell">
                   <div class="name-primary">{{ item.title }}</div>
                 </td>
-                <td class="desc-cell">{{ item.description || 'No description available.' }}</td>
+                <td class="desc-cell" v-html="item.description || 'No description available.'"></td>
                 <td class="type-cell">
                   <span class="type-pill" v-if="item.type">{{ item.type }}</span>
                   <span v-else>—</span>
@@ -112,6 +112,287 @@
         </div>
       </div>
 
+      <!-- Feet Section -->
+      <div v-if="!loading && !error && feetItems.length > 0" class="table-section">
+        <div class="section-header">
+          <h2 class="section-title">Feet</h2>
+          <span class="section-count">{{ feetItems.length }} items</span>
+        </div>
+        <div class="table-container">
+          <table class="items-table">
+            <thead>
+              <tr>
+                <th class="preview-col">Preview</th>
+                <th class="name-col">Name</th>
+                <th class="desc-col">Description</th>
+                <th class="type-col">Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                v-for="item in feetItems"
+                :key="item.id"
+                @click="onItemClick(item)"
+                :class="['table-row', { 'disabled': item.showDetail === false }]"
+              >
+                <td class="preview-cell">
+                  <img
+                    v-if="item.imageUrl"
+                    :src="item.imageUrl"
+                    :alt="item.imageAlt || item.title"
+                    class="preview-thumb"
+                    loading="lazy"
+                  />
+                  <span v-else>—</span>
+                </td>
+                <td class="name-cell">
+                  <div class="name-primary">{{ item.title }}</div>
+                </td>
+                <td class="desc-cell" v-html="item.description || 'No description available.'"></td>
+                <td class="type-cell">
+                  <span class="type-pill" v-if="item.type">{{ item.type }}</span>
+                  <span v-else>—</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Head Section -->
+      <div v-if="!loading && !error && headItems.length > 0" class="table-section">
+        <div class="section-header">
+          <h2 class="section-title">Head</h2>
+          <span class="section-count">{{ headItems.length }} items</span>
+        </div>
+        <div class="table-container">
+          <table class="items-table">
+            <thead>
+              <tr>
+                <th class="preview-col">Preview</th>
+                <th class="name-col">Name</th>
+                <th class="desc-col">Description</th>
+                <th class="type-col">Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                v-for="item in headItems"
+                :key="item.id"
+                @click="onItemClick(item)"
+                :class="['table-row', { 'disabled': item.showDetail === false }]"
+              >
+                <td class="preview-cell">
+                  <img
+                    v-if="item.imageUrl"
+                    :src="item.imageUrl"
+                    :alt="item.imageAlt || item.title"
+                    class="preview-thumb"
+                    loading="lazy"
+                  />
+                  <span v-else>—</span>
+                </td>
+                <td class="name-cell">
+                  <div class="name-primary">{{ item.title }}</div>
+                </td>
+                <td class="desc-cell" v-html="item.description || 'No description available.'"></td>
+                <td class="type-cell">
+                  <span class="type-pill" v-if="item.type">{{ item.type }}</span>
+                  <span v-else>—</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Head Section -->
+      <div v-if="!loading && !error && lowerItems.length > 0" class="table-section">
+        <div class="section-header">
+          <h2 class="section-title">Lower</h2>
+          <span class="section-count">{{ lowerItems.length }} items</span>
+        </div>
+        <div class="table-container">
+          <table class="items-table">
+            <thead>
+              <tr>
+                <th class="preview-col">Preview</th>
+                <th class="name-col">Name</th>
+                <th class="desc-col">Description</th>
+                <th class="type-col">Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                v-for="item in lowerItems"
+                :key="item.id"
+                @click="onItemClick(item)"
+                :class="['table-row', { 'disabled': item.showDetail === false }]"
+              >
+                <td class="preview-cell">
+                  <img
+                    v-if="item.imageUrl"
+                    :src="item.imageUrl"
+                    :alt="item.imageAlt || item.title"
+                    class="preview-thumb"
+                    loading="lazy"
+                  />
+                  <span v-else>—</span>
+                </td>
+                <td class="name-cell">
+                  <div class="name-primary">{{ item.title }}</div>
+                </td>
+                <td class="desc-cell" v-html="item.description || 'No description available.'"></td>
+                <td class="type-cell">
+                  <span class="type-pill" v-if="item.type">{{ item.type }}</span>
+                  <span v-else>—</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+       <!-- Head Section -->
+       <div v-if="!loading && !error && handsItems.length > 0" class="table-section">
+        <div class="section-header">
+          <h2 class="section-title">Hands</h2>
+          <span class="section-count">{{ handsItems.length }} items</span>
+        </div>
+        <div class="table-container">
+          <table class="items-table">
+            <thead>
+              <tr>
+                <th class="preview-col">Preview</th>
+                <th class="name-col">Name</th>
+                <th class="desc-col">Description</th>
+                <th class="type-col">Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                v-for="item in handsItems"
+                :key="item.id"
+                @click="onItemClick(item)"
+                :class="['table-row', { 'disabled': item.showDetail === false }]"
+              >
+                <td class="preview-cell">
+                  <img
+                    v-if="item.imageUrl"
+                    :src="item.imageUrl"
+                    :alt="item.imageAlt || item.title"
+                    class="preview-thumb"
+                    loading="lazy"
+                  />
+                  <span v-else>—</span>
+                </td>
+                <td class="name-cell">
+                  <div class="name-primary">{{ item.title }}</div>
+                </td>
+                <td class="desc-cell" v-html="item.description || 'No description available.'"></td>
+                <td class="type-cell">
+                  <span class="type-pill" v-if="item.type">{{ item.type }}</span>
+                  <span v-else>—</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Head Section -->
+      <div v-if="!loading && !error && jacketItems.length > 0" class="table-section">
+        <div class="section-header">
+          <h2 class="section-title">Jacket</h2>
+          <span class="section-count">{{ jacketItems.length }} items</span>
+        </div>
+        <div class="table-container">
+          <table class="items-table">
+            <thead>
+              <tr>
+                <th class="preview-col">Preview</th>
+                <th class="name-col">Name</th>
+                <th class="desc-col">Description</th>
+                <th class="type-col">Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                v-for="item in jacketItems"
+                :key="item.id"
+                @click="onItemClick(item)"
+                :class="['table-row', { 'disabled': item.showDetail === false }]"
+              >
+                <td class="preview-cell">
+                  <img
+                    v-if="item.imageUrl"
+                    :src="item.imageUrl"
+                    :alt="item.imageAlt || item.title"
+                    class="preview-thumb"
+                    loading="lazy"
+                  />
+                  <span v-else>—</span>
+                </td>
+                <td class="name-cell">
+                  <div class="name-primary">{{ item.title }}</div>
+                </td>
+                <td class="desc-cell" v-html="item.description || 'No description available.'"></td>
+                <td class="type-cell">
+                  <span class="type-pill" v-if="item.type">{{ item.type }}</span>
+                  <span v-else>—</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Head Section -->
+      <div v-if="!loading && !error && upperItems.length > 0" class="table-section">
+        <div class="section-header">
+          <h2 class="section-title">Upper</h2>
+          <span class="section-count">{{ upperItems.length }} items</span>
+        </div>
+        <div class="table-container">
+          <table class="items-table">
+            <thead>
+              <tr>
+                <th class="preview-col">Preview</th>
+                <th class="name-col">Name</th>
+                <th class="desc-col">Description</th>
+                <th class="type-col">Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                v-for="item in upperItems"
+                :key="item.id"
+                @click="onItemClick(item)"
+                :class="['table-row', { 'disabled': item.showDetail === false }]"
+              >
+                <td class="preview-cell">
+                  <img
+                    v-if="item.imageUrl"
+                    :src="item.imageUrl"
+                    :alt="item.imageAlt || item.title"
+                    class="preview-thumb"
+                    loading="lazy"
+                  />
+                  <span v-else>—</span>
+                </td>
+                <td class="name-cell">
+                  <div class="name-primary">{{ item.title }}</div>
+                </td>
+                <td class="desc-cell" v-html="item.description || 'No description available.'"></td>
+                <td class="type-cell">
+                  <span class="type-pill" v-if="item.type">{{ item.type }}</span>
+                  <span v-else>—</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
     </div>
   </div>
@@ -134,10 +415,22 @@ const TYPE_MAP = {
   en: {
     backpack: 'backpack',
     face: 'face',
+    feet: 'feet',
+    head: 'head',
+    lower: 'lower',
+    hands: 'hands',
+    jacket: 'jacket',
+    upper: 'upper',
   },
   de: {
     backpack: 'rucksack',  // 对应 "Rucksack"
     face: 'gesicht',  // 对应 "Gesicht"
+    feet: 'fuss',  // 对应 "Fuss"
+    head: 'kopf',  // 对应 "Kopf"
+    lower: 'untere-kleidung',  // 对应 "untere-Kleidung"
+    hands: 'hands',  // 对应 "Hands"
+    jacket: 'jacket',  // 对应 "Jacket"
+    upper: 'upper',  // 对应 "Upper"
   }
 }
 
@@ -177,6 +470,61 @@ const faceItems = computed(() => {
   }
   return filtered
 })
+
+const feetItems = computed(() => {
+  const targetType = getTypeByLang('feet')
+  const filtered = filterByType(targetType)
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsClothingView] feetItems - targetType: ${targetType}, count: ${filtered.length}, total items: ${itemsData.value.length}`)
+  }
+  return filtered
+})
+
+const headItems = computed(() => {
+  const targetType = getTypeByLang('head')
+  const filtered = filterByType(targetType)
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsClothingView] headItems - targetType: ${targetType}, count: ${filtered.length}, total items: ${itemsData.value.length}`)
+  }
+  return filtered
+})
+
+const lowerItems = computed(() => {
+  const targetType = getTypeByLang('lower')
+  const filtered = filterByType(targetType)
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsClothingView] lowerItems - targetType: ${targetType}, count: ${filtered.length}, total items: ${itemsData.value.length}`)
+  }
+  return filtered
+})
+
+const handsItems = computed(() => {
+  const targetType = getTypeByLang('hands')
+  const filtered = filterByType(targetType)
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsClothingView] handsItems - targetType: ${targetType}, count: ${filtered.length}, total items: ${itemsData.value.length}`)
+  }
+  return filtered
+})
+
+const jacketItems = computed(() => {
+  const targetType = getTypeByLang('jacket')
+  const filtered = filterByType(targetType)
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsClothingView] jacketItems - targetType: ${targetType}, count: ${filtered.length}, total items: ${itemsData.value.length}`)
+  }
+  return filtered
+})
+
+const upperItems = computed(() => {
+  const targetType = getTypeByLang('upper')
+  const filtered = filterByType(targetType)
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsClothingView] upperItems - targetType: ${targetType}, count: ${filtered.length}, total items: ${itemsData.value.length}`)
+  }
+  return filtered
+})
+
 
 onMounted(async () => {
   // 等待路由守卫设置语言
@@ -304,8 +652,8 @@ const onItemClick = (item) => {
 }
 
 .preview-thumb {
-  width: 75px;
-  height: 75px;
+  width: 80px;
+  height: auto;
   object-fit: cover;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.1);

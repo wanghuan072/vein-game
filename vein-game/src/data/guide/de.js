@@ -1,5 +1,130 @@
 export const guides = [
     {
+        "id": 12,
+        "title": "EIN Game Verbesserte Spitzhacke: Der Ultimative Minen-Guide",
+        "description": "Genug von wackeligen Werkzeugen in VEIN? Die Verbesserte Spitzhacke ist dein Ticket ins Stahl-Zeitalter! Entdecke die besten Orte, um dir dieses spielverändernde Werkzeug zu schnappen und die Ressourcensammlung zu dominieren. Mach dich bereit, wie ein Profi zu schürfen!",
+        "tags": [
+            "VEIN Game",
+            "Verbesserte Spitzhacke",
+            "Minen-Guide",
+            "Ressourcensammlung",
+            "EIN Game"
+        ],
+        "isHome": true,
+        "publishDate": "2025-12-12",
+        "imageUrl": "/images/guide/guide12.webp",
+        "imageAlt": "Ein Screenshot aus VEIN, der den Spielercharakter mit der Verbesserte Spitzhacke in einer Bergbauumgebung zeigt.",
+        "seo": {
+            "title": "VEIN Game Verbesserte Spitzhacke Guide: Standorte & Mining-Tipps",
+            "description": "Suchst du die Verbesserte Spitzhacke in VEIN? Entdecke die besten Fundorte (Mass Dump Site & Mines) und erfahre, warum dieses Werkzeug für Graphit und Hämatit unerlässlich ist.",
+            "keywords": "VEIN, Verbesserte Spitzhacke, Bergbau, Guide, Ressourcensammlung, EIN Game, Graphit, Hämatit, Eisenerz, Aluminium"
+        },
+        "addressBar": "/ein-game-improved-pickaxe-ultimate-mining-guide",
+        "detailsHtml": `
+            <p>In der rauen Welt von <strong>VEIN</strong> hängt dein Überleben von deinen Werkzeugen ab. Während du vielleicht damit beginnst, Steine mit einer behelfsmäßigen Spitzhacke zu bearbeiten, wirst du irgendwann an eine Grenze stoßen.</p>
+    <p>Um in das "Stahl-Zeitalter" vorzustoßen und deine Basis zu befestigen, benötigst du die <strong>vein game verbesserte spitzhacke</strong>. Sie ist eines der mächtigsten Werkzeuge, die du erwerben kannst, und bietet einen massiven Vorteil bei der Ressourcensammlung und im Spielfortschritt.</p>
+    <p>Dieser Guide wird genau erklären, wo du sie findest, warum du sie brauchst und wie du ein Meister-Miner wirst.</p>
+    <h2><strong>Was ist die Verbesserte Spitzhacke?</strong></h2>
+    <p>Die <strong>Verbesserte Spitzhacke</strong> ist ein Tier-2-Werkzeug in VEIN, das für ernsthafte industrielle Arbeiten konzipiert ist. Im Gegensatz zur zerbrechlichen Steinspitzhacke ist dieses Werkzeug für schwere Ausgrabungen geschmiedet.</p>
+    <p>Es ist der "Schlüssel" zur Freischaltung hochstufiger Ressourcen. Während einfache Werkzeuge mit fortgeschrittenen Adern kämpfen, ist die verbesserte Spitzhacke unerlässlich für die effiziente Ernte von <strong>Graphit</strong>, <strong>Hämatit (Eisenerz)</strong>, und seltenen Mineralien wie Aluminium.</p>
+    <p><img src="/images/guide/guide12-01.webp" alt="improve pickaxe" width="50%" style="width: 50%;"></p>
+    <h2><strong>Wo findet man die Verbesserte Spitzhacke? (Beste Standorte)</strong></h2>
+    <p>Obwohl du Werkzeuge später im Spiel herstellen kannst, ist das Finden deiner ersten <strong>vein game verbesserte spitzhacke</strong> viel schneller. Basierend auf unserer Erkundung sind hier die Top 2 Standorte mit festgelegten Spawn-Chancen:</p>
+    <p><img src="/images/guide/guide12-02.webp" alt="vein game improved pickaxe  Location" width="50%" style="width: 50%;"></p>
+    <h3><strong>📍 1. Die Verlassene Mine (Bester Ort)</strong></h3>
+    <p><strong>Beute-Anzahl:</strong><span> Bis zu 2 Spitzhacken</span></p>
+    <p><span>Die Verlassene Mine am Fuße der Berge ist eine Goldgrube für Werkzeuge. Durchsuche den Eingangsbereich und die hölzernen Stützbalken. Es ist üblich, dass hier </span><strong>zwei verbesserte Spitzhacken</strong><span> spawnen.</span></p>
+    <h3><strong>📍 2. Mass Dump Site AI</strong></h3>
+    <p><strong>Beute-Anzahl:</strong><span> 1 Spitzhacke</span></p>
+    <p><span>Überprüfe die Industrieregale und Arbeitsbereiche am Mass Dump Site. Dieser Standort garantiert normalerweise mindestens einen Spawn, was ihn zu einer großartigen Alternative macht, falls die Mine leer ist.</span></p>
+    <h2><strong>Warum ist sie besser? (Hauptmerkmale)</strong></h2>
+    <p>Warum solltest du dein Leben riskieren, um eine dunkle Mine für dieses Werkzeug zu betreten? Hier sind die Statistiken:</p>
+    <ol>
+      <li><strong>Mining-Geschwindigkeit:</strong> Sie durchschlägt Felsen deutlich schneller als behelfsmäßige Werkzeuge. Weniger Zeit mit Schürfen bedeutet weniger Zeit, die man Zombies ausgesetzt ist.</li>
+      <li><strong>Haltbarkeit:</strong> Die <strong>vein game verbesserte spitzhacke</strong> ist langlebig. Sie ermöglicht ausgedehnte Schürfexpeditionen, ohne 5 Ersatz-Stein-Spitzhacken mit sich führen zu müssen.</li>
+      <li><strong>Hochstufiger Ertrag:</strong> Sie ist der einzige effiziente Weg, Graphit und Hämatit abzubauen. Ohne sie wird dein Ertrag pro Erzader enttäuschend gering sein.</li>
+    </ol>
+    <h2><strong>Profi-Tipps für Effektives Mining</strong></h2>
+    <p>Das Werkzeug zu besitzen ist nur der erste Schritt. So benutzt du es wie ein Profi:</p>
+    <h3><strong>1. Verwalte deine Ausdauer (Stamina)</strong></h3>
+    <p>Das Schwingen einer schweren Stahlspitzhacke verbraucht viel Energie. Beobachte deine Ausdauerleiste genau. Erschöpfe dich nicht vollständig, sonst kannst du nicht sprinten, wenn dich ein Zombie im Dunkeln überrascht.</p>
+    <h3><strong>2. Bring ein Fahrzeug mit</strong></h3>
+    <p>Das ist entscheidend. Die <strong>vein game verbesserte spitzhacke</strong> erlaubt es dir, schnell <em>sehr viel</em> Erz abzubauen. Erz ist extrem schwer. Parke einen LKW oder Pickup in der Nähe des Mineneingangs, damit du dein Inventar regelmäßig ausladen kannst.</p>
+    <h3><strong>3. Kombiniere mit der Richtigen Ausrüstung</strong></h3>
+    <p>Schürfe nicht im Dunkeln. Kombiniere deine Spitzhacke immer mit einer <strong>Stirnlampe</strong> (damit deine Hände frei sind) oder platziere Fackeln/Arbeitslichter um die Erzader herum. Gute Sichtbarkeit stellt sicher, dass du keine wertvollen Hämatit-Adern übersiehst.</p>
+    <p><img src="/images/guide/guide12-03.webp" alt="vein game improved pickaxe 2" width="50%" style="width: 50%;"></p>
+    <h2><strong>Zusammenfassung</strong></h2>
+    <p>Die <strong>vein game verbesserte spitzhacke</strong> ist ein Meilenstein-Gegenstand. Sobald du dir eine aus der Verlassenen Mine oder dem Dump Site gesichert hast, steigt deine Fähigkeit, Stahl herzustellen, stärkere Basen zu bauen und die Horde zu überleben, dramatisch an.</p>
+    <p><em>Bist du bereit, diese Spitzhacke einzusetzen? Sieh dir unseren Guide zu </em><a href="/vein-guides/vein-game-rook-cavern-guide" rel="noopener noreferrer"><em>Wo man die Rook Cavern findet</em></a><em> an, um deine Bergbau-Reise zu beginnen!</em></p>
+    `
+    },
+    {
+        "id": 13,
+        "title": "VEIN Game Mining Guide: Wo man Graphit & Hämatit findet",
+        "description": "Steckst du fest beim Versuch, Stahl- und Carbon-Komponenten in VEIN herzustellen? Dieser Guide enthüllt die Geheimnisse, um Graphit und Hämatit zu finden! Entdecke die Averill Mines und Kings Hollow, deine Anlaufstellen für lebenswichtige Ressourcen. Aber vergiss deine Verbesserte Spitzhacke nicht!",
+        "tags": [
+            "VEIN Game",
+            "Mining Guide",
+            "Graphit",
+            "Hämatit"
+        ],
+        "publishDate": "2025-12-12",
+        "isHome": true,
+        "imageUrl": "/images/guide/guide13.webp",
+        "imageAlt": "Ein Spielercharakter, der im VEIN-Spiel Erz abbaut und die unterirdische Bergbauumgebung für Graphit und Hämatit zeigt.",
+        "seo": {
+            "title": "VEIN Game Mining Guide: Wo man Graphit & Hämatit findet (Averill & Kings Hollow)",
+            "description": "Fällt es dir schwer, Erz zu finden? Erfahre, wo du Graphit und Hämatit in VEIN bekommst. Vollständiger Guide zum massiven Bergbaukomplex Averill Mines und Kings Hollow",
+            "keywords": "vein, spiel, bergbau, graphit, hämatit, averill mines, kings hollow, stahl, carbon komponenten, eisen"
+        },
+        "addressBar": "/vein-game-mining-guide-graphite-hematite",
+        "detailsHtml": `
+            <p>Du hast deine Werkbank hergestellt, du hast eine Basis gesichert und du hast hoffentlich deine <strong>Verbesserte Spitzhacke</strong> bereit. Jetzt steckst du fest. Du brauchst Stahl für fortgeschrittenes Crafting und du brauchst Carbon-Komponenten.</p>
+    <p>Die häufigsten Fragen, die wir sehen, sind: <em>"vein game wo bekomme ich graphit?"</em> und <em>"wo finde ich hämatit?"</em></p>
+    <p>Die Antwort liegt tief unter der Erde. Dieser Guide wird die zwei massiven Bergbau-Standorte enthüllen, die du besuchen musst: Die <strong>Averill Mines</strong> und <strong>Kings Hollow</strong>.</p>
+    <p><strong>Voraussetzung:</strong><span> Gehe nicht mit einem Steinwerkzeug dorthin! Lies zuerst unseren Guide zu </span><a href="/ein-game-improved-pickaxe-ultimate-mining-guide" rel="noopener noreferrer">Wie man die Verbesserte Spitzhacke bekommt</a><span>.</span></p>
+    <h2><strong>Die Ressourcen: Wonach suchst du?</strong></h2>
+    <p>Bevor du das Dunkel betrittst, wisse, was du schürfst:</p>
+    <ol>
+      <li><strong>Hämatit (Rotes Erz):</strong> Dies ist deine Quelle für Eisen. Es ist entscheidend für das Schmelzen von Stahlbarren.</li>
+    </ol>
+    <p><img src="/images/guide/guide13-01.webp" alt="vein game hematite" width="50%" style="width: 50%;"></p>
+    <ol>
+      <li><strong>Graphit (Schwarz/Graues Erz):</strong> Essentiell für fortgeschrittene Elektronik und Handwerksrezepte.</li>
+    </ol>
+    <p><img src="/images/guide/guide13-02.webp" alt="Vein Game Graphite" width="50%" style="width: 50%;"></p>
+    <ol>
+      <li><strong>Kalkstein &amp; Sandstein:</strong> Grundlegende Baumaterialien oft gefunden neben seltenen Erzen.</li>
+    </ol>
+    <h2><strong>Standort 1: Die Averill Mines (Nordeingang)</strong></h2>
+    <p>Für Spieler, die einen direkten Zugang zum unterirdischen Netzwerk suchen, ist der <strong>Nordeingang zu den großen Averill Mines</strong> ein wichtiges Wahrzeichen.</p>
+    <p><img src="/images/guide/guide13-03.webp" alt="Averill Mines North entrance" width="50%" style="width: 50%;"></p>
+    <p>Suche nach der verstärkten Eingangsstruktur auf der Nordseite.</p>
+    <p>Dieses Gebiet dient als Hauptzugang. Während der Eingangsbereich möglicherweise von Zombies bewacht wird, wirst du, sobald du ins Innere vordringst, Erzadern an den Wänden sehen. Es ist ein ausgezeichneter Ort für deine erste <strong>vein game hämatit</strong>-Tour.</p>
+    <h2><strong>Standort 2: Kings Hollow Mines (Die Mutterader)</strong></h2>
+    <p>Wenn du fragst, <strong>vein game wo bekomme ich graphit</strong> in großen Mengen her, ist dies dein Ziel. <strong>Kings Hollow Mines</strong> ist nicht nur eine Höhle; es ist ein massiver unterirdischer Komplex.</p>
+    <h3><strong>Warum nach Kings Hollow gehen?</strong></h3>
+    <p><span>Dieser Standort ist bekannt für seine schiere Dichte an Ressourcen. Es ist eine riesige Mine, die Folgendes enthält:</span></p>
+    <ol>
+      <li><strong>Reichlich Hämatit:</strong><span> Genug, um eine Ladefläche eines LKWs zu füllen.</span></li>
+      <li><strong>Reiche Graphitadern:</strong><span> Der beste Ort, um Graphit zu farmen.</span></li>
+      <li><strong>Baumaterialien:</strong><span> Viel Kalkstein und Sandstein für den Basisbau.</span></li>
+    </ol>
+    <p><strong>Navigationstipp:</strong> Kings Hollow ist riesig. Es ist leicht, sich zu verirren. Wir empfehlen, dich an einer Wand (links oder rechts) entlang zu halten, um sicherzustellen, dass du den Weg zurück zur Oberfläche findest.</p>
+    <h2><strong>Überlebenstipps für Miner</strong></h2>
+    <p>Mining in VEIN ist gefährlich. Die Höhlen sind pechschwarz und klaustrophobisch. Befolge diese Regeln, um zu überleben:</p>
+    <ol>
+      <li><strong>Beleuchtung ist Leben:</strong> Du kannst eine Taschenlampe und eine Spitzhacke nicht effizient gleichzeitig halten. Bringe eine <strong>Stirnlampe</strong> mit oder platziere stehende Arbeitslichter.</li>
+      <li><strong>Bringe einen LKW mit:</strong> Hämatit und Graphit sind extrem schwer. Parke dein Fahrzeug direkt vor dem Eingang der <strong>Averill Mines</strong> oder <strong>Kings Hollow</strong>. Versuche nicht, alles auf deinem Rücken zu tragen.</li>
+      <li><strong>Zuerst Freimachen, dann Schürfen:</strong> Zombies spawnen in den Minen. Räume den unmittelbaren Bereich mit einer Schrotflinte oder Nahkampfwaffe frei, bevor du beginnst, deine Spitzhacke zu schwingen.</li>
+    </ol>
+    <h2><strong>Zusammenfassung</strong></h2>
+    <p>Locating the <strong>Averill Mines</strong> und <strong>Kings Hollow</strong> ist der Wendepunkt in deinem VEIN-Durchlauf. Der Zugang zu diesen unbegrenzten Vorräten an Hämatit und Graphit wird dir erlauben, die Apokalypse zu dominieren.</p>
+    <p>Belade deinen LKW, schnapp dir deine verbesserte Spitzhacke und mach dich auf zu den Bergen!</p>
+    `
+    },
+    
+    {
         id: 11,
         title: "VEIN Spiel Rook Cavern Guide: Der ultimative Bergbaustandort",
         description: "Navigiere durch die dunklen Tiefen der Rook Cavern in VEIN! Dieser Guide enthüllt den Standort, wichtige Ausrüstungen und lebenswichtige Ressourcen wie Hämatit und Graphit, um Stahl zu schmieden und deinen Weg durch das Überleben im mittleren bis späten Spiel zu ebnen. Bereite dich auf Zombies und Dunkelheit vor!",
@@ -9,9 +134,9 @@ export const guides = [
         imageAlt: "VEIN Spiel Rook Cavern",
         isHome: true,
         seo: {
-          title: "VEIN Spiel Rook Cavern Guide: Standort, Hämatit und Graphit Bergbau",
-          description: "Bist du auf der Suche nach der Rook Cavern in VEIN? Unser vollständiger Guide deckt den Kartenstandort, essentielle Ausrüstungen und wie du Hämatit und Graphit sicher im Dunkeln abbauen kannst, ab.",
-          keywords: "vein spiel rook cavern, bergbau, guide, hämatit, graphit, stahl, überleben, zombies, standort, ausrüstung, ressourcen"
+            title: "VEIN Spiel Rook Cavern Guide: Standort, Hämatit und Graphit Bergbau",
+            description: "Bist du auf der Suche nach der Rook Cavern in VEIN? Unser vollständiger Guide deckt den Kartenstandort, essentielle Ausrüstungen und wie du Hämatit und Graphit sicher im Dunkeln abbauen kannst, ab.",
+            keywords: "vein spiel rook cavern, bergbau, guide, hämatit, graphit, stahl, überleben, zombies, standort, ausrüstung, ressourcen"
         },
         addressBar: "/vein-game-rook-cavern-guide",
         detailsHtml: `
@@ -44,7 +169,7 @@ export const guides = [
             Das umliegende Gebiet ist in der Regel felsig und erhöht.
         </li>
         <li>
-            <em>Tipp: Überprüfe unsere <a href="/vein-map" rel="noopener noreferrer" target="_blank">Interaktive Karte</a>, um den genauen Pin-Standort zu sehen.</em>
+            <em>Tipp: Überprüfe unsere <a href="/vein-map" rel="noopener noreferrer">Interaktive Karte</a>, um den genauen Pin-Standort zu sehen.</em>
         </li>
     </ol>
     <p>
@@ -127,11 +252,11 @@ export const guides = [
         Die Beherrschung der <strong>VEIN Spiel Rook Cavern</strong> ist ein Meilenstein auf deiner Überlebensreise. Sobald du eine stabile Versorgung mit Hämatit und Graphit sicherstellen kannst, kannst du deine Basisverteidigungen und Waffen erheblich aufrüsten.
     </p>
     <p>
-        <em>Hast du Hilfe beim Handwerk mit diesen Erzen nötig? Schau dir unsere <a href="/vein-items" rel="noopener noreferrer" target="_blank">Handwerksrezepte</a> Seite an!</em>
+        <em>Hast du Hilfe beim Handwerk mit diesen Erzen nötig? Schau dir unsere <a href="/vein-items" rel="noopener noreferrer">Handwerksrezepte</a> Seite an!</em>
     </p>
         `
     },
-    
+
 
     {
         "id": 9,
@@ -753,7 +878,7 @@ export const guides = [
         "publishDate": "2025-11-20",
         "imageUrl": "/images/guide/guide04.webp",
         "imageAlt": "Professioneller Screenshot des Revolutionären VEIN New Player Guide Teil 4: Trait-Auswahl",
-        "isHome": true,
+        "isHome": false,
         "seo": {
             "title": "VEIN New Player Guide P4: Trait-Auswahl Guide | Risiken & Belohnungen",
             "description": "Verstehen Sie die Vor- und Nachteile der Trait-Auswahl in VEIN an Tag 1. Dieser Guide analysiert Traits mit hohem Risiko, gibt Empfehlungen für alle Spielertypen und hilft Ihnen, kritische Fehler für das Überleben zu vermeiden. Besuchen Sie veingame.net für mehr.",
@@ -852,7 +977,7 @@ export const guides = [
         "publishDate": "2025-11-20",
         "imageUrl": "/images/guide/guide05.webp",
         "imageAlt": "Ein Spielercharakter in VEIN steht neben einem Fahrzeug, umgeben von Zombies, was die Prioritäten an Tag 1 zeigt.",
-        "isHome": true,
+        "isHome": false,
         "seo": {
             "title": "VEIN New Player Guide: Day 1 Survival dominieren!",
             "description": "Überleben Sie Ihren ersten Tag in VEIN! Dieser Guide priorisiert Fahrzeuge, Rüstung und Werkzeuge, um neuen Spielern zu helfen, gegen die Zombiehorden zu bestehen. Meistern Sie jetzt die Ressourcensammlung und den Basisbau!",

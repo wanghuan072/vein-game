@@ -54,7 +54,7 @@
                 <td class="name-cell">
                   <div class="name-primary">{{ item.title }}</div>
                 </td>
-                <td class="desc-cell">{{ item.description || 'No description available.' }}</td>
+                <td class="desc-cell" v-html="item.description || 'No description available.'"></td>
                 <td class="type-cell">
                   <span class="type-pill" v-if="item.type">{{ item.type }}</span>
                   <span v-else>—</span>
@@ -64,6 +64,56 @@
           </table>
         </div>
       </div>
+
+      <!-- Schematics Items -->
+      <div v-if="!loading && !error && schematicsItems.length > 0" class="table-section">
+        <div class="section-header">
+          <h2 class="section-title">Schematics Items</h2>
+          <span class="section-count">{{ schematicsItems.length }} items</span>
+        </div>
+        <div class="table-container">
+          <table class="items-table">
+            <thead>
+              <tr>
+                <th class="preview-col">Preview</th>
+                <th class="name-col">Name</th>
+                <th class="desc-col">Description</th>
+                <th class="type-col">Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                v-for="item in schematicsItems"
+                :key="item.id"
+                @click="onItemClick(item)"
+                :class="['table-row', { 'disabled': item.showDetail === false }]"
+              >
+                <td class="preview-cell">
+                  <img
+                    v-if="item.imageUrl"
+                    :src="item.imageUrl"
+                    :alt="item.imageAlt || item.title"
+                    class="preview-thumb"
+                    loading="lazy"
+                  />
+                  <span v-else>—</span>
+                </td>
+                <td class="name-cell">
+                  <div class="name-primary">{{ item.title }}</div>
+                </td>
+                <td class="desc-cell" v-html="item.description || 'No description available.'"></td>
+                <td class="type-cell">
+                  <span class="type-pill" v-if="item.type">{{ item.type }}</span>
+                  <span v-else>—</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
     </div>
   </div>
 </template>
@@ -84,9 +134,11 @@ const { data: itemsData, loading, error, loadData } = useItemsData('special')
 const TYPE_MAP = {
   en: {
     keys: 'keys',
+    schematics: 'schematics',
   },
   de: {
     keys: 'schlüssel',  // 对应 "Schlüssel"
+    schematics: 'schematics',
   }
 }
 
@@ -114,6 +166,15 @@ const keysItems = computed(() => {
   const filtered = filterByType(targetType)
   if (import.meta.env.DEV) {
     console.log(`[ItemsSpecialView] keysItems - targetType: ${targetType}, count: ${filtered.length}, total items: ${itemsData.value.length}`)
+  }
+  return filtered
+})
+
+const schematicsItems = computed(() => {
+  const targetType = getTypeByLang('schematics')
+  const filtered = filterByType(targetType)
+  if (import.meta.env.DEV) {
+    console.log(`[ItemsSpecialView] schematicsItems - targetType: ${targetType}, count: ${filtered.length}, total items: ${itemsData.value.length}`)
   }
   return filtered
 })
@@ -244,8 +305,8 @@ const onItemClick = (item) => {
 }
 
 .preview-thumb {
-  width: 75px;
-  height: 75px;
+  width: 80px;
+  height: auto;
   object-fit: cover;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.1);
