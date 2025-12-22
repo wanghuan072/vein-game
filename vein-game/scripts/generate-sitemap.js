@@ -158,7 +158,7 @@ async function generateSitemap() {
     for (const category of itemCategories) {
       const items = allData[locale].items[category] || []
       items
-        .filter(item => item && item.addressBar)
+        .filter(item => item && item.showDetail !== false && item.addressBar)
         .forEach(item => {
           const itemPath = createLocalizedPath(`/vein-items/${category}${item.addressBar}`, locale)
           sitemapXml += `\n${generateUrlXml(itemPath, item.publishDate || lastmod, 0.6, 'monthly')}`
@@ -226,4 +226,3 @@ async function main() {
 }
 
 main()
-
