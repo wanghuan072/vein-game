@@ -1,5 +1,326 @@
 export const guides = [
     {
+        id: 15,
+        title: "VEIN Game Militärbasis-Guide: Plünderung von Outpost Alpha",
+        description: "Bereit, die rostigen Rohre wegzuwerfen und echte Feuerkraft zu finden? Dieser Guide enthüllt die Geheimnisse von Outpost Alpha, dem heißesten Spot für Militär-Loot im Spiel VEIN. Finden Sie seltene Waffen, medizinische Ausrüstung & jede Menge Ressourcen für den Basisbau! Bereiten Sie sich auf den Raid vor!",
+        tags: ["VEIN Game", "Militärbasis", "Looting Guide", "Outpost Alpha", "Seltene Waffen"],
+        publishDate: "2025-12-10",
+        isHome: true,
+        imageUrl: "/images/guide/guide15.webp",
+        imageAlt: "Ein Überlebender nähert sich der eingezäunten Militärbasis Outpost Alpha im Spiel VEIN, bereit zum Plündern.",
+        seo: {
+            title: "VEIN Game Militärbasis-Guide: Plünderung von Outpost Alpha",
+            description: "Entdecken Sie Outpost Alpha in VEIN. Dieser Militärbasis-Guide deckt den Standort, seltene Waffen wie die FN Fifty-Seven, das Zombrin-Heilmittel und Ressourcen für den Basisbau ab.",
+            keywords: "VEIN game, Militärbasis, Outpost Alpha, Looting, seltene Waffen, FN Fifty-Seven, Basisbau, Survival Guide, Militärausrüstung, 5.7x28mm",
+        },
+        addressBar: "/vein-game-military-base-looting-outpost-alpha",
+        detailsHtml: `
+            <p>
+    Wenn Sie Ihr Arsenal von zivilen Waffen auf militärische Ausrüstung aufrüsten möchten, müssen Sie die <strong>VEIN Game Militärbasis</strong> finden. In der aktuellen Version des Spiels wird dieser Ort als <strong>Outpost Alpha</strong> bezeichnet.
+    </p>
+    
+    <p>
+    Dieser eingezäunte Komplex ist einer der lukrativsten Plünderungsorte auf der Karte und bietet hochrangige Schusswaffen, einzigartige medizinische Gegenstände und enorme Ressourcen für den Basisbau. Dieser Guide zeigt Ihnen im Detail, was Sie finden können und wie Sie sich auf den Raid vorbereiten.
+    </p>
+    
+    <h2>
+    <strong>Wo befindet sich die Militärbasis (Outpost Alpha)?</strong>
+    </h2>
+    
+    <p>
+    Outpost Alpha liegt nicht im Zentrum einer Großstadt. Stattdessen befindet er sich in einer eher ländlichen Umgebung und erfordert meist eine Fahrt abseits der befestigten Straßen, um das Haupttor zu erreichen.
+    </p>
+    
+    <ol>
+    <li>
+    <strong>Orientierungspunkte:</strong> Suchen Sie nach dem <strong>Mobile Home Park</strong> (Wohnwagenpark). Der Feldweg, der zum Außenposten führt, ist normalerweise mit diesem Wohngebiet verbunden oder liegt in dessen Nähe.
+    </li>
+    <li>
+    <strong>Optik:</strong> Die Basis ist von einem hohen Maschendrahtzaun mit Stacheldraht umgeben. Achten Sie auf ein Wachhäuschen und ein Tor am Eingang. Im Inneren sehen Sie grüne Quonset-Hütten und Militärzelte.
+    </li>
+    </ol>
+    
+    <p>
+    <img src="/images/guide/guide15-01.webp" alt="VEIN Game Karte Outpost Alpha" width="50%" style="width: 50%;">
+    </p>
+    
+    <h2>
+    <strong>Top-Tier Loot: Waffen & Munition</strong>
+    </h2>
+    
+    <p>
+    Der Hauptgrund, warum Überlebende die <strong>VEIN Game Militärbasis</strong> aufsuchen, ist die Feuerkraft. Im Gegensatz zu Polizeistationen spawnen in Outpost Alpha Waffen, die selten oder anderswo gar nicht verfügbar sind.
+    </p>
+    
+    <h3>
+    <strong>🔫 Seltene Waffen-Spawns</strong>
+    </h3>
+    
+    <ol>
+    <li>
+    <strong>FN Fifty-Seven:</strong>
+    <span>
+     Eine Pistole mit hoher Kapazität im Kaliber 5.7x28mm. Sie verursacht deutlich mehr Schaden (ca. 32 Pkt.) im Vergleich zu Standard-9mm-Handfeuerwaffen (ca. 22 Pkt.).
+    </span>
+    </li>
+    </ol>
+    
+    <p>
+    <img src="/images/guide/guide15-02.webp" alt="VEIN Game FN Fifty-Seven" width="50%" style="width: 50%;">
+    </p>
+    
+    <ol>
+    <li>
+    <strong>R&amp;F MP5:</strong>
+    <span>
+     Eine leichte Maschinenpistole (9mm). Hervorragend zur Mengenkontrolle geeignet.
+    </span>
+    </li>
+    </ol>
+    
+    <p>
+    <img src="/images/guide/guide15-03.webp" alt="VEIN Game R&amp;F MP5" width="50%" style="width: 50%;">
+    </p>
+    
+    <ol>
+    <li>
+    <strong>M870 & Doppelläufige Schrotflinten:</strong>
+    <span>
+     Harte Brocken für den Nahkampf.
+    </span>
+    </li>
+    </ol>
+    
+    <p>
+    <strong>Hinweis zur Munition:</strong> In den Waffenbehältern finden Sie hier oft <strong>5.7x28mm Patronen</strong> und Magazine mit großer Kapazität (20 Schuss) speziell für die FN Fifty-Seven.
+    </p>
+    
+    <h2>
+    <strong>Einzigartige medizinische Gegenstände: Das Zombrin-Heilmittel</strong>
+    </h2>
+    
+    <p>
+    Das Durchsuchen der medizinischen Boxen und Zelte in Outpost Alpha kann eines der wertvollsten Items im Spiel hervorbringen: <strong>Zombrin</strong>.
+    </p>
+    
+    <ol>
+    <li>
+    <strong>Beschreibung:</strong> Wird als "Heilmittel gegen den Zombie-Virus" verkauft.
+    </li>
+    <li>
+    <strong>Anwendung:</strong> Wenn Sie infiziert sind, ist dieses seltene Medikament Ihre beste Überlebenschance.
+    </li>
+    <li>
+    <strong>Andere Medikamente:</strong> Sie können hier auch verschreibungspflichtige Schmerzmittel, Morphin, Survival-Kits und Kompressionsverbände finden.
+    </li>
+    </ol>
+    
+    <h2>
+    <strong>Ressourcen für den Basisbau (Generatoren & Wasser)</strong>
+    </h2>
+    
+    <p>
+    Outpost Alpha dreht sich nicht nur um Waffen; es ist eine Goldgrube für Logistik und Basisinfrastruktur.
+    </p>
+    
+    <ol>
+    <li>
+    <strong>Industriegeneratoren:</strong> Die Basis wird von großen gelben Generatoren auf Anhängern versorgt. Diese können oft inspiziert, eingeschaltet oder potenziell transportiert werden.
+    </li>
+    <li>
+    <strong>Massive Wassertanks:</strong> Suchen Sie nach den großen quadratischen Flüssigkeitsbehältern (IBC-Containern). Diese können riesige Mengen Wasser speichern, perfekt für ein dauerhaftes Trinkwassersystem in Ihrer Heimatbasis.
+    </li>
+    <li>
+    <strong>Bierfässer:</strong> Obwohl sie mit Bier spawnen, sind diese Fässer exzellente Flüssigkeitsbehälter. Sie können sie leeren und für den Transport mit Wasser auffüllen.
+    </li>
+    </ol>
+    
+    <h2>
+    <strong>Vorbereitung: Dietrich mitbringen!</strong>
+    </h2>
+    
+    <p>
+    Das ist entscheidend. Der Großteil des hochwertigen Loots in der <strong>VEIN Game Militärbasis</strong> ist in verschlossenen Behältern gesichert.
+    </p>
+    
+    <ol>
+    <li>
+    <strong>Schwierigkeitsgrad:</strong> Sie werden auf "Harte" und "Sehr Harte" Schlösser an Truhen, Waffenbehältern und Militärspinden stoßen.
+    </li>
+    <li>
+    <strong>Strategie:</strong> Kommen Sie nicht ohne einen guten Vorrat an <strong>Dietrichen</strong> (Lockpicks) oder ein spezielles Schlossknacker-Kit hierher. Ohne sie verpassen Sie die FN Fifty-Seven und andere seltene Gegenstände, die unter den Kojen und in den Spinden lagern.
+    </li>
+    </ol>
+    
+    <h2>
+    <strong>Zusammenfassung</strong>
+    </h2>
+    
+    <p>
+    Der Überfall auf <strong>Outpost Alpha</strong> ist ein Meilenstein im mittleren bis späten Spielverlauf. Die Kombination aus der <strong>FN Fifty-Seven</strong>, dem <strong>Zombrin</strong>-Heilmittel und den massiven <strong>Wassertanks</strong> macht ihn zu einem notwendigen Ziel für jeden Überlebenden, der nicht nur existieren, sondern florieren will.
+    </p>
+    
+    <p>
+    Parken Sie Ihren Truck draußen, schalten Sie die Soldaten-Zombies aus und fangen Sie an, die Schlösser zu knacken!
+    </p>
+            `,
+    },
+    {
+        id: 14,
+        title: "VEIN Game: Wie man cremige Erdnussbutter bekommt (Plündern & Kochen)",
+        description: "Lust auf cremigen Genuss in VEIN? Dieser Guide verrät die besten Fundorte für cremige Erdnussbutter, ein kalorienreiches Grundnahrungsmittel für das Überleben. Vergessen Sie das Crafting – es geht darum, zu wissen, wo man suchen muss!",
+        tags: ["VEIN Game", "Cremige Erdnussbutter", "Looting Guide", "Survival Essen", "Kalorienreiche Nahrung"],
+        publishDate: "2025-12-10",
+        imageUrl: "/images/guide/guide14.webp",
+        imageAlt: "Ein Glas cremige Erdnussbutter im Spiel VEIN, umgeben von Überlebensgegenständen.",
+        seo: {
+            title: "VEIN Game Erdnussbutter Guide: Plündern & Kochrezepte",
+            description: "Warum suchen alle nach cremiger Erdnussbutter in VEIN? Erfahren Sie, wo Sie sie finden und wie Sie sie für Schokoladenfondue und Grill-PBJ-Rezepte verwenden.",
+            keywords: "VEIN, Game, Erdnussbutter, Looting Guide, Survival, kalorienreiches Essen, Fundort, Gameplay, Tipps, Guide",
+        },
+        addressBar: "/vein-game-how-to-get-smooth-peanut-butter",
+        detailsHtml: `
+            <p>
+    Beim Überleben geht es nicht nur um Waffen und Munition; es geht um Kalorien. In <strong>VEIN</strong> sind kalorienreiche Lebensmittel unerlässlich, um Ihren Charakter gesund und stark zu halten.
+    </p>
+    
+    <p>
+    Eines der begehrtesten Lebensmittel ist die <strong>cremige Erdnussbutter</strong>. Man kann sie zwar direkt aus dem Glas essen, aber erfahrene Überlebende wissen, dass sie einen versteckten Wert hat: <strong>Kochen</strong>.
+    </p>
+    
+    <p>
+    Viele Spieler fragen <em>"Wie bekommt man in VEIN cremige Erdnussbutter?"</em>, nicht nur wegen des Hungers, sondern weil sie hochwertige Mahlzeiten zubereiten möchten.
+    </p>
+    
+    <h2>
+    <strong>Cremig vs. Stückig: Warum ist cremig besser?</strong>
+    </h2>
+    
+    <p>
+    In der Welt von VEIN werden Sie auf zwei Arten von Erdnussbuttergläsern stoßen: <strong>Stückig</strong> (Crunchy) und <strong>Cremig</strong> (Smooth).
+    </p>
+    
+    <p>
+    Beide können roh für einen schnellen Energieschub gegessen werden, aber <strong>cremige Erdnussbutter</strong> ist aus einem Grund überlegen: Sie ist eine erforderliche Zutat für spezifische Kochrezepte. Stückige Erdnussbutter kann in diesen Gerichten oft nicht als Ersatz verwendet werden.
+    </p>
+    
+    <p>
+    <img src="/images/guide/guide14-01.webp" alt="VEIN Game Erdnussbutter" width="50%" style="width: 50%;">
+    </p>
+    
+    <h2>
+    <strong>Kochen mit cremiger Erdnussbutter</strong>
+    </h2>
+    
+    <p>
+    Wenn Sie das Glück haben, ein frisches Glas cremige Erdnussbutter zu finden, essen Sie es nicht einfach mit dem Löffel! Heben Sie es für diese starken Rezepte auf, die eine bessere Ernährung und Zufriedenheitsboni bieten:
+    </p>
+    
+    <p>
+    <img src="/images/guide/guide14-02.webp" alt="VEIN Game Kochen" width="50%" style="width: 50%;">
+    </p>
+    
+    <h3>
+    <strong>🍫 1. Schokoladenfondue</strong>
+    </h3>
+    
+    <p>
+    <strong>Zutaten:</strong>
+    <span> Cremige Erdnussbutter + Schokoladenriegel + (Hitzequelle)</span>
+    </p>
+    
+    <p>
+    <span>
+    Ein Luxus-Dessert in der Apokalypse. Dieses Gericht steigert die Zufriedenheit und Kalorienaufnahme Ihres Charakters erheblich. Perfekt, um sich von einem stressigen Tag voller Zombiekämpfe zu erholen.
+    </span>
+    </p>
+    
+    <h3>
+    <strong>🥪 2. Gegrilltes PBJ (Erdnussbutter & Marmelade)</strong>
+    </h3>
+    
+    <p>
+    <strong>Zutaten:</strong>
+    <span>
+     Cremige Erdnussbutter + Gelee/Marmelade + Brot + (Bratpfanne/Hitzequelle)
+    </span>
+    </p>
+    
+    <p>
+    <span>
+    Ein Upgrade des klassischen Sandwiches. Warm zubereitet ist es sättigender und bietet bessere Werte, als wenn man die Zutaten einzeln isst.
+    </span>
+    </p>
+    
+    <h2>
+    <strong>Wo findet man cremige Erdnussbutter?</strong>
+    </h2>
+    
+    <p>
+    Da man Erdnussbutter nicht selbst herstellen kann, ist Plündern die einzige Option. Hier sind die besten Orte für die Suche:
+    </p>
+    
+    <h3>
+    <strong>1. Wohnküchen (Beste Chance)</strong>
+    </h3>
+    
+    <p>
+    <strong>Suchen Sie in:</strong>
+    <span> Oberschränken und Speisekammern.</span>
+    </p>
+    
+    <p>
+    <span>
+    Das Durchsuchen von Häusern ist die verlässlichste Methode. Fast jede Küche in Glenwood und Sterling hat die Chance, Erdnussbutter zu spawnen. Vergessen Sie nicht, die Regale in der Speisekammer zu prüfen.
+    </span>
+    </p>
+    
+    <h3>
+    <strong>2. Supermärkte & Lebensmittelgeschäfte</strong>
+    </h3>
+    
+    <p>
+    <strong>Suchen Sie in:</strong>
+    <span> Lebensmittelgängen.</span>
+    </p>
+    
+    <p>
+    <span>
+    Große Lebensmittelgeschäfte haben mehrere Regale für Konserven und Gläser. Hier finden Sie oft mehrere Gläser beider Sorten (stückig und cremig).
+    </span>
+    </p>
+    
+    <h2>
+    <strong>Survival-Tipp: Frische & Geruch prüfen!</strong>
+    </h2>
+    
+    <p>
+    Das Glas zu finden ist nur die halbe Miete. Bevor Sie es zum Kochen oder Essen verwenden, prüfen Sie den Status:
+    </p>
+    
+    <ol>
+    <li>
+    <strong>Frische:</strong> Bewegen Sie den Mauszeiger über den Gegenstand. Verwenden Sie zum Kochen nur <strong>Frische</strong> (Fresh) oder <strong>Abgestandene</strong> (Stale) Zutaten.
+    </li>
+    <li>
+    <strong>Geruch:</strong> Achten Sie auf die Geruchsanzeige. Wenn die Erdnussbutter schlecht oder verrottet riecht, <strong>kochen Sie nicht damit</strong>. Es wird das gesamte Gericht ruinieren und Sie krank machen.
+    </li>
+    </ol>
+    
+    <h2>
+    <strong>Zusammenfassung</strong>
+    </h2>
+    
+    <p>
+    Jetzt wissen Sie, wie Sie in <strong>VEIN an cremige Erdnussbutter</strong> kommen. Es ist nicht nur ein Snack; es ist der Schlüssel zur Zubereitung von <strong>Schokoladenfondue</strong> und <strong>gegrilltem PBJ</strong>.
+    </p>
+    
+    <p>
+    Prüfen Sie die Schränke, kontrollieren Sie den Geruch und fangen Sie an, wie ein Gourmet-Überlebender zu kochen!
+    </p>
+            `,
+    },
+    {
         "id": 12,
         "title": "EIN Game Verbesserte Spitzhacke: Der Ultimative Minen-Guide",
         "description": "Genug von wackeligen Werkzeugen in VEIN? Die Verbesserte Spitzhacke ist dein Ticket ins Stahl-Zeitalter! Entdecke die besten Orte, um dir dieses spielverändernde Werkzeug zu schnappen und die Ressourcensammlung zu dominieren. Mach dich bereit, wie ein Profi zu schürfen!",
@@ -123,7 +444,7 @@ export const guides = [
     <p>Belade deinen LKW, schnapp dir deine verbesserte Spitzhacke und mach dich auf zu den Bergen!</p>
     `
     },
-    
+
     {
         id: 11,
         title: "VEIN Spiel Rook Cavern Guide: Der ultimative Bergbaustandort",
@@ -361,7 +682,7 @@ export const guides = [
         "publishDate": "2025-11-28",
         "imageUrl": "/images/guide/guide08.webp",
         "imageAlt": "VEIN Gameplay, das das Steinhaus auf der Werrenrath Island zeigt, einen potenziellen besten Basisstandort.",
-        "isHome": true,
+        "isHome": false,
         "seo": {
             "title": "VEIN Bester Basis Guide: Werrenrath Island - Ultimativer Überlebensstandort",
             "description": "Entdecken Sie den ultimativen VEIN Basisstandort: Das Steinhaus auf der Werrenrath Island. Dieser Guide beschreibt seine Vorteile für das Überleben der Zombies, das Ressourcenmanagement und die langfristige Sicherheit.",
@@ -535,7 +856,7 @@ export const guides = [
         "publishDate": "2025-11-28",
         "imageUrl": "/images/guide/guide07.webp",
         "imageAlt": "Ein Spielercharakter in VEIN plündert Vorräte in einem Baumarkt, wobei die besten Loot-Orte für das Überleben hervorgehoben werden.",
-        "isHome": true,
+        "isHome": false,
         "seo": {
             "title": "VEIN Bester Loot Guide: Dominieren Sie das Plündern beim Überleben!",
             "description": "Meistern Sie das Überleben in VEIN mit unserem ultimativen Looting-Guide! Finden Sie die besten Loot-Orte wie Frank's Hardware Emporium für Werkzeuge, Waffen und Materialien zum Basisbau.",

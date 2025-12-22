@@ -1,5 +1,343 @@
 export const guides = [
     {
+        id: 15,
+        title: "VEIN Game Military Base Guide: Looting Outpost Alpha",
+        description: "Ready to ditch those rusty pipes and grab some real firepower? This guide unlocks the secrets of Outpost Alpha, the VEIN game's hottest military loot spot. Find rare weapons, medical gear & tons of base-building resources! Prepare for a raid!",
+        tags: ["VEIN Game", "Military Base", "Looting Guide", "Outpost Alpha", "Rare Weapons"],
+        publishDate: "2025-12-10",
+        isHome: true,
+        imageUrl: "/images/guide/guide15.webp",
+        imageAlt: "A survivor approaching the fenced-in Outpost Alpha military base in the VEIN game, ready to loot.",
+        seo: {
+            title: "VEIN Game Military Base Guide: Looting Outpost Alpha",
+            description: "Discover Outpost Alpha in VEIN. This military base guide covers location, rare weapons like the FN Fifty-Seven, Zombrin cure, and base building resources",
+            keywords: "VEIN game, military base, outpost alpha, looting, rare weapons, FN Fifty-Seven, base building, survival guide, military gear, 5.7x28mm",
+        },
+        addressBar: "/vein-game-military-base-looting-outpost-alpha",
+        detailsHtml: `
+        <p>
+If you are looking to upgrade your arsenal from civilian weaponry to military-grade hardware, you need to find the <strong>vein game military base</strong>. In the current version of the game, this location is identified as <strong>Outpost Alpha</strong>.
+</p>
+
+<p>
+This fenced-in compound is one of the most lucrative looting spots on the map, offering high-tier firearms, unique medical items, and massive resources for base building. This guide will detail what you can find and how to prepare for the raid.
+</p>
+
+<h2>
+<strong>Where is the Military Base (Outpost Alpha)?</strong>
+</h2>
+
+<p>
+Outpost Alpha is not located in the center of a major city. Instead, it is tucked away in a more rural setting, typically requiring off-road travel to access the main gate.
+</p>
+
+<ol>
+<li>
+
+<strong>Landmarks:</strong> Look for the <strong>Mobile Home Park</strong> / Trailer Park area. The dirt road leading to the outpost is usually connected to or near this residential zone.
+</li>
+<li>
+
+<strong>Visuals:</strong> The base is surrounded by a high chain-link fence with razor wire. Look for a guard booth and a gate at the entrance. Inside, you will see green Quonset huts and military tents.
+</li>
+</ol>
+
+<p>
+<img src="/images/guide/guide15-01.webp" alt="vein game map Outpost Alpha " width="50%" style="width: 50%;">
+</p>
+
+<h2>
+<strong>Top-Tier Loot: Weapons &amp; Ammo</strong>
+</h2>
+
+<p>
+The primary reason survivors seek out the <strong>vein game military base</strong> is for the firepower. Unlike police stations, Outpost Alpha spawns weapons that are rare or unavailable elsewhere.
+</p>
+
+<h3>
+<strong>🔫 Rare Weapon Spawns</strong>
+</h3>
+
+<ol>
+<li>
+
+<strong>FN Fifty-Seven:</strong>
+<span>
+ A high-capacity pistol chambered in 5.7x28mm. It deals significantly more damage (approx. 32 dmg) compared to standard 9mm sidearms (approx. 22 dmg).
+</span>
+</li>
+</ol>
+
+<p>
+<img src="/images/guide/guide15-02.webp" alt="Vein game FN Fifty-Seven" width="50%" style="width: 50%;">
+</p>
+
+<ol>
+<li>
+
+<strong>R&amp;F MP5:</strong>
+<span>
+ A light submachine gun (9mm). Excellent for crowd control.
+</span>
+</li>
+</ol>
+
+<p>
+<img src="/images/guide/guide15-03.webp" alt="Vein game R&amp;F MP5" width="50%" style="width: 50%;">
+</p>
+
+<ol>
+<li>
+
+<strong>M870 &amp; Double Barrel Shotguns:</strong>
+<span>
+ heavy hitters for close quarters.
+</span>
+</li>
+</ol>
+
+<p>
+<strong>Note on Ammo:</strong> You will often find <strong>5.7x28mm rounds</strong> and large capacity magazines (20 rounds) specifically for the FN Fifty-Seven in the weapon cases here.
+</p>
+
+<h2>
+<strong>Unique Medical Items: The Zombrin Cure</strong>
+</h2>
+
+<p>
+Searching the medical boxes and tents within Outpost Alpha can yield one of the most valuable items in the game: <strong>Zombrin</strong>.
+</p>
+
+<ol>
+<li>
+
+<strong>Description:</strong> Sold as a "cure to the zombie virus."
+</li>
+<li>
+
+<strong>Usage:</strong> If you are infected, this rare pharmaceutical is your best chance at survival.
+</li>
+<li>
+
+<strong>Other Meds:</strong> You can also find Prescription Painkillers, Morphine, Survival Kits, and Compression Bandages.
+</li>
+</ol>
+
+<h2>
+<strong>Base Building Resources (Generators &amp; Water)</strong>
+</h2>
+
+<p>
+Outpost Alpha isn't just about guns; it is a goldmine for logistics and base infrastructure.
+</p>
+
+<ol>
+<li>
+
+<strong>Industrial Generators:</strong> The base is powered by large yellow generators on trailers. These can often be inspected, turned on, or potentially relocated.
+</li>
+<li>
+
+<strong>Massive Water Tanks:</strong> Look for the large square fluid tanks (IBC totes). These can hold massive amounts of water (thousands of ounces), perfect for setting up a permanent hydration system at your home base.
+</li>
+<li>
+
+<strong>Beer Kegs:</strong> While they spawn with beer, these kegs are excellent fluid containers. You can empty them and refill them with water for transport.
+</li>
+</ol>
+
+<h2>
+<strong>Preparation: Bring Lockpicks!</strong>
+</h2>
+
+<p>
+This is crucial. Most of the high-value loot in the <strong>vein game military base</strong> is secured inside locked containers.
+</p>
+
+<ol>
+<li>
+
+<strong>Lock Difficulty:</strong> You will encounter "Tough" and "Very Tough" locks on Footlockers, Weapon Cases, and Military Supply Lockers.
+</li>
+<li>
+
+<strong>Strategy:</strong> Do not come here without a good supply of <strong>Lockpicks</strong> or a specialized lockpicking kit. Without them, you will miss out on the FN Fifty-Seven and other rare items stored under the bunks and in the lockers.
+</li>
+</ol>
+
+<h2>
+<strong>Summary</strong>
+</h2>
+
+<p>
+Raiding <strong>Outpost Alpha</strong> is a mid-to-late game milestone. The combination of the <strong>FN Fifty-Seven</strong>, the <strong>Zombrin</strong> cure, and the massive <strong>water tanks</strong> makes it a necessary destination for any survivor looking to thrive, not just survive.
+</p>
+
+<p>
+Park your truck outside, clear the soldier zombies, and start picking those locks!
+</p>
+        `,
+    },
+    {
+        id: 14,
+        title: "VEIN Game: How to Get Smooth Peanut Butter (Looting & Cooking)",
+        description: "Craving that creamy goodness in VEIN? This guide reveals the best looting locations to score smooth peanut butter, a high-calorie essential for survival. Forget crafting, it's all about knowing where to look! Prioritize residential kitchens for the sweetest score.",
+        tags: ["VEIN Game", "Smooth Peanut Butter", "Looting Guide", "Survival Food", "High Calorie Food"],
+        publishDate: "2025-12-10",
+        imageUrl: "/images/guide/guide14.webp",
+        imageAlt: "A jar of smooth peanut butter in VEIN game, surrounded by survival items.",
+        seo: {
+            title: "VEIN Game Smooth Peanut Butter Guide: Looting & Cooking Recipes",
+            description: "Why is everyone looking for Smooth Peanut Butter in VEIN? Learn where to find it and how to use it for Chocolate Fondue and Grilled PBJ recipes.",
+            keywords: "VEIN, game, smooth peanut butter, looting guide, survival, high calorie food, where to find, gameplay, tips, guide, how to get",
+        },
+        addressBar: "/vein-game-how-to-get-smooth-peanut-butter",
+        detailsHtml: `
+        <p>
+Survival isn't just about guns and ammo; it's about calories. In <strong>VEIN</strong>, high-calorie foods are essential for keeping your character healthy and strong.
+</p>
+
+<p>
+One of the most sought-after food items is <strong>vein game smooth peanut butter</strong>. While you can eat it straight from the jar, seasoned survivors know it has a hidden value: <strong>Cooking</strong>.
+</p>
+
+<p>
+Many players are asking <em>"vein game how to get smooth peanut butter?"</em> not just because they are hungry, but because they want to craft high-tier meals.
+</p>
+
+<h2>
+<strong>Smooth vs. Crunchy: Why Smooth is Better?</strong>
+</h2>
+
+<p>
+In the world of VEIN, you will encounter two main types of peanut butter jars: <strong>Crunchy</strong> and <strong>Smooth</strong>.
+</p>
+
+<p>
+Both can be eaten raw for a quick energy boost, but <strong>vein game smooth peanut butter</strong> is superior for one reason: It is a required ingredient for specific cooking recipes. Crunchy peanut butter often cannot be used as a substitute in these dishes.
+</p>
+
+<p>
+<img src="/images/guide/guide14-01.webp" alt="Vein game peanut butter" width="50%" style="width: 50%;">
+</p>
+
+<h2>
+<strong>Cooking with Smooth Peanut Butter</strong>
+</h2>
+
+<p>
+If you are lucky enough to loot a fresh jar of Smooth Peanut Butter, don't just eat it with a spoon! Save it for these powerful recipes that provide better nutrition and happiness bonuses:
+</p>
+
+<p>
+<img src="/images/guide/guide14-02.webp" alt="Vein game cooking" width="50%" style="width: 50%;">
+</p>
+
+<h3>
+<strong>🍫 1. Chocolate Fondue</strong>
+</h3>
+
+<p>
+<strong>Ingredients:</strong>
+<span> Smooth Peanut Butter + Chocolate Bar + (Heat Source)</span>
+</p>
+
+<p>
+<span>
+A luxury dessert in the apocalypse. This dish significantly boosts your character's happiness and calorie intake. Perfect for recovering from a stressful day of fighting zombies.
+</span>
+</p>
+
+<h3>
+<strong>🥪 2. Grilled PBJ (Peanut Butter &amp; Jelly)</strong>
+</h3>
+
+<p>
+<strong>Ingredients:</strong>
+<span>
+ Smooth Peanut Butter + Jelly/Jam + Bread + (Frying Pan/Heat Source)
+</span>
+</p>
+
+<p>
+<span>
+An upgrade to the classic sandwich. Cooking it hot makes it more satisfying and provides better stats than eating the ingredients separately.
+</span>
+</p>
+
+<h2>
+<strong>Where to Find Smooth Peanut Butter?</strong>
+</h2>
+
+<p>
+Since you cannot craft the peanut butter itself, looting is your only option. Here are the best locations to search:
+</p>
+
+<h3>
+<strong>1. Residential Kitchens (Best Bet)</strong>
+</h3>
+
+<p>
+<strong>Look in:</strong>
+<span> Upper Cupboards and Pantries.</span>
+</p>
+
+<p>
+<span>
+House looting is the most reliable method. Almost every kitchen in Glenwood and Sterling has a chance to spawn peanut butter. Don't forget to check the pantry shelves.
+</span>
+</p>
+
+<h3>
+<strong>2. Supermarkets &amp; Grocery Stores</strong>
+</h3>
+
+<p>
+<strong>Look in:</strong>
+<span> Food Aisles.</span>
+</p>
+
+<p>
+<span>
+Large grocery stores will have multiple shelves dedicated to canned and jarred goods. You can often find multiple jars of both Crunchy and Smooth varieties here.
+</span>
+</p>
+
+<h2>
+<strong>Survival Tip: Check Freshness &amp; Smell!</strong>
+</h2>
+
+<p>
+Finding the jar is only half the battle. Before you use it for cooking or eating, check its status:
+</p>
+
+<ol>
+<li>
+
+<strong>Freshness:</strong> Hover over the item. Only use <strong>Fresh</strong> or <strong>Stale</strong> ingredients for cooking.
+</li>
+<li>
+
+<strong>Smell:</strong> Pay attention to the smell indicator. If the peanut butter smells bad/rotten, <strong>do not cook with it</strong>. It will ruin the entire dish and make you sick.
+</li>
+</ol>
+
+<h2>
+<strong>Summary</strong>
+</h2>
+
+<p>
+Now you know the answer to <strong>vein game how to get smooth peanut butter</strong>. It's not just a snack; it's the key to making <strong>Chocolate Fondue</strong> and <strong>Grilled PBJ</strong>.
+</p>
+
+<p>
+Check the cupboards, verify the smell, and start cooking like a gourmet survivor!
+</p>
+
+        `,
+    },
+
+    {
         id: 12,
         title: "EIN Game Improved Pickaxe: The Ultimate Mining Guide",
         description: "Tired of flimsy tools in VEIN? The Improved Pickaxe is your ticket to the Steel Age! Discover the best locations to snag this game-changing tool and dominate resource gathering. Get ready to mine like a pro!",
@@ -361,7 +699,7 @@ export const guides = [
         publishDate: "2025-11-28",
         imageUrl: "/images/guide/guide08.webp",
         imageAlt: "VEIN gameplay showing Werrenrath Island's Stone House, a potential best base location.",
-        isHome: true,
+        isHome: false,
         seo: {
             title: "VEIN Best Base Guide: Werrenrath Island - Ultimate Survival Location",
             description: "Discover the ultimate VEIN base location: Werrenrath Island's Stone House. This guide details its advantages for zombie survival, resource management, and long-term security.",
@@ -529,7 +867,7 @@ export const guides = [
         publishDate: "2025-11-28",
         imageUrl: "/images/guide/guide07.webp",
         imageAlt: "A player character in VEIN looting supplies in a hardware store, highlighting the best loot locations for survival.",
-        isHome: true,
+        isHome: false,
         seo: {
             title: "VEIN Best Loot Guide: Dominate Survival Scavenging!",
             description: "Master VEIN's survival with our ultimate looting guide! Find the best loot locations like Frank's Hardware Emporium for tools, weapons, and base-building materials.",
@@ -1154,6 +1492,7 @@ Inside the armory, you’ll find these high-value items (loot varies slightly by
 
     `,
     },
+
 
 
 
