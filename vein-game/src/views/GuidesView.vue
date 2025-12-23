@@ -219,7 +219,7 @@ const { locale } = useI18n()
 const { getLocalizedPath } = useLocalizedPath()
 const { guides, loading, error, loadData } = useGuideData()
 
-const { isMobile } = useDeviceDetection()
+// const { isMobile } = useDeviceDetection()
 
 // 初始化加载数据
 onMounted(() => {
