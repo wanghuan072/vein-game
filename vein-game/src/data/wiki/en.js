@@ -687,6 +687,7 @@ export const wiki = [
           <li>Floodlight</li>
           <li>Flourescent Light</li>
       </ul>
+      <p>Street lights are essential for base security and nighttime operations. Learn how to <a href="/vein-guides/vein-game-how-to-power-street-light" class="inline-link">power street lights</a> to illuminate your base perimeter and improve visibility.</p>
 
       <h4>Misc. Utilities:</h4>
       <ul>

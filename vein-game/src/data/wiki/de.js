@@ -683,6 +683,7 @@ export const wiki = [
                 <li>Flutlicht (Floodlight)</li>
                 <li>Leuchtstofflampe (Flourescent Light)</li>
             </ul>
+            <p>Straßenlaternen sind wichtig für die Basissicherheit und nächtliche Operationen. Erfahren Sie, wie Sie <a href="/vein-guides/vein-game-how-to-power-street-light" class="inline-link">Straßenlaternen mit Strom versorgen</a>, um den Basisperimeter zu beleuchten und die Sichtbarkeit zu verbessern.</p>
       
             <h4>Sonstige Versorgung (Misc. Utilities):</h4>
             <ul>

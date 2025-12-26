@@ -173,7 +173,9 @@ export default {
           link1: 'best base locations',
           content2: 'and master the',
           link2: 'building system',
-          content3: 'to create your fortress.',
+          content3: 'to create your fortress. Proper lighting is crucial for base security—learn how to',
+          link4: 'power street lights',
+          content6: 'to illuminate your base and improve nighttime visibility.',
           content4: 'Beyond defense, VEIN game offers opportunities to rebuild society. Assist friendly NPCs, work with other survivors to establish safe zones, trade resources, and create a network of support in the wasteland. The multiplayer sandbox nature of this VEIN survival game means that cooperation and community building are essential for long-term survival and progress in VEIN game. Develop your',
           link3: 'skills and perks',
           content5: 'to become a more effective survivor.'
@@ -353,7 +355,7 @@ export default {
     },
     guidesPage: {
       header: {
-        title: 'Guides',
+        title: 'VEIN Game Guides',
         subtitle: 'Comprehensive guides to help you survive and thrive in VEIN game. Learn essential strategies, tips, and techniques for mastering VEIN survival game.'
       },
       loading: 'Loading guides...',

@@ -110,7 +110,7 @@
             <div class="what-is-text">
               <h3>{{ $t('homePage.whatIs.defending.title') }}</h3>
               <p>
-                {{ $t('homePage.whatIs.defending.content1') }} <a :href="getLocalizedPath('/vein-guides/vein-best-base-location-survival-guide')" class="inline-link">{{ $t('homePage.whatIs.defending.link1') }}</a> {{ $t('homePage.whatIs.defending.content2') }} <a :href="getLocalizedPath('/vein-wiki/building')" class="inline-link">{{ $t('homePage.whatIs.defending.link2') }}</a> {{ $t('homePage.whatIs.defending.content3') }}
+                {{ $t('homePage.whatIs.defending.content1') }} <a :href="getLocalizedPath('/vein-guides/vein-best-base-location-survival-guide')" class="inline-link">{{ $t('homePage.whatIs.defending.link1') }}</a> {{ $t('homePage.whatIs.defending.content2') }} <a :href="getLocalizedPath('/vein-wiki/building')" class="inline-link">{{ $t('homePage.whatIs.defending.link2') }}</a> {{ $t('homePage.whatIs.defending.content3') }} <a :href="getLocalizedPath('/vein-guides/vein-game-how-to-power-street-light')" class="inline-link">{{ $t('homePage.whatIs.defending.link4') }}</a> {{ $t('homePage.whatIs.defending.content6') }}
               </p>
               <p>
                 {{ $t('homePage.whatIs.defending.content4') }} <a :href="getLocalizedPath('/vein-wiki/skills')" class="inline-link">{{ $t('homePage.whatIs.defending.link3') }}</a> {{ $t('homePage.whatIs.defending.content5') }}

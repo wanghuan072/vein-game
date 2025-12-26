@@ -173,7 +173,9 @@ export default {
         "link1": "besten Basis-Standorte",
         "content2": "und meistern Sie das",
         "link2": "Bausystem",
-        "content3": ", um Ihre Festung zu errichten.",
+        "content3": ", um Ihre Festung zu errichten. Die richtige Beleuchtung ist entscheidend für die Basissicherheit – erfahren Sie, wie Sie",
+        "link4": "Straßenlaternen mit Strom versorgen",
+        "content6": ", um Ihre Basis zu beleuchten und die nächtliche Sichtbarkeit zu verbessern.",
         "content4": "Jenseits der Verteidigung bietet das VEIN Game Möglichkeiten zum Wiederaufbau der Gesellschaft. Helfen Sie freundlichen NPCs, arbeiten Sie mit anderen Überlebenden zusammen, um sichere Zonen zu errichten, handeln Sie mit Ressourcen und schaffen Sie ein Unterstützungsnetzwerk im Ödland. Die Multiplayer-Sandbox-Natur dieses VEIN Survival Games bedeutet, dass Kooperation und Gemeinschaftsbildung für das langfristige Überleben und den Fortschritt im VEIN Game unerlässlich sind. Entwickeln Sie Ihre",
         "link3": "Skills und Perks",
         "content5": ", um ein effektiverer Überlebender zu werden."
@@ -353,7 +355,7 @@ export default {
   },
   "guidesPage": {
     "header": {
-      "title": "Guides",
+      "title": "VEIN Game Guides",
       "subtitle": "Umfassende Anleitungen, die Ihnen helfen, im VEIN Game zu überleben und erfolgreich zu sein. Erlernen Sie wesentliche Strategien, Tipps und Techniken, um das VEIN Survival Game zu meistern."
     },
     "loading": "Guides werden geladen...",

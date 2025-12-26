@@ -1,5 +1,264 @@
 export const guides = [
     {
+        id: 16,
+        title: "VEIN Game: How to Power Street Light - Complete Guide",
+        description: "Want to light up the night in VEIN? This guide shows you exactly how to power street lights and illuminate your base area. Learn the step-by-step process, required materials, and pro tips for setting up your lighting system.",
+        tags: ["VEIN Game", "Street Light", "Power System", "Base Building", "Electricity Guide"],
+        publishDate: "2025-12-15",
+        isHome: true,
+        imageUrl: "/images/guide/guide16.webp",
+        imageAlt: "A powered street light illuminating the night in VEIN game, showing a survivor's base area.",
+        seo: {
+            title: "VEIN Game How to Power Street Light - Complete Guide",
+            description: "Learn how to power street lights in VEIN game. Step-by-step guide covering generator setup, wiring, and lighting your base area for better visibility and security.",
+            keywords: "VEIN game, how to power street light, street light guide, VEIN electricity, generator setup, base lighting, VEIN game how to power street light",
+        },
+        addressBar: "/vein-game-how-to-power-street-light",
+        detailsHtml: `
+        <p>
+In the dark, dangerous world of <strong>VEIN</strong>, proper lighting can mean the difference between life and death. Street lights not only help you see at night but also improve your base security and make nighttime operations much safer. This guide will teach you everything you need to know about <strong>vein game how to power street light</strong>.
+</p>
+
+<p>
+Many players ask "<strong>vein game how to power street light</strong>?" because setting up electricity in VEIN requires specific steps and materials. Unlike simply placing a lamp, street lights need to be connected to a power source through a proper electrical system.
+</p>
+
+<h2>
+<strong>What You Need: Materials and Tools</strong>
+</h2>
+
+<p>
+Before you start, make sure you have the following items ready:
+</p>
+
+<ol>
+<li>
+<strong>Generator:</strong> You'll need a working generator (gas-powered or diesel). Portable generators work best for street lights near your base. Industrial generators can be found at locations like <a href="/vein-guides/vein-game-military-base-looting-outpost-alpha" rel="noopener noreferrer">Outpost Alpha military base</a>, which is a great source for base-building resources.
+</li>
+<li>
+<strong>Fuel:</strong> Gasoline or diesel fuel to power the generator. Keep extra fuel in containers nearby. You can find fuel at various <a href="/vein-guides/vein-best-loot-locations" rel="noopener noreferrer">best loot locations</a> throughout the map.
+</li>
+<li>
+<strong>Street Light:</strong> A street light that you want to power. These can be found in towns or cities, or you may need to build one.
+</li>
+<li>
+<strong>Wire/Cable (if applicable):</strong> Some setups may require wiring to connect the light to the power source, depending on the game's electrical system.
+</li>
+<li>
+<strong>Basic Tools:</strong> Wrench or repair tools in case adjustments are needed. For essential tools like the <a href="/vein-guides/vein-game-improved-pickaxe-ultimate-mining-guide" rel="noopener noreferrer">Improved Pickaxe</a>, check out our mining guides to ensure you have all the equipment you need.
+</li>
+</ol>
+
+<h2>
+<strong>Step-by-Step Guide: How to Power Street Light in VEIN</strong>
+</h2>
+
+<h3>
+<strong>Step 1: Locate or Install the Street Light</strong>
+</h3>
+
+<p>
+First, identify where you want to place your street light. Common locations include:
+</p>
+
+<ul>
+<li>Near your base entrance for security</li>
+<li>Along pathways you frequently travel</li>
+<li>Around your vehicle parking area</li>
+<li>At key resource gathering locations</li>
+</ul>
+
+<p>
+If you're using an existing street light in a town or city, make sure it's accessible and in good condition. If you need to install a new one, place it in a strategic location. For more tips on choosing the perfect base location, check out our <a href="/vein-guides/vein-best-base-location-survival-guide" rel="noopener noreferrer">VEIN best base location survival guide</a>.
+</p>
+
+<h3>
+<strong>Step 2: Set Up Your Generator</strong>
+</h3>
+
+<p>
+Position your generator within range of the street light. The generator should be:
+</p>
+
+<ul>
+<li>Protected from weather if possible (under a roof or shelter)</li>
+<li>Close enough to provide power to the light</li>
+<li>Fueled up and ready to run</li>
+<li>In a secure location to prevent theft or damage</li>
+</ul>
+
+<p>
+Make sure the generator has fuel in it. Check the fuel gauge and add more if necessary. A full tank will keep your street light running for several hours.
+</p>
+
+<h3>
+<strong>Step 3: Connect the Street Light to Power</strong>
+</h3>
+
+<p>
+This is the critical step for <strong>vein game how to power street light</strong>. The exact method depends on the game's current mechanics:
+</p>
+
+<ol>
+<li>
+<strong>Direct Connection Method:</strong> If the street light is within the generator's power radius, simply turn on the generator and the light should automatically activate if it's within range.
+</li>
+<li>
+<strong>Wiring Method:</strong> Some setups may require you to connect wires from the generator to the street light. Interact with both the generator and the light to establish the connection.
+</li>
+<li>
+<strong>Interactive Menu:</strong> Right-click or interact with the street light. Look for options like "Connect to Power" or "Turn On". Select the nearby generator as the power source.
+</li>
+</ol>
+
+<h3>
+<strong>Step 4: Activate and Verify</strong>
+</h3>
+
+<p>
+Once connected:
+</p>
+
+<ol>
+<li>Start the generator (if it's not already running)</li>
+<li>Verify the street light turns on and emits light</li>
+<li>Check that the light stays on consistently</li>
+<li>Monitor fuel levels to ensure continuous operation</li>
+</ol>
+
+<p>
+If the light doesn't turn on, check:
+</p>
+
+<ul>
+<li>Generator is running and has fuel</li>
+<li>Light is within the generator's power range</li>
+<li>Connection is properly established</li>
+<li>Light itself isn't damaged or broken</li>
+</ul>
+
+<h2>
+<strong>Pro Tips for Efficient Street Light Power Management</strong>
+</h2>
+
+<h3>
+<strong>Fuel Management</strong>
+</h3>
+
+<p>
+Keeping your street lights powered requires careful fuel management:
+</p>
+
+<ul>
+<li><strong>Fuel Storage:</strong> Keep extra fuel containers near your generator for easy refueling. A good <a href="/vein-guides/vein-game-best-backpack" rel="noopener noreferrer">backpack</a> can help you carry fuel containers more efficiently during your supply runs.</li>
+<li><strong>Schedule Running Times:</strong> Only run generators at night to save fuel during the day</li>
+<li><strong>Multiple Lights, One Generator:</strong> If possible, power multiple street lights from a single generator to maximize efficiency</li>
+<li><strong>Monitor Consumption:</strong> Track how long a full tank lasts to plan refueling schedules</li>
+</ul>
+
+<h3>
+<strong>Security Considerations</strong>
+</h3>
+
+<p>
+Street lights can improve your base security:
+</p>
+
+<ul>
+<li><strong>Illuminate Entrances:</strong> Light up entry points to spot threats before they reach your base</li>
+<li><strong>Create Light Barriers:</strong> Multiple lights can create well-lit zones that deter zombie movement</li>
+<li><strong>Nighttime Visibility:</strong> Better visibility means you can spot loot and dangers from farther away</li>
+</ul>
+
+<h3>
+<strong>Strategic Placement</strong>
+</h3>
+
+<p>
+When setting up multiple street lights:
+</p>
+
+<ul>
+<li>Place lights at regular intervals to avoid dark spots</li>
+<li>Focus on high-traffic areas first</li>
+<li>Create a perimeter of light around your base - this works especially well when combined with a well-chosen <a href="/vein-guides/vein-best-base-location-survival-guide" rel="noopener noreferrer">base location</a></li>
+<li>Consider backup lighting in case one generator fails</li>
+</ul>
+
+<h2>
+<strong>Common Issues and Troubleshooting</strong>
+</h2>
+
+<h3>
+<strong>Light Won't Turn On</h3>
+</h3>
+
+<p>
+If your street light doesn't activate after following <strong>vein game how to power street light</strong> steps:
+</p>
+
+<ol>
+<li>Check generator fuel level and ensure it's running</li>
+<li>Verify the light is within the generator's power radius</li>
+<li>Try disconnecting and reconnecting the power source</li>
+<li>Inspect the street light for damage that might prevent it from working</li>
+<li>Restart the generator to reset the power system</li>
+</ol>
+
+<h3>
+<strong>Light Keeps Turning Off</strong>
+</h3>
+
+<p>
+If the light works initially but keeps shutting off:
+</p>
+
+<ul>
+<li>Fuel may be running out—check and refuel the generator</li>
+<li>Generator may be damaged and needs repair</li>
+<li>Power connection might be unstable—reconnect if necessary</li>
+</ul>
+
+<h2>
+<strong>Advanced Setup: Multiple Street Lights Network</strong>
+</h2>
+
+<p>
+For larger bases, you might want to power multiple street lights. Here's how:
+</p>
+
+<ol>
+<li><strong>Central Generator:</strong> Use one larger generator as your main power source</li>
+<li><strong>Strategic Placement:</strong> Position the generator centrally to maximize coverage</li>
+<li><strong>Range Management:</strong> Understand your generator's power radius to place lights effectively</li>
+<li><strong>Redundant Systems:</strong> Consider backup generators for critical lighting areas</li>
+</ol>
+
+<h2>
+<strong>Summary</strong>
+</h2>
+
+<p>
+Mastering <strong>vein game how to power street light</strong> is essential for nighttime survival and base security. The process involves:
+</p>
+
+<ol>
+<li>Obtaining a generator and fuel</li>
+<li>Positioning the generator within range of your street light</li>
+<li>Connecting the light to the power source</li>
+<li>Activating and maintaining the system</li>
+</ol>
+
+<p>
+With proper lighting, you can operate safely at night, improve your base security, and make your survival in the VEIN apocalypse significantly easier. Remember to monitor fuel levels and maintain your generators for continuous operation. Proper lighting is just one aspect of base building—for a complete survival strategy, check out our guides on finding the <a href="/vein-guides/vein-best-base-location-survival-guide" rel="noopener noreferrer">best base locations</a> and discovering the <a href="/vein-guides/vein-best-loot-locations" rel="noopener noreferrer">best loot spots</a> to supply your operations.
+</p>
+
+<p>
+<em>Need more base-building tips? Check out our other VEIN guides on <a href="/vein-guides" rel="noopener noreferrer">veingame.net</a> for comprehensive survival strategies, including our <a href="/vein-guides/vein-game-military-base-looting-outpost-alpha" rel="noopener noreferrer">military base looting guide</a> for finding generators and other essential resources!</em>
+</p>
+        `,
+    },
+    {
         id: 15,
         title: "VEIN Game Military Base Guide: Looting Outpost Alpha",
         description: "Ready to ditch those rusty pipes and grab some real firepower? This guide unlocks the secrets of Outpost Alpha, the VEIN game's hottest military loot spot. Find rare weapons, medical gear & tons of base-building resources! Prepare for a raid!",
@@ -838,7 +1097,7 @@ Check the cupboards, verify the smell, and start cooking like a gourmet survivor
 
     <li>
         
-        <strong>Power Systems:</strong> Scavenge and transport <strong>Gas Generators</strong>. You can chain them to power your base, lighting up rooms and keeping fridges running. Remember to hoard enough <strong>Jerry Cans</strong> to keep the lights on.
+        <strong>Power Systems:</strong> Scavenge and transport <strong>Gas Generators</strong>. You can chain them to power your base, lighting up rooms and keeping fridges running. Remember to hoard enough <strong>Jerry Cans</strong> to keep the lights on. For detailed instructions on setting up lighting, check out our guide on <a href="/vein-guides/vein-game-how-to-power-street-light" class="inline-link">how to power street lights</a>.
     </li>
 
     <li>
