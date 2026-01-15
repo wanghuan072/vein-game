@@ -1,5 +1,433 @@
 export const guides = [
     {
+        id: 17,
+        title: "VEIN Basis-Versorgungsleitfaden: Wasser anschließen, Strom nutzen & den Winter überleben",
+        description: "Dieser Leitfaden erklärt, wie du Wassersysteme mit Fässern und Brunnen aufbaust, erneuerbare Solarenergie erzeugst und sogar fortgeschrittene Techniken wie den „Fuse Box Water Trick“ meisterst. Lerne den richtigen Einsatz von Werkzeugen und Verbindungssystemen, um das postapokalyptische Überleben zu sichern.",
+        tags: ["VEIN Survival","Off-Grid Living","Zombie Apocalypse","Water Systems","Solar Power"],
+        publishDate: "2026-01-15",
+        isHome: true,
+        imageUrl: "/images/guide/guide17.webp",
+        imageAlt: "Ein Überlebender in VEIN benutzt einen Schraubenschlüssel, um ein Wasserfass anzuschließen – Off-Grid-Überleben.",
+        seo:{
+            title: "VEIN Survival Guide: Wasser, Strom & fortgeschrittene Techniken - Klartext",
+            description: "Meistere die Überlebensherausforderungen in VEIN! Dieser Guide behandelt Wassersysteme (Fässer & Brunnen), Solarenergie, den „Fuse Box Water Trick“ und wichtige Werkzeuge für das Überleben nach der Apokalypse.",
+            keywords: "VEIN, survival guide, zombies, water systems, solar power, off-grid, fuse box water trick, tools, connections",
+        },
+        addressBar: "/here-is-the-plain-text-markdown-version-of-the-guide",
+        detailsHtml: `
+        <p>
+  Das Einzige, was schwieriger ist als das Überleben gegen Zombies in <strong>VEIN</strong>, ist das Überleben ohne fließendes Wasser oder Strom. Sobald die städtische Versorgung zusammenbricht, musst du vorbereitet sein.
+</p>
+
+<p>
+  Dieser umfassende Leitfaden deckt alles ab – vom <strong>Anschließen einer Dusche an ein Wasserfass</strong> bis hin zum Aufbau eines unendlichen Solarnetzes. Außerdem stellen wir fortgeschrittene Community-Tipps wie den „Fuse Box Water Trick“ vor und erklären, wie man im Winter mit gefrorenen Leitungen umgeht.
+</p>
+
+<p>
+  <strong>Hinweis:</strong>
+  <span>
+    Bevor du mit dem Bau beginnst, stelle sicher, dass du die notwendigen Werkzeuge hast (Schraubenschlüssel, Schraubendreher, Hammer). Sieh dir unseren
+  </span>
+  <a href="/vein-items/tools" rel="noopener noreferrer" target="_blank">
+    Leitfaden für essentielle Werkzeuge
+  </a>
+  <span> an, falls dir etwas fehlt.</span>
+</p>
+
+<h2>
+  <strong>1. Die goldene Regel der Verbindungen</strong>
+</h2>
+
+<p>Viele Spieler haben Probleme mit dem Verbindungssystem in VEIN. Die Logik ist strikt:</p>
+
+<p>
+  <strong>„Ich möchte, dass DIESES Objekt Ressourcen VON diesem Objekt erhält.“</strong>
+</p>
+
+<p>Wenn du willst, dass ein Waschbecken Wasser aus einem Fass bekommt:</p>
+
+<ol>
+  <li>Wähle das <strong>Waschbecken</strong> (den Empfänger) an.</li>
+  <li>Halte die Interaktionstaste gedrückt und wähle <strong>„Verbindungen untersuchen“</strong>.</li>
+  <li>Klicke auf <strong>„Verbindung hinzufügen“</strong>.</li>
+  <li>
+    Eine grüne Linie erscheint. Zeige auf das <strong>Flüssigkeitsfass</strong> (die Quelle) und klicke auf das blaue Tropfensymbol.
+  </li>
+</ol>
+
+<p>
+  Beginne die Verbindung immer vom Gerät (Waschbecken/Dusche) zur Quelle (Fass/Brunnen).
+</p>
+
+<h2>
+  <strong>2. Wassersysteme: Von Fässern zu Brunnen</strong>
+</h2>
+
+<h3>
+  <strong>Option A: Das Schwerkraftsystem (Flüssigkeitsfässer)</strong>
+</h3>
+
+<p>
+  <img src="/images/guide/guide17-04.webp" alt="Vein game water-Barre" width="50%">
+</p>
+
+<p>
+  Das einfachste Setup verwendet das blaue <strong>Flüssigkeitsfass</strong> (fasst ca. 6.600 fl oz). Du kannst es aus Plastikschrott und Schrauben herstellen.
+</p>
+
+<ol>
+  <li><strong>Platzierung:</strong> Stelle die Fässer auf dem Dach oder draußen auf.</li>
+  <li><strong>Befüllen:</strong> Du musst sie manuell mit <strong>großen Wasserkanistern</strong> füllen (zu finden in Kirchen/Büros).</li>
+  <li><em>Tipp: Nutze nicht das „Extrahieren“-Menü, wenn es verbuggt ist; öffne stattdessen dein Inventar (Tab), wähle den Kanister und klicke mit Rechtsklick auf „In Flüssigkeitstank gießen“.</em></li>
+  <li><strong>Daisy-Chaining:</strong> Du kannst mehrere Fässer miteinander verbinden, um ein riesiges Reservoir zu erstellen.</li>
+</ol>
+
+<p>
+  <img src="/images/guide/guide17-03.webp" alt="Vein game water jug" width="50%">
+</p>
+
+<h3>
+  <strong>Option B: Der Brunnen (Grundwasser)</strong>
+</h3>
+
+<p>
+  <img src="/images/guide/guide17-02.webp" alt="Vein game water-Well" width="50%">
+</p>
+
+<p>
+  Das Graben eines <strong>Brunnens</strong> liefert eine erneuerbare Wasserquelle, hat jedoch Einschränkungen:
+</p>
+
+<ol>
+  <li><strong>Auffüllrate:</strong> Brunnen füllen sich langsam – etwa <strong>8 oz pro Ingame-Stunde</strong> (ca. 190 oz pro Tag).</li>
+  <li><strong>Reinheit:</strong> Grundwasser ist <strong>unrein</strong>. Direktes Trinken kann zu Vergiftungen führen. Verbinde den Brunnen mit einem Waschbecken oder koche das Wasser zuerst ab.</li>
+  <li><strong>Der „Fuse Box“-Trick:</strong> Anstatt jedes Waschbecken einzeln mit dem Brunnen zu verbinden, kannst du den <strong>Brunnen mit dem Sicherungskasten des Hauses verbinden</strong>. Der Sicherungskasten fungiert als zentrale Verteilstelle und versorgt automatisch alle angeschlossenen Geräte (Waschbecken, Duschen, Waschmaschinen).</li>
+</ol>
+
+<h2>
+  <strong>3. Den Winter überleben: Gefrorenes Wasser</strong>
+</h2>
+
+<p>Wenn du lange genug überlebst, kommt der Winter. Das ändert alles:</p>
+
+<ol>
+  <li><strong>Einfrieren:</strong> Normale Regenfänger und draußen platzierte Flüssigkeitsfässer frieren ein und machen das Wasser unzugänglich.</li>
+  <li><strong>Lösung 1: Isolierter Regenfänger:</strong> Du musst auf die isolierte Version upgraden (benötigt Metallschrottplatten und Plastikbarren), um auch im Schnee Wasser zu sammeln.</li>
+  <li><strong>Lösung 2: Innentanks:</strong> Die weißen, quadratischen <strong>IBC-Container</strong>, die man hinter Hütten oder auf Militärbasen findet, frieren meist nicht ein, wenn sie drinnen oder geschützt platziert werden.</li>
+  <li><strong>Wassertürme:</strong> Große kommunale Wassertürme frieren in der Regel nicht ein und enthalten enorme Reserven.</li>
+</ol>
+
+<p>
+  <img src="/images/guide/guide17-01.webp" alt="Vein game water Barrel Well" width="50%">
+</p>
+
+<h2>
+  <strong>4. Stromsysteme: Off-Grid gehen</strong>
+</h2>
+
+<p>Generatoren sind laut und ziehen Zombies an. Solarenergie ist das ultimative Ziel.</p>
+
+<h3>
+  <strong>Das Solar-Setup</strong>
+</h3>
+
+<ol>
+  <li><strong>Paneele finden:</strong> Plündere Solarpaneele im <strong>Bowen Hill Park</strong> oder auf den Gemeinschaftstoiletten von Campingplätzen.</li>
+  <li><strong>Batterien sind Pflicht:</strong> Solarenergie funktioniert nur tagsüber. Du musst eine <strong>provisorische Batterie</strong> herstellen (speichert 50.000 Wattstunden), um Strom für die Nacht zu haben.</li>
+  <li><strong>Verbindungskette:</strong> Solarpanel → Batterie → Sicherungskasten → Geräte (Lichter/Kühlschränke).</li>
+</ol>
+
+<p>
+  <strong>Profi-Tipp:</strong>
+  <span>
+    Ein einzelner Benzinkanister enthält genug Treibstoff, um einen Standardgenerator etwa
+  </span>
+  <strong>11 Ingame-Tage</strong>
+  <span>
+    lang zu betreiben. Perfekt als Backup, während du nach Solarpaneelen suchst.
+  </span>
+</p>
+
+<h2>
+  <strong>5. Häufig gestellte Fragen (FAQ)</strong>
+</h2>
+
+<h3>
+  <strong>Kann ich in VEIN eine Dusche an ein Fass anschließen?</strong>
+</h3>
+
+<p>
+  <strong>Ja.</strong> Wähle die Dusche an, klicke auf „Verbindungen untersuchen“ und ziehe die Linie zu deinem Wasserfass. Stelle sicher, dass sich Wasser im Fass befindet. Ist die Linie grau, ist die Verbindung inaktiv; ist sie grün/blau, funktioniert sie.
+</p>
+
+<h3>
+  <strong>Wie bekomme ich Wasser in mein Haus?</strong>
+</h3>
+
+<p>
+  Du kannst Wasser ins Haus leiten, indem du einen <strong>Brunnen</strong> oder <strong>Regenfänger</strong> mit dem <strong>Sicherungskasten</strong> oder direkt mit einem <strong>Waschbecken</strong> verbindest. Alternativ kannst du gefüllte Fässer ins Haus tragen, sie sind jedoch sehr schwer.
+</p>
+
+<h3>
+  <strong>Warum kann ich kein Wasser aus meinem Brunnen entnehmen?</strong>
+</h3>
+
+<p>
+  Es gibt einen bekannten UI-Bug, bei dem die Option „In Behälter extrahieren“ nicht funktioniert. <strong>Workaround:</strong> Stelle dich neben den Brunnen, öffne dein Inventar (Tab), wähle deine leere Flasche oder deinen Kanister und klicke auf <strong>„Aus Flüssigkeitstank auffüllen“</strong>.
+</p>
+
+<h3>
+  <strong>Wie lade ich mein Handy oder meine Taschenlampe auf?</strong>
+</h3>
+
+<p>
+  Du benötigst eine Stromquelle (Generator oder Batterie), die mit einer Steckdose oder einer speziellen Ladestation verbunden ist. Sobald Strom vorhanden ist, interagiere mit der Station, um deine Geräte aufzuladen.
+</p>
+
+<h2>
+  <strong>Zusammenfassung</strong>
+</h2>
+
+<p>
+  Das Meistern der Versorgungssysteme in VEIN verwandelt das Spiel von einem verzweifelten Überlebenskampf in eine Aufbausimulation. Priorisiere das Finden von <strong>großen Wasserkanistern</strong> und strebe ein <strong>Solar- + Batteriesystem</strong> an, um deine Basis leise zu machen und keine Horden anzulocken.
+</p>
+
+<p>
+  <em>
+    Du brauchst hochwertige Materialien für diese Upgrades? Sieh dir unseren Leitfaden an:
+    <a href="/vein-guides/vein-game-military-base-looting-outpost-alpha" rel="noopener noreferrer" target="_blank">
+      Militärbasis plündern – seltene Ressourcen finden
+    </a>.
+  </em>
+</p>
+
+<p><br></p>
+
+        `,
+      },
+
+      {
+        id: 18,
+        title: "VEIN Charakterentwicklung: Ultimativer Skill-Leveling-Guide",
+        description: "Genervt vom langsamen Skill-Fortschritt in VEIN? Dieser Guide zeigt community-bestätigte Strategien, um Stärke, Vitalität, Handwerk und Bauwesen effizient zu leveln. Schalte wichtige Perks schneller frei und meistere die Kunst des 'Tuns' in VEIN!",
+        tags: ["VEIN","Character Development","Skill Leveling","Survival Guide","Crafting"],
+        publishDate: "2026-01-15",
+        imageUrl: "/images/guide/guide18.webp",
+        imageAlt: "Ein Überlebender in VEIN stellt ein Lagerfeuer her und zeigt die Bedeutung von Charakterentwicklung und Skill-Leveling.",
+         isHome: true,
+        seo:{
+            title: "VEIN Leveling Guide: Stärke, Handwerk & Schlösserknacken schnell trainieren",
+            description: "Willst du mehr Beute tragen? Erfahre die besten Methoden zum Power-Leveln in VEIN. Wir erklären den Lagerfeuer-Trick für Handwerk, den \"Zombie-Kleider-Loop\" für Medizin und wie du den Lockpicking-XP-Cooldown umgehst.",
+            keywords: "vein game, character development, skill leveling guide, strength training, vitality, crafting, construction, dismantling, carry capacity, big back perk",
+        },
+        addressBar: "/vein-character-development-ultimate-skill-leveling-guide",
+        detailsHtml: `
+        <p>
+  In <strong>VEIN</strong> lernst du durch Handeln. Aber seien wir ehrlich: Dinge „natürlich“ zu tun dauert ewig. Wenn du mehr tragen, komplexe Schlösser knacken oder High-Tier-Gegenstände herstellen willst, brauchst du die effizientesten Grind-Methoden.
+</p>
+
+<p>
+  Dieser Guide sammelt die besten, von der Community getesteten Strategien zum schnellen Leveln deiner Werte und beantwortet häufige Fragen wie 
+  <em>"vein game how to train vitality"</em> und <em>"how to carry more"</em>.
+</p>
+
+<p>
+  <strong>Pro-Tipp:</strong>
+  <span>
+    Bevor du mit dem Grinden beginnst, versuche 
+  </span>
+  <strong>
+    <a href="/vein-wiki/skills" rel="noopener noreferrer" target="_blank">Skill</a>-Magazine
+  </strong>
+  <span>
+    (z.B. Stärke, Agilität) in Briefkästen oder Büros zu finden. Das Lesen gibt dir 30 Minuten XP-Boost!
+  </span>
+</p>
+
+<p><br></p>
+
+<h2>
+  <strong>1. Stärke &amp; Vitalität: Wie du mehr tragen kannst</strong>
+</h2>
+
+<p>
+  Eines der größten Probleme in VEIN ist der begrenzte Inventarplatz. Um 
+  <strong>"how to carry more in vein pc game"</strong> zu beantworten, musst du <strong>Stärke</strong> leveln.
+</p>
+
+<h3>
+  <strong>Die „Holzfäller“-Methode (Beste für Stärke)</strong>
+</h3>
+
+<ol>
+  <li><strong>Besorge dir eine Axt:</strong> In Feuerwachen oder Baumärkten zu finden (Feuerwehrklasse startet mit einer).</li>
+  <li><strong>Bäume fällen:</strong> Das Fällen von Bäumen gibt massive Stärke-XP. Fälle etwa 20–30 Bäume.</li>
+  <li><strong>Das Ziel:</strong> Erreiche so schnell wie möglich <strong>Stärke Level 25</strong>.</li>
+  <li>
+    <strong>Perk freischalten:</strong> Ab Level 25 schaltest du 
+    <a href="the &quot;Big Back&quot; perk" rel="noopener noreferrer" target="_blank">den </a>
+    <strong><a href="the &quot;Big Back&quot; perk" rel="noopener noreferrer" target="_blank">„Big Back“</a></strong>
+    <a href="/vein-guides/vein-game-best-backpack" rel="noopener noreferrer" target="_blank">-Perk</a> frei. 
+    Dieser gibt dir sofort <strong>+50 lbs</strong> Traglast.
+  </li>
+</ol>
+
+<h3>
+  <strong>Vitalität trainieren</strong>
+</h3>
+
+<p>
+  Vitalität bestimmt deine Ausdauer. Um <em>"vein game how to train vitality"</em> zu beantworten:
+</p>
+
+<ol>
+  <li><strong>Sprinten:</strong> Laufe überall, aber stelle sicher, dass du NICHT überladen bist.</li>
+  <li>
+    <strong>Training:</strong> Öffne dein Menü ("Tab" -&gt; "Exercises") und mache Burpees oder Hampelmänner. 
+    <em>Tipp: Mach das nackt, um den Ermüdungsverbrauch zu reduzieren.</em>
+  </li>
+</ol>
+
+<h2>
+  <strong>2. Handwerk &amp; Bauwesen: Der „Lagerfeuer-Trick“</strong>
+</h2>
+
+<p>
+  Willst du Handwerk, Bauwesen und Demontage gleichzeitig maximieren? Nutze diesen Community-Loop:
+</p>
+
+<h3>
+  <strong>🔥 Der Lagerfeuer-Loop</strong>
+</h3>
+
+<p>
+  <strong>Benötigte Materialien:</strong>
+  <span> 1 Holzstamm + 4 Holzreste (vom Bäumefällen).</span>
+</p>
+
+<ol>
+  <li>
+    <span>Baumenü öffnen ("B") -&gt; Stationen -&gt; </span>
+    <strong>Lagerfeuer</strong>
+    <span>.</span>
+  </li>
+  <li>
+    <span>Lagerfeuer platzieren. (Gibt Bau- &amp; Handwerks-XP).</span>
+  </li>
+  <li>
+    <span>Sofort </span>
+    <strong>Zerstören/Demontieren</strong>
+    <span>. (Gibt Demontage-XP).</span>
+  </li>
+  <li>
+    <span>Du bekommst 2–3 Holzreste zurück. Wiederholen, bis das Holz aufgebraucht ist.</span>
+  </li>
+</ol>
+
+<p>
+  Alternativ ist das Herstellen von <strong>Metallwinkeln</strong> an einer Werkbank der beste Weg, um deine <strong>Mechanik</strong>-Fähigkeit zu leveln.
+</p>
+
+<p>
+  <img src="/images/guide/guide18-02.webp" alt="Vein game chop wood log" width="50%">
+</p>
+
+<h2>
+  <strong>3. Medizin &amp; Reparatur: Der „Zombie-Kleider-Loop“</strong>
+</h2>
+
+<p>
+  Lass keine Zombie-Leichen ungeplündert. Sie sind eine kostenlose XP-Quelle für mehrere Skills.
+</p>
+
+<ol>
+  <li><strong>Schritt 1:</strong> Plündere alle Kleidungsstücke (Hemden, Jeans usw.).</li>
+  <li><strong>Schritt 2 (Optional):</strong> Wenn du ein Nähset hast, <strong>repariere</strong> die Kleidung (levelt Reparatur).</li>
+  <li><strong>Schritt 3:</strong> <strong>Demontiere</strong> die Kleidung zu Stoffresten (levelt Demontage).</li>
+  <li><strong>Schritt 4:</strong> Stelle <strong>Provisorische Bandagen</strong> her (levelt Medizin &amp; Handwerk).</li>
+</ol>
+
+<h2>
+  <strong>4. Schlösserknacken: Den „Cooldown“ verstehen</strong>
+</h2>
+
+<p>
+  Viele Spieler fragen sich, warum Schlösserknacken so langsam levelt. Der Grund ist ein versteckter 
+  <strong>XP-Cooldown-Mechanismus</strong>.
+</p>
+
+<h3>
+  <strong>Abnehmende XP-Erträge</strong>
+</h3>
+
+<p>Wenn du Schlösser zu schnell hintereinander knackbarst:</p>
+
+<ol>
+  <li><strong>1. Schloss:</strong> 100% XP (z.B. 144 XP).</li>
+  <li><strong>2. Schloss (sofort):</strong> ~10% XP (z.B. 9–14 XP).</li>
+</ol>
+
+<p>
+  <strong>Strategie:</strong> Warte etwa <strong>20–30 Sekunden</strong> zwischen den Versuchen, um wieder volle XP zu erhalten.
+</p>
+
+<p>
+  <strong>Bester Ort:</strong> <strong>Autohäuser</strong> oder Parkplätze. Autos haben keinen Cooldown wie Haustüren.
+</p>
+
+<h2>
+  <strong>5. Kochen: Die „Wasserkochen“-AFK-Methode</strong>
+</h2>
+
+<p>
+  Du musst keine komplizierten Mahlzeiten kochen. Wasserkochen ist der schnellste Weg.
+</p>
+
+<ol>
+  <li><strong>Werkzeug:</strong> Finde einen <strong>Kanister</strong> oder Muck-Tank.</li>
+  <li><strong>Vorgang:</strong> Mit Wasser füllen (700+), in einen Herd/Lagerfeuer legen und „Wasser kochen“ 20x einreihen.</li>
+  <li><strong>Vorteil:</strong> Dein Charakter sammelt automatisch riesige Koch-XP.</li>
+</ol>
+
+<p>
+  <img src="/images/guide/guide18-01.webp" alt="vein game cooking" width="50%">
+</p>
+
+<h2>
+  <strong>6. Waffenhandhabung: Der Schießstand</strong>
+</h2>
+
+<p>
+  Um <em>"vein game how to train weapon handling"</em> schnell zu beantworten:
+</p>
+
+<p>
+  Reise zum <strong>Schießstand</strong> im Norden der Karte. Nimm eine Schrotflinte und viel Munition mit. 
+  Das <strong>linke Ziel</strong> gibt tausende XP pro Treffer, da jedes Projektil zählt.
+</p>
+
+<h2>
+  <strong>Zusammenfassung</strong>
+</h2>
+
+<p>
+  Leveln in VEIN ist Ressourcenmanagement. Nutze Holz für <strong>Lagerfeuer</strong>, Stoff für 
+  <strong>Bandagen</strong> und deine Leerlaufzeit fürs <strong>Wasserkochen</strong>. Kombiniert mit XP-Büchern 
+  erreichst du Max-Werte in kürzester Zeit.
+</p>
+
+<p>
+  <em>
+    Bereit, deine neuen Skills zu testen? Besuche die 
+    <a href="/vein-guides/vein-game-rook-cavern-guide" rel="noopener noreferrer" target="_blank">Rook Cavern</a>, 
+    um seltene Erze mit hoher Stärke abzubauen!
+  </em>
+</p>
+        `
+      },
+
+
+    {
         id: 16,
         title: "VEIN Game: Wie man Straßenlaternen mit Strom versorgt - Kompletter Guide",
         description: "Möchten Sie die Nacht in VEIN erhellen? Dieser Guide zeigt Ihnen genau, wie Sie Straßenlaternen mit Strom versorgen und Ihren Basisbereich beleuchten. Lernen Sie den Schritt-für-Schritt-Prozess, benötigte Materialien und Profi-Tipps für die Einrichtung Ihres Beleuchtungssystems.",
@@ -712,7 +1140,7 @@ export const guides = [
         publishDate: "2025-12-09",
         imageUrl: "/images/guide/guide11.webp",
         imageAlt: "VEIN Spiel Rook Cavern",
-        isHome: true,
+        isHome: false,
         seo: {
             title: "VEIN Spiel Rook Cavern Guide: Standort, Hämatit und Graphit Bergbau",
             description: "Bist du auf der Suche nach der Rook Cavern in VEIN? Unser vollständiger Guide deckt den Kartenstandort, essentielle Ausrüstungen und wie du Hämatit und Graphit sicher im Dunkeln abbauen kannst, ab.",
@@ -846,7 +1274,7 @@ export const guides = [
         "publishDate": "2025-12-02",
         "imageUrl": "/images/guide/guide10.webp",
         "imageAlt": "Vein-Screenshot mit dem Fundort des Hiking Backpacks nahe der Cold Brook Cavern.",
-        "isHome": true,
+        "isHome": false,
         "seo": {
             "title": "Vein-Spielguide: Bester Rucksack-Fundort (Hiking Backpack) & Loot-Tipps",
             "description": "Finde den Hiking Backpack in Vein (verdoppelt dein Traggewicht!) mit diesem Guide. Finde die Cold Brook Cavern, sammle essenzielles Loot und dominiere das Überleben. Inklusive Strategietipps!",

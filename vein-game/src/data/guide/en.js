@@ -1,5 +1,429 @@
 export const guides = [
     {
+        id: 17,
+        title: "VEIN Base Utilities Guide: How to Connect Water, Power & Survive Winter",
+        description: "This guide details how to establish water systems using barrels and wells, create renewable solar power, and even master advanced techniques like the 'Fuse Box Water Trick'. Learn essential tool usage and connection logic to conquer post-apocalyptic survival.",
+        tags: ["VEIN Survival","Off-Grid Living","Zombie Apocalypse","Water Systems","Solar Power"],
+        publishDate: "2026-01-15",
+        isHome: true,
+        imageUrl: "/images/guide/guide17.webp",
+        imageAlt: "A survivor in VEIN uses a wrench to connect a water barrel, highlighting off-grid survival.",
+        seo:{
+            title: "VEIN Survival Guide: Water, Power & Advanced Techniques - Plain Text",
+            description: "Master VEIN's survival challenges! This guide covers water systems (barrels & wells), solar power, the 'Fuse Box Water Trick', and tool essentials for thriving post-apocalypse.",
+            keywords: "VEIN, survival guide, zombies, water systems, solar power, off-grid, fuse box water trick, tools, connections",
+        },
+        addressBar: "/here-is-the-plain-text-markdown-version-of-the-guide",
+        detailsHtml: `
+        <p>
+  The only thing harder than surviving the zombies in <strong>VEIN</strong> is surviving without running water or electricity. Once the city utilities shut off, you need to be ready.
+</p>
+
+<p>
+  This comprehensive guide covers everything from <strong>connecting a shower to a water barrel</strong> to setting up an infinite solar power grid. We also include advanced community tips like the "Fuse Box Water Trick" and how to handle frozen pipes in winter.
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <span>
+    Before you start building, ensure you have the necessary tools (Wrench, Screwdriver, Hammer). Check our
+  </span>
+  <a href="/vein-items/tools" rel="noopener noreferrer" target="_blank">
+    Essential Tools Guide
+  </a>
+  <span> if you are missing anything.</span>
+</p>
+
+<h2>
+  <strong>1. The Golden Rule of Connections</strong>
+</h2>
+
+<p>Many players struggle with the connection system in VEIN. The logic is strictly:</p>
+
+<p>
+  <strong>"I want THIS object to receive resources FROM that object."</strong>
+</p>
+
+<p>If you want a Sink to get water from a Barrel:</p>
+
+<ol>
+  <li>Target the <strong>Sink</strong> (The receiver).</li>
+  <li>Hold interaction key and select <strong>"Examine Connections"</strong>.</li>
+  <li>Click <strong>"Add Connection"</strong>.</li>
+  <li>
+    A green line will appear. Point it at the <strong>Fluid Barrel</strong> (The source) and click the blue droplet icon.
+  </li>
+</ol>
+
+<p>
+  Always start the connection from the appliance (Sink/Shower) to the source (Barrel/Well).
+</p>
+
+<h2>
+  <strong>2. Water Systems: From Barrels to Wells</strong>
+</h2>
+
+<h3>
+  <strong>Option A: The Gravity System (Fluid Barrels)</strong>
+</h3>
+
+<p>
+  <img src="/images/guide/guide17-04.webp" alt="Vein game water-Barre" width="50%">
+</p>
+
+<p>
+  The most basic setup involves the blue <strong>Fluid Barrel</strong> (holds ~6,600 fl oz). You can craft these with Plastic Scrap and Screws.
+</p>
+
+<ol>
+  <li><strong>Placement:</strong> Place barrels on the roof or outside.</li>
+  <li><strong>Filling:</strong> You must manually fill them using <strong>Large Water Jugs</strong> (found in churches/offices).</li>
+  <li><em>Tip: Don't use the "Extract" menu if it bugs out; instead, open your inventory (Tab), select the Jug, and right-click "Pour into Fluid Tank".</em></li>
+  <li><strong>Daisy Chaining:</strong> You can connect multiple barrels together to create a massive reservoir.</li>
+</ol>
+
+<p>
+  <img src="/images/guide/guide17-03.webp" alt="Vein game water jug" width="50%">
+</p>
+
+<h3>
+  <strong>Option B: The Well (Groundwater)</strong>
+</h3>
+
+<p>
+  <img src="/images/guide/guide17-02.webp" alt="Vein game water-Well" width="50%">
+</p>
+
+<p>
+  Digging a <strong>Well</strong> provides a renewable source of water, but it comes with caveats:
+</p>
+
+<ol>
+  <li><strong>Refill Rate:</strong> Wells fill slowly—approximately <strong>8 oz per in-game hour</strong> (about 190 oz per day).</li>
+  <li><strong>Purity:</strong> Groundwater is <strong>Impure</strong>. Drinking directly from the well risks poisoning. Connect the well to a sink for washing, or boil the water first.</li>
+  <li><strong>The "Fuse Box" Trick:</strong> Instead of connecting every sink individually to the well, you can connect the <strong>Well to the House Fuse Box</strong>. The Fuse Box acts as a central hub, distributing water to all connected appliances (Sinks, Showers, Washing Machines) in the house automatically.</li>
+</ol>
+
+<h2>
+  <strong>3. Surviving Winter: Frozen Water</strong>
+</h2>
+
+<p>If you survive long enough, Winter will arrive. This changes everything:</p>
+
+<ol>
+  <li><strong>Freezing:</strong> Standard Rain Collectors and outdoor Fluid Barrels will freeze, making the water inaccessible.</li>
+  <li><strong>Solution 1: Insulated Rain Collector:</strong> You must upgrade to the Insulated version (requires Scrap Metal Sheets and Plastic Ingots) to gather water in snow.</li>
+  <li><strong>Solution 2: Indoor Tanks:</strong> The square white <strong>IBC Totes</strong> found behind cabins or at the Military Base usually do not freeze if placed indoors or in a sheltered area.</li>
+  <li><strong>Water Towers:</strong> Large municipal Water Towers typically do not freeze and hold massive reserves.</li>
+</ol>
+
+<p>
+  <img src="/images/guide/guide17-01.webp" alt="Vein game water Barrel Well" width="50%">
+</p>
+
+<h2>
+  <strong>4. Power Systems: Going Off-Grid</strong>
+</h2>
+
+<p>Generators are loud and attract zombies. Solar is the ultimate goal.</p>
+
+<h3>
+  <strong>The Solar Setup</strong>
+</h3>
+
+<ol>
+  <li><strong>Find Panels:</strong> Loot Solar Panels from <strong>Bowen Hill Park</strong> or atop the shared bathrooms at campsites.</li>
+  <li><strong>Batteries are Mandatory:</strong> Solar only works during the day. You must craft a <strong>Makeshift Battery</strong> (holds 50,000 Watt-hours) to store power for the night.</li>
+  <li><strong>Connection Chain:</strong> Solar Panel → Battery → Fuse Box → Appliances (Lights/Fridges).</li>
+</ol>
+
+<p>
+  <strong>Pro Tip:</strong>
+  <span>
+    A single Jerry Can contains enough fuel to run a standard Generator for roughly
+  </span>
+  <strong>11 in-game days</strong>
+  <span>
+    . It's a great backup while you hunt for solar panels.
+  </span>
+</p>
+
+<h2>
+  <strong>5. Frequently Asked Questions (FAQ)</strong>
+</h2>
+
+<h3>
+  <strong>Can I connect a shower to a barrel in VEIN?</strong>
+</h3>
+
+<p>
+  <strong>Yes.</strong> Target the shower, select "Examine Connections," and drag the line to your water barrel. Ensure the barrel has water in it. If the line is grey, the connection is inactive; if it is green/blue, it is working.
+</p>
+
+<h3>
+  <strong>How do I get water inside my house?</strong>
+</h3>
+
+<p>
+  You can bring water inside by connecting an outdoor <strong>Well</strong> or <strong>Rain Collector</strong> to your house's <strong>Fuse Box</strong> or directly to a <strong>Sink</strong>. Alternatively, you can carry filled Fluid Barrels inside, though they are heavy.
+</p>
+
+<h3>
+  <strong>Why can't I extract water from my well?</strong>
+</h3>
+
+<p>
+  There is a known UI bug where the "Extract to Container" menu option may not work. <strong>Workaround:</strong> Stand near the well, open your inventory (Tab), select your empty water bottle/jug, and choose the <strong>"Refill from Fluid Tank"</strong> option in the item dropdown menu.
+</p>
+
+<h3>
+  <strong>How do I charge my phone/flashlight?</strong>
+</h3>
+
+<p>
+  You need a power source (Generator or Battery) connected to a wall outlet or a specific charging station furniture item. Once powered, interact with the station to charge your battery-powered devices.
+</p>
+
+<h2>
+  <strong>Summary</strong>
+</h2>
+
+<p>
+  Mastering utilities in VEIN transforms the game from a desperate struggle to a base-building simulation. Prioritize finding <strong>Large Water Jugs</strong> early, and aim for a <strong>Solar + Battery</strong> setup to silence your base and stop attracting hordes.
+</p>
+
+<p>
+  <em>
+    Need high-tier materials to build these upgrades? Check out our guide on
+    <a href="/vein-guides/vein-game-military-base-looting-outpost-alpha" rel="noopener noreferrer" target="_blank">
+      Looting the Military Base for Rare Resources
+    </a>.
+  </em>
+</p>
+        `,
+      },
+
+      {
+        id: 18,
+        title: "VEIN Character Development: Ultimate Skill Leveling Guide",
+        description: "Tired of slow skill progression in VEIN? This guide reveals community-verified strategies for efficiently leveling up Strength, Vitality, Crafting, and Construction. Unlock crucial perks faster and master the art of 'doing' in VEIN!",
+        tags: ["VEIN","Character Development","Skill Leveling","Survival Guide","Crafting"],
+        publishDate: "2026-01-15",
+        imageUrl: "/images/guide/guide18.webp",
+        imageAlt: "A survivor in VEIN is crafting a campfire, showcasing the importance of character development and skill leveling.",
+         isHome: true,
+        seo:{
+            title: "VEIN Leveling Guide: How to Train Strength, Crafting & Lockpicking Fast",
+            description: "Want to carry more loot? Learn the best ways to power-level skills in VEIN. We cover the Campfire trick for Crafting, the \"Zombie Clothes Loop\" for Medical, and how to bypass the Lockpicking XP cooldown.",
+            keywords: "vein game, character development, skill leveling guide, strength training, vitality, crafting, construction, dismantling, carry capacity, big back perk",
+        },
+        addressBar: "/vein-character-development-ultimate-skill-leveling-guide",
+        detailsHtml: `
+        <p>
+  In <strong>VEIN</strong>, you learn by doing. But let's be honest: doing things "naturally" takes forever. If you want to increase your carry weight, pick complex locks, or craft high-tier items, you need to know the most efficient grinding methods.
+</p>
+
+<p>
+  This guide compiles the best community-tested strategies to power-level your stats, answering common questions like 
+  <em>"vein game how to train vitality"</em> and <em>"how to carry more"</em>.
+</p>
+
+<p>
+  <strong>Pro Tip:</strong>
+  <span>
+    Before you start grinding, try to find 
+  </span>
+  <strong>
+    <a href="/vein-wiki/skills" rel="noopener noreferrer" target="_blank">Skill</a> Magazines
+  </strong>
+  <span>
+    (e.g., Strength, Agility) in mailboxes or offices. Reading them gives you a 30-minute XP boost!
+  </span>
+</p>
+
+<p><br></p>
+
+<h2>
+  <strong>1. Strength &amp; Vitality: How to Carry More</strong>
+</h2>
+
+<p>
+  One of the biggest hurdles in VEIN is inventory space. To answer 
+  <strong>"how to carry more in vein pc game"</strong>, you need to level up <strong>Strength</strong>.
+</p>
+
+<h3>
+  <strong>The "Lumberjack" Method (Best for Strength)</strong>
+</h3>
+
+<ol>
+  <li><strong>Get an Axe:</strong> Found in Fire Stations or Hardware Stores (Firefighter class starts with one).</li>
+  <li><strong>Chop Trees:</strong> Chopping trees gives massive Strength XP. Cut down about 20-30 trees.</li>
+  <li><strong>The Goal:</strong> Reach <strong>Strength Level 25</strong> ASAP.</li>
+  <li>
+    <strong>Unlock Perk:</strong> Once at lvl 25, unlock 
+    <a href="the &quot;Big Back&quot; perk" rel="noopener noreferrer" target="_blank">the </a>
+    <strong><a href="the &quot;Big Back&quot; perk" rel="noopener noreferrer" target="_blank">"Big Back"</a></strong>
+    <a href="/vein-guides/vein-game-best-backpack" rel="noopener noreferrer" target="_blank"> perk</a>. 
+    This instantly grants you <strong>+50 lbs</strong> of carry capacity.
+  </li>
+</ol>
+
+<h3>
+  <strong>Training Vitality</strong>
+</h3>
+
+<p>
+  Vitality governs your stamina. To answer <em>"vein game how to train vitality"</em>:
+</p>
+
+<ol>
+  <li><strong>Sprinting:</strong> Run everywhere, but ensure you are NOT encumbered.</li>
+  <li>
+    <strong>Exercise:</strong> Open your menu ("Tab" -&gt; "Exercises") and do Burpees or Jumping Jacks. 
+    <em>Tip: Do this naked to reduce fatigue drain.</em>
+  </li>
+</ol>
+
+<h2>
+  <strong>2. Crafting &amp; Construction: The "Campfire Trick"</strong>
+</h2>
+
+<p>
+  Want to max out Crafting, Construction, and Dismantling simultaneously? Use this community-discovered loop:
+</p>
+
+<h3>
+  <strong>🔥 The Campfire Loop</strong>
+</h3>
+
+<p>
+  <strong>Materials Needed:</strong>
+  <span> 1 Wood Log + 4 Wood Scraps (from chopping trees).</span>
+</p>
+
+<ol>
+  <li>
+    <span>Open Build Menu ("B") -&gt; Stations -&gt; </span>
+    <strong>Campfire</strong>
+    <span>.</span>
+  </li>
+  <li>
+    <span>Place a Campfire. (Gains Construction &amp; Crafting XP).</span>
+  </li>
+  <li>
+    <span>Immediately </span>
+    <strong>Destroy/Dismantle</strong>
+    <span> the Campfire. (Gains Dismantling XP).</span>
+  </li>
+  <li>
+    <span>You get 2-3 Wood Scraps back. Repeat until you run out of wood.</span>
+  </li>
+</ol>
+
+<p>
+  Alternatively, crafting <strong>Metal Brackets</strong> at a workbench is the best way to power-level your <strong>Mechanical</strong> skill.
+</p>
+
+<p>
+  <img src="/images/guide/guide18-02.webp" alt="Vein game chop wood log" width="50%">
+</p>
+
+<h2>
+  <strong>3. Medical &amp; Repair: The "Zombie Clothes Loop"</strong>
+</h2>
+
+<p>
+  Don't leave zombie corpses unlooted. They are a source of free XP for multiple skills.
+</p>
+
+<ol>
+  <li><strong>Step 1:</strong> Loot all clothes from dead zombies (Shirts, Jeans, etc.).</li>
+  <li><strong>Step 2 (Optional):</strong> If you have a Sewing Kit, <strong>Repair</strong> the clothes first (Levels Repair Skill).</li>
+  <li><strong>Step 3:</strong> <strong>Dismantle</strong> the clothes into Cloth Scraps (Levels Dismantling).</li>
+  <li><strong>Step 4:</strong> Craft <strong>Makeshift Bandages</strong> using the cloth (Levels Medical &amp; Crafting).</li>
+</ol>
+
+<h2>
+  <strong>4. Lockpicking: Understanding the "Cooldown"</strong>
+</h2>
+
+<p>
+  Many players ask why Lockpicking levels so slowly even after picking 50 locks. The reason is a hidden 
+  <strong>XP Cooldown Mechanic</strong>.
+</p>
+
+<h3>
+  <strong>The XP Diminishing Returns</strong>
+</h3>
+
+<p>If you pick locks back-to-back rapidly, you get reduced XP:</p>
+
+<ol>
+  <li><strong>1st Lock:</strong> 100% XP (e.g., 144 XP).</li>
+  <li><strong>2nd Lock (Immediate):</strong> ~10% XP (e.g., 9-14 XP).</li>
+</ol>
+
+<p>
+  <strong>The Strategy:</strong> You must wait roughly <strong>20-30 seconds</strong> between picking locks to get full XP again. Do not rush.
+</p>
+
+<p>
+  <strong>Best Location:</strong> Go to the <strong>Car Dealership</strong> or a parking lot. Cars have no cooldown on their locks compared to house doors.
+</p>
+
+<h2>
+  <strong>5. Cooking: The "Boiling Water" AFK Method</strong>
+</h2>
+
+<p>
+  You don't need to cook complex meals to level up. Boiling water is the fastest, safest way.
+</p>
+
+<ol>
+  <li><strong>Tool:</strong> Find a <strong>Jerry Can</strong> (Gas Can) or Muck Tub.</li>
+  <li><strong>Process:</strong> Fill it with water (700+ units), put it in a Stove/Campfire, and queue up "Boil Water" or "Purify Water" 20 times.</li>
+  <li><strong>Benefit:</strong> This can be queued. You can walk away while your character gains massive Cooking XP automatically.</li>
+</ol>
+
+<p>
+  <img src="/images/guide/guide18-01.webp" alt="vein game cooking" width="50%">
+</p>
+
+<h2>
+  <strong>6. Weapon Handling: The Shooting Range</strong>
+</h2>
+
+<p>
+  To answer <em>"vein game how to train weapon handling"</em> quickly:
+</p>
+
+<p>
+  Travel to the <strong>Shooting Range</strong> in the northern part of the map. Bring a Shotgun and plenty of ammo. 
+  Shooting the <strong>leftmost target</strong> (the closest one) grants thousands of XP per hit because every pellet counts as a hit.
+</p>
+
+<h2>
+  <strong>Summary</strong>
+</h2>
+
+<p>
+  Leveling in VEIN is all about resource management. Use your wood for <strong>Campfires</strong>, your cloth for 
+  <strong>Bandages</strong>, and your downtime for <strong>Boiling Water</strong>. Combine these methods with XP Books, 
+  and you will have a max-stat character in no time.
+</p>
+
+<p>
+  <em>
+    Ready to test your new skills? Head over to the 
+    <a href="/vein-guides/vein-game-rook-cavern-guide" rel="noopener noreferrer" target="_blank">Rook Cavern</a> 
+    to mine rare ores with your high strength stats!
+  </em>
+</p>
+        `
+      },
+
+    {
         id: 16,
         title: "VEIN Game: How to Power Street Light - Complete Guide",
         description: "Want to light up the night in VEIN? This guide shows you exactly how to power street lights and illuminate your base area. Learn the step-by-step process, required materials, and pro tips for setting up your lighting system.",
@@ -721,7 +1145,7 @@ Check the cupboards, verify the smell, and start cooking like a gourmet survivor
         publishDate: "2025-12-09",
         imageUrl: "/images/guide/guide11.webp",
         imageAlt: "VEIN Game Rook Cavern",
-        isHome: true,
+        isHome: false,
         seo: {
             title: "VEIN Game Rook Cavern Guide: Location, Hematite, and Graphite Mining",
             description: "Looking for the Rook Cavern in VEIN? Our complete guide covers the map location, essential gear, and how to mine Hematite and Graphite safely in the dark.",
@@ -870,7 +1294,7 @@ Check the cupboards, verify the smell, and start cooking like a gourmet survivor
         publishDate: "2025-12-02",
         imageUrl: "/images/guide/guide10.webp",
         imageAlt: "Vein game screenshot showing the Hiking Backpack location near Cold Brook Cavern.",
-        isHome: true,
+        isHome: false,
         seo: {
             title: "Vein Game Guide: Best Backpack Location (Hiking Backpack) & Loot Tips",
             description: "Find the Hiking Backpack in Vein (doubles your carry weight!) with this guide. Locate Cold Brook Cavern, grab essential loot, and dominate survival. Includes strategic tips!",
