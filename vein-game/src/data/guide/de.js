@@ -265,9 +265,7 @@ export const guides = [
   <li><strong>Das Ziel:</strong> Erreiche so schnell wie möglich <strong>Stärke Level 25</strong>.</li>
   <li>
     <strong>Perk freischalten:</strong> Ab Level 25 schaltest du 
-    <a href="the &quot;Big Back&quot; perk" rel="noopener noreferrer" target="_blank">den </a>
-    <strong><a href="the &quot;Big Back&quot; perk" rel="noopener noreferrer" target="_blank">„Big Back“</a></strong>
-    <a href="/vein-guides/vein-game-best-backpack" rel="noopener noreferrer" target="_blank">-Perk</a> frei. 
+    den <strong>„Big Back“</strong> perk frei. 
     Dieser gibt dir sofort <strong>+50 lbs</strong> Traglast.
   </li>
 </ol>

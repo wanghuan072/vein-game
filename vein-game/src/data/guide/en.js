@@ -262,9 +262,7 @@ export const guides = [
   <li><strong>The Goal:</strong> Reach <strong>Strength Level 25</strong> ASAP.</li>
   <li>
     <strong>Unlock Perk:</strong> Once at lvl 25, unlock 
-    <a href="the &quot;Big Back&quot; perk" rel="noopener noreferrer" target="_blank">the </a>
-    <strong><a href="the &quot;Big Back&quot; perk" rel="noopener noreferrer" target="_blank">"Big Back"</a></strong>
-    <a href="/vein-guides/vein-game-best-backpack" rel="noopener noreferrer" target="_blank"> perk</a>. 
+    the <strong>"Big Back"</strong> perk
     This instantly grants you <strong>+50 lbs</strong> of carry capacity.
   </li>
 </ol>
