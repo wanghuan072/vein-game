@@ -5,7 +5,7 @@ export const guides = [
     description: "Found a car but it won't start? This ultimate VEIN mechanics guide covers everything from hotwiring and battery charging to changing tires and engine repair. Stop walking and start driving.",
     tags: ["VEIN", "Vehicles", "Mechanics", "Survival Guide", "Hotwiring", "Repair"],
     publishDate: "2026-01-22",
-    imageUrl: "/images/guide/guide19.webp",
+    imageUrl: "/images/guide/guide01.webp",
     imageAlt: "A player in VEIN using a lug wrench to change a tire on a sedan inside a garage.",
     isHome: true,
     seo: {

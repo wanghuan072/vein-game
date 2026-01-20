@@ -5,7 +5,7 @@ export const guides = [
         description: "Du hast ein Auto gefunden, aber es startet nicht? Dieser VEIN-Mechanik-Guide erklärt alles: vom Kurzschließen (Hotwire) und Batterie laden bis zum Reifenwechsel und grundlegender Motorreparatur. Schluss mit Laufen – fang an zu fahren.",
         tags: ["VEIN", "Fahrzeuge", "Mechanik", "Survival Guide", "Hotwire", "Reparatur"],
         publishDate: "2026-01-22",
-        imageUrl: "/images/guide/guide19.webp",
+        imageUrl: "/images/guide/guide01.webp",
         imageAlt: "Ein Spieler in VEIN wechselt mit einem Radmutternschlüssel einen Reifen an einer Limousine in einer Garage.",
         isHome: true,
         seo: {
