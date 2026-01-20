@@ -1,4 +1,179 @@
 export const guides = [
+  {
+    id: 19,
+    title: "VEIN Vehicle Guide: How to Repair, Hotwire & Maintain Cars",
+    description: "Found a car but it won't start? This ultimate VEIN mechanics guide covers everything from hotwiring and battery charging to changing tires and engine repair. Stop walking and start driving.",
+    tags: ["VEIN", "Vehicles", "Mechanics", "Survival Guide", "Hotwiring", "Repair"],
+    publishDate: "2026-01-22",
+    imageUrl: "/images/guide/guide19.webp",
+    imageAlt: "A player in VEIN using a lug wrench to change a tire on a sedan inside a garage.",
+    isHome: true,
+    seo: {
+        title: "VEIN Car Guide: How to Hotwire, Charge Battery & Repair Engines",
+        description: "Learn the mechanics of VEIN. Detailed guide on how to hotwire cars, use the battery charger, siphon fuel, and swap tires. Essential reading for efficient looting.",
+        keywords: "vein game car repair, how to hotwire car vein, vein game battery charger, siphon fuel, change tire, lug wrench, mechanics skill, vehicle maintenance"
+    },
+    addressBar: "/vein-vehicle-guide-repair-hotwire-maintain",
+    detailsHtml: `
+<p>
+  In the vast world of <strong>VEIN</strong>, a working vehicle is not just a luxury—it is your mobile base. A truck allows you to transport hundreds of pounds of loot that would otherwise be impossible to carry on foot.
+</p>
+
+<p>
+  If you're still early game, combine this with our <a href="/vein-guides/day-1-priorities-guide" class="inline-link">Day 1 priorities guide</a>
+  and <a href="/vein-guides/vein-best-loot-locations" class="inline-link">best loot locations</a> to build a safe, repeatable route before you start hauling big loads.
+</p>
+
+<p>
+  However, vehicles in VEIN are complex machines. You can't just hop in and drive. This guide answers the most common questions: 
+  <em>"how to hotwire a car in vein"</em> and <em>"how to charge a car battery"</em>.
+</p>
+
+<p></p>
+  <strong>Prerequisite:</strong> 
+  <span>
+    Before hunting for cars, ensure you check garages and gas stations (use the <a href="/vein-map" class="inline-link">VEIN map</a>) for the "Holy Trinity" of mechanic tools. Also browse the
+    <a href="/vein-items/tools" class="inline-link">Tools database</a> if you're unsure what an item does:
+  </span>
+  <strong>Lug Wrench</strong>, a <strong>Car Jack</strong>, and a <strong>Screwdriver</strong>.
+</p>
+
+<p><br></p>
+
+<h2>
+  <strong>1. The Basics: Why Won't My Car Start?</strong>
+</h2>
+
+<p>
+  If you turn the key (or hotwire the car) and nothing happens, it is usually due to one of three problems. Open the hood (interact with the front of the car) to inspect:
+</p>
+
+<ul>
+  <li><strong>Battery:</strong> Is it dead (0%) or missing?</li>
+  <li><strong>Fuel:</strong> Is the tank empty?</li>
+  <li><strong>Engine/Spark Plugs:</strong> Is the engine condition too low or are spark plugs missing?</li>
+</ul>
+
+<h2>
+  <strong>2. How to Hotwire a Car</strong>
+</h2>
+
+<p>
+  Most cars you find won't have keys. You need to bypass the ignition. This requires a <strong>Screwdriver</strong> and some patience.
+</p>
+
+<ol>
+  <li><strong>Enter the Driver's Seat:</strong> Make sure you are in the front left seat.</li>
+  <li><strong>Open Radial Menu:</strong> Hold "V" and select <strong>"Hotwire"</strong>.</li>
+  <li><strong>The Mini-Game:</strong>
+    <ul>
+      <li>First, use the screwdriver to remove the dashboard panel cover.</li>
+      <li>Next, cut the correct wires (usually indicated by a prompt or visual cue depending on your <strong>Mechanics/Electronics skill</strong>).</li>
+      <li>Twist the wires together to start the ignition.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>
+  If you want to optimize this long-term, read the <a href="/vein-wiki/skills" class="inline-link">Skills &amp; Perks</a> reference and plan a build around vehicle recovery and base logistics.
+</p>
+
+<p>
+  <em>Note: A higher Mechanical skill reduces the time it takes to hotwire and lowers the chance of triggering the car alarm!</em>
+</p>
+
+<h2>
+  <strong>3. Battery Maintenance: Charging & Jumping</strong>
+</h2>
+
+<p>
+  A dead battery is the #1 reason players get stranded. Here is how to fix it:
+</p>
+
+<h3>
+  <strong>Using a Battery Charger</strong>
+</h3>
+
+<p>
+  You can find <strong>Car Battery Chargers</strong> in auto shops.
+</p>
+
+<ol>
+  <li>Connect the Charger to a power source (a generator or a wall outlet if the power grid is active).</li>
+  <li>Remove the battery from the car (requires a <strong>Wrench</strong>).</li>
+  <li>Place the battery inside the charger and turn it on. Wait until it reaches 100%.</li>
+</ol>
+
+<p>
+  Need help with generators, wiring, or getting stable power at a base? Use our
+  <a href="/vein-guides/here-is-the-plain-text-markdown-version-of-the-guide" class="inline-link">Water &amp; Power utilities guide</a>.
+</p>
+
+<h3>
+  <strong>Jump Starting (Other Vehicles)</strong>
+</h3>
+
+<p>
+  If you have Jumper Cables and another working car, you can connect the two vehicles to jump-start the dead one. Pull the working car close, attach cables to both engines, and rev the working car.
+</p>
+
+<p>
+  <img src="/images/guide/guide19-02.webp" alt="Vein game car battery charger" width="50%">
+</p>
+
+<h2>
+  <strong>4. Changing Tires: A Step-by-Step Guide</strong>
+</h2>
+
+<p>
+  Found a sports car but it's missing a wheel? Changing tires is a realistic process in VEIN. You cannot just click "swap."
+</p>
+
+<p>
+  <strong>Tools Needed:</strong> Car Jack, Lug Wrench.
+</p>
+
+<ol>
+  <li><strong>Jack it Up:</strong> Equip the <strong>Car Jack</strong>, look at the vehicle chassis near the wheel, and interact to raise the car.</li>
+  <li><strong>Remove Lug Nuts:</strong> Equip the <strong>Lug Wrench</strong>. Interact with the wheel to unscrew the bolts.</li>
+  <li><strong>Remove Tire:</strong> Take the old tire off.</li>
+  <li><strong>Install New Tire:</strong> Place the new tire on the hub.</li>
+  <li><strong>Tighten & Lower:</strong> Screw the bolts back in with the Lug Wrench, then remove the Jack.</li>
+</ol>
+
+<h2>
+  <strong>5. Siphoning Fuel</strong>
+</h2>
+
+<p>
+  Gas stations might be empty or dangerous. The best way to get fuel is from other abandoned cars.
+</p>
+
+<ol>
+  <li><strong>Requirements:</strong> You need a container (Gas Can / Bottle) and a <strong>Siphon Hose</strong> (or a simple tube).</li>
+  <li><strong>Process:</strong> Stand near the fuel cap of the target car. Open your inventory context menu on the Gas Can and select "Siphon Fuel."</li>
+  <li><strong>Transfer:</strong> Once full, pour the fuel into your main vehicle.</li>
+</ol>
+
+<h2>
+  <strong>Summary</strong>
+</h2>
+
+<p>
+  Maintaining a vehicle takes effort, but the reward is worth it. A fully repaired <strong>Truck</strong> or <strong>Van</strong> acts as a mobile fortress, allowing you to empty out the 
+  <a href="/vein-guides/vein-game-military-base-looting-outpost-alpha" class="inline-link">Outpost Alpha</a>
+  in a single trip.
+</p>
+
+<p>
+  <em>
+    Got your car running? Drive it to the nearest 
+    <a href="/vein-guides/vein-game-rook-cavern-guide" class="inline-link">mining spot</a>
+    and fill the trunk with heavy ore!
+  </em>
+</p>
+`
+},
     {
         id: 17,
         title: "VEIN Base Utilities Guide: How to Connect Water, Power & Survive Winter",
@@ -28,7 +203,7 @@ export const guides = [
   <span>
     Before you start building, ensure you have the necessary tools (Wrench, Screwdriver, Hammer). Check our
   </span>
-  <a href="/vein-items/tools" rel="noopener noreferrer" target="_blank">
+  <a href="/vein-items/tools" class="inline-link">
     Essential Tools Guide
   </a>
   <span> if you are missing anything.</span>
@@ -234,7 +409,7 @@ export const guides = [
     Before you start grinding, try to find 
   </span>
   <strong>
-    <a href="/vein-wiki/skills" rel="noopener noreferrer" target="_blank">Skill</a> Magazines
+    <a href="/vein-wiki/skills" class="inline-link">Skill</a> Magazines
   </strong>
   <span>
     (e.g., Strength, Agility) in mailboxes or offices. Reading them gives you a 30-minute XP boost!
@@ -1092,7 +1267,7 @@ Check the cupboards, verify the smell, and start cooking like a gourmet survivor
         <p>You have crafted your workbench, you have secured a base, and you hopefully have your <strong>Improved Pickaxe</strong> ready. Now, you are stuck. You need Steel for advanced crafting, and you need Carbon components.</p>
 <p>The most common questions we see are: <em>"vein game where to get graphite?"</em> and <em>"where do I find hematite?"</em></p>
 <p>The answer lies deep underground. This guide will reveal the two massive mining locations you must visit: The <strong>Averill Mines</strong> and <strong>Kings Hollow</strong>.</p>
-<p><strong>Pre-requisite:</strong><span> Do not go here with a stone tool! Read our guide on </span><a href="/ein-game-improved-pickaxe-ultimate-mining-guide" rel="noopener noreferrer">How to Get the Improved Pickaxe</a><span> first.</span></p>
+<p><strong>Pre-requisite:</strong><span> Do not go here with a stone tool! Read our guide on </span><a href="/vein-guides/vein-game-improved-pickaxe-ultimate-mining-guide" class="inline-link">How to Get the Improved Pickaxe</a><span> first.</span></p>
 <h2><strong>The Resources: What Are You Looking For?</strong></h2>
 <p>Before you enter the dark, know what you are mining:</p>
 <ol>
@@ -1183,7 +1358,7 @@ Check the cupboards, verify the smell, and start cooking like a gourmet survivor
         </li>
         <li>
             
-            <em>Tip: Check our <a href="/vein-map" rel="noopener noreferrer">Interactive Map</a> to see the exact pin location.</em>
+            <em>Tip: Check our <a href="/vein-map" class="inline-link">Interactive Map</a> to see the exact pin location.</em>
         </li>
     </ol>
     <p>

@@ -1,5 +1,175 @@
 export const guides = [
     {
+        id: 19,
+        title: "VEIN Fahrzeug-Guide: Autos reparieren, kurzschließen & warten",
+        description: "Du hast ein Auto gefunden, aber es startet nicht? Dieser VEIN-Mechanik-Guide erklärt alles: vom Kurzschließen (Hotwire) und Batterie laden bis zum Reifenwechsel und grundlegender Motorreparatur. Schluss mit Laufen – fang an zu fahren.",
+        tags: ["VEIN", "Fahrzeuge", "Mechanik", "Survival Guide", "Hotwire", "Reparatur"],
+        publishDate: "2026-01-22",
+        imageUrl: "/images/guide/guide19.webp",
+        imageAlt: "Ein Spieler in VEIN wechselt mit einem Radmutternschlüssel einen Reifen an einer Limousine in einer Garage.",
+        isHome: true,
+        seo: {
+            title: "VEIN Auto-Guide: Hotwire, Batterie laden & Motor reparieren",
+            description: "Lerne die Fahrzeug-Mechaniken in VEIN: Autos kurzschließen, Batterie-Ladegerät nutzen, Kraftstoff absaugen und Reifen wechseln. Pflichtlektüre für effizientes Looten.",
+            keywords: "vein fahrzeug guide, vein auto reparieren, auto hotwire vein, vein batterie laden, vein battery charger, kraftstoff absaugen, reifen wechseln, radmutternschlüssel, mechanik skill, fahrzeug wartung, VEIN vehicles",
+        },
+        addressBar: "/vein-vehicle-guide-repair-hotwire-maintain",
+        detailsHtml: `
+<p>
+  In der riesigen Welt von <strong>VEIN</strong> ist ein funktionierendes Fahrzeug nicht nur Luxus – es ist deine mobile Basis.
+  Ein Truck ermöglicht dir, hunderte Pfund Loot zu transportieren, die du zu Fuß niemals wegschleppen könntest.
+</p>
+
+<p>
+  Wenn du noch im Early Game bist, kombiniere das mit unserem
+  <a href="/vein-guides/day-1-priorities-guide" class="inline-link">Day-1-Prioritäten-Guide</a>
+  und den
+  <a href="/vein-guides/vein-best-loot-locations" class="inline-link">besten Loot-Spots</a>,
+  um zuerst eine sichere Route aufzubauen, bevor du große Lasten bewegst.
+</p>
+
+<p>
+  Fahrzeuge in VEIN sind aber komplex. Du kannst nicht einfach einsteigen und losfahren.
+  Dieser Guide beantwortet die häufigsten Fragen:
+  <em>„how to hotwire a car in vein“</em> und <em>„how to charge a car battery“</em>.
+</p>
+
+<p>
+  <strong>Voraussetzung:</strong>
+  <span>
+    Bevor du gezielt Autos jagst, prüfe Garagen und Tankstellen (nutze die
+    <a href="/vein-map" class="inline-link">VEIN Map</a>)
+    auf die „Heilige Dreifaltigkeit“ an Mechanik-Tools. Schau außerdem in die
+    <a href="/vein-items/tools" class="inline-link">Tools-Datenbank</a>, wenn du dir bei einem Item unsicher bist:
+  </span>
+  <strong>Radmutternschlüssel (Lug Wrench)</strong>, <strong>Wagenheber (Car Jack)</strong> und <strong>Schraubendreher (Screwdriver)</strong>.
+</p>
+
+<p><br></p>
+
+<h2><strong>1. Basics: Warum startet mein Auto nicht?</strong></h2>
+
+<p>
+  Wenn du den Zündvorgang startest (oder das Auto kurzschließt) und nichts passiert, liegt es meist an einem von drei Problemen.
+  Öffne die Motorhaube (Interaktion vorne am Fahrzeug) und prüfe:
+</p>
+
+<ul>
+  <li><strong>Batterie:</strong> Ist sie leer (0%) oder fehlt sie?</li>
+  <li><strong>Kraftstoff:</strong> Ist der Tank leer?</li>
+  <li><strong>Motor/Zündkerzen:</strong> Ist der Motorzustand zu niedrig oder fehlen Zündkerzen?</li>
+</ul>
+
+<h2><strong>2. Auto kurzschließen (Hotwire)</strong></h2>
+
+<p>
+  Die meisten Fahrzeuge, die du findest, haben keine Schlüssel. Du musst die Zündung überbrücken.
+  Dafür brauchst du einen <strong>Schraubendreher</strong> und etwas Geduld.
+</p>
+
+<ol>
+  <li><strong>Fahrersitz:</strong> Setz dich auf den vorderen linken Sitz.</li>
+  <li><strong>Radial-Menü:</strong> Halte „V“ gedrückt und wähle <strong>„Hotwire“</strong>.</li>
+  <li><strong>Mini-Game:</strong>
+    <ul>
+      <li>Entferne zuerst mit dem Schraubendreher die Abdeckung am Armaturenbrett.</li>
+      <li>Schneide anschließend die richtigen Kabel (Hinweise hängen oft von deinem <strong>Mechanik-/Elektronik-Skill</strong> ab).</li>
+      <li>Verdrehe die Kabel miteinander, um die Zündung zu starten.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>
+  Wenn du das langfristig optimieren willst, lies die Referenz zu
+  <a href="/vein-wiki/skills" class="inline-link">Skills &amp; Perks</a>
+  und plane deinen Build rund um Fahrzeug-Recovery und Base-Logistik.
+</p>
+
+<p>
+  <em>Hinweis: Ein höherer Mechanik-Skill reduziert die Zeit fürs Hotwiring und senkt die Chance, einen Auto-Alarm auszulösen!</em>
+</p>
+
+<h2><strong>3. Batterie: Laden &amp; Starthilfe</strong></h2>
+
+<p>
+  Eine leere Batterie ist der #1 Grund, warum Spieler stranden. So löst du das:
+</p>
+
+<h3><strong>Mit einem Batterie-Ladegerät</strong></h3>
+
+<p>
+  <strong>Auto-Batterie-Ladegeräte</strong> findest du häufig in Werkstätten/Auto-Shops.
+</p>
+
+<ol>
+  <li>Verbinde das Ladegerät mit einer Stromquelle (Generator oder Steckdose, falls das Stromnetz aktiv ist).</li>
+  <li>Baue die Batterie aus dem Auto aus (benötigt einen <strong>Schraubenschlüssel</strong>).</li>
+  <li>Lege die Batterie in das Ladegerät, schalte es ein und warte, bis sie 100% erreicht.</li>
+</ol>
+
+<p>
+  Du brauchst Hilfe bei Generatoren, Verkabelung oder stabiler Base-Elektrik? Nutze unseren
+  <a href="/vein-guides/here-is-the-plain-text-markdown-version-of-the-guide" class="inline-link">Wasser- &amp; Strom-Guide</a>.
+</p>
+
+<h3><strong>Starthilfe (mit einem zweiten Fahrzeug)</strong></h3>
+
+<p>
+  Wenn du Starthilfekabel und ein funktionierendes Auto hast, kannst du das leere Fahrzeug überbrücken.
+  Stell das funktionierende Auto nah ran, verbinde die Kabel an beiden Motoren und gib kurz Gas.
+</p>
+
+<p>
+  <img src="/images/guide/guide19-02.webp" alt="VEIN Auto Batterie-Ladegerät" width="50%">
+</p>
+
+<h2><strong>4. Reifen wechseln: Schritt für Schritt</strong></h2>
+
+<p>
+  Du findest einen Sportwagen, aber ein Rad fehlt? Reifenwechsel ist in VEIN realistisch – du kannst nicht einfach „swap“ klicken.
+</p>
+
+<p><strong>Benötigte Tools:</strong> Wagenheber, Radmutternschlüssel.</p>
+
+<ol>
+  <li><strong>Anheben:</strong> Rüste den Wagenheber aus, ziele auf das Chassis nahe am Rad und interagiere, um das Auto anzuheben.</li>
+  <li><strong>Radmuttern lösen:</strong> Rüste den Radmutternschlüssel aus und löse die Schrauben am Rad.</li>
+  <li><strong>Rad abnehmen:</strong> Entferne den alten Reifen.</li>
+  <li><strong>Neuen Reifen montieren:</strong> Setze den neuen Reifen auf die Nabe.</li>
+  <li><strong>Festziehen &amp; ablassen:</strong> Schrauben wieder festziehen und anschließend den Wagenheber entfernen.</li>
+</ol>
+
+<h2><strong>5. Kraftstoff absaugen (Siphon)</strong></h2>
+
+<p>
+  Tankstellen sind oft leer oder gefährlich. Der beste Weg an Benzin ist: aus anderen verlassenen Autos.
+</p>
+
+<ol>
+  <li><strong>Voraussetzung:</strong> Du brauchst einen Behälter (Kanister/Flasche) und einen <strong>Siphon-Schlauch</strong> (oder ein einfaches Rohr).</li>
+  <li><strong>Vorgang:</strong> Stell dich an den Tankdeckel des Zielautos. Öffne im Inventar das Kontextmenü deines Kanisters und wähle „Siphon Fuel“.</li>
+  <li><strong>Umpumpen:</strong> Ist der Behälter voll, fülle den Kraftstoff in dein Hauptfahrzeug um.</li>
+</ol>
+
+<h2><strong>Zusammenfassung</strong></h2>
+
+<p>
+  Fahrzeug-Wartung kostet Zeit, aber der Reward ist enorm. Ein vollständig reparierter <strong>Truck</strong> oder <strong>Van</strong> ist eine mobile Festung –
+  damit kannst du
+  <a href="/vein-guides/vein-game-military-base-looting-outpost-alpha" class="inline-link">Outpost Alpha</a>
+  in einem einzigen Trip leer räumen.
+</p>
+
+<p>
+  <em>
+    Auto läuft? Fahr als Nächstes zu einem
+    <a href="/vein-guides/vein-game-rook-cavern-guide" class="inline-link">Mining-Spot</a>
+    und füll den Kofferraum mit schwerem Erz!
+  </em>
+</p>
+        `,
+    },
+    {
         id: 17,
         title: "VEIN Basis-Versorgungsleitfaden: Wasser anschließen, Strom nutzen & den Winter überleben",
         description: "Dieser Leitfaden erklärt, wie du Wassersysteme mit Fässern und Brunnen aufbaust, erneuerbare Solarenergie erzeugst und sogar fortgeschrittene Techniken wie den „Fuse Box Water Trick“ meisterst. Lerne den richtigen Einsatz von Werkzeugen und Verbindungssystemen, um das postapokalyptische Überleben zu sichern.",
