@@ -1,5 +1,134 @@
 export const guides = [
   {
+    id: 20,
+    title: "VEIN Advanced Crafting Guide: Industrial Welder, Hard Leather & Metal Sheets",
+    description: "Stuck in the stone age? This guide reveals the spawn locations for the Industrial Welder, the best way to farm Hard Leather Strips, and how to mass-produce Metal Sheets and Aluminum Scrap.",
+    tags: ["VEIN", "Crafting", "Resources", "Industrial Welder", "Hard Leather", "Smelting"],
+    publishDate: "2026-01-26",
+    imageUrl: "/images/guide/guide20.webp",
+    imageAlt: "A player holding an Industrial Welder standing next to a workbench filled with metal scraps and hard leather strips.",
+    isHome: true,
+    seo: {
+        title: "VEIN Crafting Guide: How to Find Industrial Welder & Hard Leather Strips",
+        description: "Can't find the Industrial Welder? Need Hard Leather Strips for armor? This guide covers the rarest crafting materials in VEIN, including Aluminum Scrap and Ingots.",
+        keywords: "veingame industrial welder, hard leather strips vein game, vein game aluminum scrap, small scrap metal sheet, vein game ingots, smelting guide, crafting materials"
+    },
+    addressBar: "/vein-advanced-crafting-guide-industrial-welder-hard-leather",
+    detailsHtml: `
+<p>
+  Once you have survived the first week in <strong>VEIN</strong>, simple wood and stone tools won't cut it anymore. To build fortified bases, repair vehicles, and craft high-tier armor, you need advanced materials. If you're still in the early stages, make sure to check our <a href="/vein-guides/day-1-priorities-guide" class="inline-link">Day 1 priorities guide</a> to understand the basics.
+</p>
+
+<p>
+  According to community searches, the two biggest bottlenecks for mid-game players are finding the <strong>Industrial Welder</strong> and sourcing <strong>Hard Leather Strips</strong>. This guide explains exactly where to find them, plus essential techniques for mass-producing metal components and smelting ores into ingots.
+</p>
+
+<p><br></p>
+
+<h2>
+  <strong>1. Where to Find the Industrial Welder</strong>
+</h2>
+
+<p>
+  The <strong>Industrial Welder</strong> is arguably the most important tool for the late game. It is required for advanced metal construction, vehicle armor plating, and repairing high-tier equipment. Unlike basic tools that you can craft at a workbench, you cannot craft the Industrial Welder—you must find it in the world. For a complete list of all available tools and their uses, check our <a href="/vein-items/tools" class="inline-link">tools database</a>.
+</p>
+
+<ul>
+  <li><strong>Best Location:</strong> <strong>Auto Repair Shops</strong> and <strong>Gas Station Garages</strong>. Look on the red tool carts, metal shelves, or workbenches. These locations have the highest spawn rate (approximately 15-20% chance per location).</li>
+  <li><strong>Alternative Location:</strong> <strong>Hardware Stores</strong> (look in the back storage rooms and tool aisles) and occasionally in <strong>Fire Stations</strong> (equipment bays).</li>
+  <li><strong>Usage Tip:</strong> The welder requires fuel/power (depending on game version). Make sure you have a gas canister or access to a power source. Some players prefer to set up a dedicated welding station near their base's power grid—see our <a href="/vein-wiki/building" class="inline-link">building system guide</a> for power setup tips.</li>
+</ul>
+
+<img src="/images/guide/guide20-01.webp" alt="Vein game industrial welder" width="50%">
+
+<h2>
+  <strong>2. How to Get Hard Leather Strips</strong>
+</h2>
+
+<p>
+  Many players get stuck trying to craft better armor because they only have "Leather Scraps." <strong>Hard Leather Strips</strong> are a distinct, higher-tier material required for reinforced clothing and armor upgrades. Regular leather scraps won't work for these recipes.
+</p>
+
+<h3>
+  <strong>The Source: Leather Jackets & Furniture</strong>
+</h3>
+<p>
+  You rarely find Hard Leather Strips lying around as loose loot. You have to harvest them from specific sources using the right tools.
+</p>
+<ol>
+  <li><strong>Clothing:</strong> Loot <strong>Leather Jackets</strong> (specifically the heavy biker/police variants) from zombies or wardrobes in residential areas. Use a <strong>Knife</strong> or <strong>Scissors</strong> to <strong>"Cut into Strips"</strong> (Right-click menu). Each jacket typically yields 2-4 Hard Leather Strips.</li>
+  <li><strong>Furniture:</strong> Find dark leather couches or armchairs in luxury houses and mansions. Use a Knife to dismantle/cut them. This method is slower but can yield 3-6 strips per piece of furniture.</li>
+  <li><strong>Process:</strong> Sometimes you need to dry or tan raw hide (if you are hunting animals). Check your crafting menu for the "Tanning Rack" if you are playing a survival-focused build. For more information on crafting systems, visit our <a href="/vein-items" class="inline-link">items database</a>.</li>
+</ol>
+
+<h2>
+  <strong>3. Metal Sheets & Aluminum Scrap</strong>
+</h2>
+
+<p>
+  Building a metal base requires tons of <strong>Small Scrap Metal Sheets</strong> and <strong>Aluminum Scrap</strong>. Don't waste time looking for them one by one—systematic dismantling is far more efficient than random looting.
+</p>
+
+<h3>
+  <strong>Dismantling is Key</strong>
+</h3>
+<p>
+  Equip a <strong>Hammer</strong> or <strong>Wrench</strong> and start dismantling world objects. The key is knowing which objects yield which materials. For the best farming routes, check our <a href="/vein-guides/vein-best-loot-locations" class="inline-link">best loot locations guide</a>.
+</p>
+
+<ul>
+  <li><strong>For Aluminum Scrap:</strong> Dismantle <strong>Road Signs</strong> (yield 1-2 scrap each), <strong>Mailboxes</strong> (1 scrap), and <strong>Aluminum Siding</strong> on houses (2-4 scrap per panel). Industrial areas with warehouses often have large aluminum structures that yield 5-10 scrap per dismantle.</li>
+  <li><strong>For Small Scrap Metal Sheets:</strong> Dismantle <strong>Metal Shelves</strong> (found in stores, yield 2-3 sheets), <strong>Toasters</strong> (1 sheet), and <strong>Microwaves</strong> in kitchens (1-2 sheets). Large metal containers and filing cabinets are also excellent sources.</li>
+</ul>
+
+<p>
+  <img src="/images/guide/guide20-02.webp" alt="Vein game dismantling metal shelves" width="50%">
+</p>
+
+<h2>
+  <strong>4. Smelting: Turning Ore into Ingots</strong>
+</h2>
+
+<p>
+  If you followed our <a href="/vein-guides/vein-game-mining-guide-where-to-get-graphite-hematite" class="inline-link">Mining Guide</a>, you probably have inventories full of Hematite and Iron Ore. Here is how to transform raw ore into usable ingots for advanced crafting.
+</p>
+
+<ol>
+  <li><strong>Build a Furnace:</strong> You need Stone and Mud to construct a basic smelting furnace. Place it near your base's power source if you're using an electric furnace variant. For detailed construction requirements, see our <a href="/vein-wiki/building" class="inline-link">building system wiki</a>.</li>
+  <li><strong>Fuel:</strong> Use Coal or Wood Logs as fuel. Coal burns longer and is more efficient for large batches. You can find coal in mining locations or by dismantling certain structures.</li>
+  <li><strong>The Recipe:</strong> Place the Ore inside the furnace and add fuel. 
+    <br><em>Note:</em> You often need a <strong>Mold</strong> (Clay Mold) to shape the molten metal into <strong>Ingots</strong>. Without a mold, you'll get raw metal bars that are less useful for crafting. Each ingot typically requires 2-3 units of raw ore, depending on the ore type.
+  </li>
+</ol>
+
+<h2>
+  <strong>5. Quick Tip: Loading Ammo</strong>
+</h2>
+
+<p>
+  A common confusion for new players is <strong>"vein game loading ammo."</strong> Many players assume you can reload directly from loose bullets, but the system requires an intermediate step.
+</p>
+<p>
+  You cannot just press "R" if your magazines are empty. The reload key only works when you have a loaded magazine in your inventory.
+</p>
+<ol>
+  <li>Hold the weapon you want to reload.</li>
+  <li>Open Inventory (default: Tab key).</li>
+  <li>Drag the loose bullets ONTO the Magazine item (not the gun itself). This fills the magazine.</li>
+  <li>Once the magazine is full, <em>then</em> you can press "R" to reload the gun with the filled magazine.</li>
+</ol>
+
+<h2>
+  <strong>Summary</strong>
+</h2>
+
+<p>
+  To progress in VEIN, you must stop being a scavenger and start being a manufacturer. Secure an <strong>Industrial Welder</strong> first (check auto shops and hardware stores), then focus on dismantling everything in sight to stockpile <strong>Aluminum</strong> and <strong>Hard Leather</strong>. Once you have a steady supply of ingots and metal sheets, you can build fortified bases and craft high-tier equipment. For more advanced strategies, explore our <a href="/vein-wiki/skills" class="inline-link">skills and perks guide</a> to optimize your crafting efficiency.
+</p>
+`
+},
+
+  {
     id: 19,
     title: "VEIN Vehicle Guide: How to Repair, Hotwire & Maintain Cars",
     description: "Found a car but it won't start? This ultimate VEIN mechanics guide covers everything from hotwiring and battery charging to changing tires and engine repair. Stop walking and start driving.",
