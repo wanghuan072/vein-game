@@ -1,5 +1,127 @@
 export const guides = [
   {
+    id: 21,
+    title: "VEIN Food & Cooking Guide: Best Recipes, Farming & Preservation",
+    description: "Tired of eating canned beans? This ultimate guide teaches you how to hunt, farm, cook delicious meals, and preserve food for the long winter in VEIN.",
+    tags: ["VEIN", "Food", "Cooking", "Farming", "Fishing", "Survival Guide"],
+    publishDate: "2026-02-04",
+    imageUrl: "/images/guide/guide21.webp",
+    imageAlt: "A player tending to a crop of potatoes in a small farm in VEIN, with a campfire and cooking pot nearby.",
+    isHome: true,
+    seo: {
+        title: "VEIN Food Guide: Best Recipes, Farming & Preservation Tips",
+        description: "Learn the best food sources in VEIN, how to cook delicious meals, and how to preserve food for long-term survival. Includes hunting, fishing, and farming tips.",
+        keywords: "vein game best food, farming guide, cooking recipes, food preservation, fishing guide, nutrition, vein game what to eat"
+    },
+    addressBar: "/vein-food-cooking-farming-guide",
+    detailsHtml: `
+<p>
+  Food is the foundation of survival in <strong>VEIN</strong>. While <a href="/vein-items/consumables" class="inline-link">canned goods</a> can keep you alive in the short term, true survivors learn to hunt, farm, cook, and preserve their own food.
+</p>
+
+<p>
+  This guide provides a comprehensive overview of the food system in VEIN, covering everything from basic nutrition to advanced <a href="/vein-wiki/cooking-recipes" class="inline-link">cooking techniques</a>.
+</p>
+
+<img src="/images/guide/guide21-02.webp" alt="EIN Food Guide: Best Recipes" />
+
+<h2>
+  <strong>1. Best Food Sources in VEIN</strong>
+</h2>
+
+<ul>
+  <li><strong><a href="/vein-items/consumables" class="inline-link">Canned Goods</a></strong>: Convenient but unsustainable.</li>
+  <li><strong>Hunting</strong>: High-risk, high-reward.
+    <ul>
+      <li>Common Prey: Deer, Rabbits, Chickens</li>
+      <li>Required: <a href="/vein-items/weapons" class="inline-link">Weapons</a>, Hunting Skill</li>
+    </ul>
+  </li>
+  <li><strong>Fishing</strong>: Lower risk, requires patience.
+    <ul>
+      <li>Common Fish: Bass, Trout, Catfish</li>
+      <li>Required: <a href="/vein-items/tools" class="inline-link">Fishing Rod</a>, Bait</li>
+    </ul>
+  </li>
+  <li><strong>Farming</strong>: Sustainable, requires seeds and land.
+    <ul>
+      <li>Common Crops: Potatoes, Corn, Wheat</li>
+      <li>Required: Seeds, Tilled Soil, Water</li>
+    </ul>
+  </li>
+  <li><strong>Foraging</strong>: Lowest risk, lowest reward.
+    <ul>
+      <li>Common Plants: Berries, Mushrooms</li>
+      <li>Warning: Avoid poisonous plants!</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>
+  <strong>2. <a href="/vein-wiki/cooking-recipes" class="inline-link">Cooking Recipes</a></strong>
+</h2>
+
+<ul>
+  <li><strong>Basic Recipes</strong>:
+    <ul>
+      <li><a href="/vein-items/consumables" class="inline-link">Grilled Meat</a>: Protein</li>
+      <li>Boiled Potatoes: Carbohydrates</li>
+      <li>Vegetable Salad: Vitamins</li>
+    </ul>
+  </li>
+  <li><strong>Advanced Recipes</strong>:
+    <ul>
+      <li>Stew: Balanced nutrition</li>
+      <li><a href="/vein-items/consumables" class="inline-link">Bread</a>: High carbohydrates</li>
+      <li>Canned Food: Long-term preservation</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>
+  <strong>3. Food Preservation Techniques</strong>
+</h2>
+
+<ul>
+  <li><strong>Refrigeration</strong>: Requires electricity and a refrigerator.</li>
+  <li><strong>Pickling</strong>: Requires salt and vinegar.</li>
+  <li><strong>Smoking</strong>: Requires a smoker and wood.</li>
+  <li><strong>Dehydration</strong>: Requires a dehydrator and sunlight.</li>
+  <li><strong>Canning</strong>: Requires jars and sealing equipment.</li>
+</ul>
+
+<h2>
+  <strong>4. <a href="/vein-wiki/mechanics" class="inline-link">Nutritional Value</a></strong>
+</h2>
+
+<ul>
+  <li><strong>Protein</strong>: Muscle repair</li>
+  <li><strong>Carbohydrates</strong>: Energy</li>
+  <li><strong>Fats</strong>: Long-term energy storage</li>
+  <li><strong>Vitamins</strong>: Body function maintenance</li>
+  <li><strong>Hydration</strong>: Water balance</li>
+</ul>
+
+<h2>
+  <strong>5. Food Poisoning & Diseases</strong>
+</h2>
+
+<ul>
+  <li>How to avoid <a href="/vein-items/medical" class="inline-link">food poisoning</a></li>
+  <li>How to treat food poisoning</li>
+  <li>How to prevent malnutrition</li>
+</ul>
+
+<h2>
+  <strong>Summary</strong>
+</h2>
+
+<p>
+  Mastering the food system in VEIN is essential for long-term survival. Learn to hunt, farm, cook, and preserve your own food to thrive in the harsh environment.
+</p>
+`
+},
+  {
     id: 20,
     title: "VEIN Advanced Crafting Guide: Industrial Welder, Hard Leather & Metal Sheets",
     description: "Stuck in the stone age? This guide reveals the spawn locations for the Industrial Welder, the best way to farm Hard Leather Strips, and how to mass-produce Metal Sheets and Aluminum Scrap.",
@@ -23,7 +145,7 @@ export const guides = [
   According to community searches, the two biggest bottlenecks for mid-game players are finding the <strong>Industrial Welder</strong> and sourcing <strong>Hard Leather Strips</strong>. This guide explains exactly where to find them, plus essential techniques for mass-producing metal components and smelting ores into ingots.
 </p>
 
-<p><br></p>
+
 
 <h2>
   <strong>1. Where to Find the Industrial Welder</strong>
@@ -167,7 +289,7 @@ export const guides = [
   <strong>Lug Wrench</strong>, a <strong>Car Jack</strong>, and a <strong>Screwdriver</strong>.
 </p>
 
-<p><br></p>
+
 
 <h2>
   <strong>1. The Basics: Why Won't My Car Start?</strong>
@@ -545,7 +667,7 @@ export const guides = [
   </span>
 </p>
 
-<p><br></p>
+
 
 <h2>
   <strong>1. Strength &amp; Vitality: How to Carry More</strong>

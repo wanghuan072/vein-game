@@ -1,5 +1,128 @@
 export const guides = [
   {
+    "id": 21,
+    "title": "VEIN Ernährungs- & Koch-Guide: Beste Rezepte, Landwirtschaft & Konservierung",
+    "description": "Genug von Dosenbohnen? Dieser ultimative Guide zeigt dir, wie du in VEIN jagst, anbaust, köstliche Mahlzeiten kochst und Vorräte für den langen Winter anlegst.",
+    "tags": ["VEIN", "Food", "Cooking", "Farming", "Fishing", "Survival Guide"],
+    "publishDate": "2026-02-04",
+    "imageUrl": "/images/guide/guide21.webp",
+    "imageAlt": "Ein Spieler pflegt eine Kartoffelernte auf einem kleinen Bauernhof in VEIN, daneben befinden sich ein Lagerfeuer und ein Kochtopf.",
+    "isHome": true,
+    "seo": {
+      "title": "VEIN Ernährungs-Guide: Beste Rezepte, Farming & Konservierungs-Tipps",
+      "description": "Lerne die besten Nahrungsquellen in VEIN kennen, wie man köstliche Mahlzeiten zubereitet und Lebensmittel für das langfristige Überleben konserviert. Inklusive Jagd-, Angel- und Farming-Tipps.",
+      "keywords": "vein game beste nahrung, farming guide, kochrezepte, lebensmittel konservieren, angel guide, ernährung, vein game was essen"
+    },
+    "addressBar": "/vein-food-cooking-farming-guide",
+    "detailsHtml": `
+<p>
+  Nahrung ist das Fundament des Überlebens in <strong>VEIN</strong>. Während <a href="/vein-items/consumables" class="inline-link">Konserven</a> dich kurzfristig am Leben erhalten können, lernen wahre Überlebenskünstler, wie man jagt, farmt, kocht und seine eigenen Lebensmittel konserviert.
+</p>
+
+<p>
+  Dieser Guide bietet einen umfassenden Überblick über das Nahrungssystem in VEIN und deckt alles ab – von grundlegender Ernährung bis hin zu fortgeschrittenen <a href="/vein-wiki/cooking-recipes" class="inline-link">Kochtechniken</a>.
+</p>
+
+<img src="/images/guide/guide21-02.webp" alt="VEIN Ernährungs-Guide: Beste Rezepte" />
+
+<h2>
+  <strong>1. Die besten Nahrungsquellen in VEIN</strong>
+</h2>
+
+<ul>
+  <li><strong><a href="/vein-items/consumables" class="inline-link">Konserven</a></strong>: Praktisch, aber nicht nachhaltig.</li>
+  <li><strong>Jagd</strong>: Hohes Risiko, hohe Belohnung.
+    <ul>
+      <li>Häufige Beute: Hirsche, Kaninchen, Hühner</li>
+      <li>Erforderlich: <a href="/vein-items/weapons" class="inline-link">Waffen</a>, Jagd-Skill</li>
+    </ul>
+  </li>
+  <li><strong>Angeln</strong>: Geringeres Risiko, erfordert Geduld.
+    <ul>
+      <li>Häufige Fische: Barsch, Forelle, Wels</li>
+      <li>Erforderlich: <a href="/vein-items/tools" class="inline-link">Angelrute</a>, Köder</li>
+    </ul>
+  </li>
+  <li><strong>Landwirtschaft</strong>: Nachhaltig, erfordert Samen und Land.
+    <ul>
+      <li>Häufige Feldfrüchte: Kartoffeln, Mais, Weizen</li>
+      <li>Erforderlich: Samen, gepflügter Boden, Wasser</li>
+    </ul>
+  </li>
+  <li><strong>Sammeln (Foraging)</strong>: Geringstes Risiko, geringste Belohnung.
+    <ul>
+      <li>Häufige Pflanzen: Beeren, Pilze</li>
+      <li>Warnung: Meide giftige Pflanzen!</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>
+  <strong>2. <a href="/vein-wiki/cooking-recipes" class="inline-link">Kochrezepte</a></strong>
+</h2>
+
+<ul>
+  <li><strong>Basis-Rezepte</strong>:
+    <ul>
+      <li><a href="/vein-items/consumables" class="inline-link">Gegrilltes Fleisch</a>: Proteine</li>
+      <li>Gekochte Kartoffeln: Kohlenhydrate</li>
+      <li>Gemüsesalat: Vitamine</li>
+    </ul>
+  </li>
+  <li><strong>Fortgeschrittene Rezepte</strong>:
+    <ul>
+      <li>Eintopf: Ausgewogene Ernährung</li>
+      <li><a href="/vein-items/consumables" class="inline-link">Brot</a>: Hohe Kohlenhydrate</li>
+      <li>Eingemachtes: Langfristige Konservierung</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>
+  <strong>3. Techniken zur Lebensmittelkonservierung</strong>
+</h2>
+
+<ul>
+  <li><strong>Kühlung</strong>: Erfordert Elektrizität und einen Kühlschrank.</li>
+  <li><strong>Einlegen (Pökeln)</strong>: Erfordert Salz und Essig.</li>
+  <li><strong>Räuchern</strong>: Erfordert einen Räucherofen und Holz.</li>
+  <li><strong>Dörren</strong>: Erfordert ein Dörrgerät und Sonnenlicht.</li>
+  <li><strong>Einkochen</strong>: Erfordert Gläser und Versiegelungswerkzeug.</li>
+</ul>
+
+<h2>
+  <strong>4. <a href="/vein-wiki/mechanics" class="inline-link">Nährwert</a></strong>
+</h2>
+
+<ul>
+  <li><strong>Protein</strong>: Muskelregeneration</li>
+  <li><strong>Kohlenhydrate</strong>: Energie</li>
+  <li><strong>Fette</strong>: Langfristige Energiespeicherung</li>
+  <li><strong>Vitamine</strong>: Aufrechterhaltung der Körperfunktionen</li>
+  <li><strong>Hydratation</strong>: Wasserhaushalt</li>
+</ul>
+
+<h2>
+  <strong>5. Lebensmittelvergiftung & Krankheiten</strong>
+</h2>
+
+<ul>
+  <li>Wie man eine <a href="/vein-items/medical" class="inline-link">Lebensmittelvergiftung</a> vermeidet</li>
+  <li>Wie man eine Lebensmittelvergiftung behandelt</li>
+  <li>Wie man Mangelernährung vorbeugt</li>
+</ul>
+
+<h2>
+  <strong>Zusammenfassung</strong>
+</h2>
+
+<p>
+  Das Meistern des Nahrungssystems in VEIN ist für das langfristige Überleben unerlässlich. Lerne zu jagen, zu farmen, zu kochen und deine eigenen Lebensmittel zu konservieren, um in der rauen Umgebung zu bestehen.
+</p>
+`
+  },
+  
+  {
     id: 20,
     title: "VEIN Fortgeschrittener Crafting-Guide: Industrielles Schweißgerät, Hartleder & Metallplatten",
     description: "In der Steinzeit festgesteckt? Dieser Guide enthüllt die Fundorte für das industrielle Schweißgerät, den besten Weg, um Hartlederstreifen zu farmen, und wie man Metallplatten und Aluminiumschrott in Massen produziert.",
@@ -127,7 +250,7 @@ export const guides = [
 </p>
 `
   },
-  
+
   {
     id: 19,
     title: "VEIN Fahrzeug-Guide: Autos reparieren, kurzschließen & warten",
