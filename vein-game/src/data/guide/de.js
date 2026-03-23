@@ -1,5 +1,82 @@
 export const guides = [
   {
+    "id": 22,
+    "title": "Fortgeschrittene Basis-Befestigung: Sichern Sie Ihr Safehouse in VEIN",
+    "description": "Ein praktischer Leitfaden zur Basisverteidigung in VEIN: Befestigungsstufen, Wartung durch den Utility Cabinet, erforderliche Bau-Skills und die Kombination von Wänden, Stacheldraht und Beleuchtung.",
+    "imageUrl": "/images/guide/vein-base-fortification.webp",
+    "imageAlt": "Ein Spieler verstärkt eine Holztür mit Metallplatten in VEIN",
+    "publishDate": "22. März 2026",
+    "addressBar": "/vein-base-fortification-defense-guide",
+    "category": "Bauen",
+    "tags": ["Basisbau", "Befestigung", "Verteidigung", "Wartung"],
+    "isHome": true,
+    "seo": {
+      "title": "VEIN Basis-Befestigungs-Guide | Fenster & Türen richtig verstärken",
+      "description": "Meistern Sie VEIN-Befestigungsstufen, die Wartung des Utility Cabinets und die Anforderungen an den Bau-Skill. Alles über das Bausystem: Holzschrott, verstärktes Holz und Kalkstein-Verteidigungen.",
+      "keywords": "VEIN Basisbau, VEIN Befestigungsstufen, VEIN Utility Cabinet, VEIN Bau-Skill, VEIN Basisverteidigung, VEIN Kalksteinziegel"
+    },
+    "detailsHtml": `
+      <article>
+        <header>
+          <p>In VEIN ist Ihre Basis nur so stark wie ihre <strong>niedrigste Befestigungsstufe</strong> und die Fähigkeit Ihres <strong>Utility Cabinets (Versorgungsschrank)</strong>, den Unterhalt zu leisten. Dieser Leitfaden fasst zusammen, wie Verteidigungsschichten und Wartung im aktuellen Bausystem funktionieren. Für alle Menüs, Materialien und Versorgungsleitungen an einem Ort, besuchen Sie unser <a href="/vein-wiki/building" class="inline-link">Bau-Wiki</a> und die allgemeine <a href="/vein-wiki/mechanics" class="inline-link">Mechanik-Übersicht</a>.</p>
+        </header>
+
+        <section>
+          <h2>I. Befestigungen: Stufen &amp; Platzierung</h2>
+          <p>Befestigte Strukturen werden über das <strong>Baumenü</strong> (<strong>B</strong>) errichtet. Neue Befestigungen <strong>rasten (snap)</strong> an bestehenden ein; nutzen Sie das Mausrad, um ein eingerastetes Teil in den gewünschten Winkel zu <strong>drehen</strong>. Blaupausen listen Statusanforderungen, Materialien und <a href="/vein-items/tools" class="inline-link">Werkzeuge</a> auf – Sie müssen alles im Inventar haben, um sie zu platzieren.</p>
+          <ul>
+            <li><strong>Stufe 1 — Holz, Schrott:</strong> Günstig und schnell gebaut, bricht aber leicht und kann durch fast alles beschädigt werden.</li>
+            <li><strong>Stufe 2 — Holz, Verstärkt:</strong> Deutlich stärker als Schrottholz; dennoch anfällig für schwere Nahkampfwaffen, Schusswaffen und Explosionen. Erfordert <strong>Bau-Skill Level 25</strong>. Siehe <a href="/vein-wiki/skills" class="inline-link">Skills &amp; Perks</a> für den vollständigen Bau-Baum (einschließlich Perks, die die Kosten für verstärktes Holz senken).</li>
+            <li><strong>Stufe 3 — Kalksteinziegel:</strong> Schwer zu durchbrechen; anfällig für Sprengstoffe, großkalibriges Feuer und Spitzhacken. Erfordert <strong>Bau-Skill Level 50</strong> und eine Kalkstein-Verarbeitung (Betonpaste aus Kalksteinpulver, dann Brennen zu Ziegeln), wie auf der <a href="/vein-wiki/building" class="inline-link">Bauen-Seite</a> beschrieben.</li>
+          </ul>
+          <p>Bevor Sie in höhere Stufen investieren, wählen Sie einen verteidigbaren Grundriss mit unserem <a href="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">Guide für die besten Basis-Standorte</a> und suchen Sie nach Vorräten auf der <a href="/vein-map" class="inline-link">VEIN-Karte</a>.</p>
+        </section>
+
+        <section>
+          <h2>II. Utility Cabinet &amp; strukturelle Wartung</h2>
+          <p>Der <strong>Utility Cabinet (UC)</strong> ist das Herzstück Ihrer Basis. Er <strong>repariert</strong> Strukturen in seiner Reichweite automatisch, solange Sie ihn mit den richtigen Ressourcen bestücken. Das Öffnen des UC zeigt die benötigten Wartungsmaterialien und Ihren aktuellen Vorrat an; er verbraucht Ressourcen in einem <strong>60-Minuten-Zyklus</strong>, um Verfall (Decay) zu verhindern. Alles <strong>außerhalb</strong> des UC-Radius – oder alles, was nicht mit Materialien versorgt werden kann – zerfällt mit der Zeit. Multiplayer-Crews sollten den UC wie einen Tresor behandeln: Platzierung und Zugangskontrolle sind entscheidend. Alle Details finden Sie unter <a href="/vein-wiki/building" class="inline-link">Bauen: Utility Cabinets</a>.</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Ebene</th>
+                <th>Funktion</th>
+                <th>Beachten</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>UC-Abdeckung</td>
+                <td>Auto-Reparatur + geplanter Unterhaltsverbrauch</td>
+                <td>Halten Sie Ersatzplanken, Schrott, Kalkstein-Vorstufen usw. im Kreislauf des UC bereit</td>
+              </tr>
+              <tr>
+                <td>Befestigungsstufe</td>
+                <td>Definiert, wie Zombies und Spieler Ihre Hülle beschädigen können</td>
+                <td>Höhere Stufen erfordern ein höheres <a href="/vein-wiki/skills" class="inline-link">Bau-Level</a></td>
+              </tr>
+              <tr>
+                <td>Zusatzverteidigung</td>
+                <td>Optionen wie <strong>Stacheldrahtzäune</strong> (siehe Bauen → Verteidigung)</td>
+                <td>Unterstützen Sie dies durch freie Sichtlinien und Beleuchtung in Kampfbereichen</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>III. Lichter, Generatoren &amp; Peripherie</h2>
+          <p>Zu den Versorgungsgebäuden in VEIN gehören <strong>Gasgeneratoren</strong>, <strong>Flutlichter</strong> und andere Energiegeräte, die unter <a href="/vein-wiki/building" class="inline-link">Bauen → Versorgung</a> gelistet sind. Generatoren sind laut und ziehen Aufmerksamkeit auf sich – platzieren Sie sie dort, wo Sie Tankvorgänge absichern können, und leiten Sie den Strom zu Lichtern, die wichtige Zugänge abdecken. Für die Verkabelung von Außenanlagen bietet unser <a href="/vein-guides/vein-game-how-to-power-street-light" class="inline-link">Straßenlaternen-Stromguide</a> ein praktisches Setup.</p>
+          <p>Benötigen Sie Kontext zum Crafting abseits von Mauern? Durchsuchen Sie die <a href="/vein-items/materials" class="inline-link">Materialdatenbank</a> und den zentralen <a href="/vein-items" class="inline-link">Item-Hub</a> für Komponenten, die Werkbänke und Basis-Upgrades speisen.</p>
+        </section>
+
+        <div class="pro-tip">
+          <strong>Pro-Tipp:</strong> Erstellen Sie <strong>interne Killzones</strong>, indem Sie Deckungen so demontieren oder anordnen, dass Zombies (oder Raider) einen langen, schmalen Pfad überqueren müssen. Kombinieren Sie dies mit <a href="/vein-items/weapons" class="inline-link">Nah- oder Fernkampfwaffen</a>, mit denen Sie auf engem Raum gut umgehen können, und halten Sie den Kampf innerhalb Ihrer UC-Blase, damit beschädigte Befestigungen automatisch repariert werden.
+        </div>
+      </article>
+    `
+  },
+
+  {
     "id": 21,
     "title": "VEIN Ernährungs- & Koch-Guide: Beste Rezepte, Landwirtschaft & Konservierung",
     "description": "Genug von Dosenbohnen? Dieser ultimative Guide zeigt dir, wie du in VEIN jagst, anbaust, köstliche Mahlzeiten kochst und Vorräte für den langen Winter anlegst.",
@@ -121,7 +198,7 @@ export const guides = [
 </p>
 `
   },
-  
+
   {
     id: 20,
     title: "VEIN Fortgeschrittener Crafting-Guide: Industrielles Schweißgerät, Hartleder & Metallplatten",

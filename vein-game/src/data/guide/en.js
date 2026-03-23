@@ -1,5 +1,82 @@
 export const guides = [
   {
+    id: 22, 
+    title: 'Advanced Base Fortification: Reinforcing Your Safehouse in VEIN',
+    description: 'A practical guide to VEIN base defense: fortification tiers, Utility Cabinet upkeep, construction skill gates, and how to combine walls, barbed wire, and lighting.',
+    imageUrl: '/images/guide/vein-base-fortification.webp',
+    imageAlt: 'A player reinforcing a wooden door with metal plates in VEIN',
+    publishDate: 'March 22, 2026',
+    addressBar: '/vein-base-fortification-defense-guide',
+    category: 'Building',
+    tags: ['Base Building', 'Fortification', 'Defenses', 'Maintenance'],
+    isHome: true,
+    seo: {
+      title: 'VEIN Base Fortification Guide | How to Reinforce Windows & Doors',
+      description: 'Master VEIN fortification tiers, Utility Cabinet maintenance, and Construction skill requirements. Aligns with the building system: wood scrap, fortified wood, and limestone defenses.',
+      keywords: 'VEIN base building, VEIN fortification tiers, VEIN Utility Cabinet, VEIN construction skill, VEIN base defense, VEIN limestone brick',
+    },
+    detailsHtml: `
+      <article>
+        <header>
+          <p>In VEIN, your base is only as strong as its <strong>lowest fortification tier</strong> and whether your <strong>Utility Cabinet</strong> can keep paying upkeep. This guide summarizes how defense layers and maintenance work in the current building system. For every menu, material, and utility in one place, start with our <a href="/vein-wiki/building" class="inline-link">Building wiki</a> and the broader <a href="/vein-wiki/mechanics" class="inline-link">mechanics overview</a>.</p>
+        </header>
+
+        <section>
+          <h2>I. Fortifications: Tiers &amp; Placement</h2>
+          <p>Fortified structures are built from the <strong>Construction Menu</strong> (<strong>B</strong>). New fortifications <strong>snap</strong> to existing ones; use the mouse wheel to <strong>swivel</strong> a snapped piece into the angle you need. Blueprints list stat requirements, materials, and <a href="/vein-items/tools" class="inline-link">tools</a>—you must carry everything in your inventory to place them.</p>
+          <ul>
+            <li><strong>Tier 1 — Wood, Scrap:</strong> Cheap and fast, but breaks easily and can be damaged by almost anything.</li>
+            <li><strong>Tier 2 — Wood, Fortified:</strong> Much stronger than scrap wood; still vulnerable to heavy melee, firearms, and explosions. Requires <strong>Construction skill level 25</strong>. See <a href="/vein-wiki/skills" class="inline-link">Skills &amp; Perks</a> for the full Construction tree (including perks that reduce reinforced wood costs).</li>
+            <li><strong>Tier 3 — Limestone Brick:</strong> Harder to break down; weak to explosives, large-caliber fire, and pickaxes. Requires <strong>Construction skill level 50</strong> and a limestone workflow (concrete paste from limestone powder, then smelting to bricks) as described on the <a href="/vein-wiki/building" class="inline-link">Building</a> page.</li>
+          </ul>
+          <p>Before you invest in tiers, pick a defensible footprint using our <a href="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">best base location guide</a> and scout supplies on the <a href="/vein-map" class="inline-link">VEIN map</a>.</p>
+        </section>
+
+        <section>
+          <h2>II. Utility Cabinet &amp; Structural Upkeep</h2>
+          <p>The <strong>Utility Cabinet (UC)</strong> is the center of your base. It automatically <strong>repairs</strong> structures within its range as long as you stock the correct resources. Opening the UC shows required maintenance materials and what you have on hand; it consumes resources on a <strong>60-minute</strong> cycle to prevent decay. Anything <strong>outside</strong> the UC radius—or anything you cannot feed with materials—will decay over time. Multiplayer crews should treat the UC like a vault: placement and access control matter. Full detail lives in <a href="/vein-wiki/building" class="inline-link">Building: Utility Cabinets</a>.</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Layer</th>
+                <th>What it does</th>
+                <th>Watchouts</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>UC coverage</td>
+                <td>Auto-repair + scheduled upkeep consumption</td>
+                <td>Keep spare planks, scrap, limestone inputs, etc. in the loop your UC expects</td>
+              </tr>
+              <tr>
+                <td>Fortification tier</td>
+                <td>Defines how zombies and players can damage your shell</td>
+                <td>Higher tiers need higher <a href="/vein-wiki/skills" class="inline-link">Construction</a> level</td>
+              </tr>
+              <tr>
+                <td>Extra defense</td>
+                <td>Options such as <strong>Fenced Barbed Wire</strong> (see Building → Defense)</td>
+                <td>Support with clear lines of sight and lighting where you actually fight</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>III. Lights, Generators &amp; Perimeter</h2>
+          <p>VEIN’s building utilities include <strong>Gas Generators</strong>, <strong>Floodlights</strong>, and other power gear listed under <a href="/vein-wiki/building" class="inline-link">Building → Utilities</a>. Generators are loud and draw attention—place them where you can defend refuel runs, and route power to lights that cover approaches you care about. For wiring outdoor fixtures, our <a href="/vein-guides/vein-game-how-to-power-street-light" class="inline-link">street light power guide</a> walks through a practical lighting setup.</p>
+          <p>Need crafting context beyond walls? Browse the <a href="/vein-items/materials" class="inline-link">materials database</a> and the main <a href="/vein-items" class="inline-link">items hub</a> for components that feed workstations and base upgrades.</p>
+        </section>
+
+        <div class="pro-tip">
+          <strong>Pro Tip:</strong> Shape <strong>interior kill zones</strong> by dismantling or rearranging cover so zombies (or raiders) must cross a long, narrow path. Pair that with <a href="/vein-items/weapons" class="inline-link">melee or ranged weapons</a> you are comfortable using in tight quarters, and keep the fight inside your UC bubble so damaged fortifications get repaired automatically.
+        </div>
+      </article>
+    `
+  },
+
+  {
     id: 21,
     title: "VEIN Food & Cooking Guide: Best Recipes, Farming & Preservation",
     description: "Tired of eating canned beans? This ultimate guide teaches you how to hunt, farm, cook delicious meals, and preserve food for the long winter in VEIN.",
