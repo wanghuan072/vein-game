@@ -3,7 +3,7 @@ export const guides = [
     "id": 22,
     "title": "Fortgeschrittene Basis-Befestigung: Sichern Sie Ihr Safehouse in VEIN",
     "description": "Ein praktischer Leitfaden zur Basisverteidigung in VEIN: Befestigungsstufen, Wartung durch den Utility Cabinet, erforderliche Bau-Skills und die Kombination von Wänden, Stacheldraht und Beleuchtung.",
-    "imageUrl": "/images/guide/vein-base-fortification.webp",
+    "imageUrl": "/images/guide/guide01.webp",
     "imageAlt": "Ein Spieler verstärkt eine Holztür mit Metallplatten in VEIN",
     "publishDate": "22. März 2026",
     "addressBar": "/vein-base-fortification-defense-guide",

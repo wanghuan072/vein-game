@@ -3,7 +3,7 @@ export const guides = [
     id: 22, 
     title: 'Advanced Base Fortification: Reinforcing Your Safehouse in VEIN',
     description: 'A practical guide to VEIN base defense: fortification tiers, Utility Cabinet upkeep, construction skill gates, and how to combine walls, barbed wire, and lighting.',
-    imageUrl: '/images/guide/vein-base-fortification.webp',
+    imageUrl: '/images/guide/guide01.webp',
     imageAlt: 'A player reinforcing a wooden door with metal plates in VEIN',
     publishDate: 'March 22, 2026',
     addressBar: '/vein-base-fortification-defense-guide',
