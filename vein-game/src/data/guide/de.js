@@ -1,5 +1,68 @@
 export const guides = [
   {
+    "id": 23,
+    "title": "VEIN Utility-Cabinet-Guide: Radius, Unterhalt, Berechtigungen & Anti-Decay-Setup",
+    "description": "Erfahren Sie, wie Utility Cabinets (UCs) in VEIN Verfall (Decay) verhindern, welche Ressourcen sie verbrauchen, wie Bauberechtigungen funktionieren und wie Sie Ihre Basis so planen, dass Reparaturen und Unterhalt die wirklich wichtigen Strukturen abdecken.",
+    "imageUrl": "/images/guide/guide23.webp",
+    "imageAlt": "Ein Utility-Cabinet-Interface und eine befestigte VEIN-Basis-Peripherie.",
+    "publishDate": "23. März 2026",
+    "addressBar": "/vein-utility-cabinet-upkeep-radius-permissions-guide",
+    "category": "Bauen",
+    "tags": ["Utility Cabinet", "Basisbau", "Unterhalt", "Decay", "Verteidigung", "Multiplayer"],
+    "isHome": false,
+    "seo": {
+      "title": "VEIN Utility Cabinet (UC) Guide | Unterhalt, Radius, Rechte & Decay",
+      "description": "Meistern Sie Utility Cabinets in VEIN. So verhindert UC-Unterhalt Decay, wie Abdeckung funktioniert, was Sie für Reparaturen lagern sollten und wie Sie Berechtigungen in Multiplayer-Basen absichern.",
+      "keywords": "VEIN Utility Cabinet, VEIN UC Unterhalt, VEIN Decay verhindern, VEIN Basis Wartung, VEIN Bau Radius, VEIN UC Berechtigungen"
+    },
+    "detailsHtml": `
+      <article>
+        <header>
+          <p>Der <strong>Utility Cabinet (UC)</strong> ist der eigentliche „Kern“ Ihrer Basis in <strong>VEIN</strong>. Befestigungen sind nur dann dauerhaft, wenn sie in der UC-Abdeckung bleiben und Sie den Unterhaltskreislauf zuverlässig versorgen. Wenn Sie es noch nicht getan haben, lesen Sie zuerst das <a href="/vein-wiki/building" class="inline-link">Bau-Wiki</a> und kommen Sie dann für die praktische Setup-Strategie hierher zurück.</p>
+        </header>
+
+        <section>
+          <h2>I. Was der UC wirklich macht (und was nicht)</h2>
+          <ul>
+            <li><strong>Verhindert Decay (innerhalb der Reichweite):</strong> Der UC verbraucht Ressourcen nach Zeitplan und repariert gebaute Strukturen in seiner Abdeckung.</li>
+            <li><strong>Schützt nicht, was er nicht „abdeckt“:</strong> Alles außerhalb Ihres UC-Radius zerfällt mit der Zeit.</li>
+            <li><strong>Ersetzt keine guten Befestigungen:</strong> Sie brauchen weiterhin Stufen und Verteidigungsschichten—siehe <a href="/vein-wiki/building" class="inline-link">Befestigungsstufen</a> und die allgemeinen <a href="/vein-wiki/mechanics" class="inline-link">Mechaniken</a>.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>II. Basis-Layout: Erst Abdeckung, dann Ausbau</h2>
+          <p>Viele „mysteriöse Decay“-Probleme sind einfach Abdeckungsprobleme. Bauen Sie von innen nach außen:</p>
+          <ol>
+            <li><strong>UC früh platzieren:</strong> Setzen Sie ihn an einen Ort, den Sie verteidigen können. Im Multiplayer sollten Sie davon ausgehen, dass Gegner danach suchen.</li>
+            <li><strong>Die Hülle um die UC-Abdeckung planen:</strong> Halten Sie die wichtigsten Wände, Türen, Lager und Werkstationen innerhalb der Blase.</li>
+            <li><strong>Erst erweitern, wenn Unterhalt stabil ist:</strong> Eine größere Fläche erhöht den Wartungsbedarf.</li>
+          </ol>
+          <p>Wenn Sie noch einen Standort suchen, starten Sie mit unserem <a href="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">Guide für die besten Basis-Standorte</a> und nutzen Sie die <a href="/vein-map" class="inline-link">VEIN-Karte</a>, um Versorgungsrouten zu planen.</p>
+        </section>
+
+        <section>
+          <h2>III. Den Unterhaltskreislauf füttern (Checkliste)</h2>
+          <p>Öffnen Sie den UC und prüfen Sie die Liste der benötigten Ressourcen. Legen Sie anschließend einen Puffer an, damit Ihnen bei langen Loot-Runs nichts ausgeht.</p>
+          <ul>
+            <li><strong>Basis-Bauinputs:</strong> Lagern Sie Materialien passend zu Ihrer aktuellen Befestigungsstufe (Schrott/Verstärkt/Kalkstein-Workflows).</li>
+            <li><strong>Werkzeuge für Reparatur & Ausbau:</strong> Halten Sie die richtigen <a href="/vein-items/tools" class="inline-link">Werkzeuge</a> und Rohstoffe bereit.</li>
+            <li><strong>Metalle & verarbeitete Ressourcen:</strong> Beim Übergang in höhere Stufen hilft die <a href="/vein-items/materials" class="inline-link">Materialdatenbank</a> dabei, Ihre Prioritäten fürs Horten zu setzen.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>IV. Rechteverwaltung &amp; Multiplayer-Absicherung</h2>
+          <p>Im Multiplayer ist der UC eine Sicherheitsgrenze. Nutzen Sie die UC-Verwaltung, um zu steuern, wer bauen, abreißen und Ressourcen verbrauchen darf. Für langfristige Builds lohnt es sich, <a href="/vein-wiki/skills" class="inline-link">Skills &amp; Perks</a> zu lesen und Construction-Meilensteine zu koordinieren (Stufe 2 bei Level 25, Stufe 3 bei Level 50), damit Tier-Upgrades geplant passieren.</p>
+        </section>
+
+        <div class="pro-tip">
+          <strong>Pro-Tipp:</strong> Behandeln Sie den UC wie einen „Abdeckungsanker“. Wenn Sie Außenbeleuchtung für die Verteidigung nutzen möchten, planen Sie Strom und Perimeter so, dass Ihre kritischen Strukturen weiterhin in der UC-Reparaturreichweite liegen. Ein funktionierendes Outdoor-Setup zeigt unser <a href="/vein-guides/vein-game-how-to-power-street-light" class="inline-link">Straßenlaternen-Stromguide</a>.
+        </div>
+      </article>
+    `
+  },
+  {
     "id": 22,
     "title": "Fortgeschrittene Basis-Befestigung: Sichern Sie Ihr Safehouse in VEIN",
     "description": "Ein praktischer Leitfaden zur Basisverteidigung in VEIN: Befestigungsstufen, Wartung durch den Utility Cabinet, erforderliche Bau-Skills und die Kombination von Wänden, Stacheldraht und Beleuchtung.",

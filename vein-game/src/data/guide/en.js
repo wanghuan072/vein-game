@@ -1,5 +1,71 @@
 export const guides = [
   {
+    id: 23,
+    title: 'VEIN Utility Cabinet Guide: Radius, Upkeep, Permissions & Anti-Decay Setup',
+    description:
+      'Learn how Utility Cabinets (UCs) prevent decay in VEIN, what resources they consume, how build permissions work, and how to design your base so repairs and upkeep actually cover the structures you rely on.',
+    imageUrl: '/images/guide/guide23.webp',
+    imageAlt: 'A Utility Cabinet interface and a fortified VEIN base perimeter.',
+    publishDate: '2026-03-23',
+    addressBar: '/vein-utility-cabinet-upkeep-radius-permissions-guide',
+    category: 'Building',
+    tags: ['Utility Cabinet', 'Base Building', 'Upkeep', 'Decay', 'Defense', 'Multiplayer'],
+    isHome: false,
+    seo: {
+      title: 'VEIN Utility Cabinet (UC) Guide | Upkeep, Radius, Permissions & Decay',
+      description:
+        'Master Utility Cabinets in VEIN. Learn how UC upkeep prevents decay, how coverage works, what to stock for repairs, and how to lock down permissions in multiplayer bases.',
+      keywords:
+        'VEIN Utility Cabinet, VEIN UC upkeep, VEIN decay prevention, VEIN base maintenance, VEIN building radius, VEIN UC permissions',
+    },
+    detailsHtml: `
+      <article>
+        <header>
+          <p>The <strong>Utility Cabinet (UC)</strong> is the real “core” of your base in <strong>VEIN</strong>. Fortifications are only durable if they stay inside UC coverage and you keep the upkeep loop fed. If you have not already, skim the <a href="/vein-wiki/building" class="inline-link">Building wiki</a> first, then come back here for the practical setup strategy.</p>
+        </header>
+
+        <section>
+          <h2>I. What the UC Actually Does (and What It Does Not)</h2>
+          <ul>
+            <li><strong>Prevents decay (within range):</strong> A UC consumes resources on a schedule and repairs built structures inside its coverage.</li>
+            <li><strong>Does not protect what it cannot “see”:</strong> Anything outside your UC radius will still decay over time.</li>
+            <li><strong>Does not replace good fortifications:</strong> You still need proper tiers and defensive layers—review <a href="/vein-wiki/building" class="inline-link">fortification tiers</a> and the general <a href="/vein-wiki/mechanics" class="inline-link">mechanics</a>.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>II. Coverage-First Base Layout</h2>
+          <p>Many “mystery decay” problems are just coverage problems. Build your base from the inside out:</p>
+          <ol>
+            <li><strong>Place the UC early:</strong> Put it where you can defend it. In multiplayer, assume enemies will search for it.</li>
+            <li><strong>Design your shell around UC coverage:</strong> Keep your most important walls, doors, storage, and workstations inside the bubble.</li>
+            <li><strong>Only expand after you can feed upkeep:</strong> A bigger footprint means more maintenance demand.</li>
+          </ol>
+          <p>If you are still choosing where to live, start with our <a href="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">best base location guide</a> and use the <a href="/vein-map" class="inline-link">VEIN map</a> to plan supply routes.</p>
+        </section>
+
+        <section>
+          <h2>III. Stocking the Upkeep Loop (Practical Checklist)</h2>
+          <p>Open the UC and look at the required resources list. Then keep a buffer so you do not “go dry” during long looting runs.</p>
+          <ul>
+            <li><strong>Core building inputs:</strong> Keep spare materials that match your current fortification tier (scrap/fortified/limestone workflows).</li>
+            <li><strong>Repair and expansion tooling:</strong> Ensure you have the right <a href="/vein-items/tools" class="inline-link">tools</a> and raw inputs in storage.</li>
+            <li><strong>Metals and processed resources:</strong> When you transition into higher tiers, browse the <a href="/vein-items/materials" class="inline-link">materials database</a> to track what you should be hoarding.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>IV. Permissions &amp; Multiplayer Hardening</h2>
+          <p>In multiplayer, a UC is a security boundary. Use the UC management options to control who can build, tear down, and consume resources inside your base. If you are planning a long-term build, read <a href="/vein-wiki/skills" class="inline-link">Skills &amp; Perks</a> and coordinate Construction milestones (Tier 2 at level 25, Tier 3 at level 50) so your base tier upgrades happen on purpose, not by accident.</p>
+        </section>
+
+        <div class="pro-tip">
+          <strong>Pro Tip:</strong> Treat the UC like a “coverage anchor.” If you want exterior lighting for defenses, plan power and perimeter fixtures that still keep your critical structures inside UC repair range. For a working outdoor setup, see the <a href="/vein-guides/vein-game-how-to-power-street-light" class="inline-link">street light power guide</a>.
+        </div>
+      </article>
+    `,
+  },
+  {
     id: 22, 
     title: 'Advanced Base Fortification: Reinforcing Your Safehouse in VEIN',
     description: 'A practical guide to VEIN base defense: fortification tiers, Utility Cabinet upkeep, construction skill gates, and how to combine walls, barbed wire, and lighting.',
