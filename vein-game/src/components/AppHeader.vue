@@ -6,42 +6,7 @@
           <img class="logo-image" src="/images/logo.webp" alt="VEIN Logo">
           <span class="logo-text">VEIN Game</span>
         </a>
-        <button class="menu-toggle" @click="toggleMenu" aria-label="Toggle menu">
-          <span class="hamburger-line" :class="{ active: isMenuOpen }"></span>
-          <span class="hamburger-line" :class="{ active: isMenuOpen }"></span>
-          <span class="hamburger-line" :class="{ active: isMenuOpen }"></span>
-        </button>
-        <div class="menu-overlay" :class="{ open: isMenuOpen }" @click="closeMenu"></div>
-        <div class="search-container">
-          <div class="search-box">
-            <input
-              type="text"
-              v-model="searchInput"
-              @keyup.enter="handleSearch"
-              @input="handleSearchInput"
-              :placeholder="$t('common.search.placeholder')"
-              class="search-input"
-              :aria-label="$t('common.search.ariaLabel')"
-            />
-            <button @click="handleSearch" class="search-button" :aria-label="$t('common.search.ariaLabel')">
-              <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="11" cy="11" r="8" />
-                <path d="m21 21-4.35-4.35" />
-              </svg>
-            </button>
-            <div v-if="showSuggestions && suggestions.length > 0" class="search-suggestions">
-              <div
-                v-for="suggestion in suggestions"
-                :key="suggestion.id"
-                class="suggestion-item"
-                @click="selectSuggestion(suggestion)"
-              >
-                <span class="suggestion-type">{{ suggestion.type }}</span>
-                <span class="suggestion-title">{{ suggestion.title }}</span>
-              </div>
-            </div>
-          </div>
-        </div>
+
         <nav class="nav-links" :class="{ open: isMenuOpen }">
           <a :href="getLocalizedPath('/')" @click="closeMenu">{{ $t('common.nav.home') }}</a>
           <a :href="getLocalizedPath('/vein-guides')" @click="closeMenu">{{ $t('common.nav.guides') }}</a>
@@ -49,52 +14,104 @@
           <a :href="getLocalizedPath('/vein-items')" @click="closeMenu">{{ $t('common.nav.items') }}</a>
           <a :href="getLocalizedPath('/vein-map')" @click="closeMenu">{{ $t('common.nav.map') }}</a>
         </nav>
-        <div class="language-switcher" ref="langSwitcherRef">
-          <button 
-            class="lang-button" 
-            @click="toggleLangDropdown"
-            :aria-label="$t('common.languageSwitcher.label')"
-            :aria-expanded="isLangDropdownOpen"
-          >
-            <span class="lang-current">{{ currentLocale.toUpperCase() }}</span>
-            <svg 
-              class="lang-arrow" 
-              :class="{ open: isLangDropdownOpen }"
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="currentColor" 
-              stroke-width="2"
-            >
-              <polyline points="6,9 12,15 18,9" />
-            </svg>
-          </button>
-          <div 
-            v-if="isLangDropdownOpen" 
-            class="lang-dropdown"
-          >
+
+        <div class="header-end">
+          <div class="search-container" :class="{ open: isSearchOpen }">
             <button
-              class="lang-option"
-              :class="{ active: currentLocale === 'en' }"
-              @click="selectLanguage('en')"
+              type="button"
+              class="search-toggle"
+              @click="toggleSearch"
+              :aria-label="$t('common.search.ariaLabel')"
+              :aria-expanded="isSearchOpen"
             >
-              <span class="lang-code">EN</span>
+              <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <path d="m21 21-4.35-4.35" />
+              </svg>
             </button>
-            <button
-              class="lang-option"
-              :class="{ active: currentLocale === 'de' }"
-              @click="selectLanguage('de')"
-            >
-              <span class="lang-code">DE</span>
-            </button>
+            <div class="search-box">
+              <input
+                ref="searchInputRef"
+                type="text"
+                v-model="searchInput"
+                @keyup.enter="handleSearch"
+                @input="handleSearchInput"
+                :placeholder="$t('common.search.placeholder')"
+                class="search-input"
+                :aria-label="$t('common.search.ariaLabel')"
+              />
+              <button @click="handleSearch" class="search-button" :aria-label="$t('common.search.ariaLabel')">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8" />
+                  <path d="m21 21-4.35-4.35" />
+                </svg>
+              </button>
+              <div v-if="showSuggestions && suggestions.length > 0" class="search-suggestions">
+                <div
+                  v-for="suggestion in suggestions"
+                  :key="suggestion.id"
+                  class="suggestion-item"
+                  @click="selectSuggestion(suggestion)"
+                >
+                  <span class="suggestion-type">{{ suggestion.type }}</span>
+                  <span class="suggestion-title">{{ suggestion.title }}</span>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <div class="language-switcher" ref="langSwitcherRef">
+            <button
+              class="lang-button"
+              @click="toggleLangDropdown"
+              :aria-label="$t('common.languageSwitcher.label')"
+              :aria-expanded="isLangDropdownOpen"
+            >
+              <span class="lang-current">{{ currentLocale.toUpperCase() }}</span>
+              <svg
+                class="lang-arrow"
+                :class="{ open: isLangDropdownOpen }"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6,9 12,15 18,9" />
+              </svg>
+            </button>
+            <div v-if="isLangDropdownOpen" class="lang-dropdown">
+              <button
+                class="lang-option"
+                :class="{ active: currentLocale === 'en' }"
+                @click="selectLanguage('en')"
+              >
+                <span class="lang-code">EN</span>
+              </button>
+              <button
+                class="lang-option"
+                :class="{ active: currentLocale === 'de' }"
+                @click="selectLanguage('de')"
+              >
+                <span class="lang-code">DE</span>
+              </button>
+            </div>
+          </div>
+
+          <button class="menu-toggle" @click="toggleMenu" aria-label="Toggle menu">
+            <span class="hamburger-line" :class="{ active: isMenuOpen }"></span>
+            <span class="hamburger-line" :class="{ active: isMenuOpen }"></span>
+            <span class="hamburger-line" :class="{ active: isMenuOpen }"></span>
+          </button>
         </div>
+
+        <div class="menu-overlay" :class="{ open: isMenuOpen }" @click="closeMenu"></div>
       </div>
     </div>
   </header>
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useSearch } from '../composables/useSearch'
@@ -105,7 +122,9 @@ const route = useRoute()
 const { locale } = useI18n()
 const { getLocalizedPath } = useLocalizedPath()
 const isMenuOpen = ref(false)
+const isSearchOpen = ref(false)
 const searchInput = ref('')
+const searchInputRef = ref(null)
 const showSuggestions = ref(false)
 const isLangDropdownOpen = ref(false)
 const langSwitcherRef = ref(null)
@@ -114,11 +133,28 @@ const { search, searchResults } = useSearch()
 // 当前语言
 const currentLocale = computed(() => locale.value || 'en')
 
+const toggleSearch = async () => {
+  isSearchOpen.value = !isSearchOpen.value
+  if (isSearchOpen.value) {
+    isLangDropdownOpen.value = false
+    await nextTick()
+    searchInputRef.value?.focus()
+  } else {
+    showSuggestions.value = false
+  }
+}
+
+const closeSearch = () => {
+  isSearchOpen.value = false
+  showSuggestions.value = false
+}
+
 // 切换语言下拉菜单
 const toggleLangDropdown = () => {
   isLangDropdownOpen.value = !isLangDropdownOpen.value
   if (isLangDropdownOpen.value) {
     showSuggestions.value = false
+    isSearchOpen.value = false
   }
 }
 
@@ -184,6 +220,7 @@ const handleSearch = () => {
   if (query) {
     router.push({ path: getLocalizedPath('/search'), query: { q: query } })
     showSuggestions.value = false
+    closeSearch()
     closeMenu()
   }
 }
@@ -206,6 +243,7 @@ const selectSuggestion = (suggestion) => {
   }
   showSuggestions.value = false
   searchInput.value = ''
+  closeSearch()
   closeMenu()
 }
 
@@ -213,6 +251,7 @@ const selectSuggestion = (suggestion) => {
 const handleClickOutside = (event) => {
   if (!event.target.closest('.search-container')) {
     showSuggestions.value = false
+    isSearchOpen.value = false
   }
   if (!event.target.closest('.language-switcher')) {
     isLangDropdownOpen.value = false
@@ -232,12 +271,14 @@ const toggleMenu = () => {
   if (isMenuOpen.value) {
     showSuggestions.value = false
     isLangDropdownOpen.value = false
+    isSearchOpen.value = false
   }
 }
 
 const closeMenu = () => {
   isMenuOpen.value = false
   isLangDropdownOpen.value = false
+  isSearchOpen.value = false
 }
 </script>
 
@@ -258,7 +299,13 @@ const closeMenu = () => {
   gap: 24px;
   padding: 18px 0;
   position: relative;
-  flex-wrap: wrap;
+}
+
+.header-end {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
 }
 
 .logo {
@@ -344,7 +391,28 @@ const closeMenu = () => {
   position: relative;
   flex: 1;
   max-width: 400px;
-  margin: 0 24px;
+}
+
+.search-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: rgba(30, 0, 0, 0.6);
+  border: 1px solid rgba(255, 54, 54, 0.3);
+  border-radius: 8px;
+  color: rgba(255, 54, 54, 0.85);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.search-toggle:hover,
+.search-container.open .search-toggle {
+  background: rgba(30, 0, 0, 0.85);
+  border-color: rgba(255, 54, 54, 0.5);
+  color: var(--accent);
 }
 
 .search-box {
@@ -455,7 +523,6 @@ const closeMenu = () => {
 @media (max-width: 1024px) {
   .search-container {
     max-width: 300px;
-    margin: 0 16px;
   }
 
   .nav-links {
@@ -470,6 +537,32 @@ const closeMenu = () => {
 
 /* 移动端 - 768px */
 @media (max-width: 768px) {
+  .header-content {
+    flex-wrap: wrap;
+    gap: 10px 12px;
+    padding: 12px 0;
+  }
+
+  .logo {
+    flex: 1;
+    min-width: 0;
+    gap: 10px;
+  }
+
+  .logo-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo-text {
+    font-size: 1rem;
+    letter-spacing: 0.12em;
+  }
+
+  .header-end {
+    gap: 8px;
+  }
+
   .menu-toggle {
     display: flex;
   }
@@ -493,15 +586,61 @@ const closeMenu = () => {
     visibility: visible;
   }
 
-  .header-content {
-    flex-wrap: wrap;
+  .search-container {
+    flex: 0 0 auto;
+    max-width: none;
+    width: auto;
+  }
+
+  .search-toggle {
+    display: flex;
+  }
+
+  .search-box {
+    display: none;
   }
 
   .search-container {
-    order: 2;
+    position: static;
+  }
+
+  .search-container.open .search-box {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
     width: 100%;
-    max-width: 100%;
-    margin: 16px 0 0 0;
+    margin-top: 8px;
+    z-index: 30;
+  }
+
+  .search-input {
+    font-size: 0.85rem;
+    padding: 8px 36px 8px 12px;
+  }
+
+  .search-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .search-suggestions {
+    max-height: 250px;
+  }
+
+  .suggestion-item {
+    padding: 10px 12px;
+  }
+
+  .suggestion-type {
+    font-size: 0.7rem;
+    padding: 3px 6px;
+    min-width: 45px;
+  }
+
+  .suggestion-title {
+    font-size: 0.85rem;
   }
 
   .nav-links {
@@ -537,51 +676,11 @@ const closeMenu = () => {
     background: rgba(255, 54, 54, 0.15);
     border-color: rgba(255, 54, 54, 0.3);
   }
-
-  .header-content {
-    flex-wrap: wrap;
-  }
-
-  .search-container {
-    order: 2;
-    width: 100%;
-    max-width: 100%;
-    margin: 16px 0 0 0;
-  }
-
-  .search-input {
-    font-size: 0.85rem;
-    padding: 8px 36px 8px 12px;
-  }
-
-  .search-icon {
-    width: 18px;
-    height: 18px;
-  }
-
-  .search-suggestions {
-    max-height: 250px;
-  }
-
-  .suggestion-item {
-    padding: 10px 12px;
-  }
-
-  .suggestion-type {
-    font-size: 0.7rem;
-    padding: 3px 6px;
-    min-width: 45px;
-  }
-
-  .suggestion-title {
-    font-size: 0.85rem;
-  }
 }
 
 /* Language Switcher */
 .language-switcher {
   position: relative;
-  margin-left: 16px;
 }
 
 .lang-button {
@@ -676,21 +775,16 @@ const closeMenu = () => {
 }
 
 @media (max-width: 768px) {
-  .language-switcher {
-    order: 3;
-    width: 100%;
-    margin: 16px 0 0 0;
-  }
-  
   .lang-button {
-    width: 100%;
-    justify-content: center;
+    min-width: auto;
+    padding: 8px 10px;
+    gap: 4px;
   }
-  
+
   .lang-dropdown {
-    right: auto;
-    left: 0;
-    width: 100%;
+    right: 0;
+    left: auto;
+    min-width: 120px;
   }
 }
 </style>
