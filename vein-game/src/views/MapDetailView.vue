@@ -40,6 +40,9 @@
       </div>
     </section>
 
+       <!-- 广告：原生横幅 -->
+       <AdNativeBanner class="container" />
+
     <!-- Map Content -->
     <section class="map-content">
       <div class="container">
@@ -67,6 +70,10 @@
               loading="lazy"
             ></iframe>
           </div>
+
+           <!-- 广告：banner（728x90 / 移动端 320x50） -->
+           <AdBanner class="container" />
+
           <div v-if="isWebFullscreen" class="web-fullscreen-overlay" @click="exitWebFullscreen"></div>
 
           <div class="map-info">
@@ -102,6 +109,9 @@
               </ul>
             </div>
           </div>
+
+           <!-- 广告：banner（728x90 / 移动端 320x50） -->
+           <AdBanner class="container" />
         </div>
       </div>
     </section>

@@ -27,6 +27,9 @@
       </div>
     </section>
 
+       <!-- 广告：原生横幅 -->
+       <AdNativeBanner class="container" />
+
     <section class="region-overview">
       <div class="container">
         <h2 class="section-title">{{ $t('mapPage.overview.title') }}</h2>
@@ -59,6 +62,9 @@
         </div>
       </div>
     </section>
+
+           <!-- 广告：banner（728x90 / 移动端 320x50） -->
+           <AdBanner class="container" />
 
     <section class="town-section">
       <div class="container">
@@ -106,6 +112,9 @@
         </div>
       </div>
     </section>
+
+           <!-- 广告：banner（728x90 / 移动端 320x50） -->
+           <AdBanner class="container" />
 
     <section class="poi-section">
       <div class="container">
@@ -199,6 +208,9 @@
             </div>
           </div>
         </div>
+
+               <!-- 广告：banner（728x90 / 移动端 320x50） -->
+               <AdBanner class="container" />
 
         <!-- Businesses & Services -->
         <div class="poi-group">
@@ -552,6 +564,9 @@
           </div>
         </div>
 
+               <!-- 广告：banner（728x90 / 移动端 320x50） -->
+               <AdBanner class="container" />
+
         <!-- Public Utilities & Services -->
         <div class="poi-group">
           <div class="poi-group-header">
@@ -813,6 +828,9 @@
             </div>
           </div>
         </div>
+
+               <!-- 广告：banner（728x90 / 移动端 320x50） -->
+               <AdBanner class="container" />
 
         <!-- Landforms & Natural Features -->
         <div class="poi-group">
@@ -1100,6 +1118,9 @@
           </div>
         </div>
       </div>
+
+             <!-- 广告：banner（728x90 / 移动端 320x50） -->
+             <AdBanner class="container" />
     </section>
   </div>
 </template>

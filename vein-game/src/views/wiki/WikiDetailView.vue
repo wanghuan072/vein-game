@@ -28,6 +28,7 @@
           </svg>
           <span class="breadcrumb-current">{{ wiki.title }}</span>
         </div>
+        
 
         <div class="wiki-detail-content">
           <div class="wiki-detail-text">
@@ -53,6 +54,9 @@
       </div>
     </section>
 
+        <!-- 广告：banner（728x90 / 移动端 320x50） -->
+        <AdBanner class="container" />
+
     <!-- Wiki Content -->
     <section class="wiki-content" v-if="wiki">
       <div class="container">
@@ -68,6 +72,7 @@
               <div class="info-box-header">
                 <h3 class="info-box-title">{{ wiki?.title }}</h3>
               </div>
+              
 
               <!-- Wiki Meta Info -->
               <div class="wiki-meta">
@@ -85,6 +90,7 @@
                   <span class="meta-text">{{ formatDate(wiki?.publishDate) }}</span>
                 </div>
               </div>
+              
             </div>
 
             <!-- Other Wiki Entries -->
@@ -104,10 +110,18 @@
                 </a>
               </div>
             </div>
+
+                <!-- 广告：侧边（160x600） -->
+                <AdSidebar class="container" />
+
           </div>
         </div>
       </div>
+
+          <!-- 广告：banner（728x90 / 移动端 320x50） -->
+          <AdBanner class="container" />
     </section>
+    
 
     <!-- Not Found -->
     <section class="wiki-content" v-else>

@@ -12,6 +12,9 @@
       </div>
     </section>
 
+           <!-- 广告：原生横幅 -->
+           <AdNativeBanner class="container" />
+
     <!-- Wiki Articles -->
     <section class="articles-section">
       <div class="container">
@@ -47,6 +50,9 @@
         </div>
       </div>
     </section>
+
+        <!-- 广告：banner（728x90 / 移动端 320x50） -->
+        <AdBanner class="container" />
 
     <!-- Why Choose Us Section -->
     <section class="why-choose-us-section">
@@ -101,6 +107,9 @@
         </div>
       </div>
     </section>
+
+        <!-- 广告：banner（728x90 / 移动端 320x50） -->
+        <AdBanner class="container" />
 
     <!-- FAQ Section -->
     <section class="faq-section">
@@ -164,6 +173,9 @@
         </div>
       </div>
     </section>
+
+        <!-- 广告：banner（728x90 / 移动端 320x50） -->
+        <AdBanner class="container" />
   </div>
 </template>
 
