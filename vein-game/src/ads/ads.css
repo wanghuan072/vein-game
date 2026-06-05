@@ -37,3 +37,9 @@
   min-width: 160px;
   min-height: 600px;
 }
+
+@media (max-width: 767px) {
+  .ad-slot--sidebar {
+    display: none !important;
+  }
+}
