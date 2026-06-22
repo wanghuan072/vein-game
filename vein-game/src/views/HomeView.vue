@@ -69,7 +69,7 @@
       </section>
 
       <!-- 广告：原生横幅 -->
-      <AdNativeBanner class="container" />
+      <!-- <AdNativeBanner class="container" /> -->
 
       <!-- What is Section -->
       <section class="what-is">
@@ -124,7 +124,7 @@
       </section>
 
       <!-- 广告：banner（728x90 / 移动端 320x50） -->
-      <AdBanner class="container" />
+      <!-- <AdBanner class="container" /> -->
 
       <!-- Guides Section -->
       <section class="guides-section">
@@ -168,7 +168,7 @@
       </section>
 
       <!-- 广告：banner（728x90 / 移动端 320x50） -->
-      <AdBanner class="container" />
+      <!-- <AdBanner class="container" /> -->
 
       <!-- Interactive Map Section -->
       <section class="map-section">
@@ -206,7 +206,7 @@
       </section>
 
       <!-- 广告：banner（728x90 / 移动端 320x50） -->
-      <AdBanner class="container" />
+      <!-- <AdBanner class="container" /> -->
 
       <!-- Game Information -->
       <section class="game-info">
@@ -300,7 +300,7 @@
       </section>
 
       <!-- 广告：banner（728x90 / 移动端 320x50） -->
-      <AdBanner class="container" />
+      <!-- <AdBanner class="container" /> -->
 
       <!-- Planned Features -->
       <section class="planned-section">
@@ -385,7 +385,7 @@
       </section>
 
       <!-- 广告：banner（728x90 / 移动端 320x50） -->
-      <AdBanner class="container" />
+      <!-- <AdBanner class="container" /> -->
 
       <!-- Reviews -->
       <section class="reviews-section">
@@ -480,7 +480,7 @@ Vein is a beautiful well crafted world that is only going to get better!"
       </section>
 
       <!-- 广告：banner（728x90 / 移动端 320x50） -->
-      <AdBanner class="container" />
+      <!-- <AdBanner class="container" /> -->
 
       <!-- FAQ -->
       <section class="faq-section">
@@ -540,7 +540,7 @@ Vein is a beautiful well crafted world that is only going to get better!"
       </section>
 
       <!-- 广告：banner（728x90 / 移动端 320x50） -->
-      <AdBanner class="container" />
+      <!-- <AdBanner class="container" /> -->
 
       <!-- CTA -->
       <section class="cta-section">
@@ -583,7 +583,7 @@ Vein is a beautiful well crafted world that is only going to get better!"
       </section>
 
       <!-- 广告：banner（728x90 / 移动端 320x50） -->
-      <AdBanner class="container" />
+      <!-- <AdBanner class="container" /> -->
 
     </main>
   </div>
