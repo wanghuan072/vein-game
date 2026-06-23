@@ -5,16 +5,16 @@ import App from './App.vue'
 import router from './router'
 import i18n from './i18n'
 import './assets/css/global.css'
-// import '@/ads/ads.css'
+import '@/ads/ads.css'
 import { createSEOPlugin } from './seo/plugin.js'
-// import AdBanner from '@/components/ads/AdBanner.vue'
-// import AdNativeBanner from '@/components/ads/AdNativeBanner.vue'
-// import AdSidebar from '@/components/ads/AdSidebar.vue'
+import AdBanner from '@/components/ads/AdBanner.vue'
+import AdNativeBanner from '@/components/ads/AdNativeBanner.vue'
+import AdSidebar from '@/components/ads/AdSidebar.vue'
 const app = createApp(App)
 
-// app.component('AdBanner', AdBanner)
-// app.component('AdNativeBanner', AdNativeBanner)
-// app.component('AdSidebar', AdSidebar)
+app.component('AdBanner', AdBanner)
+app.component('AdNativeBanner', AdNativeBanner)
+app.component('AdSidebar', AdSidebar)
 
 app.use(createPinia())
 app.use(router)

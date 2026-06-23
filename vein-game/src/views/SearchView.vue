@@ -16,7 +16,7 @@
     </section>
 
        <!-- 广告：原生横幅 -->
-       <!-- <AdNativeBanner class="container" /> -->
+       <AdNativeBanner class="container" />
 
     <!-- Search Results -->
     <section class="search-results-section">
@@ -159,7 +159,7 @@
     </section>
 
      <!-- 广告：banner（728x90 / 移动端 320x50） -->
-     <!-- <AdBanner class="container" /> -->
+     <AdBanner class="container" />
   </div>
 </template>
 

@@ -58,7 +58,7 @@
     </section>
 
     <!-- 广告：banner（728x90 / 移动端 320x50） -->
-    <!-- <AdBanner class="container" /> -->
+    <AdBanner class="container" />
 
     <!-- Guide Content -->
     <section class="guide-content" v-if="guide">
@@ -99,7 +99,7 @@
             </div>
 
             <!-- 广告：侧边（160x600） -->
-            <!-- <AdSidebar class="container" /> -->
+            <AdSidebar class="container" />
 
             <!-- Guide navigation -->
             <div class="guide-navigation" v-if="previousGuide || nextGuide">
@@ -137,13 +137,13 @@
             </div>
 
             <!-- 广告：侧边（160x600） -->
-            <!-- <AdSidebar class="container" /> -->
+            <AdSidebar class="container" />
           </div>
         </div>
       </div>
 
       <!-- 广告：原生横幅 -->
-      <!-- <AdNativeBanner class="container" /> -->
+      <AdNativeBanner class="container" />
     </section>
 
     <!-- Not Found -->
