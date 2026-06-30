@@ -22,32 +22,30 @@ async function analyzeContent() {
   
   results.guides.en = {
     total: guideEn.guides?.length || 0,
-    home: guideEn.guides?.filter(g => g.isHome)?.length || 0,
+    home: Math.min(9, guideEn.guides?.length || 0),
     items: guideEn.guides || []
   }
   
   results.guides.de = {
     total: guideDe.guides?.length || 0,
-    home: guideDe.guides?.filter(g => g.isHome)?.length || 0,
+    home: Math.min(9, guideDe.guides?.length || 0),
     items: guideDe.guides || []
   }
 
   console.log(`英文指南: ${results.guides.en.total} 篇`)
-  console.log(`  - 首页显示: ${results.guides.en.home} 篇`)
+  console.log(`  - 首页显示: ${results.guides.en.home} 篇（列表最前 9 篇）`)
   console.log(`德语指南: ${results.guides.de.total} 篇`)
-  console.log(`  - 首页显示: ${results.guides.de.home} 篇`)
+  console.log(`  - 首页显示: ${results.guides.de.home} 篇（列表最前 9 篇）`)
 
-  // 分析指南分类
-  const guideCategories = {}
+  const guideCategoryStats = {}
   results.guides.en.items.forEach(guide => {
-    const tags = guide.tags || []
-    tags.forEach(tag => {
-      guideCategories[tag] = (guideCategories[tag] || 0) + 1
-    })
+    if (guide.category) {
+      guideCategoryStats[guide.category] = (guideCategoryStats[guide.category] || 0) + 1
+    }
   })
-  console.log('\n指南标签分布:')
-  Object.entries(guideCategories).sort((a, b) => b[1] - a[1]).forEach(([tag, count]) => {
-    console.log(`  - ${tag}: ${count} 篇`)
+  console.log('\n指南分类分布:')
+  Object.entries(guideCategoryStats).sort((a, b) => b[1] - a[1]).forEach(([category, count]) => {
+    console.log(`  - ${category}: ${count} 篇`)
   })
 
   // 2. 统计 Wiki
@@ -150,7 +148,7 @@ async function analyzeContent() {
   results.guides.en.items.forEach((guide, index) => {
     console.log(`\n${index + 1}. [ID: ${guide.id}] ${guide.title}`)
     console.log(`   - 发布日期: ${guide.publishDate}`)
-    console.log(`   - 首页显示: ${guide.isHome ? '是' : '否'}`)
+    console.log(`   - 分类: ${guide.category || '未分类'}`)
     console.log(`   - 标签: ${(guide.tags || []).join(', ')}`)
     console.log(`   - URL: /vein-guides${guide.addressBar}`)
     if (guide.detailsHtml) {

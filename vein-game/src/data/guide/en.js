@@ -10,8 +10,7 @@ export const guides = [
     addressBar: '/vein-map-best-loot-locations-route-guide',
     category: 'Map',
     tags: ['Map', 'Loot Routes', 'Best Loot Locations', 'Military Base', 'Rook Cavern'],
-    isHome: false,
-    seo: {
+seo: {
       title: 'VEIN Map Guide - Best Loot Locations & Routes',
       description:
         'Route VEIN map runs around safe supply stops, best loot locations, military risk zones, Rook Cavern checks, and return paths.',
@@ -158,8 +157,7 @@ export const guides = [
     addressBar: '/vein-crafting-items-tools-materials-progression-guide',
     category: 'Crafting',
     tags: ['Crafting', 'Items', 'Tools', 'Materials', 'Advanced Crafting', 'Cooking'],
-    isHome: false,
-    seo: {
+seo: {
       title: 'VEIN Crafting Guide - Tools, Materials & Items',
       description:
         'Plan VEIN crafting around survival tools, materials, item categories, cooking recipes, advanced stations, and costly progression traps.',
@@ -285,8 +283,7 @@ export const guides = [
     addressBar: '/vein-utility-cabinet-upkeep-radius-permissions-guide',
     category: 'Building',
     tags: ['Utility Cabinet', 'Base Building', 'Upkeep', 'Decay', 'Defense', 'Multiplayer'],
-    isHome: false,
-    seo: {
+seo: {
       title: 'VEIN Utility Cabinet (UC) Guide | Upkeep, Radius, Permissions & Decay',
       description:
         'Master Utility Cabinets in VEIN. Learn how UC upkeep prevents decay, how coverage works, what to stock for repairs, and how to lock down permissions in multiplayer bases.',
@@ -350,8 +347,7 @@ export const guides = [
     addressBar: '/vein-base-fortification-defense-guide',
     category: 'Building',
     tags: ['Base Building', 'Fortification', 'Defenses', 'Maintenance'],
-    isHome: true,
-    seo: {
+seo: {
       title: 'VEIN Base Fortification Guide | How to Reinforce Windows & Doors',
       description: 'Master VEIN fortification tiers, Utility Cabinet maintenance, and Construction skill requirements. Aligns with the building system: wood scrap, fortified wood, and limestone defenses.',
       keywords: 'VEIN base building, VEIN fortification tiers, VEIN Utility Cabinet, VEIN construction skill, VEIN base defense, VEIN limestone brick',
@@ -423,10 +419,10 @@ export const guides = [
     description: "Tired of eating canned beans? This ultimate guide teaches you how to hunt, farm, cook delicious meals, and preserve food for the long winter in VEIN.",
     tags: ["VEIN", "Food", "Cooking", "Farming", "Fishing", "Survival Guide"],
     publishDate: "2026-02-04",
+    category: 'Crafting',
     imageUrl: "/images/guide/guide21.webp",
     imageAlt: "A player tending to a crop of potatoes in a small farm in VEIN, with a campfire and cooking pot nearby.",
-    isHome: true,
-    seo: {
+seo: {
         title: "VEIN Food Guide: Best Recipes, Farming & Preservation Tips",
         description: "Learn the best food sources in VEIN, how to cook delicious meals, and how to preserve food for long-term survival. Includes hunting, fishing, and farming tips.",
         keywords: "vein game best food, farming guide, cooking recipes, food preservation, fishing guide, nutrition, vein game what to eat"
@@ -545,10 +541,10 @@ export const guides = [
     description: "Stuck in the stone age? This guide reveals the spawn locations for the Industrial Welder, the best way to farm Hard Leather Strips, and how to mass-produce Metal Sheets and Aluminum Scrap.",
     tags: ["VEIN", "Crafting", "Resources", "Industrial Welder", "Hard Leather", "Smelting"],
     publishDate: "2026-01-26",
+    category: 'Crafting',
     imageUrl: "/images/guide/guide20.webp",
     imageAlt: "A player holding an Industrial Welder standing next to a workbench filled with metal scraps and hard leather strips.",
-    isHome: true,
-    seo: {
+seo: {
         title: "VEIN Crafting Guide: How to Find Industrial Welder & Hard Leather Strips",
         description: "Can't find the Industrial Welder? Need Hard Leather Strips for armor? This guide covers the rarest crafting materials in VEIN, including Aluminum Scrap and Ingots.",
         keywords: "veingame industrial welder, hard leather strips vein game, vein game aluminum scrap, small scrap metal sheet, vein game ingots, smelting guide, crafting materials"
@@ -674,10 +670,10 @@ export const guides = [
     description: "Found a car but it won't start? This ultimate VEIN mechanics guide covers everything from hotwiring and battery charging to changing tires and engine repair. Stop walking and start driving.",
     tags: ["VEIN", "Vehicles", "Mechanics", "Survival Guide", "Hotwiring", "Repair"],
     publishDate: "2026-01-22",
+    category: 'Vehicles',
     imageUrl: "/images/guide/guide01.webp",
     imageAlt: "A player in VEIN using a lug wrench to change a tire on a sedan inside a garage.",
-    isHome: true,
-    seo: {
+seo: {
         title: "VEIN Car Guide: How to Hotwire, Charge Battery & Repair Engines",
         description: "Learn the mechanics of VEIN. Detailed guide on how to hotwire cars, use the battery charger, siphon fuel, and swap tires. Essential reading for efficient looting.",
         keywords: "vein game car repair, how to hotwire car vein, vein game battery charger, siphon fuel, change tire, lug wrench, mechanics skill, vehicle maintenance"
@@ -849,8 +845,8 @@ export const guides = [
         description: "This guide details how to establish water systems using barrels and wells, create renewable solar power, and even master advanced techniques like the 'Fuse Box Water Trick'. Learn essential tool usage and connection logic to conquer post-apocalyptic survival.",
         tags: ["VEIN Survival","Off-Grid Living","Zombie Apocalypse","Water Systems","Solar Power"],
         publishDate: "2026-01-15",
-        isHome: true,
-        imageUrl: "/images/guide/guide17.webp",
+        category: 'Building',
+imageUrl: "/images/guide/guide17.webp",
         imageAlt: "A survivor in VEIN uses a wrench to connect a water barrel, highlighting off-grid survival.",
         seo:{
             title: "VEIN Survival Guide: Water, Power & Advanced Techniques - Plain Text",
@@ -1053,10 +1049,10 @@ export const guides = [
         description: "Tired of slow skill progression in VEIN? This guide reveals community-verified strategies for efficiently leveling up Strength, Vitality, Crafting, and Construction. Unlock crucial perks faster and master the art of 'doing' in VEIN!",
         tags: ["VEIN","Character Development","Skill Leveling","Survival Guide","Crafting"],
         publishDate: "2026-01-15",
+        category: 'Character',
         imageUrl: "/images/guide/guide18.webp",
         imageAlt: "A survivor in VEIN is crafting a campfire, showcasing the importance of character development and skill leveling.",
-         isHome: true,
-        seo:{
+seo:{
             title: "VEIN Leveling Guide: How to Train Strength, Crafting & Lockpicking Fast",
             description: "Want to carry more loot? Learn the best ways to power-level skills in VEIN. We cover the Campfire trick for Crafting, the \"Zombie Clothes Loop\" for Medical, and how to bypass the Lockpicking XP cooldown.",
             keywords: "vein game, character development, skill leveling guide, strength training, vitality, crafting, construction, dismantling, carry capacity, big back perk",
@@ -1271,8 +1267,8 @@ export const guides = [
         description: "Want to light up the night in VEIN? This guide shows you exactly how to power street lights and illuminate your base area. Learn the step-by-step process, required materials, and pro tips for setting up your lighting system.",
         tags: ["VEIN Game", "Street Light", "Power System", "Base Building", "Electricity Guide"],
         publishDate: "2025-12-15",
-        isHome: true,
-        imageUrl: "/images/guide/guide16.webp",
+        category: 'Building',
+imageUrl: "/images/guide/guide16.webp",
         imageAlt: "A powered street light illuminating the night in VEIN game, showing a survivor's base area.",
         seo: {
             title: "VEIN Game How to Power Street Light - Complete Guide",
@@ -1530,8 +1526,8 @@ With proper lighting, you can operate safely at night, improve your base securit
         description: "Ready to ditch those rusty pipes and grab some real firepower? This guide unlocks the secrets of Outpost Alpha, the VEIN game's hottest military loot spot. Find rare weapons, medical gear & tons of base-building resources! Prepare for a raid!",
         tags: ["VEIN Game", "Military Base", "Looting Guide", "Outpost Alpha", "Rare Weapons"],
         publishDate: "2025-12-10",
-        isHome: true,
-        imageUrl: "/images/guide/guide15.webp",
+        category: 'Map',
+imageUrl: "/images/guide/guide15.webp",
         imageAlt: "A survivor approaching the fenced-in Outpost Alpha military base in the VEIN game, ready to loot.",
         seo: {
             title: "VEIN Game Military Base Guide: Looting Outpost Alpha",
@@ -1709,6 +1705,7 @@ Park your truck outside, clear the soldier zombies, and start picking those lock
         description: "Craving that creamy goodness in VEIN? This guide reveals the best looting locations to score smooth peanut butter, a high-calorie essential for survival. Forget crafting, it's all about knowing where to look! Prioritize residential kitchens for the sweetest score.",
         tags: ["VEIN Game", "Smooth Peanut Butter", "Looting Guide", "Survival Food", "High Calorie Food"],
         publishDate: "2025-12-10",
+        category: 'Crafting',
         imageUrl: "/images/guide/guide14.webp",
         imageAlt: "A jar of smooth peanut butter in VEIN game, surrounded by survival items.",
         seo: {
@@ -1867,8 +1864,8 @@ Check the cupboards, verify the smell, and start cooking like a gourmet survivor
         title: "EIN Game Improved Pickaxe: The Ultimate Mining Guide",
         description: "Tired of flimsy tools in VEIN? The Improved Pickaxe is your ticket to the Steel Age! Discover the best locations to snag this game-changing tool and dominate resource gathering. Get ready to mine like a pro!",
         tags: ["VEIN Game", "Improved Pickaxe", "Mining Guide", "Resource Gathering", "EIN Game"],
-        isHome: true,
-        publishDate: "2025-12-12",
+publishDate: "2025-12-12",
+category: 'Crafting',
         imageUrl: "/images/guide/guide12.webp",
         imageAlt: "A screenshot from VEIN showing the player character holding the Improved Pickaxe in a mining environment.",
         seo: {
@@ -1923,8 +1920,8 @@ Check the cupboards, verify the smell, and start cooking like a gourmet survivor
         description: "Stuck trying to craft Steel and Carbon components in VEIN? This guide unlocks the secrets to finding Graphite and Hematite! Discover the Averill Mines and Kings Hollow, your go-to spots for vital resources. But remember your Improved Pickaxe!",
         tags: ["VEIN Game", "Mining Guide", "Graphite", "Hematite"],
         publishDate: "2025-12-12",
-        isHome: true,
-        imageUrl: "/images/guide/guide13.webp",
+        category: 'Map',
+imageUrl: "/images/guide/guide13.webp",
         imageAlt: "A player character mining ore in the VEIN game, showcasing the underground mining environment for graphite and hematite.",
         seo: {
             title: "VEIN Game Mining Guide: Where to Get Graphite & Hematite (Averill & Kings Hollow)",
@@ -1985,10 +1982,10 @@ Check the cupboards, verify the smell, and start cooking like a gourmet survivor
         description: "Navigate the dark depths of VEIN's Rook Cavern! This guide unveils the location, essential gear, and vital resources like Hematite and Graphite for crafting Steel, paving your way through mid-to-late game survival. Prepare for zombies and darkness!",
         tags: ["VEIN Game", "Rook Cavern", "Mining Guide", "Hematite", "Graphite"],
         publishDate: "2025-12-09",
+        category: 'Map',
         imageUrl: "/images/guide/guide11.webp",
         imageAlt: "VEIN Game Rook Cavern",
-        isHome: false,
-        seo: {
+seo: {
             title: "VEIN Game Rook Cavern Guide: Location, Hematite, and Graphite Mining",
             description: "Looking for the Rook Cavern in VEIN? Our complete guide covers the map location, essential gear, and how to mine Hematite and Graphite safely in the dark.",
             keywords: "vein game rook cavern, mining, guide, hematite, graphite, steel, survival, zombies, location, gear, resources",
@@ -2134,10 +2131,10 @@ Check the cupboards, verify the smell, and start cooking like a gourmet survivor
         description: "Struggling with inventory in Vein? This guide pinpoints the best backpack, the Hiking Backpack (+45.4 kg carry weight!), and other crucial loot like a Pickaxe, Lantern, and Heater. Travel to Cold Brook Cavern and gear up for survival!",
         tags: ["Vein", "Game Guide", "Backpack", "Survival", "Loot"],
         publishDate: "2025-12-02",
+        category: 'Getting Started',
         imageUrl: "/images/guide/guide10.webp",
         imageAlt: "Vein game screenshot showing the Hiking Backpack location near Cold Brook Cavern.",
-        isHome: false,
-        seo: {
+seo: {
             title: "Vein Game Guide: Best Backpack Location (Hiking Backpack) & Loot Tips",
             description: "Find the Hiking Backpack in Vein (doubles your carry weight!) with this guide. Locate Cold Brook Cavern, grab essential loot, and dominate survival. Includes strategic tips!",
             keywords: "vein, game, guide, backpack, hiking backpack, survival, loot, cold brook cavern, inventory management, pickaxe, lantern, heater",
@@ -2222,10 +2219,10 @@ Check the cupboards, verify the smell, and start cooking like a gourmet survivor
         description: "In VEIN, your base is critical for survival. This guide analyzes Werrenrath Island's Stone House near Dannemora as a prime location, offering natural defenses, ready-made facilities like greenhouses, and a spacious interior for crafting and resource storage. Secure your future against zombie hordes!",
         tags: ["VEIN", "best base", "survival base", "zombie survival", "base location"],
         publishDate: "2025-11-28",
+        category: 'Building',
         imageUrl: "/images/guide/guide08.webp",
         imageAlt: "VEIN gameplay showing Werrenrath Island's Stone House, a potential best base location.",
-        isHome: false,
-        seo: {
+seo: {
             title: "VEIN Best Base Guide: Werrenrath Island - Ultimate Survival Location",
             description: "Discover the ultimate VEIN base location: Werrenrath Island's Stone House. This guide details its advantages for zombie survival, resource management, and long-term security.",
             keywords: "VEIN, best base location, survival guide, zombie survival, Werrenrath Island, Dannemora, resource management, base building",
@@ -2390,10 +2387,10 @@ Check the cupboards, verify the smell, and start cooking like a gourmet survivor
         description: "Surviving VEIN's undead onslaught demands smart scavenging. This guide reveals the best loot locations, transforming you from a struggling survivor to a resource-rich powerhouse. Discover prime spots like Frank's Hardware Emporium for essential tools and base-building materials. Dominate the apocalypse!",
         tags: ["VEIN", "loot locations", "survival guide", "scavenging", "resources"],
         publishDate: "2025-11-28",
+        category: 'Map',
         imageUrl: "/images/guide/guide07.webp",
         imageAlt: "A player character in VEIN looting supplies in a hardware store, highlighting the best loot locations for survival.",
-        isHome: false,
-        seo: {
+seo: {
             title: "VEIN Best Loot Guide: Dominate Survival Scavenging!",
             description: "Master VEIN's survival with our ultimate looting guide! Find the best loot locations like Frank's Hardware Emporium for tools, weapons, and base-building materials.",
             keywords: "VEIN, best loot, loot locations, survival guide, scavenging, Frank's Hardware Emporium, resources, tools, weapons, base building",
@@ -2483,11 +2480,10 @@ Check the cupboards, verify the smell, and start cooking like a gourmet survivor
         description: "Overwhelmed by VEIN's world settings? This new player guide, exclusively on veingame.net, unveils essential Day 1 setting tips for the hardcore zombie survival sandbox game. Master the 'Preset' & 'Custom' options, avoid fatal errors, and build a strong foundation! Perfect for solo or co-op beginners.",
         tags: ["vein", "new player guide", "zombie survival", "world settings", "veingame.net"],
         publishDate: "2025-11-20",
-        // category: 'getting-started',
+        category: 'Getting Started',
         imageUrl: "/images/guide/guide01.webp",
         imageAlt: "VEIN new player guide featuring zombie survival world settings.",
-        isHome: false,
-        seo: {
+seo: {
             title: "VEIN New Player Guide - Day 1 Settings: Ultimate Survival Tips!",
             description: "Dominate VEIN's zombie apocalypse! This new player guide reveals crucial Day 1 world settings. Master survival, explore presets, and conquer with confidence! Exclusively on veingame.net.",
             keywords: "vein, new player, guide, zombie, survival, world settings, vein wiki, ramjet studios, sandbox game, veingame.net",
@@ -2584,10 +2580,10 @@ Check the cupboards, verify the smell, and start cooking like a gourmet survivor
         description: "Navigate the treacherous world of VEIN with confidence! This guide cuts through the noise, revealing the essential Day 1 skills and character creation strategies for new players. Master your early game survival and dominate VEIN with our expert tips. Your VEIN Wiki companion starts here!",
         tags: ["VEIN", "New Player Guide", "Skill Selection", "Day 1 Survival", "Vein Wiki"],
         publishDate: "2025-11-20",
+        category: 'Getting Started',
         imageUrl: "/images/guide/guide02.webp",
         imageAlt: "A VEIN character selection screen showcasing skill options for new players.",
-        isHome: false,
-        seo: {
+seo: {
             title: "VEIN New Player Guide: Vein Best Starting Skill Selection",
             description: "Struggling to survive your first day in VEIN? This ultimate guide reveals the best skill selection strategies for new players. Master character creation and thrive! Visit Vein Wiki now.",
             keywords: "VEIN, new player, guide, skill selection, character creation, survival, Day 1, Vein Wiki, strategy, occupation",
@@ -2657,10 +2653,10 @@ Check the cupboards, verify the smell, and start cooking like a gourmet survivor
         description: "Choosing the right occupation in VEIN can be crucial for survival! This guide breaks down how your Day 1 choice impacts your gameplay, especially on harder difficulties and with rare loot settings. Learn which occupations offer the best starting advantages and tailor your selection to your playstyle.",
         tags: ["VEIN", "new player guide", "occupation selection", "survival", "zombie game"],
         publishDate: "2025-11-20",
+        category: 'Getting Started',
         imageUrl: "/images/guide/guide03.webp",
         imageAlt: "A zombie horde approaching a survivor in the VEIN game, highlighting the importance of new player occupation selection.",
-        isHome: false,
-        seo: {
+seo: {
             title: "VEIN New Player Guide: Day 1 Occupation - Ultimate Selection Tips!",
             description: "Maximize your survival chances in VEIN! This guide reveals the best Day 1 occupations, crucial for insane difficulty and rare loot settings. Dominate the zombie apocalypse!",
             keywords: "vein game, new player guide, vein occupation, day 1 survival, zombie survival, insane difficulty, rare loot, starting gear, vein wiki, veingame.net",
@@ -2712,10 +2708,10 @@ Check the cupboards, verify the smell, and start cooking like a gourmet survivor
         description: "Understand the pros and cons of trait selection in VEIN on Day 1. This guide analyzes high-risk traits, offers recommendations for all player types, and helps you avoid critical mistakes for survival. Visit veingame.net for more.",
         tags: ["after", "locking", "your", "occupation", "(part"],
         publishDate: "2025-11-20",
+        category: 'Getting Started',
         imageUrl: "/images/guide/guide04.webp",
         imageAlt: "Professional screenshot of Revolutionary VEIN New Player Guide Part 4: Traits Selection",
-        isHome: false,
-        seo: {
+seo: {
             title: "VEIN New Player Guide P4: Traits Selection Guide |Risks & Rewards",
             description: "Understand the pros and cons of trait selection in VEIN on Day 1. This guide analyzes high-risk traits, offers recommendations for all player types, and helps you avoid critical mistakes for survival. Visit veingame.net for more.",
             keywords: "VEIN New Player Guide, VEIN Traits, Trait Risks, Anosmia, Diabetes, Myopia, Dietary Restrictions, Vein Wiki, Zombie Survival Game",
@@ -2807,10 +2803,10 @@ Check the cupboards, verify the smell, and start cooking like a gourmet survivor
         description: "Tick-tock, survivor! Day 1 in VEIN is a frantic scramble. This guide, your key to survival, prioritizes securing vital resources and shelter before nightfall. We're talking vehicles for looting, protective gear, and essential tools—all meticulously planned for efficient zombie dodging and long-term survival. Time is NOT on your side!",
         tags: ["vein", "new player guide", "survival", "zombie game", "day 1"],
         publishDate: "2025-11-20",
+        category: 'Getting Started',
         imageUrl: "/images/guide/guide05.webp",
         imageAlt: "A player character in VEIN standing next to a vehicle, surrounded by zombies, showcasing the day 1 priorities.",
-        isHome: false,
-        seo: {
+seo: {
             title: "VEIN New Player Guide: Dominate Day 1 Survival!",
             description: "Survive your first day in VEIN! This guide prioritizes vehicles, armor, and tools to help new players thrive against the zombie hordes. Master resource collection and shelter building now!",
             keywords: "vein game, new player guide, day 1, survival tips, zombie survival, vehicle, armor, tools, resource collection, shelter",
@@ -2891,10 +2887,10 @@ Check the cupboards, verify the smell, and start cooking like a gourmet survivor
         description: "Unlock high-tier weapons and ammo in VEIN by locating the Clinton Correctional Facility Armory. This guide provides a step-by-step route, starting from the safest southwest entrance, to navigate the prison's secured areas and unlock its valuable treasures.",
         tags: ["VEIN", "prison armory", "Clinton Correctional Facility", "loot guide", "weapon location"],
         publishDate: "2025-11-20",
+        category: 'Map',
         imageUrl: "/images/guide/guide06.webp",
         imageAlt: "VEIN gameplay scene featuring a player exploring the Clinton Correctional Facility in search of the armory.",
-        isHome: false,
-        seo: {
+seo: {
             title: "VEIN Prison Armory Guide: Find Clinton Correctional Facility - Loot!",
             description: "Discover the exact location of the VEIN prison armory in Clinton Correctional Facility. Our guide provides a step-by-step walkthrough to find high-tier weapons and ammo.",
             keywords: "VEIN, prison, armory, Clinton Correctional Facility, location guide, weapon guide, loot, survival, zombie, game",
@@ -3040,7 +3036,6 @@ Inside the armory, you’ll find these high-value items (loot varies slightly by
     //   addressBar: '/',
     //   category: '',
     //   tags: [''],
-    //   isHome: true,
     //   seo: {
     //     title: '',
     //     description: '',

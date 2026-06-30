@@ -626,7 +626,7 @@ onBeforeUnmount(() => {
   if (bannerAdSlot.value) bannerAdSlot.value.innerHTML = ''
 })
 
-// 首页显示的指南（isHome: true）
+// 首页显示的指南（guide 列表最前 9 篇）
 const homeGuides = computed(() => {
   return guides.value || []
 })

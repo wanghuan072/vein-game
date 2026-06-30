@@ -28,12 +28,37 @@
           <p>{{ $t('guidesPage.error') }} {{ error }}</p>
         </div>
 
-        <!-- All Guides -->
+        <!-- Category Filters -->
+        <div v-if="categories.length > 0" class="category-filters">
+          <button
+            type="button"
+            class="category-filter"
+            :class="{ active: selectedCategory === null }"
+            @click="selectedCategory = null"
+          >
+            {{ $t('guidesPage.allGuides') }}
+          </button>
+          <button
+            v-for="category in categories"
+            :key="category"
+            type="button"
+            class="category-filter"
+            :class="{ active: selectedCategory === category }"
+            @click="selectedCategory = category"
+          >
+            {{ category }}
+          </button>
+        </div>
+
+        <!-- Guides List -->
         <div class="category-section" v-if="!loading && !error">
-          <h2 class="section-title">{{ $t('guidesPage.allGuides') }}</h2>
-          <div class="guides-grid">
+          <h2 class="section-title">{{ activeCategoryTitle }}</h2>
+          <div v-if="filteredGuides.length === 0" class="empty-state">
+            <p>{{ $t('guidesPage.emptyCategory') }}</p>
+          </div>
+          <div v-else class="guides-grid">
             <div
-              v-for="guide in allGuides"
+              v-for="guide in filteredGuides"
               :key="guide.id"
               class="guide-card"
               @click="goToGuide(guide.addressBar)"
@@ -47,6 +72,7 @@
                 />
               </div>
               <div class="guide-card-content">
+                <span v-if="guide.category" class="category-tag">{{ guide.category }}</span>
                 <h3 class="guide-title">{{ guide.title }}</h3>
                 <p class="guide-description">{{ guide.description }}</p>
                 <div class="guide-tags" v-if="guide.tags && guide.tags.length > 0">
@@ -225,14 +251,13 @@ import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useGuideData } from '../composables/useGuideData'
 import { useLocalizedPath } from '../composables/useLocalizedPath'
-import { useDeviceDetection } from '../utils/useDeviceDetection'
 
 const router = useRouter()
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const { getLocalizedPath } = useLocalizedPath()
 const { guides, loading, error, loadData } = useGuideData()
 
-// const { isMobile } = useDeviceDetection()
+const selectedCategory = ref(null)
 
 // 初始化加载数据
 onMounted(() => {
@@ -243,13 +268,31 @@ onMounted(() => {
 watch(
   () => locale.value,
   () => {
+    selectedCategory.value = null
     loadData()
   }
 )
 
-// 所有指南
-const allGuides = computed(() => {
-  return guides.value || []
+const categories = computed(() => {
+  const cats = new Set()
+  for (const guide of guides.value || []) {
+    if (guide.category) {
+      cats.add(guide.category)
+    }
+  }
+  return Array.from(cats).sort((a, b) => a.localeCompare(b))
+})
+
+const filteredGuides = computed(() => {
+  const list = guides.value || []
+  if (!selectedCategory.value) {
+    return list
+  }
+  return list.filter((guide) => guide.category === selectedCategory.value)
+})
+
+const activeCategoryTitle = computed(() => {
+  return selectedCategory.value || t('guidesPage.allGuides')
 })
 
 const goToGuide = (addressBar) => {
@@ -266,15 +309,6 @@ const formatDate = (dateString) => {
     day: 'numeric',
     year: 'numeric',
   })}`
-}
-
-const getCategoryName = (category) => {
-  const categoryMap = {
-    'getting-started': 'GETTING STARTED',
-    walkthroughs: 'WALKTHROUGHS',
-    advanced: 'ADVANCED',
-  }
-  return categoryMap[category] || 'GUIDE'
 }
 </script>
 
@@ -300,6 +334,40 @@ const getCategoryName = (category) => {
 
 .category-section {
   margin-bottom: 40px;
+}
+
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.category-filter {
+  background: rgba(30, 0, 0, 0.6);
+  border: 1px solid rgba(255, 54, 54, 0.25);
+  color: rgba(255, 210, 210, 0.85);
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-filter:hover,
+.category-filter.active {
+  border-color: var(--accent);
+  color: #fff;
+  background: rgba(255, 54, 54, 0.15);
+  box-shadow: 0 0 16px rgba(255, 54, 54, 0.2);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: rgba(255, 210, 210, 0.7);
 }
 
 .category-section:last-child {
@@ -351,6 +419,11 @@ const getCategoryName = (category) => {
   display: flex;
   flex-direction: column;
   flex: 1;
+}
+
+.guide-card-content .category-tag {
+  align-self: flex-start;
+  margin-bottom: 8px;
 }
 
 .guide-card::before {
@@ -485,6 +558,16 @@ const getCategoryName = (category) => {
 @media (max-width: 768px) {
   .guide-categories {
     padding: 0 0 20px 0;
+  }
+
+  .category-filters {
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .category-filter {
+    padding: 8px 14px;
+    font-size: 0.8rem;
   }
 
   .section-title {

@@ -361,6 +361,7 @@ export default {
     "loading": "Guides werden geladen...",
     "error": "Fehler beim Laden der Guides:",
     "allGuides": "Alle Guides",
+    "emptyCategory": "In dieser Kategorie gibt es noch keine Guides.",
     "viewLink": "GUIDE ANSEHEN →",
     "whyChoose": {
       "title": "Warum unsere VEIN Guides wählen?",

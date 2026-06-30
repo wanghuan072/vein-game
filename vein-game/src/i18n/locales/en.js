@@ -361,6 +361,7 @@ export default {
       loading: 'Loading guides...',
       error: 'Error loading guides:',
       allGuides: 'All Guides',
+      emptyCategory: 'No guides in this category yet.',
       viewLink: 'VIEW GUIDE →',
       whyChoose: {
         title: 'Why Choose Our VEIN Guides?',

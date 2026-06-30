@@ -1,6 +1,8 @@
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
+const HOME_GUIDES_LIMIT = 9
+
 /**
  * Guide 数据 composable
  */
@@ -27,7 +29,7 @@ export function useGuideData() {
   }
 
   /**
-   * 仅加载首页需要的指南数据（isHome: true）
+   * 加载首页展示的指南数据（取列表最前 HOME_GUIDES_LIMIT 篇）
    */
   const loadHomeGuidesOnly = async (lang = null) => {
     loading.value = true
@@ -37,7 +39,7 @@ export function useGuideData() {
       const module = await import(`../data/guide/${currentLang}.js`)
       const guides = module.guides || module.default || []
       const allData = Array.isArray(guides) ? guides : []
-      guidesData.value = allData.filter(guide => guide.isHome === true)
+      guidesData.value = allData.slice(0, HOME_GUIDES_LIMIT)
     } catch (err) {
       error.value = err.message || 'Failed to load home guides'
       guidesData.value = []
