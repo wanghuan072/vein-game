@@ -1,5 +1,280 @@
 export const guides = [
   {
+    id: 25,
+    title: 'VEIN Map Guide: Best Loot Locations, Routes, and Early Areas',
+    description:
+      'Plan VEIN map routes around safe Day 1 supply stops, best loot locations, military risk zones, Rook Cavern checks, and return paths that do not strand you after dark.',
+    imageUrl: '/images/guide/vein-map-loot-route-overview.webp',
+    imageAlt: 'VEIN map best loot locations route guide showing early areas and loot route planning.',
+    publishDate: '2026-06-30',
+    addressBar: '/vein-map-best-loot-locations-route-guide',
+    category: 'Map',
+    tags: ['Map', 'Loot Routes', 'Best Loot Locations', 'Military Base', 'Rook Cavern'],
+    isHome: false,
+    seo: {
+      title: 'VEIN Map Guide - Best Loot Locations & Routes',
+      description:
+        'Route VEIN map runs around safe supply stops, best loot locations, military risk zones, Rook Cavern checks, and return paths.',
+      keywords: 'VEIN map, VEIN best loot locations, VEIN loot routes, military base, Rook Cavern',
+    },
+    detailsHtml: `
+      <article>
+        <header>
+          <p><strong>Fast answer:</strong> Use the VEIN map as a route tool, not a sightseeing list. Mark a safe return path first, loot low-risk houses and utility stops on Day 1, then move into military, cave, or remote high-value zones only after you have storage, medical supplies, and a weapon you can actually fight with.</p>
+          <p><strong>Version note:</strong> Checked for the current public build on June 30, 2026. Loot tables and POI density can change between patches, so treat exact spawns as route priorities, not guaranteed drops.</p>
+        </header>
+
+        <figure>
+          <img src="/images/guide/vein-map-loot-route-overview.webp" alt="VEIN map best loot locations route guide for early areas and safe paths" title="VEIN map best loot locations route guide" />
+          <figcaption>Start with route shape: road access, retreat options, and how far you are from safe storage.</figcaption>
+        </figure>
+
+        <section>
+          <h2>How to use the VEIN map</h2>
+          <h3>Read major routes and landmarks first</h3>
+          <p>Before you chase a single marker, open the <a href="/vein-map" class="inline-link">VEIN map</a> and identify three things: your current base or shelter, the nearest road loop, and one fallback building where you can break line of sight. A good loot route is a loop. A bad route is a straight line that leaves you exhausted with a full bag and no clean way home.</p>
+          <p>For new players, tie this page to the <a href="/vein-guides/day-1-priorities-guide" class="inline-link">Day 1 priorities guide</a>: water, food, a basic tool, medical basics, then storage. Anything outside that loop is optional until you can survive the trip back.</p>
+
+          <h3>Separate safe routes from high-risk loot zones</h3>
+          <p>Do not treat every named location as equal. Houses, small utility buildings, sheds, and roadside stops are early-route targets. Military areas, caves, and remote POIs are value targets, but they punish bad timing. I tag those as <strong>high-risk</strong> unless the run has a clear escape path and enough carry capacity to make the trip worth it.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Map zone type</th>
+                <th>Best use</th>
+                <th>Risk call</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Residential blocks</td>
+                <td>Food, water, light tools, clothing, medicine</td>
+                <td>Best Day 1 route if you avoid over-looting</td>
+              </tr>
+              <tr>
+                <td>Utility and workshop stops</td>
+                <td>Repair tools, crafting inputs, containers</td>
+                <td>Worth repeat checks when building a base loop</td>
+              </tr>
+              <tr>
+                <td>Military or fortified areas</td>
+                <td>Weapons, ammo, tactical gear</td>
+                <td>Delay until you can fight, heal, and retreat</td>
+              </tr>
+              <tr>
+                <td>Caves and remote POIs</td>
+                <td>Special materials and progression checks</td>
+                <td>Scout first; do not enter with a full bag</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <figure>
+          <img src="/images/guide/vein-map-safe-supply-route.webp" alt="VEIN loot locations safe supply route for Day 1 map planning" title="VEIN safe supply route for early loot locations" />
+          <figcaption>Low-risk supply routes are boring on purpose. They keep you alive long enough to profit from better zones later.</figcaption>
+        </figure>
+
+        <section>
+          <h2>Best early loot locations</h2>
+          <h3>Low-risk supply stops for Day 1</h3>
+          <p>The best early loot locations in VEIN are not the richest locations. They are the places that solve immediate survival without forcing a long fight: kitchens, bathrooms, garages, workshops, small stores, and sheds near your planned shelter. The priority list is simple:</p>
+          <ol>
+            <li><strong>Water and food:</strong> enough to finish the day without emergency detours. Use the <a href="/vein-items/consumables" class="inline-link">consumables database</a> if you need item context.</li>
+            <li><strong>One practical tool:</strong> anything that opens your next workflow. Start with the <a href="/vein-items/tools" class="inline-link">tools list</a> before you burn time on rare gear.</li>
+            <li><strong>Medical buffer:</strong> bandages or basic recovery items from bathrooms, clinics, and small supply rooms. Cross-check with <a href="/vein-items/medical" class="inline-link">medical items</a>.</li>
+            <li><strong>Carry capacity:</strong> clothing or bags that let the route pay off without forcing a second trip.</li>
+          </ol>
+
+          <h3>When to visit military or high-value areas</h3>
+          <p>Visit a military base location only when the run can survive failure. Minimum threshold: a real weapon, spare stamina plan, medical backup, and a nearby fallback route. If you are specifically targeting military loot, read the <a href="/vein-guides/how-to-find-clinton-correctional-facility-armory" class="inline-link">Clinton armory guide</a> and the <a href="/vein-guides/vein-game-military-base-looting-outpost-alpha" class="inline-link">Outpost Alpha route</a> first.</p>
+          <p><strong>INFERRED:</strong> Exact spawn weighting varies by world settings and patch. The route decision is stable even when individual containers change: high-value zones are only good when you can extract the loot safely.</p>
+        </section>
+
+        <figure>
+          <img src="/images/guide/vein-map-high-risk-loot-zone.webp" alt="VEIN military base location high risk loot zone map route" title="VEIN military base location high risk loot route" />
+          <figcaption>High-value zones should be planned as raids, not casual stops on the way home.</figcaption>
+        </figure>
+
+        <section>
+          <h2>Route planning tips</h2>
+          <h3>Build routes around return safety</h3>
+          <p>Every route needs a return trigger. Leave when one of these happens: weight hits the slow-movement threshold, hunger or thirst starts forcing mistakes, the weapon condition becomes unreliable, or the clock pushes you into a night return. If your base is still temporary, pair this guide with the <a href="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">best base location guide</a>.</p>
+
+          <h3>Avoid dead-end looting paths</h3>
+          <p>A dead-end path has one entry, no cover, and no second exit. It looks efficient on the map and fails in practice. Rook Cavern is the kind of location you should scout before committing to a full haul; read the <a href="/vein-guides/vein-game-rook-cavern-guide" class="inline-link">Rook Cavern guide</a> if that is your target.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Bad habit</th>
+                <th>Why it fails</th>
+                <th>Fix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Looting outward until full</td>
+                <td>You end the run at maximum risk and minimum mobility</td>
+                <td>Loot in loops that pass near your return route</td>
+              </tr>
+              <tr>
+                <td>Entering high-value zones first</td>
+                <td>You risk losing the tools needed for recovery</td>
+                <td>Stage supplies nearby, then raid with a light bag</td>
+              </tr>
+              <tr>
+                <td>Ignoring time of day</td>
+                <td>Navigation and combat readability drop fast</td>
+                <td>Set a hard leave timer before entering the target</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>FAQ</h2>
+          <h3>Where are the best loot locations in VEIN?</h3>
+          <p>The best early loot locations are low-risk residential, utility, and workshop stops near a safe return route. Military zones, caves, and remote POIs are better after you have storage, medicine, and a combat plan.</p>
+          <h3>Does VEIN have a map?</h3>
+          <p>Yes. Use the <a href="/vein-map" class="inline-link">interactive VEIN map</a> to plan route loops, compare loot priorities, and avoid dead-end paths before you commit to a long haul.</p>
+        </section>
+
+        <div class="pro-tip">
+          <strong>Field rule:</strong> The best route is the one you can repeat. If a loot path needs perfect stamina, perfect weather, and perfect combat, it is not a route; it is a gamble.
+        </div>
+      </article>
+    `,
+  },
+  {
+    id: 24,
+    title: 'VEIN Crafting Guide: Items, Tools, Materials, and Progression',
+    description:
+      'A practical VEIN crafting route for first tools, material saving, item category planning, cooking support, advanced stations, and progression mistakes that waste rare inputs.',
+    imageUrl: '/images/guide/vein-crafting-survival-tools.webp',
+    imageAlt: 'VEIN crafting guide showing tools, materials, items, and survival progression planning.',
+    publishDate: '2026-06-30',
+    addressBar: '/vein-crafting-items-tools-materials-progression-guide',
+    category: 'Crafting',
+    tags: ['Crafting', 'Items', 'Tools', 'Materials', 'Advanced Crafting', 'Cooking'],
+    isHome: false,
+    seo: {
+      title: 'VEIN Crafting Guide - Tools, Materials & Items',
+      description:
+        'Plan VEIN crafting around survival tools, materials, item categories, cooking recipes, advanced stations, and costly progression traps.',
+      keywords: 'VEIN crafting guide, VEIN items, tools, materials, advanced crafting, cooking',
+    },
+    detailsHtml: `
+      <article>
+        <header>
+          <p><strong>Fast answer:</strong> Craft for bottlenecks first. In VEIN, the best early crafts are the items that stabilize water, food, repair, storage, and safe looting. Delay expensive specialist crafts until your route can replace the materials you spend.</p>
+          <p><strong>Version note:</strong> Checked for the current public build on June 30, 2026. Recipe availability, station requirements, and material names can shift between builds, so confirm any rare craft at the station before committing saved materials.</p>
+        </header>
+
+        <figure>
+          <img src="/images/guide/vein-crafting-survival-tools.webp" alt="VEIN crafting guide first survival tools and material progression" title="VEIN crafting guide first survival tools" />
+          <figcaption>First crafts should remove friction from the next loot run, not just raise a number on the character sheet.</figcaption>
+        </figure>
+
+        <section>
+          <h2>What to craft first in VEIN</h2>
+          <h3>Prioritize survival tools</h3>
+          <p>Your first craft plan should answer one question: what makes the next hour safer? For most runs, that means tools, containers, basic cooking support, and repair utility before luxury gear. Start by checking the <a href="/vein-items/tools" class="inline-link">tools database</a> and the <a href="/vein-items/materials" class="inline-link">materials list</a>, then only craft what solves a live problem.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Crafting priority</th>
+                <th>Why it matters</th>
+                <th>Delay if</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Basic utility tools</td>
+                <td>Unlock repair, dismantling, or collection loops</td>
+                <td>You already found a working version nearby</td>
+              </tr>
+              <tr>
+                <td>Food and cooking support</td>
+                <td>Turns raw supply into stable nutrition</td>
+                <td>You have enough canned food for the route</td>
+              </tr>
+              <tr>
+                <td>Storage and base utility</td>
+                <td>Protects materials before long routes</td>
+                <td>Your shelter is not chosen yet</td>
+              </tr>
+              <tr>
+                <td>Weapons and armor</td>
+                <td>Controls risk in high-value zones</td>
+                <td>The material cost blocks tools or medicine</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Delay expensive specialist crafts</h3>
+          <p>Specialist crafts feel productive, but many of them are dead weight if you do not have the route, station, skill, or repair economy to support them. Before using rare metal, advanced parts, or station-gated materials, ask whether that craft opens a new route. If it only duplicates an item you can loot safely, wait.</p>
+        </section>
+
+        <figure>
+          <img src="/images/guide/vein-crafting-material-planning.webp" alt="VEIN materials guide for crafting items tools and progression planning" title="VEIN materials planning for crafting progression" />
+          <figcaption>Material planning is the difference between progression and a chest full of almost-useful parts.</figcaption>
+        </figure>
+
+        <section>
+          <h2>Materials and item categories</h2>
+          <h3>How to think about weapons, armor, tools, and medical items</h3>
+          <p>Do not browse VEIN items as one giant list. Sort them by job:</p>
+          <ul>
+            <li><strong><a href="/vein-items/tools" class="inline-link">Tools</a>:</strong> route enablers. They decide what you can collect, repair, or dismantle.</li>
+            <li><strong><a href="/vein-items/weapons" class="inline-link">Weapons</a>:</strong> risk control. Craft or keep them when they let you safely enter better loot zones.</li>
+            <li><strong><a href="/vein-items/armor" class="inline-link">Armor</a>:</strong> mistake buffer. Useful, but not a substitute for exit planning.</li>
+            <li><strong><a href="/vein-items/medical" class="inline-link">Medical items</a>:</strong> run insurance. Never spend all cloth or support inputs if it leaves you unable to patch mistakes.</li>
+            <li><strong><a href="/vein-wiki/cooking-recipes" class="inline-link">Cooking recipes</a>:</strong> long-run stability. Cooking is progression because it reduces emergency looting.</li>
+          </ul>
+
+          <h3>Which materials to save for later</h3>
+          <p>Save anything that appears in multiple high-value categories: metal parts, brackets, advanced workstation inputs, medical cloth, fuel-related components, and building materials that feed the <a href="/vein-wiki/building" class="inline-link">Building</a> loop. If you do not know the downstream recipe yet, store it instead of crafting a marginal upgrade.</p>
+          <p><strong>INFERRED:</strong> Some material scarcity depends on world settings and loot refresh rules. The safe rule is stable: spend common inputs to stabilize routes; bank rare inputs until a station or recipe clearly needs them.</p>
+        </section>
+
+        <figure>
+          <img src="/images/guide/vein-crafting-industrial-progression.webp" alt="VEIN advanced crafting materials and industrial progression guide" title="VEIN advanced crafting industrial progression" />
+          <figcaption>Move into advanced crafting when your supply route can feed the station, not when the station merely becomes visible.</figcaption>
+        </figure>
+
+        <section>
+          <h2>Advanced crafting path</h2>
+          <h3>When to move into industrial crafting</h3>
+          <p>Move into advanced crafting when three checks are true: your base storage is stable, your material route is repeatable, and your character build supports the required work. The <a href="/vein-wiki/skills" class="inline-link">Skills and Perks</a> page is the cross-check here. If a craft requires a skill milestone, do not stockpile the finished item plan before you know the character can support it.</p>
+          <p>For base-heavy runs, industrial crafting connects directly to fortification and upkeep. Read the <a href="/vein-guides/vein-utility-cabinet-upkeep-radius-permissions-guide" class="inline-link">Utility Cabinet guide</a> before spending advanced materials on a base footprint you cannot maintain.</p>
+
+          <h3>Common crafting mistakes</h3>
+          <ul>
+            <li><strong>Crafting the found item:</strong> If the route already provides it safely, save the materials.</li>
+            <li><strong>Ignoring repair cost:</strong> A strong item that you cannot maintain becomes dead inventory.</li>
+            <li><strong>Spending medical inputs:</strong> Do not turn all cloth or flexible supplies into gear if you still need emergency recovery.</li>
+            <li><strong>Building station-first:</strong> A station without a supply route is decoration. Build the route first.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>FAQ</h2>
+          <h3>What should I craft first in VEIN?</h3>
+          <p>Craft survival tools and utility items first: anything that helps you collect, repair, cook, store, or return from loot runs safely. Delay expensive weapons, armor, or station-gated crafts until your material route is repeatable.</p>
+          <h3>Are VEIN items worth separate pages?</h3>
+          <p>Major item categories are worth separate pages. Most individual items are better handled inside category guides, crafting routes, or the searchable <a href="/vein-items" class="inline-link">VEIN items hub</a> unless they have unique search demand or a complex recipe chain.</p>
+        </section>
+
+        <div class="pro-tip">
+          <strong>Field rule:</strong> The best craft is the one that makes your next run shorter, safer, or more repeatable. If it does none of those, it can wait.
+        </div>
+      </article>
+    `,
+  },
+  {
     id: 23,
     title: 'VEIN Utility Cabinet Guide: Radius, Upkeep, Permissions & Anti-Decay Setup',
     description:
