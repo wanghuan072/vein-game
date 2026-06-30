@@ -100,6 +100,49 @@ async function loadData(locale = 'en') {
 }
 
 // 生成URL XML
+function formatLastmod(dateInput, fallback) {
+  if (!dateInput) return fallback
+
+  const value = String(dateInput).trim()
+
+  if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+    return value
+  }
+
+  const germanMonths = {
+    januar: '01',
+    februar: '02',
+    märz: '03',
+    maerz: '03',
+    april: '04',
+    mai: '05',
+    juni: '06',
+    juli: '07',
+    august: '08',
+    september: '09',
+    oktober: '10',
+    november: '11',
+    dezember: '12',
+  }
+
+  const germanMatch = value.match(/^(\d{1,2})\.\s*([A-Za-zäöüÄÖÜ]+)\s+(\d{4})$/)
+  if (germanMatch) {
+    const day = germanMatch[1].padStart(2, '0')
+    const month = germanMonths[germanMatch[2].toLowerCase()]
+    if (month) {
+      return `${germanMatch[3]}-${month}-${day}`
+    }
+  }
+
+  const parsed = new Date(value)
+  if (!Number.isNaN(parsed.getTime())) {
+    return parsed.toISOString().split('T')[0]
+  }
+
+  console.warn(`Invalid publishDate for sitemap: "${value}", using fallback ${fallback}`)
+  return fallback
+}
+
 function generateUrlXml(path, lastmod, priority, changefreq) {
   const roundedPriority = priority.toFixed(1)
   return `  <url>
@@ -137,7 +180,7 @@ async function generateSitemap() {
     guides.forEach(guide => {
       if (!guide || !guide.addressBar) return
       const guidePath = createLocalizedPath(`/vein-guides${guide.addressBar}`, locale)
-      sitemapXml += `\n${generateUrlXml(guidePath, guide.publishDate || lastmod, 0.8, 'monthly')}`
+      sitemapXml += `\n${generateUrlXml(guidePath, formatLastmod(guide.publishDate, lastmod), 0.8, 'monthly')}`
     })
   })
 
@@ -147,7 +190,7 @@ async function generateSitemap() {
     wikis.forEach(wiki => {
       if (!wiki || !wiki.addressBar) return
       const wikiPath = createLocalizedPath(`/vein-wiki${wiki.addressBar}`, locale)
-      sitemapXml += `\n${generateUrlXml(wikiPath, wiki.publishDate || lastmod, 0.7, 'monthly')}`
+      sitemapXml += `\n${generateUrlXml(wikiPath, formatLastmod(wiki.publishDate, lastmod), 0.7, 'monthly')}`
     })
   })
 
@@ -161,7 +204,7 @@ async function generateSitemap() {
         .filter(item => item && item.showDetail !== false && item.addressBar)
         .forEach(item => {
           const itemPath = createLocalizedPath(`/vein-items/${category}${item.addressBar}`, locale)
-          sitemapXml += `\n${generateUrlXml(itemPath, item.publishDate || lastmod, 0.6, 'monthly')}`
+          sitemapXml += `\n${generateUrlXml(itemPath, formatLastmod(item.publishDate, lastmod), 0.6, 'monthly')}`
         })
     }
   })

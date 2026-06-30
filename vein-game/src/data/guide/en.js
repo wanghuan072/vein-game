@@ -343,7 +343,7 @@ seo: {
     description: 'A practical guide to VEIN base defense: fortification tiers, Utility Cabinet upkeep, construction skill gates, and how to combine walls, barbed wire, and lighting.',
     imageUrl: '/images/guide/guide01.webp',
     imageAlt: 'A player reinforcing a wooden door with metal plates in VEIN',
-    publishDate: 'March 22, 2026',
+    publishDate: '2026-03-22',
     addressBar: '/vein-base-fortification-defense-guide',
     category: 'Building',
     tags: ['Base Building', 'Fortification', 'Defenses', 'Maintenance'],
