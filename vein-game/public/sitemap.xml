@@ -397,6 +397,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://veingame.net/de/vein-guides/vein-crafting-items-tools-materials-progression-guide</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://veingame.net/de/vein-guides/vein-map-best-loot-locations-route-guide</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://veingame.net/de/vein-guides/vein-utility-cabinet-upkeep-radius-permissions-guide</loc>
     <lastmod>2026-03-23</lastmod>
     <changefreq>monthly</changefreq>

@@ -1,5 +1,274 @@
 export const guides = [
   {
+    "id": 24,
+    "title": "VEIN Crafting-Guide: Items, Tools, Materialien und Fortschritt",
+    "description": "Eine praktische VEIN-Crafting-Route für erste Tools, Materialsparen, Item-Kategorien, Kochen, fortgeschrittene Stationen und Fortschrittsfehler, die seltene Inputs verschwenden.",
+    "imageUrl": "/images/guide/vein-crafting-survival-tools.webp",
+    "imageAlt": "VEIN Crafting-Guide mit Tools, Materialien, Items und Survival-Fortschrittsplanung.",
+    "publishDate": "2026-06-30",
+    "addressBar": "/vein-crafting-items-tools-materials-progression-guide",
+    "category": "Crafting",
+    "tags": ["Crafting", "Items", "Tools", "Materialien", "Fortgeschrittenes Crafting", "Kochen"],
+    "seo": {
+      "title": "VEIN Crafting-Guide - Tools, Items & Materialien",
+      "description": "Plane VEIN-Crafting rund um Survival-Tools, Materialien, Item-Kategorien, Kochen, Stationen und teure Fortschrittsfallen.",
+      "keywords": "VEIN Crafting Guide, VEIN Items, Tools, Materialien, Kochen"
+    },
+    "detailsHtml": `
+      <article>
+        <header>
+          <p><strong>Schnelle Antwort:</strong> Crafte zuerst gegen Engpässe. In VEIN sind die besten frühen Crafts die Items, die Wasser, Essen, Reparatur, Lagerung und sicheres Looten stabilisieren. Verschiebe teure Spezial-Crafts, bis deine Route die Materialien ersetzen kann, die du ausgibst.</p>
+          <p><strong>Versionshinweis:</strong> Geprüft für den aktuellen öffentlichen Build vom 30. Juni 2026. Rezeptverfügbarkeit, Stationsanforderungen und Materialnamen können sich zwischen Builds ändern; prüfe seltene Crafts deshalb an der Station, bevor du gesparte Materialien bindest.</p>
+        </header>
+
+        <figure>
+          <img src="/images/guide/vein-crafting-survival-tools.webp" alt="VEIN Crafting-Guide für erste Survival-Tools und Materialfortschritt" title="VEIN Crafting-Guide erste Survival-Tools" />
+          <figcaption>Erste Crafts sollten Reibung aus dem nächsten Loot-Run entfernen, nicht nur eine Zahl auf dem Charakterbogen erhöhen.</figcaption>
+        </figure>
+
+        <section>
+          <h2>Was du in VEIN zuerst craften solltest</h2>
+          <h3>Priorisiere Survival-Tools</h3>
+          <p>Dein erster Crafting-Plan sollte eine Frage beantworten: Was macht die nächste Stunde sicherer? In den meisten Runs bedeutet das Tools, Behälter, einfache Kochunterstützung und Reparaturnutzen vor Luxusausrüstung. Starte mit der <a href="/vein-items/tools" class="inline-link">Tool-Datenbank</a> und der <a href="/vein-items/materials" class="inline-link">Materialliste</a>, und crafte dann nur, was ein aktuelles Problem löst.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Crafting-Priorität</th>
+                <th>Warum sie zählt</th>
+                <th>Aufschieben, wenn</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Grundlegende Utility-Tools</td>
+                <td>Öffnen Reparatur-, Zerlege- oder Sammelschleifen</td>
+                <td>Du bereits eine funktionierende Version in der Nähe gefunden hast</td>
+              </tr>
+              <tr>
+                <td>Essen und Kochunterstützung</td>
+                <td>Verwandelt Rohversorgung in stabile Ernährung</td>
+                <td>Du genug Konserven für die Route hast</td>
+              </tr>
+              <tr>
+                <td>Lager und Basis-Utility</td>
+                <td>Schützt Materialien vor langen Routen</td>
+                <td>Deine Unterkunft noch nicht gewählt ist</td>
+              </tr>
+              <tr>
+                <td>Waffen und Rüstung</td>
+                <td>Kontrolliert Risiko in High-Value-Zonen</td>
+                <td>Die Materialkosten Tools oder Medizin blockieren</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Verschiebe teure Spezial-Crafts</h3>
+          <p>Spezial-Crafts fühlen sich produktiv an, aber viele davon sind Ballast, wenn du nicht die Route, Station, den Skill oder die Reparaturökonomie hast, die sie tragen. Bevor du seltenes Metall, fortgeschrittene Teile oder stationsgebundene Materialien nutzt, frage, ob dieser Craft eine neue Route öffnet. Wenn er nur ein Item dupliziert, das du sicher looten kannst, warte.</p>
+        </section>
+
+        <figure>
+          <img src="/images/guide/vein-crafting-material-planning.webp" alt="VEIN Materialien-Guide für Crafting-Items, Tools und Fortschrittsplanung" title="VEIN Materialplanung für Crafting-Fortschritt" />
+          <figcaption>Materialplanung ist der Unterschied zwischen Fortschritt und einer Kiste voller fast nützlicher Teile.</figcaption>
+        </figure>
+
+        <section>
+          <h2>Materialien und Item-Kategorien</h2>
+          <h3>So denkst du über Waffen, Rüstung, Tools und Medizin</h3>
+          <p>Durchsuche VEIN-Items nicht als eine riesige Liste. Sortiere sie nach Job:</p>
+          <ul>
+            <li><strong><a href="/vein-items/tools" class="inline-link">Tools</a>:</strong> Routenöffner. Sie entscheiden, was du sammeln, reparieren oder zerlegen kannst.</li>
+            <li><strong><a href="/vein-items/weapons" class="inline-link">Waffen</a>:</strong> Risikokontrolle. Crafte oder behalte sie, wenn sie dich sicher in bessere Loot-Zonen lassen.</li>
+            <li><strong><a href="/vein-items/armor" class="inline-link">Rüstung</a>:</strong> Fehlerpuffer. Nützlich, aber kein Ersatz für Exit-Planung.</li>
+            <li><strong><a href="/vein-items/medical" class="inline-link">Medizinische Items</a>:</strong> Run-Versicherung. Gib nie alle Stoffe oder Support-Inputs aus, wenn du danach Fehler nicht mehr flicken kannst.</li>
+            <li><strong><a href="/vein-wiki/cooking-recipes" class="inline-link">Kochrezepte</a>:</strong> Langzeitstabilität. Kochen ist Fortschritt, weil es Notfall-Looting reduziert.</li>
+          </ul>
+
+          <h3>Welche Materialien du für später sparen solltest</h3>
+          <p>Spare alles, was in mehreren High-Value-Kategorien auftaucht: Metallteile, Halterungen, fortgeschrittene Workstation-Inputs, medizinischen Stoff, treibstoffnahe Komponenten und Baumaterialien, die den <a href="/vein-wiki/building" class="inline-link">Bauen</a>-Loop füttern. Wenn du das nachgelagerte Rezept noch nicht kennst, lagere es, statt ein marginales Upgrade zu craften.</p>
+          <p><strong>INFERRED:</strong> Manche Materialknappheit hängt von Weltsettings und Loot-Refresh-Regeln ab. Die sichere Regel bleibt stabil: Gib häufige Inputs aus, um Routen zu stabilisieren; spare seltene Inputs, bis eine Station oder ein Rezept sie klar braucht.</p>
+        </section>
+
+        <figure>
+          <img src="/images/guide/vein-crafting-industrial-progression.webp" alt="VEIN fortgeschrittene Crafting-Materialien und industrieller Fortschrittsguide" title="VEIN fortgeschrittenes Crafting und industrieller Fortschritt" />
+          <figcaption>Geh erst ins fortgeschrittene Crafting, wenn deine Versorgungsroute die Station füttern kann, nicht nur weil die Station sichtbar wird.</figcaption>
+        </figure>
+
+        <section>
+          <h2>Fortgeschrittener Crafting-Pfad</h2>
+          <h3>Wann du in industrielles Crafting wechselst</h3>
+          <p>Wechsle in fortgeschrittenes Crafting, wenn drei Checks stimmen: dein Basislager ist stabil, deine Materialroute ist wiederholbar, und dein Charakter-Build unterstützt die nötige Arbeit. Die Seite <a href="/vein-wiki/skills" class="inline-link">Skills und Perks</a> ist hier der Gegencheck. Wenn ein Craft einen Skill-Meilenstein verlangt, plane das fertige Item nicht, bevor du weißt, dass der Charakter ihn tragen kann.</p>
+          <p>Für basislastige Runs hängt industrielles Crafting direkt mit Befestigung und Unterhalt zusammen. Lies den <a href="/vein-guides/vein-utility-cabinet-upkeep-radius-permissions-guide" class="inline-link">Utility-Cabinet-Guide</a>, bevor du fortgeschrittene Materialien in eine Basisfläche steckst, die du nicht warten kannst.</p>
+
+          <h3>Häufige Crafting-Fehler</h3>
+          <ul>
+            <li><strong>Das gefundene Item craften:</strong> Wenn die Route es bereits sicher liefert, spare die Materialien.</li>
+            <li><strong>Reparaturkosten ignorieren:</strong> Ein starkes Item, das du nicht warten kannst, wird totes Inventar.</li>
+            <li><strong>Medizinische Inputs ausgeben:</strong> Verwandle nicht alle Stoffe oder flexiblen Vorräte in Gear, wenn du noch Notfallheilung brauchst.</li>
+            <li><strong>Station zuerst bauen:</strong> Eine Station ohne Versorgungsroute ist Dekoration. Baue zuerst die Route.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>FAQ</h2>
+          <h3>Was sollte ich in VEIN zuerst craften?</h3>
+          <p>Crafte zuerst Survival-Tools und Utility-Items: alles, was dir beim Sammeln, Reparieren, Kochen, Lagern oder sicheren Zurückkehren von Loot-Runs hilft. Verschiebe teure Waffen, Rüstung oder stationsgebundene Crafts, bis deine Materialroute wiederholbar ist.</p>
+          <h3>Sind VEIN-Items eigene Seiten wert?</h3>
+          <p>Große Item-Kategorien sind eigene Seiten wert. Die meisten Einzelitems sind besser in Kategorie-Guides, Crafting-Routen oder dem durchsuchbaren <a href="/vein-items" class="inline-link">VEIN-Items-Hub</a> aufgehoben, außer sie haben eigene Suchnachfrage oder eine komplexe Rezeptkette.</p>
+        </section>
+
+        <div class="pro-tip">
+          <strong>Feldregel:</strong> Der beste Craft macht deinen nächsten Run kürzer, sicherer oder wiederholbarer. Wenn er nichts davon schafft, kann er warten.
+        </div>
+      </article>
+    `
+  },
+  {
+    "id": 25,
+    "title": "VEIN Karten-Guide: Loot-Orte, Routen und frühe Gebiete",
+    "description": "Plane VEIN-Kartenrouten über sichere Day-1-Versorgung, gute Loot-Orte, Militärzonen, Rook Cavern und Rückwege, die dich nach Einbruch der Dunkelheit nicht festsetzen.",
+    "imageUrl": "/images/guide/vein-map-loot-route-overview.webp",
+    "imageAlt": "VEIN Karten-Guide zu besten Loot-Orten, frühen Gebieten und sicherer Routenplanung.",
+    "publishDate": "2026-06-30",
+    "addressBar": "/vein-map-best-loot-locations-route-guide",
+    "category": "Karte",
+    "tags": ["Karte", "Loot-Routen", "Beste Loot-Orte", "Militärbasis", "Rook Cavern"],
+    "seo": {
+      "title": "VEIN Karten-Guide - Beste Loot-Orte & Routen",
+      "description": "Plane VEIN-Routen mit sicheren Stopps, guten Loot-Orten, Militärzonen, Rook Cavern und Rückwegen vor Einbruch der Nacht.",
+      "keywords": "VEIN Karte, beste Loot-Orte, Loot-Routen, Militärbasis, Rook Cavern"
+    },
+    "detailsHtml": `
+      <article>
+        <header>
+          <p><strong>Schnelle Antwort:</strong> Nutze die VEIN-Karte als Routenwerkzeug, nicht als Sightseeing-Liste. Markiere zuerst einen sicheren Rückweg, loote an Tag 1 risikoarme Häuser und Versorgungsstopps, und gehe erst dann in Militär-, Höhlen- oder abgelegene High-Value-Zonen, wenn du Lager, medizinische Vorräte und eine Waffe hast, mit der du wirklich kämpfen kannst.</p>
+          <p><strong>Versionshinweis:</strong> Geprüft für den aktuellen öffentlichen Build vom 30. Juni 2026. Loot-Tabellen und POI-Dichte können sich zwischen Patches ändern; behandle exakte Spawns deshalb als Routenprioritäten, nicht als garantierte Drops.</p>
+        </header>
+
+        <figure>
+          <img src="/images/guide/vein-map-loot-route-overview.webp" alt="VEIN Karten-Guide zu besten Loot-Orten, frühen Gebieten und sicheren Pfaden" title="VEIN Karten-Guide für beste Loot-Orte" />
+          <figcaption>Beginne mit der Routenform: Straßenzugang, Rückzugsoptionen und wie weit du von sicherem Lagerplatz entfernt bist.</figcaption>
+        </figure>
+
+        <section>
+          <h2>So nutzt du die VEIN-Karte</h2>
+          <h3>Lies zuerst Hauptrouten und Landmarken</h3>
+          <p>Bevor du einem einzelnen Marker hinterherläufst, öffne die <a href="/vein-map" class="inline-link">VEIN-Karte</a> und erkenne drei Dinge: deine aktuelle Basis oder Unterkunft, die nächste Straßenschleife und ein Ausweichgebäude, in dem du Sichtlinien brechen kannst. Eine gute Loot-Route ist eine Schleife. Eine schlechte Route ist eine gerade Linie, die dich erschöpft, mit vollem Rucksack und ohne sauberen Heimweg zurücklässt.</p>
+          <p>Neue Spieler sollten diese Seite mit dem <a href="/vein-guides/day-1-priorities-guide" class="inline-link">Day-1-Prioritäten-Guide</a> verbinden: Wasser, Essen, ein Basistool, medizinische Grundlagen, dann Lager. Alles außerhalb dieser Schleife ist optional, bis du den Rückweg überlebst.</p>
+
+          <h3>Trenne sichere Routen von riskanten Loot-Zonen</h3>
+          <p>Behandle nicht jeden benannten Ort gleich. Häuser, kleine Versorgungsgebäude, Schuppen und Stopps am Straßenrand sind Ziele für frühe Routen. Militärbereiche, Höhlen und abgelegene POIs sind Value-Ziele, bestrafen aber schlechtes Timing. Ich markiere sie als <strong>hohes Risiko</strong>, solange der Run keinen klaren Fluchtweg und genug Tragkapazität hat, damit sich der Weg lohnt.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Kartenzonentyp</th>
+                <th>Beste Nutzung</th>
+                <th>Risikocall</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Wohnblöcke</td>
+                <td>Essen, Wasser, leichte Tools, Kleidung, Medizin</td>
+                <td>Beste Day-1-Route, wenn du Over-Looting vermeidest</td>
+              </tr>
+              <tr>
+                <td>Versorgungs- und Werkstattstopps</td>
+                <td>Reparaturtools, Crafting-Inputs, Behälter</td>
+                <td>Wiederholte Checks lohnen sich beim Aufbau einer Basisschleife</td>
+              </tr>
+              <tr>
+                <td>Militärische oder befestigte Bereiche</td>
+                <td>Waffen, Munition, taktische Ausrüstung</td>
+                <td>Warte, bis du kämpfen, heilen und dich zurückziehen kannst</td>
+              </tr>
+              <tr>
+                <td>Höhlen und abgelegene POIs</td>
+                <td>Spezialmaterialien und Fortschrittschecks</td>
+                <td>Erst scouten; nicht mit vollem Rucksack hineingehen</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <figure>
+          <img src="/images/guide/vein-map-safe-supply-route.webp" alt="VEIN Loot-Orte sichere Versorgungsroute für Day-1-Kartenplanung" title="VEIN sichere Versorgungsroute für frühe Loot-Orte" />
+          <figcaption>Risikoarme Versorgungsrouten sind absichtlich langweilig. Sie halten dich lange genug am Leben, damit bessere Zonen später Gewinn bringen.</figcaption>
+        </figure>
+
+        <section>
+          <h2>Beste frühe Loot-Orte</h2>
+          <h3>Risikoarme Versorgungsstopps für Tag 1</h3>
+          <p>Die besten frühen Loot-Orte in VEIN sind nicht die reichsten Orte. Es sind die Orte, die unmittelbares Überleben lösen, ohne dich in einen langen Kampf zu zwingen: Küchen, Badezimmer, Garagen, Werkstätten, kleine Läden und Schuppen nahe deiner geplanten Unterkunft. Die Prioritätenliste ist simpel:</p>
+          <ol>
+            <li><strong>Wasser und Essen:</strong> genug, um den Tag ohne Notfallumwege zu beenden. Nutze die <a href="/vein-items/consumables" class="inline-link">Consumables-Datenbank</a>, wenn du Item-Kontext brauchst.</li>
+            <li><strong>Ein praktisches Tool:</strong> alles, was deinen nächsten Ablauf öffnet. Starte mit der <a href="/vein-items/tools" class="inline-link">Tool-Liste</a>, bevor du Zeit in seltene Ausrüstung verbrennst.</li>
+            <li><strong>Medizinischer Puffer:</strong> Bandagen oder einfache Recovery-Items aus Badezimmern, Kliniken und kleinen Versorgungsräumen. Gleiche sie mit <a href="/vein-items/medical" class="inline-link">medizinischen Items</a> ab.</li>
+            <li><strong>Tragkapazität:</strong> Kleidung oder Taschen, durch die sich die Route auszahlt, ohne einen zweiten Trip zu erzwingen.</li>
+          </ol>
+
+          <h3>Wann Militär- oder High-Value-Gebiete sinnvoll sind</h3>
+          <p>Besuche eine Militärbasis nur, wenn der Run ein Scheitern überstehen kann. Mindestschwelle: eine echte Waffe, ein Stamina-Plan, medizinisches Backup und eine nahe Ausweichroute. Wenn du gezielt Militär-Loot suchst, lies zuerst den <a href="/vein-guides/how-to-find-clinton-correctional-facility-armory" class="inline-link">Clinton-Armory-Guide</a> und die <a href="/vein-guides/vein-game-military-base-looting-outpost-alpha" class="inline-link">Outpost-Alpha-Route</a>.</p>
+          <p><strong>INFERRED:</strong> Exakte Spawn-Gewichtung hängt von Weltsettings und Patch ab. Die Routenentscheidung bleibt stabil, auch wenn einzelne Container wechseln: High-Value-Zonen sind nur gut, wenn du den Loot sicher extrahieren kannst.</p>
+        </section>
+
+        <figure>
+          <img src="/images/guide/vein-map-high-risk-loot-zone.webp" alt="VEIN Militärbasis High-Risk-Loot-Zone Kartenroute" title="VEIN Militärbasis High-Risk-Loot-Route" />
+          <figcaption>High-Value-Zonen sollten wie Raids geplant werden, nicht wie spontane Stopps auf dem Heimweg.</figcaption>
+        </figure>
+
+        <section>
+          <h2>Tipps zur Routenplanung</h2>
+          <h3>Baue Routen um sichere Rückkehr</h3>
+          <p>Jede Route braucht einen Rückkehrtrigger. Geh, wenn eines davon passiert: Gewicht erreicht die Schwelle für langsame Bewegung, Hunger oder Durst erzwingen Fehler, der Waffenzustand wird unzuverlässig, oder die Uhr drückt dich in eine Rückkehr bei Nacht. Wenn deine Basis noch provisorisch ist, kombiniere diesen Guide mit dem <a href="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">Guide zum besten Basisstandort</a>.</p>
+
+          <h3>Vermeide Sackgassen-Lootpfade</h3>
+          <p>Ein Sackgassenpfad hat einen Eingang, keine Deckung und keinen zweiten Ausgang. Auf der Karte wirkt er effizient, in der Praxis scheitert er. Rook Cavern ist genau die Art Ort, die du scouten solltest, bevor du dich auf einen vollen Haul festlegst; lies den <a href="/vein-guides/vein-game-rook-cavern-guide" class="inline-link">Rook-Cavern-Guide</a>, wenn das dein Ziel ist.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Schlechte Gewohnheit</th>
+                <th>Warum sie scheitert</th>
+                <th>Fix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nach außen looten, bis alles voll ist</td>
+                <td>Du beendest den Run bei maximalem Risiko und minimaler Mobilität</td>
+                <td>Loote in Schleifen, die nah an deiner Rückroute vorbeiführen</td>
+              </tr>
+              <tr>
+                <td>Zuerst in High-Value-Zonen gehen</td>
+                <td>Du riskierst die Tools, die du für Erholung brauchst</td>
+                <td>Stelle Vorräte in der Nähe bereit, dann raide mit leichtem Rucksack</td>
+              </tr>
+              <tr>
+                <td>Tageszeit ignorieren</td>
+                <td>Navigation und Kampflesbarkeit fallen schnell ab</td>
+                <td>Setze einen harten Geh-Timer, bevor du das Ziel betrittst</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>FAQ</h2>
+          <h3>Wo sind die besten Loot-Orte in VEIN?</h3>
+          <p>Die besten frühen Loot-Orte sind risikoarme Wohn-, Versorgungs- und Werkstattstopps nahe einer sicheren Rückroute. Militärzonen, Höhlen und abgelegene POIs sind besser, nachdem du Lager, Medizin und einen Kampfplan hast.</p>
+          <h3>Hat VEIN eine Karte?</h3>
+          <p>Ja. Nutze die <a href="/vein-map" class="inline-link">interaktive VEIN-Karte</a>, um Routenschleifen zu planen, Loot-Prioritäten zu vergleichen und Sackgassenpfade zu vermeiden, bevor du dich auf einen langen Haul festlegst.</p>
+        </section>
+
+        <div class="pro-tip">
+          <strong>Feldregel:</strong> Die beste Route ist die, die du wiederholen kannst. Wenn ein Lootpfad perfekte Stamina, perfektes Wetter und perfekten Kampf braucht, ist es keine Route; es ist ein Gamble.
+        </div>
+      </article>
+    `
+  },
+  {
     "id": 23,
     "title": "VEIN Utility-Cabinet-Guide: Radius, Unterhalt, Berechtigungen & Anti-Decay-Setup",
     "description": "Erfahren Sie, wie Utility Cabinets (UCs) in VEIN Verfall (Decay) verhindern, welche Ressourcen sie verbrauchen, wie Bauberechtigungen funktionieren und wie Sie Ihre Basis so planen, dass Reparaturen und Unterhalt die wirklich wichtigen Strukturen abdecken.",
