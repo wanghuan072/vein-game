@@ -1,5 +1,254 @@
 export const guides = [
   {
+    id: 27,
+    title: 'VEIN Survival Status Guide: Pain, Zombies, Strength, and Exhaustion',
+    description:
+      'Fix VEIN survival status problems: excruciating pain, exertion, strength, zombie bites, zombie types, confidence, mushrooms, and corpse edge cases.',
+    imageUrl: '/images/guide/vein-pain-zombies-survival-guide.jpg',
+    imageAlt: 'VEIN survival status guide for pain zombie bites exertion and zombie behavior.',
+    publishDate: '2026-07-07',
+    addressBar: '/vein-game-pain-zombies-survival-guide',
+    category: 'Survival',
+    tags: ['Survival Status', 'Pain', 'Zombie Bites', 'Exertion', 'Strength'],
+    seo: {
+      title: 'VEIN Pain, Zombies, and Status Guide',
+      description:
+        'Fix VEIN pain, exertion, zombie bites, strength, confidence, zombie behavior, mushrooms, and corpse edge cases without guessing build-specific values.',
+      keywords: 'VEIN pain, zombie bites, exertion, strength, zombie types, confidence',
+    },
+    detailsHtml: `
+      <article>
+        <header>
+          <p><strong>Fast answer:</strong> treat VEIN status problems as a chain, not one icon. Excruciating pain, exertion, low strength, panic/confidence loss, and zombie-bite risk can stack into a death spiral. Stop moving, clear the immediate zombie threat, read the exact status text, then apply the matching recovery item or rest action.</p>
+          <p><strong>Version note:</strong> Checked for the current public build on July 7, 2026. Exact bite outcomes, zombie variants, mushroom effects, and corpse behavior can shift between builds, so this guide separates confirmed survival logic from <strong>INFERRED</strong> edge cases.</p>
+        </header>
+
+        <figure>
+          <img src="/images/guide/vein-pain-zombies-survival-guide.jpg" alt="VEIN pain zombies survival guide for zombie bites exertion and status recovery" title="VEIN pain zombies survival status guide" />
+          <figcaption>When the run goes bad, solve status in order: safety, bleeding, pain, exertion, then food and water.</figcaption>
+        </figure>
+
+        <section>
+          <h2>Pain and status problems</h2>
+          <h3>Fixing excruciating pain</h3>
+          <p>Excruciating pain is not a small comfort penalty. It can slow actions, make combat timing worse, and keep you from recovering cleanly after a fight. First, check whether the pain is attached to a wound, bite, fracture, burn, or untreated bleeding. If the cause is still active, painkillers alone are a delay, not a fix.</p>
+          <p>Use the <a href="/vein-items/medical" class="inline-link">medical items database</a> to separate pain control from wound treatment. Painkillers are for pain pressure. Bandages, disinfectants, stitches, antibiotics, and other medical tools solve different failure points.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Status signal</th>
+                <th>Likely problem</th>
+                <th>First action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Excruciating pain after combat</td>
+                <td>Injury, bite, fracture, or untreated trauma</td>
+                <td>Move to safety, inspect body status, treat the cause</td>
+              </tr>
+              <tr>
+                <td>Pain plus bleeding</td>
+                <td>Open wound</td>
+                <td>Stop bleeding before using comfort items</td>
+              </tr>
+              <tr>
+                <td>Pain plus movement penalty</td>
+                <td>Leg injury, exhaustion, or heavy carry load</td>
+                <td>Drop weight, rest, and avoid melee trades</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Exertion and strength recovery</h3>
+          <p>Exertion usually means the character has spent too much short-term output: sprinting, melee swings, hauling weight, or chaining noisy actions without recovery. The fix is not glamorous: stop, reduce carry weight, drink if needed, eat if the run is long, and avoid new fights until action speed stabilizes.</p>
+          <p>Strength is a longer-term build question. To increase strength, keep the run repeatable and avoid injury chains that stop training. Pair this section with the <a href="/vein-wiki/skills" class="inline-link">Skills and Perks</a> page and the <a href="/vein-guides/day-1-priorities-guide" class="inline-link">Day 1 priorities guide</a>. A stronger character still dies if they carry too much into a bite fight.</p>
+        </section>
+
+        <section>
+          <h2>Zombies and infection risk</h2>
+          <h3>Zombie types</h3>
+          <p>Do not overclassify zombies by name until the current build makes the variant obvious. The useful field taxonomy is behavior-first: normal walkers, faster pressure zombies, crawlers or low-profile threats, and environmental edge cases like drowned zombies. That is enough information to change your route and weapon choice.</p>
+          <p>If the zombie is hard to identify, fight it like a worst-case contact: make space, use a quiet weapon when possible, and avoid dragging the fight into your loot route.</p>
+
+          <h3>What happens when bitten</h3>
+          <p>A zombie bite is a run emergency. Immediately leave the fight, check the wound panel, stop bleeding, disinfect or treat the wound if the current build supports it, and monitor follow-up sickness or infection signals. Do not keep looting after a bite just because HP is still high.</p>
+          <p><strong>INFERRED:</strong> Bite consequence details can vary by server/world settings and build. The stable survival rule is unchanged: treat bites as high risk until the status panel proves otherwise.</p>
+
+          <h3>Corpse and drowned zombie edge case</h3>
+          <p>Drowned-zombie corpse behavior is too narrow to route around blindly. If you are testing whether drowned zombies leave a corpse, kill or observe one in a controlled area, mark the build, then check whether a corpse, lootable body, or despawn state appears. Do not assume corpse loot exists just because a normal zombie leaves a body elsewhere.</p>
+        </section>
+
+        <section>
+          <h2>Confidence and special survival items</h2>
+          <h3>Getting confident</h3>
+          <p>Confidence should be treated as a player-state and character-state problem: stop panic loops, reduce repeated near-death exposure, and stabilize basic needs. If confidence is tied to a current-build mood system, read the status tooltip before using rare medicine or stimulants.</p>
+          <p>The practical route answer is simple: keep fights short, keep escape paths open, and do not let exhaustion force ugly melee trades. The <a href="/vein-guides/vein-map-best-loot-locations-route-guide" class="inline-link">map route guide</a> helps here because safe loops reduce panic events.</p>
+
+          <h3>Mushroom expansion questions</h3>
+          <p>Mushrooms are a current-build verification topic. Before eating, crafting, or storing them as medicine, check the item tooltip and compare it with the <a href="/vein-items/consumables" class="inline-link">consumables database</a>. Unknown mushrooms should be tested on a low-value run, not during a serious supply push.</p>
+        </section>
+
+        <section>
+          <h2>FAQ</h2>
+          <h3>How do you fix excruciating pain in VEIN?</h3>
+          <p>Move to safety, inspect the body/status panel, treat active wounds first, then use pain-control items if the pain remains. Do not use painkillers as a substitute for wound treatment.</p>
+          <h3>What happens if a zombie bites you in VEIN?</h3>
+          <p>Treat it as a high-risk wound. Stop the fight, treat bleeding and infection risk, then monitor sickness or follow-up status. Exact bite consequences can depend on build and world settings.</p>
+          <h3>How do you become less exerted in VEIN?</h3>
+          <p>Stop sprinting and swinging, reduce carry weight, rest somewhere safe, and avoid starting another fight until action speed and stamina pressure recover.</p>
+        </section>
+
+        <div class="pro-tip">
+          <strong>Field rule:</strong> Status recovery starts before the item use. If you are still surrounded, overloaded, bleeding, and thirsty, one pill will not save the run.
+        </div>
+      </article>
+    `,
+  },
+  {
+    id: 26,
+    title: 'VEIN Multiplayer Guide: Co-op, Servers, Ports, and Setup',
+    description:
+      'Set up VEIN multiplayer with co-op expectations, dedicated server basics, port checks, solo server use, PvE rules, player size, and fresh server resets.',
+    imageUrl: '/images/guide/vein-multiplayer-server-guide.jpg',
+    imageAlt: 'VEIN multiplayer server guide dedicated server setup ports and co-op play.',
+    publishDate: '2026-07-07',
+    addressBar: '/vein-game-multiplayer-server-guide',
+    category: 'Multiplayer',
+    tags: ['Multiplayer', 'Co-op', 'Dedicated Server', 'Ports', 'PvE Servers'],
+    seo: {
+      title: 'VEIN Multiplayer Server Guide',
+      description:
+        'Set up VEIN multiplayer with co-op basics, dedicated servers, port checks, solo server use, PvE rules, server size, and fresh resets.',
+      keywords: 'VEIN multiplayer, VEIN server, dedicated server, ports, co-op, PvE',
+    },
+    detailsHtml: `
+      <article>
+        <header>
+          <p><strong>Fast answer:</strong> VEIN multiplayer should be planned like a hosted survival world: decide who hosts, confirm the server build, open the required ports from the current server config, then test a clean connection before inviting a full group. Do not guess port numbers from an old comment or another survival game.</p>
+          <p><strong>Version note:</strong> Checked for the current public build on July 7, 2026. Server tools, default ports, and config labels can change. When this guide says "verify," it means check the current server config, host panel, firewall rule, or official build notes before changing router settings.</p>
+        </header>
+
+        <figure>
+          <img src="/images/guide/vein-multiplayer-server-guide.jpg" alt="VEIN multiplayer dedicated server tutorial for co-op ports and setup" title="VEIN multiplayer dedicated server guide" />
+          <figcaption>Server setup is mostly discipline: one build, one config, one port test, then invite players.</figcaption>
+        </figure>
+
+        <section>
+          <h2>Is VEIN multiplayer or online co-op?</h2>
+          <h3>Multiplayer search intent and short answer</h3>
+          <p>Yes, VEIN multiplayer intent is real, and most players searching this topic want one of two things: a private co-op world with friends, or a persistent dedicated server that keeps running when the host is offline. Keep those setups separate. A casual co-op host and a dedicated server have different failure points.</p>
+          <p>If you are still learning the game, start with the <a href="/vein-guides/day-1-priorities-guide" class="inline-link">Day 1 priorities guide</a> before hosting. Multiplayer does not remove thirst, injury, bad loot routes, or zombie pressure; it only spreads those mistakes across more people.</p>
+
+          <h3>Playing multiplayer alone</h3>
+          <p>You can use a multiplayer server alone as a test world. That is useful for checking server rules, reset behavior, PvE settings, loot pacing, base permissions, and route timing before friends join. It is not the same as single-player pacing if the server keeps time, spawns, decay, or persistence running differently.</p>
+        </section>
+
+        <section>
+          <h2>Server setup and connection basics</h2>
+          <h3>Dedicated server intent</h3>
+          <p>A dedicated server is the clean option when the group wants persistence. Use one machine or host panel for the server, one known VEIN build, one save directory, and one documented config. Before players connect, record the server name, world settings, admin password policy, PvE/PvP rules, and backup location.</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Setup step</th>
+                <th>What to verify</th>
+                <th>Why it matters</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Server build</td>
+                <td>Client and server versions match</td>
+                <td>Prevents connection and desync failures</td>
+              </tr>
+              <tr>
+                <td>World save</td>
+                <td>Save path and backup path are known</td>
+                <td>Makes fresh resets recoverable</td>
+              </tr>
+              <tr>
+                <td>Rules</td>
+                <td>PvE, PvP, loot, decay, and admin settings are written down</td>
+                <td>Prevents arguments after the first base loss</td>
+              </tr>
+              <tr>
+                <td>Connection test</td>
+                <td>One outside client can join before launch</td>
+                <td>Confirms firewall and port forwarding</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Ports, TCP, and UDP questions</h3>
+          <p>Do not hard-code a port from memory. Open the server config or host dashboard and read the current game port, query port, and protocol labels. If the config separates TCP and UDP, mirror that exactly in the firewall and router. If it lists only one game port, test the connection before adding extra rules.</p>
+          <p><strong>INFERRED:</strong> Most real-time game traffic commonly relies on UDP, while management, query, or panel tools may use TCP. That is a networking pattern, not a confirmed VEIN guarantee. The correct answer is always the current server config.</p>
+
+          <h3>Resetting or starting fresh</h3>
+          <p>To reset a VEIN server cleanly, stop the server first, back up the current save, then remove or replace the world save according to the host panel or server file layout. Do not delete config files unless you also want to erase rules, admin settings, and server identity.</p>
+          <ol>
+            <li>Announce the reset window to players.</li>
+            <li>Stop the server cleanly.</li>
+            <li>Copy the current save folder to a dated backup.</li>
+            <li>Remove only the world/save data required for a fresh start.</li>
+            <li>Restart and connect alone before inviting the group.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Server rules and playstyle filters</h2>
+          <h3>PvE-only server demand</h3>
+          <p>PvE-only players are usually trying to avoid base griefing, surprise PvP, and social friction while still using co-op survival. If your config supports PvE rules, write them into the server name or description. If rules are enforced socially instead of technically, say that clearly before players invest in a base.</p>
+          <p>Base groups should read the <a href="/vein-guides/vein-utility-cabinet-upkeep-radius-permissions-guide" class="inline-link">Utility Cabinet guide</a> before building together. Permissions, upkeep, and decay cause more multiplayer damage than one bad zombie fight.</p>
+
+          <h3>Server size expectations</h3>
+          <p>Server size should be set by stability and world design, not ego. More players means more loot pressure, more base claims, more vehicles, and more admin disputes. Start smaller, verify performance, then raise capacity if the server stays stable through peak hours.</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Group size</th>
+                <th>Best use</th>
+                <th>Admin risk</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Solo test server</td>
+                <td>Config, reset, PvE rule, and route testing</td>
+                <td>Low</td>
+              </tr>
+              <tr>
+                <td>Small friend group</td>
+                <td>Private co-op survival and shared base play</td>
+                <td>Moderate if rules are unclear</td>
+              </tr>
+              <tr>
+                <td>Public server</td>
+                <td>Community persistence and discovery</td>
+                <td>High; needs rules, backups, and moderation</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>FAQ</h2>
+          <h3>Does VEIN use TCP or UDP for servers?</h3>
+          <p>Check the current server config or host panel. If it labels separate TCP and UDP ports, mirror those labels exactly in firewall and router rules. Do not rely on stale port lists.</p>
+          <h3>Can you make a singleplayer multiplayer server in VEIN?</h3>
+          <p>Yes. Use a private multiplayer server alone when you want to test configs, PvE rules, reset behavior, or persistence before inviting other players.</p>
+          <h3>How do you reset a VEIN server to start fresh?</h3>
+          <p>Stop the server, back up the save, replace only the world/save data, then restart and test alone. Keep config files if you want to preserve rules and admin settings.</p>
+        </section>
+
+        <div class="pro-tip">
+          <strong>Field rule:</strong> A server is not ready when it boots. It is ready when an outside client connects, the rules are written down, and the save can be backed up before the first real session.
+        </div>
+      </article>
+    `,
+  },
+  {
     id: 25,
     title: 'VEIN Map Guide: Best Loot Locations, Routes, and Early Areas',
     description:
