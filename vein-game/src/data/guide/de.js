@@ -1,5 +1,159 @@
 export const guides = [
   {
+    "id": 29,
+    "title": "VEIN Fahrzeug-Guide: Abschleppen, Benzin, Motor, Oel und Reparatur",
+    "description": "Ein klarer VEIN-Fahrzeugguide fuer Abschleppen, Anhaken, Benzintanks, Propan-Verwechslung, Motoroel, Autos ohne Motor, Reparaturgrenzen und festsitzende Sitze.",
+    "imageUrl": "/images/guide/vein-vehicle-towing-gas-engine-repair-guide.jpg",
+    "imageAlt": "VEIN Fahrzeug-Guide fuer Abschleppen Benzintank Motorreparatur und Anhaken.",
+    "publishDate": "2026-07-14",
+    "addressBar": "/vein-game-vehicle-towing-gas-engine-repair-guide",
+    "category": "Vehicles",
+    "tags": ["Fahrzeuge", "Abschleppen", "Benzintank", "Motorreparatur", "Logistik"],
+    "seo": {
+      "title": "VEIN Fahrzeug: Abschleppen, Benzin und Reparatur",
+      "description": "Loese VEIN-Fahrzeugprobleme: Abschleppen, Anhaken, Benzintank, Propan, Oelwechsel, Autos ohne Motor, weisse Sportwagen und festsitzende Sitze.",
+      "keywords": "VEIN Fahrzeug Guide, Abschleppen, Benzintank, Motor"
+    },
+    "detailsHtml": `
+      <article>
+        <header>
+          <p><strong>Schnelle Antwort:</strong> Behandle jedes Fahrzeug in VEIN zuerst als Logistikwerkzeug. Pruefe vor dem Abschleppen oder Reparieren den Zustand, den Kraftstoff, ob der Motor wirklich vorhanden ist, und ob die Ausstiegstaste funktioniert. Gib keine seltenen Reparaturteile fuer eine leere Karosserie aus, wenn der aktuelle Build keine klare Motor-Einbauaktion zeigt.</p>
+          <p><strong>Versionshinweis:</strong> Geprueft fuer den aktuellen oeffentlichen Build vom 14. Juli 2026. Fahrzeug-Prompts und fehlende Teile koennen sich zwischen Builds aendern; alles, was einen Prompt braucht, ist nur dann sicher, wenn die UI ihn zeigt.</p>
+        </header>
+
+        <figure>
+          <img src="/images/guide/vein-vehicle-towing-gas-engine-repair-guide.jpg" alt="VEIN Fahrzeug abschleppen Benzintank Motorreparatur Guide" title="VEIN Fahrzeug abschleppen Benzintank Motorreparatur" />
+          <figcaption>Fahrzeuge sind fuer Beutewege da, nicht fuer blindes Tempo. Ein kaputtes Auto kann trotzdem Lager, Marker oder spaeteres Abschleppziel sein.</figcaption>
+        </figure>
+
+        <section>
+          <h2>Abschleppen und Anhaken von Fahrzeugen</h2>
+          <h3>Wie Abschleppen funktioniert</h3>
+          <p>Beginne erst, wenn beide Fahrzeuge ruhig stehen, gerade ausgerichtet sind und keine Zombies in der Naehe sind. Stelle dich an den Haken- oder Abschlepppunkt, warte auf den Interaktionsprompt und verbinde dann das zweite Fahrzeug. Wenn kein Prompt erscheint, richte die Fahrzeuge neu aus und pruefe, ob dieser Fahrzeugtyp in deinem Build ueberhaupt abschleppbar ist.</p>
+          <p>Fahre die ersten 20-30 Meter langsam. Enge Kurven, Bordsteine, Grabenraender und schnelles Rueckwaertsfahren brechen Verbindungen am haeufigsten. Plane die Route ueber die <a href="/vein-map" class="inline-link">VEIN Karte</a>, wenn du ein wertvolles Auto bergen willst.</p>
+
+          <table>
+            <thead><tr><th>Check</th><th>Aktion</th><th>Fehlsignal</th></tr></thead>
+            <tbody>
+              <tr><td>Ausrichtung</td><td>Gerade an den Hakenpunkt fahren</td><td>Kein Prompt erscheint</td></tr>
+              <tr><td>Gewicht</td><td>Schwere Ladung vor langen Wegen ausladen</td><td>Das gezogene Fahrzeug pendelt</td></tr>
+              <tr><td>Route</td><td>Breite Strassen und Parkplaetze nutzen</td><td>Verbindung bricht im Gelaende</td></tr>
+            </tbody>
+          </table>
+
+          <h3>Tuerkische Suchvarianten</h3>
+          <p>Viele Spieler suchen nach <strong>arac cekme</strong>, <strong>ceki demiri</strong> oder <strong>araba cekme</strong>. Die Logik bleibt gleich: richtigen Hakenpunkt finden, Prompt bestaetigen und langsam anfahren.</p>
+        </section>
+
+        <section>
+          <h2>Benzin, Propan und Oel</h2>
+          <h3>Benzintanks fuellen</h3>
+          <p>Fahrzeuge brauchen Benzin. Nimm einen gefuellten Kanister, stelle dich an Tankdeckel oder Fahrzeug-Prompt und nutze die Transferaktion. Wenn das Auto keinen Kraftstoff annimmt, pruefe zuerst, ob es voll ist, ob du den falschen Behaelter haeltst oder ob wichtige Teile fehlen.</p>
+          <p>Die Tankposition kann je nach Modell anders sein. Verlasse dich auf Prompt und Inspektionsfenster, nicht nur auf die Optik. Werkzeuge und Materialien findest du in der <a href="/vein-items/tools" class="inline-link">Tool-Datenbank</a> und der <a href="/vein-items/materials" class="inline-link">Materialliste</a>.</p>
+
+          <h3>Propan-Tank</h3>
+          <p>Propan ist kein Ersatz fuer Fahrzeugbenzin. Nutze Propan nur fuer Systeme, bei denen der aktuelle Build einen passenden Prompt zeigt.</p>
+
+          <h3>Oel wechseln</h3>
+          <p>Motoroel ist nur dann ein bestaetigter Blocker, wenn Fahrzeugfenster oder Reparaturprompt Oelzustand, Oelmenge oder Oelwechsel anzeigen. Wenn die UI nichts zeigt, ist die Mechanik fuer deinen Build <strong>INFERRED</strong>. Priorisiere dann Schluessel, Batterie, Benzin, Reifen, Motorzustand und fehlende Teile.</p>
+          <figure>
+            <img src="/images/guide/vein-vehicle-repair-interface-guide.jpg" alt="VEIN Autoreparatur Interface fuer Motoroel Benzin und fehlende Teile" title="VEIN Autoreparatur Interface Motoroel und Teile" />
+            <figcaption>Inspektion schlaegt Geruechte. Wenn ein Teil nicht im Fahrzeugfenster erscheint, verschwende keine seltenen Items darauf.</figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h2>Fahrzeuge reparieren oder entfernen</h2>
+          <h3>Autos ohne Motor</h3>
+          <p>Ein Auto ohne Motor ist eine Falle fuer Ressourcen. Es ist nur reparierbar, wenn dein Build Motor-Einbau unterstuetzt und du die noetigen Werkzeuge hast. Dasselbe gilt fuer weisse Sportwagen, die Spieler als ohne Motor oder nicht reparierbar melden: zuerst inspizieren, dann entscheiden.</p>
+
+          <h3>Motor herausziehen</h3>
+          <p>Wenn der Build Motorentnahme erlaubt, rechne mit Werkzeugen, Zeit und einer sicheren Flaeche. Ziehe keinen Motor waehrend eines aktiven Loot-Runs. Mehr Grundlagen stehen im <a href="/vein-guides/vein-vehicle-guide-repair-hotwire-maintain" class="inline-link">VEIN Reparatur- und Hotwire-Guide</a>.</p>
+
+          <h3>Fahrzeuge zerstoeren und festsitzende Sitze</h3>
+          <p>Zerstoere oder gib ein Fahrzeug erst auf, wenn klar ist, dass es eine Basis, Tuer oder Route blockiert. Wenn du nicht aussteigen kannst, pruefe zuerst die Steuerungsbelegung. Ein fehlender Exit- oder Chair-Bind ist wahrscheinlicher als ein permanent defektes Fahrzeug.</p>
+          <p>Parke Fahrzeuge nicht direkt vor Utility Cabinet, Tueren oder Generatorwegen. Fuer Basislogistik passt dieser Guide zum <a href="/vein-guides/vein-game-base-building-power-water-guide" class="inline-link">Power- und Wasser-Guide</a>.</p>
+        </section>
+      </article>
+    `,
+  },
+  {
+    "id": 28,
+    "title": "VEIN Basisbau-Guide: Brunnen, Solarstrom, Generatoren, Schrank, Wasser und Verteidigung",
+    "description": "Baue eine stabile VEIN-Basis mit Brunnen, Wasseranschluss, Waschmaschine, Solarpanels, Batterien, Generatoren, Utility Cabinets, Treppen und Fortifications.",
+    "imageUrl": "/images/guide/vein-base-building-power-water-guide.jpg",
+    "imageAlt": "VEIN Basisbau-Guide fuer Brunnen Wasseranschluss Solarstrom Generator und Fortifications.",
+    "publishDate": "2026-07-14",
+    "addressBar": "/vein-game-base-building-power-water-guide",
+    "category": "Base Building",
+    "tags": ["Basisbau", "Wasser", "Solarstrom", "Generatoren", "Verteidigung"],
+    "seo": {
+      "title": "VEIN Basisbau, Strom, Wasser und Fortifications",
+      "description": "Baue VEIN-Basen mit Brunnen, Wasseranschluss, Waschmaschinen, Solar, Batterien, Generatoren, Utility Cabinets, Treppen und Verteidigung.",
+      "keywords": "VEIN Basisbau, Brunnen, Solarstrom, Generator, Wasser"
+    },
+    "detailsHtml": `
+      <article>
+        <header>
+          <p><strong>Schnelle Antwort:</strong> Baue in dieser Reihenfolge: sichere Huelle, Utility Cabinet, Wasserquelle, Stromquelle, Geraete, dann Verteidigung. Solar und Generatoren bringen erst etwas, wenn du sie mit den wichtigen Verbrauchern verbinden kannst. Brunnen sind nur wertvoll, wenn der Build Wasserentnahme oder Anschluss sauber erlaubt.</p>
+          <p><strong>Versionshinweis:</strong> Geprueft fuer den aktuellen oeffentlichen Build vom 14. Juli 2026. Wasser, Kabel, Generatoren und Geraete sind Prompt-Systeme. Ohne Prompt ist der Schritt blockiert.</p>
+        </header>
+
+        <figure>
+          <img src="/images/guide/vein-base-building-power-water-guide.jpg" alt="VEIN Basisbau Wasseranschluss Guide fuer Brunnen und Waschmaschinen" title="VEIN Basisbau Wasseranschluss Guide" />
+          <figcaption>Wasser und Strom sind Basissysteme, keine Dekoration. Pruefe Anschluesse, bevor du die Flaeche vergroesserst.</figcaption>
+        </figure>
+
+        <section>
+          <h2>Brunnen, Wasser und Anschluesse</h2>
+          <h3>Brunnen-Anforderungen und gebaute Brunnen</h3>
+          <p>Ein Brunnen lohnt sich nur, wenn drei Checks passen: Platzierung funktioniert, Materialien sind vorhanden und das fertige Objekt zeigt Wasser- oder Anschlussaktionen. Wenn ein gebauter Brunnen kein Wasser gibt, gehe naeher heran, teste einen Behaelter aus dem Inventar und pruefe, ob der Behaelter Fluessigkeit aufnehmen kann.</p>
+          <p>Grundlagen findest du im <a href="/vein-wiki/building" class="inline-link">Building Wiki</a>. Wenn der Standort noch offen ist, starte mit dem <a href="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">Best Base Location Guide</a>.</p>
+
+          <h3>Wasseranschluss und Waschmaschinen</h3>
+          <p>Verbinde Geraete erst, wenn Quelle und Geraet gueltige Prompts zeigen. Eine Waschmaschine braucht normalerweise Wasser und Strom. Nur eine Verbindung ist kein fertiges System. Wenn der Anschluss nicht erkannt wird, teste die Rueckseite oder den Anschlussbereich statt nur die Frontaktion.</p>
+
+          <h3>Waschmaschinen mit Strom versorgen</h3>
+          <p>Die Stromlogik ist Quelle, Speicher, Verbindung, Geraetzustand. Wenn ein Geraet unpowered meldet, repariere Kabel, Batterie oder Generatorleistung. Wenn es powered ist, aber kein Wasser hat, loese Wasser separat.</p>
+
+          <table>
+            <thead><tr><th>Geraet</th><th>Braucht</th><th>Erster Check</th></tr></thead>
+            <tbody>
+              <tr><td>Brunnen</td><td>Platz, Materialien, Wasser-Prompt</td><td>Keine Entnahmeaktion</td></tr>
+              <tr><td>Waschmaschine</td><td>Wasser plus Strom</td><td>Nur ein Utility verbunden</td></tr>
+              <tr><td>Dusche oder Waschbecken</td><td>Wasserquelle und Route</td><td>Prompt an falscher Seite</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Stromsysteme</h2>
+          <h3>Solarpanels und Batterien</h3>
+          <p>Solarstrom ist die leise Langzeitloesung. Stelle Panels frei, verbinde sie mit Batteriespeicher, wenn der Build es unterstuetzt, und versorge zuerst die wichtigsten Geraete. Spieler, die nach <strong>solar power battery</strong> oder Tippfehlern wie <strong>solar power batery</strong> suchen, uebersehen meist den Speicher.</p>
+
+          <h3>Grosser Generator und Tow-Generator</h3>
+          <p>Ein Generator loest sofort Strom, bringt aber Treibstofflogistik und Laerm. Stelle ihn nicht in den Hauptweg der Basis. Wenn du einen ziehbaren Generator findest, nutze die gleiche Anhak-Disziplin wie im <a href="/vein-guides/vein-game-vehicle-towing-gas-engine-repair-guide" class="inline-link">Fahrzeug-Abschleppguide</a>.</p>
+          <figure>
+            <img src="/images/guide/vein-base-solar-generator-utility-guide.jpg" alt="VEIN Solarstrom Generator Basis Utility Guide fuer Batterien und Fortifications" title="VEIN Solarstrom Generator Basis Utility Guide" />
+            <figcaption>Laute Stromquellen und Fahrzeugwege gehoeren nicht direkt in den Basiskern.</figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h2>Konstruktion und Fortifications</h2>
+          <h3>Construction erhoehen und Bauteile setzen</h3>
+          <p>Level Construction durch nuetzliche Arbeit: Treppen, Plattformen, Lager, Reparaturen und Perimeterteile. Spamme keine Teile, die du spaeter nicht versorgen kannst. Pruefe <a href="/vein-wiki/skills" class="inline-link">Skills and Perks</a>, bevor du hohe Tiers planst.</p>
+
+          <h3>Utility Cabinets</h3>
+          <p>Das Utility Cabinet ist das Herz der Basis. Es kontrolliert Upkeep, Rechte und Decay-Abdeckung. Mehrere Cabinets sind nur sinnvoll, wenn dein Build es erlaubt und die Abdeckung keine Besitz- oder Materialprobleme erzeugt. Details stehen im <a href="/vein-guides/vein-utility-cabinet-upkeep-radius-permissions-guide" class="inline-link">Utility Cabinet Guide</a>.</p>
+
+          <h3>Defense, Fortifications und Signs</h3>
+          <p>Fortifications schuetzen die Wege, die Zombies und Spieler wirklich nutzen: Tueren, Fenster, Treppen, Generator-Ecken und Lagerraeume. Signs sind gut fuer Lagerlabels und Multiplayer-Hinweise, aber keine Sicherheit. Tier-Planung steht im <a href="/vein-guides/vein-base-fortification-defense-guide" class="inline-link">Base Fortification Guide</a>.</p>
+        </section>
+      </article>
+    `,
+  },
+  {
     "id": 24,
     "title": "VEIN Crafting-Guide: Items, Tools, Materialien und Fortschritt",
     "description": "Eine praktische VEIN-Crafting-Route für erste Tools, Materialsparen, Item-Kategorien, Kochen, fortgeschrittene Stationen und Fortschrittsfehler, die seltene Inputs verschwenden.",

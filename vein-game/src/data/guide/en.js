@@ -1,5 +1,167 @@
 export const guides = [
   {
+    id: 29,
+    title: 'VEIN Vehicle Guide: Towing, Gas Tanks, Engines, Oil, and Car Repair',
+    description:
+      'A field guide to VEIN vehicle towing, hitching, fuel tanks, propane confusion, engine oil, no-engine cars, repair limits, and stuck vehicle exits.',
+    imageUrl: '/images/guide/vein-vehicle-towing-gas-engine-repair-guide.jpg',
+    imageAlt: 'VEIN vehicle towing guide with car gas tank engine repair and hitching route.',
+    publishDate: '2026-07-14',
+    addressBar: '/vein-game-vehicle-towing-gas-engine-repair-guide',
+    category: 'Vehicles',
+    tags: ['Vehicles', 'Towing', 'Gas Tanks', 'Engine Repair', 'Survival Logistics'],
+    seo: {
+      title: 'VEIN Vehicle Towing, Gas, Engine, and Repair Guide',
+      description:
+        'Fix VEIN vehicle problems: towing, hitching, gas tanks, propane, oil changes, no-engine cars, white sports cars, engine pulling, and stuck exits.',
+      keywords: 'VEIN vehicle guide, towing, gas tank, engine repair, oil',
+    },
+    detailsHtml: `
+      <article>
+        <header>
+          <p><strong>Fast answer:</strong> treat every VEIN vehicle as a logistics tool first and a ride second. Before towing or repairing, inspect the car, confirm fuel, check whether the engine actually exists, and test the exit control while the area is safe. Do not spend repair parts on a shell with no engine unless the current build exposes a supported engine-install action.</p>
+          <p><strong>Version note:</strong> Checked for the current public build on July 14, 2026. Vehicle interaction prompts and missing-part edge cases can move between builds, so any mechanic that depends on a prompt is listed as confirmed only when the UI shows it.</p>
+        </header>
+
+        <figure>
+          <img src="/images/guide/vein-vehicle-towing-gas-engine-repair-guide.jpg" alt="VEIN vehicle towing gas tank engine repair guide for hitching cars" title="VEIN vehicle towing gas tank engine repair guide" />
+          <figcaption>Use vehicles for haul routes, not blind speed. A broken car can still be a landmark, storage target, or future tow job.</figcaption>
+        </figure>
+
+        <section>
+          <h2>Towing and hitching vehicles</h2>
+          <h3>How vehicle towing works</h3>
+          <p>Start towing only after both vehicles are stable, aligned, and clear of zombies. The reliable test is simple: stand at the hitch or tow point, look for the interaction prompt, then attach the rear vehicle before driving. If no prompt appears, reposition the car, switch angle, and check whether the target vehicle type is towable in your build.</p>
+          <p>Use low speed for the first 20-30 meters. Sharp turns, curbs, wrecked road edges, and fast reverse inputs are where towing usually fails. If you are recovering a high-value vehicle from a loot run, mark the route on the <a href="/vein-map" class="inline-link">VEIN map</a> first and choose wide roads over shortcuts.</p>
+
+          <table>
+            <thead>
+              <tr><th>Check</th><th>What to do</th><th>Failure signal</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Alignment</td><td>Back the tow vehicle straight into the hitch zone</td><td>No hitch prompt appears</td></tr>
+              <tr><td>Weight</td><td>Empty heavy cargo before towing long distance</td><td>Trailer swings or vehicle bogs down</td></tr>
+              <tr><td>Route</td><td>Use roads, parking lots, and open shoulders</td><td>Connection breaks on terrain</td></tr>
+            </tbody>
+          </table>
+
+          <h3>Turkish towing variants</h3>
+          <p>Players searching in Turkish often use variants around <strong>arac cekme</strong>, <strong>ceki demiri</strong>, and <strong>araba cekme</strong>. The mechanic is the same: find the hitch prompt, connect from the correct end, then move slowly until the connection proves stable.</p>
+        </section>
+
+        <section>
+          <h2>Gas, propane, and oil</h2>
+          <h3>Filling gas tanks</h3>
+          <p>Vehicle fuel is gasoline. Bring a filled fuel container, stand near the fuel cap or vehicle interaction zone, and use the transfer prompt shown by the vehicle UI. If the car will not accept fuel, check whether it is already full, whether you are holding the wrong container, or whether the inspected vehicle is missing required parts.</p>
+          <p>Gas tank location can vary by model. Do not guess from the visual cap alone; use the interaction prompt and vehicle inspection panel. For repair tools and container cross-checks, use the <a href="/vein-items/tools" class="inline-link">tools database</a> and <a href="/vein-items/materials" class="inline-link">materials list</a>.</p>
+
+          <h3>Propane tank</h3>
+          <p>Propane is not a vehicle fuel substitute. Treat propane tanks as utility or crafting fuel unless the current build gives a specific supported prompt for a device. Pouring propane logic into a gasoline car is how you waste time on the wrong system.</p>
+
+          <h3>Changing oil</h3>
+          <p>Engine oil matters only when the vehicle inspection panel or repair prompt exposes oil condition, oil capacity, or an oil-change action. If the UI does not show it, mark the mechanic as <strong>INFERRED</strong> for your build and prioritize confirmed blockers first: key, battery, fuel, tires, engine condition, and missing parts.</p>
+          <figure>
+            <img src="/images/guide/vein-vehicle-repair-interface-guide.jpg" alt="VEIN car repair interface guide for engine oil fuel and missing vehicle parts" title="VEIN vehicle repair interface engine oil and parts" />
+            <figcaption>Inspection beats rumor. If the vehicle panel does not expose a part, do not burn rare repair items trying to brute force it.</figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h2>Repairing or removing vehicles</h2>
+          <h3>Cars with no engine</h3>
+          <p>A car with no engine is a recovery trap. It may look valuable, especially if it is clean or rare, but it is not repairable unless the build supports engine installation and you have the required tool chain. The same rule applies to white sports cars reported by players as no-engine or not repairable: inspect first, then decide.</p>
+
+          <h3>Pulling an engine</h3>
+          <p>If the game exposes engine removal, expect it to require tools, time, and a safe working area. Do not pull an engine during an active loot route. Secure the area, unload cargo, and keep a fallback vehicle nearby. For broader setup, compare this page with the older <a href="/vein-guides/vein-vehicle-guide-repair-hotwire-maintain" class="inline-link">VEIN repair and hotwire guide</a>.</p>
+
+          <h3>Destroying vehicles and stuck seats</h3>
+          <p>Only destroy or abandon a vehicle after you have checked whether it blocks a base, road, or door that matters. If you are stuck in a seat or cannot exit a vehicle, first check the control binding. A missing or changed exit/chair binding is more likely than a permanent vehicle failure. If rebind and reload do not solve it, treat the save as a bug state and avoid continuing a serious run from that seat.</p>
+          <p>Base builders should route vehicle parking away from Utility Cabinet access, door swings, and generator lanes. Pair this guide with the <a href="/vein-guides/vein-game-base-building-power-water-guide" class="inline-link">base power and water guide</a> if vehicles are part of your hauling loop.</p>
+        </section>
+      </article>
+    `,
+  },
+  {
+    id: 28,
+    title: 'VEIN Base Building Guide: Wells, Solar Power, Generators, Cabinets, Water, and Fortifications',
+    description:
+      'Build a stable VEIN base with wells, water connections, washing machines, solar panels, batteries, generators, utility cabinets, stairs, and fortifications.',
+    imageUrl: '/images/guide/vein-base-building-power-water-guide.jpg',
+    imageAlt: 'VEIN base building guide for wells water connection solar power generator and fortifications.',
+    publishDate: '2026-07-14',
+    addressBar: '/vein-game-base-building-power-water-guide',
+    category: 'Base Building',
+    tags: ['Base Building', 'Water', 'Solar Power', 'Generators', 'Fortifications'],
+    seo: {
+      title: 'VEIN Base Building, Power, Water, and Fortifications',
+      description:
+        'Build VEIN bases with wells, water connections, washing machines, solar panels, batteries, generators, utility cabinets, stairs, and fortifications.',
+      keywords: 'VEIN base building, wells, solar power, generator, water',
+    },
+    detailsHtml: `
+      <article>
+        <header>
+          <p><strong>Fast answer:</strong> build the base in this order: secure shell, Utility Cabinet, water source, power source, appliances, then defenses. Solar panels and generators are useful only after you can connect them to the devices that matter. Wells are valuable only if the build lets you extract or connect water reliably.</p>
+          <p><strong>Version note:</strong> Checked for the current public build on July 14, 2026. Water, wiring, generator, and appliance connections are prompt-driven systems; if a prompt is missing, treat the step as blocked until the build exposes the correct connection action.</p>
+        </header>
+
+        <figure>
+          <img src="/images/guide/vein-base-building-power-water-guide.jpg" alt="VEIN base building water connection guide for wells and washing machines" title="VEIN base building water connection guide" />
+          <figcaption>Water and power are base systems, not decoration. Confirm connections before you expand the footprint.</figcaption>
+        </figure>
+
+        <section>
+          <h2>Wells, water, and utility connections</h2>
+          <h3>Well requirements and built wells</h3>
+          <p>A well is worth building only when three checks pass: terrain accepts placement, materials are available, and the finished object gives a water interaction or connection prompt. If the well is built but you cannot extract water, move closer, test a container from inventory, and check whether the target container accepts fluid transfer.</p>
+          <p>For broader construction context, use the <a href="/vein-wiki/building" class="inline-link">Building wiki</a>. If the base location itself is still undecided, start with the <a href="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">best base location guide</a> before spending heavy materials.</p>
+
+          <h3>Water connection and washing machines</h3>
+          <p>Connect appliances only after the source and appliance both show valid prompts. A washing machine usually needs water plus power; one connection without the other is not a working setup. If a sink, shower, or washing machine does not detect the source, reposition the appliance and test from the connection point instead of the front-use prompt.</p>
+
+          <h3>Powering washing machines</h3>
+          <p>Powering a washing machine follows the same logic as other utility devices: confirm source, storage, connection, and device state. If the panel says the device is unpowered, fix wiring or battery/generator output first. If it says powered but no water, solve water separately.</p>
+
+          <table>
+            <thead>
+              <tr><th>Device</th><th>Needs</th><th>First failure to check</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Well</td><td>Valid placement, materials, water prompt</td><td>No extraction or connection action</td></tr>
+              <tr><td>Washing machine</td><td>Water plus power</td><td>Only one utility connected</td></tr>
+              <tr><td>Sink or shower</td><td>Water source and valid route</td><td>Prompt appears on wrong object side</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Power systems</h2>
+          <h3>Solar panels and batteries</h3>
+          <p>Solar power is the clean base option: quiet, renewable, and better for long-term storage than constant generator noise. Place panels where they are not blocked, connect them to battery storage if the build supports it, then feed priority devices first. Players searching for <strong>solar power battery</strong> or typo variants like <strong>solar power batery</strong> are usually missing the storage step.</p>
+
+          <h3>Big generator and towing generator</h3>
+          <p>A generator solves immediate power but adds fuel logistics and noise risk. Keep it outside your main traffic lane, close enough to connect, and far enough that zombies do not turn the power corner into a choke point. If you find a towable generator unit, use the same hitching discipline from the <a href="/vein-guides/vein-game-vehicle-towing-gas-engine-repair-guide" class="inline-link">vehicle towing guide</a>.</p>
+          <figure>
+            <img src="/images/guide/vein-base-solar-generator-utility-guide.jpg" alt="VEIN solar power generator base utility guide for batteries and fortifications" title="VEIN solar power generator base utility guide" />
+            <figcaption>Keep noisy power and vehicle lanes outside the base core. Your Utility Cabinet and storage should not be the first things hit.</figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h2>Construction and fortifications</h2>
+          <h3>Increasing construction and building parts</h3>
+          <p>Construction should be leveled through useful work: stairs, platforms, storage, repairs, and perimeter pieces that improve the base today. Do not spam random parts unless you are ready to pay upkeep and clear decay later. Check <a href="/vein-wiki/skills" class="inline-link">Skills and Perks</a> before planning a high-tier footprint.</p>
+
+          <h3>Utility cabinets</h3>
+          <p>The Utility Cabinet is the base heart. It handles upkeep, permissions, and decay coverage. Stacking utility cabinets is only useful if your build allows it and their coverage does not create confusion over ownership or material drain. For exact upkeep logic, read the <a href="/vein-guides/vein-utility-cabinet-upkeep-radius-permissions-guide" class="inline-link">Utility Cabinet guide</a>.</p>
+
+          <h3>Defense, fortifications, and signs</h3>
+          <p>Fortifications should protect the path zombies and players actually use: doors, windows, stairs, generator corners, and storage rooms. Upgrade weak points before cosmetic walls. Signs are useful for route labels, storage notes, or multiplayer instructions, but they are not security. For tier planning, use the <a href="/vein-guides/vein-base-fortification-defense-guide" class="inline-link">base fortification guide</a>.</p>
+        </section>
+      </article>
+    `,
+  },
+  {
     id: 27,
     title: 'VEIN Survival Status Guide: Pain, Zombies, Strength, and Exhaustion',
     description:
