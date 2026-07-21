@@ -433,6 +433,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://veingame.net/de/vein-guides/vein-game-radio-tv-media-guide</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://veingame.net/de/vein-guides/vein-game-cure-sickness-medical-guide</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://veingame.net/de/vein-guides/vein-game-vehicle-towing-gas-engine-repair-guide</loc>
     <lastmod>2026-07-14</lastmod>
     <changefreq>monthly</changefreq>
