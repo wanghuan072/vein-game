@@ -1,5 +1,163 @@
 export const guides = [
   {
+    id: 31,
+    title: 'VEIN Radio, TV, and Media Guide',
+    description:
+      'A practical VEIN media guide for radio stations, 93.4 static, TV surround sound, custom radio links, YouTube URLs, and movie playback checks.',
+    imageUrl: '/images/guide/vein-radio-tv-media-guide.jpg',
+    imageAlt: 'VEIN radio TV media guide showing inventory media items and station setup checks.',
+    publishDate: '2026-07-21',
+    addressBar: '/vein-game-radio-tv-media-guide',
+    category: 'Systems',
+    tags: ['Radio', 'TV', 'Media', 'Audio', 'Custom Links'],
+    seo: {
+      title: 'VEIN Radio, TV, and Media Guide',
+      description:
+        'Set up VEIN radio and TV media: tune stations, test 93.4 static, check surround sound, and add YouTube, movie, or custom radio links.',
+      keywords: 'VEIN radio guide, TV guide, 93.4 static, YouTube links',
+    },
+    detailsHtml: `
+      <article>
+        <header>
+          <p><strong>Fast answer:</strong> if VEIN radio or TV output looks broken, separate the problem into four checks: the device has power, the station or URL is valid, the in-game volume is audible, and your system audio is not forcing the wrong speaker layout. Do not troubleshoot 93.4 static like a loot bug; first confirm whether that frequency is meant to carry content in your current build.</p>
+          <p><strong>Version note:</strong> checked against the current public Steam build signal on July 21, 2026. VEIN is an Early Access survival sandbox, so media devices, station lists, and supported external links can change. UI-visible behavior is treated as confirmed; frequency content without a prompt is marked conservatively.</p>
+        </header>
+
+        <figure>
+          <img src="/images/guide/vein-radio-tv-media-guide.jpg" alt="VEIN radio TV media guide for cassette CD phone and custom YouTube links" title="VEIN radio TV media guide for custom YouTube links" />
+          <figcaption>Media troubleshooting starts in the inventory and device UI: confirm the item, input source, and audio path before chasing map-side causes.</figcaption>
+        </figure>
+
+        <section>
+          <h2>Radio stations and static</h2>
+          <h3>Listing and tuning radio stations</h3>
+          <p>Use the radio station list as your truth source. If the UI exposes a station list, select from that list first, then tune manually only when you are testing a specific frequency. For player-added stations, write down the exact stream URL and test it outside the game before blaming VEIN.</p>
+          <p>Radio is not a survival priority on Day 1. Stabilize food, water, storage, and a safe route first; the <a href="/vein-guides/day-1-priorities-guide" class="inline-link">Day 1 priorities guide</a> covers that baseline. Once your base has power and storage, media devices become useful for navigation, ambience, and multiplayer role separation.</p>
+
+          <table>
+            <thead>
+              <tr><th>Radio issue</th><th>Likely check</th><th>What to do</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>No audio</td><td>Device or master volume</td><td>Test another known station, then check in-game and OS output volume</td></tr>
+              <tr><td>Station list empty</td><td>Config or build support</td><td>Restart the device UI and verify whether custom stations are supported in this build</td></tr>
+              <tr><td>Stream fails</td><td>Bad URL or unsupported format</td><td>Open the URL in a browser/player first, then re-enter it exactly</td></tr>
+              <tr><td>Static only</td><td>Frequency has no content</td><td>Try a listed station before assuming a map or save bug</td></tr>
+            </tbody>
+          </table>
+
+          <h3>93.4 broadcast station static</h3>
+          <p>If 93.4 plays static, treat it as an unverified broadcast target unless the station list or current patch notes identify it as active. Static usually means one of three things: the frequency has no assigned broadcast, the station source is unavailable, or your radio is tuned correctly but the content layer is not implemented in the current build.</p>
+          <p>Do not waste batteries, fuel, or a loot run trying to fix one static frequency. Mark 93.4 as <strong>INFERRED</strong> for that save, then test a second device and one known-good station. If both fail, the issue is broader than 93.4.</p>
+        </section>
+
+        <section>
+          <h2>TV and custom media</h2>
+          <h3>Surround sound on in-game TV</h3>
+          <p>For surround sound, test from the outside in: Windows output device, speaker layout, browser/video source, then VEIN's own volume slider. If the TV only outputs front channels, switch to a stereo test first. Once stereo is confirmed, move back to surround. A broken 5.1 path can look like silent TV even when the in-game device is working.</p>
+          <p>Base power still matters. If your TV is inside a built base, connect power planning with the <a href="/vein-guides/vein-game-base-building-power-water-guide" class="inline-link">base building power guide</a>. A working generator path is easier to debug than three unrelated audio assumptions.</p>
+
+          <figure>
+            <img src="/images/guide/vein-custom-media-radio-stations-guide.jpg" alt="VEIN custom media radio station setup guide for powered base device checks" title="VEIN custom media and radio station setup checks" />
+            <figcaption>Put media devices in a controlled base area before testing custom links. Power, safety, and audio output should be stable first.</figcaption>
+          </figure>
+
+          <h3>Adding radio, YouTube, and movie links</h3>
+          <p>Use clean URLs. For YouTube, prefer the normal watch URL. For movie files or streams, avoid private, expiring, login-gated, or region-blocked links. If the game accepts a link but playback fails, test the same link in a normal browser session and then in a fresh save before assuming a device bug.</p>
+          <p>Multiplayer servers add one more layer: the host or dedicated server may control what external media is allowed. If you are configuring shared media for a group, pair this with the <a href="/vein-guides/vein-game-multiplayer-server-guide" class="inline-link">multiplayer server guide</a> so players are not debugging client settings while the server blocks the source.</p>
+        </section>
+
+        <section>
+          <h2>FAQ</h2>
+          <h3>Why does 93.4 only play static?</h3>
+          <p>Most likely: the frequency has no active content in your current build, the source is unavailable, or it is a placeholder. Confirm one listed station first, then test another radio before treating the save as broken.</p>
+
+          <h3>Can I add YouTube links to VEIN TV?</h3>
+          <p>If your build exposes a custom media input, use a standard YouTube watch URL and test it outside the game first. If playback fails, check server permissions, link format, and audio output before changing base wiring.</p>
+        </section>
+      </article>
+    `,
+  },
+  {
+    id: 30,
+    title: 'How to Cure Sickness in VEIN',
+    description:
+      'A direct VEIN medical guide for sickness, zombie bites, giddy effects, hygiene, exertion, the medical screen, and recovery blockers.',
+    imageUrl: '/images/guide/vein-sickness-medical-screen-guide.jpg',
+    imageAlt: 'VEIN sickness medical guide with zombie bite risk and recovery status checks.',
+    publishDate: '2026-07-21',
+    addressBar: '/vein-game-cure-sickness-medical-guide',
+    category: 'Survival',
+    tags: ['Sickness', 'Medical', 'Zombie Bites', 'Giddy Effect', 'Hygiene'],
+    seo: {
+      title: 'VEIN Sickness Cure and Medical Guide',
+      description:
+        'Cure VEIN sickness by reading the medical screen, managing zombie bite risk, cleaning yourself, reducing exertion, and fixing giddy status blockers.',
+      keywords: 'VEIN sickness cure, zombie bite, giddy effect, medical screen',
+    },
+    detailsHtml: `
+      <article>
+        <header>
+          <p><strong>Fast answer:</strong> open the medical/status screen first. In VEIN, sickness recovery is usually blocked by stacked problems: dirty body/clothing, untreated wounds, exertion, thirst, hunger, pain, and possible zombie-bite exposure. Fix the visible blocker, rest in a safe place, then re-check the status screen instead of taking every medicine you own.</p>
+          <p><strong>Version note:</strong> checked against the current public Steam build signal on July 21, 2026. Exact sickness formulas and bite outcomes can move in Early Access. This guide separates UI-confirmed checks from <strong>INFERRED</strong> behavior when the game does not expose a hard value.</p>
+        </header>
+
+        <figure>
+          <img src="/images/guide/vein-sickness-medical-screen-guide.jpg" alt="VEIN sickness cure guide for zombie bite risk medical screen and survival recovery" title="VEIN sickness cure guide and medical screen checks" />
+          <figcaption>Do not treat a zombie hit as one problem. Contact, bleeding, pain, panic, stamina loss, and infection risk can stack into a failed recovery loop.</figcaption>
+        </figure>
+
+        <section>
+          <h2>How sickness and injury work</h2>
+          <h3>Curing sickness</h3>
+          <p>Start with diagnosis. Check the medical/status screen, then solve the most concrete issue first: bleeding, open wounds, dirt, thirst, hunger, exhaustion, and pain. If the UI names a condition, follow that condition's treatment path. If the UI only shows vague sickness, clean up, eat, drink, rest, and monitor whether the value improves over time.</p>
+          <p>Do not burn rare medicine during active combat or while exhausted. Medicine cannot fix a bad route, a dirty character, or a forced zombie trade. If the run started poorly, use the <a href="/vein-guides/day-1-priorities-guide" class="inline-link">Day 1 priorities guide</a> to rebuild the basics before pushing deeper.</p>
+
+          <table>
+            <thead>
+              <tr><th>Status signal</th><th>First action</th><th>Common mistake</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Sick or nauseous</td><td>Check hygiene, food, water, and rest state</td><td>Taking medicine without removing the cause</td></tr>
+              <tr><td>Bleeding/wound</td><td>Bandage or treat from the medical screen</td><td>Running while the wound keeps draining resources</td></tr>
+              <tr><td>Giddy effect</td><td>Stop sprinting, eat/drink if low, and rest safely</td><td>Continuing a heavy loot run until combat starts</td></tr>
+              <tr><td>High exertion</td><td>Drop weight, stop melee chains, recover stamina</td><td>Fighting another zombie while already depleted</td></tr>
+            </tbody>
+          </table>
+
+          <h3>Zombie bites and zombie types</h3>
+          <p>Zombie bites are the medical event you do not gamble with. If a hit is listed as a bite, retreat, clean the wound if the UI allows it, treat bleeding, and watch the status screen over time. If the game does not show infection odds, treat the result as <strong>INFERRED</strong> and play the next hour like the character is compromised.</p>
+          <p>Zombie types matter because different encounters create different recovery loads: fast pressure drains stamina, heavy contact creates pain and wounds, and crowded interiors block clean retreats. For broader combat and bite-risk handling, use the <a href="/vein-guides/vein-game-pain-zombies-survival-guide" class="inline-link">pain and zombie survival guide</a>.</p>
+        </section>
+
+        <section>
+          <h2>Status checks and recovery blockers</h2>
+          <h3>Giddy effect and medical screen</h3>
+          <p>The giddy effect is a warning that your body state is failing, not a cosmetic debuff. Check hunger, thirst, stamina, pain, carried weight, and recent damage. If the medical screen exposes a specific cause, fix that first. If it does not, stabilize the basics and rest until the indicator changes.</p>
+          <p>Use the medical screen after every dangerous fight. A short status check costs less than losing a backpack because you ignored a bleeding or exhaustion chain. If supplies are thin, route toward known stores from the <a href="/vein-guides/vein-map-best-loot-locations-route-guide" class="inline-link">map loot route guide</a> instead of gambling on random houses.</p>
+
+          <figure>
+            <img src="/images/guide/vein-zombie-bite-hygiene-exertion-guide.jpg" alt="VEIN clean yourself hygiene exertion and sickness recovery guide in bathroom" title="VEIN hygiene exertion and sickness recovery checks" />
+            <figcaption>Hygiene and rest are part of recovery. A bathtub, sink, or safe room matters when dirt and exertion are keeping the status screen red.</figcaption>
+          </figure>
+
+          <h3>Cleaning and exertion</h3>
+          <p>Clean yourself when dirt, blood, or hygiene warnings appear. Dirty clothes and dirty skin are easy to ignore because they do not feel as urgent as hunger, but they can keep a weak character in a bad status loop. If a water source or washing setup is available, use it before resting.</p>
+          <p>Exertion is the silent killer. Heavy inventory, sprinting, panic melee, and long hauls all push the same recovery budget. If you are sick, stop hauling. Cache loot, mark the location, and come back with a vehicle or lighter kit. The <a href="/vein-guides/vein-game-vehicle-towing-gas-engine-repair-guide" class="inline-link">vehicle guide</a> helps when sickness starts because you carried too much too far.</p>
+        </section>
+
+        <section>
+          <h2>FAQ</h2>
+          <h3>How do I cure sickness in VEIN?</h3>
+          <p>Read the medical screen, fix visible wounds, clean yourself, reduce exertion, eat, drink, and rest in a safe area. Use medicine only when the UI or symptom pattern supports it; otherwise you may waste supplies while the real blocker remains active.</p>
+
+          <h3>Does a zombie bite always mean death?</h3>
+          <p>Do not assume a hard rule unless your current build shows one. Treat every bite as a serious infection-risk event: retreat, treat the wound, monitor the status screen, and avoid further combat until the condition stabilizes.</p>
+        </section>
+      </article>
+    `,
+  },
+  {
     id: 29,
     title: 'VEIN Vehicle Guide: Towing, Gas Tanks, Engines, Oil, and Car Repair',
     description:
@@ -704,21 +862,21 @@ seo: {
     detailsHtml: `
       <article>
         <header>
-          <p>The <strong>Utility Cabinet (UC)</strong> is the real “core” of your base in <strong>VEIN</strong>. Fortifications are only durable if they stay inside UC coverage and you keep the upkeep loop fed. If you have not already, skim the <a href="/vein-wiki/building" class="inline-link">Building wiki</a> first, then come back here for the practical setup strategy.</p>
+          <p>The <strong>Utility Cabinet (UC)</strong> is the real ?core? of your base in <strong>VEIN</strong>. Fortifications are only durable if they stay inside UC coverage and you keep the upkeep loop fed. If you have not already, skim the <a href="/vein-wiki/building" class="inline-link">Building wiki</a> first, then come back here for the practical setup strategy.</p>
         </header>
 
         <section>
           <h2>I. What the UC Actually Does (and What It Does Not)</h2>
           <ul>
             <li><strong>Prevents decay (within range):</strong> A UC consumes resources on a schedule and repairs built structures inside its coverage.</li>
-            <li><strong>Does not protect what it cannot “see”:</strong> Anything outside your UC radius will still decay over time.</li>
-            <li><strong>Does not replace good fortifications:</strong> You still need proper tiers and defensive layers—review <a href="/vein-wiki/building" class="inline-link">fortification tiers</a> and the general <a href="/vein-wiki/mechanics" class="inline-link">mechanics</a>.</li>
+            <li><strong>Does not protect what it cannot ?see?:</strong> Anything outside your UC radius will still decay over time.</li>
+            <li><strong>Does not replace good fortifications:</strong> You still need proper tiers and defensive layers?review <a href="/vein-wiki/building" class="inline-link">fortification tiers</a> and the general <a href="/vein-wiki/mechanics" class="inline-link">mechanics</a>.</li>
           </ul>
         </section>
 
         <section>
           <h2>II. Coverage-First Base Layout</h2>
-          <p>Many “mystery decay” problems are just coverage problems. Build your base from the inside out:</p>
+          <p>Many ?mystery decay? problems are just coverage problems. Build your base from the inside out:</p>
           <ol>
             <li><strong>Place the UC early:</strong> Put it where you can defend it. In multiplayer, assume enemies will search for it.</li>
             <li><strong>Design your shell around UC coverage:</strong> Keep your most important walls, doors, storage, and workstations inside the bubble.</li>
@@ -729,7 +887,7 @@ seo: {
 
         <section>
           <h2>III. Stocking the Upkeep Loop (Practical Checklist)</h2>
-          <p>Open the UC and look at the required resources list. Then keep a buffer so you do not “go dry” during long looting runs.</p>
+          <p>Open the UC and look at the required resources list. Then keep a buffer so you do not ?go dry? during long looting runs.</p>
           <ul>
             <li><strong>Core building inputs:</strong> Keep spare materials that match your current fortification tier (scrap/fortified/limestone workflows).</li>
             <li><strong>Repair and expansion tooling:</strong> Ensure you have the right <a href="/vein-items/tools" class="inline-link">tools</a> and raw inputs in storage.</li>
@@ -743,7 +901,7 @@ seo: {
         </section>
 
         <div class="pro-tip">
-          <strong>Pro Tip:</strong> Treat the UC like a “coverage anchor.” If you want exterior lighting for defenses, plan power and perimeter fixtures that still keep your critical structures inside UC repair range. For a working outdoor setup, see the <a href="/vein-guides/vein-game-how-to-power-street-light" class="inline-link">street light power guide</a>.
+          <strong>Pro Tip:</strong> Treat the UC like a ?coverage anchor.? If you want exterior lighting for defenses, plan power and perimeter fixtures that still keep your critical structures inside UC repair range. For a working outdoor setup, see the <a href="/vein-guides/vein-game-how-to-power-street-light" class="inline-link">street light power guide</a>.
         </div>
       </article>
     `,
@@ -771,18 +929,18 @@ seo: {
 
         <section>
           <h2>I. Fortifications: Tiers &amp; Placement</h2>
-          <p>Fortified structures are built from the <strong>Construction Menu</strong> (<strong>B</strong>). New fortifications <strong>snap</strong> to existing ones; use the mouse wheel to <strong>swivel</strong> a snapped piece into the angle you need. Blueprints list stat requirements, materials, and <a href="/vein-items/tools" class="inline-link">tools</a>—you must carry everything in your inventory to place them.</p>
+          <p>Fortified structures are built from the <strong>Construction Menu</strong> (<strong>B</strong>). New fortifications <strong>snap</strong> to existing ones; use the mouse wheel to <strong>swivel</strong> a snapped piece into the angle you need. Blueprints list stat requirements, materials, and <a href="/vein-items/tools" class="inline-link">tools</a>?you must carry everything in your inventory to place them.</p>
           <ul>
-            <li><strong>Tier 1 — Wood, Scrap:</strong> Cheap and fast, but breaks easily and can be damaged by almost anything.</li>
-            <li><strong>Tier 2 — Wood, Fortified:</strong> Much stronger than scrap wood; still vulnerable to heavy melee, firearms, and explosions. Requires <strong>Construction skill level 25</strong>. See <a href="/vein-wiki/skills" class="inline-link">Skills &amp; Perks</a> for the full Construction tree (including perks that reduce reinforced wood costs).</li>
-            <li><strong>Tier 3 — Limestone Brick:</strong> Harder to break down; weak to explosives, large-caliber fire, and pickaxes. Requires <strong>Construction skill level 50</strong> and a limestone workflow (concrete paste from limestone powder, then smelting to bricks) as described on the <a href="/vein-wiki/building" class="inline-link">Building</a> page.</li>
+            <li><strong>Tier 1 ? Wood, Scrap:</strong> Cheap and fast, but breaks easily and can be damaged by almost anything.</li>
+            <li><strong>Tier 2 ? Wood, Fortified:</strong> Much stronger than scrap wood; still vulnerable to heavy melee, firearms, and explosions. Requires <strong>Construction skill level 25</strong>. See <a href="/vein-wiki/skills" class="inline-link">Skills &amp; Perks</a> for the full Construction tree (including perks that reduce reinforced wood costs).</li>
+            <li><strong>Tier 3 ? Limestone Brick:</strong> Harder to break down; weak to explosives, large-caliber fire, and pickaxes. Requires <strong>Construction skill level 50</strong> and a limestone workflow (concrete paste from limestone powder, then smelting to bricks) as described on the <a href="/vein-wiki/building" class="inline-link">Building</a> page.</li>
           </ul>
           <p>Before you invest in tiers, pick a defensible footprint using our <a href="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">best base location guide</a> and scout supplies on the <a href="/vein-map" class="inline-link">VEIN map</a>.</p>
         </section>
 
         <section>
           <h2>II. Utility Cabinet &amp; Structural Upkeep</h2>
-          <p>The <strong>Utility Cabinet (UC)</strong> is the center of your base. It automatically <strong>repairs</strong> structures within its range as long as you stock the correct resources. Opening the UC shows required maintenance materials and what you have on hand; it consumes resources on a <strong>60-minute</strong> cycle to prevent decay. Anything <strong>outside</strong> the UC radius—or anything you cannot feed with materials—will decay over time. Multiplayer crews should treat the UC like a vault: placement and access control matter. Full detail lives in <a href="/vein-wiki/building" class="inline-link">Building: Utility Cabinets</a>.</p>
+          <p>The <strong>Utility Cabinet (UC)</strong> is the center of your base. It automatically <strong>repairs</strong> structures within its range as long as you stock the correct resources. Opening the UC shows required maintenance materials and what you have on hand; it consumes resources on a <strong>60-minute</strong> cycle to prevent decay. Anything <strong>outside</strong> the UC radius?or anything you cannot feed with materials?will decay over time. Multiplayer crews should treat the UC like a vault: placement and access control matter. Full detail lives in <a href="/vein-wiki/building" class="inline-link">Building: Utility Cabinets</a>.</p>
           <table>
             <thead>
               <tr>
@@ -804,7 +962,7 @@ seo: {
               </tr>
               <tr>
                 <td>Extra defense</td>
-                <td>Options such as <strong>Fenced Barbed Wire</strong> (see Building → Defense)</td>
+                <td>Options such as <strong>Fenced Barbed Wire</strong> (see Building ? Defense)</td>
                 <td>Support with clear lines of sight and lighting where you actually fight</td>
               </tr>
             </tbody>
@@ -813,7 +971,7 @@ seo: {
 
         <section>
           <h2>III. Lights, Generators &amp; Perimeter</h2>
-          <p>VEIN’s building utilities include <strong>Gas Generators</strong>, <strong>Floodlights</strong>, and other power gear listed under <a href="/vein-wiki/building" class="inline-link">Building → Utilities</a>. Generators are loud and draw attention—place them where you can defend refuel runs, and route power to lights that cover approaches you care about. For wiring outdoor fixtures, our <a href="/vein-guides/vein-game-how-to-power-street-light" class="inline-link">street light power guide</a> walks through a practical lighting setup.</p>
+          <p>VEIN?s building utilities include <strong>Gas Generators</strong>, <strong>Floodlights</strong>, and other power gear listed under <a href="/vein-wiki/building" class="inline-link">Building ? Utilities</a>. Generators are loud and draw attention?place them where you can defend refuel runs, and route power to lights that cover approaches you care about. For wiring outdoor fixtures, our <a href="/vein-guides/vein-game-how-to-power-street-light" class="inline-link">street light power guide</a> walks through a practical lighting setup.</p>
           <p>Need crafting context beyond walls? Browse the <a href="/vein-items/materials" class="inline-link">materials database</a> and the main <a href="/vein-items" class="inline-link">items hub</a> for components that feed workstations and base upgrades.</p>
         </section>
 
@@ -977,13 +1135,13 @@ seo: {
 </h2>
 
 <p>
-  The <strong>Industrial Welder</strong> is arguably the most important tool for the late game. It is required for advanced metal construction, vehicle armor plating, and repairing high-tier equipment. Unlike basic tools that you can craft at a workbench, you cannot craft the Industrial Welder—you must find it in the world. For a complete list of all available tools and their uses, check our <a href="/vein-items/tools" class="inline-link">tools database</a>.
+  The <strong>Industrial Welder</strong> is arguably the most important tool for the late game. It is required for advanced metal construction, vehicle armor plating, and repairing high-tier equipment. Unlike basic tools that you can craft at a workbench, you cannot craft the Industrial Welder?you must find it in the world. For a complete list of all available tools and their uses, check our <a href="/vein-items/tools" class="inline-link">tools database</a>.
 </p>
 
 <ul>
   <li><strong>Best Location:</strong> <strong>Auto Repair Shops</strong> and <strong>Gas Station Garages</strong>. Look on the red tool carts, metal shelves, or workbenches. These locations have the highest spawn rate (approximately 15-20% chance per location).</li>
   <li><strong>Alternative Location:</strong> <strong>Hardware Stores</strong> (look in the back storage rooms and tool aisles) and occasionally in <strong>Fire Stations</strong> (equipment bays).</li>
-  <li><strong>Usage Tip:</strong> The welder requires fuel/power (depending on game version). Make sure you have a gas canister or access to a power source. Some players prefer to set up a dedicated welding station near their base's power grid—see our <a href="/vein-wiki/building" class="inline-link">building system guide</a> for power setup tips.</li>
+  <li><strong>Usage Tip:</strong> The welder requires fuel/power (depending on game version). Make sure you have a gas canister or access to a power source. Some players prefer to set up a dedicated welding station near their base's power grid?see our <a href="/vein-wiki/building" class="inline-link">building system guide</a> for power setup tips.</li>
 </ul>
 
 <img src="/images/guide/guide20-01.webp" alt="Vein game industrial welder" width="50%">
@@ -1013,7 +1171,7 @@ seo: {
 </h2>
 
 <p>
-  Building a metal base requires tons of <strong>Small Scrap Metal Sheets</strong> and <strong>Aluminum Scrap</strong>. Don't waste time looking for them one by one—systematic dismantling is far more efficient than random looting.
+  Building a metal base requires tons of <strong>Small Scrap Metal Sheets</strong> and <strong>Aluminum Scrap</strong>. Don't waste time looking for them one by one?systematic dismantling is far more efficient than random looting.
 </p>
 
 <h3>
@@ -1092,7 +1250,7 @@ seo: {
     addressBar: "/vein-vehicle-guide-repair-hotwire-maintain",
     detailsHtml: `
 <p>
-  In the vast world of <strong>VEIN</strong>, a working vehicle is not just a luxury—it is your mobile base. A truck allows you to transport hundreds of pounds of loot that would otherwise be impossible to carry on foot.
+  In the vast world of <strong>VEIN</strong>, a working vehicle is not just a luxury?it is your mobile base. A truck allows you to transport hundreds of pounds of loot that would otherwise be impossible to carry on foot.
 </p>
 
 <p>
@@ -1350,7 +1508,7 @@ imageUrl: "/images/guide/guide17.webp",
 </p>
 
 <ol>
-  <li><strong>Refill Rate:</strong> Wells fill slowly—approximately <strong>8 oz per in-game hour</strong> (about 190 oz per day).</li>
+  <li><strong>Refill Rate:</strong> Wells fill slowly?approximately <strong>8 oz per in-game hour</strong> (about 190 oz per day).</li>
   <li><strong>Purity:</strong> Groundwater is <strong>Impure</strong>. Drinking directly from the well risks poisoning. Connect the well to a sink for washing, or boil the water first.</li>
   <li><strong>The "Fuse Box" Trick:</strong> Instead of connecting every sink individually to the well, you can connect the <strong>Well to the House Fuse Box</strong>. The Fuse Box acts as a central hub, distributing water to all connected appliances (Sinks, Showers, Washing Machines) in the house automatically.</li>
 </ol>
@@ -1385,7 +1543,7 @@ imageUrl: "/images/guide/guide17.webp",
 <ol>
   <li><strong>Find Panels:</strong> Loot Solar Panels from <strong>Bowen Hill Park</strong> or atop the shared bathrooms at campsites.</li>
   <li><strong>Batteries are Mandatory:</strong> Solar only works during the day. You must craft a <strong>Makeshift Battery</strong> (holds 50,000 Watt-hours) to store power for the night.</li>
-  <li><strong>Connection Chain:</strong> Solar Panel → Battery → Fuse Box → Appliances (Lights/Fridges).</li>
+  <li><strong>Connection Chain:</strong> Solar Panel ? Battery ? Fuse Box ? Appliances (Lights/Fridges).</li>
 </ol>
 
 <p>
@@ -1543,7 +1701,7 @@ seo:{
 </p>
 
 <h3>
-  <strong>🔥 The Campfire Loop</strong>
+  <strong>?? The Campfire Loop</strong>
 </h3>
 
 <p>
@@ -1887,9 +2045,9 @@ If the light works initially but keeps shutting off:
 </p>
 
 <ul>
-<li>Fuel may be running out—check and refuel the generator</li>
+<li>Fuel may be running out?check and refuel the generator</li>
 <li>Generator may be damaged and needs repair</li>
-<li>Power connection might be unstable—reconnect if necessary</li>
+<li>Power connection might be unstable?reconnect if necessary</li>
 </ul>
 
 <h2>
@@ -1923,7 +2081,7 @@ Mastering <strong>vein game how to power street light</strong> is essential for 
 </ol>
 
 <p>
-With proper lighting, you can operate safely at night, improve your base security, and make your survival in the VEIN apocalypse significantly easier. Remember to monitor fuel levels and maintain your generators for continuous operation. Proper lighting is just one aspect of base building—for a complete survival strategy, check out our guides on finding the <a href="/vein-guides/vein-best-base-location-survival-guide" rel="noopener noreferrer">best base locations</a> and discovering the <a href="/vein-guides/vein-best-loot-locations" rel="noopener noreferrer">best loot spots</a> to supply your operations.
+With proper lighting, you can operate safely at night, improve your base security, and make your survival in the VEIN apocalypse significantly easier. Remember to monitor fuel levels and maintain your generators for continuous operation. Proper lighting is just one aspect of base building?for a complete survival strategy, check out our guides on finding the <a href="/vein-guides/vein-best-base-location-survival-guide" rel="noopener noreferrer">best base locations</a> and discovering the <a href="/vein-guides/vein-best-loot-locations" rel="noopener noreferrer">best loot spots</a> to supply your operations.
 </p>
 
 <p>
@@ -1987,7 +2145,7 @@ The primary reason survivors seek out the <strong>vein game military base</stron
 </p>
 
 <h3>
-<strong>🔫 Rare Weapon Spawns</strong>
+<strong>?? Rare Weapon Spawns</strong>
 </h3>
 
 <ol>
@@ -2167,7 +2325,7 @@ If you are lucky enough to loot a fresh jar of Smooth Peanut Butter, don't just 
 </p>
 
 <h3>
-<strong>🍫 1. Chocolate Fondue</strong>
+<strong>?? 1. Chocolate Fondue</strong>
 </h3>
 
 <p>
@@ -2182,7 +2340,7 @@ A luxury dessert in the apocalypse. This dish significantly boosts your characte
 </p>
 
 <h3>
-<strong>🥪 2. Grilled PBJ (Peanut Butter &amp; Jelly)</strong>
+<strong>?? 2. Grilled PBJ (Peanut Butter &amp; Jelly)</strong>
 </h3>
 
 <p>
@@ -2296,10 +2454,10 @@ category: 'Crafting',
 <h2><strong>Where to Find the Improved Pickaxe? (Best Locations)</strong></h2>
 <p>While you can craft tools later in the game, finding your first <strong>vein game improved pickaxe</strong> is much faster. Based on our exploration, here are the top 2 locations with fixed spawn chances:</p>
 <p><img src="/images/guide/guide12-02.webp" alt="vein game improved pickaxe  Location" width="50%" style="width: 50%;"></p>
-<h3><strong>📍 1. The Abandoned Mine (Best Spot)</strong></h3>
+<h3><strong>?? 1. The Abandoned Mine (Best Spot)</strong></h3>
 <p><strong>Loot Count:</strong><span> Up to 2 Pickaxes</span></p>
 <p><span>Located at the foot of the mountains, the Abandoned Mine is a goldmine for tools. Search the entrance area and the wooden support beams. It is common to find </span><strong>two improved pickaxes</strong><span> spawning here.</span></p>
-<h3><strong>📍 2. Mass Dump Site AI</strong></h3>
+<h3><strong>?? 2. Mass Dump Site AI</strong></h3>
 <p><strong>Loot Count:</strong><span> 1 Pickaxe</span></p>
 <p><span>Check the industrial shelves and work areas at the Mass Dump Site. This location usually guarantees at least one spawn, making it a great backup if the mine is empty.</span></p>
 <h2><strong>Why Is It Better? (Key Features)</strong></h2>
@@ -2410,7 +2568,7 @@ seo: {
         These resources aren't found in typical houses or gas stations. You need to go underground.
     </p>
     <p>
-        This guide will show you everything you need to know about the <strong>VEIN game Rook Cavern</strong>—the most critical mining location for mid-to-late game survival.
+        This guide will show you everything you need to know about the <strong>VEIN game Rook Cavern</strong>?the most critical mining location for mid-to-late game survival.
     </p>
     <h2>
         <strong>Where is the Rook Cavern Located?</strong>
@@ -2787,7 +2945,7 @@ seo: {
 
 <h2><strong>Summary</strong></h2>
 
-<p>In <em>VEIN</em>, there is no absolutely perfect spot, only the choice that best fits your playstyle. If you prefer a quiet life of farming and fishing, <strong>Werrenrath Island</strong> is undoubtedly the <strong>VEIN best base location</strong>. If you crave combat and industrial production, a commercial building in town might suit you better. Grab your axe, start your van, and go build your own apocalypse fortress. If you're just starting out, make sure to check our <a href="/vein-guides/day-1-priorities-guide" class="inline-link">Day 1 priorities guide</a> to understand what resources you need. Understanding base mechanics is crucial—learn more in the <a href="/vein-wiki/mechanics" class="inline-link">mechanics wiki</a>.</p>
+<p>In <em>VEIN</em>, there is no absolutely perfect spot, only the choice that best fits your playstyle. If you prefer a quiet life of farming and fishing, <strong>Werrenrath Island</strong> is undoubtedly the <strong>VEIN best base location</strong>. If you crave combat and industrial production, a commercial building in town might suit you better. Grab your axe, start your van, and go build your own apocalypse fortress. If you're just starting out, make sure to check our <a href="/vein-guides/day-1-priorities-guide" class="inline-link">Day 1 priorities guide</a> to understand what resources you need. Understanding base mechanics is crucial?learn more in the <a href="/vein-wiki/mechanics" class="inline-link">mechanics wiki</a>.</p>
 
     `,
     },
@@ -2808,7 +2966,7 @@ seo: {
         },
         addressBar: "/vein-best-loot-locations",
         detailsHtml: `
-    <p>In the hardcore survival simulation game <em>VEIN</em>, your lifespan is directly tied to your inventory. Whether you need to repair a vehicle, build a base, or simply survive the next wave of the undead, knowing where to find resources is critical. This guide dives deep into the <strong>VEIN best loot locations</strong>, highlighting the key areas that will take you from barely surviving to thriving. To maximize your loot capacity, make sure you have the <a href="/vein-guides/vein-game-best-backpack" class="inline-link">best backpack</a>. After gathering materials, you'll need somewhere safe to store them—check our <a href="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">best base location guide</a>. For late-game metals like Hematite and Graphite, route a trip to the <a href="/vein-guides/vein-game-rook-cavern-guide" class="inline-link">Rook Cavern mining guide</a>.</p>
+    <p>In the hardcore survival simulation game <em>VEIN</em>, your lifespan is directly tied to your inventory. Whether you need to repair a vehicle, build a base, or simply survive the next wave of the undead, knowing where to find resources is critical. This guide dives deep into the <strong>VEIN best loot locations</strong>, highlighting the key areas that will take you from barely surviving to thriving. To maximize your loot capacity, make sure you have the <a href="/vein-guides/vein-game-best-backpack" class="inline-link">best backpack</a>. After gathering materials, you'll need somewhere safe to store them?check our <a href="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">best base location guide</a>. For late-game metals like Hematite and Graphite, route a trip to the <a href="/vein-guides/vein-game-rook-cavern-guide" class="inline-link">Rook Cavern mining guide</a>.</p>
 
 <p><img src="/images/guide/guide07-01.webp" alt="vein best loot locations " width="50%" style="width: 50%;"></p>
 
@@ -2843,7 +3001,7 @@ seo: {
 
 <li><strong>Soil:</strong> High-quality soil bags (look for the <strong>Weaver Solutions</strong> brand) are essential for efficient crop growth.</li>
 
-<li><strong>Large Planter Boxes:</strong> The game features large wooden planter boxes. Using the game’s heavy lifting mechanic (grabbing with both hands), you can drag these boxes into your van and take them back to base, allowing you to start a farm indoors or on a safe rooftop.</li>
+<li><strong>Large Planter Boxes:</strong> The game features large wooden planter boxes. Using the game?s heavy lifting mechanic (grabbing with both hands), you can drag these boxes into your van and take them back to base, allowing you to start a farm indoors or on a safe rooftop.</li>
 </ol>
 
 <h2><strong>3. Fire Stations</strong></h2>
@@ -2880,7 +3038,7 @@ seo: {
 
 <h2><strong>Summary</strong></h2>
 
-<p>To survive in <em>VEIN</em>, planning your route is key. Your priority should be securing a vehicle with high cargo capacity (like a van), and then heading straight for <strong>Frank's Hardware Emporium</strong>. Once you secure an Industrial Welder and a Machete, you turn from prey into hunter. Remember, being greedy is good—but only if you have enough trunk space to haul it all home. For detailed information on all items you can find, visit our <a href="/vein-items" class="inline-link">items database</a>. To learn how to build a secure base with your gathered materials, see the <a href="/vein-wiki/building" class="inline-link">building system wiki</a>.</p>
+<p>To survive in <em>VEIN</em>, planning your route is key. Your priority should be securing a vehicle with high cargo capacity (like a van), and then heading straight for <strong>Frank's Hardware Emporium</strong>. Once you secure an Industrial Welder and a Machete, you turn from prey into hunter. Remember, being greedy is good?but only if you have enough trunk space to haul it all home. For detailed information on all items you can find, visit our <a href="/vein-items" class="inline-link">items database</a>. To learn how to build a secure base with your gathered materials, see the <a href="/vein-wiki/building" class="inline-link">building system wiki</a>.</p>
 
     `,
     },
@@ -2901,9 +3059,9 @@ seo: {
         },
         addressBar: "/ultimate-world-settings-guide",
         detailsHtml: `
-    <p>VEIN (commonly referred to as Vein), a multiplayer open-world zombie survival sandbox game developed by Ramjet Studios, has gained a large following with its high degree of freedom and hardcore survival experience. Many new players are overwhelmed by the numerous settings when creating a new world—Which settings affect survival difficulty? How to adjust them to suit new players? This VEIN new player guide (exclusively released on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>, your dedicated VEIN Wiki and strategy guide site) focuses on core setting tips for Day 1, helping you avoid fatal mistakes and lay a solid foundation for survival!</p>
+    <p>VEIN (commonly referred to as Vein), a multiplayer open-world zombie survival sandbox game developed by Ramjet Studios, has gained a large following with its high degree of freedom and hardcore survival experience. Many new players are overwhelmed by the numerous settings when creating a new world?Which settings affect survival difficulty? How to adjust them to suit new players? This VEIN new player guide (exclusively released on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>, your dedicated VEIN Wiki and strategy guide site) focuses on core setting tips for Day 1, helping you avoid fatal mistakes and lay a solid foundation for survival!</p>
 
-<p>Whether you're starting solo or co-op, the settings when creating a new game directly determine your subsequent survival experience. The system offers two options: "Preset Settings" and "Custom Settings". If new players are unsure about the adjustments initially, they can use presets as a starting point. If you find any inappropriate settings during gameplay, you can modify them through the admin menu—no need to panic! For more information on <a href="/vein-wiki/controls" class="inline-link">controls and keybindings</a>, check out our comprehensive guide.</p>
+<p>Whether you're starting solo or co-op, the settings when creating a new game directly determine your subsequent survival experience. The system offers two options: "Preset Settings" and "Custom Settings". If new players are unsure about the adjustments initially, they can use presets as a starting point. If you find any inappropriate settings during gameplay, you can modify them through the admin menu?no need to panic! For more information on <a href="/vein-wiki/controls" class="inline-link">controls and keybindings</a>, check out our comprehensive guide.</p>
 
 <p>
 <img src="/images/guide/guide01-01.webp" alt="VEIN Setting 1" width="50%" style="width: 50%;">
@@ -2918,7 +3076,7 @@ seo: {
 <li><strong>New Player Preset:</strong> Reduces zombie density, extends zombie alert range trigger distance, delays key resource point lockdown time, and increases basic material drop rate.</li>
 </ol>
 
-<p>While presets are convenient, if you want a more tailored gaming experience, these 6 custom settings deserve your focus—turning them on or off directly determines whether you have a "relaxed exploration" or "hardcore survival" experience!</p>
+<p>While presets are convenient, if you want a more tailored gaming experience, these 6 custom settings deserve your focus?turning them on or off directly determines whether you have a "relaxed exploration" or "hardcore survival" experience!</p>
 
 <h2><strong>New Players Must-Know: Detailed Explanation of 6 Key Custom Settings</strong></h2>
 
@@ -2926,45 +3084,45 @@ seo: {
 
 <p>This feature is disabled by default even in the highest difficulty preset, which is a real shame! When enabled, it means "once you die, the current world is permanently lost and you cannot respawn to continue playing".</p>
 
-<p>✅ <strong>Recommended for:</strong> Hardcore gamers who pursue extreme survival immersion and can carefully plan every move;</p>
+<p>? <strong>Recommended for:</strong> Hardcore gamers who pursue extreme survival immersion and can carefully plan every move;</p>
 
-<p>❌ <strong>New Player Advice:</strong> Keep it disabled for now! New players are unfamiliar with the map and zombie behaviors in the early stages, and frequent deaths will greatly dampen motivation. Try enabling it after mastering basic survival logic.</p>
+<p>? <strong>New Player Advice:</strong> Keep it disabled for now! New players are unfamiliar with the map and zombie behaviors in the early stages, and frequent deaths will greatly dampen motivation. Try enabling it after mastering basic survival logic.</p>
 
 <h3><strong>2. Iron Man: A Tool to Prevent "Save Scumming"</strong></h3>
 
 <p>If you're worried about ruining the gaming experience by succumbing to the urge to "save scum with multiple lives", be sure to enable this feature! When activated, it locks the save mechanism. Used in conjunction with the "One Life" mode, it maximizes the authentic survival essence of VEIN.</p>
 
-<p>✅ <strong>General Advice:</strong> Whether you're a new player or a veteran, it's recommended to enable this if you want to seriously experience the survival gameplay. If you just want to "wander around and collect materials", you can disable it for flexible saving.</p>
+<p>? <strong>General Advice:</strong> Whether you're a new player or a veteran, it's recommended to enable this if you want to seriously experience the survival gameplay. If you just want to "wander around and collect materials", you can disable it for flexible saving.</p>
 
 <h3><strong>3. Building Damage: Forces You to Strengthen Defense</strong></h3>
 
-<p>This setting is directly related to your "base security"! When enabled, zombies will actively attack your structures. Low-level fortifications (such as wooden fences) are easily destroyed, and it also forces you to "not leave valuable crates on open streets"—after all, zombies may smash the crates and steal supplies.</p>
+<p>This setting is directly related to your "base security"! When enabled, zombies will actively attack your structures. Low-level fortifications (such as wooden fences) are easily destroyed, and it also forces you to "not leave valuable crates on open streets"?after all, zombies may smash the crates and steal supplies.</p>
 
-<p>✅ <strong>Must-Enable Reason:</strong> Even new players are advised to enable this! You may need to spend more time upgrading to level 2 fortifications (such as stone walls) in the early stages, but it helps you develop the habit of "valuing base defense" in advance, avoiding the tragedy of your base being overrun by zombies in one wave later on.</p>
+<p>? <strong>Must-Enable Reason:</strong> Even new players are advised to enable this! You may need to spend more time upgrading to level 2 fortifications (such as stone walls) in the early stages, but it helps you develop the habit of "valuing base defense" in advance, avoiding the tragedy of your base being overrun by zombies in one wave later on.</p>
 
 <h3><strong>4. Building Upkeep: Key to Controlling Excessive Supplies</strong></h3>
 
 <p>When enabled, your base will "consume materials regularly" (such as wood and metal) to maintain structural stability. This means you can't "hoard a batch of supplies and laze around"; you must continuously scavenge for resources.</p>
 
-<p>✅ <strong>Core Advice:</strong> Must enable in Survival Mode! Even in VEIN's highest difficulty preset, loot drops are actually quite generous. Enabling upkeep prevents "excessive supplies from eliminating survival pressure" and makes scavenging and resource management more meaningful. If you're a "casual builder", you can disable it to focus on base construction.</p>
+<p>? <strong>Core Advice:</strong> Must enable in Survival Mode! Even in VEIN's highest difficulty preset, loot drops are actually quite generous. Enabling upkeep prevents "excessive supplies from eliminating survival pressure" and makes scavenging and resource management more meaningful. If you're a "casual builder", you can disable it to focus on base construction.</p>
 
 <h3><strong>5. Loot/Item/Furniture Respawn: Definitely Disable in Survival Mode</strong></h3>
 
 <p>This setting determines whether "already scavenged areas will respawn materials". It's more suitable for multiplayer co-op (where consumption is high and continuous supply is needed) or "casual explorers" (who collect all items slowly), but it should definitely be disabled in Survival Mode!</p>
 
-<p>❌ <strong>Disable Reason:</strong> The core of survival is "resource planning". With respawn disabled, you need to carefully remember which areas have key supplies to avoid unnecessary backtracking, and it also enhances the sense of accomplishment when "finding rare materials".</p>
+<p>? <strong>Disable Reason:</strong> The core of survival is "resource planning". With respawn disabled, you need to carefully remember which areas have key supplies to avoid unnecessary backtracking, and it also enhances the sense of accomplishment when "finding rare materials".</p>
 
 <h3><strong>6. Headshots Only: New Players Absolutely Should Not Enable!</strong></h3>
 
-<p>When enabled, zombies can only be killed by headshots—attacks to other body parts only cause knockback, which significantly increases the difficulty! New players have poor aim in the early stages and can easily be trapped when facing groups of zombies.</p>
+<p>When enabled, zombies can only be killed by headshots?attacks to other body parts only cause knockback, which significantly increases the difficulty! New players have poor aim in the early stages and can easily be trapped when facing groups of zombies.</p>
 
-<p>✅ <strong>Advanced Advice:</strong> Enable this to challenge higher difficulty only after mastering basic skills such as "flanking and positioning" and being able to stably land headshots. New players must keep it disabled and first gain combat experience by attacking the body.</p>
+<p>? <strong>Advanced Advice:</strong> Enable this to challenge higher difficulty only after mastering basic skills such as "flanking and positioning" and being able to stably land headshots. New players must keep it disabled and first gain combat experience by attacking the body.</p>
 
 <h3><strong>7. Climbing Zombies: A Choice Balancing Realism and Difficulty</strong></h3>
 
 <p>This setting is a bit of a "double-edged sword": when enabled, zombies can climb low fences, forcing you to build "two-stage fences" (doubling the cost); when disabled, zombies will take a long detour even for low walls, which is quite unrealistic.</p>
 
-<p>✅ <strong>New Player Compromise:</strong> Enable it! Although the early construction cost is higher, it helps you familiarize yourself with the logic of "multi-layered defense" in advance, making you more calm when facing large-scale zombie sieges later.</p>
+<p>? <strong>New Player Compromise:</strong> Enable it! Although the early construction cost is higher, it helps you familiarize yourself with the logic of "multi-layered defense" in advance, making you more calm when facing large-scale zombie sieges later.</p>
 
 <p>
 <img src="/images/guide/guide01-02.webp" alt="VEIN SETTING 2" width="50%" style="width: 50%;">
@@ -2972,7 +3130,7 @@ seo: {
 
 <h2><strong>Final Summary: New Player-Friendly Setting Combination</strong></h2>
 
-<p>To help everyone experience the fun of survival without being discouraged, <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a> has compiled a "new player-friendly setting combination"—you can directly follow this setup:</p>
+<p>To help everyone experience the fun of survival without being discouraged, <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a> has compiled a "new player-friendly setting combination"?you can directly follow this setup:</p>
 
 <ol>
 <li><strong>Must Enable:</strong> Iron Man, Building Damage, Building Upkeep;</li>
@@ -2980,7 +3138,7 @@ seo: {
 <li><strong>Optional:</strong> Climbing Zombies (Recommended to Enable).</li>
 </ol>
 
-<p><strong>Tip:</strong> You can adjust the above settings according to your skill level. For example, if you find the difficulty too low, you can gradually enable "Headshots Only"; if you frequently die due to base destruction, you can temporarily disable "Building Upkeep" for a transition. Once you've configured your world settings, the next crucial step is <a href="/vein-guides/day-1-Skill-Selection-Ultimate-Guide" class="inline-link">skill selection</a>. For a deeper understanding of how these settings affect gameplay, explore our <a href="/vein-wiki/mechanics" class="inline-link">game mechanics</a> guide. <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a> will also update VEIN New Player Guide Part 2—"Day 1 Scavenging Route + Core Material List" soon. Follow us for the latest strategies!</p>
+<p><strong>Tip:</strong> You can adjust the above settings according to your skill level. For example, if you find the difficulty too low, you can gradually enable "Headshots Only"; if you frequently die due to base destruction, you can temporarily disable "Building Upkeep" for a transition. Once you've configured your world settings, the next crucial step is <a href="/vein-guides/day-1-Skill-Selection-Ultimate-Guide" class="inline-link">skill selection</a>. For a deeper understanding of how these settings affect gameplay, explore our <a href="/vein-wiki/mechanics" class="inline-link">game mechanics</a> guide. <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a> will also update VEIN New Player Guide Part 2?"Day 1 Scavenging Route + Core Material List" soon. Follow us for the latest strategies!</p>
 
     `,
     },
@@ -3001,60 +3159,60 @@ seo: {
         },
         addressBar: "/day-1-Skill-Selection-Ultimate-Guide",
         detailsHtml: `
-    <p>After sorting out the <a href="/vein-guides/ultimate-world-settings-guide" class="inline-link">world settings</a> in the first part of the VEIN new player guide (exclusively on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>, your go-to VEIN Wiki and strategy hub), the next crucial step for Day 1 survival is character creation and skill selection. Many new players get stuck here—Should I prioritize appearance or skills? Does occupation matter? Which skills can directly boost my early survival rate? This guide will cut through the clutter, focusing on the most valuable skills for Day 1 and practical matching strategies to help you start strong!</p>
-<p>First, let’s clarify the basics of VEIN’s skill system: You can customize your character’s appearance freely, but skill and occupation choices require careful consideration. Your occupation determines your starting equipment, but honestly, this is barely worth focusing on—you’ll always get basic weapons early on, and loot will keep dropping as you scavenge. The real game-changer is skills.</p>
+    <p>After sorting out the <a href="/vein-guides/ultimate-world-settings-guide" class="inline-link">world settings</a> in the first part of the VEIN new player guide (exclusively on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>, your go-to VEIN Wiki and strategy hub), the next crucial step for Day 1 survival is character creation and skill selection. Many new players get stuck here?Should I prioritize appearance or skills? Does occupation matter? Which skills can directly boost my early survival rate? This guide will cut through the clutter, focusing on the most valuable skills for Day 1 and practical matching strategies to help you start strong!</p>
+<p>First, let?s clarify the basics of VEIN?s skill system: You can customize your character?s appearance freely, but skill and occupation choices require careful consideration. Your occupation determines your starting equipment, but honestly, this is barely worth focusing on?you?ll always get basic weapons early on, and loot will keep dropping as you scavenge. The real game-changer is skills.</p>
 <p><img src="/images/guide/guide02-01.webp" alt="Vein skills" width="50%" style="width: 50%;"></p>
 
 <h2><strong>Vein Skill System Basics You Must Know</strong></h2>
 <p>Before diving into specific skills, master these core rules to avoid wrong investments:</p>
 <ol>
   <li><strong>Skill Quota:</strong> You can choose 3 regular skills, each maxing out at 25 points. Plus 1 occupation-specific skill, also capped at 25 points. This means you can either spread points across 4 different skills or focus on 3 skills (with one getting extra points from the occupation slot for higher power).</li>
-  <li><strong>Upgrade Difficulty:</strong> Skills vary drastically in how hard they are to level up. Some can be boosted quickly through daily actions, while others take dozens of hours—choosing the right ones early saves you tons of trouble later.</li>
+  <li><strong>Upgrade Difficulty:</strong> Skills vary drastically in how hard they are to level up. Some can be boosted quickly through daily actions, while others take dozens of hours?choosing the right ones early saves you tons of trouble later.</li>
   <li><strong>Occupation Skill Bonus:</strong> Certain skills have synergy with specific occupations. For example, the Thief occupation boosts Lockpicking, which is a game-changer for early looting.</li>
 </ol>
-<p>We won’t cover every skill—only the ones that deliver immediate value on Day 1. These skills directly affect your ability to scavenge, survive, and build a safe base.</p>
+<p>We won?t cover every skill?only the ones that deliver immediate value on Day 1. These skills directly affect your ability to scavenge, survive, and build a safe base.</p>
 
 <h2><strong>Day 1 Essential Skills: Prioritize These First</strong></h2>
 
 <h3><strong>1. Lockpicking (Must-Have for Early Looting)</strong></h3>
-<p><strong>Occupation Synergy:</strong> Choose the Thief occupation—this gives a 15-point bonus to Lockpicking, letting you hit 25 (max regular skill) + 15 (occupation) = 40 points immediately. You’ll also get a starting lockpick, so you can start looting right away.</p>
-<p><strong>Why It’s Non-Negotiable:</strong> Lockpicking is the most valuable early skill. Without it, containers and doors with a difficulty level of 25 or higher will be inaccessible for hours (if not days) because Lockpicking levels up extremely slowly. With the Thief bonus, you can break into high-value locations on Day 1—think weapon caches, tool sheds, and supply crates that hold the gear you need to survive the first night.</p>
-<p><strong>Pro Tip:</strong> Only skip Lockpicking if you’re intentionally looking for a harder challenge. Even hardcore players often pick it because the early loot advantage is too big to pass up.</p>
+<p><strong>Occupation Synergy:</strong> Choose the Thief occupation?this gives a 15-point bonus to Lockpicking, letting you hit 25 (max regular skill) + 15 (occupation) = 40 points immediately. You?ll also get a starting lockpick, so you can start looting right away.</p>
+<p><strong>Why It?s Non-Negotiable:</strong> Lockpicking is the most valuable early skill. Without it, containers and doors with a difficulty level of 25 or higher will be inaccessible for hours (if not days) because Lockpicking levels up extremely slowly. With the Thief bonus, you can break into high-value locations on Day 1?think weapon caches, tool sheds, and supply crates that hold the gear you need to survive the first night.</p>
+<p><strong>Pro Tip:</strong> Only skip Lockpicking if you?re intentionally looking for a harder challenge. Even hardcore players often pick it because the early loot advantage is too big to pass up.</p>
 
 <h3><strong>2. Stealth (Game-Changer for High Difficulty)</strong></h3>
-<p><strong>Key Advantage:</strong> Stealth levels up incredibly slowly, but its early passive bonus is worth it—even a single point unlocks a 50% reduction in zombie detection radius. This means you can sneak past hordes to reach loot spots, avoid unnecessary fights, and escape danger when you’re low on health or ammo.</p>
-<p><strong>Day 1 Strategy:</strong> Invest 10-15 points here (save the rest for other skills). You don’t need max points early—focus on getting that 50% detection bonus first. As you play, you’ll level it up gradually by sneaking past zombies or taking stealthy kills (use a melee weapon to avoid noise).</p>
+<p><strong>Key Advantage:</strong> Stealth levels up incredibly slowly, but its early passive bonus is worth it?even a single point unlocks a 50% reduction in zombie detection radius. This means you can sneak past hordes to reach loot spots, avoid unnecessary fights, and escape danger when you?re low on health or ammo.</p>
+<p><strong>Day 1 Strategy:</strong> Invest 10-15 points here (save the rest for other skills). You don?t need max points early?focus on getting that 50% detection bonus first. As you play, you?ll level it up gradually by sneaking past zombies or taking stealthy kills (use a melee weapon to avoid noise).</p>
 
 <h3><strong>3. Electricity (Critical for Base &amp; Vehicles)</strong></h3>
-<p><strong>Upgrade Trait:</strong> Easy to level up early, hard to progress later. This makes it perfect for Day 1 investment—you can hit level 15-20 quickly through simple actions.</p>
-<p><strong>Day 1 Value:</strong> Early on, Electricity lets you hotwire vehicles (a huge mobility boost—no more running from hordes!) and craft basic electrical tools. Long-term, it’s required for advanced base builds like generators, security lights, and automated defenses. Invest 10-15 points here on Day 1 to unlock hotwiring and basic crafting.</p>
+<p><strong>Upgrade Trait:</strong> Easy to level up early, hard to progress later. This makes it perfect for Day 1 investment?you can hit level 15-20 quickly through simple actions.</p>
+<p><strong>Day 1 Value:</strong> Early on, Electricity lets you hotwire vehicles (a huge mobility boost?no more running from hordes!) and craft basic electrical tools. Long-term, it?s required for advanced base builds like generators, security lights, and automated defenses. Invest 10-15 points here on Day 1 to unlock hotwiring and basic crafting.</p>
 
 <h2><strong>4. Honorable Mentions: Useful but Not Urgent</strong></h2>
-<p>These skills are valuable but can wait if you’re short on points. Prioritize them once you’ve covered the three above:</p>
+<p>These skills are valuable but can wait if you?re short on points. Prioritize them once you?ve covered the three above:</p>
 <ol>
-  <li><strong>Cooking:</strong> Medium upgrade difficulty. Unlocks better recipes that restore more health and stamina, but you can survive on fried meat with a pan even without it. Invest 5-10 points if you have extra, but don’t prioritize it over Lockpicking or Stealth.</li>
+  <li><strong>Cooking:</strong> Medium upgrade difficulty. Unlocks better recipes that restore more health and stamina, but you can survive on fried meat with a pan even without it. Invest 5-10 points if you have extra, but don?t prioritize it over Lockpicking or Stealth.</li>
   <li><strong>Agriculture:</strong> Hard to level up (farming alone gives little XP), but useful if you want to boost Construction indirectly. Some advanced buildings require both Agriculture and Construction, so pick 5 points early if you plan to build a self-sustaining base later.</li>
-  <li><strong>Strength (Stat Bonus):</strong> Not a skill, but a stat worth investing in—25 points immediately increases your carry weight. This is a lifesaver on Day 1 when you’re scavenging tons of loot (tools, weapons, food) and don’t want to make multiple trips.</li>
+  <li><strong>Strength (Stat Bonus):</strong> Not a skill, but a stat worth investing in?25 points immediately increases your carry weight. This is a lifesaver on Day 1 when you?re scavenging tons of loot (tools, weapons, food) and don?t want to make multiple trips.</li>
 </ol>
 
-<h2><strong>Day 1 Skill Build: New Player-Proof Combo（vein best starting skills）</strong></h2>
-<p>Based on the above analysis, <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a> recommends this foolproof build for Day 1—balances looting, survival, and future progression:</p>
+<h2><strong>Day 1 Skill Build: New Player-Proof Combo?vein best starting skills?</strong></h2>
+<p>Based on the above analysis, <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a> recommends this foolproof build for Day 1?balances looting, survival, and future progression:</p>
 <ol>
   <li><strong>Occupation:</strong> Thief (grants 15 Lockpicking bonus + starting lockpick)</li>
-  <li><strong>Regular Skill 1:</strong> Lockpicking (25 points) → Total: 40 points (unlocks all early/mid difficulty locks)</li>
-  <li><strong>Regular Skill 2:</strong> Stealth (15 points) → Unlocks 50% detection reduction (avoids hordes)</li>
-  <li><strong>Regular Skill 3:</strong> Electricity (10 points) → Unlocks hotwiring (vehicles!) and basic electrical crafts</li>
+  <li><strong>Regular Skill 1:</strong> Lockpicking (25 points) ? Total: 40 points (unlocks all early/mid difficulty locks)</li>
+  <li><strong>Regular Skill 2:</strong> Stealth (15 points) ? Unlocks 50% detection reduction (avoids hordes)</li>
+  <li><strong>Regular Skill 3:</strong> Electricity (10 points) ? Unlocks hotwiring (vehicles!) and basic electrical crafts</li>
 </ol>
-<p><strong>Alternative for Hardcore Players:</strong> Swap 5 points from Electricity to Strength (25 points total) for extra carry weight. You’ll delay hotwiring by a bit, but you can carry more loot per scavenge trip.</p>
+<p><strong>Alternative for Hardcore Players:</strong> Swap 5 points from Electricity to Strength (25 points total) for extra carry weight. You?ll delay hotwiring by a bit, but you can carry more loot per scavenge trip.</p>
 
 <h2><strong>Common Skill Mistakes to Avoid on Day 1</strong></h2>
 <ol>
-  <li><strong>Maxing Construction Early:</strong> High-level Construction lets you build level 2 fortifications, but you’ll lack the materials (stone, metal) on Day 1. Invest 5 points at most—save the rest for later.</li>
+  <li><strong>Maxing Construction Early:</strong> High-level Construction lets you build level 2 fortifications, but you?ll lack the materials (stone, metal) on Day 1. Invest 5 points at most?save the rest for later.</li>
   <li><strong>Ignoring Stealth Because It Levels Slow:</strong> The 50% detection bonus is too valuable to skip. Even 10 points are better than 0.</li>
-  <li><strong>Wasting Points on Combat Skills:</strong> Melee and Ranged skills level up quickly through fighting. You don’t need to invest initial points—you’ll level them naturally as you defend yourself.</li>
+  <li><strong>Wasting Points on Combat Skills:</strong> Melee and Ranged skills level up quickly through fighting. You don?t need to invest initial points?you?ll level them naturally as you defend yourself.</li>
 </ol>
 
-<p><strong>Tip:</strong> Skill choices aren't permanent—you can respec later (though it costs rare materials). Focus on Day 1 survival first, then adjust for long-term goals (like base building or PvP) once you're settled. After selecting your skills, the next step is choosing your <a href="/vein-guides/day-1-occupation-selection-guide" class="inline-link">occupation</a>. For a complete reference on all available skills and their perks, check our <a href="/vein-wiki/skills" class="inline-link">skills and perks wiki</a>. Next up on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>: VEIN New Player Guide Part 3—"Day 1 Scavenging Route: Top 5 Loot Spots to Avoid Hordes". Stay tuned!</p>
+<p><strong>Tip:</strong> Skill choices aren't permanent?you can respec later (though it costs rare materials). Focus on Day 1 survival first, then adjust for long-term goals (like base building or PvP) once you're settled. After selecting your skills, the next step is choosing your <a href="/vein-guides/day-1-occupation-selection-guide" class="inline-link">occupation</a>. For a complete reference on all available skills and their perks, check our <a href="/vein-wiki/skills" class="inline-link">skills and perks wiki</a>. Next up on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>: VEIN New Player Guide Part 3?"Day 1 Scavenging Route: Top 5 Loot Spots to Avoid Hordes". Stay tuned!</p>
     `,
     },
 
@@ -3084,7 +3242,7 @@ seo: {
     <p>While the impact of your occupation might feel minimal on lower difficulties, it transforms into a game-changer in specific scenarios. Prepare yourself:</p>
     <ul>
       <li><strong>Insane Difficulty:</strong> Every single second counts. Zombies are relentless, loot is scarce, and death carries a heavy penalty. An occupation that starts with a powerful weapon or an invaluable tool could be the deciding factor between surviving the first hour and an embarrassing respawn.</li>
-      <li><strong>Rare Loot Settings:</strong> Cranked down those loot drop rates for a truly hardcore experience? Starting gear, particularly tools, becomes a godsend. You might scour dozens of houses desperately searching for that elusive screwdriver – the very same one that a specific occupation generously provides from the get-go.</li>
+      <li><strong>Rare Loot Settings:</strong> Cranked down those loot drop rates for a truly hardcore experience? Starting gear, particularly tools, becomes a godsend. You might scour dozens of houses desperately searching for that elusive screwdriver ? the very same one that a specific occupation generously provides from the get-go.</li>
       <li><strong>Challenge Runs:</strong> Playing without skill bonuses or limiting your gear to amplify the challenge? In that case, your occupation's starting perks become your sole safety net, offering a crucial edge against the undead horde.</li>
     </ul>
   
@@ -3129,7 +3287,7 @@ seo: {
         },
         addressBar: "/traits-selection-guide",
         detailsHtml: `
-    <p>After locking in your <a href="/vein-guides/day-1-occupation-selection-guide" class="inline-link">occupation</a> (Part 3) in the VEIN new player guide series (exclusively on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>, your ultimate VEIN Wiki and strategy hub), you'll reach a deeper layer of character customization: Traits. Unlike skills or occupations that boost your survival ability, traits are double-edged swords—they add personality to your character but also pile on extra hardships. You can skip them entirely for a smooth start, or check every box to test if you can last a week. Some traits seem harmless at first, but their hidden mechanics will bite you later; others scream "trouble" the second you select them. Let's break down the most impactful traits and how they'll shape your survival journey.</p>
+    <p>After locking in your <a href="/vein-guides/day-1-occupation-selection-guide" class="inline-link">occupation</a> (Part 3) in the VEIN new player guide series (exclusively on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>, your ultimate VEIN Wiki and strategy hub), you'll reach a deeper layer of character customization: Traits. Unlike skills or occupations that boost your survival ability, traits are double-edged swords?they add personality to your character but also pile on extra hardships. You can skip them entirely for a smooth start, or check every box to test if you can last a week. Some traits seem harmless at first, but their hidden mechanics will bite you later; others scream "trouble" the second you select them. Let's break down the most impactful traits and how they'll shape your survival journey.</p>
 
 <p>
     <img src="/images/guide/guide04-01.webp" alt="Vein Traits 1" width="50%">
@@ -3137,48 +3295,48 @@ seo: {
 
 <h2><strong>First, Understand: What Are Traits in VEIN?</strong></h2>
 
-<p>Traits are not "bonuses"—they’re character flaws with consequences. The game designed them to crank up immersion and difficulty, not make your life easier. Every trait you pick adds a unique constraint: some limit your resources, others hinder your perception, and a few even set a ticking time bomb on your survival. The golden rule: Traits are optional, and "none" is always a valid choice. Only pick them if you’re ready to trade convenience for challenge.</p>
+<p>Traits are not "bonuses"?they?re character flaws with consequences. The game designed them to crank up immersion and difficulty, not make your life easier. Every trait you pick adds a unique constraint: some limit your resources, others hinder your perception, and a few even set a ticking time bomb on your survival. The golden rule: Traits are optional, and "none" is always a valid choice. Only pick them if you?re ready to trade convenience for challenge.</p>
 
 <h2><strong>Critical Traits: Risk Analysis & Impact</strong></h2>
 
-<p>We’ve sorted the most common traits by their danger level, focusing on how quickly they’ll derail your survival. Avoid the "high-risk" ones if you’re new—they’ll turn your early hours into a frustration fest.</p>
+<p>We?ve sorted the most common traits by their danger level, focusing on how quickly they?ll derail your survival. Avoid the "high-risk" ones if you?re new?they?ll turn your early hours into a frustration fest.</p>
 
-<h3><strong>1. Anosmia (Loss of Smell) – High Risk, Deceptive "Harmlessness"</strong></h3>
+<h3><strong>1. Anosmia (Loss of Smell) ? High Risk, Deceptive "Harmlessness"</strong></h3>
 
-<p>At first glance, this trait feels like a throwaway: "So I can’t smell zombies or rot—big deal?" The real danger hits when you start scavenging consumables. In VEIN, bottle labels lie. A jar marked "peanut butter" might be spoiled sludge; a canteen labeled "clean water" could be contaminated with bacteria. With Anosmia, you lose the ability to sniff out these fakes—you’ll have to either gamble on every untested item or waste precious time finding a lab kit to test them.</p>
+<p>At first glance, this trait feels like a throwaway: "So I can?t smell zombies or rot?big deal?" The real danger hits when you start scavenging consumables. In VEIN, bottle labels lie. A jar marked "peanut butter" might be spoiled sludge; a canteen labeled "clean water" could be contaminated with bacteria. With Anosmia, you lose the ability to sniff out these fakes?you?ll have to either gamble on every untested item or waste precious time finding a lab kit to test them.</p>
 
-<p><strong>Survival Impact:</strong> Catastrophic if you’re careless. Throughout your survival journey, you’ll rely heavily on scavenged food and drinks. Spoiled food causes nausea (slowing you down) or poisoning (draining health), and contaminated water does the same. I’ve lost characters to Anosmia after chugging "purified water" that turned out to be gasoline—don’t make the same mistake.</p>
+<p><strong>Survival Impact:</strong> Catastrophic if you?re careless. Throughout your survival journey, you?ll rely heavily on scavenged food and drinks. Spoiled food causes nausea (slowing you down) or poisoning (draining health), and contaminated water does the same. I?ve lost characters to Anosmia after chugging "purified water" that turned out to be gasoline?don?t make the same mistake.</p>
 
 <p><strong>Who Should Pick It:</strong> Only hardcore players who memorize item spawn locations (and know which containers hold guaranteed-safe supplies) or have a Doctor occupation with extra antidotes.</p>
 
-<h3><strong>2. Diabetes – Extreme Risk, Literal Death Sentence</strong></h3>
+<h3><strong>2. Diabetes ? Extreme Risk, Literal Death Sentence</strong></h3>
 
-<p>This trait is the definition of a "ticking time bomb." While every other survivor just needs food, water, and sleep, you need one more thing: insulin. Here’s the kicker: Insulin can’t be crafted, can’t be replicated, and every supply in the world is slowly expiring. On Day 1, you’ll spawn with a small stock, but once it runs out, your health will plummet—first fatigue, then organ failure, then death.</p>
+<p>This trait is the definition of a "ticking time bomb." While every other survivor just needs food, water, and sleep, you need one more thing: insulin. Here?s the kicker: Insulin can?t be crafted, can?t be replicated, and every supply in the world is slowly expiring. On Day 1, you?ll spawn with a small stock, but once it runs out, your health will plummet?first fatigue, then organ failure, then death.</p>
 
-<p><strong>Survival Impact:</strong> It won’t kill you immediately, but it warps your entire strategy. Instead of scavenging for weapons or base materials, you’ll be sprinting from pharmacy to clinic, praying to find insulin. Even if you get lucky early on, you’re just delaying the inevitable—this trait turns the game into a race against time, not zombies.</p>
+<p><strong>Survival Impact:</strong> It won?t kill you immediately, but it warps your entire strategy. Instead of scavenging for weapons or base materials, you?ll be sprinting from pharmacy to clinic, praying to find insulin. Even if you get lucky early on, you?re just delaying the inevitable?this trait turns the game into a race against time, not zombies.</p>
 
 <p><strong>Who Should Pick It:</strong> Only players doing a "hardcore challenge run" (e.g., permadeath + no respawns) who want to test their scavenging speed. New players: never pick this.</p>
 
-<h3><strong>3. Dietary Restrictions (Lactose Intolerance, Nut Allergy, Vegan) – Medium Risk, Food Hunt Nightmare</strong></h3>
+<h3><strong>3. Dietary Restrictions (Lactose Intolerance, Nut Allergy, Vegan) ? Medium Risk, Food Hunt Nightmare</strong></h3>
 
-<p>These traits all follow the same logic: slash your available food sources. If you’ve mastered VEIN’s cooking system and think "finding food is too easy," these are for you. Lactose Intolerance means you can’t eat dairy (common in canned cheese, milk, and even some stews); Nut Allergy forces you to avoid high-calorie nuts (a staple early snack); Vegan cuts out all meat, fish, and animal products (which make up 60% of early lootable food).</p>
+<p>These traits all follow the same logic: slash your available food sources. If you?ve mastered VEIN?s cooking system and think "finding food is too easy," these are for you. Lactose Intolerance means you can?t eat dairy (common in canned cheese, milk, and even some stews); Nut Allergy forces you to avoid high-calorie nuts (a staple early snack); Vegan cuts out all meat, fish, and animal products (which make up 60% of early lootable food).</p>
 
-<p><strong>Survival Impact:</strong> It turns "finding food" into "hunting for a needle in a haystack." In your early scavenges, you’ll likely find 3-4 food items in your first hour—with a dietary restriction, half of those will be useless. I once picked Vegan and spent 2 hours searching for berries while my hunger meter dropped to critical—don’t waste time like that.</p>
+<p><strong>Survival Impact:</strong> It turns "finding food" into "hunting for a needle in a haystack." In your early scavenges, you?ll likely find 3-4 food items in your first hour?with a dietary restriction, half of those will be useless. I once picked Vegan and spent 2 hours searching for berries while my hunger meter dropped to critical?don?t waste time like that.</p>
 
-<p><strong>Who Should Pick It:</strong> Intermediate players who already know where to find trait-specific food (e.g., farms for Vegans, convenience stores for nut-free snacks). New players should skip—focus on staying fed first.</p>
+<p><strong>Who Should Pick It:</strong> Intermediate players who already know where to find trait-specific food (e.g., farms for Vegans, convenience stores for nut-free snacks). New players should skip?focus on staying fed first.</p>
 
-<h3><strong>4. Myopia (Nearsightedness) – High Risk, Vision as a Resource</strong></h3>
+<h3><strong>4. Myopia (Nearsightedness) ? High Risk, Vision as a Resource</strong></h3>
 
-<p>The pitch is simple: "You need glasses to see clearly." It sounds manageable—until a zombie swats your glasses off mid-fight and smashes them underfoot. Without a spare pair (which you’ll have to scavenge from houses or pharmacies), your vision blurs so badly you can’t see more than 1 meter ahead. You won’t tell zombies apart from trash cans, you’ll miss loot crates, and you’ll get lost even with a GPS.</p>
+<p>The pitch is simple: "You need glasses to see clearly." It sounds manageable?until a zombie swats your glasses off mid-fight and smashes them underfoot. Without a spare pair (which you?ll have to scavenge from houses or pharmacies), your vision blurs so badly you can?t see more than 1 meter ahead. You won?t tell zombies apart from trash cans, you?ll miss loot crates, and you?ll get lost even with a GPS.</p>
 
-<p><strong>Survival Impact:</strong> Disaster waiting to happen. Fights are inevitable, and glasses break often. Finding a spare pair early on is a coin flip—if you don’t, you’ll spend the rest of your run fumbling blindly. I once had a Myopia character die to a crawler I couldn’t see until it bit my ankle—never again.</p>
+<p><strong>Survival Impact:</strong> Disaster waiting to happen. Fights are inevitable, and glasses break often. Finding a spare pair early on is a coin flip?if you don?t, you?ll spend the rest of your run fumbling blindly. I once had a Myopia character die to a crawler I couldn?t see until it bit my ankle?never again.</p>
 
 <p><strong>Who Should Pick It:</strong> Hardcore players who spawn near a pharmacy (guaranteed spare glasses) and play cautiously (avoid fights until they have backups). New players: steer clear.</p>
 
 <h2><strong>Traits Selection Cheat Sheet for Every Player Type</strong></h2>
 
 <p>
-    <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>’s tailored recommendations take the guesswork out of traits—pick based on your experience and goals:
+    <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>?s tailored recommendations take the guesswork out of traits?pick based on your experience and goals:
 </p>
 
 <ol>
@@ -3186,24 +3344,24 @@ seo: {
 
     <li><strong>Intermediate Players (10-50 Hours):</strong> Pick 1 low-risk trait. Stick to mild restrictions like Lactose Intolerance (dairy is easy to avoid) or Anosmia (if you test all food first). Avoid Diabetes and Myopia.</li>
 
-    <li><strong>Hardcore Players (50+ Hours):</strong> Mix 1-2 high-risk traits. Try Anosmia + Myopia (perception double-whammy) or Dietary Restriction + Diabetes (resource crunch). Only do all traits if you’re aiming for a "week survival" challenge.</li>
+    <li><strong>Hardcore Players (50+ Hours):</strong> Mix 1-2 high-risk traits. Try Anosmia + Myopia (perception double-whammy) or Dietary Restriction + Diabetes (resource crunch). Only do all traits if you?re aiming for a "week survival" challenge.</li>
 
-    <li><strong>Multiplayer Players:</strong> Coordinate traits! If one player picks Doctor (has extra meds), another can pick Diabetes (they’ll cover your insulin). If someone picks Thief (finds loot fast), they can grab spare glasses for a Myopia teammate.</li>
+    <li><strong>Multiplayer Players:</strong> Coordinate traits! If one player picks Doctor (has extra meds), another can pick Diabetes (they?ll cover your insulin). If someone picks Thief (finds loot fast), they can grab spare glasses for a Myopia teammate.</li>
 </ol>
 
 <h2><strong>Critical Trait Mistakes to Avoid</strong></h2>
 
 <ol>
-    <li><strong>Picking Traits for "Roleplay" Without Planning:</strong> "Oh, a vegan survivor sounds cool!"—until you starve on Day 1. Always pair roleplay traits with a strategy (e.g., Vegan + Farmer occupation for crop access).</li>
+    <li><strong>Picking Traits for "Roleplay" Without Planning:</strong> "Oh, a vegan survivor sounds cool!"?until you starve on Day 1. Always pair roleplay traits with a strategy (e.g., Vegan + Farmer occupation for crop access).</li>
 
-    <li><strong>Underestimating "Small" Traits:</strong> Anosmia and Myopia seem minor, but they’ll kill you faster than Diabetes (which at least gives you a few days). Never pick them without a backup plan.</li>
+    <li><strong>Underestimating "Small" Traits:</strong> Anosmia and Myopia seem minor, but they?ll kill you faster than Diabetes (which at least gives you a few days). Never pick them without a backup plan.</li>
 
-    <li><strong>Forgetting Traits Are Permanent:</strong> Unlike skills (which you can level) or gear (which you can replace), traits can’t be changed after character creation. Test risky traits in a throwaway world first.</li>
+    <li><strong>Forgetting Traits Are Permanent:</strong> Unlike skills (which you can level) or gear (which you can replace), traits can?t be changed after character creation. Test risky traits in a throwaway world first.</li>
 </ol>
 
-<p><strong>Pro Tip:</strong> If you accidentally pick a bad trait, use the admin menu (single-player only) to reset it—no shame in fixing a survival mistake. On multiplayer, ask the host for a trait reset (most hosts will agree for new players).</p>
+<p><strong>Pro Tip:</strong> If you accidentally pick a bad trait, use the admin menu (single-player only) to reset it?no shame in fixing a survival mistake. On multiplayer, ask the host for a trait reset (most hosts will agree for new players).</p>
 
-<p>Once you've configured your character, it's time to learn about your <a href="/vein-guides/day-1-priorities-guide" class="inline-link">Day 1 priorities</a>. This guide will help you secure vital resources and understand what to focus on during your first day. Up Next on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>: VEIN New Player Guide Part 5—"Day 1 Base Building 101: Safe Locations & Essential Fortifications". We'll teach you how to turn a random house into a zombie-proof shelter before nightfall. Stay tuned!</p>
+<p>Once you've configured your character, it's time to learn about your <a href="/vein-guides/day-1-priorities-guide" class="inline-link">Day 1 priorities</a>. This guide will help you secure vital resources and understand what to focus on during your first day. Up Next on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>: VEIN New Player Guide Part 5?"Day 1 Base Building 101: Safe Locations & Essential Fortifications". We'll teach you how to turn a random house into a zombie-proof shelter before nightfall. Stay tuned!</p>
 
     `,
     },
@@ -3211,7 +3369,7 @@ seo: {
     {
         id: 5,
         title: "VEIN New Player Guide Part 5: Day 1 Priorities",
-        description: "Tick-tock, survivor! Day 1 in VEIN is a frantic scramble. This guide, your key to survival, prioritizes securing vital resources and shelter before nightfall. We're talking vehicles for looting, protective gear, and essential tools—all meticulously planned for efficient zombie dodging and long-term survival. Time is NOT on your side!",
+        description: "Tick-tock, survivor! Day 1 in VEIN is a frantic scramble. This guide, your key to survival, prioritizes securing vital resources and shelter before nightfall. We're talking vehicles for looting, protective gear, and essential tools?all meticulously planned for efficient zombie dodging and long-term survival. Time is NOT on your side!",
         tags: ["vein", "new player guide", "survival", "zombie game", "day 1"],
         publishDate: "2025-11-20",
         category: 'Getting Started',
@@ -3224,7 +3382,7 @@ seo: {
         },
         addressBar: "/day-1-priorities-guide",
         detailsHtml: `
-    <p>In the VEIN new player guide series (exclusively on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>, your trusted VEIN Wiki and strategy center), after confirming your <a href="/vein-guides/day-1-occupation-selection-guide" class="inline-link">occupation</a> and <a href="/vein-guides/traits-selection-guide" class="inline-link">traits</a> (Parts 3-4), Day 1 becomes a race against time. There are countless useful items around, but your inventory space is limited—deciding what to take immediately, leave for later, or discard is critical. While you can find a random spot to spend the first night, securing a safe shelter before dawn should be your top goal. This guide breaks down Day 1 priorities to help you survive efficiently: from core gear to resource collection, every choice aligns with early survival needs. Make sure you know the <a href="/vein-wiki/controls" class="inline-link">controls</a> to efficiently navigate and interact with the world.</p>
+    <p>In the VEIN new player guide series (exclusively on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>, your trusted VEIN Wiki and strategy center), after confirming your <a href="/vein-guides/day-1-occupation-selection-guide" class="inline-link">occupation</a> and <a href="/vein-guides/traits-selection-guide" class="inline-link">traits</a> (Parts 3-4), Day 1 becomes a race against time. There are countless useful items around, but your inventory space is limited?deciding what to take immediately, leave for later, or discard is critical. While you can find a random spot to spend the first night, securing a safe shelter before dawn should be your top goal. This guide breaks down Day 1 priorities to help you survive efficiently: from core gear to resource collection, every choice aligns with early survival needs. Make sure you know the <a href="/vein-wiki/controls" class="inline-link">controls</a> to efficiently navigate and interact with the world.</p>
 
 <p>
     <img src="/images/guide/guide05-01.webp" alt="VEIN TRIORITY 1" width="50%" style="width: 50%;">
@@ -3235,34 +3393,34 @@ seo: {
 <p>A vehicle is the most valuable asset on Day 1 of VEIN. It solves two core problems: fast mobility to avoid zombie hordes and large storage for looted items. Currently, you can obtain a vehicle as long as you have a key or master the lockpicking/hotwiring skill (Electrician occupation has an advantage here).</p>
 
 <ol>
-    <li><strong>Ideal Vehicle Types:</strong> A minivan or truck is perfect for maximizing loot capacity, but even a pickup truck can hold multiple crates of spoils. Prioritize vehicles with intact tires and a full tank—you can repair minor damage later with basic tools.</li>
+    <li><strong>Ideal Vehicle Types:</strong> A minivan or truck is perfect for maximizing loot capacity, but even a pickup truck can hold multiple crates of spoils. Prioritize vehicles with intact tires and a full tank?you can repair minor damage later with basic tools.</li>
 </ol>
 
 <h2><strong>2. Clothing &amp; Armor (Survival Foundation)</strong></h2>
 
-<p>Clothing isn’t just for looks—it directly affects your survival rate. Focus on two key points: inventory expansion and damage resistance.</p>
+<p>Clothing isn?t just for looks?it directly affects your survival rate. Focus on two key points: inventory expansion and damage resistance.</p>
 
 <ol>
-    <li><strong>Backpack:</strong> The top priority! Larger backpacks mean more storage—prioritize military backpacks first, followed by student backpacks. A small backpack will force you to discard valuable items, so replace it at the first chance.</li>
+    <li><strong>Backpack:</strong> The top priority! Larger backpacks mean more storage?prioritize military backpacks first, followed by student backpacks. A small backpack will force you to discard valuable items, so replace it at the first chance.</li>
     <li><strong>Core Clothing:</strong> Sturdy boots (running shoes or combat boots both boost movement speed by 10%), a thick jacket, and gloves. These provide basic protection against scratches and cold.</li>
-    <li><strong>Armor (Bonus):</strong> If you’re lucky enough to find a helmet or body armor in early looting, equip it immediately. Bite protection is critical—when surrounded by zombies, armor can mean the difference between life and death.</li>
+    <li><strong>Armor (Bonus):</strong> If you?re lucky enough to find a helmet or body armor in early looting, equip it immediately. Bite protection is critical?when surrounded by zombies, armor can mean the difference between life and death.</li>
 </ol>
 
 <h2><strong>3. Tools (Multi-Purpose Survival Core)</strong></h2>
 
-<p>Tools are versatile and irreplaceable on Day 1. You don’t need to carry multiples—one main tool plus a spare is enough. Their uses include accessing safe areas, collecting resources, crafting, repairing, and building.</p>
+<p>Tools are versatile and irreplaceable on Day 1. You don?t need to carry multiples?one main tool plus a spare is enough. Their uses include accessing safe areas, collecting resources, crafting, repairing, and building.</p>
 
 <ol>
-    <li><strong>Access Tools:</strong> Screwdrivers, wrenches, and crowbars. These let you open doors, disassemble furniture, and access high-tech equipment without breaking in—avoiding noise that attracts zombies. Disassembling tech also yields valuable resources.</li>
+    <li><strong>Access Tools:</strong> Screwdrivers, wrenches, and crowbars. These let you open doors, disassemble furniture, and access high-tech equipment without breaking in?avoiding noise that attracts zombies. Disassembling tech also yields valuable resources.</li>
     <li><strong>Basic Crafting/Repair Tools:</strong> Hammers, pliers, and sewing kits. Essential for repairing weapons, clothing, and vehicles, as well as crafting simple items and building shelters.</li>
 </ol>
 
-<p><strong>Key Tip:</strong> Any item (weapon or tool) with a "usable for X purpose" description in its tooltip counts as a tool—don’t overlook seemingly ordinary items!</p>
+<p><strong>Key Tip:</strong> Any item (weapon or tool) with a "usable for X purpose" description in its tooltip counts as a tool?don?t overlook seemingly ordinary items!</p>
 
 <h2><strong>4. Medical Supplies (Prepare for Emergencies)</strong></h2>
 
 <ol>
-    <li><strong>Must-Have Basics:</strong> Needles and thread, bandages (rags or clothing can substitute if none are found), and high-concentration alcohol/soap/antibacterial wipes for disinfection—these stop bleeding and prevent infection.</li>
+    <li><strong>Must-Have Basics:</strong> Needles and thread, bandages (rags or clothing can substitute if none are found), and high-concentration alcohol/soap/antibacterial wipes for disinfection?these stop bleeding and prevent infection.</li>
     <li><strong>Secondary Supplies:</strong> Painkillers (reduce pain penalties), antibiotics (treat infections), antidepressants (combat mood debuffs), and cold medicine (alleviate sickness effects).</li>
 </ol>
 
@@ -3271,21 +3429,21 @@ seo: {
 <p>Self-defense is critical on Day 1, but efficiency matters more than firepower. Follow this hierarchy:</p>
 
 <ol>
-    <li><strong>Melee Weapons (Top Priority):</strong> You’ll almost certainly need one, and they’re easy to find. If your occupation didn’t provide a good one, grab a baseball bat, axe, iron pipe, or pruning shears—these are effective and silent, avoiding attracting hordes.</li>
-    <li><strong>Ranged Weapons (Collect, Don’t Use):</strong> Pick up guns if you find them, but save ammo! Firing guns creates loud noise that draws zombies. Use them only as a last resort.</li>
+    <li><strong>Melee Weapons (Top Priority):</strong> You?ll almost certainly need one, and they?re easy to find. If your occupation didn?t provide a good one, grab a baseball bat, axe, iron pipe, or pruning shears?these are effective and silent, avoiding attracting hordes.</li>
+    <li><strong>Ranged Weapons (Collect, Don?t Use):</strong> Pick up guns if you find them, but save ammo! Firing guns creates loud noise that draws zombies. Use them only as a last resort.</li>
 </ol>
 
 <h2><strong>6. Ammunition (Scarce &amp; Valuable)</strong></h2>
 
-<p>Ammo is extremely scarce in VEIN—treat it like gold. Collect every round you find, even for guns you don’t have yet. You can trade ammo with other players (multiplayer) or save it for later when facing tough enemies. Never waste ammo on single zombies—melee weapons are always better for early-game encounters.</p>
+<p>Ammo is extremely scarce in VEIN?treat it like gold. Collect every round you find, even for guns you don?t have yet. You can trade ammo with other players (multiplayer) or save it for later when facing tough enemies. Never waste ammo on single zombies?melee weapons are always better for early-game encounters.</p>
 
 <h2><strong>7. Resources (Low Priority on Day 1)</strong></h2>
 
-<p>Resources for your first workbench and fortifications (wood, metal scraps) are low-priority. You can collect enough near your chosen shelter, so don’t waste inventory space hauling them around on Day 1. Focus on securing the shelter first, then gather resources locally.</p>
+<p>Resources for your first workbench and fortifications (wood, metal scraps) are low-priority. You can collect enough near your chosen shelter, so don?t waste inventory space hauling them around on Day 1. Focus on securing the shelter first, then gather resources locally.</p>
 
-<p>On normal difficulty, food and water aren’t urgent. Drink from sinks and eat food found in fridges as you loot—every house has basic supplies. Carry only one water bottle and a small amount of high-nutrition canned food (even cat food works) to save space. Reserve inventory for higher-priority items like tools and medical supplies.</p>
+<p>On normal difficulty, food and water aren?t urgent. Drink from sinks and eat food found in fridges as you loot?every house has basic supplies. Carry only one water bottle and a small amount of high-nutrition canned food (even cat food works) to save space. Reserve inventory for higher-priority items like tools and medical supplies.</p>
 
-<p><strong>Day 1 Priority Cheat Sheet:</strong> Vehicle &amp; <a href="/vein-guides/vein-game-best-backpack" class="inline-link">Backpack</a> → Tools &amp; Medical Supplies → Melee Weapon → Ammo (collect only) → Food/Water (minimal). To find the best places to gather these resources, check our <a href="/vein-guides/vein-best-loot-locations" class="inline-link">best loot locations guide</a>. Once you have your supplies, you'll need a safe place to store them—learn about the <a href="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">best base locations</a>. Up Next on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>: VEIN New Player Guide Part 6—"Day 1 Shelter Selection &amp; Basic Fortification". Learn how to choose a zombie-proof base and secure it before nightfall!</p>
+<p><strong>Day 1 Priority Cheat Sheet:</strong> Vehicle &amp; <a href="/vein-guides/vein-game-best-backpack" class="inline-link">Backpack</a> ? Tools &amp; Medical Supplies ? Melee Weapon ? Ammo (collect only) ? Food/Water (minimal). To find the best places to gather these resources, check our <a href="/vein-guides/vein-best-loot-locations" class="inline-link">best loot locations guide</a>. Once you have your supplies, you'll need a safe place to store them?learn about the <a href="/vein-guides/vein-best-base-location-survival-guide" class="inline-link">best base locations</a>. Up Next on <a href="https://www.veingame.net" rel="noopener noreferrer" >veingame.net</a>: VEIN New Player Guide Part 6?"Day 1 Shelter Selection &amp; Basic Fortification". Learn how to choose a zombie-proof base and secure it before nightfall!</p>
 
 <p sty
 
@@ -3309,7 +3467,7 @@ seo: {
         addressBar: "/how-to-find-clinton-correctional-facility-armory",
         detailsHtml: `
     <p>
-For players seeking high-tier weapons and ammo in VEIN, the Clinton Correctional Facility Armory is a must-visit loot spot. Tucked away in the prison's depths, this armory houses rare firearms, plenty of ammunition, and tactical gear— but reaching it requires navigating the prison's secured areas and overcoming locked barriers. This guide details the exact VEIN prison location and a step-by-step route to the armory, plus tips to unlock its treasures. For other high-value loot locations, see our <a href="/vein-guides/vein-best-loot-locations" class="inline-link">best loot locations guide</a>. Browse all available weapons in our <a href="/vein-items/weapons" class="inline-link">weapons database</a>.
+For players seeking high-tier weapons and ammo in VEIN, the Clinton Correctional Facility Armory is a must-visit loot spot. Tucked away in the prison's depths, this armory houses rare firearms, plenty of ammunition, and tactical gear? but reaching it requires navigating the prison's secured areas and overcoming locked barriers. This guide details the exact VEIN prison location and a step-by-step route to the armory, plus tips to unlock its treasures. For other high-value loot locations, see our <a href="/vein-guides/vein-best-loot-locations" class="inline-link">best loot locations guide</a>. Browse all available weapons in our <a href="/vein-items/weapons" class="inline-link">weapons database</a>.
 </p>
 
 <h2>
@@ -3317,7 +3475,7 @@ For players seeking high-tier weapons and ammo in VEIN, the Clinton Correctional
 </h2>
 
 <p>
-The key to finding the armory is first locating the prison itself. Clinton Correctional Facility is situated in the northeastern corner (top-right section) of the VEIN world map. Look for a large, walled compound labeled “Clinton Correctional Facility” on your in-game map— it’s hard to miss due to its sprawling size and distinctive prison architecture. We recommend marking the location on your GPS before setting out to avoid getting lost, especially if you’re traveling through zombie-infested rural areas.
+The key to finding the armory is first locating the prison itself. Clinton Correctional Facility is situated in the northeastern corner (top-right section) of the VEIN world map. Look for a large, walled compound labeled ?Clinton Correctional Facility? on your in-game map? it?s hard to miss due to its sprawling size and distinctive prison architecture. We recommend marking the location on your GPS before setting out to avoid getting lost, especially if you?re traveling through zombie-infested rural areas.
 </p>
 
 <p>
@@ -3341,7 +3499,7 @@ The prison has multiple entrances, but the southwest entrance is the safest and 
 </h3>
 
 <p>
-Drive or travel on foot to the southwest perimeter of Clinton Correctional Facility. You’ll notice a closed main gate— don’t try to break it down (it’s too durable). Instead, look for a small guard shed (security hut) just outside the gate. Enter the guard shed and locate the red control button— pressing it will open the main prison gate. If the shed is locked (common on higher difficulties), use a lockpick or your Lockpicking skill to gain entry.
+Drive or travel on foot to the southwest perimeter of Clinton Correctional Facility. You?ll notice a closed main gate? don?t try to break it down (it?s too durable). Instead, look for a small guard shed (security hut) just outside the gate. Enter the guard shed and locate the red control button? pressing it will open the main prison gate. If the shed is locked (common on higher difficulties), use a lockpick or your Lockpicking skill to gain entry.
 </p>
 
 <p>
@@ -3353,7 +3511,7 @@ Drive or travel on foot to the southwest perimeter of Clinton Correctional Facil
 </h3>
 
 <p>
-Once the main gate is open, drive your vehicle inside (vehicles provide cover from wandering zombies). Immediately after entering, scan the left side of the compound for a small side gate behind a low metal fence. Park your vehicle nearby (you’ll want it for hauling loot later) and go through this side gate. Inside, you’ll pass through a metal detector— don’t worry about triggering it (it only alerts guards, who are no longer present) — just keep moving forward.
+Once the main gate is open, drive your vehicle inside (vehicles provide cover from wandering zombies). Immediately after entering, scan the left side of the compound for a small side gate behind a low metal fence. Park your vehicle nearby (you?ll want it for hauling loot later) and go through this side gate. Inside, you?ll pass through a metal detector? don?t worry about triggering it (it only alerts guards, who are no longer present) ? just keep moving forward.
 </p>
 
 <h3>
@@ -3361,7 +3519,7 @@ Once the main gate is open, drive your vehicle inside (vehicles provide cover fr
 </h3>
 
 <p>
-After the metal detector, you’ll enter a long, dimly lit corridor. Follow this corridor straight until you reach a T-junction. At the junction, turn left— this will lead you into the prison’s main cell block. The cell block is usually patrolled by 2-3 zombies, so clear them out with a silent melee weapon to avoid attracting more hordes.
+After the metal detector, you?ll enter a long, dimly lit corridor. Follow this corridor straight until you reach a T-junction. At the junction, turn left? this will lead you into the prison?s main cell block. The cell block is usually patrolled by 2-3 zombies, so clear them out with a silent melee weapon to avoid attracting more hordes.
 </p>
 
 <h3>
@@ -3369,7 +3527,7 @@ After the metal detector, you’ll enter a long, dimly lit corridor. Follow this
 </h3>
 
 <p>
-Continue through the cell block, passing the guard office on your right (you can loot it for minor supplies like bandages or a flashlight). Keep moving straight until you emerge into a large open area filled with tables— this is the prison’s common room. Now, look to your right: you’ll see a heavy metal door with a high-security lock. This door leads to the Monster Trophy Room— the armory is inside this room.
+Continue through the cell block, passing the guard office on your right (you can loot it for minor supplies like bandages or a flashlight). Keep moving straight until you emerge into a large open area filled with tables? this is the prison?s common room. Now, look to your right: you?ll see a heavy metal door with a high-security lock. This door leads to the Monster Trophy Room? the armory is inside this room.
 </p>
 
 <p>
@@ -3381,7 +3539,7 @@ Continue through the cell block, passing the guard office on your right (you can
 </h2>
 
 <p>
-The armory door is heavily secured, and you’ll need one of two things to open it— no workarounds exist, so come prepared:
+The armory door is heavily secured, and you?ll need one of two things to open it? no workarounds exist, so come prepared:
 </p>
 
 <p>
@@ -3394,7 +3552,7 @@ The armory door is heavily secured, and you’ll need one of two things to open 
 </li>
 
 <li>
-<strong>Lockpicking Skill (Level 75+):</strong> If you don’t have a hydraulic cutter, you’ll need a maxed-out Lockpicking skill (Level 75 or higher). Even with high skill, there’s a 20% chance the lockpick breaks, so bring 2-3 spare lockpicks just in case.
+<strong>Lockpicking Skill (Level 75+):</strong> If you don?t have a hydraulic cutter, you?ll need a maxed-out Lockpicking skill (Level 75 or higher). Even with high skill, there?s a 20% chance the lockpick breaks, so bring 2-3 spare lockpicks just in case.
 </li>
 </ol>
 
@@ -3403,7 +3561,7 @@ The armory door is heavily secured, and you’ll need one of two things to open 
 </h2>
 
 <p>
-Inside the armory, you’ll find these high-value items (loot varies slightly by difficulty, but these are guaranteed):
+Inside the armory, you?ll find these high-value items (loot varies slightly by difficulty, but these are guaranteed):
 </p>
 
 <ol>
@@ -3414,7 +3572,7 @@ Inside the armory, you’ll find these high-value items (loot varies slightly by
 </ol>
 
 <p>
-<strong>Survival Warning:</strong> Looting the armory may trigger a zombie horde (10-15 zombies) to spawn at the main gate. After looting, grab your vehicle and exit quickly via the southwest entrance— don’t linger to loot extra items!
+<strong>Survival Warning:</strong> Looting the armory may trigger a zombie horde (10-15 zombies) to spawn at the main gate. After looting, grab your vehicle and exit quickly via the southwest entrance? don?t linger to loot extra items!
 </p>
 
 <p>
