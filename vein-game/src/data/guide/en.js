@@ -1,5 +1,176 @@
 export const guides = [
   {
+    id: 33,
+    title: 'VEIN Console Commands Guide: Item List, Commands, and Debug Uses',
+    h1: 'VEIN Console Commands and Item List',
+    description:
+      'A practical VEIN console commands guide for item-list checks, debug command risk, tool lookup paths, and safe save testing.',
+    imageUrl: '/images/guide/vein-console-commands-item-list-guide.jpg',
+    imageAlt: 'VEIN console commands item list guide showing inventory tools and item lookup workflow.',
+    publishDate: '2026-07-28',
+    addressBar: '/vein-console-commands-item-list',
+    category: 'Systems',
+    tags: ['Console Commands', 'Item List', 'Tools', 'Debug', 'Admin'],
+    seo: {
+      title: 'VEIN Console Commands and Item List Guide',
+      description:
+        'Check VEIN console command status, item-list options, tool lookups, debug risks, and safe ways to test commands without breaking saves.',
+      keywords: 'VEIN console commands, item list, debug commands, tools',
+    },
+    detailsHtml: `
+      <article>
+        <header>
+          <p><strong>Fast answer:</strong> VEIN does not expose a stable, public, player-safe console command list that I would use on a main save. Treat command lists as build-specific debug, admin, or server tooling unless your current client shows the command, permission, and target clearly. For item names and practical lookup, use the in-game item labels plus the site item categories before pasting unverified commands.</p>
+          <p><strong>Version note:</strong> checked against the current public Steam build signal on July 28, 2026. VEIN is still Early Access. Console, admin, and debug behavior can move between builds, so any mechanic without a current UI prompt is marked <strong>INFERRED</strong>.</p>
+        </header>
+
+        <figure>
+          <img src="/images/guide/vein-console-commands-item-list-guide.jpg" alt="VEIN console commands item list guide with inventory tools and item IDs" title="VEIN console commands and item list guide" />
+          <figcaption>Use visible item names and category data first. A command that references the wrong item string can waste more time than normal looting.</figcaption>
+        </figure>
+
+        <section>
+          <h2>How console commands work</h2>
+          <h3>Main query cluster for Console Commands and Item List Guide</h3>
+          <p>The useful answer is not a giant rumor dump. For normal players, the safest console-command workflow is a verification chain: confirm your build exposes a command entry point, confirm whether it is single-player, admin, or server-only, then test on a throwaway save before touching your main character.</p>
+          <p>If you are running a server, separate <strong>server administration</strong> from <strong>client-side cheats</strong>. Admin tools usually care about permissions, save state, user targeting, and server config. Random client commands from old comments may do nothing, fail silently, or damage a save if the syntax targets inventory or world state incorrectly. For server rule setup, pair this page with the <a href="/vein-guides/vein-game-multiplayer-server-guide" class="inline-link">VEIN multiplayer server guide</a>.</p>
+
+          <table>
+            <thead>
+              <tr><th>Command intent</th><th>Reliability</th><th>Safe check</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Admin/server management</td><td>Usually tied to host config</td><td>Check host panel, config files, and permission level first</td></tr>
+              <tr><td>Spawn item or edit inventory</td><td>High risk if unverified</td><td>Test on a throwaway save and verify exact item names</td></tr>
+              <tr><td>Teleport, time, or world edits</td><td>Build and permission dependent</td><td>Back up the save, then test alone</td></tr>
+              <tr><td>Debug-only commands</td><td>Not player-stable</td><td>Assume Early Access behavior may change without notice</td></tr>
+            </tbody>
+          </table>
+
+          <h3>Variants and typo/LSI coverage</h3>
+          <p>Searches like <strong>vein game console commands</strong>, <strong>console command vein'</strong>, and <strong>vein how to edi</strong> usually come from the same player problem: someone wants to fix a save, spawn a missing item, or edit a bad setup. The safe answer is the same. Do not edit a main world until you can reproduce the command on a clean test save.</p>
+          <p>When the goal is recovery rather than cheating, start with normal systems. If you lost tools, use the <a href="/vein-items/tools" class="inline-link">tools database</a> and the <a href="/vein-guides/vein-map-best-loot-locations-route-guide" class="inline-link">map loot route guide</a>. If a server rule broke the run, check server settings before forcing item edits.</p>
+        </section>
+
+        <section>
+          <h2>Item list and command variants</h2>
+          <h3>Step or decision checks</h3>
+          <p>For a command-ready item list, do not rely on memory. Build your lookup from the same categories the game uses in play. Weapons, ammo, tools, medical supplies, materials, food, and special items should stay separate so you do not confuse a display name with a spawn identifier or a crafting component.</p>
+          <p>Use these category checks before testing any item command:</p>
+          <ul>
+            <li><strong>Tools:</strong> check the <a href="/vein-items/tools" class="inline-link">VEIN tools list</a> for utility items used in crafting, repair, construction, and route access.</li>
+            <li><strong>Weapons and ammo:</strong> compare weapon category and ammunition type through the <a href="/vein-items/weapons" class="inline-link">weapons database</a> and <a href="/vein-items/ammo" class="inline-link">ammo list</a>.</li>
+            <li><strong>Medical items:</strong> keep recovery items separate with the <a href="/vein-items/medical" class="inline-link">medical database</a>; pain control is not the same as wound treatment.</li>
+            <li><strong>Materials:</strong> use the <a href="/vein-items/materials" class="inline-link">materials list</a> before editing crafting inputs or construction resources.</li>
+          </ul>
+
+          <h3>Edge cases and follow-up searches</h3>
+          <p><strong>INFERRED:</strong> if a command appears in a community list but not in your current UI, treat it as stale until tested. Early Access command names often change faster than search results. A command that worked for an older demo branch may not work on the current public build.</p>
+          <p>If you only need a missing tool, a command is usually the wrong first answer. Looting a hardware route, repairing vehicle access, or using the <a href="/vein-guides/vein-crafting-items-tools-materials-progression-guide" class="inline-link">crafting and tools progression guide</a> produces a cleaner save than forcing an item into inventory.</p>
+        </section>
+
+        <section>
+          <h2>FAQ</h2>
+          <h3>Does VEIN have console commands?</h3>
+          <p>VEIN may expose admin, server, or debug-style tools depending on build and permissions, but there is no stable public command list I would recommend for main-save use. Verify the entry point and permission level in your current build, then test commands on a throwaway save.</p>
+
+          <h3>Should Console Commands and Item List Guide be split into multiple pages?</h3>
+          <p>Not yet. The search intent overlaps heavily: players want command access, item names, and safe edit checks. Split only if VEIN later exposes a stable public command reference or a separate full item-ID table.</p>
+        </section>
+      </article>
+    `,
+  },
+  {
+    id: 32,
+    title:
+      'VEIN Settings Guide: Requirements, Graphics Settings, First Person, Third Person, and Can I Run It',
+    h1: 'VEIN Requirements and Graphics Settings Guide',
+    description:
+      'A direct VEIN settings guide for PC requirements, graphics setup, first-person and third-person checks, TV surround sound, and time speed.',
+    imageUrl: '/images/guide/vein-requirements-graphics-settings-guide.jpg',
+    imageAlt: 'VEIN requirements graphics settings guide showing an outdoor scene for performance tuning.',
+    publishDate: '2026-07-28',
+    addressBar: '/vein-requirements-graphics-settings',
+    category: 'Settings',
+    tags: ['Requirements', 'Graphics', 'Can I Run It', 'Camera', 'Audio'],
+    seo: {
+      title: 'VEIN Requirements and Graphics Settings Guide',
+      description:
+        'Check VEIN requirements, graphics settings, can-I-run guidance, first-person and third-person notes, TV surround sound, and time speed.',
+      keywords: 'VEIN requirements, graphics settings, can I run VEIN',
+    },
+    detailsHtml: `
+      <article>
+        <header>
+          <p><strong>Fast answer:</strong> VEIN is not a low-spec survival game. The current Steam requirement floor is 64-bit Windows 10, 12 GB RAM, DirectX 12, 60 GB storage, and an RTX 2060-class GPU. For smoother headroom, Steam lists 24 GB RAM, an RTX 3080-class GPU, broadband, and 100 GB storage. If you are below the minimum GPU or RAM target, lower settings help, but they will not fix a hard hardware gap.</p>
+          <p><strong>Version note:</strong> checked against the current public Steam build signal on July 28, 2026. Graphics options, camera settings, server time controls, and audio output support can change during Early Access. Confirm final values in your live options menu.</p>
+        </header>
+
+        <figure>
+          <img src="/images/guide/vein-requirements-graphics-settings-guide.jpg" alt="VEIN game requirements graphics settings and can I run VEIN performance guide" title="VEIN requirements and graphics settings guide" />
+          <figcaption>Open outdoor scenes are a better performance test than a quiet indoor room. Test shadows, view distance, and post-processing where the game has room to load.</figcaption>
+        </figure>
+
+        <section>
+          <h2>Requirements and graphics setup</h2>
+          <h3>Main query cluster for Graphics, Requirements, Can-I-Run, and View Mode Guide</h3>
+          <p>Use the official requirement table as the first gate. If your machine misses the GPU class, RAM, DirectX 12, or storage target, do not diagnose the problem as a bad graphics preset. The game is sim-heavy: zombies, physics objects, vehicles, bases, weather, and multiplayer state all create load beyond what a still screenshot suggests.</p>
+
+          <table>
+            <thead>
+              <tr><th>Check</th><th>Minimum signal</th><th>Recommended signal</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>OS</td><td>64-bit Windows 10</td><td>64-bit Windows 10</td></tr>
+              <tr><td>Memory</td><td>12 GB RAM</td><td>24 GB RAM</td></tr>
+              <tr><td>Graphics</td><td>NVIDIA RTX 2060 or equivalent</td><td>NVIDIA RTX 3080 or equivalent</td></tr>
+              <tr><td>DirectX</td><td>Version 12</td><td>Version 12</td></tr>
+              <tr><td>Storage</td><td>60 GB available</td><td>100 GB available</td></tr>
+              <tr><td>Network</td><td>Not listed for minimum Windows</td><td>Broadband recommended for online play</td></tr>
+            </tbody>
+          </table>
+
+          <h3>Variants and typo/LSI coverage</h3>
+          <p>For <strong>can I run VEIN</strong> checks, use this order: GPU class, RAM, storage space, DirectX 12 support, then graphics preset. If the game launches but stutters, reduce the settings that hit world rendering first: shadows, view distance, foliage, post-processing, and resolution scale if exposed.</p>
+          <p>Do your tests in a repeatable place. Load the same save, stand in the same outdoor route, watch frame pacing for 60 seconds, then change one setting. If you are testing base-heavy saves, compare against the <a href="/vein-guides/vein-game-base-building-power-water-guide" class="inline-link">base building power guide</a> so you know whether generators, storage, or lights are adding local load.</p>
+        </section>
+
+        <section>
+          <h2>Camera, audio, and time-speed settings</h2>
+          <h3>Step or decision checks</h3>
+          <p>For <strong>VEIN first person</strong> and <strong>VEIN third person</strong> searches, treat first person as the baseline camera unless your current build exposes a view toggle in controls or settings. If a third-person option is not visible in the current keybinds or options menu, do not assume a hidden toggle exists. Check the <a href="/vein-wiki/controls" class="inline-link">controls wiki</a> before rebinding random keys.</p>
+          <p>For TV surround sound, Steam lists both Stereo Sound and Surround Sound support. That does not mean every in-game media source will automatically output perfect 5.1. Test Windows speaker layout first, then VEIN master volume, then the in-game TV or media source. If you are troubleshooting radio, TV, or custom links, use the <a href="/vein-guides/vein-game-radio-tv-media-guide" class="inline-link">radio, TV, and media guide</a>.</p>
+
+          <table>
+            <thead>
+              <tr><th>Setting problem</th><th>First check</th><th>Do not do this first</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Can I run VEIN?</td><td>Compare against Steam RAM/GPU/storage requirements</td><td>Assume one graphics toggle fixes below-minimum hardware</td></tr>
+              <tr><td>Low FPS outside</td><td>Lower view distance, shadows, foliage, and resolution scale</td><td>Test only in an empty indoor room</td></tr>
+              <tr><td>Third-person view search</td><td>Check current keybinds/options for a camera toggle</td><td>Install random mods or use old forum hotkeys</td></tr>
+              <tr><td>TV surround sound</td><td>Verify OS output layout, then game volume and media source</td><td>Rewire base power before confirming audio output</td></tr>
+              <tr><td>Default time of day speed</td><td>Check world/server settings and current host rules</td><td>Edit config without backing up the save</td></tr>
+            </tbody>
+          </table>
+
+          <h3>Edge cases and follow-up searches</h3>
+          <p>The <strong>VEIN game defualt time of day speed</strong> typo usually means a player wants to know whether days are passing too fast. Time speed is a world or server setting problem before it is a graphics problem. If you are on a hosted server, the host config wins. If you are solo, record the current world settings before changing time or day-length values.</p>
+          <p><strong>INFERRED:</strong> exact time-speed labels may move as Early Access menus change. The safe workflow is stable: back up the save, change one time setting, load for one in-game hour, and write down the result. Multiplayer admins should cross-check the <a href="/vein-guides/vein-game-multiplayer-server-guide" class="inline-link">server guide</a> before changing persistent worlds.</p>
+        </section>
+
+        <section>
+          <h2>FAQ</h2>
+          <h3>Can I run VEIN?</h3>
+          <p>You are in the safe zone if you meet or exceed 64-bit Windows 10, 12 GB RAM, DirectX 12, 60 GB storage, and an RTX 2060-class GPU. For better headroom, target 24 GB RAM and an RTX 3080-class GPU. Below minimum, expect settings cuts to help only partially.</p>
+
+          <h3>Should Graphics, Requirements, Can-I-Run, and View Mode Guide be split into multiple pages?</h3>
+          <p>Not initially. The searches share the same troubleshooting path: confirm hardware, tune graphics, then check camera, audio, and world/server settings. Split only if VEIN later adds a deeper graphics menu or dedicated camera mode documentation.</p>
+        </section>
+      </article>
+    `,
+  },
+  {
     id: 31,
     title: 'VEIN Radio, TV, and Media Guide',
     description:

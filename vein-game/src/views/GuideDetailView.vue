@@ -31,7 +31,7 @@
 
         <div class="guide-detail-content">
           <div class="guide-detail-text">
-            <h1 class="guide-title">{{ guide.title }}</h1>
+            <h1 class="guide-title">{{ guide.h1 || guide.title }}</h1>
 
             <div class="guide-detail-meta">
               <div class="meta-item">
@@ -740,4 +740,3 @@ const getCategoryName = (category) => {
   transform: translateY(-2px);
 }
 </style>
-
