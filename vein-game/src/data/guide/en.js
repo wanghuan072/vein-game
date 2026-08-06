@@ -1,5 +1,129 @@
 export const guides = [
   {
+    id: 35,
+    title: 'VEIN Weapons Guide: Ammo, Weapon Crates, and Spawn Locations',
+    h1: 'VEIN Weapons and Ammo Spawn Locations',
+    description:
+      'A direct VEIN weapons guide for ammo planning, weapon crates, demo spawn-location checks, risky loot areas, and safe route decisions.',
+    imageUrl: '/images/guide/vein-weapons-ammo-spawn-locations-guide.jpg',
+    imageAlt: 'VEIN weapons ammo and weapon crate spawn locations guide for demo and full build loot routes.',
+    publishDate: '2026-08-06',
+    addressBar: '/vein-weapons-ammo-spawn-locations',
+    category: 'Weapons',
+    tags: ['Weapons', 'Ammo', 'Weapon Crates', 'Spawn Locations', 'Demo'],
+    seo: {
+      title: 'VEIN Weapons, Ammo, and Spawn Locations Guide',
+      description:
+        'Find VEIN weapon and ammo route logic, weapon-crate checks, demo spawn-location limits, carry planning, and safer loot-run decisions.',
+      keywords: 'VEIN weapons, ammo, weapon crates, spawn locations, demo',
+    },
+    detailsHtml: `
+      <article>
+        <header>
+          <p><strong>Fast answer:</strong> VEIN weapon runs should be planned around <strong>containers and route risk</strong>, not one magic spawn. Check weapon crates, gun-store-style shelves, police or military-adjacent areas, garages, locked rooms, and high-value buildings, then leave when you have a working weapon plus matching ammo. A rifle with no magazine or the wrong ammo type is dead weight.</p>
+          <p><strong>Version note:</strong> checked against the current public Steam build signal on August 6, 2026. VEIN is still Early Access, and spawn tables can change. Treat fixed coordinates from old demo videos as <strong>INFERRED</strong> until your current build confirms them.</p>
+        </header>
+        <figure>
+          <img src="/images/guide/vein-weapons-ammo-spawn-locations-guide.jpg" alt="VEIN weapons ammo weapon crate spawn locations guide for demo and full build loot routes" title="VEIN weapons ammo and spawn locations guide" />
+          <figcaption>Route for a complete kit: weapon, matching ammo, magazine or loading method, carry space, and an exit path.</figcaption>
+        </figure>
+        <section>
+          <h2>Where weapon searches cluster</h2>
+          <h3>Use weapon-crate intent for location answers</h3>
+          <p>When players search for <strong>VEIN weapon crate</strong> or <strong>VEIN weapons spawn locations</strong>, the useful answer is a location pattern. Prioritize containers and buildings that plausibly store weapons: weapon crates, locked rooms, police or military routes, garages, gun counters, and high-risk supply areas. Do not clear every house on the map hoping for a lucky roll.</p>
+          <p>Use the site database as the second check. The <a href="/vein-items/weapons" class="inline-link">VEIN weapons list</a> tells you what category you are trying to support, and the <a href="/vein-items/ammo" class="inline-link">ammo database</a> keeps you from carrying the wrong cartridges for the weapon you found.</p>
+          <table><thead><tr><th>Search intent</th><th>Best answer</th><th>Field rule</th></tr></thead><tbody><tr><td>Weapon crate</td><td>Check high-value containers and locked loot rooms first.</td><td>Bring lock access and carry space before entering.</td></tr><tr><td>Weapon spawn locations</td><td>Route through high-risk supply buildings, not random kitchens.</td><td>Leave after a complete usable kit.</td></tr><tr><td>Ammo locations</td><td>Search weapon-adjacent storage and ammo-specific categories.</td><td>Match ammo to the weapon before banking it.</td></tr><tr><td>Demo spawns</td><td>Treat old demo locations as build-limited clues.</td><td>Confirm in the current branch before repeating the route.</td></tr></tbody></table>
+          <h3>Separate demo spawn locations from full-game assumptions</h3>
+          <p>Demo weapon routes are useful for learning how VEIN places loot, but they are not permanent truth. A demo build can use different map boundaries, container tables, and balance tuning. If a video shows a weapon in a specific building, use it as a route hypothesis, then verify the container type in your current game.</p>
+          <p><strong>INFERRED:</strong> if a weapon appears consistently in the same style of container across several runs, the container type is more important than the exact room. Route by pattern, not by one screenshot.</p>
+        </section>
+        <section>
+          <h2>How to prepare for weapon runs</h2>
+          <h3>Cover ammo and carry planning</h3>
+          <p>The practical goal is a complete fighting package. Before you raid a risky weapon location, free inventory space, bring basic medical supplies, and decide what you will drop if you find a better weapon. Do not carry five mismatched ammo stacks and call it progression.</p>
+          <table><thead><tr><th>Item</th><th>Why it matters</th><th>Safe decision</th></tr></thead><tbody><tr><td>Primary weapon</td><td>Defines ammo and engagement range.</td><td>Keep one reliable weapon over several half-supported ones.</td></tr><tr><td>Ammo</td><td>Turns a weapon into a usable tool.</td><td>Match caliber/type before you commit carry space.</td></tr><tr><td>Magazine/loading item</td><td>Some setups fail without the right loading method.</td><td>Test the weapon before leaving the loot zone.</td></tr><tr><td>Medical backup</td><td>Weapon routes usually overlap zombie and injury risk.</td><td>Pair with the <a href="/vein-guides/vein-game-pain-zombies-survival-guide" class="inline-link">pain and zombies guide</a>.</td></tr></tbody></table>
+          <h3>Explain risky areas without drifting into broad map guide</h3>
+          <p>This page is not a full map walkthrough. The weapon-route rule is simple: high-value weapon areas also create higher noise, longer dwell time, and more punishment if you arrive tired or overloaded. If you need a wider route plan, use the <a href="/vein-guides/vein-map-best-loot-locations-route-guide" class="inline-link">best loot locations route guide</a>, then return here for weapon-specific carry checks.</p>
+          <p>For base prep, keep one backup melee tool, one repair/crafting path, and one exit route. The <a href="/vein-guides/vein-crafting-items-tools-materials-progression-guide" class="inline-link">crafting and tools guide</a> is the better place to solve tool progression before a weapon run.</p>
+        </section>
+        <section>
+          <h2>Localized weapon queries</h2>
+          <h3>Preserve Spanish and Turkish weapon variants as LSI</h3>
+          <p>Queries like <strong>vein weapon crate espanol</strong> or region-specific weapon phrases should be treated as the same parent intent: where to find weapon crates, how to carry ammo, and whether a demo location still applies. Keep the useful Spanish/Turkish variant coverage inside this guide instead of spinning up thin translated pages from a single query.</p>
+          <h3>Do not create thin translated pages from one variant</h3>
+          <p>A one-keyword localized page is weak if it cannot add new mechanics. Better structure: keep the English parent page, localize only when the site has a full locale route, and translate the full weapon-route workflow.</p>
+        </section>
+        <section>
+          <h2>FAQ</h2>
+          <h3>Where do weapons spawn in VEIN?</h3><p>Weapons most reliably belong to high-value containers and weapon-adjacent buildings: weapon crates, locked rooms, police or military routes, garages, and supply-heavy interiors. Exact spawns can change by build, so route by container type and current map state.</p>
+          <h3>Are weapon spawns different in the VEIN demo?</h3><p>They can be. Treat demo spawn locations as older build evidence unless your current game confirms the same container and location.</p>
+          <h3>What should a weapon crate guide include?</h3><p>It should include container priority, ammo matching, carry planning, route risk, and current-build warnings.</p>
+        </section>
+      </article>
+    `,
+  },
+  {
+    id: 34,
+    title: 'VEIN Mods Guide: Nexus Mods, Steam Mods, and Safe Setup',
+    h1: 'VEIN Mods and Nexus Mods Guide',
+    description:
+      'A practical VEIN mods guide for Nexus searches, Steam Workshop checks, PC-only mod safety, version compatibility, and clean setup habits.',
+    imageUrl: '/images/guide/vein-mods-nexus-steam-guide.jpg',
+    imageAlt: 'VEIN mods guide for Nexus Mods, Steam Workshop, PC compatibility, and safe setup checks.',
+    publishDate: '2026-08-06',
+    addressBar: '/vein-mods-nexus-steam-guide',
+    category: 'Mods',
+    tags: ['Mods', 'Nexus Mods', 'Steam Workshop', 'PC Setup', 'Safety'],
+    seo: {
+      title: 'VEIN Mods, Nexus, and Steam Mods Guide',
+      description:
+        'Check VEIN mod options safely: Nexus intent, Steam Workshop support, PC-only setup, version compatibility, backups, and unsafe download traps.',
+      keywords: 'VEIN mods, Nexus Mods, Steam mods, PC mods, Workshop',
+    },
+    detailsHtml: `
+      <article>
+        <header>
+          <p><strong>Fast answer:</strong> VEIN mod searches split into two jobs: checking the <strong>Steam Workshop</strong> path and checking external mod pages such as <strong>Nexus Mods</strong>. Use the Steam Workshop when it exposes current VEIN entries for your build. Use Nexus-style downloads only when the file page clearly targets VEIN, lists a current version, explains installation, and does not ask you to run random executables.</p>
+          <p><strong>Version note:</strong> checked against the current public Steam and Steam Workshop signal on August 6, 2026. VEIN is still Early Access, so mods can break after updates. Back up saves before installing anything that edits scripts, balance, UI, or world state.</p>
+        </header>
+        <figure>
+          <img src="/images/guide/vein-mods-nexus-steam-guide.jpg" alt="VEIN mods Nexus Mods and Steam Workshop safe setup guide for PC players" title="VEIN mods Nexus and Steam Workshop guide" />
+          <figcaption>Mod setup is a version-control problem first. Back up saves, match the current build, and install one change at a time.</figcaption>
+        </figure>
+        <section>
+          <h2>Where VEIN mods appear in search</h2>
+          <h3>Separate Nexus intent from Steam-mod intent</h3>
+          <p><strong>VEIN mods</strong>, <strong>VEIN Nexus</strong>, and <strong>VEIN mods Steam</strong> do not mean the same workflow. Steam Workshop is the cleanest route when a mod is published for the VEIN app because subscription, updates, and file placement are handled through Steam. Nexus-style pages are external downloads: they need stronger checking before you touch your main save.</p>
+          <table><thead><tr><th>Source</th><th>Use it when</th><th>Risk check</th></tr></thead><tbody><tr><td>Steam Workshop</td><td>The mod is listed for VEIN and matches your installed build.</td><td>Read update date, dependencies, and comments before subscribing.</td></tr><tr><td>Nexus-style mod page</td><td>The page explicitly targets VEIN and documents install steps.</td><td>Scan files, avoid executables, and back up saves first.</td></tr><tr><td>Discord/forum file</td><td>You know the author and the file has a visible changelog.</td><td>Treat as experimental until tested on a throwaway save.</td></tr><tr><td>Random download mirror</td><td>Almost never.</td><td>Skip cracks, repacks, password archives, and launcher bundles.</td></tr></tbody></table>
+          <h3>Identify PC-only mod searches</h3>
+          <p>VEIN modding is a PC intent. If a search says <strong>game VEIN mods</strong> or <strong>VEIN mods PC</strong>, answer with PC file hygiene, save backups, and build compatibility. Do not imply console, mobile, or cloud versions support mod files unless the official platform UI says so.</p>
+          <p>If you are changing server behavior, separate client visuals from server rules. Pair mod testing with the <a href="/vein-guides/vein-game-multiplayer-server-guide" class="inline-link">VEIN multiplayer server guide</a>.</p>
+        </section>
+        <section>
+          <h2>How to evaluate a VEIN mod safely</h2>
+          <h3>Check version compatibility before installing</h3>
+          <p>Version compatibility is the first filter. A mod built for an older demo or older Early Access branch can fail silently, corrupt settings, or change balance in ways the current save does not expect. Read the mod description, last update, comments, dependencies, and install path before downloading.</p>
+          <table><thead><tr><th>Check</th><th>Pass condition</th><th>Fail condition</th></tr></thead><tbody><tr><td>Game version</td><td>Mod page names the current VEIN build or recent update window.</td><td>Only mentions an old demo with no update notes.</td></tr><tr><td>Install path</td><td>Instructions explain the folder and rollback step.</td><td>Vague instruction like run this installer.</td></tr><tr><td>Save safety</td><td>Author recommends backups or clean testing.</td><td>No warning for world, inventory, or progression edits.</td></tr><tr><td>Dependencies</td><td>Required framework or loader is documented.</td><td>Unknown bundled files with no explanation.</td></tr></tbody></table>
+          <h3>Avoid cracks and unsafe downloads when looking for mods</h3>
+          <p>Do not mix modding with piracy searches. Crack pages, repacks, cheat loaders, and password-protected archives are not mod sources. For normal survival progression, use legitimate systems first: the <a href="/vein-guides/vein-crafting-items-tools-materials-progression-guide" class="inline-link">crafting guide</a>, <a href="/vein-items/tools" class="inline-link">tools database</a>, and <a href="/vein-items/materials" class="inline-link">materials list</a>.</p>
+        </section>
+        <section>
+          <h2>Best mod-page structure for readers</h2>
+          <h3>Cover install expectations without promising unsupported features</h3>
+          <p>A good VEIN mod page should say what the mod changes, which build it supports, where files go, how to uninstall, whether it touches saves, and whether it works in multiplayer. If those fields are missing, treat the mod as <strong>INFERRED</strong> compatibility until tested.</p>
+          <p>Install one mod at a time. Launch the game, load a backup save, test the changed system, then quit and document the result.</p>
+          <h3>Group mod categories by gameplay impact</h3>
+          <table><thead><tr><th>Mod category</th><th>Impact</th><th>Test priority</th></tr></thead><tbody><tr><td>UI or quality-of-life</td><td>Usually lower save risk.</td><td>Check menus, inventory, and keybinds.</td></tr><tr><td>Graphics or audio</td><td>Can affect performance and settings.</td><td>Pair with the <a href="/vein-guides/vein-requirements-graphics-settings" class="inline-link">settings guide</a>.</td></tr><tr><td>Items, crafting, loot</td><td>Can change progression and save state.</td><td>Test on a duplicate save first.</td></tr><tr><td>Multiplayer/server rules</td><td>Can desync clients or block joins.</td><td>Test with a private server before public use.</td></tr></tbody></table>
+        </section>
+        <section>
+          <h2>FAQ</h2>
+          <h3>Are there VEIN mods?</h3><p>Yes, VEIN has mod-search demand and a Steam Workshop path to check. Availability changes by build and platform, so verify the current Workshop or file page before installing.</p>
+          <h3>Is VEIN on Nexus Mods?</h3><p>Treat Nexus as an external mod-source check, not an automatic green light. Only use a Nexus-style page if it clearly targets VEIN, matches the current build, documents install and rollback, and has credible update history.</p>
+          <h3>Can Steam mods be used with VEIN?</h3><p>Use Steam Workshop mods when they are listed for VEIN and match your current build. Read dependencies, comments, and update dates before subscribing, then test on a backup save.</p>
+        </section>
+      </article>
+    `,
+  },  {
     id: 33,
     title: 'VEIN Console Commands Guide: Item List, Commands, and Debug Uses',
     h1: 'VEIN Console Commands and Item List',
