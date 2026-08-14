@@ -55,7 +55,7 @@
     </section>
 
         <!-- 广告：banner（728x90 / 移动端 320x50） -->
-        <AdBanner class="container" />
+        <!-- <AdBanner class="container" /> -->
 
     <!-- Wiki Content -->
     <section class="wiki-content" v-if="wiki">
@@ -112,14 +112,14 @@
             </div>
 
                 <!-- 广告：侧边（160x600） -->
-                <AdSidebar class="container" />
+                <!-- <AdSidebar class="container" /> -->
 
           </div>
         </div>
       </div>
 
           <!-- 广告：banner（728x90 / 移动端 320x50） -->
-          <AdBanner class="container" />
+          <!-- <AdBanner class="container" /> -->
     </section>
     
 
