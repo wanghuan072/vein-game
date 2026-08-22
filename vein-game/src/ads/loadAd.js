@@ -20,7 +20,7 @@ function enqueue(task) {
  * 顺序加载 highperformanceformat 广告，避免 atOptions 被并发覆盖
  */
 export function loadHighPerformanceAd(hostEl, unit) {
-  if (!hostEl || !unit?.key) return Promise.resolve()
+  if (!hostEl || !unit?.key || !AD_INVOKE_BASE) return Promise.resolve()
 
   return enqueue(
     () =>
@@ -47,7 +47,7 @@ export function loadHighPerformanceAd(hostEl, unit) {
 
 /** 广告：Popunder 插屏（全站仅加载一次） */
 export function loadPopunderAd() {
-  if (typeof window === 'undefined' || popunderLoaded) return
+  if (typeof window === 'undefined' || popunderLoaded || !AD_POPUNDER_SRC) return
   popunderLoaded = true
 
   const script = document.createElement('script')
@@ -58,7 +58,7 @@ export function loadPopunderAd() {
 
 /** 广告：原生横幅（脚本全站仅加载一次） */
 export function loadNativeAd(containerEl) {
-  if (!containerEl) return
+  if (!containerEl || !AD_NATIVE.scriptSrc || !AD_NATIVE.containerId) return
 
   if (!document.getElementById(AD_NATIVE.containerId)) {
     const container = document.createElement('div')

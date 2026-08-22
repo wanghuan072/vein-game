@@ -32,17 +32,17 @@ for (const file of files) {
 
   content = replaceBlock(content, '广告占位符 - 原生横幅', '广告占位符 - 原生横幅', [
     '<!-- 广告：原生横幅 -->',
-    '<AdNativeBanner class="container" />',
+    '<!-- <AdNativeBanner class="container" /> -->',
   ])
 
   content = replaceBlock(content, '广告占位符 - 侧边广告', '广告占位符 - 侧边广告', [
     '<!-- 广告：侧边（160x600） -->',
-    '<AdSidebar class="container" />',
+    '<!-- <AdSidebar class="container" /> -->',
   ])
 
   content = replaceBlock(content, '广告占位符', '广告占位符', [
     '<!-- 广告：banner（728x90 / 移动端 320x50） -->',
-    '<AdBanner class="container" />',
+    '<!-- <AdBanner class="container" /> -->',
   ])
 
   if (content !== before) {
