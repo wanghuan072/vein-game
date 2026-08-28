@@ -14,6 +14,7 @@ export type ContentEntry = {
   imageUrl?: string
   imageAlt?: string
   publishDate?: string
+  updatedDate?: string
   category?: string
   tags?: string[]
   body?: string
