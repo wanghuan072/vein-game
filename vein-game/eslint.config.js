@@ -1,26 +1,13 @@
 import { defineConfig, globalIgnores } from 'eslint/config'
-import globals from 'globals'
-import js from '@eslint/js'
-import pluginVue from 'eslint-plugin-vue'
-import skipFormatting from '@vue/eslint-config-prettier/skip-formatting'
+import nextVitals from 'eslint-config-next/core-web-vitals'
 
 export default defineConfig([
-  {
-    name: 'app/files-to-lint',
-    files: ['**/*.{js,mjs,jsx,vue}'],
-  },
-
-  globalIgnores(['**/dist/**', '**/dist-ssr/**', '**/coverage/**']),
-
-  {
-    languageOptions: {
-      globals: {
-        ...globals.browser,
-      },
-    },
-  },
-
-  js.configs.recommended,
-  ...pluginVue.configs['flat/essential'],
-  skipFormatting,
+  ...nextVitals,
+  { rules: { '@next/next/no-img-element': 'off' } },
+  globalIgnores([
+    '.next/**',
+    'dist/**',
+    'coverage/**',
+    'legacy-vue/**',
+  ]),
 ])

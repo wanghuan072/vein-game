@@ -1,0 +1,2637 @@
+[
+  {
+    "id": 1,
+    "title": "Combat Pack",
+    "description": "Used to store items. Increases your max. carry weight.\nInsulation: Minimal\nWater Resistance: -75.0%\nRain Resistance: -20.0%\nRun Speed Multiplier: -2.0%\nBlunt Resistance: 5.0 HP\nBladed Resistance: 2.5 HP\nBite Resistance: 1.5 HP\nAnimal Bite Resistance: 3.0 HP\nExtra Capacity: 68.0 kg\nDismantle: Denim Scrap\nWeight: 1.6 kg",
+    "imageUrl": "/images/item/clothing/clothing-01.webp",
+    "imageAlt": "Combat Pack",
+    "publishDate": "2025-11-20",
+    "type": "backpack",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 2,
+    "title": "Gym Bag",
+    "description": "Used to store items. Increases your max. carry weight.\nInsulation: Minimal\nWater Resistance: -25.0%\nRun Speed Multiplier: -12.0%\nExtra Capacity: 34.0 kg\nDismantle: Cloth Scrap\nWeight: 1.1 kg",
+    "imageUrl": "/images/item/clothing/clothing-02.webp",
+    "imageAlt": "Gym Bag",
+    "publishDate": "2025-11-20",
+    "type": "backpack",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 3,
+    "title": "Hiking Backpack",
+    "description": "Used to store items. Increases your max. carry weight.\nInsulation: Avarage\nWater Resistance: -65.0%\nRun Speed Multiplier: -2.0%\nExtra Capacity: 45.4 kg\nDismantle: Cloth Scrap\nWeight: 1.6 kg",
+    "imageUrl": "/images/item/clothing/clothing-03.webp",
+    "imageAlt": "Hiking Backpack",
+    "publishDate": "2025-11-20",
+    "type": "backpack",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 4,
+    "title": "Portable Air Tank",
+    "description": "Contains probably breathable gas that can be used underwater or in low-air environments.\nMake sure you are wearing a rebreather on or it'll have no effect.\nInsulation: Minimal\nCapacity: 454 fl. oz, 12.9 L\nEmpty Weight: 35 lbs, 15.9 kg\nFilled Weight: 67.4 lbs, 30.6 kg",
+    "imageUrl": "/images/item/clothing/clothing-04.webp",
+    "imageAlt": "Portable Air Tank",
+    "publishDate": "2025-11-20",
+    "type": "backpack",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 5,
+    "title": "School Backpack",
+    "description": "Used to store items. Increases your max. carry weight.\nInsulation: Minimal\nWater Resistance: -15%\nRun Speed Multiplier: -5.0%\nExtra Capacity: 22.7 kg\nDismantle: Cloth Scrap\nWeight: 0.9 kg",
+    "imageUrl": "/images/item/clothing/clothing-05.webp",
+    "imageAlt": "School Backpack",
+    "publishDate": "2025-11-20",
+    "type": "backpack",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 6,
+    "title": "Aviator Glasses",
+    "description": "Pretend to be a cop or a pilot.\nWeight: 0.2 lb, 0.2 kg",
+    "imageUrl": "/images/item/clothing/clothing-06.webp",
+    "imageAlt": "Aviator Glasses",
+    "publishDate": "2025-12-02",
+    "type": "face",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 7,
+    "title": "Bandana",
+    "description": "A Bandana.\nInsulation: Minimal\nWeight: 0.0 lbs, 0.0 kgs",
+    "imageUrl": "",
+    "imageAlt": "Bandana",
+    "publishDate": "2025-12-02",
+    "type": "face",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 8,
+    "title": "Clown Nose",
+    "description": "A red clown nose.\nInsulation: Minimal\nWeight: 0.0 lbs, 0.0 kgs",
+    "imageUrl": "",
+    "imageAlt": "Clown Nose",
+    "publishDate": "2025-12-02",
+    "type": "face",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 9,
+    "title": "Cool Glasses",
+    "description": "Keeps the sun out of your eyes.\nInsulation: Minimal\nWeight: 0.2 lb, 0.1 kg",
+    "imageUrl": "/images/item/clothing/clothing-09.webp",
+    "imageAlt": "Cool Glasses",
+    "publishDate": "2025-12-02",
+    "type": "face",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 10,
+    "title": "Dust Mask",
+    "description": "A dust mask.\nInsulation: Minimal\nWeight: 0.0 lbs, 0.0 kgs",
+    "imageUrl": "",
+    "imageAlt": "Dust Mask",
+    "publishDate": "2025-12-02",
+    "type": "face",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 11,
+    "title": "Hockey Mask",
+    "description": "Pairs perfectly with a machete!\nInsulation: Minimal\nBladed Resistance: 0.5 HP\nWeight: 0.5 lbs, 0.2 kg",
+    "imageUrl": "",
+    "imageAlt": "Hockey Mask",
+    "publishDate": "2025-12-02",
+    "type": "face",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 12,
+    "title": "Medical Mask",
+    "description": "A simple medical mask.\nInsulation: Minimal\nWeight: 0.0 lb, 0.0 kgs",
+    "imageUrl": "",
+    "imageAlt": "Medical Mask",
+    "publishDate": "2025-12-02",
+    "type": "face",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 13,
+    "title": "Pet Collar",
+    "description": "A collar specifically made for pets.\nInsulation: Minimal\nWeight: 0.5 lbs, 0.23 kgs",
+    "imageUrl": "",
+    "imageAlt": "Pet Collar",
+    "publishDate": "2025-12-02",
+    "type": "face",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 15,
+    "title": "Prescription Glasses",
+    "description": "A pair of prescription glasses.\nInsulation: Minimal\nWeight: 0.0 lbs, 0.0 kgs",
+    "imageUrl": "",
+    "imageAlt": "Prescription Glasses",
+    "publishDate": "2025-12-02",
+    "type": "face",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 16,
+    "title": "Reading Glasses",
+    "description": "A pair of reading glasses.\nInsulation: Minimal\nWeight: 0.0 lbs, 0.0 kgs",
+    "imageUrl": "",
+    "imageAlt": "Reading Glasses",
+    "publishDate": "2025-12-02",
+    "type": "face",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 17,
+    "title": "Rebreather",
+    "description": "Recycles carbon dioxide into oxygen. Useful for underwater or low-air environment exploration.\nMake sure you are have a gas tank equipped or this will have no effect.\nInsulation: Minimal\nWeight: 0.5 lb, 0.2 kg",
+    "imageUrl": "/images/item/clothing/clothing-17.webp",
+    "imageAlt": "Rebreather",
+    "publishDate": "2025-12-02",
+    "type": "face",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 18,
+    "title": "Respirator",
+    "description": "A basic respirator.\nInsulation: Minimal\nRadiation Resistance: -15.0%\nDismantle: Plastic Scrap, Screws\nDismantle Tool: Pliers\nWeight: 0.2 kg",
+    "imageUrl": "",
+    "imageAlt": "Respirator",
+    "publishDate": "2025-12-02",
+    "type": "face",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 19,
+    "title": "Round Glasses",
+    "description": "A pair of prescription round glasses.\nInsulation: Minimal\nWeight: 0.0 lbs, 0.0 kgs",
+    "imageUrl": "",
+    "imageAlt": "Round Glasses",
+    "publishDate": "2025-12-02",
+    "type": "face",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 20,
+    "title": "Safety Goggles",
+    "description": "Safety first!\nInsulation: Minimal\nWeight: 0.0 lb, 0.0 kgs",
+    "imageUrl": "",
+    "imageAlt": "Safety Goggles",
+    "publishDate": "2025-12-02",
+    "type": "face",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 21,
+    "title": "Ski Goggles",
+    "description": "Keeps the snow out of your eyes!\nInsulation: Minimal\nWater Resistance: -20.0%\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Ski Goggles",
+    "publishDate": "2025-12-02",
+    "type": "face",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 22,
+    "title": "Sleeping Mask",
+    "description": "Helps some people with sleeping, not very practical otherwise.\nInsulation: Minimal\nWeight: 0.0 lbs, 0.0 kgs",
+    "imageUrl": "",
+    "imageAlt": "Sleeping Mask",
+    "publishDate": "2025-12-02",
+    "type": "face",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 23,
+    "title": "Spa Mask",
+    "description": "Sometimes you gotta spoil yourself.\nInsulation: Minimal\nWeight: 0.0 lbs, 0.0 kgs",
+    "imageUrl": "",
+    "imageAlt": "Spa Mask",
+    "publishDate": "2025-12-02",
+    "type": "face",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 24,
+    "title": "Swimming Goggles",
+    "description": "A pair of swimming goggles.\nInsulation: Minimal\nWater Resistance: -25.0%\nWeight: 0.0 lbs, 0.0 kgs",
+    "imageUrl": "",
+    "imageAlt": "Swimming Goggles",
+    "publishDate": "2025-12-02",
+    "type": "face",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 25,
+    "title": "Welding Helmet",
+    "description": "A welding helmet.\nInsulation: Minimal\nWeight: 1.5 lb, 0.7 kg",
+    "imageUrl": "",
+    "imageAlt": "Welding Helmet",
+    "publishDate": "2025-12-02",
+    "type": "face",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 26,
+    "title": "Boots",
+    "description": "A pair of heavy duty boots. Weight: 0.5lb, 0.2kg",
+    "imageUrl": "/images/item/clothing/clothing-26.webp",
+    "imageAlt": "Boots",
+    "publishDate": "2025-12-12",
+    "type": "feet",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 27,
+    "title": "Bowling Shoes",
+    "description": "A pair of slippery bowling shoes.\nInsulation: Minimal\nWater Resistance: -15.0%\nRun Speed Multiplier: -5.0%\nWeight: 0.2 lbs, 0.09 kgs",
+    "imageUrl": "/images/item/clothing/clothing-27.webp",
+    "imageAlt": "Bowling Shoes",
+    "publishDate": "2025-12-12",
+    "type": "feet",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 28,
+    "title": "Correctional Officer Shoes",
+    "description": "Shoes made of leather. Part of a correctional officer uniform.\nInsulation: Minimal\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "/images/item/clothing/clothing-28.webp",
+    "imageAlt": "Correctional Officer Shoes",
+    "publishDate": "2025-12-12",
+    "type": "feet",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 29,
+    "title": "Dress Shoes",
+    "description": "Polished black leather.\nInsulation: Minimal\nWeight: 0.1 lb, 0.1 kg",
+    "imageUrl": "/images/item/clothing/clothing-29.webp",
+    "imageAlt": "Dress Shoes",
+    "publishDate": "2025-12-12",
+    "type": "feet",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 30,
+    "title": "Firefighter Boots",
+    "description": "Boots for a firefighter uniform.\nInsulation: Minimal\nWeight: 0.5 lb, 0.2 kg",
+    "imageUrl": "/images/item/clothing/clothing-30.webp",
+    "imageAlt": "Firefighter Boots",
+    "publishDate": "2025-12-12",
+    "type": "feet",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 31,
+    "title": "Flip Flops",
+    "description": "A pair of lightweight flip flops. Not easy to run in.\nInsulation: Minimal\nWeight: 0.1 lb, 0.1 kg",
+    "imageUrl": "/images/item/clothing/clothing-31.webp",
+    "imageAlt": "Flip Flops",
+    "publishDate": "2025-12-12",
+    "type": "feet",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 32,
+    "title": "Goth Boots",
+    "description": "A tall pair of goth boots.\nInsulation: Minimal\nWeight: 0.8 lbs, 0.36 kgs",
+    "imageUrl": "/images/item/clothing/clothing-32.webp",
+    "imageAlt": "Goth Boots",
+    "publishDate": "2025-12-12",
+    "type": "feet",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 33,
+    "title": "High Heels",
+    "description": "A pair of high heels. Hurts your feet and are difficult to walk in.\nInsulation: Minimal\nRun Speed Multiplier: -25.0%\nWeight: 0.2 lbs, 0.09 kgs",
+    "imageUrl": "",
+    "imageAlt": "High Heels",
+    "publishDate": "2025-12-12",
+    "type": "feet",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 34,
+    "title": "Leather Shoes",
+    "description": "Shoes made of leather. Weight: 0.1 lb, 0.1 kg",
+    "imageUrl": "/images/item/clothing/clothing-34.webp",
+    "imageAlt": "Leather Shoes",
+    "publishDate": "2025-12-12",
+    "type": "feet",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 35,
+    "title": "Military Boots",
+    "description": "A pair of heavy duty boots used by the military.\nInsulation: Average\nWater Resistance: -50.0%\nRain Resistance: -20.0%\nRun Speed Multiplier: -7.5%\nBlunt Resistance: 12.5 HP\nBladed Resistance: 15.0 HP\nBullet Resistance: 5.0 HP\nBite Resistance: 25.0 HP\nAnimal Bite Resistance: 30.0 HP\nDismantle: Leather Scrap\nWeight: 0.2 kg",
+    "imageUrl": "/images/item/clothing/clothing-35.webp",
+    "imageAlt": "Military Boots",
+    "publishDate": "2025-12-12",
+    "type": "feet",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 36,
+    "title": "Phoenix 1s",
+    "description": "A legendary pair of shoes birthed from a fiery explosion and someone's unfortunate demise.\nEmbroidered text on the side reads Where one falls, another will rise.\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "/images/item/clothing/clothing-36.webp",
+    "imageAlt": "Phoenix 1s",
+    "publishDate": "2025-12-12",
+    "type": "feet",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 37,
+    "title": "Police Shoes",
+    "description": "Shoes made of leather. Part of a police uniform.\nWeight: 0.0 kg",
+    "imageUrl": "/images/item/clothing/clothing-37.webp",
+    "imageAlt": "Police Shoes",
+    "publishDate": "2025-12-12",
+    "type": "feet",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 38,
+    "title": "Rain Boots",
+    "description": "A pair of ruber rain boots. Keeps your feet dry!\nWeight: 0.5 lbs, 0.23 kgs",
+    "imageUrl": "/images/item/clothing/clothing-38.webp",
+    "imageAlt": "Rain Boots",
+    "publishDate": "2025-12-12",
+    "type": "feet",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 39,
+    "title": "Rollerblades",
+    "description": "A pair of rollerblades. Allows you to move faster, but you'll slide a bit when you stop moving.\nWeight: 0.3 lbs, .14 kgs",
+    "imageUrl": "/images/item/clothing/clothing-39.webp",
+    "imageAlt": "Rollerblades",
+    "publishDate": "2025-12-12",
+    "type": "feet",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 40,
+    "title": "Sandals",
+    "description": "A pair of breezy sandals.\nInsulation: Minimal\nRun Speed Multiplier: -20.0%\nBladed Resistance: 0.2 HP\nWeight: 0.2 lbs, 0.09 kgs",
+    "imageUrl": "",
+    "imageAlt": "Sandals",
+    "publishDate": "2025-12-12",
+    "type": "feet",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 41,
+    "title": "Sneakers",
+    "description": "Casual laced canvas shoes.\nInsulaton: Average\nWater Resistance: -5.0%\nRun Speed Multiplier: +10.0%\nBlunt Resistance: 2.1 HP\nBladed Resistance: 2.1 HP\nBullet Resistance: 2.1 HP\nBite Resistance: 3.0 HP\nAnimal Bite Resistance: 5.0 HP\nDismantle: Leather Scrap\nWeight: 0.0 kg",
+    "imageUrl": "/images/item/clothing/clothing-41.webp",
+    "imageAlt": "Sneakers",
+    "publishDate": "2025-12-12",
+    "type": "feet",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 42,
+    "title": "Balaclava",
+    "description": "A woolen balaclava.\nInsulation: Heavy\nWeight: 0.2 lbs, 0.09 kgs",
+    "imageUrl": "",
+    "imageAlt": "Balaclava",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 43,
+    "title": "Baseball Cap",
+    "description": "A baseball hat.\nInsulation: Minimal\nWeight: 0.2 lb, 0.1 kg",
+    "imageUrl": "",
+    "imageAlt": "Baseball Cap",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 44,
+    "title": "Beanie",
+    "description": "A cotton beanie.\nInsulation: Average\nWeight: 0.2 lbs, 0.09 kgs",
+    "imageUrl": "",
+    "imageAlt": "Beanie",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 45,
+    "title": "Beret",
+    "description": "A beret.\nInsulation: Minimal\nWeight: 0.2 lbs, 0.09 kgs",
+    "imageUrl": "",
+    "imageAlt": "Beret",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 46,
+    "title": "Bicycle Helmet",
+    "description": "Don't lose your head!\nInsulation: Minimal\nBlunt Resistance: 2.0 HP\nBladed Resistance: 0.2 HP\nBullet Resistance: 1.5 HP\nWeight: 0.3 lb, 0.1 kg",
+    "imageUrl": "",
+    "imageAlt": "Bicycle Helmet",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 47,
+    "title": "Boonie",
+    "description": "A lightweight boonie.\nInsulation: Minimal\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Boonie",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 48,
+    "title": "Bowler Hat",
+    "description": "Also known as Doris to some people.\nInsulation: Minimal\nWeight: 0.3 lbs, .13 kgs",
+    "imageUrl": "",
+    "imageAlt": "Bowler Hat",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 49,
+    "title": "Boxing Helmet",
+    "description": "Might help you take a punch or two, or three.\nInsulation: Minimal\nBlunt Resistance: 2.5 HP\nBullet Resistance: 0.5 HP\nWeight: 0.3 lbs, .13 kgs",
+    "imageUrl": "",
+    "imageAlt": "Boxing Helmet",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 50,
+    "title": "Bunny Ears",
+    "description": "A pair of fuzzy bunny ears attached to a headband.\nInsulation: Minimal\nWeight: 0.0 lbs, 0.0 kgs",
+    "imageUrl": "",
+    "imageAlt": "Bunny Ears",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 51,
+    "title": "Cat Ears",
+    "description": "A pair of fuzzy cat ears attached to a headband.\nInsulation: Minimal\nWeight: 0.0 lbs, 0.0 kgs",
+    "imageUrl": "",
+    "imageAlt": "Cat Ears",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 52,
+    "title": "Chef Hat",
+    "description": "Unfortunatly, wearing this won't improve your skills in the kitchen.\nInsulation: Minimal\nDismantle: Cloth Scrap\nWeight: 0.1 kg",
+    "imageUrl": "",
+    "imageAlt": "Chef Hat",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 53,
+    "title": "Cowboy Hat",
+    "description": "Yee haw!\nInsulation: Minimal\nWeight: 0.2 lbs, 0.09 kgs",
+    "imageUrl": "",
+    "imageAlt": "Cowboy Hat",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 54,
+    "title": "Deputy Hat",
+    "description": "A hat typically worn by a county deputy.\nInsulation: Minimal\nWeight: 0.2 lbs, 0.13 kgs",
+    "imageUrl": "",
+    "imageAlt": "Deputy Hat",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 55,
+    "title": "Ear Protectors",
+    "description": "A pair of headphones used to protect the user's ears from loud noises.\nInsulation: Minimal\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Ear Protectors",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 56,
+    "title": "Fedora",
+    "description": "The owner of this was either a detective, an online forum moderator, or both.\nInsulation: Minimal\nWeight: 0.2 lb, 0.1 kg",
+    "imageUrl": "",
+    "imageAlt": "Fedora",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 57,
+    "title": "Firefighter Helmet",
+    "description": "A sturdy firefighter helmet.\nInsulaton: Minimal\nBlunt Resistance: 3.5 HP\nBladed Resistance: 2.0 HP\nBullet Resistance: 2.5 HP\nDismantle: Plastic Scrap\nDismantle Tool: Pliers\nWeight: 0.2 kg",
+    "imageUrl": "",
+    "imageAlt": "Firefighter Helmet",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 58,
+    "title": "Fishing Hat",
+    "description": "Fish fear you.\nInsulation: Minimal\nWeight: 0.1 kg",
+    "imageUrl": "",
+    "imageAlt": "Fishing Hat",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 59,
+    "title": "Golf Visor",
+    "description": "A simple golf visor.\nInsulation: Minimal\nWeight: 0.1 kg",
+    "imageUrl": "",
+    "imageAlt": "Golf Visor",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 60,
+    "title": "Hard Hat",
+    "description": "Remember workplace safety training?\nInsulaton: Minimal\nBlunt Resistance: 3.0 HP\nBladed Resistance: 1.5 HP\nBullet Resistance: 2.0 HP\nDismantle: Plastic Scrap\nDismantle Tool: Basic Pliers\nWeight: 0.1 kg",
+    "imageUrl": "",
+    "imageAlt": "Hard Hat",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 61,
+    "title": "Headband",
+    "description": "A lightweight headband\nInsulation: Minimal\nWeight: 0.0 lb, 0.0 kg",
+    "imageUrl": "",
+    "imageAlt": "Headband",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 62,
+    "title": "Headlamp",
+    "description": "Functions as a flashlight when equipped.\nWeight: 0.2 lbs, 0.09 kgs",
+    "imageUrl": "",
+    "imageAlt": "Headlamp",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 63,
+    "title": "Military Cap",
+    "description": "A cap sometimes worn by members of the military.\nInsulaton: Minimal\nBlunt Resistance: 0.5 HP\nBite Resistance: 0.5 HP\nDismantle: Cloth Scrap\nWeight: 0.1 kg",
+    "imageUrl": "",
+    "imageAlt": "Military Cap",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 64,
+    "title": "Open Balaclava",
+    "description": "A woolen balaclava, but with no face covering.\nInsulation: Minimal\nWeight: 0.2 lbs, 0.09 kgs",
+    "imageUrl": "",
+    "imageAlt": "Open Balaclava",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 65,
+    "title": "Party Hat",
+    "description": "An old party hat.\nInsulation: Minimal\nWeight: 0.0 lbs, 0.0 kgs",
+    "imageUrl": "",
+    "imageAlt": "Party Hat",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 66,
+    "title": "Police Hat",
+    "description": "A cap for police.\nWeight: 0.2 lb, 0.1 kg",
+    "imageUrl": "/images/item/clothing/clothing-66.webp",
+    "imageAlt": "Police Hat",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 67,
+    "title": "Pom Pom Hat",
+    "description": "A woolen hat with a pom pom attached to the top. Cute!\nInsulation: Average\nWeight: 0.2 lb, 0.1 kg",
+    "imageUrl": "",
+    "imageAlt": "Pom Pom Hat",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 68,
+    "title": "Ranger Hat",
+    "description": "A hat typically worn by park rangers.\nInsulation: Minimal\nWeight:0.3 lbs, 0.13 kgs",
+    "imageUrl": "",
+    "imageAlt": "Ranger Hat",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 69,
+    "title": "Sheriff Hat",
+    "description": "A hat typically worn by a county sheriff.\nWeight: 0.1 kg",
+    "imageUrl": "",
+    "imageAlt": "Sheriff Hat",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 70,
+    "title": "Shower Cap",
+    "description": "A plastic shower cap.\nInsulation: Minimal\nWater Resistance: 50.0%\nWeight: 0.0 lbs, 0.0 kgs",
+    "imageUrl": "",
+    "imageAlt": "Shower Cap",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 71,
+    "title": "State Trooper Hat",
+    "description": "A hat typically worn by a state trooper.\nInsulation: Minimal\nWeight: 0.3 lbs, 0.13 kgs",
+    "imageUrl": "",
+    "imageAlt": "State Trooper Hat",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 72,
+    "title": "Straw Hat",
+    "description": "A lightweight straw hat for farming or gardening.\nInsulation: Minimal\nWeight: 0.2 lbs, 0.09 kgs",
+    "imageUrl": "",
+    "imageAlt": "Straw Hat",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 73,
+    "title": "Tin Foil Hat",
+    "description": "Something big is about to happen, you can feel it...\nInsulation: Minimal\nRadiation Resistance: -5.0%\nWeight: 0.0 lbs, 0.0 kgs",
+    "imageUrl": "",
+    "imageAlt": "Tin Foil Hat",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 74,
+    "title": "Top Hat",
+    "description": "Wearing this will let others know how classy you are, probably.\nInsulation: Minimal\nWeight: 0.2 lbs, 0.09 kgs",
+    "imageUrl": "",
+    "imageAlt": "Top Hat",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 75,
+    "title": "Traffic Cone",
+    "description": "There aren't any traffic james now.\nInsulation: Minimal\nWeight: 0.0 lbs, 0.0 kgs",
+    "imageUrl": "/images/item/clothing/clothing-75.webp",
+    "imageAlt": "Traffic Cone",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 76,
+    "title": "Trapper Hat",
+    "description": "A fuzzy hat with a fur lining.\nInsulation: Heavy\nWeight: 0.2 lb, 0.1 kg",
+    "imageUrl": "",
+    "imageAlt": "Trapper Hat",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 77,
+    "title": "Trucker Hat",
+    "description": "Technically a baseball cap, but with pride.\nWeight: 0.2 lb, 0.1 kg",
+    "imageUrl": "/images/item/clothing/clothing-77.webp",
+    "imageAlt": "Trucker Hat",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 78,
+    "title": "Waterproof Headlamp",
+    "description": "Functions as a flashlight when equipped. Can be used underwater!\nWeight: 0.2 lbs, 0.09 kgs\nLocation (The Apex)",
+    "imageUrl": "/images/item/clothing/clothing-78.webp",
+    "imageAlt": "Waterproof Headlamp",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 79,
+    "title": "Wedding Veil",
+    "description": "Hope you prepared your vows.\nInsulation: Minimal\nWeight: 0.0 lbs, 0.0 kgs",
+    "imageUrl": "",
+    "imageAlt": "Wedding Veil",
+    "publishDate": "2025-12-12",
+    "type": "head",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 80,
+    "title": "Chef Pants",
+    "description": "A pair of chef pants.\nInsulation: Average\nDismantle: Cloth Scrap\nWeight: 1.1 kg",
+    "imageUrl": "",
+    "imageAlt": "Chef Pants",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 81,
+    "title": "Correctional Officer Pants",
+    "description": "A pair of correctional officer pants, typically worn as part of a correctional officer uniform.\nInsulation: Average\nWeight: 2.5 lbs, 1.13 kgs",
+    "imageUrl": "",
+    "imageAlt": "Correctional Officer Pants",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 82,
+    "title": "Denim Shorts",
+    "description": "A pair of breezy denim shorts.\nInsulation: Minimal\nBladded Resistance: 1.2 HP\nBullet Resistance: 1.0 HP\nWeight: 1.0 lbs, 0.45 kgs",
+    "imageUrl": "",
+    "imageAlt": "Denim Shorts",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 83,
+    "title": "Deputy Pants",
+    "description": "A pair of deputy Pants, typically worn by deputies.\nInsulation: Average\nWeight: 2.0 lbs, .9 kgs",
+    "imageUrl": "",
+    "imageAlt": "Deputy Pants",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 84,
+    "title": "Dolphin Shorts",
+    "description": "A lightweight pair of Dolphin Shorts, great for exercise (or excerise).\nInsulation: Minimal\nWeight: 0.5 lbs, 0.23 kgs",
+    "imageUrl": "/images/item/clothing/clothing-84.webp",
+    "imageAlt": "Dolphin Shorts",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 85,
+    "title": "Firefighter Pants",
+    "description": "A heavy pair of firefighter pants.\nWeight: 5.0 lbs, 2.3 kgs",
+    "imageUrl": "/images/item/clothing/clothing-85.webp",
+    "imageAlt": "Firefighter Pants",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 86,
+    "title": "Gym Shorts",
+    "description": "A lightweight pair of gym shorts, great for exercise.\nInsulation: Minimal\nWeight: 0.8 lbs, 0.36 kgs",
+    "imageUrl": "/images/item/clothing/clothing-86.webp",
+    "imageAlt": "Gym Shorts",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 87,
+    "title": "Jeans",
+    "description": "Some denim pants.\nInsulation: Average\nWeight: 0.2 lb, 0.1 kg",
+    "imageUrl": "/images/item/clothing/clothing-87.webp",
+    "imageAlt": "Jeans",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 88,
+    "title": "Khaki Pants",
+    "description": "A pair of khaki pants.\nWeight: 2.8 lbs, 1.3 kgs",
+    "imageUrl": "/images/item/clothing/clothing-88.webp",
+    "imageAlt": "Khaki Pants",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 89,
+    "title": "Khaki Shorts",
+    "description": "A pair of Khaki shorts.\nInsulation: Minimal\nWeight: 0.8 lb, 0.4 kg",
+    "imageUrl": "",
+    "imageAlt": "Khaki Shorts",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 90,
+    "title": "Long Dress",
+    "description": "A long dress.\nInsulation: Average\nWeight: 0.3 lbs, .13 kgs",
+    "imageUrl": "/images/item/clothing/clothing-90.webp",
+    "imageAlt": "Long Dress",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 91,
+    "title": "Long Skirt",
+    "description": "A longer skirt that extends below the knees.\nInsulation: Minimal\nRed Speed Multiplier: -50.0%\nWeight: 0.2 lbs, 0.09 kgs",
+    "imageUrl": "/images/item/clothing/clothing-91.webp",
+    "imageAlt": "Long Skirt",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 92,
+    "title": "Medical Scrubs Pants",
+    "description": "Some scrubs pants typically worn by medical professionals.\nInsulation: Minimal\nWeight: 0.3 lb, 0.1 kg",
+    "imageUrl": "",
+    "imageAlt": "Medical Scrubs Pants",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 93,
+    "title": "Military Pants",
+    "description": "A pair of pants issued by the military.\nWeight: 3.8 lbs, 1.7 kgs",
+    "imageUrl": "/images/item/clothing/clothing-93.webp",
+    "imageAlt": "Military Pants",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 94,
+    "title": "Overalls",
+    "description": "A pair of denim overalls.\nWeight: 3.5 lbs, 1.59 kgs",
+    "imageUrl": "/images/item/clothing/clothing-94.webp",
+    "imageAlt": "Overalls",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 95,
+    "title": "Police Pants",
+    "description": "A pair of police pants, typically worn as a part of a police uniform.\nInsulation: Average\nWeight: 2.5 lbs, 1.1 kgs",
+    "imageUrl": "",
+    "imageAlt": "Police Pants",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 96,
+    "title": "Prison Guard Pants",
+    "description": "A pair of prison guard pants typically worn by officers at the local prison.\nWeight: 3.0 lbs, 1.36 kgs",
+    "imageUrl": "/images/item/clothing/clothing-96.webp",
+    "imageAlt": "Prison Guard Pants",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 97,
+    "title": "Ranger Pants",
+    "description": "A pair of ranger pants, typically worn by park rangers.\nWeight: 2.0 lbs, 1.36 kgs",
+    "imageUrl": "/images/item/clothing/clothing-97.webp",
+    "imageAlt": "Ranger Pants",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 98,
+    "title": "Riot Pants",
+    "description": "A pair of riot pants, typically worn in a set of riot gear.\nWeight: 3.8 lbs, 1.7 kgs",
+    "imageUrl": "/images/item/clothing/clothing-98.webp",
+    "imageAlt": "Riot Pants",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 99,
+    "title": "Sheriff Pants",
+    "description": "A pair of Sheriff pants, typically worn by the county sheriff.\nInsulation: Average\nWeight: 2.5 lbs, 1.1 kgs",
+    "imageUrl": "",
+    "imageAlt": "Sheriff Pants",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 100,
+    "title": "Skinny Jeans",
+    "description": "A pair of tight skinny jeans.\nWeight: 1.5 lbs, 0.7 kg",
+    "imageUrl": "/images/item/clothing/clothing-100.webp",
+    "imageAlt": "Skinny Jeans",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 101,
+    "title": "Skirt",
+    "description": "Breezy!\nInsulaton: Minimal\nRun Speed Multiplier: -2.0%\nWeight: 0.0 kg",
+    "imageUrl": "/images/item/clothing/clothing-101.webp",
+    "imageAlt": "Skirt",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 102,
+    "title": "Snow Pants",
+    "description": "A pair of insulated snow pants.\nWeight: 3.8 lbs, 1.7 kgs",
+    "imageUrl": "/images/item/clothing/clothing-102.webp",
+    "imageAlt": "Snow Pants",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 103,
+    "title": "State Trooper Pants",
+    "description": "A pair of state trooper pants, typically worn by state troopers.\nInsulation: Average\nWeight: 2.5 lbs, 1.13 kgs",
+    "imageUrl": "",
+    "imageAlt": "State Trooper Pants",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 104,
+    "title": "Suit Pants",
+    "description": "Formal and uncomfortable.\nWeight: 1.5 lbs, .7 kg",
+    "imageUrl": "/images/item/clothing/clothing-104.webp",
+    "imageAlt": "Suit Pants",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 105,
+    "title": "Sweatpants",
+    "description": "Cozy and stretchy.\nWeight: 1.2 lbs, 0.6 kg",
+    "imageUrl": "/images/item/clothing/clothing-105.webp",
+    "imageAlt": "Sweatpants",
+    "publishDate": "2025-12-12",
+    "type": "lower",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 106,
+    "title": "Fingerless Gloves",
+    "description": "A pair of fingerless gloves.\nWeight: 0.2 lbs, 0.09 kgs",
+    "imageUrl": "",
+    "imageAlt": "Fingerless Gloves",
+    "publishDate": "2025-12-12",
+    "type": "hands",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 107,
+    "title": "Firefighter Gloves",
+    "description": "A pair of firefighter gloves.\nInsulation: Minimal\nBlunt Resistance: 0.4 HP\nBladed Resistance: 0.2 HP\nBullet Resistance: 0.2 HP\nWeight: 0.1 kg",
+    "imageUrl": "/images/item/clothing/clothing-107.webp",
+    "imageAlt": "Firefighter Gloves",
+    "publishDate": "2025-12-12",
+    "type": "hands",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 108,
+    "title": "Garden Gloves",
+    "description": "A pair of gloves used for gardening.\nWeight: 0.1 lbs, 0.04 kgs",
+    "imageUrl": "/images/item/clothing/clothing-108.webp",
+    "imageAlt": "Garden Gloves",
+    "publishDate": "2025-12-12",
+    "type": "hands",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 109,
+    "title": "Latex Gloves",
+    "description": "A pair of latex gloves.\nInsulation: Minimal\nWater Resistance: -50.0%\nDismantle: Rubber Scrap\nWeight: 0.0 kg",
+    "imageUrl": "/images/item/clothing/clothing-109.webp",
+    "imageAlt": "Latex Gloves",
+    "publishDate": "2025-12-12",
+    "type": "hands",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 110,
+    "title": "Leather Gloves",
+    "description": "A pair of tight leather gloves.\nWeight: 0.2 lbs, 0.09 kgs",
+    "imageUrl": "/images/item/clothing/clothing-110.webp",
+    "imageAlt": "Leather Gloves",
+    "publishDate": "2025-12-12",
+    "type": "hands",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 111,
+    "title": "Wool Gloves",
+    "description": "A pair of warm, woolen gloves that are typically worn during winter.\nWeight: 0.1 lbs, 0.04 kgs",
+    "imageUrl": "/images/item/clothing/clothing-111.webp",
+    "imageAlt": "Wool Gloves",
+    "publishDate": "2025-12-12",
+    "type": "hands",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 112,
+    "title": "Chef Jacket",
+    "description": "Yes, Chef!\nInsulation: Average\nWater Resistance: -20.0%\nSpeed Multiplier: -7.0%\nBlunt Resistance: 1.0 HP\nBladed Resistance: 1.5 HP\nBullet Resistance: 1.5 HP\nDismantle: Cloth Scrap\nWeight: 3.5 lbs, 1.6 kg",
+    "imageUrl": "/images/item/clothing/clothing-112.webp",
+    "imageAlt": "Chef Jacket",
+    "publishDate": "2025-12-12",
+    "type": "jacket",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 113,
+    "title": "Deputy Jacket",
+    "description": "A jacket typically worn by a county deputy.\nWeight: 4.0 lbs, 1.81 kgs",
+    "imageUrl": "/images/item/clothing/clothing-113.webp",
+    "imageAlt": "Deputy Jacket",
+    "publishDate": "2025-12-12",
+    "type": "jacket",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 114,
+    "title": "Doctor's Coat",
+    "description": "The doctor is in.\nWeight: 3.5 lbs, 1.6 kg",
+    "imageUrl": "/images/item/clothing/clothing-114.webp",
+    "imageAlt": "Doctor's Coat",
+    "publishDate": "2025-12-12",
+    "type": "jacket",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 115,
+    "title": "Firefighter Jacket",
+    "description": "A heavy, 3-layered jacket exclusively used by firefighters. Protects well against fires.\nWeight: 6.3 lbs, 2.9 kgs",
+    "imageUrl": "/images/item/clothing/clothing-115.webp",
+    "imageAlt": "Firefighter Jacket",
+    "publishDate": "2025-12-12",
+    "type": "jacket",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 116,
+    "title": "Hoodie",
+    "description": "A thick hoodie.\nWeight: 1.1 lbs, 0.6 kg",
+    "imageUrl": "/images/item/clothing/clothing-116.webp",
+    "imageAlt": "Hoodie",
+    "publishDate": "2025-12-12",
+    "type": "jacket",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 117,
+    "title": "Jean Jacket",
+    "description": "A timeless Classic\nWeight: 4.2 lbs, 1.91 kgs",
+    "imageUrl": "/images/item/clothing/clothing-117.webp",
+    "imageAlt": "Jean Jacket",
+    "publishDate": "2025-12-12",
+    "type": "jacket",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 118,
+    "title": "Leather Jacket",
+    "description": "A timeless classic, but cooler.\nWeight: 4.2 lbs, 1.91 kgs",
+    "imageUrl": "/images/item/clothing/clothing-118.webp",
+    "imageAlt": "Leather Jacket",
+    "publishDate": "2025-12-12",
+    "type": "jacket",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 119,
+    "title": "Military Jacket",
+    "description": "Part of a military uniform.\nInsulation: Average\nRun Speed Multiplier: -2.0%\nWeight: 4.2 lbs, 1.9 kgs",
+    "imageUrl": "",
+    "imageAlt": "Military Jacket",
+    "publishDate": "2025-12-12",
+    "type": "jacket",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 120,
+    "title": "Puffer Jacket",
+    "description": "A puffy jacket usually worn around winter time.\nWeight: 4.8 lbs, 2.2 kgs",
+    "imageUrl": "/images/item/clothing/clothing-120.webp",
+    "imageAlt": "Puffer Jacket",
+    "publishDate": "2025-12-12",
+    "type": "jacket",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 121,
+    "title": "Ranger Jacket",
+    "description": "A warm jacket typically worn by park rangers.\nWeight: 4.5 lbs, 2.0 kgs",
+    "imageUrl": "/images/item/clothing/clothing-121.webp",
+    "imageAlt": "Ranger Jacket",
+    "publishDate": "2025-12-12",
+    "type": "jacket",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 122,
+    "title": "Sheriff Jacket",
+    "description": "A jacket typically worn by a county sheriff.\nInsulation: Heavy\nWater Resistance: -10.0%\nRun Speed Multiplier: -7.0%\nWeight: 4.0 lbs, 1.8 kgs",
+    "imageUrl": "",
+    "imageAlt": "Sheriff Jacket",
+    "publishDate": "2025-12-12",
+    "type": "jacket",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 123,
+    "title": "State Trooper Jacket",
+    "description": "A jacket typically worn by a state trooper.\nWeight: 3.5 lbs, 1.59 kgs",
+    "imageUrl": "/images/item/clothing/clothing-123.webp",
+    "imageAlt": "State Trooper Jacket",
+    "publishDate": "2025-12-12",
+    "type": "jacket",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 124,
+    "title": "Suit Jacket",
+    "description": "To prove you mean business.\nWeight: 2.5 lbs, 1.1 kgs",
+    "imageUrl": "/images/item/clothing/clothing-124.webp",
+    "imageAlt": "Suit Jacket",
+    "publishDate": "2025-12-12",
+    "type": "jacket",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 125,
+    "title": "Trench Coat",
+    "description": "Makes you better at weilding (real) katanas, probably.\nWeight: 2.5 lbs, 1.13 kgs",
+    "imageUrl": "/images/item/clothing/clothing-125.webp",
+    "imageAlt": "Trench Coat",
+    "publishDate": "2025-12-12",
+    "type": "jacket",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 126,
+    "title": "Tuxedo Jacket",
+    "description": "A fancy tuxedo jacket for special occasions.\nWeight: 2.5 lbs, 1.13 kgs",
+    "imageUrl": "/images/item/clothing/clothing-126.webp",
+    "imageAlt": "Tuxedo Jacket",
+    "publishDate": "2025-12-12",
+    "type": "jacket",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 127,
+    "title": "Varsity Jacket",
+    "description": "A simple varsity jacket, usually worn in the fall months.\nWeight: 3.5 lbs, 1.59 kgs",
+    "imageUrl": "/images/item/clothing/clothing-127.webp",
+    "imageAlt": "Varsity Jacket",
+    "publishDate": "2025-12-12",
+    "type": "jacket",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 128,
+    "title": "Winter Jacket",
+    "description": "A heavy winter jacket, keeps you warm.\nWeight: 4.8 lbs, 2.18 kgs",
+    "imageUrl": "/images/item/clothing/clothing-128.webp",
+    "imageAlt": "Winter Jacket",
+    "publishDate": "2025-12-12",
+    "type": "jacket",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 129,
+    "title": "Apron",
+    "description": "A long apron that'll protect your clothing from food stains (or zombie blood). Will take the upper armor slot.\nInsulation: Minimal\nWater Resistance: -20.0%\nBladed Resistance: 0.2 HP\nDismantle: Cloth Scrap\nDismantle Tool: Basic Cutting\nWeight: 0.2 lb / 0.1 kg",
+    "imageUrl": "/images/item/clothing/clothing-129.webp",
+    "imageAlt": "Apron",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 130,
+    "title": "Correctional Officer Shirt",
+    "description": "A long-sleeve correctional officer uniform shirt.\nInsulation: Average\nWeight: 0.9 lbs, 0.41 kgs",
+    "imageUrl": "/images/item/clothing/clothing-130.webp",
+    "imageAlt": "Correctional Officer Shirt",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 131,
+    "title": "Crop Top",
+    "description": "A lightweight crop top.\nInsulation: Minimal\nWeight: 0.2 lbs, 0.09 kgs",
+    "imageUrl": "/images/item/clothing/clothing-131.webp",
+    "imageAlt": "Crop Top",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 132,
+    "title": "Denim Shirt",
+    "description": "A long sleeve denim shirt.\nWeight: 1.1 lbs, 0.50 kgs",
+    "imageUrl": "/images/item/clothing/clothing-132.webp",
+    "imageAlt": "Denim Shirt",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 133,
+    "title": "Deputy Shirt",
+    "description": "A long sleeve shirt typically worn by deputies.\nInsulation: Average\nWeight: 0.9 lbs, 0.41 kgs",
+    "imageUrl": "/images/item/clothing/clothing-133.webp",
+    "imageAlt": "Deputy Shirt",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 134,
+    "title": "Dress Shirt",
+    "description": "A button-up shirt.\nInsulation: Average\nWeight: 0.2 lb, 0.1 kg",
+    "imageUrl": "",
+    "imageAlt": "Dress Shirt",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 135,
+    "title": "Hawaiian Shirt",
+    "description": "A bright hawaiian shirt. Doesn't really fit...\nInsulation: Minimal\nWeight: 0.3 lb, 0.1 kg",
+    "imageUrl": "",
+    "imageAlt": "Hawaiian Shirt",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 136,
+    "title": "Hazmat Suit",
+    "description": "A hazmat suit typically found in quarantine settings.\nWeight: 0.7 kg",
+    "imageUrl": "/images/item/clothing/clothing-136.webp",
+    "imageAlt": "Hazmat Suit",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 137,
+    "title": "Life Preserver",
+    "description": "A life preserver, keeps you afloat in water.\nInsulation: Minimal\nWater Resistance: -90.0%\nRun Speed Multiplier: -14.0%\nBlunt Resistance: 0.5 HP\nWeight: 0.1 lbs, 0.04 kgs",
+    "imageUrl": "",
+    "imageAlt": "Life Preserver",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 138,
+    "title": "Long Sleeve Shirt",
+    "description": "A bit warmer than a T-shirt.\nInsulation: Average\nWeight: 0.1 lb, 0.0 kg",
+    "imageUrl": "",
+    "imageAlt": "Long Sleeve Shirt",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 139,
+    "title": "Maplemart T-shirt",
+    "description": "A t-shirt typically worn by Maplemart employees.\nInsulation: Minimal\nWeight: 0.2 lbs, 0.13 kgs",
+    "imageUrl": "",
+    "imageAlt": "Maplemart T-shirt",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 140,
+    "title": "Medical Scrubs Top",
+    "description": "A scrubs top typically worn by medical professionals.\nInsulation: Minimal\nWeight: 0.2 lb, 0.1 kg",
+    "imageUrl": "",
+    "imageAlt": "Medical Scrubs Top",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 141,
+    "title": "Military Shirt",
+    "description": "A top issued by the military.\nWeight: 1.0 lb, 0.5 kg",
+    "imageUrl": "/images/item/clothing/clothing-141.webp",
+    "imageAlt": "Military Shirt",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 142,
+    "title": "Off-Shoulder Top",
+    "description": "A flowy, off-shoulder top. Perfect for breezy fall days.\nInsulation: Average\nWeight: 0.2lbs, .13 kgs",
+    "imageUrl": "",
+    "imageAlt": "Off-Shoulder Top",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 143,
+    "title": "Oversized Sweater",
+    "description": "A fluffy, oversized sweater.\nWeight: 1.5 lbs, 0.7 kg",
+    "imageUrl": "/images/item/clothing/clothing-143.webp",
+    "imageAlt": "Oversized Sweater",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 144,
+    "title": "Plaid Shirt",
+    "description": "A long-sleeve plaid shirt.\nInsulation: Average\nDismantle: Cloth Scrap\nSpecial: Tear into Makeshift Bandage\nWeight: 0.2 kg",
+    "imageUrl": "/images/item/clothing/clothing-144.webp",
+    "imageAlt": "Plaid Shirt",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 145,
+    "title": "Police Shirt",
+    "description": "A long-sleeve police uniform shirt.\nWeight: 0.4 kg",
+    "imageUrl": "/images/item/clothing/clothing-145.webp",
+    "imageAlt": "Police Shirt",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 146,
+    "title": "Polo Shirt",
+    "description": "A casual sports shirt.\nInsulation: Minimal\nWeight: 0.1 lb, 0.0 kg",
+    "imageUrl": "",
+    "imageAlt": "Polo Shirt",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 147,
+    "title": "Prison Jumpsuit",
+    "description": "For convicts...\nInsulation: Average\nWeight: 0.5 lbs, 0.23 kgs",
+    "imageUrl": "/images/item/clothing/clothing-147.webp",
+    "imageAlt": "Prison Jumpsuit",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 148,
+    "title": "Ramjet Studios T-shirt",
+    "description": "A t-shirt with a familiar logo.\nInsulation: Minimal\nWeight: 0.3 lbs, .13 kgs",
+    "imageUrl": "/images/item/clothing/clothing-148.webp",
+    "imageAlt": "Ramjet Studios T-shirt",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 149,
+    "title": "Ranger Shirt",
+    "description": "A long-sleeve ranger shirt, typically worn by park rangers.\nInsulation: Average\nWeight: 0.9 lbs, 0.41 kgs",
+    "imageUrl": "",
+    "imageAlt": "Ranger Shirt",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 150,
+    "title": "Riot Shirt",
+    "description": "Part of the uniform.\nWeight: 1.0 lb, 0.5 kg",
+    "imageUrl": "/images/item/clothing/clothing-150.webp",
+    "imageAlt": "Riot Shirt",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 151,
+    "title": "Safety Vest",
+    "description": "A hi-vis safety vest, usually worn by construction workers.\nInsulation: Minimal\nWeight: 0.1 lb, 0.0 kg",
+    "imageUrl": "",
+    "imageAlt": "Safety Vest",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 152,
+    "title": "Sheriff Shirt",
+    "description": "A long-sleeve sheriff shirt, typically worn by county sheriffs.\nInsulation: Average\nWeight: 0.9 lb, 0.4 kg",
+    "imageUrl": "",
+    "imageAlt": "Sheriff Shirt",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 153,
+    "title": "State Trooper Shirt",
+    "description": "A long-sleeve state trooper shirt, typically worn by state troopers.\nInsulation: average\nWeight: 0.9 lbs, 0.41 kgs",
+    "imageUrl": "",
+    "imageAlt": "State Trooper Shirt",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 154,
+    "title": "Sweater Vest",
+    "description": "Like a regular sweater, but with the sleeves cut off. Great for cozy winter nights.\nWeight: 0.2 lb, 0.1 kg",
+    "imageUrl": "/images/item/clothing/clothing-154.webp",
+    "imageAlt": "Sweater Vest",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 155,
+    "title": "T-Shirt",
+    "description": "A simple, cool shirt.\nInsulation: Minimal\nWeight: 0.1 lb, 0.0 kg",
+    "imageUrl": "",
+    "imageAlt": "T-Shirt",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 156,
+    "title": "Tank Top",
+    "description": "An undershirt.\nInsulation: Minimal\nWeight: 0.1 lb, 0.0 kg",
+    "imageUrl": "",
+    "imageAlt": "Tank Top",
+    "publishDate": "2025-12-12",
+    "type": "upper",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  }
+]

@@ -8,9 +8,12 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+.next
+out
 .DS_Store
 dist
 dist-ssr
+legacy-vue
 coverage
 *.local
 

@@ -1,0 +1,886 @@
+[
+  {
+    "id": 1,
+    "title": "Key",
+    "description": "**Tooltip**\nA key for a Lock.\n**Can be used as**\nA tool that gives you access to a vehicle, storage or door lock.\n**Craftable**\nyes, but you need the original key.\n**Ingredients**\niron scrap\n**Console Code**\nBP\\_LockKey\n**Weight**\n0.0 Pounds / 0.0 Kilograms / 0 Bananas\n**Vehicle key Spawn**\nSome vehicles spawn with their key in the ignition - if a vehicle does not spawn with a key in it, the key can generally be found in a building nearby. Also there is a chance that a car key can spawn in zombie corpses.\n**Some funfacts**\n**No more hot wiring required.**\nYou can label a key for better organisation.\nCopy the key, in case you lost one or share it with your friends.\nDon't forget to take the key with you.",
+    "imageUrl": "/images/item/keys/keys-01.webp",
+    "imageAlt": "Key",
+    "publishDate": "2025-11-20",
+    "type": "keys",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 2,
+    "title": "Redford Container Key",
+    "description": "This key looks like it could unlock a shipping container.\nA tag hanging off the keyring reads \"Property of the Redford Fire Department\".",
+    "imageUrl": "",
+    "imageAlt": "",
+    "publishDate": "2025-11-20",
+    "type": "keys",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 3,
+    "title": "Redford Substation Key",
+    "description": "A key marked for use on the Redford Substation Building.",
+    "imageUrl": "",
+    "imageAlt": "Key",
+    "publishDate": "2025-11-20",
+    "type": "keys",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 4,
+    "title": "Schematic - Amplifier",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Amplifier\nRequires Mechanical: 60\nRequires Electrical: 60\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Amplifier",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 5,
+    "title": "Schematic - Barbed Wire",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Barbed Wire\nRequires Crafting: 60\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Barbed Wire",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 6,
+    "title": "Schematic - Basic Driver Bits",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Basic Driver Bit\nRequires Mechanical: 60\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Basic Driver Bits",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 7,
+    "title": "Schematic - Basic Staples",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Basic Staples\nRequires Mechanical: 40\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Basic Staples",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 8,
+    "title": "Schematic - Basic Welding Wire",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Basic Welding Wire\nRequires Mechanical: 80\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Basic Welding Wire",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 9,
+    "title": "Schematic - Binoculars",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Binoculars\nRequires Crafting: 40\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Binoculars",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 10,
+    "title": "Schematic - Blood Test Kit",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Blood Test Kit\nRequires Medical: 50\nRequires Crafting: 50\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Blood Test Kit",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 11,
+    "title": "Schematic - Bow",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Bow\nRequires Crafting: 15\nRequires Repair: 15\nWeight: 0.1 lbs, 0.05 kg",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Bow",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 12,
+    "title": "Schematic - Car Brake Assembly",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Car Brake Assembly\nRequires Mechanical: 60\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Car Brake Assembly",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 13,
+    "title": "Schematic - Car Filter",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Car Filter\nRequires Mechanical: 40\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Car Filter",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 14,
+    "title": "Schematic - Car Gas Tank",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Car Gas Tank\nRequires Mechanical: 60\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Car Gas Tank",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 15,
+    "title": "Schematic - Cast Iron Pan",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Cast Iron Pan\nRequires Crafting: 15\nRequires Mechanical: 15\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Cast Iron Pan",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 16,
+    "title": "Schematic - Circular Saw Blade",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Circular Saw Blade\nRequires Mechanical: 60\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Circular Saw Blade",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 17,
+    "title": "Schematic - Claw Sword",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Claw Sword\nRequires Crafting: 50\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Claw Sword",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 18,
+    "title": "Schematic - Cleaning Wipes",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Cleaning Wipes\nRequires Medical: 20\nRequires Crafting: 20\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Cleaning Wipes",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 19,
+    "title": "Schematic - Combination Pliers",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Combination Pliers\nRequires Construction: 10\nRequires Crafting: 10\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Combination Pliers",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 20,
+    "title": "Schematic - Compass",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Compass\nRequires Crafting: 10\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Compass",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 21,
+    "title": "Schematic - Compression Bandage",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Compression Bandages\nRequires Medical: 40\nRequires Crafting: 40\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Compression Bandage",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 22,
+    "title": "Schematic - Drill Bit",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Drill Bit\nRequires Mechanical: 80\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Drill Bit",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 23,
+    "title": "Schematic - Elastic Bandage",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Elastic Bandage\nRequires Medical: 20\nRequires Crafting: 20\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Elastic Bandage",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 24,
+    "title": "Schematic - Flaslight",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Flashlight\nRequires Crafting: 10\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Flaslight",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 25,
+    "title": "Schematic - Fridge Compressor",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Fridge Compressor\nRequires Mechanical: 70\nRequires Electrical: 70\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Fridge Compressor",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 26,
+    "title": "Schematic - GPS",
+    "description": "Schematic - GPS",
+    "imageUrl": "",
+    "imageAlt": "Schematic - GPS",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 27,
+    "title": "Schematic - Grinder Blades",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Grinder Blades\nRequires Mechanical: 95\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Grinder Blades",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 28,
+    "title": "Schematic - Hacksaw",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Hacksaw\nRequires Construction: 20\nRequires Crafting: 20\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Hacksaw",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 29,
+    "title": "Schematic - Hammer",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Hammer\nRequires Construction: 10\nRequires Crafting: 10\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Hammer",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 30,
+    "title": "Schematic - Heavy Bolts",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Heavy Bolts\nRequires Mechanical: 80\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Heavy Bolts",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 31,
+    "title": "Schematic - Heavy Staples",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Heavy Staples\nRequires Mechanical: 60\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Heavy Staples",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 32,
+    "title": "Schematic - Industrial Driver Bits",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Industrial Driver Bit\nRequires Mechanical: 80\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Industrial Driver Bits",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 33,
+    "title": "Schematic - Industrial Staples",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Framing Nail Pack\nRequires Mechanical: 80\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Industrial Staples",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 34,
+    "title": "Schematic - Industrial Welding Wire",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Industrial Welder Wire\nRequires Mechanical: 95\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Industrial Welding Wire",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 35,
+    "title": "Schematic - Iron Arrow",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Iron Arrow\nRequires Crafting: 10\nRequires Repair: 10\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Iron Arrow",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 36,
+    "title": "Schematic - Lighter",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Lighter\nRequires Crafting: 40\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Lighter",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 37,
+    "title": "Schematic - Lockpick",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Lockpick\nRequires Crafting: 25\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Lockpick",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 38,
+    "title": "Schematic - Makeshift Splint",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Makeshift Splint\nRequires Medical: 20\nRequires Crafting: 20\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Makeshift Splint",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 39,
+    "title": "Schematic - Medical Splint",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Medical Splint\nRequires Medical: 60\nRequires Crafting: 60\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Medical Splint",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 40,
+    "title": "Schematic - Mini-Sledge",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Mini-Sledge\nRequires Construction: 40\nRequires Crafting: 40\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Mini-Sledge",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 41,
+    "title": "Schematic - Nails",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Nails\nRequires Mechanical: 10\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Nails",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 42,
+    "title": "Schematic - Oven Dish",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Oven Dish\nRequires Crafting: 35\nRequires Mechanical: 35\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Oven Dish",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 43,
+    "title": "Schematic - Radio Receiver",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Radio Receiver\nRequires Mechanical: 60\nRequires Electrical: 60\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Radio Receiver",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 44,
+    "title": "Schematic - Radio Transmitter",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Radio Transmitter\nRequires Mechanical: 60\nRequires Electrical: 60\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Radio Transmitter",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 45,
+    "title": "Schematic - Sauce Pot",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Sauce Pot\nRequires Crafting: 5\nRequires Mechanical: 5\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Sauce Pot",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 46,
+    "title": "Schematic - Scissors",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Scissors\nRequires Construction: 10\nRequires Crafting: 10\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Scissors",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 47,
+    "title": "Schematic - Screwdriver",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Cross-Head Screwdriver\nRequires Mechanical: 10\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Screwdriver",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 48,
+    "title": "Schematic - Screws",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Screws\nRequires Mechanical: 15\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Screws",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 49,
+    "title": "Schematic - Springs",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Springs\nRequires Mechanical: 25\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Springs",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 50,
+    "title": "Schematic - Stove Heating Elements",
+    "description": "Schematic - Stove Heating Elements",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Stove Heating Elements",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 51,
+    "title": "Schematic - Syringe",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Syringe\nRequires Medical: 50\nRequires Crafting: 50\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Syringe",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  },
+  {
+    "id": 52,
+    "title": "Schematic - Trauma Bandage",
+    "description": "A highly detailed blueprint explaining how to craft a new item.\nItem: Trauma Bandage\nRequires Medical: 70\nRequires Crafting: 70\nWeight: 0.1 lbs, 0.05 kgs",
+    "imageUrl": "",
+    "imageAlt": "Schematic - Trauma Bandage",
+    "publishDate": "2025-12-12",
+    "type": "schematics",
+    "addressBar": "/",
+    "showDetail": false,
+    "seo": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "body": ""
+  }
+]
