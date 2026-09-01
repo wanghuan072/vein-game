@@ -20,6 +20,21 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     {/* Google AdSense: loaded immediately, matching the legacy index.html. */}
     <Script id="google-adsense" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2318352950196721" strategy="beforeInteractive" crossOrigin="anonymous" />
 
+    {/* A new document is used for every internal page link so the existing
+        AdSense setup is loaded again for the destination page. */}
+    <Script id="refresh-ads-on-internal-navigation" strategy="afterInteractive">{`document.addEventListener('click', function (event) {
+  if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+  var link = event.target.closest('a[href]');
+  if (!link || link.target || link.hasAttribute('download')) return;
+
+  var destination = new URL(link.href, window.location.href);
+  if (destination.origin !== window.location.origin || (destination.pathname === window.location.pathname && destination.search === window.location.search)) return;
+
+  event.preventDefault();
+  window.location.assign(destination.href);
+}, true);`}</Script>
+
     {/* Google Analytics: retained with the legacy two-second delay after load. */}
     <Script id="google-analytics-loader" strategy="beforeInteractive">{`window.addEventListener('load', function () {
   setTimeout(function () {
